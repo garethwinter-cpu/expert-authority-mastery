@@ -57,5 +57,5 @@ cites `data/authors.json`, and gets a route in `server.js`.
 ## Deployment
 
 Node.js buildpack, no Dockerfile. `npm start` binds `process.env.PORT`;
-`/healthz` responds 200. To go live: create a Kessel service against this
+`/health` responds 200. Deployed via Kessel from this
 repo's `main`, same as the speaking-influence and ai-founder services.
