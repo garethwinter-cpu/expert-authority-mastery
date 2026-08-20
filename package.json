@@ -1,7 +1,7 @@
 {
-  "name": "expert-authority-mastery",
+  "name": "mastery-proposals",
   "version": "1.0.0",
-  "description": "Expert & Authority Mastery — curriculum proposal",
+  "description": "Mindvalley Mastery curriculum proposals \u2014 one repo, one data source, one design system",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

@@ -1,11 +1,18 @@
-# Expert & Authority Mastery — Curriculum Proposal
+# Mastery Proposals
 
-A 17-week Mastery programme proposal turning Vishen Lakhiani's six-hour
-*Become a World-Class Expert and Authority in Your Niche* accelerator into a
-full cohort programme.
+Mindvalley Mastery curriculum proposals — one repo, one data source, one
+design system. **Internal**: contains cohort ratings, pricing and faculty
+compensation structure. Keep this repository private.
 
-**Internal Mindvalley document.** Contains cohort ratings, faculty status,
-pricing and commercial strategy. Keep this repository private.
+## Routes
+
+| Route | Page |
+|---|---|
+| `/` | Hub — all proposals |
+| `/expert-authority` | Expert & Authority Mastery (17 weeks, Vishen as Curriculum Expert) |
+| `/ai-founders` | AI for Founders Mastery (18 weeks, Vishen × Daniel Priestley) |
+| `/positioning` | One Pathway, Two Masteries — the canonical boundary |
+| `/healthz` | Health check |
 
 ## Running locally
 
@@ -14,44 +21,41 @@ npm install
 npm start        # http://localhost:8080
 ```
 
-No build step — `index.html` is self-contained with embedded CSS and JS.
+## The anti-drift architecture
 
-## Routes
+The reason this is one repo and not one per programme: shared figures kept
+drifting between documents (Chris Do was 9.78 on one page and 9.83 on
+another). So anything cited in more than one place lives in exactly one file:
 
-| Route | Serves |
-|---|---|
-| `/` | The proposal |
-| `/proposal` | The proposal (alias) |
-| `/healthz` | Health check |
+| Source of truth | What it holds | Rendered where |
+|---|---|---|
+| `data/authors.json` | Every verified author rating, sample size, status, allocation | Both proposals cite it; verify against it before editing any figure |
+| `data/boundary.json` | The E&A ↔ AI-for-Founders positioning: cards, router, comparison table, overlap rules | Injected into **both** proposal pages and generates `positioning.html` |
+| `data/learnings.json` | The S&I / AIM format findings (retention, workshop gap, opener failures) | Cited by both proposals |
+| `shared/wellness.css` | The design system — structure and type only; each page supplies its own accent tokens | Linked by every page |
 
-## What's in the proposal
+### Editing the boundary
 
-Eight tabs, in the order the argument runs:
+Never hand-edit between `<!-- boundary:auto -->` markers — the build
+overwrites it. Instead:
 
-1. **The Case** — SCQA, the four reasons, and the structural decision that authors teach while implementers run the build days
-2. **The Evidence** — the programme is already sold from stage; the IP is open; author scores; format data and its failure modes; live base status; demand
-3. **The Programme** — the organising idea, the weekly rhythm, the doctrine, the standards check, the honest risks
-4. **Week by Week** — 17 weeks, four modules, the week-9 Masterclass Intensive
-5. **Authors** — Curriculum Expert, seven named teachers, the implementation team, and the author × curriculum map
-6. **Format & Contracts** — the curriculum-first rule, lesson counts per author, payment tiers, format spec
-7. **The Artefact** — Your Ladder, Live: the six components students graduate owning
-8. **Commercials & Next Steps** — ecosystem position, decisions made, decisions outstanding, sources
+```bash
+# 1. edit data/boundary.json
+python3 scripts/build_boundary.py   # 2. re-renders both pages + positioning.html
+# 3. commit — the diff shows the same change landing in all three outputs
+```
 
-## Structure
+The script is idempotent; each page renders the shared facts from its own
+perspective (own card tinted and ordered first).
 
-- **Spine:** Vishen's SAS framework — Be Seen · Architecture · Show Up
-- **Sequence:** build one rung → build the masterclass that sells it → turn on the traffic → extend the ladder
-- **Cadence:** Teach (Tue) + Implementation Day (Thu), 16 paired weeks plus a 3-day intensive at week 9
-- **Certification:** a live product ladder with three paid rungs — not videos watched
+### Adding the next proposal
 
-## Sources
-
-- Full transcript of the Expert & Authority Accelerator (Mindvalley U, Tallinn)
-- Author-proposal deck, Expert & Authority section
-- Speaking & Influence Mastery 2025 vs 2026 comparison (Airtable rollup)
-- AI for Founders Mastery proposal
-- Expert & Authority Summit & Mastery Airtable base (read 18 August 2026)
+Follow `CURRICULUM-BRIEF.md` — the inputs table, the master prompt, the house
+rules. New page links `shared/wellness.css`, defines its own accent tokens,
+cites `data/authors.json`, and gets a route in `server.js`.
 
 ## Deployment
 
-Node.js buildpack, no Dockerfile. `npm start` binds to `process.env.PORT`.
+Node.js buildpack, no Dockerfile. `npm start` binds `process.env.PORT`;
+`/healthz` responds 200. To go live: create a Kessel service against this
+repo's `main`, same as the speaking-influence and ai-founder services.

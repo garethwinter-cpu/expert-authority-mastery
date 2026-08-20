@@ -1,0 +1,44 @@
+{
+  "_comment": "Single source for the E&A vs AI-for-Founders boundary. Edit HERE, then run scripts/build_boundary.py. Hand-edits inside the boundary markers in any page are overwritten.",
+  "headline_ea_first": "Expert & Authority builds the name. AI for Founders builds the machine.",
+  "intro": "Both sit in Exponential Entrepreneur, both are co-led by Vishen, and both sell to overlapping lists — so the line between them has to be stated once, precisely, and held. It is not a difference of topic. It is a difference of <strong>what is broken in the student's business.</strong>",
+  "generated_note": "This boundary is rendered from one shared source (data/boundary.json) on both proposals and on the standalone positioning page, so the documents cannot drift apart.",
+  "programmes": {
+    "ea": {
+      "name": "Expert & Authority Mastery",
+      "pain": "\"I know my craft, so why doesn't the world come to me?\"",
+      "diagnosis": "They already know something valuable. The problem is that nobody is buying it yet — no profile, no offer, no path from stranger to client. Seventeen weeks building a name and a ladder for it to climb.",
+      "outcome": "your expertise, earning — a niche only you could own, a product live on the internet, strangers finding you weekly, and a ladder that carries someone from a free download to a five-figure relationship",
+      "proof": "assets published and first revenue banked",
+      "artefact": "Your Ladder, Live — an edge, a published product, a masterclass shot, a traffic tap running, three paid rungs",
+      "led_by": "Vishen Lakhiani as Curriculum Expert, with Paul McKenna, Chris Do, Alessio Pieroni, Lisa Nichols, Natalie Ellis, Kwame Christian, John Lee and Ajit Nawalkha"
+    },
+    "aif": {
+      "name": "AI for Founders Mastery",
+      "pain": "\"Running this is eating me alive.\"",
+      "diagnosis": "They already have something to sell. The problem is that every part of it runs through them. Eighteen weeks rebuilding five pillars — marketing, sales, operations, people, finance — as AI systems that run while they lead.",
+      "outcome": "a business that grows without grinding you down — leads arriving, nothing going cold, delivery running itself, the numbers talking to you, and your Fridays back",
+      "proof": "systems in production",
+      "artefact": "the Founder Operating System — company brain, demand engine, delivery agents, finance cockpit",
+      "led_by": "Vishen Lakhiani + Daniel Priestley as co-owners, with Noelle Russell, Marie Forleo, Shawn Kanungo, Alex Dogliotti and Vykintas Glodenis"
+    }
+  },
+  "router": {
+    "question": "\"Do you have something to sell that's drowning you — or something to say that nobody's paying for yet?\"",
+    "answer": "Drowning in delivery → <strong>AI for Founders.</strong> Unknown with real expertise → <strong>Expert &amp; Authority.</strong> Can't hold a room at all → <strong>Speaking &amp; Influence.</strong> If a prospect can't answer, they are Expert &amp; Authority: you cannot systematise demand that doesn't exist yet. The usual sequence is Expert &amp; Authority first, then AI for Founders — build the name, then the machine to serve it."
+  },
+  "comparison": [
+    ["The buyer", "Has expertise and wants to be known and paid for it", "Has a product or service — even if the service is them — and wants it to run and scale"],
+    ["What's broken", "Demand. Nobody knows they exist", "Capacity. The founder is the bottleneck"],
+    ["The question it answers", "\"Why should anyone choose me?\"", "\"How do I deliver at scale?\""],
+    ["The lever", "Story, voice and positioning. The founder doing the work <em>better</em>", "AI and automation. Systems doing the work"],
+    ["What AI is", "A chief of staff — explicitly never a substitute for voice", "The substance of the programme"],
+    ["Content is taught as", "Distinctiveness — your edge, your uncommon take, your story", "Throughput — a pipeline drafting in the founder's voice at volume"],
+    ["Sales is taught as", "The enrolment conversation and the close from stage. Human sales", "A pipeline that follows up itself. Machine sales"],
+    ["Where the founder ends up", "In front of the audience — the recognised authority", "Out of the machine — orchestrator, four-day week"],
+    ["Proof at graduation", "Assets published: a product live, a masterclass shot, first revenue banked", "Systems running: agents in production, pipeline live, numbers on one dashboard"],
+    ["Duration & cadence", "17 weeks · Teach + Lab", "18 weeks · Teach + Implementation Lab"]
+  ],
+  "overlap_rules": "<strong>Content:</strong> AI for Founders automates the pipeline; Expert &amp; Authority finds the voice that goes into it. <strong>Offers:</strong> AI for Founders prices and delivers what exists; Expert &amp; Authority designs the ladder that doesn't exist yet. <strong>Demand:</strong> AI for Founders builds the capture mechanism; Expert &amp; Authority builds the reason anyone fills it in. Neither programme teaches the other's half — and the zero-overlap faculty enforces it.",
+  "retention": "S&amp;I's own detractors flagged scope drift, verbatim: \"I'm only interested in speaking, not creating a course or teaching or creating a business\" — on the week that programme drifted into Expert &amp; Authority territory. Scope drift is not a marketing problem; it is a refund generator. Each programme teaches its own promise and cross-refers the rest. The sequence also matches our intake — 68% female, 78% aged 45+, service businesses built on expertise, 91% of Social Media Mastery students not yet earning from their audience: those students have nothing to systematise yet."
+}
