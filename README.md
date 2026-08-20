@@ -12,7 +12,7 @@ compensation structure. Keep this repository private.
 | `/expert-authority` | Expert & Authority Mastery (17 weeks, Vishen as Curriculum Expert) |
 | `/ai-founders` | AI for Founders Mastery (18 weeks, Vishen × Daniel Priestley) |
 | `/positioning` | One Pathway, Two Masteries — the canonical boundary |
-| `/healthz` | Health check |
+| `/health` | Health check (Google's frontend reserves `/healthz` on Cloud Run) |
 
 ## Running locally
 

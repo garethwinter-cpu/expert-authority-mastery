@@ -18,7 +18,9 @@ app.get('/positioning', page('positioning.html'));
 // legacy link from the first deploy of this repo
 app.get('/proposal', (req, res) => res.redirect(301, '/expert-authority'));
 
-app.get('/healthz', (req, res) => res.status(200).send('ok'));
+// note: /healthz is intercepted by Google's frontend on Cloud Run and never
+// reaches the container - use /health for uptime checks
+app.get('/health', (req, res) => res.status(200).send('ok'));
 
 app.listen(PORT, () => {
   console.log('Mastery Proposals running on port ' + PORT + ' from ' + ROOT);
