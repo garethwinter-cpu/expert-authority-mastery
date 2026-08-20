@@ -488,8 +488,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <thead><tr><th>Author</th><th>Lane</th><th>Top score with our students</th><th>Sample (n)</th><th>Status</th></tr></thead>
       <tbody>
         <tr><td><strong>Chris Do</strong><div class="who">The Futur · Emmy-winning educator</div></td><td>Authority &amp; monetisation</td><td><span class="score">9.78</span> From Viral to Valuable: Attention→Authority</td><td>n=37 · SMM 2026. <em>Not</em> the top SMM score — it ranks 6th</td><td><span class="status proposal">Not yet on the E&amp;A list</span></td></tr>
-        <tr><td><strong>Lisa Nichols</strong><div class="who">Founder &amp; CEO, Motivating the Masses</div></td><td>Story — the asset only you own</td><td><span class="score">9.74</span> The Evolution and Power of Story (S&amp;I 2026)</td><td>The highest-rated S&amp;I 2026 session to date</td><td><span class="status confirmed">Confirmed</span></td></tr>
-        <tr><td><strong>Paul McKenna</strong><div class="who">World's leading hypnotist · Mindvalley author</div></td><td>Confidence &amp; the inner shift</td><td><span class="score">9.61</span> Instant Confidence (S&amp;I 2026) · <span class="score">9.62</span> Move Beyond Fear (2025)</td><td>"Paul remains the strongest guest asset" — S&amp;I comparison</td><td><span class="status confirmed">Confirmed</span></td></tr>
+        <tr><td><strong>Lisa Nichols</strong><div class="who">Founder &amp; CEO, Motivating the Masses</div></td><td>Story — the asset only you own</td><td><span class="score">9.74</span> The Evolution and Power of Story (S&amp;I 2026)</td><td>n=75. The highest-rated S&amp;I 2026 session to date; her workshop ran 9.39 (n=64)</td><td><span class="status confirmed">Confirmed</span></td></tr>
+        <tr><td><strong>Paul McKenna</strong><div class="who">World's leading hypnotist · Mindvalley author</div></td><td>Confidence &amp; the inner shift</td><td><span class="score">9.61</span> Instant Confidence (S&amp;I 2026) · <span class="score">9.62</span> Move Beyond Fear (2025)</td><td>n=79 (2026). "Paul remains the strongest guest asset" — S&amp;I comparison</td><td><span class="status confirmed">Confirmed</span></td></tr>
         <tr><td><strong>Kwame Christian</strong><div class="who">American Negotiation Institute</div></td><td>The enrolment conversation</td><td><span class="score">9.59</span> Build &amp; Test Your Personal AI · <span class="score">9.56</span> Contracts · <span class="score">9.47</span> Negotiation</td><td>n=44 / 50 / 49. Deck figures confirmed exactly</td><td><span class="status confirmed">Confirmed</span></td></tr>
         <tr><td><strong>John Lee</strong><div class="who">Entrepreneur · investor</div></td><td>Selling from the stage and screen</td><td><span class="score">9.54</span> $1M from Social Media &amp; AI</td><td>n=35 · SMM 2026. Deck said 9.56</td><td><span class="status confirmed">Confirmed</span></td></tr>
         <tr><td><strong>Vishen Lakhiani</strong><div class="who">Curriculum Expert</div></td><td>Vision, framing and the whole architecture</td><td><span class="score">9.58</span> Using Webinars to Sell · <span class="score bad">8.29</span> Upsells &amp; Downsells</td><td>n=57 / 90 · EM. See the split in the Authors tab</td><td><span class="status confirmed">Confirmed</span></td></tr>
@@ -503,6 +503,33 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div><p><strong>Three figures in the author-proposal deck are wrong, and one claim is false.</strong> Re-derived from the source bases on 18 August: <strong>Chris Do is 9.78, not 9.83</strong> (n=37) — and the deck's claim that it is the highest single lesson score in Social Media Mastery is incorrect; it ranks sixth, behind Sabrina Stocker 9.93, Domenic Ashburn 9.85 and two Vishen sessions. <strong>John Lee is 9.54, not 9.56</strong> (n=35). <strong>Natalie Ellis is 9.16, not 9.25</strong> (n=37), which puts her below the 9.3 bar. Kwame Christian and Daniel Priestley's figures are confirmed exactly.</p>
       <p>This matters beyond tidiness: the deck is what the team is using to make hiring and royalty decisions. Every number in this proposal now reads from <code>data/authors.json</code>, which is derived from the bases and records each discrepancy.</p>
       <p><strong>Two names still carry no Mindvalley rating at all</strong> — Alessio Pieroni and Kash Rupalia — and they now hold twelve of the sixteen lab days between them. The accelerator segment feedback is no longer a formality.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The Speaking &amp; Influence inheritance</div>
+      <h2>Eleven design rules, paid for by another programme's cohort</h2>
+      <p class="body-md">The full S&amp;I journey — 84 sessions across two cohorts, plus 148 detractor submissions — was mined session by session. These are the learnings this curriculum is built to obey, each recorded in <code>data/learnings.json</code> so the AI for Founders design obeys them too.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>Learning</th><th>The evidence</th><th>Where this design obeys it</th></tr></thead>
+      <tbody>
+        <tr><td><strong>A mainline multi-day intensive breaks retention permanently</strong></td><td>S&amp;I 2025 One Talk Workshop as three mainline sessions: 39% → 31% → 34%, then a permanent ~14-point break. 2026 ran it as a weekend bonus: next sessions held 56–58%</td><td>The Masterclass Intensive is a Fri–Sun weekend between weeks 8 and 9. The Tue/Thu cadence never breaks</td></tr>
+        <tr><td><strong>Off-cadence add-ons die regardless of teacher</strong></td><td>Paul McKenna — the strongest guest asset — drew <strong>23%</strong> for an off-rhythm Monday add-on, the worst attendance in the base</td><td>Nothing is scheduled outside Tue/Thu + the one weekend. Extra material becomes recorded bonuses</td></tr>
+        <tr><td><strong>Teacher substitution destroys a session</strong></td><td>The one S&amp;I workshop that swapped hosts drew <strong>24 detractor submissions</strong> — the most of any session. "Changed speaker, very disjointed, disappointed"</td><td>Authors are announced only when contracted; the lab always has its named owner as cover, so a guest cancellation never becomes a substitution</td></tr>
+        <tr><td><strong>Breakout rooms are the #1 detractor theme</strong></td><td>20 of 148 detractor comments — more than tech issues and session length combined</td><td>Breakouts only with an artefact-producing brief, a time-box, and an opt-out</td></tr>
+        <tr><td><strong>Single-lead programmes hit a repetition cliff at month two</strong></td><td>"Lost interest since 2nd month… pretty much the same topic. More like a chit chat session than a real Mastery"</td><td>Seven named authors rotate the teach slot; every week ships a distinct artefact; 17 weeks, not 20+</td></tr>
+        <tr><td><strong>Q&amp;A-only sessions are punished</strong></td><td>"Only Q&amp;A — would have loved more content." AIM unstructured community calls: 5.89</td><td>Q&amp;A attaches to content; every touchpoint has a deliverable</td></tr>
+        <tr><td><strong>Scope drift generates refund requests</strong></td><td>S&amp;I detractor, verbatim: <em>"I'm only interested in speaking, not creating a course or teaching or creating a business"</em> — on the week S&amp;I drifted into this programme's territory</td><td>The three-programme boundary below. Each programme teaches its own promise and cross-refers the rest</td></tr>
+        <tr><td><strong>Integration capstones are our best-rated format</strong></td><td>AIM "Tying Everything Together": teach 9.87 (n=99), Q&amp;A 9.66, lab 9.46 — the best-rated cluster in that base</td><td>W17 assembles the whole ladder; the intensive assembles the masterclass. Integration is explicit, twice</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="callout" style="margin-top:18px">
+      <div class="ic">◆</div>
+      <div><p><strong>The three-programme boundary, now with retention evidence.</strong> <strong>Speaking &amp; Influence owns the talk</strong> — stagecraft, story delivery, confidence, holding a room. <strong>Expert &amp; Authority owns the business of being known</strong> — niche, ladder, masterclass, traffic, the close. <strong>AI for Founders owns the machine</strong> — five pillars as AI systems for someone already selling. The router: can't hold a room → S&amp;I. Can hold a room but nobody's buying → E&amp;A. People are buying and it's eating you alive → AI for Founders. S&amp;I's own back half (Getting Booked, Business Models for Speakers, Productizing Your Message) is this programme's territory taught to a speaking audience — and its detractors said so. Holding the boundary is a retention mechanism, not a marketing nicety.</p></div>
     </div>
   </section>
 
@@ -523,7 +550,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="kicker">Finding 02</div>
         <h3>Ajit Nawalkha out-rates everyone on exactly this curriculum</h3>
         <p class="body-md" style="margin-top:8px">Roughly 25 EM sessions, and his strongest are this programme's spine: <strong>Your Million-Dollar Game Plan 9.97</strong>, The Essential Three Offers 9.81, The 21-Step Sales Letter 9.79, Predictable Marketing Calendar 9.77, Workshops &amp; Small Events 9.77, Selling High Ticket Coaching 9.54, Designing Your $10K+ Offer 9.45, Product Stacking 9.40.</p>
-        <p class="body-md" style="margin-top:8px">On offers and ladder mechanics he rates roughly a full point above Vishen, and the deck already floats him as a Curriculum Expert candidate. He is not in this proposal. That should be a decision, not an omission.</p>
+        <p class="body-md" style="margin-top:8px">On offers and ladder mechanics he rates roughly a full point above Vishen. <strong>Decided:</strong> Ajit joins this programme as co-teacher on W14 (the ladder), and AI for Founders holds him only as its named fallback. One allocation, made once, across both programmes.</p>
       </div>
       <div class="card" style="border-left:4px solid var(--green)">
         <div class="kicker" style="color:var(--green)">Finding 03</div>
@@ -1020,7 +1047,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
         <div class="callout" style="margin-top:20px">
           <div class="ic">◆</div>
-          <div><p><strong>Why mid-programme, not final.</strong> Speaking &amp; Influence placed its three-day workshop at the centre and rode the momentum for ten more weeks. A final-week capstone celebrates; a mid-programme intensive <em>compounds</em> — every week from 10 onward runs on a real asset with a real offer attached. The caution from that same data: S&amp;I 2025's attendance collapse coincided with its three-day, four-hour-a-day workshop, so this one runs at three hours a day, with full replay and a two-speed build floor.</p></div>
+          <div><p><strong>Why a weekend, and why this is now a hard rule.</strong> S&amp;I 2025 ran its three-day One Talk Workshop as three consecutive <em>mainline</em> sessions. Attendance went 39% → 31% → 34% — and never recovered: the back half of that programme ran 45% declining to 33%, a permanent ~14-point break in the retention curve. S&amp;I 2026 ran the identical workshop as an optional Friday–Sunday bonus with the weekly cadence untouched, and the next mainline sessions held at 56% and 58%. <strong>The fix is proven, not theoretical.</strong> So this intensive runs Friday–Sunday between weeks 8 and 9, three hours a day, full replay, two-speed build floor — and Tuesday's teach happens as normal the following week. Mid-programme placement still compounds (every week after it runs on a live asset); it just never costs the cadence.</p></div>
         </div>
 
       </div>
@@ -1116,9 +1143,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="week">
           <div class="wk">WEEK 14</div>
           <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+            <div class="ct teach">Teach · Vishen Lakhiani + Ajit Nawalkha</div>
             <h4>The Product Step Ladder: The Three Laws</h4>
-            <p>The single biggest mistake experts make: spending their time on new customers. Thirty per cent there, seventy per cent moving existing customers up. Then the three laws — every rung delivers a complete transformation, even the $49 one; the jump must feel inevitable rather than pushy, because it is revealing and not selling; and above a thousand dollars you are no longer selling a product, you are selling an identity. The worked example is Paul McKenna's own ladder: a $49 hypnosis audio, a $299 course collection, a $5,000 certification — the same teacher students met in week 2.</p>
+            <p>The single biggest mistake experts make: spending their time on new customers. Thirty per cent there, seventy per cent moving existing customers up. Then the three laws — every rung delivers a complete transformation, even the $49 one; the jump must feel inevitable rather than pushy, because it is revealing and not selling; and above a thousand dollars you are no longer selling a product, you are selling an identity. The worked example is Paul McKenna's own ladder: a $49 hypnosis audio, a $299 course collection, a $5,000 certification — the same teacher students met in week 2. Vishen carries the laws and the identity doctrine; Ajit carries the pricing and offer mechanics — his lane, where he holds The Essential Three Offers at 9.81 and Designing Your $10K+ Offer at 9.45.</p>
           </div>
           <div class="call lab">
             <div class="ct lab-t">Lab · Alessio Pieroni</div>
@@ -1272,7 +1299,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <span class="status confirmed">Confirmed</span>
         </div>
         <div class="scorebar">
-          <div class="sc"><div class="v">9.74</div><div class="k">The Evolution and Power<br>of Story · S&amp;I 2026</div></div>
+          <div class="sc"><div class="v">9.74</div><div class="k">The Evolution and Power<br>of Story · n=75</div></div>
           <div class="sc"><div class="v na">Highest<br>2026</div><div class="k">Top-rated S&amp;I 2026<br>session to date</div></div>
         </div>
         <p class="body-md">The strongest storytelling asset in the building, and already woven into this curriculum whether we hire her or not — Vishen quotes her from the stage in the week-1 lesson: "shine your light so bright, and if anybody complains, tell them to just put on some shades." She was the first big-name teacher to take his stage and gave Mindvalley its first real break. Handing the story week to the person who is already the emotional anchor of week 1 closes a loop the students will feel.</p>
@@ -1292,11 +1319,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <span class="status confirmed">Confirmed</span>
         </div>
         <div class="scorebar">
-          <div class="sc"><div class="v">9.61</div><div class="k">Instant Confidence<br>S&amp;I 2026</div></div>
+          <div class="sc"><div class="v">9.61</div><div class="k">Instant Confidence<br>S&amp;I 2026 · n=79</div></div>
           <div class="sc"><div class="v">9.62</div><div class="k">Move Beyond Fear<br>S&amp;I 2025</div></div>
         </div>
         <p class="body-md">"Paul remains the strongest guest asset" — the S&amp;I 2025-vs-2026 comparison, where his score held to within 0.01 across two cohorts. Vishen named his confidence hypnotherapy from the accelerator stage as a route through the visibility wound. And he is a double asset: the teacher in week 2, and the worked example of the product step ladder in week 14.</p>
-        <div class="covers"><strong>Teaches:</strong> W2 instant confidence — the inner shift to being seen · appears as the ladder case study in W14</div>
+        <div class="covers"><strong>Teaches:</strong> W2 instant confidence — the inner shift to being seen · appears as the ladder case study in W14<br><strong>Scheduling caution from S&amp;I 2025:</strong> his off-cadence add-on drew 23% attendance — the worst in that base. Book him into the mainline Tuesday slot only</div>
       </div>
 
       <div class="card">
@@ -1486,7 +1513,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td><strong>W11</strong></td><td>Natalie Ellis — community as a business model</td><td>Sabrina Stocker — LinkedIn &amp; AEO</td><td>Recorded bookends</td></tr>
         <tr><td><strong>W12</strong></td><td>Vishen — the long-form advantage</td><td>Safwaan Mohammed — YouTube ideas</td><td>Live</td></tr>
         <tr><td><strong>W13</strong></td><td>Vishen — the free rung</td><td>Alessio — nine emails scheduled</td><td>Live</td></tr>
-        <tr><td><strong>W14</strong></td><td>Vishen — the product step ladder</td><td>Alessio — map, price, sequence</td><td>Live — flagship</td></tr>
+        <tr><td><strong>W14</strong></td><td>Vishen + Ajit Nawalkha — the product step ladder</td><td>Alessio — map, price, sequence</td><td>Live — flagship</td></tr>
         <tr><td><strong>W15</strong></td><td>Kwame Christian — the enrolment conversation</td><td>Alessio + Kwame — run the call</td><td>Recorded bookends</td></tr>
         <tr><td><strong>W16</strong></td><td>John Lee — $1M without being famous</td><td>Alessio + John — your offer, stacked</td><td>Recorded bookends</td></tr>
         <tr><td><strong>W17</strong></td><td>Vishen — the identity tier &amp; graduation</td><td>Alessio + Kash — certification &amp; the bridge</td><td>Live</td></tr>
@@ -1553,6 +1580,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td><strong>Chris Do</strong></td><td><span class="pill">Core author</span></td><td><strong>2</strong> teach (W4, W10)</td><td>—</td><td>Flat fee per lesson or hybrid</td></tr>
         <tr><td><strong>Alessio Pieroni</strong></td><td><span class="pill g">Lab lead</span> + <span class="pill">author</span></td><td><strong>1</strong> teach (W7) + <strong>7</strong> lab days + intensive build floor</td><td>—</td><td>Flat fee per programme + lab-lead retainer</td></tr>
         <tr><td><strong>Lisa Nichols</strong></td><td><span class="pill">Guest specialist</span></td><td><strong>1</strong> teach (W8)</td><td>—</td><td>Flat fee</td></tr>
+        <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="pill">Guest specialist</span></td><td><strong>1</strong> co-teach (W14, offers &amp; pricing)</td><td>—</td><td>Internal / flat fee</td></tr>
         <tr><td><strong>Paul McKenna</strong></td><td><span class="pill">Guest specialist</span></td><td><strong>1</strong> teach (W2)</td><td>Hypnosis protocol audio for the Show Up track</td><td>Flat fee + asset licence</td></tr>
         <tr><td><strong>Natalie Ellis</strong></td><td><span class="pill">Guest specialist</span></td><td><strong>1</strong> teach (W11)</td><td>—</td><td>Flat fee · pilot lesson first</td></tr>
         <tr><td><strong>Kwame Christian</strong></td><td><span class="pill">Guest specialist</span></td><td><strong>1</strong> teach + 1 build-day co-host (W15)</td><td>—</td><td>Flat fee</td></tr>
@@ -1824,7 +1852,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <li><strong>Vishen's diary</strong> — confirm 8 teach weeks plus Intensive Day 1, and agree which two can run recorded if it tightens (recommend W3 and W6)</li>
           <li><strong>Lesson-count decision for the Curriculum Expert tier</strong> — do recorded bookends count toward the 15–25 band? Settle before the royalty conversation</li>
           <li><strong>Correct the author-proposal deck</strong> — Chris Do 9.78, John Lee 9.54, Natalie Ellis 9.16, and remove the "highest in SM Mastery" claim. The deck is driving hiring and royalty conversations</li>
-          <li><strong>Decide on Ajit Nawalkha</strong> — he out-rates Vishen by ~1 point on offers and ladder mechanics, the two weakest topics in Vishen's rated history and two of his eight teach weeks</li>
+          <li><strong>Ajit Nawalkha — decided:</strong> co-teaches W14 here (offers &amp; pricing mechanics, his 9.45–9.81 lane); AI for Founders keeps him as fallback only. Contract as guest specialist, 1 co-teach</li>
           <li><strong>Revisit Sabrina Stocker as lab lead</strong> — her 9.93 live-build session is the best lab evidence we hold; both confirmed lab leads are unrated</li>
           <li><strong>Re-check Natalie Ellis</strong> — at 9.16 she sits below the 9.3 bar on a single session</li>
           <li><strong>Add Chris Do to the Expert &amp; Authority speaker record</strong> — he holds our highest relevant score (9.78) and is not currently on it. Highest-value single action on this proposal</li>
@@ -1837,6 +1865,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <li><strong>Legal and comms review</strong> of the half-billion-dollar and $100M claims before they appear in external copy</li>
           <li><strong>Mastermind boundary</strong> — sign off in writing with JD what the Mastery teaches and what stays exclusive to the guild</li>
           <li><strong>AI for Founders boundary</strong> — agree the one-question router and the three overlap rules (content, offers, demand) with both curriculum teams before either page is written, so the two Masteries never argue in market</li>
+          <li><strong>S&amp;I boundary</strong> — agree with the S&amp;I team which programme owns Getting Booked, Business Models for Speakers and Productizing Your Message from 2027; their own detractors flag the drift</li>
           <li><strong>Cohort dates</strong> against the accelerator's November start, and intensive format (live-and-streamed vs stream-only)</li>
           <li><strong>Starter-kit build sprint</strong> — 4–6 weeks: shooting-script stack, quiz template, sequence skeleton, hook bank, ladder canvas. Owner needed</li>
           <li><strong>Title lockup and an ABCS pass</strong> on all 32 session titles, then load them into the empty Lessons and Modules tables</li>
@@ -1862,6 +1891,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="kicker">Cohort &amp; format data</div>
         <p class="body-md"><strong>Speaking &amp; Influence Mastery 2025 vs 2026 comparison</strong> (Airtable rollup) for Paul McKenna's and Lisa Nichols' scores and the paired-cadence, retention and workshop-gap figures. <strong>AI for Founders Mastery proposal</strong> for AIM/EM/SMM format evidence and the 872-respondent intake aggregate.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Journey data</div>
+        <p class="body-md"><strong>Speaking &amp; Influence base</strong> (appKlfvxdXofNlFfk, read 18 August 2026) — 84 lessons across both cohorts with attendance and enrolment, plus 148 detractor submissions. <strong>AI Summit &amp; Mastery base</strong> (appHS19yXObg8sHZv) — 176 lessons, with the 5-point-scale caveat on pre-2025 cohorts. Distilled into <code>data/learnings.json</code>.</p>
       </div>
       <div class="card">
         <div class="kicker">Live status</div>
