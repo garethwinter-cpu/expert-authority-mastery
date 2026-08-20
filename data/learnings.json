@@ -1,0 +1,108 @@
+{
+  "_meta": {
+    "purpose": "Curriculum-design learnings mined from our own cohort data. Both Mastery proposals (Expert & Authority, AI for Founders) read from this file so the same mistake is never designed in twice.",
+    "read_at": "2026-08-18",
+    "sources": {
+      "SIM": "appKlfvxdXofNlFfk — Speaking & Influence Mastery: 84 lesson records across 2025 (492 enrolled) and 2026 (456 enrolled), plus 148 detractor feedback submissions (rating ≤6)",
+      "AIM": "appHS19yXObg8sHZv — AI Summit & Mastery: 176 lesson records, 2023–2026 cohorts",
+      "comparison_page": "S&I 2025-vs-2026 comparison rollup, 18 Aug 2026"
+    }
+  },
+
+  "data_hygiene": [
+    "AIM records from 2023–24 cohorts use a 5-POINT scale (e.g. 'Build Applications with Glide' 5.00/5 = perfect, not 5/10). Never rank across cohorts without checking the scale. The 'bottom of base' is mostly scale confusion, not bad sessions.",
+    "SIM 2025 per-lesson ratings live in the comparison rollup, not the base's Avg Rating lookup — the base carries 2025 attendance only.",
+    "Single-vote rows (n=1–3) appear throughout every base and must be excluded before any ranking."
+  ],
+
+  "learnings": [
+    {
+      "id": "L1",
+      "name": "A multi-day intensive on the mainline cadence breaks retention permanently",
+      "evidence": "SIM 2025: show-up averaged ~57% across sessions 1–9. The One Talk Workshop ran as three consecutive mainline sessions: 39% → 31% → 34%. Attendance NEVER recovered — the post-OTW half of the programme ran 45% declining to 33%, a permanent ~14-point break in the curve.",
+      "rule": "A multi-day intensive must not consume mainline slots. Run it as an optional weekend block; the Tue/Thu cadence continues uninterrupted around it.",
+      "verified_fix": "SIM 2026 ran the same 3-day OTW as an unrated weekend Bonus (Fri–Sun, Aug 7–9). The next mainline sessions held at 56% and 58%. The fix is proven, not theoretical."
+    },
+    {
+      "id": "L2",
+      "name": "Off-cadence add-on sessions die regardless of teacher quality",
+      "evidence": "SIM 2025: Paul McKenna — the base's strongest guest asset (9.61–9.62) — drew 23% (112/492) for an off-rhythm Monday add-on, the worst attendance in the base. Dr. Shadé Zahrai's off-cadence session: 26%.",
+      "rule": "Never schedule content outside the established weekly rhythm. If it matters, it gets a mainline slot; if it doesn't fit, it becomes a recorded bonus."
+    },
+    {
+      "id": "L3",
+      "name": "Teacher substitution destroys a session",
+      "evidence": "SIM 2025: the Strategic Storytelling workshop swapped Eric Edmeades for a substitute host. It drew 24 detractor submissions — the most of any session in the base. Verbatim: 'Not organized, changed speaker, very disjointed, disappointed.'",
+      "rule": "Announce the named teacher only when confirmed, and never swap after announcement. A cancelled session damages less than a substituted one."
+    },
+    {
+      "id": "L4",
+      "name": "Breakout rooms are the #1 detractor theme",
+      "evidence": "20 of 148 SIM detractor comments mention breakout rooms — the largest single theme, ahead of tech issues (7) and length (5).",
+      "rule": "Breakouts only with a tight artefact-producing brief, a time-box, and an opt-out. Never as filler."
+    },
+    {
+      "id": "L5",
+      "name": "A long single-lead programme hits a repetition cliff around month two",
+      "evidence": "SIM 2025 ran ~46 sessions with one lead teacher. Verbatim detractor: 'Lost interest since 2nd month… it's been pretty much the same topic. Now it feels more like a chit chat session than a real Mastery.'",
+      "rule": "Rotate named authors on the teach slot and make each week ship a distinct artefact, so no two weeks feel interchangeable. 17–18 weeks, not 20+."
+    },
+    {
+      "id": "L6",
+      "name": "Q&A-only and low-content sessions are punished",
+      "evidence": "SIM 2025 detractors: 'I was disappointed that this was only Q&A — would have loved more content' (Professional Speaking week). AIM unstructured community calls: 5.89.",
+      "rule": "Every live touchpoint has a job and a deliverable. Q&A attaches to content; it is never the content."
+    },
+    {
+      "id": "L7",
+      "name": "Scope drift into a neighbouring programme's territory generates refund requests",
+      "evidence": "SIM 2025 detractor on the product-creation week: 'I'm only interested in speaking, not creating a course or teaching or creating a business.' Another student asked about refund timing when early weeks felt like business prep. SIM's back half (Getting Booked, Business Models for Speakers, Productizing Your Message) is Expert & Authority territory taught to a speaking audience.",
+      "rule": "Each programme teaches its own promise and cross-refers for the rest. The three-programme boundary (SIM = the talk, E&A = the business of being known, AIF = the machine) is a retention mechanism, not just marketing."
+    },
+    {
+      "id": "L8",
+      "name": "Abstract kickoffs fail; kickoffs are structurally weak even when competent",
+      "evidence": "AIM 'Kick Off & Define Your Vision in the Age of AI' (Mindvalley Team): 6.04, n=116, in front of 661. Even Vishen's own 2025 AIM kickoff only hit 8.47. Kickoff type average across AIM: 7.26 — the weakest session type.",
+      "rule": "Open with a build that produces a personal win in session one. Keep the kickoff short on vision and long on doing."
+    },
+    {
+      "id": "L9",
+      "name": "The paired Teach → Workshop cadence holds a room — but the workshop needs its own owner",
+      "evidence": "SIM 2026 (paired cadence): last-3-session attendance 56.4% vs 41.5% in 2025. But SIM 2026 workshops rate 9.25 vs 9.55 for lessons — every workshop below every teach bar the opener. AIM's dedicated-owner labs average 9.2 with a 9.46 ceiling.",
+      "rule": "Keep the paired cadence. Give the workshop slot a named owner whose only job is implementation, and require a shipped artefact per session."
+    },
+    {
+      "id": "L10",
+      "name": "Capstone integration sessions are the highest-rated thing we run",
+      "evidence": "AIM 'Tying Everything Together' (Vykintas): 9.87 n=99 — the top-rated session in the base, plus 9.66 for its Q&A and 9.46 for its lab. SIM 2026's highest is also an integrative session (Story, 9.74).",
+      "rule": "Design an explicit integration moment where students assemble everything into one working thing. Do not leave integration implicit."
+    },
+    {
+      "id": "L11",
+      "name": "Claims drift when documents cite documents",
+      "evidence": "The AI Founders proposal cites 'a perfect-10 Implementation Lab'. The base shows labs from 8.14 to 9.46 — no 10 exists (the 9.87 was the capstone teach). The author deck's 'Chris Do 9.83, highest in SMM' is 9.78 and ranks 6th. Natalie Ellis 9.25 is 9.16.",
+      "rule": "Every figure in a proposal is re-derived from the base and carries its sample size. data/authors.json is the only citation source."
+    }
+  ],
+
+  "verified_corrections_to_live_pages": [
+    { "page": "ai-founders", "claim": "a perfect score for a hands-on build session (10.0 lab)", "actual": "Implementation Labs run 8.14–9.46, avg ≈9.2. 'Build the App You Always Wished Existed' lab = 9.18 (n=83). The 9.87 belongs to the 'Tying Everything Together' capstone TEACH (n=99)." },
+    { "page": "ai-founders", "claim": "Find, Understand & Win Your Best Customers 9.69", "actual": "9.68, n=110 — confirmed within rounding" },
+    { "page": "ai-founders", "claim": "Build Your AI OS Pt1/Pt2 9.64/9.54", "actual": "9.63 (n=79) / 9.54 (n=82) — confirmed" },
+    { "page": "expert-authority", "claim": "AIM labs 9.0–10.0 incl. a perfect 10 (legacy text)", "actual": "corrected to 8.14–9.46, avg ≈9.2" }
+  ],
+
+  "sim_2026_verified_samples": {
+    "paul_mckenna_instant_confidence": { "rating": 9.61, "n": 79, "attendance": "56%" },
+    "lisa_nichols_power_of_story": { "rating": 9.74, "n": 75, "attendance": "58%" },
+    "lisa_nichols_story_workshop": { "rating": 9.39, "n": 64, "attendance": "54%" }
+  },
+
+  "three_programme_boundary": {
+    "speaking_influence": "The talk. Stagecraft, story delivery, confidence, holding a room. Ends where monetisation begins.",
+    "expert_authority": "The business of being known. Niche, product ladder, masterclass, traffic, the close. Assumes you can speak; teaches you how to be found and paid.",
+    "ai_founders": "The machine. Five pillars rebuilt as AI systems for someone who already has something to sell. Assumes demand exists; teaches you how to serve it without drowning.",
+    "router": "Can't hold a room → SIM. Can hold a room but nobody's buying → E&A. People are buying and it's eating you alive → AIF.",
+    "evidence": "SIM detractors explicitly rejected business-building content inside a speaking programme (L7). The boundary is what students are telling us they want."
+  }
+}

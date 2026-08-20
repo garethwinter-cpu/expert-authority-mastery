@@ -15,6 +15,14 @@ app.get('/proposal', (req, res) => {
   res.sendFile(path.resolve(ROOT, 'index.html'));
 });
 
+app.get('/expert-authority', (req, res) => {
+  res.sendFile(path.resolve(ROOT, 'index.html'));
+});
+
+app.get('/ai-founders', (req, res) => {
+  res.sendFile(path.resolve(ROOT, 'ai-founders.html'));
+});
+
 app.get('/healthz', (req, res) => res.status(200).send('ok'));
 
 app.listen(PORT, () => {

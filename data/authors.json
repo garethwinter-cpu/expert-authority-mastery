@@ -15,7 +15,6 @@
       "Never cite a 'highest in base' claim without re-deriving it from the base."
     ]
   },
-
   "deck_discrepancies_found": [
     {
       "author": "Chris Do",
@@ -24,186 +23,587 @@
       "n": 37,
       "note": "Deck also claims 'highest single lesson score in Social Media Mastery'. FALSE — it ranks 6th. Sabrina Stocker 9.93, Domenic Ashburn 9.85, Vishen 9.81 and 9.79 all sit above it."
     },
-    { "author": "John Lee", "deck_says": 9.56, "base_says": 9.54, "n": 35 },
-    { "author": "Natalie Ellis", "deck_says": 9.25, "base_says": 9.16, "n": 37 },
+    {
+      "author": "John Lee",
+      "deck_says": 9.56,
+      "base_says": 9.54,
+      "n": 35
+    },
+    {
+      "author": "Natalie Ellis",
+      "deck_says": 9.25,
+      "base_says": 9.16,
+      "n": 37
+    },
     {
       "author": "Chris Do — Strategic Content Architecture",
       "deck_says": 9.18,
       "base_says": "9.18 in SMM (n=51) but 8.88 in EM (n=60)",
       "note": "Two different deliveries of the same title in two bases. Cite the base, not the title."
+    },
+    {
+      "author": "Vykintas Glodenis / AIM labs",
+      "deck_says": "Implementation Labs 9.0–10.0 including a perfect 10 ('Build the App You Always Wished Existed': 10.0)",
+      "base_says": "Labs run 8.14–9.46, avg ≈9.2. That lab is 9.18 (n=83). No 10.0 exists; 9.87 is the capstone teach.",
+      "note": "Claim appears on the live AI Founders proposal page and in earlier drafts of the E&A proposal."
     }
   ],
-
   "authors": {
     "vishen_lakhiani": {
       "name": "Vishen Lakhiani",
       "role_ea": "Curriculum Expert",
       "verified": [
-        { "title": "Using Webinars to Sell", "base": "EM", "rating": 9.58, "n": 57, "relevance": "masterclass doctrine — W9 intensive" },
-        { "title": "Graduation & Success Sharing", "base": "EM", "rating": 9.52, "n": 56 },
-        { "title": "Unlocking New Revenue Streams with Innovation", "base": "EM", "rating": 9.40, "n": 53 },
-        { "title": "Vibe Coding Part 2", "base": "EM", "rating": 9.22, "n": 90 },
-        { "title": "Employee Branding & Hiring Secrets", "base": "EM", "rating": 9.17, "n": 54 },
-        { "title": "OKRs", "base": "EM", "rating": 9.00, "n": 54 },
-        { "title": "Build Your Lead Magnet Funnel: From Click to Client", "base": "EM", "rating": 8.87, "n": 76, "relevance": "W13 free rung" },
-        { "title": "Vibe Coding to Build Your First Prototype", "base": "EM", "rating": 8.88, "n": 90 },
-        { "title": "Writing Copy that Sells", "base": "EM", "rating": 8.71, "n": 73 },
-        { "title": "Own Your Audience: List Building & Email Lists", "base": "EM", "rating": 8.68, "n": 69, "relevance": "W13 nine-part sequence" },
-        { "title": "Designing Websites that Convert", "base": "EM", "rating": 8.65, "n": 83 },
-        { "title": "Building Businesses in the Age of AI (Opening Class)", "base": "EM", "rating": 8.30, "n": 141 },
-        { "title": "Optimizing Revenue with Upsells & Downsells", "base": "EM", "rating": 8.29, "n": 90, "relevance": "W14 product step ladder" },
-        { "title": "The AI-Powered Entrepreneur", "base": "EM", "rating": 8.25, "n": 106 },
-        { "title": "Social Media Strategies To Produce Impactful Videos", "base": "SMM", "rating": 9.81, "n": 43 },
-        { "title": "The Founder's Content System", "base": "SMM", "rating": 9.79, "n": 30 }
+        {
+          "title": "Using Webinars to Sell",
+          "base": "EM",
+          "rating": 9.58,
+          "n": 57,
+          "relevance": "masterclass doctrine — W9 intensive"
+        },
+        {
+          "title": "Graduation & Success Sharing",
+          "base": "EM",
+          "rating": 9.52,
+          "n": 56
+        },
+        {
+          "title": "Unlocking New Revenue Streams with Innovation",
+          "base": "EM",
+          "rating": 9.4,
+          "n": 53
+        },
+        {
+          "title": "Vibe Coding Part 2",
+          "base": "EM",
+          "rating": 9.22,
+          "n": 90
+        },
+        {
+          "title": "Employee Branding & Hiring Secrets",
+          "base": "EM",
+          "rating": 9.17,
+          "n": 54
+        },
+        {
+          "title": "OKRs",
+          "base": "EM",
+          "rating": 9.0,
+          "n": 54
+        },
+        {
+          "title": "Build Your Lead Magnet Funnel: From Click to Client",
+          "base": "EM",
+          "rating": 8.87,
+          "n": 76,
+          "relevance": "W13 free rung"
+        },
+        {
+          "title": "Vibe Coding to Build Your First Prototype",
+          "base": "EM",
+          "rating": 8.88,
+          "n": 90
+        },
+        {
+          "title": "Writing Copy that Sells",
+          "base": "EM",
+          "rating": 8.71,
+          "n": 73
+        },
+        {
+          "title": "Own Your Audience: List Building & Email Lists",
+          "base": "EM",
+          "rating": 8.68,
+          "n": 69,
+          "relevance": "W13 nine-part sequence"
+        },
+        {
+          "title": "Designing Websites that Convert",
+          "base": "EM",
+          "rating": 8.65,
+          "n": 83
+        },
+        {
+          "title": "Building Businesses in the Age of AI (Opening Class)",
+          "base": "EM",
+          "rating": 8.3,
+          "n": 141
+        },
+        {
+          "title": "Optimizing Revenue with Upsells & Downsells",
+          "base": "EM",
+          "rating": 8.29,
+          "n": 90,
+          "relevance": "W14 product step ladder"
+        },
+        {
+          "title": "The AI-Powered Entrepreneur",
+          "base": "EM",
+          "rating": 8.25,
+          "n": 106
+        },
+        {
+          "title": "Social Media Strategies To Produce Impactful Videos",
+          "base": "SMM",
+          "rating": 9.81,
+          "n": 43
+        },
+        {
+          "title": "The Founder's Content System",
+          "base": "SMM",
+          "rating": 9.79,
+          "n": 30
+        },
+        {
+          "title": "Build Your First App with AI Vibe-Coding",
+          "base": "AIM",
+          "rating": 9.49,
+          "n": 115
+        }
       ],
       "reading": "Bimodal, and the split matters for this curriculum. Content and webinar teaching rates 9.6-9.8. Direct-response mechanics — email lists, copy, upsells, funnels — rates 8.3-8.9, on large samples. The ladder and the email sequence are the two weakest topics in his rated history, and they are two of his eight teach weeks in the current design."
     },
-
     "ajit_nawalkha": {
       "name": "Ajit Nawalkha",
       "role_ea": "not currently in the E&A proposal — see reading",
       "verified": [
-        { "title": "Your Million-Dollar Game Plan", "base": "EM", "rating": 9.97, "n": 36 },
-        { "title": "The Essential Three Offers", "base": "EM", "rating": 9.81, "n": 32 },
-        { "title": "The 21-Step Sales Letter", "base": "EM", "rating": 9.79, "n": 28 },
-        { "title": "Money Mastery for Coaches and Consultants", "base": "EM", "rating": 9.78, "n": 23 },
-        { "title": "Predictable Marketing Calendar", "base": "EM", "rating": 9.77, "n": 31 },
-        { "title": "The Six-Week Sprint System", "base": "EM", "rating": 9.78, "n": 18 },
-        { "title": "Workshops and Small Events", "base": "EM", "rating": 9.77, "n": 26 },
-        { "title": "Writing Social Content with AI", "base": "EM", "rating": 9.68, "n": 22 },
-        { "title": "Building a Remote Dream Team", "base": "EM", "rating": 9.67, "n": 18 },
-        { "title": "The Founder's Time System", "base": "EM", "rating": 9.62, "n": 56 },
-        { "title": "What to Build with AI (and What to Avoid)", "base": "EM", "rating": 9.58, "n": 31 },
-        { "title": "Selling High Ticket Coaching and Consulting", "base": "EM", "rating": 9.54, "n": 28 },
-        { "title": "Designing Your $10K+ Offer", "base": "EM", "rating": 9.45, "n": 38 },
-        { "title": "Product Stacking for Profits", "base": "EM", "rating": 9.40, "n": 31 }
+        {
+          "title": "Your Million-Dollar Game Plan",
+          "base": "EM",
+          "rating": 9.97,
+          "n": 36
+        },
+        {
+          "title": "The Essential Three Offers",
+          "base": "EM",
+          "rating": 9.81,
+          "n": 32
+        },
+        {
+          "title": "The 21-Step Sales Letter",
+          "base": "EM",
+          "rating": 9.79,
+          "n": 28
+        },
+        {
+          "title": "Money Mastery for Coaches and Consultants",
+          "base": "EM",
+          "rating": 9.78,
+          "n": 23
+        },
+        {
+          "title": "Predictable Marketing Calendar",
+          "base": "EM",
+          "rating": 9.77,
+          "n": 31
+        },
+        {
+          "title": "The Six-Week Sprint System",
+          "base": "EM",
+          "rating": 9.78,
+          "n": 18
+        },
+        {
+          "title": "Workshops and Small Events",
+          "base": "EM",
+          "rating": 9.77,
+          "n": 26
+        },
+        {
+          "title": "Writing Social Content with AI",
+          "base": "EM",
+          "rating": 9.68,
+          "n": 22
+        },
+        {
+          "title": "Building a Remote Dream Team",
+          "base": "EM",
+          "rating": 9.67,
+          "n": 18
+        },
+        {
+          "title": "The Founder's Time System",
+          "base": "EM",
+          "rating": 9.62,
+          "n": 56
+        },
+        {
+          "title": "What to Build with AI (and What to Avoid)",
+          "base": "EM",
+          "rating": 9.58,
+          "n": 31
+        },
+        {
+          "title": "Selling High Ticket Coaching and Consulting",
+          "base": "EM",
+          "rating": 9.54,
+          "n": 28
+        },
+        {
+          "title": "Designing Your $10K+ Offer",
+          "base": "EM",
+          "rating": 9.45,
+          "n": 38
+        },
+        {
+          "title": "Product Stacking for Profits",
+          "base": "EM",
+          "rating": 9.4,
+          "n": 31
+        }
       ],
       "reading": "The most-tested instructor in any Mindvalley programme, and his strongest topics are this curriculum's spine: offers, product stacking, sales letters, launches, high-ticket selling, workshops. On the offer-and-ladder mechanics he rates roughly a full point above Vishen. Worth a deliberate decision rather than an omission."
     },
-
     "chris_do": {
       "name": "Chris Do",
       "verified": [
-        { "title": "From Viral to Valuable: Attention → Authority + Sales", "base": "SMM", "rating": 9.78, "n": 37 },
-        { "title": "The Conversion Map Workshop", "base": "SMM", "rating": 9.57, "n": 40 },
-        { "title": "Strategic Content Architecture", "base": "SMM", "rating": 9.18, "n": 51 },
-        { "title": "Strategic Content Architecture", "base": "EM", "rating": 8.88, "n": 60 }
+        {
+          "title": "From Viral to Valuable: Attention → Authority + Sales",
+          "base": "SMM",
+          "rating": 9.78,
+          "n": 37
+        },
+        {
+          "title": "The Conversion Map Workshop",
+          "base": "SMM",
+          "rating": 9.57,
+          "n": 40
+        },
+        {
+          "title": "Strategic Content Architecture",
+          "base": "SMM",
+          "rating": 9.18,
+          "n": 51
+        },
+        {
+          "title": "Strategic Content Architecture",
+          "base": "EM",
+          "rating": 8.88,
+          "n": 60
+        }
       ],
       "reading": "Strong and consistent on the attention-to-authority topic, which is exactly this programme's bridge. Not the top score in SMM — that claim in the deck is wrong. Still not on the Expert & Authority speaker record."
     },
-
     "sabrina_stocker": {
       "name": "Sabrina Stocker",
       "verified": [
-        { "title": "AI Build: Live Feedback", "base": "SMM", "rating": 9.93, "n": 30, "format": "live build / feedback lab" }
+        {
+          "title": "AI Build: Live Feedback",
+          "base": "SMM",
+          "rating": 9.93,
+          "n": 30,
+          "format": "live build / feedback lab"
+        }
       ],
       "reading": "The highest-rated lesson in the entire Social Media Mastery base, and it is a live-build feedback session — the exact format the Thursday lab uses. This is the strongest lab-format evidence we hold on anyone. Currently listed only as a lab-lead alternate; the data argues for promoting her."
     },
-
     "kwame_christian": {
       "name": "Kwame Christian",
       "verified": [
-        { "title": "Build & Test Your Personal AI Operating System", "base": "EM", "rating": 9.59, "n": 44 },
-        { "title": "Contracts and Agreements", "base": "EM", "rating": 9.56, "n": 50 },
-        { "title": "Negotiation", "base": "EM", "rating": 9.47, "n": 49 }
+        {
+          "title": "Build & Test Your Personal AI Operating System",
+          "base": "EM",
+          "rating": 9.59,
+          "n": 44
+        },
+        {
+          "title": "Contracts and Agreements",
+          "base": "EM",
+          "rating": 9.56,
+          "n": 50
+        },
+        {
+          "title": "Negotiation",
+          "base": "EM",
+          "rating": 9.47,
+          "n": 49
+        }
       ],
       "reading": "Deck figures confirmed exactly. Three sessions, all 9.47+, healthy samples. The most reliable guest on this list."
     },
-
     "john_lee": {
       "name": "John Lee",
       "verified": [
-        { "title": "How to Make $1,000,000 From Social Media & AI (Without Being Famous)", "base": "SMM", "rating": 9.54, "n": 35 },
-        { "title": "From Followers to Freedom — Passive Income", "base": "SMM", "rating": 9.49, "n": 51 },
-        { "title": "Monetizing Your Brand — Visibility into High-Ticket", "base": "SMM", "rating": 9.14, "n": 36 }
+        {
+          "title": "How to Make $1,000,000 From Social Media & AI (Without Being Famous)",
+          "base": "SMM",
+          "rating": 9.54,
+          "n": 35
+        },
+        {
+          "title": "From Followers to Freedom — Passive Income",
+          "base": "SMM",
+          "rating": 9.49,
+          "n": 51
+        },
+        {
+          "title": "Monetizing Your Brand — Visibility into High-Ticket",
+          "base": "SMM",
+          "rating": 9.14,
+          "n": 36
+        }
       ],
       "reading": "Three real sessions, 9.14-9.54. Ignore the three 5.00 n=1 rows in SMM — single-vote noise, not signal."
     },
-
     "natalie_ellis": {
       "name": "Natalie Ellis",
       "verified": [
-        { "title": "The Million Dollar Social Sales Funnel", "base": "SMM", "rating": 9.16, "n": 37 }
+        {
+          "title": "The Million Dollar Social Sales Funnel",
+          "base": "SMM",
+          "rating": 9.16,
+          "n": 37
+        }
       ],
       "reading": "9.16, not the 9.25 in the deck. One session only, and it is the lowest-rated author currently carrying a teach week in the E&A proposal. Below the 9.3 bar."
     },
-
     "paul_mckenna": {
       "name": "Paul McKenna",
       "verified": [
-        { "title": "Instant Confidence", "base": "SIM", "rating": 9.61, "n": null },
-        { "title": "Move Beyond Fear", "base": "SIM", "rating": 9.62, "n": null }
+        {
+          "title": "Instant Confidence",
+          "base": "SIM",
+          "rating": 9.61,
+          "n": 79
+        },
+        {
+          "title": "Move Beyond Fear",
+          "base": "SIM",
+          "rating": 9.62,
+          "n": null
+        }
       ],
-      "reading": "Held within 0.01 across two cohorts. Sample sizes still to be pulled from the SIM base."
+      "reading": "Held within 0.01 across two cohorts. 2026 sample verified: n=79. Caution from SIM 2025: his off-cadence add-on session drew 23% attendance — the format, not the teacher, decides show-up (learnings L2)."
     },
-
     "lisa_nichols": {
       "name": "Lisa Nichols",
       "verified": [
-        { "title": "The Evolution and Power of Story", "base": "SIM", "rating": 9.74, "n": null }
+        {
+          "title": "The Evolution and Power of Story",
+          "base": "SIM",
+          "rating": 9.74,
+          "n": 75
+        },
+        {
+          "title": "Workshop | The Evolution and Power of Story",
+          "base": "SIM",
+          "rating": 9.39,
+          "n": 64
+        }
       ],
-      "reading": "Highest-rated SIM 2026 session to date. Sample size still to be pulled."
+      "reading": "Highest-rated SIM 2026 session to date, n=75. Her workshop version also ran (9.39, n=64) — one of the few S&I workshops with its own data."
     },
-
     "alessio_pieroni": {
       "name": "Alessio Pieroni",
       "verified": [],
       "reading": "No Mindvalley cohort rating in any base. Evidence is commercial plus the accelerator segment. Now carries lab lead on 7 days plus the intensive build floor — the largest unrated exposure in the proposal."
     },
-
     "akash_rupalia": {
       "name": "Akash \"Kash\" Rupalia",
       "verified": [],
       "reading": "No Mindvalley cohort rating. Now carries lab lead on 5 days plus the intensive shoot floor."
     },
-
     "domenic_ashburn": {
       "name": "Domenic Ashburn",
       "role_ea": "not proposed — recorded for completeness",
       "verified": [
-        { "title": "Q&A with Domenic", "base": "SMM", "rating": 9.85, "n": 47 },
-        { "title": "Leveraging AI for Your Content", "base": "SMM", "rating": 9.77, "n": 61 },
-        { "title": "Social Media Alchemy", "base": "SMM", "rating": 9.69, "n": 32 },
-        { "title": "AI-Powered Scale & Integration", "base": "SMM", "rating": 9.66, "n": 35 },
-        { "title": "Integration & Unified Strategy Sprint", "base": "SMM", "rating": 9.58, "n": 32 },
-        { "title": "AI Systems for Content Velocity & Testing", "base": "SMM", "rating": 9.47, "n": 36 },
-        { "title": "AI Implementation Workshop", "base": "SMM", "rating": 8.58, "n": 31 }
+        {
+          "title": "Generate Any Image or Graphic Asset",
+          "base": "AIM",
+          "rating": 9.62,
+          "n": 111
+        },
+        {
+          "title": "Turn Ideas into Images with AI",
+          "base": "AIM",
+          "rating": 9.53,
+          "n": 229
+        },
+        {
+          "title": "Q&A with Domenic",
+          "base": "SMM",
+          "rating": 9.85,
+          "n": 47
+        },
+        {
+          "title": "Leveraging AI for Your Content",
+          "base": "SMM",
+          "rating": 9.77,
+          "n": 61
+        },
+        {
+          "title": "Social Media Alchemy",
+          "base": "SMM",
+          "rating": 9.69,
+          "n": 32
+        },
+        {
+          "title": "AI-Powered Scale & Integration",
+          "base": "SMM",
+          "rating": 9.66,
+          "n": 35
+        },
+        {
+          "title": "Integration & Unified Strategy Sprint",
+          "base": "SMM",
+          "rating": 9.58,
+          "n": 32
+        },
+        {
+          "title": "AI Systems for Content Velocity & Testing",
+          "base": "SMM",
+          "rating": 9.47,
+          "n": 36
+        },
+        {
+          "title": "AI Implementation Workshop",
+          "base": "SMM",
+          "rating": 8.58,
+          "n": 31
+        }
       ],
-      "reading": "Seven sessions, six of them 9.47+. Deep bench strength nobody has proposed for either Mastery."
+      "reading": "Deep bench strength across SMM and AIM — huge samples (n up to 229), consistently 9.4+. Nobody has proposed him for either Mastery."
     },
-
     "daniel_priestley": {
       "name": "Daniel Priestley",
       "role_ai_founders": "co-owner",
       "verified": [
-        { "title": "Designing Your Next 12 Months", "base": "EM", "rating": 9.87, "n": 46 },
-        { "title": "Asset Leverage & Repurposing", "base": "EM", "rating": 9.82, "n": 34 },
-        { "title": "High Value Offers & Price Anchoring", "base": "EM", "rating": 9.74, "n": 68 },
-        { "title": "Monetization Frameworks", "base": "EM", "rating": 9.61, "n": 84 },
-        { "title": "Authority Content Systems", "base": "EM", "rating": 9.56, "n": 57 },
-        { "title": "The 5 Pillars of Influence", "base": "EM", "rating": 9.55, "n": 60 },
-        { "title": "Scaling Influence Systems", "base": "EM", "rating": 9.52, "n": 48 },
-        { "title": "Your Signature Positioning", "base": "EM", "rating": 9.51, "n": 55 },
-        { "title": "From Idea to Impact", "base": "EM", "rating": 9.49, "n": 107 },
-        { "title": "Legacy & Exit Strategy", "base": "EM", "rating": 9.47, "n": 55 },
-        { "title": "Oversubscription Strategies", "base": "EM", "rating": 9.26, "n": 38 },
-        { "title": "Waitlists, Scarcity and Launch Mechanics", "base": "EM", "rating": 9.22, "n": 49 }
+        {
+          "title": "Designing Your Next 12 Months",
+          "base": "EM",
+          "rating": 9.87,
+          "n": 46
+        },
+        {
+          "title": "Asset Leverage & Repurposing",
+          "base": "EM",
+          "rating": 9.82,
+          "n": 34
+        },
+        {
+          "title": "High Value Offers & Price Anchoring",
+          "base": "EM",
+          "rating": 9.74,
+          "n": 68
+        },
+        {
+          "title": "Monetization Frameworks",
+          "base": "EM",
+          "rating": 9.61,
+          "n": 84
+        },
+        {
+          "title": "Authority Content Systems",
+          "base": "EM",
+          "rating": 9.56,
+          "n": 57
+        },
+        {
+          "title": "The 5 Pillars of Influence",
+          "base": "EM",
+          "rating": 9.55,
+          "n": 60
+        },
+        {
+          "title": "Scaling Influence Systems",
+          "base": "EM",
+          "rating": 9.52,
+          "n": 48
+        },
+        {
+          "title": "Your Signature Positioning",
+          "base": "EM",
+          "rating": 9.51,
+          "n": 55
+        },
+        {
+          "title": "From Idea to Impact",
+          "base": "EM",
+          "rating": 9.49,
+          "n": 107
+        },
+        {
+          "title": "Legacy & Exit Strategy",
+          "base": "EM",
+          "rating": 9.47,
+          "n": 55
+        },
+        {
+          "title": "Oversubscription Strategies",
+          "base": "EM",
+          "rating": 9.26,
+          "n": 38
+        },
+        {
+          "title": "Waitlists, Scarcity and Launch Mechanics",
+          "base": "EM",
+          "rating": 9.22,
+          "n": 49
+        },
+        {
+          "title": "Find, Understand, and Win Your Best Customers",
+          "base": "AIM",
+          "rating": 9.68,
+          "n": 110
+        }
       ],
       "reading": "All twelve deck figures confirmed against the base. Average 9.55, floor 9.22. The deck's Priestley data is accurate — the errors are elsewhere."
     },
-
     "noelle_russell": {
       "name": "Noelle Russell",
       "verified": [
-        { "title": "From Founder → AI-Leveraged Operator", "base": "EM", "rating": 9.97, "n": 38 }
+        {
+          "title": "From Founder → AI-Leveraged Operator",
+          "base": "EM",
+          "rating": 9.97,
+          "n": 38
+        }
       ],
       "reading": "Confirmed. Highest single lesson in the EM base."
+    },
+    "vykintas_glodenis": {
+      "name": "Vykintas Glodenis",
+      "verified": [
+        {
+          "title": "Tying Everything Together (capstone teach)",
+          "base": "AIM",
+          "rating": 9.87,
+          "n": 99
+        },
+        {
+          "title": "Q&A for Tying Everything Together",
+          "base": "AIM",
+          "rating": 9.66,
+          "n": 73
+        },
+        {
+          "title": "Build Your AI Operating System (Part 1)",
+          "base": "AIM",
+          "rating": 9.63,
+          "n": 79
+        },
+        {
+          "title": "Implementation Lab: Tying Everything Together",
+          "base": "AIM",
+          "rating": 9.46,
+          "n": 76
+        },
+        {
+          "title": "Implementation Lab: Build the App You Always Wished Existed",
+          "base": "AIM",
+          "rating": 9.18,
+          "n": 83
+        },
+        {
+          "title": "Implementation Lab: Applying Context Engineering",
+          "base": "AIM",
+          "rating": 8.14,
+          "n": 131
+        }
+      ],
+      "reading": "Excellent, but the AI Founders page inflates him: labs run 8.14–9.46 (avg ≈9.2), and NO perfect-10 lab exists — the 9.87 is his capstone teach. Strongest at integration; the capstone family (teach 9.87, Q&A 9.66, lab 9.46) is the best-rated cluster in the AIM base."
     }
   },
-
   "pending": [
-    "AI Mastery base (appHS19yXObg8sHZv / tblxZy7RMJ2naoHhS) — Implementation Lab ratings and Vykintas Glodenis figures not yet pulled",
-    "SIM base — sample sizes for Paul McKenna and Lisa Nichols",
     "Accelerator segment feedback for Alessio, Kash, Jimmy, Sabrina, Safwaan"
   ]
 }
