@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>Mastery Proposals</title>
-<meta name="description" content="Mindvalley Mastery curriculum proposals — one repo, one data source, one design system."/>
+<meta name="description" content="Two new Masteries for the Exponential Entrepreneur pathway — the outcomes, who leads them, who they're for, and how they fit together."/>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
@@ -16,11 +16,20 @@
  --dusk:linear-gradient(135deg,#0F131A 0%,#44087A 52%,#7A12D4 100%);
 }
 .hero{padding:56px 0 64px}
-.proposal-card{display:block;color:inherit;transition:box-shadow .18s var(--ease),transform .18s var(--ease)}
-.proposal-card:hover{box-shadow:var(--shadow-medium);transform:translateY(-2px)}
-.proposal-card h3{color:var(--brand-content)}
-.meta-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
-code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--grey-200);padding:2px 6px;border-radius:6px}
+.prog{display:flex;flex-direction:column}
+.prog .lbl{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-content);margin:18px 0 6px}
+.prog .outcome-lead{font-size:17.5px;line-height:1.5;font-weight:700;color:var(--ink);margin-top:10px}
+.prog .cta{margin-top:auto;padding-top:22px}
+.cta a{display:inline-block;background:var(--brand);color:#fff;font-weight:600;font-size:14.5px;padding:11px 24px;border-radius:128px}
+.cta a:hover{background:var(--brand-content)}
+.cta a.ghost{background:transparent;color:var(--brand-content);border:1px solid var(--brand-border)}
+ul.tick{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+ul.tick li{font-size:14.5px;color:var(--text-muted);line-height:1.5;padding-left:24px;position:relative}
+ul.tick li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--green);font-weight:700}
+ul.symptom{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+ul.symptom li{font-size:14.5px;color:var(--text-muted);line-height:1.5;padding-left:24px;position:relative}
+ul.symptom li::before{content:"—";position:absolute;left:0;top:0;color:var(--text-subtle);font-weight:700}
+.posline{background:var(--brand-light);border:1px solid var(--brand-border);border-radius:12px;padding:14px 18px;font-size:15px;line-height:1.55;color:var(--brand-dark);font-weight:500}
 </style>
 </head>
 <body>
@@ -35,42 +44,160 @@ code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--
 <header class="hero">
   <div class="wrap">
     <div class="overline on-dark">Exponential Entrepreneur pathway</div>
-    <h1>Mastery Proposals</h1>
-    <p class="answer">Curriculum proposals built from our own cohort data. One repo, one author-data source, one design system — so no figure is ever cited two different ways.</p>
+    <h1>Two new Masteries. One journey.</h1>
+    <p class="answer"><strong>Expert &amp; Authority</strong> makes you known and paid for what you know. <strong>AI for Founders</strong> makes the business run without running you into the ground. Different problem, different programme — and for most students, one comes before the other.</p>
   </div>
 </header>
 
 <div class="tab-panel active" style="display:block">
 <div class="wrap">
 
+  <!-- ============ THE TWO PROGRAMMES ============ -->
   <section>
     <div class="grid g2">
-      <a class="card proposal-card" href="/expert-authority">
-        <div class="kicker">17 weeks · Vishen Lakhiani, Curriculum Expert</div>
+
+      <div class="card prog">
+        <div class="kicker">17 weeks · $4,999 · led by Vishen Lakhiani as Curriculum Expert</div>
         <h3>Expert &amp; Authority Mastery</h3>
-        <p class="body-md" style="margin-top:8px">Turns the six-hour accelerator into a full programme. Students graduate with a live product ladder — an edge, a published product, a masterclass shot, three paid rungs, first revenue banked.</p>
-        <div class="meta-row"><span class="badge">Fixes demand</span><span class="badge green">$4,999 · stated on stage</span></div>
-      </a>
-      <a class="card proposal-card" href="/ai-founders">
-        <div class="kicker">18 weeks · Vishen Lakhiani × Daniel Priestley</div>
+
+        <div class="lbl">The outcome</div>
+        <p class="outcome-lead">Your expertise, earning — you graduate as a recognised authority with a live product ladder and your first revenue already banked.</p>
+
+        <div class="lbl">The benefits</div>
+        <ul class="tick">
+          <li>A niche and a positioning line only you could own — your story, told without flinching</li>
+          <li>A published product with your name and a price on it, live on the internet</li>
+          <li>A 60-minute masterclass, shot and reviewed, built on the system behind half a billion dollars in sales</li>
+          <li>A traffic engine running on one platform — hooks banked, profile ranking, a nine-part email sequence selling while you sleep</li>
+          <li>Three paid rungs, so every customer has somewhere to climb — from a free download to a five-figure relationship</li>
+        </ul>
+
+        <div class="lbl">The positioning</div>
+        <div class="posline">The personal brand and storytelling Mastery: become the name people think of — and pay for — in your niche.</div>
+
+        <div class="lbl">Who it's for</div>
+        <p class="body-md">Coaches, consultants, healers, authors and founders-as-the-face — people with real expertise earning under $100K from it, because nobody knows they exist yet. No profile, no offer, no path from stranger to client.</p>
+
+        <div class="lbl">Faculty</div>
+        <p class="body-md">Vishen Lakhiani, with Paul McKenna, Chris Do, Lisa Nichols, Kwame Christian, John Lee, Natalie Ellis, Alessio Pieroni and Ajit Nawalkha. Hands-on labs led by Alessio Pieroni and Kash Rupalia.</p>
+
+        <div class="cta"><a href="/expert-authority">Read the full proposal</a></div>
+      </div>
+
+      <div class="card prog">
+        <div class="kicker">18 weeks · co-owned by Vishen Lakhiani × Daniel Priestley</div>
         <h3>AI for Founders Mastery</h3>
-        <p class="body-md" style="margin-top:8px">Five pillars — marketing, sales, operations, people, finance — rebuilt as AI systems that run while the founder leads. Students graduate with the Founder Operating System in production.</p>
-        <div class="meta-row"><span class="badge">Fixes capacity</span><span class="badge orange">Proposal v2 · verified figures</span></div>
-      </a>
+
+        <div class="lbl">The outcome</div>
+        <p class="outcome-lead">A business that grows without grinding you down — you graduate owning a machine that markets, sells, delivers and reports while you lead.</p>
+
+        <div class="lbl">The benefits</div>
+        <ul class="tick">
+          <li>A company brain that knows your business — offers, customers, numbers — and answers like a co-founder</li>
+          <li>A demand engine capturing leads and following up automatically, so nothing ever goes cold</li>
+          <li>Delivery running itself, with you kept in the loop only at the moments that build trust</li>
+          <li>A finance cockpit — cash, margin, forecast — readable in five minutes every Monday</li>
+          <li>The four-day founder week: your time back, with a 12-month growth calendar already loaded</li>
+        </ul>
+
+        <div class="lbl">The positioning</div>
+        <div class="posline">The AI and systems Mastery: hands-on with the tools, practical about the business — scale without headcount.</div>
+
+        <div class="lbl">Who it's for</div>
+        <p class="body-md">Founders with something real to sell — a product, a service, even themselves as the service — whose business runs entirely through them. Every lead, every delivery, every decision: theirs. Growth currently means burnout or hiring.</p>
+
+        <div class="lbl">Faculty</div>
+        <p class="body-md">Vishen Lakhiani and Daniel Priestley — our most consistent 9.5+ teacher — with Noelle Russell, Marie Forleo, Shawn Kanungo and Alex Dogliotti. Implementation labs by Vykintas Glodenis.</p>
+
+        <div class="cta"><a href="/ai-founders">Read the full proposal</a></div>
+      </div>
+
     </div>
   </section>
 
+  <!-- ============ DEMAND vs CAPACITY, PLAINLY ============ -->
   <section>
+    <div class="section-head">
+      <div class="overline">The language we use</div>
+      <h2>One fixes demand. One fixes capacity. Here's what that actually means.</h2>
+      <p class="body-md">Every struggling expert business is broken in one of two places. Either not enough people want to buy from you — a <strong>demand</strong> problem — or plenty do, and you can't serve them without breaking yourself — a <strong>capacity</strong> problem. The programmes split exactly on that line.</p>
+    </div>
     <div class="grid g2">
-      <a class="card proposal-card" href="/positioning">
-        <div class="kicker">Cross-programme</div>
-        <h3>One Pathway, Two Masteries</h3>
-        <p class="body-md" style="margin-top:8px">The canonical boundary: who each programme is for, the one-question router, and the three overlap rules. Generated from the same source both proposals render — it cannot drift.</p>
-      </a>
       <div class="card">
-        <div class="kicker">How this repo works</div>
-        <p class="body-md" style="margin-top:8px"><strong>data/authors.json</strong> — every verified rating, one source · <strong>data/boundary.json</strong> — the positioning, one source · <strong>shared/wellness.css</strong> — the design system, once · <strong>CURRICULUM-BRIEF.md</strong> — the reusable prompt pack for the next proposal.</p>
-        <p class="small" style="margin-top:10px">Edit data, run <code>scripts/build_boundary.py</code>, commit. Never hand-edit inside the boundary markers.</p>
+        <div class="kicker">A demand problem sounds like this</div>
+        <ul class="symptom" style="margin-top:10px">
+          <li>"I'm great at what I do, but clients only come from referrals — and referrals are drying up."</li>
+          <li>"I post, and nothing happens. I'm invisible next to people half as good as me."</li>
+          <li>"I undercharge, because nobody knows why I'm worth more."</li>
+          <li>"I have no list, no product, no pipeline — just me, hoping the phone rings."</li>
+        </ul>
+        <p class="body-md" style="margin-top:14px"><strong>Fixing demand</strong> means building the reasons people come to you: a name they recognise, a story they remember, an offer they can buy today and a bigger one behind it. That is Expert &amp; Authority — you graduate with people arriving, and paying.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">A capacity problem sounds like this</div>
+        <ul class="symptom" style="margin-top:10px">
+          <li>"Sales are fine — it's delivery that's killing me. Every new client adds hours to my week."</li>
+          <li>"Leads go cold because I'm too busy serving the customers I already have."</li>
+          <li>"If I take a week off, the business takes a week off."</li>
+          <li>"Growing means hiring, and I don't want the headcount — or the management."</li>
+        </ul>
+        <p class="body-md" style="margin-top:14px"><strong>Fixing capacity</strong> means the business no longer needing you for everything: marketing, follow-up, delivery and reporting running as systems, with you doing only what only a founder can. That is AI for Founders — you graduate with a machine, and your Fridays.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFFERENTIATORS ============ -->
+  <section>
+    <div class="section-head">
+      <div class="overline">The differentiators</div>
+      <h2>Same pathway, opposite problems</h2>
+      <p class="body-md">One question routes any prospect: <strong>"Do you have something to sell that's drowning you — or something to say that nobody's paying for yet?"</strong> Drowning in delivery → AI for Founders. Unknown with real expertise → Expert &amp; Authority.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>&nbsp;</th><th>Expert &amp; Authority</th><th>AI for Founders</th></tr></thead>
+      <tbody>
+        <tr><td><strong>What's broken</strong></td><td>Demand — nobody knows they exist</td><td>Capacity — the founder is the bottleneck</td></tr>
+        <tr><td><strong>The question it answers</strong></td><td>"Why should anyone choose me?"</td><td>"How do I deliver at scale?"</td></tr>
+        <tr><td><strong>The lever</strong></td><td>Story, voice and positioning — the founder doing the work <em>better</em></td><td>AI and automation — systems doing the work</td></tr>
+        <tr><td><strong>The role of AI</strong></td><td>A chief of staff — never a substitute for your voice</td><td>The substance of the programme</td></tr>
+        <tr><td><strong>You graduate with</strong></td><td>A live product ladder and your first revenue on it</td><td>The Founder Operating System, running your business</td></tr>
+        <tr><td><strong>Where you end up</strong></td><td>In front of the audience — the recognised authority</td><td>Out of the machine — orchestrator, four-day week</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- ============ COMPLEMENTORS ============ -->
+  <section>
+    <div class="section-head">
+      <div class="overline">The complementors</div>
+      <h2>Two halves of one ascent</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card tint">
+        <div class="kicker">First the name, then the machine</div>
+        <p class="body-md">For most students the journey runs Expert &amp; Authority first — build the audience, the offer and the first revenue — then AI for Founders, to build the systems that serve the demand you've created. You can't systematise demand that doesn't exist yet.</p>
+      </div>
+      <div class="card tint">
+        <div class="kicker">Each feeds the other</div>
+        <p class="body-md">E&amp;A graduates arrive at AI for Founders with a real business worth systematising. AI for Founders graduates whose machine is hungry for demand come back to E&amp;A to grow the name that feeds it. Each programme's alumni are the other's warmest list.</p>
+      </div>
+      <div class="card tint">
+        <div class="kicker">One voice across both</div>
+        <p class="body-md">Vishen leads both, so the doctrine never contradicts itself — and each programme teaches only its own half. Neither drifts into the other's promise, which is what keeps students from feeling sold the same thing twice.</p>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card">
+        <div class="kicker">For sales and copy teams</div>
+        <p class="body-md">The full boundary — who each programme is for, the routing question, and the rules that keep the two from overlapping in market — lives on one shareable page.</p>
+        <div class="cta" style="padding-top:14px"><a class="ghost" href="/positioning">See the full positioning</a></div>
+      </div>
+      <div class="card">
+        <div class="kicker">The proposals</div>
+        <p class="body-md">Both full documents — curriculum week by week, faculty with verified ratings, format evidence and open decisions.</p>
+        <div class="cta" style="padding-top:14px"><a href="/expert-authority">Expert &amp; Authority</a>&nbsp;&nbsp;<a href="/ai-founders">AI for Founders</a></div>
       </div>
     </div>
   </section>
@@ -81,7 +208,7 @@ code{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;background:var(--
 <footer>
   <div class="wrap">
     <div>Mastery Proposals — Mindvalley Curriculum Team.</div>
-    <div>Internal. Contains ratings, pricing and compensation structure.</div>
+    <div>Internal — contains pricing and faculty details.</div>
   </div>
 </footer>
 
