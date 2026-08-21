@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Mastery Proposals</title>
+<meta name="description" content="Two new Masteries, two pathways — the outcomes, who leads them, who they're for, and how they fit together."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/wellness.css">
+<style>
+:root{
+ --brand:#7A12D4;--brand-bright:#9D4EE8;--brand-content:#6810B4;--brand-dark:#44087A;
+ --brand-light:#F6EEFD;--brand-border:#E4D2F8;
+ --ea:#7A12D4;--ea-deep:#44087A;--ea-content:#6810B4;--ea-light:#F6EEFD;--ea-border:#E4D2F8;
+ --af:#3D63F5;--af-deep:#0F1F7A;--af-content:#1832B4;--af-light:#EEF2FF;--af-border:#D6DEFF;--af-glow:#9DB4FF;
+ --dusk:linear-gradient(135deg,#0F131A 0%,#44087A 52%,#7A12D4 100%);
+}
+
+/* ---- hero: house-neutral ink with both pathway accents ---- */
+.hero.duo{background:#0F131A;position:relative;overflow:hidden;padding:72px 0 84px}
+.hero.duo::before{content:"";position:absolute;left:-160px;bottom:-220px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(61,99,245,.4),transparent 65%)}
+.hero.duo::after{content:"";position:absolute;right:-160px;top:-220px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(122,18,212,.5),transparent 65%)}
+.hero.duo .wrap{position:relative;z-index:2}
+.hero.duo h1{max-width:900px}
+.hero.duo .answer strong.ea-w{color:#D7B6F7}
+.hero.duo .answer strong.af-w{color:var(--af-glow)}
+.path-tags{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.loz{display:inline-flex;align-items:center;gap:8px;border-radius:128px;padding:7px 16px;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;white-space:nowrap}
+.loz .dot{width:8px;height:8px;border-radius:50%}
+.loz.ea{background:rgba(122,18,212,.22);color:#D7B6F7}.loz.ea .dot{background:#B678F0}
+.loz.af{background:rgba(61,99,245,.2);color:var(--af-glow)}.loz.af .dot{background:#6C8CFF}
+
+/* ---- programme chapters ---- */
+.chapter{position:relative;overflow:hidden;padding:76px 0 84px}
+.chapter .wrap{position:relative;z-index:2}
+.chapter .ghost{position:absolute;z-index:1;top:8px;right:2vw;font-size:clamp(140px,22vw,300px);font-weight:700;line-height:1;letter-spacing:-.04em;user-select:none;pointer-events:none}
+.ch-ea{background:linear-gradient(180deg,#FBF7FF 0%,var(--ea-light) 60%,#fff 100%);border-top:1px solid var(--ea-border);border-bottom:1px solid var(--ea-border)}
+.ch-ea .ghost{color:rgba(122,18,212,.07)}
+.ch-af{background:linear-gradient(160deg,#0F131A 0%,var(--af-deep) 55%,var(--af-content) 130%);color:#fff}
+.ch-af .ghost{color:rgba(255,255,255,.05)}
+.ch-head{max-width:880px}
+.ch-lozrow{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
+.ch-ea .loz.path{background:var(--ea);color:#fff}
+.ch-ea .loz.fact{background:#fff;border:1px solid var(--ea-border);color:var(--ea-content)}
+.ch-af .loz.path{background:var(--af);color:#fff}
+.ch-af .loz.fact{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);color:var(--af-glow)}
+.ch-name{font-size:clamp(38px,5vw,60px);font-weight:700;line-height:1.06;letter-spacing:-.02em;text-wrap:balance}
+.ch-ea .ch-name{color:var(--ea-deep)}
+.ch-outcome{font-size:clamp(21px,2.6vw,29px);font-weight:400;line-height:1.4;margin-top:18px;max-width:820px;text-wrap:balance}
+.ch-ea .ch-outcome{color:var(--grey-600)}
+.ch-af .ch-outcome{color:#C9D4FF}
+.ch-outcome strong{font-weight:700}
+.ch-ea .ch-outcome strong{color:var(--ea-content)}
+.ch-af .ch-outcome strong{color:#fff}
+.ch-grid{display:grid;grid-template-columns:1.25fr .9fr;gap:44px;margin-top:44px;align-items:start}
+.ch-lbl{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;margin:0 0 12px}
+.ch-ea .ch-lbl{color:var(--ea-content)}
+.ch-af .ch-lbl{color:var(--af-glow)}
+.ch-benefits{list-style:none;margin:0;padding:0;display:grid;gap:11px}
+.ch-benefits li{font-size:15.5px;line-height:1.55;padding-left:28px;position:relative}
+.ch-ea .ch-benefits li{color:var(--grey-600)}
+.ch-af .ch-benefits li{color:#DCE4FF}
+.ch-benefits li::before{content:"\2713";position:absolute;left:0;top:0;font-weight:700}
+.ch-ea .ch-benefits li::before{color:var(--ea)}
+.ch-af .ch-benefits li::before{color:#6C8CFF}
+.posblock{border-radius:16px;padding:24px 28px;font-size:17px;line-height:1.55;font-weight:500}
+.ch-ea .posblock{background:var(--ea);color:#fff;box-shadow:var(--shadow-medium)}
+.ch-af .posblock{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.2);color:#fff}
+.posblock .pk{display:block;font-size:11.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-bottom:8px}
+.ch-side{display:grid;gap:24px}
+.ch-side p{font-size:14.5px;line-height:1.6;margin:0}
+.ch-ea .ch-side p{color:var(--text-muted)}
+.ch-af .ch-side p{color:#B9C6F2}
+.ch-af .ch-side strong,.ch-ea .ch-side strong{font-weight:700}
+.ch-ea .ch-side strong{color:var(--ink)}
+.ch-af .ch-side strong{color:#fff}
+.ch-cta{margin-top:40px}
+.ch-cta a{display:inline-block;font-weight:600;font-size:15px;padding:13px 30px;border-radius:128px;transition:all .18s var(--ease)}
+.ch-ea .ch-cta a{background:var(--ea);color:#fff}
+.ch-ea .ch-cta a:hover{background:var(--ea-content)}
+.ch-af .ch-cta a{background:#fff;color:var(--af-content)}
+.ch-af .ch-cta a:hover{background:var(--af-light)}
+
+/* ---- demand / capacity ---- */
+.dc-card{border-top:5px solid;border-radius:16px}
+.dc-card.ea{border-top-color:var(--ea)}
+.dc-card.af{border-top-color:var(--af)}
+.mini-loz{display:inline-block;border-radius:128px;padding:5px 13px;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.mini-loz.ea{background:var(--ea-light);color:var(--ea-content)}
+.mini-loz.af{background:var(--af-light);color:var(--af-content)}
+ul.symptom{list-style:none;display:grid;gap:8px;margin:0;padding:0}
+ul.symptom li{font-size:14.5px;color:var(--text-muted);line-height:1.5;padding-left:24px;position:relative}
+ul.symptom li::before{content:"—";position:absolute;left:0;top:0;color:var(--text-subtle);font-weight:700}
+
+/* ---- differentiators table headers ---- */
+.tbl th .thloz{display:inline-block;border-radius:128px;padding:5px 14px;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
+.tbl th .thloz.ea{background:var(--ea);color:#fff}
+.tbl th .thloz.af{background:var(--af);color:#fff}
+
+/* ---- journey strip ---- */
+.journey{display:flex;align-items:stretch;gap:0;margin:26px 0 30px}
+.jstep{flex:1;border-radius:16px;padding:22px 26px;color:#fff}
+.jstep .js-k{font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.8}
+.jstep .js-n{font-size:19px;font-weight:700;margin-top:4px}
+.jstep .js-d{font-size:13.5px;margin-top:6px;opacity:.85;line-height:1.5}
+.jstep.ea{background:linear-gradient(135deg,var(--ea-deep),var(--ea))}
+.jstep.af{background:linear-gradient(135deg,var(--af-deep),var(--af))}
+.jarrow{display:flex;align-items:center;padding:0 18px;font-size:26px;color:var(--grey-400);font-weight:700}
+.cta-ghost{display:inline-block;font-weight:600;font-size:14.5px;padding:11px 26px;border-radius:128px;border:1px solid var(--border-strong);color:var(--grey-600)}
+.cta-ghost:hover{background:var(--grey-100)}
+
+@media(max-width:920px){
+ .ch-grid{grid-template-columns:1fr;gap:30px}
+ .journey{flex-direction:column}
+ .jarrow{padding:10px 0;justify-content:center;transform:rotate(90deg)}
+ .chapter .ghost{display:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="wordmark">Mindvalley <span>·</span> Mastery Proposals</div>
+    <div class="meta">Curriculum Team</div>
+  </div>
+</div>
+
+<header class="hero duo">
+  <div class="wrap">
+    <div class="path-tags">
+      <span class="loz ea"><span class="dot"></span>Authority Pathway</span>
+      <span class="loz af"><span class="dot"></span>Entrepreneurship Pathway</span>
+    </div>
+    <h1>Two new Masteries. One journey.</h1>
+    <p class="answer"><strong class="ea-w">Expert &amp; Authority</strong> makes you known and paid for what you know. <strong class="af-w">AI for Founders</strong> makes the business run without running you into the ground. Different pathway, different problem — and for most students, one comes before the other.</p>
+  </div>
+</header>
+
+<!-- ============ CHAPTER 01 · EXPERT & AUTHORITY ============ -->
+<section class="chapter ch-ea">
+  <div class="ghost">01</div>
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-lozrow">
+        <span class="loz path">Authority Pathway</span>
+        <span class="loz fact">Mastery 01</span>
+        <span class="loz fact">17 weeks</span>
+        <span class="loz fact">$4,999</span>
+      </div>
+      <h2 class="ch-name">Expert &amp; Authority Mastery</h2>
+      <p class="ch-outcome">Your expertise, <strong>earning</strong> — graduate as a recognised authority with a <strong>live product ladder</strong> and your first revenue already banked.</p>
+    </div>
+    <div class="ch-grid">
+      <div>
+        <div class="ch-lbl">What you build, week by week</div>
+        <ul class="ch-benefits">
+          <li>A niche and a positioning line only you could own — your story, told without flinching</li>
+          <li>A published product with your name and a price on it, live on the internet</li>
+          <li>A 60-minute masterclass, shot and reviewed, built on the system behind half a billion dollars in sales</li>
+          <li>A traffic engine on one platform — hooks banked, profile ranking, a nine-part email sequence selling while you sleep</li>
+          <li>Three paid rungs, so every customer has somewhere to climb — from a free download to a five-figure relationship</li>
+        </ul>
+        <div class="posblock" style="margin-top:28px">
+          <span class="pk">The positioning</span>
+          The personal brand and storytelling Mastery: become the name people think of — and pay for — in your niche.
+        </div>
+      </div>
+      <div class="ch-side">
+        <div>
+          <div class="ch-lbl">Who it's for</div>
+          <p>Coaches, consultants, healers, authors and founders-as-the-face — people with <strong>real expertise earning under $100K from it</strong>, because nobody knows they exist yet. No profile, no offer, no path from stranger to client.</p>
+        </div>
+        <div>
+          <div class="ch-lbl">Curriculum owner</div>
+          <p><strong>Vishen Lakhiani</strong> as Curriculum Expert — teaching the system behind half a billion dollars in masterclass sales.</p>
+        </div>
+        <div>
+          <div class="ch-lbl">Faculty</div>
+          <p>Paul McKenna · Chris Do · Lisa Nichols · Kwame Christian · John Lee · Natalie Ellis · Alessio Pieroni · Ajit Nawalkha. Hands-on labs led by <strong>Alessio Pieroni and Kash Rupalia</strong>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ch-cta"><a href="/expert-authority">Read the full proposal</a></div>
+  </div>
+</section>
+
+<!-- ============ CHAPTER 02 · AI FOR FOUNDERS ============ -->
+<section class="chapter ch-af">
+  <div class="ghost">02</div>
+  <div class="wrap">
+    <div class="ch-head">
+      <div class="ch-lozrow">
+        <span class="loz path">Entrepreneurship Pathway</span>
+        <span class="loz fact">Mastery 02</span>
+        <span class="loz fact">18 weeks</span>
+        <span class="loz fact">Vishen × Daniel Priestley</span>
+      </div>
+      <h2 class="ch-name">AI for Founders Mastery</h2>
+      <p class="ch-outcome">A business that grows <strong>without grinding you down</strong> — graduate owning a <strong>machine</strong> that markets, sells, delivers and reports while you lead.</p>
+    </div>
+    <div class="ch-grid">
+      <div>
+        <div class="ch-lbl">What you build, week by week</div>
+        <ul class="ch-benefits">
+          <li>A company brain that knows your business — offers, customers, numbers — and answers like a co-founder</li>
+          <li>A demand engine capturing leads and following up automatically, so nothing ever goes cold</li>
+          <li>Delivery running itself, with you kept in the loop only at the moments that build trust</li>
+          <li>A finance cockpit — cash, margin, forecast — readable in five minutes every Monday</li>
+          <li>The four-day founder week: your time back, with a 12-month growth calendar already loaded</li>
+        </ul>
+        <div class="posblock" style="margin-top:28px">
+          <span class="pk">The positioning</span>
+          The AI and systems Mastery: hands-on with the tools, practical about the business — scale without headcount.
+        </div>
+      </div>
+      <div class="ch-side">
+        <div>
+          <div class="ch-lbl">Who it's for</div>
+          <p>Founders with <strong>something real to sell</strong> — a product, a service, even themselves as the service — whose business runs entirely through them. Every lead, every delivery, every decision: theirs. Growth currently means burnout or hiring.</p>
+        </div>
+        <div>
+          <div class="ch-lbl">Curriculum owners</div>
+          <p><strong>Vishen Lakhiani × Daniel Priestley</strong> as co-owners — Vishen's Founder-Based AI method meeting Priestley's business frameworks, our most consistent 9.5+ teacher.</p>
+        </div>
+        <div>
+          <div class="ch-lbl">Faculty</div>
+          <p>Noelle Russell · Marie Forleo · Shawn Kanungo · Alex Dogliotti. Implementation labs by <strong>Vykintas Glodenis</strong>.</p>
+        </div>
+      </div>
+    </div>
+    <div class="ch-cta"><a href="/ai-founders">Read the full proposal</a></div>
+  </div>
+</section>
+
+<!-- ============ DEMAND vs CAPACITY ============ -->
+<div class="tab-panel active" style="display:block">
+<div class="wrap">
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The language we use</div>
+      <h2>One fixes demand. One fixes capacity. Here's what that actually means.</h2>
+      <p class="body-md">Every struggling expert business is broken in one of two places. Either not enough people want to buy from you — a <strong>demand</strong> problem — or plenty do, and you can't serve them without breaking yourself — a <strong>capacity</strong> problem. The programmes split exactly on that line.</p>
+    </div>
+    <div class="grid g2">
+      <div class="card dc-card ea">
+        <span class="mini-loz ea">Demand → Expert &amp; Authority</span>
+        <h3>A demand problem sounds like this</h3>
+        <ul class="symptom" style="margin-top:12px">
+          <li>"I'm great at what I do, but clients only come from referrals — and referrals are drying up."</li>
+          <li>"I post, and nothing happens. I'm invisible next to people half as good as me."</li>
+          <li>"I undercharge, because nobody knows why I'm worth more."</li>
+          <li>"I have no list, no product, no pipeline — just me, hoping the phone rings."</li>
+        </ul>
+        <p class="body-md" style="margin-top:14px"><strong>Fixing demand</strong> means building the reasons people come to you: a name they recognise, a story they remember, an offer they can buy today and a bigger one behind it. You graduate with people arriving, and paying.</p>
+      </div>
+      <div class="card dc-card af">
+        <span class="mini-loz af">Capacity → AI for Founders</span>
+        <h3>A capacity problem sounds like this</h3>
+        <ul class="symptom" style="margin-top:12px">
+          <li>"Sales are fine — it's delivery that's killing me. Every new client adds hours to my week."</li>
+          <li>"Leads go cold because I'm too busy serving the customers I already have."</li>
+          <li>"If I take a week off, the business takes a week off."</li>
+          <li>"Growing means hiring, and I don't want the headcount — or the management."</li>
+        </ul>
+        <p class="body-md" style="margin-top:14px"><strong>Fixing capacity</strong> means the business no longer needing you for everything: marketing, follow-up, delivery and reporting running as systems, with you doing only what only a founder can. You graduate with a machine, and your Fridays.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFFERENTIATORS ============ -->
+  <section>
+    <div class="section-head">
+      <div class="overline">The differentiators</div>
+      <h2>Two pathways, opposite problems</h2>
+      <p class="body-md">One question routes any prospect: <strong>"Do you have something to sell that's drowning you — or something to say that nobody's paying for yet?"</strong> Drowning in delivery → AI for Founders. Unknown with real expertise → Expert &amp; Authority.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>&nbsp;</th><th><span class="thloz ea">Expert &amp; Authority</span></th><th><span class="thloz af">AI for Founders</span></th></tr></thead>
+      <tbody>
+        <tr><td><strong>Pathway</strong></td><td>Authority</td><td>Entrepreneurship</td></tr>
+        <tr><td><strong>What's broken</strong></td><td>Demand — nobody knows they exist</td><td>Capacity — the founder is the bottleneck</td></tr>
+        <tr><td><strong>The question it answers</strong></td><td>"Why should anyone choose me?"</td><td>"How do I deliver at scale?"</td></tr>
+        <tr><td><strong>The lever</strong></td><td>Story, voice and positioning — the founder doing the work <em>better</em></td><td>AI and automation — systems doing the work</td></tr>
+        <tr><td><strong>The role of AI</strong></td><td>A chief of staff — never a substitute for your voice</td><td>The substance of the programme</td></tr>
+        <tr><td><strong>You graduate with</strong></td><td>A live product ladder and your first revenue on it</td><td>The Founder Operating System, running your business</td></tr>
+        <tr><td><strong>Where you end up</strong></td><td>In front of the audience — the recognised authority</td><td>Out of the machine — orchestrator, four-day week</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <!-- ============ COMPLEMENTORS ============ -->
+  <section>
+    <div class="section-head">
+      <div class="overline">The complementors</div>
+      <h2>Two halves of one ascent</h2>
+    </div>
+    <div class="journey">
+      <div class="jstep ea">
+        <div class="js-k">First · Authority Pathway</div>
+        <div class="js-n">Build the name</div>
+        <div class="js-d">Expert &amp; Authority — the audience, the offer, the first revenue.</div>
+      </div>
+      <div class="jarrow">→</div>
+      <div class="jstep af">
+        <div class="js-k">Then · Entrepreneurship Pathway</div>
+        <div class="js-n">Build the machine</div>
+        <div class="js-d">AI for Founders — the systems that serve the demand you've created.</div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <div class="kicker">Why that order</div>
+        <p class="body-md">You can't systematise demand that doesn't exist yet — and a machine is worth building once there's something real flowing through it.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">Each feeds the other</div>
+        <p class="body-md">E&amp;A graduates arrive at AI for Founders with a business worth systematising. AI for Founders graduates whose machine is hungry for demand come back for the name that feeds it. Each programme's alumni are the other's warmest list.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">One voice across both</div>
+        <p class="body-md">Vishen leads both, so the doctrine never contradicts itself — and each programme teaches only its own half. Nobody feels sold the same thing twice.</p>
+      </div>
+    </div>
+    <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="cta-ghost" href="/positioning">See the full positioning</a>
+      <a class="cta-ghost" href="/expert-authority">E&amp;A proposal</a>
+      <a class="cta-ghost" href="/ai-founders">AI for Founders proposal</a>
+    </div>
+  </section>
+
+</div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div>Mastery Proposals — Mindvalley Curriculum Team.</div>
+    <div>Internal — contains pricing and faculty details.</div>
+  </div>
+</footer>
+
+</body>
+</html>
