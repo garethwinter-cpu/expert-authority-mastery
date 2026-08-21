@@ -21,7 +21,7 @@ def card(key, own):
     tint = ' tint' if own else ''
     tag = ' · this proposal' if own else ''
     return f'''      <div class="card{tint}">
-        <div class="kicker">{p['name']}{tag}</div>
+        <div class="kicker">{p['name']}{tag} · {p.get('pathway','')}</div>
         <h3>{p['pain']}</h3>
         <p class="body-md" style="margin-top:10px">{p['diagnosis']}</p>
         <div class="covers"><strong>Outcome:</strong> {p['outcome']}. Proof: <em>{p['proof']}.</em><br><strong>Graduating artefact:</strong> {p['artefact']}<br><strong>Led by:</strong> {p['led_by']}</div>
