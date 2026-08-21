@@ -7,6 +7,7 @@ const ROOT = __dirname;
 
 // static assets (shared/wellness.css); html served by explicit routes below
 app.use('/shared', express.static(path.resolve(ROOT, 'shared')));
+app.use('/authors', express.static(path.resolve(ROOT, 'authors'), { maxAge: '7d' }));
 
 const page = (file) => (req, res) => res.sendFile(path.resolve(ROOT, file));
 

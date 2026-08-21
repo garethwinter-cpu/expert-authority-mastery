@@ -245,6 +245,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  .rung{grid-template-columns:1fr;gap:8px}
  .module-head,.module-body{padding-left:20px;padding-right:20px}
 }
+
+/* author headshots */
+.face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
 </style>
 </head>
 <body>
@@ -279,13 +282,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="wrap">
     <nav class="tabbar" id="tabbar">
       <button class="tab-btn active" data-tab="case"><span class="num">01</span>The Case</button>
-      <button class="tab-btn" data-tab="evidence"><span class="num">02</span>The Evidence</button>
+      <button class="tab-btn" data-tab="artefact"><span class="num">02</span>The Artefact</button>
       <button class="tab-btn" data-tab="programme"><span class="num">03</span>The Programme</button>
       <button class="tab-btn" data-tab="weeks"><span class="num">04</span>Week by Week</button>
       <button class="tab-btn" data-tab="faculty"><span class="num">05</span>Authors</button>
-      <button class="tab-btn" data-tab="format"><span class="num">06</span>Format &amp; Contracts</button>
-      <button class="tab-btn" data-tab="artefact"><span class="num">07</span>The Artefact</button>
-      <button class="tab-btn" data-tab="next"><span class="num">08</span>Positioning &amp; Next Steps</button>
+      <button class="tab-btn" data-tab="next"><span class="num">06</span>Positioning &amp; Next Steps</button>
+      <button class="tab-btn" data-tab="evidence"><span class="num">07</span>The Evidence</button>
+      <button class="tab-btn" data-tab="format"><span class="num">08</span>Format &amp; Contracts</button>
     </nav>
   </div>
 </div>
@@ -1236,7 +1239,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="card">
       <div class="fac-head">
         <div style="display:flex;gap:18px;align-items:flex-start">
-          <div class="mono">VL</div>
+          <img class="face" src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani">
           <div>
             <div class="fac-role">Vision &amp; framing · Curriculum Expert</div>
             <div class="fac-name">Vishen Lakhiani</div>
@@ -1268,7 +1271,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="mono">CD</div>
+            <img class="face" src="authors/chris-do.jpg" alt="Chris Do">
             <div>
               <div class="fac-role">Authority &amp; monetisation · 2 weeks</div>
               <div class="fac-name">Chris Do</div>
@@ -1289,7 +1292,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="mono">LN</div>
+            <img class="face" src="authors/lisa-nichols.jpg" alt="Lisa Nichols">
             <div>
               <div class="fac-role">Story · 1 week</div>
               <div class="fac-name">Lisa Nichols</div>
@@ -1309,7 +1312,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="mono">PM</div>
+            <img class="face" src="authors/paul-mckenna.jpg" alt="Paul McKenna">
             <div>
               <div class="fac-role">Confidence &amp; the inner shift · 1 week</div>
               <div class="fac-name">Paul McKenna</div>
@@ -1329,7 +1332,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="mono">KC</div>
+            <img class="face" src="authors/kwame-christian.jpg" alt="Kwame Christian">
             <div>
               <div class="fac-role">The enrolment conversation · 1 week</div>
               <div class="fac-name">Kwame Christian</div>
@@ -1350,7 +1353,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="mono">JL</div>
+            <img class="face" src="authors/john-lee.jpg" alt="John Lee">
             <div>
               <div class="fac-role">The close · 1 week</div>
               <div class="fac-name">John Lee</div>
@@ -1369,7 +1372,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:16px;align-items:flex-start">
-            <div class="mono">NE</div>
+            <img class="face" src="authors/natalie-ellis.jpg" alt="Natalie Ellis">
             <div>
               <div class="fac-role">Audience &amp; community · 1 week</div>
               <div class="fac-name">Natalie Ellis</div>
@@ -1464,6 +1467,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
     <div class="grid g3">
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine">
         <div class="fac-role">Course build · 2 lab days</div>
         <div class="fac-name" style="font-size:18px">Jimmy Naraine</div>
         <div class="fac-sub">1M+ paid course enrolments · #2 rated presenter out of 100 at MVU 2024</div>
@@ -1471,6 +1475,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="covers"><strong>Owns:</strong> W5 idea clusters · W6 the pyjama draft</div>
       </div>
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/sabrina-stocker.jpg" alt="Sabrina Stocker">
         <div class="fac-role">LinkedIn &amp; AEO · 1 lab day · <span style="color:var(--orange-content)">lab-lead alternate</span></div>
         <div class="fac-name" style="font-size:18px">Sabrina Stocker</div>
         <div class="fac-sub">The Apprentice UK · LinkedIn and answer-engine specialist</div>
@@ -1478,6 +1483,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="covers"><strong>Owns:</strong> W11 the profile rebuild and the AEO layer</div>
       </div>
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/safwaan-mohammed.jpg" alt="Safwaan Mohammed">
         <div class="fac-role">YouTube · 1 lab day · <span style="color:var(--orange-content)">lab-lead alternate</span></div>
         <div class="fac-name" style="font-size:18px">Safwaan Mohammed</div>
         <div class="fac-sub">Builds Vishen's and Daniel Priestley's channels · ex-Ali Abdaal team</div>

@@ -245,6 +245,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
  .rung{grid-template-columns:1fr;gap:8px}
  .module-head,.module-body{padding-left:20px;padding-right:20px}
 }
+
+/* author headshots */
+.face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
 </style>
 </head>
 <body>
@@ -279,13 +282,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="wrap">
     <nav class="tabbar" id="tabbar">
       <button class="tab-btn active" data-tab="case"><span class="num">01</span>The Case</button>
-      <button class="tab-btn" data-tab="evidence"><span class="num">02</span>The Evidence</button>
+      <button class="tab-btn" data-tab="artefact"><span class="num">02</span>The Artefact</button>
       <button class="tab-btn" data-tab="programme"><span class="num">03</span>The Programme</button>
       <button class="tab-btn" data-tab="weeks"><span class="num">04</span>Week by Week</button>
       <button class="tab-btn" data-tab="faculty"><span class="num">05</span>Authors</button>
-      <button class="tab-btn" data-tab="format"><span class="num">06</span>Format &amp; Contracts</button>
-      <button class="tab-btn" data-tab="artefact"><span class="num">07</span>The Artefact</button>
-      <button class="tab-btn" data-tab="next"><span class="num">08</span>Positioning &amp; Next Steps</button>
+      <button class="tab-btn" data-tab="next"><span class="num">06</span>Positioning &amp; Next Steps</button>
+      <button class="tab-btn" data-tab="evidence"><span class="num">07</span>The Evidence</button>
+      <button class="tab-btn" data-tab="format"><span class="num">08</span>Format &amp; Contracts</button>
     </nav>
   </div>
 </div>
@@ -865,7 +868,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:18px;align-items:flex-start">
-            <div class="mono">DP</div>
+            <img class="face" src="authors/daniel-priestley.jpg" alt="Daniel Priestley">
             <div>
               <div class="fac-role">Curriculum co-owner · framework architect</div>
               <div class="fac-name">Daniel Priestley</div>
@@ -885,7 +888,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="fac-head">
           <div style="display:flex;gap:18px;align-items:flex-start">
-            <div class="mono">VL</div>
+            <img class="face" src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani">
             <div>
               <div class="fac-role">Curriculum co-owner · programme anchor</div>
               <div class="fac-name">Vishen Lakhiani</div>
@@ -907,7 +910,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="card" style="margin-bottom:18px">
       <div class="fac-head">
         <div style="display:flex;gap:18px;align-items:flex-start">
-          <div class="mono">VG</div>
+          <img class="face" src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis">
           <div>
             <div class="fac-role">Lab lead · every Thursday + the intensive build floor</div>
             <div class="fac-name">Vykintas Glodenis</div>
@@ -927,6 +930,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
     <div class="grid g4">
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/noelle-russell.jpg" alt="Noelle Russell">
         <div class="fac-role">AI systems &amp; adoption · 3 weeks</div>
         <div class="fac-name" style="font-size:18px">Noelle Russell</div>
         <div class="fac-sub">Chief AI Officer, AI Leadership Institute · ex-Amazon Alexa</div>
@@ -935,6 +939,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="covers"><strong>Teaches:</strong> W3 stack &amp; governance · W10 delivery agents · W15 adoption (with Alex)</div>
       </div>
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/marie-forleo.jpg" alt="Marie Forleo">
         <div class="fac-role">Marketing pillar · 2 weeks</div>
         <div class="fac-name" style="font-size:18px">Marie Forleo</div>
         <div class="fac-sub">B-School founder · #1 NYT bestseller</div>
@@ -943,6 +948,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="covers"><strong>Teaches:</strong> W5 customer intelligence · W7 the content engine</div>
       </div>
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/shawn-kanungo.jpg" alt="Shawn Kanungo">
         <div class="fac-role">Finance + disruption · 2 weeks</div>
         <div class="fac-name" style="font-size:18px">Shawn Kanungo</div>
         <div class="fac-sub">Innovation strategist · CPA, ex-Deloitte</div>
@@ -951,6 +957,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="covers"><strong>Teaches:</strong> W16 finance cockpit · W17 the bold founder · intensive keynote option</div>
       </div>
       <div class="card">
+        <img class="avatar" style="height:200px" src="authors/alex-dogliotti.jpg" alt="Alex Dogliotti">
         <div class="fac-role">People &amp; HR systems · co-teach</div>
         <div class="fac-name" style="font-size:18px">Alex Dogliotti</div>
         <div class="fac-sub">COO &amp; CHRO, Mindvalley · author, Replaced by AI · PhD</div>
