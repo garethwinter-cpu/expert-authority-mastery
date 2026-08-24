@@ -20,9 +20,10 @@ def card(key, own):
     p = B['programmes'][key]
     tint = ' tint' if own else ''
     tag = ' · this proposal' if own else ''
+    promise = f'<div style="font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1;margin:6px 0 10px">{p["promise"]}</div>' if p.get('promise') else ''
     return f'''      <div class="card{tint}">
         <div class="kicker">{p['name']}{tag} · {p.get('pathway','')}</div>
-        <h3>{p['pain']}</h3>
+        {promise}<h3>{p['pain']}</h3>
         <p class="body-md" style="margin-top:10px">{p['diagnosis']}</p>
         <div class="covers"><strong>Outcome:</strong> {p['outcome']}. Proof: <em>{p['proof']}.</em><br><strong>Graduating artefact:</strong> {p['artefact']}<br><strong>Led by:</strong> {p['led_by']}</div>
       </div>'''
@@ -51,6 +52,13 @@ def render(perspective):
       <div>
         <p><strong>The one-question router.</strong> {B['router']['question']}</p>
         <p>{B['router']['answer']}</p>
+      </div>
+    </div>
+    <div class="callout" style="margin-bottom:18px">
+      <div class="ic">◇</div>
+      <div>
+        <p><strong>{B.get('neighbours_intro','')}</strong></p>
+        <p>{' '.join(f'<strong>{n[0]}:</strong> {n[1]}' for n in B.get('neighbours', []))}</p>
       </div>
     </div>
     <div class="tbl-scroll" style="margin-bottom:18px">

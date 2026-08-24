@@ -157,6 +157,38 @@
       "finding": "Build cost for software down 97% since February 2026 ($100K → $3K); build speed up ~50x. Basis of the 'why now' for founder-built products.",
       "status": "Vishen's internal figures",
       "applied_to": "AIF W12 / why-now"
+    },
+    {
+      "id": "jaideep-onepager-adopted",
+      "source": "Jaideep's Academy one-pager (shareable-page.vercel.app/mastery-one-pager.html, Aug 24 2026)",
+      "finding": "Portfolio positioning system adopted: one-verb promises (E&A 'Be chosen.', AIF 'Run on AI.'), signature diagnostic sentences ('I'm great at what I do, but nobody knows me.' / 'My business can't run a single day without me.'), and neighbour boundary lines (Speaking vs Authority: room asks for you; Social vs Authority: chosen by the right ones; AI Mastery vs AIF: transforms you vs your business).",
+      "status": "adopted",
+      "applied_to": [
+        "data/boundary.json",
+        "index.html",
+        "expert-authority.html (via boundary build)",
+        "ai-founders.html (via boundary build)"
+      ]
+    },
+    {
+      "id": "jaideep-pricing-adopted",
+      "source": "Jaideep's Academy one-pager; Jaideep owns the Mastery business",
+      "finding": "AIF priced $5,999 Install / $7,999 Install + Certify (Certified AI Consultant credential + first-client sprint, month 5). Tier structure adopted per Gareth; credential curriculum, certification bar and faculty owner still unspecified. E&A price anchor $4,999 vs $5,999 flagged open by Jaideep; page carries the stage's $4,999 until he rules.",
+      "status": "adopted — Certify tier scope pending spec",
+      "applied_to": [
+        "ai-founders.html",
+        "index.html",
+        "expert-authority.html (price-anchor callout)"
+      ]
+    },
+    {
+      "id": "jaideep-onepager-contested",
+      "source": "Jaideep's Academy one-pager vs E&A proposal + MVU 2026 transcripts",
+      "finding": "Contested and NOT adopted: (1) off-camera/copy-led E&A — contradicts Visibility Wound W1, McKenna confidence-on-camera W2, Kash's camera labs, the shot masterclass; faceless IG is one optional path, not the product; (2) the 60-min masterclass + intensive omitted entirely from his 4-month plan; (3) community demoted to monthly calls — contradicts the weekly witnessing pods doctrine he himself quotes; (4) core author bench absent (McKenna, Do, Nichols, Ellis, Christian, Lee, Ajit) and Priestley moved into E&A, blurring the AIF boundary; (5) AIF six functions vs the deck's five pillars; (6) unsourced figures: '110 of the world's top experts', '$50k/mo' vs verified $40-50K range, NPS +84 cited without source or n. Guild kept out of scope per Gareth (separate, undefined product).",
+      "status": "contested — reconciliation note sent to Jaideep",
+      "applied_to": [
+        "reconciliation note artifact"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

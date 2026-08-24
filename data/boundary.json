@@ -6,23 +6,25 @@
   "programmes": {
     "ea": {
       "name": "Expert & Authority Mastery",
-      "pain": "\"I know my craft, so why doesn't the world come to me?\"",
+      "pain": "\"I'm great at what I do, but nobody knows me.\"",
       "diagnosis": "They already know something valuable. The problem is that nobody is buying it yet — no profile, no offer, no path from stranger to client. Seventeen weeks building a name and a ladder for it to climb.",
       "outcome": "your expertise, earning — a niche only you could own, a product live on the internet, strangers finding you weekly, and a ladder that carries someone from a free download to a five-figure relationship",
       "proof": "assets published and first revenue banked",
       "artefact": "Your Ladder, Live — an edge, a published product, a masterclass shot, a traffic tap running, three paid rungs",
       "led_by": "Vishen Lakhiani as Curriculum Expert, with Paul McKenna, Chris Do, Alessio Pieroni, Lisa Nichols, Natalie Ellis, Kwame Christian, John Lee and Ajit Nawalkha",
-      "pathway": "Authority Pathway"
+      "pathway": "Authority Pathway",
+      "promise": "Be chosen."
     },
     "aif": {
       "name": "AI for Founders Mastery",
-      "pain": "\"Running this is eating me alive.\"",
+      "pain": "\"My business can't run a single day without me.\"",
       "diagnosis": "They already have something to sell. The problem is that every part of it runs through them. Eighteen weeks rebuilding five pillars — marketing, sales, operations, people, finance — as AI systems that run while they lead.",
       "outcome": "a business that grows without grinding you down — leads arriving, nothing going cold, delivery running itself, the numbers talking to you, and your Fridays back",
       "proof": "systems in production",
       "artefact": "the Founder Operating System — company brain, demand engine, delivery agents, finance cockpit",
       "led_by": "Vishen Lakhiani + Daniel Priestley as co-owners, with Noelle Russell, Marie Forleo, Shawn Kanungo, Alex Dogliotti and Vykintas Glodenis",
-      "pathway": "Entrepreneurship Pathway"
+      "pathway": "Entrepreneurship Pathway",
+      "promise": "Run on AI."
     }
   },
   "router": {
@@ -30,6 +32,11 @@
     "answer": "Drowning in delivery → <strong>AI for Founders.</strong> Unknown with real expertise → <strong>Expert &amp; Authority.</strong> Can't hold a room at all → <strong>Speaking &amp; Influence.</strong> If a prospect can't answer, they are Expert &amp; Authority: you cannot systematise demand that doesn't exist yet. The usual sequence is Expert &amp; Authority first, then AI for Founders — build the name, then the machine to serve it."
   },
   "comparison": [
+    [
+      "The promise",
+      "<strong>Be chosen</strong> — the market seeks you out",
+      "<strong>Run on AI</strong> — the business stops depending on you"
+    ],
     [
       "The buyer",
       "Has expertise and wants to be known and paid for it",
@@ -82,5 +89,20 @@
     ]
   ],
   "overlap_rules": "<strong>Content:</strong> AI for Founders automates the pipeline; Expert &amp; Authority finds the voice that goes into it. <strong>Offers:</strong> AI for Founders prices and delivers what exists; Expert &amp; Authority designs the ladder that doesn't exist yet. <strong>Demand:</strong> AI for Founders builds the capture mechanism; Expert &amp; Authority builds the reason anyone fills it in. Neither programme teaches the other's half — and the zero-overlap faculty enforces it.",
-  "retention": "S&amp;I's own detractors flagged scope drift, verbatim: \"I'm only interested in speaking, not creating a course or teaching or creating a business\" — on the week that programme drifted into Expert &amp; Authority territory. Scope drift is not a marketing problem; it is a refund generator. Each programme teaches its own promise and cross-refers the rest. The sequence also matches our intake — 68% female, 78% aged 45+, service businesses built on expertise, 91% of Social Media Mastery students not yet earning from their audience: those students have nothing to systematise yet."
+  "retention": "S&amp;I's own detractors flagged scope drift, verbatim: \"I'm only interested in speaking, not creating a course or teaching or creating a business\" — on the week that programme drifted into Expert &amp; Authority territory. Scope drift is not a marketing problem; it is a refund generator. Each programme teaches its own promise and cross-refers the rest. The sequence also matches our intake — 68% female, 78% aged 45+, service businesses built on expertise, 91% of Social Media Mastery students not yet earning from their audience: those students have nothing to systematise yet.",
+  "neighbours_intro": "The pairs customers confuse — and the line that separates them:",
+  "neighbours": [
+    [
+      "Speaking &amp; Influence vs Expert &amp; Authority",
+      "Speaking makes you great when you get the room; Authority makes the room ask for you."
+    ],
+    [
+      "Social Media Mastery vs Expert &amp; Authority",
+      "Social Media gets you seen by many; Authority gets you chosen by the right ones."
+    ],
+    [
+      "AI Mastery vs AI for Founders",
+      "AI Mastery transforms <em>you</em>; AI for Founders transforms <em>your business</em>."
+    ]
+  ]
 }
