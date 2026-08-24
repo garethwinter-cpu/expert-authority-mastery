@@ -189,6 +189,18 @@
       "applied_to": [
         "reconciliation note artifact"
       ]
+    },
+    {
+      "id": "faculty-status-reset-aug24",
+      "source": "Gareth, 24 Aug 2026",
+      "finding": "All guest authors on BOTH programmes are 'In consideration' until Gareth confirms otherwise — no Confirmed status for Lisa Nichols, Paul McKenna, Kwame Christian, John Lee (E&A) or Noelle Russell, Marie Forleo, Shawn Kanungo (AIF). Vishen (and AIF co-owners + internal Vykintas) remain the confirmed spine. Alessio Pieroni is lab lead ONLY, not an author — his W7 teach moved to Vishen (Alessio keeps the W7 lab). E&A lab-lead bench is now FIVE, all in consideration: Alessio, Kash, Jimmy Naraine, Sabrina Stocker, Safwaan Mohammed (no more 'alternate' framing). Marisa Peer ADDED as named alternative to Paul McKenna on the W2 confidence lane (diversification — Paul appears across many programmes); Paul not removed; one of them teaches W2, decided before contracts; Marisa's cohort ratings still need pulling. Alex Dogliotti moved to lab/implementation (W14+W15 labs with Vykintas), not co-teach.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html",
+        "ai-founders.html",
+        "data/boundary.json",
+        "index.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
