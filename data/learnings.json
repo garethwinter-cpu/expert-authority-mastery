@@ -213,6 +213,19 @@
         "index.html",
         "authors/maria-wendt.jpg"
       ]
+    },
+    {
+      "id": "jaideep-final-roster-aug25",
+      "source": "Jaideep's final-roster note (screenshot, 25 Aug 2026) + Gareth's instruction: keep the in-consideration bench, remove the cut names, add the new ones",
+      "finding": "CUT from E&A faculty: Marisa Peer (option removed same day it was added) and Lisa Nichols (out per Gareth's call, relayed by Jaideep) — their stories stay as case-study material (W1 quote, W4 first-stage story); W8 story week moves to Vishen (11 live sessions, 12 bookends). KEPT per Gareth: Paul McKenna, Chris Do, Kwame, John Lee, Natalie, Ajit, all lab leads. ADDED as options: E&A — Daniel Priestley (demand & oversubscription; FLAG: breaks the zero-overlap rule, he co-owns AIF — bounded guest week only, rule to be rewritten deliberately); Maria Wendt lane updated to simple offers/leverage marketing, step-ladder module, roster claim '$20M on $20 products' UNVERIFIED. AIF — Nick Sonnenberg (operations; overlaps Vykintas W11), Cassie Kozyrkov (data & decisions; no photo in Authors table), Domenic Ashburn (marketing/creative; promoted from reserve, verified 9.47+ floor across six sessions), Sara Davison & Tyler Fisk (build-lab support pair). Roster names NOT adopted: 'Jimmy Confirmed' (stays in consideration per Gareth's standing rule); Regan Hillyer, Jeffrey Allen, Jim Kwik were never on our pages. Headshots pulled from Authors table for Nick, Domenic, Sara, Tyler; Cassie has none.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html",
+        "ai-founders.html",
+        "data/boundary.json",
+        "index.html",
+        "authors/*.jpg"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
