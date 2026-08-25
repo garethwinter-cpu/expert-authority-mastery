@@ -201,6 +201,18 @@
         "data/boundary.json",
         "index.html"
       ]
+    },
+    {
+      "id": "maria-wendt-option-aug24",
+      "source": "Gareth, 24 Aug 2026; Authors table app4ulN4GnBRvcfAL/tbl1vRMe41Jh468ey (photo attgD11NAA0jccsf0)",
+      "finding": "Maria Wendt added as an E&A author OPTION, in consideration, lane to be assigned (closest fit: audience/traffic, W10-11, adjacent to Natalie Ellis/Kash). No sessions found in SMM or E&A bases — no cohort rating; pilot against the 9.3 bar before contract. Headshot pulled from Authors table and stored as authors/maria-wendt.jpg (Airtable URLs expire).",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html",
+        "data/boundary.json",
+        "index.html",
+        "authors/maria-wendt.jpg"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
