@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>AI for Founders Guild</title>
+<meta name="description" content="Proposal for the AI for Founders Guild: the evergreen, application-only tier above the Mastery — where the Founder Operating System stays ahead of a field that moves monthly."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --brand:#1832B4;--brand-bright:#3D63F5;--brand-content:#1429A0;--brand-dark:#0F1F7A;
+ --brand-light:#EEF1FE;--brand-border:#CFD9FB;
+ --gold:#8A6400;--gold-bright:#C99700;--gold-light:#FBF3DE;--gold-border:#EBD9A8;
+ --green:#159F65;--green-light:#E8F8F1;--orange:#ED6325;--orange-content:#C9541F;--orange-light:#FFF4E9;
+ --grey-100:#F9F9F9;--grey-200:#F3F4F6;--grey-400:#979CA5;--grey-500:#595E67;--grey-600:#292D38;--ink:#0F131A;
+ --bg:#fff;--surface:#fff;--text:#0F131A;--text-muted:#595E67;--text-subtle:#71767F;
+ --border:#DFE1E5;--border-strong:#CED1D7;
+ --shadow-light:0 4px 15px 0 rgba(0,0,0,.05);--shadow-medium:0 5px 20px 0 rgba(0,0,0,.10);
+ --container:1180px;--ease:cubic-bezier(0.2,0,0,1);
+ --dusk:linear-gradient(140deg,#06070E 0%,#0F1F7A 48%,#3D63F5 125%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Google Sans","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
+.overline{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-content)}
+.overline.gold{color:var(--gold)}
+h1{font-size:clamp(38px,5.4vw,64px);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+h3{font-size:20px;font-weight:700;line-height:1.3}
+.body-lg{font-size:19px;line-height:1.65;color:var(--text-muted)}
+.body-md{font-size:16px;line-height:1.6;color:var(--text-muted)}
+.small{font-size:13px;color:var(--text-subtle)}
+.badge{display:inline-flex;align-items:center;gap:6px;border-radius:128px;padding:6px 14px;font-size:12.5px;font-weight:600;background:var(--brand-light);color:var(--brand-content)}
+.badge.dark{background:rgba(255,255,255,.13);color:#fff}
+.badge.goldd{background:rgba(201,151,0,.22);color:#F2CE73;border:1px solid rgba(201,151,0,.45)}
+.topbar{position:sticky;top:0;z-index:60;height:60px;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.wordmark{font-size:18px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.wordmark span{color:var(--brand)}
+.topbar .meta{font-size:13px;color:var(--text-subtle);font-weight:500}
+.topbar .meta a{font-weight:600}
+.hero{background:var(--dusk);color:#fff;padding:76px 0 96px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(201,151,0,.26),transparent 65%)}
+.hero .wrap{position:relative;z-index:2}
+.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+.hero .promise{font-size:clamp(52px,8vw,104px);font-weight:700;letter-spacing:-.03em;line-height:.98;background:linear-gradient(100deg,#fff 30%,#F2CE73 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+.hero h1{font-size:clamp(24px,3vw,34px);color:#AFC2FF;font-weight:700;margin-bottom:18px}
+.hero .answer{max-width:860px;font-size:20px;line-height:1.65;color:#DCE4FF}
+.hero .answer strong{color:#fff}
+.hero .quickfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.qf{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:18px 20px}
+.qf .n{font-size:25px;font-weight:700;letter-spacing:-.01em}
+.qf .l{font-size:13px;color:#AFC2FF;margin-top:4px;line-height:1.4}
+main{padding:60px 0 80px}
+section+section{margin-top:60px}
+.section-head{margin-bottom:26px;max-width:900px}
+.section-head p{margin-top:10px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;box-shadow:var(--shadow-light)}
+.card.tint{background:var(--brand-light);border-color:var(--brand-border)}
+.card.goldt{background:var(--gold-light);border-color:var(--gold-border)}
+.card h3{margin-bottom:8px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content);margin-bottom:10px}
+.kicker.gold{color:var(--gold)}
+.pillnum{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;background:var(--dusk);color:#F2CE73;margin-bottom:14px}
+.tbl-scroll{overflow-x:auto;border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow-light)}
+table.tbl{width:100%;border-collapse:collapse;font-size:14.5px}
+.tbl th{text-align:left;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-subtle);padding:13px 18px;border-bottom:1px solid var(--border-strong);background:var(--grey-100)}
+.tbl td{padding:13px 18px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-muted)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td strong{color:var(--ink)}
+.callout{display:flex;gap:16px;background:var(--gold-light);border:1px solid var(--gold-border);border-radius:16px;padding:22px 26px}
+.callout.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.callout.dark p{color:#C9CEDA}
+.callout.dark p strong{color:#fff}
+.callout .ic{flex:0 0 auto;font-size:18px;color:var(--gold)}
+.callout.dark .ic{color:#F2CE73}
+.callout p{font-size:15px;line-height:1.6;color:var(--grey-600)}
+.callout p+p{margin-top:8px}
+.quote{border-left:4px solid var(--gold-bright);background:var(--grey-100);border-radius:0 16px 16px 0;padding:20px 26px}
+.quote p{font-size:16.5px;line-height:1.6;color:var(--grey-600);font-weight:500}
+.quote .by{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);margin-top:10px}
+.rhythm{display:grid;gap:12px}
+.rhythm .row{display:grid;grid-template-columns:170px 1fr;gap:18px;background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px 22px;box-shadow:var(--shadow-light)}
+.rhythm .cad{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding-top:3px}
+.rhythm h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.rhythm p{font-size:14.5px;color:var(--text-muted);line-height:1.55}
+ul.tick{list-style:none;display:grid;gap:9px;padding:0}
+ul.tick li{font-size:14.5px;color:var(--text-muted);line-height:1.55;padding-left:26px;position:relative}
+ul.tick li::before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--green)}
+ul.tick li strong{color:var(--ink)}
+ul.cross li::before{content:"✕";color:var(--orange-content)}
+.stat{border-radius:16px;padding:24px;border:1px solid var(--border);background:#fff}
+.stat .n{font-size:38px;font-weight:700;letter-spacing:-.02em;color:var(--brand);line-height:1}
+.stat .l{font-size:14px;font-weight:600;color:var(--ink);margin-top:10px;line-height:1.4}
+.stat .s{font-size:12.5px;color:var(--text-subtle);margin-top:5px;line-height:1.45}
+footer{border-top:1px solid var(--border);padding:26px 0 44px;margin-top:70px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--text-subtle)}
+@media(max-width:880px){.g2,.g3{grid-template-columns:1fr}.hero .quickfacts{grid-template-columns:repeat(2,1fr)}.rhythm .row{grid-template-columns:1fr;gap:6px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="wordmark">Mindvalley <span>×</span> Vishen Lakhiani &amp; Daniel Priestley</div>
+    <div class="meta">Guild proposal · <a href="/ai-founders">the Mastery it sits above</a> · <a href="/">all programmes</a></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badges">
+      <span class="badge dark">Entrepreneurship Pathway</span>
+      <span class="badge goldd">Above the Mastery</span>
+      <span class="badge goldd">$10,000 a year · application only</span>
+      <span class="badge dark">Evergreen — members join monthly</span>
+    </div>
+    <div class="promise">Stay ahead.</div>
+    <h1>The AI for Founders Guild</h1>
+    <p class="answer">The Mastery installs your Founder Operating System — a business that runs on AI. The Guild is what keeps it true: since February, build costs fell <strong>97%</strong> and build speed rose <strong>50×</strong>. A field that moves that fast makes any finished course a snapshot. <strong>The Guild is the subscription to staying current</strong> — your systems serviced, your stack upgraded quarterly, in a room of founders whose machines are as alive as yours.</p>
+    <div class="quickfacts">
+      <div class="qf"><div class="n">$10,000/yr</div><div class="l">The guild-tier anchor Vishen stated from stage — "may go up to 20,000"</div></div>
+      <div class="qf"><div class="n">Quarterly</div><div class="l">OS upgrade sprints — the Founder Operating System rebuilt against the newest tools</div></div>
+      <div class="qf"><div class="n">Evergreen</div><div class="l">No cohort, no end date — monthly application intake</div></div>
+      <div class="qf"><div class="n">6–12</div><div class="l">Always-on founder pods — the witnessing unit, for life</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">Why this guild must exist</div>
+      <h2>A cohort that ends goes stale in a quarter. That is the whole argument.</h2>
+      <p class="body-lg">The Mastery's own evidence makes the case: the tools its students build on have dropped 97% in cost and gained 50× in speed <em>since February</em>. Nobody re-buys a Mastery every quarter — but every founder with systems in production needs those systems maintained, upgraded and re-benchmarked as the field moves. The Academy's own product note says it plainly: <strong>"your systems need maintaining and updating; the Guild is where that lives."</strong> This page gives that sentence its architecture.</p>
+    </div>
+    <div class="grid g2">
+      <div class="quote">
+        <p>"Then the newest thing we are launching is $10,000 masterminds. This is application only. You apply to get in. This is 10,000 a year, and that's just starting. Eventually, it may go up to 20,000 a year."</p>
+        <div class="by">Vishen — accelerator stage, defining the guild tier of the Mindvalley ladder</div>
+      </div>
+      <div class="quote">
+        <p>"People join masterminds not just for the teacher, but for the identity of being part of a group of elite performers who are determined to do something truly great and support each other."</p>
+        <div class="by">Vishen — accelerator stage, from his own $100K mastermind story</div>
+      </div>
+    </div>
+    <div class="callout dark" style="margin-top:18px">
+      <div class="ic">◆</div>
+      <div><p><strong>The guild doctrine comes from Day 1 of MVU.</strong> Vishen's Tallinn story — guildhalls where masters and students traded craft, strangers stepping through the gates into a new identity, accountability as the mechanism ("in guilds… they held each other accountable"). The Expert &amp; Authority Guild carries the story's demand side; this Guild carries its workshop side: <strong>the blacksmiths sharing new ways of metalworking, so everyone's forge gets better.</strong></p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The boundary</div>
+      <h2>The Mastery installs the machine. The Guild keeps it winning.</h2>
+      <p class="body-md">The Guild never re-teaches the five pillars — it assumes a Founder Operating System already in production. Founders without one are routed to the Mastery: it is the qualification path, not a competitor.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>&nbsp;</th><th>AI for Founders Mastery</th><th>AI for Founders Guild</th></tr></thead>
+      <tbody>
+        <tr><td><strong>The promise</strong></td><td>Run on AI</td><td><strong>Stay ahead</strong></td></tr>
+        <tr><td><strong>The job</strong></td><td>Installation — founder-as-bottleneck → a business that runs on AI</td><td>Maintenance and edge — systems serviced, stack current, benchmarks beaten</td></tr>
+        <tr><td><strong>Format</strong></td><td>Cohort: 18 weeks, done-with-you, ends</td><td>Evergreen: always on, quarterly upgrade sprints, no end date</td></tr>
+        <tr><td><strong>The learning</strong></td><td>Curriculum — the five pillars, in sequence</td><td>Intelligence — model releases, cost curves, what to rebuild this quarter</td></tr>
+        <tr><td><strong>Who gets in</strong></td><td>A founder with a live business who is the bottleneck</td><td>Application only · a Founder OS in production · floor to be set (open decision)</td></tr>
+        <tr><td><strong>What you leave with</strong></td><td>The Founder Operating System — certification by running systems</td><td>You don't leave. Your OS version number keeps climbing</td></tr>
+        <tr><td><strong>Community</strong></td><td>Pods for the cohort's duration</td><td>Founder pods for life, the commons, real-world tables</td></tr>
+        <tr><td><strong>Price</strong></td><td>$5,999 Install · $7,999 Install + Certify (per the Academy)</td><td>$10,000/yr — the stage-stated guild tier</td></tr>
+        <tr><td><strong>Identity sold</strong></td><td>"My business runs on AI"</td><td>"I run an AI-first company, among founders who do the same"</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">The architecture</div>
+      <h2>Six pillars — the same guild shape, tuned for founders</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <div class="pillnum">1</div>
+        <h3>The Floor</h3>
+        <p class="body-md">Application only, concierge review, monthly intake, kick-and-refund for takers — the constitution Vishen stated from stage. The qualifying bar for <em>this</em> guild is an open decision: our proposal is <strong>a live business with a Founder OS in production</strong> (Mastery certification or equivalent), plus a revenue floor to be set with the Academy. The E&amp;A Guild's $100K precedent suggests the shape.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">2</div>
+        <h3>The Pulse</h3>
+        <p class="body-md">The monthly <strong>State of the Stack</strong>: model releases that change the maths, tool consolidations, cost-curve shifts, what broke and what got cheap. Plus live teardowns — a member's real pipeline, benchmarked in the open. The Mastery teaches doctrine; <strong>the Guild reports from the front, monthly, because the front moves monthly.</strong></p>
+      </div>
+      <div class="card">
+        <div class="pillnum">3</div>
+        <h3>The Commons</h3>
+        <p class="body-md">The shared-systems library: working agents, skills, automations and prompts posted by members, with giver leaderboards. When one founder cracks delivery automation, every forge in the guild gets the technique — the blacksmith rule, applied to agents. Two years of members' running systems becomes a moat no course can copy.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">4</div>
+        <h3>The Upgrade Sprint</h3>
+        <p class="body-md">The pillar unique to this guild: <strong>quarterly OS upgrade sprints</strong> — a build week where every member's Founder Operating System is re-benchmarked against the newest tools, with lab coaches on the floor. This absorbs the Mastery's "Alumni &amp; OS Upgrades" continuity rung and gives the $10K its most concrete deliverable: your machine, serviced four times a year.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">5</div>
+        <h3>Pods &amp; Witnessing</h3>
+        <p class="body-md">Always-on founder pods of 6–12 — numbers named aloud, the weekly review, the Friday text. For founders the witnessing unit doubles as a board: the pod sees your dashboard, not your highlight reel.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">6</div>
+        <h3>The Moot</h3>
+        <p class="body-md">Real-world founder tables in member cities, quarterly Guild Launch windows where the room gets behind whoever is shipping — intros, first customers, the collective push — and <strong>MVU as the annual moot</strong>, where the year's best systems are demoed from stage. Entry gets an initiation, not a receipt: identity is environmental.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The evidence that the clock is the product</div>
+      <h2>Three numbers, one conclusion</h2>
+    </div>
+    <div class="grid g3">
+      <div class="stat"><div class="n">97%</div><div class="l">Fall in build costs since February</div><div class="s">Vishen, MVU 2026 stage — the pace that makes a finished course a snapshot</div></div>
+      <div class="stat"><div class="n">50×</div><div class="l">Rise in build speed over the same window</div><div class="s">Same source — what a founder's stack should have absorbed, and mostly hasn't</div></div>
+      <div class="stat"><div class="n">NPS 90</div><div class="l">Priestley's MVU 2026 accelerator</div><div class="s">"Higher than the iPhone at launch" — Vishen, Day 1. The co-owner's format, already proven with this audience</div></div>
+    </div>
+    <div class="callout" style="margin-top:18px">
+      <div class="ic">◆</div>
+      <div><p><strong>And the retention logic is already on our own pages.</strong> The Mastery's commercial funnel ends in "Alumni &amp; OS Upgrades — quarterly OS-upgrade calls + alumni reunion." That rung, priced and given a room, <em>is</em> this Guild. We are not inventing a new product; we are naming the top of a ladder we already drew.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">A year inside</div>
+      <h2>The rhythm — always on, benchmarked quarterly</h2>
+    </div>
+    <div class="rhythm">
+      <div class="row"><div class="cad">Always on</div><div><h4>The commons + your founder pod</h4><p>The shared-systems library with giver leaderboards; your pod of 6–12 reading each other's real dashboards weekly.</p></div></div>
+      <div class="row"><div class="cad">Weekly</div><div><h4>Build room</h4><p>Open office hours with installation-grade coaches — the Mastery's most-attended format, made permanent.</p></div></div>
+      <div class="row"><div class="cad">Monthly</div><div><h4>State of the Stack + marquee session</h4><p>The Pulse briefing on what moved, plus a paid specialist going deep — a new agent architecture, a pricing engine, a delivery pattern — always demonstrated on a member's live business.</p></div></div>
+      <div class="row"><div class="cad">Quarterly</div><div><h4>The OS upgrade sprint</h4><p>Build week: every member's Founder Operating System re-benchmarked against the newest tools; one measurable improvement shipped per member. Plus city founder tables and the Guild Launch window.</p></div></div>
+      <div class="row"><div class="cad">Annually</div><div><h4>The moot — MVU</h4><p>The year's best systems demoed from stage; initiation for new members; the roadmap for the year ahead.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Commercial logic</div>
+      <h2>Same tier, same anchor, different deliverable</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card goldt">
+        <div class="kicker gold">The anchor</div>
+        <h3>$10,000 a year</h3>
+        <p class="body-md" style="margin-top:8px">The guild tier Vishen defined from stage ("$10,000 masterminds… may go up to 20,000 a year"), applied to this pathway. Annual-first with a quarterly payment plan; founding members lock the founding price. The AI-tools processing add-on (~$49.99/month) is already priced from stage.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">The model</div>
+        <h3>Evergreen, capacity-capped</h3>
+        <p class="body-md" style="margin-top:8px">Monthly application intake; capacity caps per pod. The Certify tier of the Mastery ($7,999, Certified AI Consultant) feeds the guild its most valuable members: certified installers whose client work generates the commons' best material.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">The economics</div>
+        <h3>Recurring, self-generating content</h3>
+        <p class="body-md" style="margin-top:8px">Illustrative, not a target: 200 members is $2M ARR, recurring. The content cost falls over time — the members' systems, benchmarks and teardowns are the programme. The Guild is also the churn answer for the whole pathway: the reason "graduating" from the Mastery doesn't mean leaving Mindvalley.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">What this is not</div>
+      <h2>Held boundaries</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <ul class="tick cross">
+          <li><strong>Not a course, and not the Mastery again.</strong> No five-pillars-from-scratch. A member's first question is never "how do I build a company brain" — it's "what should I rebuild this quarter."</li>
+          <li><strong>Not AI Mastery's upgrade path.</strong> AI Mastery transforms <em>you</em>; its graduates' next step is the AIF Mastery if their business is the bottleneck. This Guild sits above the <em>Founders</em> line only.</li>
+          <li><strong>Not Zoom-only.</strong> Founder tables, upgrade sprints and the moot are the product; calls are connective tissue.</li>
+          <li><strong>Not a promise of funding.</strong> Guild Launches mean the room moves for you — intros, first customers, the collective push. Anything resembling co-investment needs a legal read before it is written anywhere.</li>
+        </ul>
+      </div>
+      <div class="card tint">
+        <div class="kicker">The funnel, complete</div>
+        <p class="body-md">AI First Founder Quest → <strong>AI for Founders Mastery (install it, $5,999/$7,999)</strong> → systems in production → <strong>Guild (keep it winning, $10,000/yr)</strong>. The Mastery's final systems audit hands each graduate a maintenance plan — and the maintenance plan's natural home is the Guild. The Academy's one-pager already routes it this way; this page makes the routing official.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Decisions</div>
+      <h2>Open before this goes external</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card" style="border-left:4px solid var(--orange)">
+        <div class="kicker" style="color:var(--orange-content)">Open</div>
+        <ul class="tick">
+          <li><strong>The floor.</strong> The E&amp;A Guild inherits Vishen's stated $100K bar; this guild's equivalent — OS in production + revenue floor — needs setting with the Academy before applications open.</li>
+          <li><strong>The name.</strong> The Academy's note calls it "the AI Guild"; this proposal says <strong>AI for Founders Guild</strong> so the tier reads as the Mastery's roof, not a separate brand. Sign off with Vishen + Jaideep.</li>
+          <li><strong>One commons or two.</strong> We recommend separate rooms for the two guilds (the pulse content diverges completely) on shared Finerminds infrastructure — confirm the platform carries leaderboards, pods and the systems library.</li>
+          <li><strong>Guildmaster.</strong> A permanent operator-host — Vykintas is the obvious candidate given the lab data, but that allocation trades against the Mastery. Decide once, across both.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:4px solid var(--green)">
+        <div class="kicker" style="color:var(--green)">Decided in this proposal</div>
+        <ul class="tick">
+          <li>$10,000/yr anchor, annual-first — the stage-defined guild tier, with the $20K escalation as founding urgency</li>
+          <li>Evergreen with monthly intake; six-pillar architecture; quarterly OS upgrade sprints as the signature deliverable</li>
+          <li>The Guild never re-teaches the Mastery; no OS in production → Mastery first</li>
+          <li>Absorbs the "Alumni &amp; OS Upgrades" continuity rung — one product, not two</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">Sources</div>
+      <h2>Where every claim comes from</h2>
+      <p class="body-md"><strong>Expert &amp; Authority Accelerator transcript</strong> (MVU 2026) — the $10,000/yr guild-tier definition, application-only mechanics, kick-and-refund rule, pods of 6–12, monthly intake, AI-tools add-on. <strong>MVU 2026 Day 1 stage talk</strong> — the Tallinn guild doctrine and the NPS 90 claim for Priestley's accelerator (Vishen's words, self-reported). <strong>MVU 2026 stage talks</strong> — the 97% cost-fall and 50× speed-rise figures (Vishen, self-reported). <strong>The Academy's Mastery one-pager</strong> (Jaideep, Aug 2026) — "your systems need maintaining and updating; the Guild is where that lives." All quotes verbatim; the AIF-specific floor and pricing beyond the stage-stated tier are proposals, not facts.</p>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>AI for Founders Guild — proposal · Mindvalley Curriculum Team.</div>
+    <div>Internal — contains pricing and qualification criteria. <a href="/ai-founders">Mastery proposal</a> · <a href="/expert-authority-guild">Expert &amp; Authority Guild</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

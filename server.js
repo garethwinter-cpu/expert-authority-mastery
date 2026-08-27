@@ -15,6 +15,8 @@ app.get('/', page('index.html'));
 app.get('/expert-authority', page('expert-authority.html'));
 app.get('/ai-founders', page('ai-founders.html'));
 app.get('/positioning', page('positioning.html'));
+app.get('/expert-authority-guild', page('expert-authority-guild.html'));
+app.get('/ai-founders-guild', page('ai-founders-guild.html'));
 
 // legacy link from the first deploy of this repo
 app.get('/proposal', (req, res) => res.redirect(301, '/expert-authority'));

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Expert &amp; Authority Guild</title>
+<meta name="description" content="Proposal for the Expert &amp; Authority Guild: the evergreen, application-only tier above the Mastery — $10,000 a year, validated from Vishen's MVU 2026 stage."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --brand:#7A12D4;--brand-bright:#9D4EE8;--brand-content:#6810B4;--brand-dark:#44087A;
+ --brand-light:#F6EEFD;--brand-border:#E4D2F8;
+ --gold:#8A6400;--gold-bright:#C99700;--gold-light:#FBF3DE;--gold-border:#EBD9A8;
+ --green:#159F65;--green-light:#E8F8F1;--orange:#ED6325;--orange-content:#C9541F;--orange-light:#FFF4E9;
+ --grey-100:#F9F9F9;--grey-200:#F3F4F6;--grey-400:#979CA5;--grey-500:#595E67;--grey-600:#292D38;--ink:#0F131A;
+ --bg:#fff;--surface:#fff;--text:#0F131A;--text-muted:#595E67;--text-subtle:#71767F;
+ --border:#DFE1E5;--border-strong:#CED1D7;
+ --shadow-light:0 4px 15px 0 rgba(0,0,0,.05);--shadow-medium:0 5px 20px 0 rgba(0,0,0,.10);
+ --container:1180px;--ease:cubic-bezier(0.2,0,0,1);
+ --dusk:linear-gradient(140deg,#08070C 0%,#2A0549 48%,#7A12D4 125%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Google Sans","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
+.overline{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-content)}
+.overline.gold{color:var(--gold)}
+h1{font-size:clamp(38px,5.4vw,64px);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+h3{font-size:20px;font-weight:700;line-height:1.3}
+.body-lg{font-size:19px;line-height:1.65;color:var(--text-muted)}
+.body-md{font-size:16px;line-height:1.6;color:var(--text-muted)}
+.small{font-size:13px;color:var(--text-subtle)}
+.badge{display:inline-flex;align-items:center;gap:6px;border-radius:128px;padding:6px 14px;font-size:12.5px;font-weight:600;background:var(--brand-light);color:var(--brand-content)}
+.badge.dark{background:rgba(255,255,255,.13);color:#fff}
+.badge.goldd{background:rgba(201,151,0,.22);color:#F2CE73;border:1px solid rgba(201,151,0,.45)}
+.topbar{position:sticky;top:0;z-index:60;height:60px;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.wordmark{font-size:18px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.wordmark span{color:var(--brand)}
+.topbar .meta{font-size:13px;color:var(--text-subtle);font-weight:500}
+.topbar .meta a{font-weight:600}
+.hero{background:var(--dusk);color:#fff;padding:76px 0 96px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-160px;top:-160px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(201,151,0,.28),transparent 65%)}
+.hero .wrap{position:relative;z-index:2}
+.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 24px}
+.hero .promise{font-size:clamp(52px,8vw,104px);font-weight:700;letter-spacing:-.03em;line-height:.98;background:linear-gradient(100deg,#fff 30%,#F2CE73 100%);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:14px}
+.hero h1{font-size:clamp(24px,3vw,34px);color:#D7B6F7;font-weight:700;margin-bottom:18px}
+.hero .answer{max-width:860px;font-size:20px;line-height:1.65;color:#E6D8F8}
+.hero .answer strong{color:#fff}
+.hero .quickfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.qf{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:18px 20px}
+.qf .n{font-size:25px;font-weight:700;letter-spacing:-.01em}
+.qf .l{font-size:13px;color:#CDB2EE;margin-top:4px;line-height:1.4}
+main{padding:60px 0 80px}
+section+section{margin-top:60px}
+.section-head{margin-bottom:26px;max-width:900px}
+.section-head p{margin-top:10px}
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;box-shadow:var(--shadow-light)}
+.card.tint{background:var(--brand-light);border-color:var(--brand-border)}
+.card.goldt{background:var(--gold-light);border-color:var(--gold-border)}
+.card h3{margin-bottom:8px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content);margin-bottom:10px}
+.kicker.gold{color:var(--gold)}
+.pillnum{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;background:var(--dusk);color:#F2CE73;margin-bottom:14px}
+.tbl-scroll{overflow-x:auto;border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow-light)}
+table.tbl{width:100%;border-collapse:collapse;font-size:14.5px}
+.tbl th{text-align:left;font-size:11.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-subtle);padding:13px 18px;border-bottom:1px solid var(--border-strong);background:var(--grey-100)}
+.tbl td{padding:13px 18px;border-bottom:1px solid var(--border);vertical-align:top;color:var(--text-muted)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl td strong{color:var(--ink)}
+.callout{display:flex;gap:16px;background:var(--gold-light);border:1px solid var(--gold-border);border-radius:16px;padding:22px 26px}
+.callout.dark{background:var(--ink);border-color:var(--ink);color:#fff}
+.callout.dark p{color:#C9CEDA}
+.callout.dark p strong{color:#fff}
+.callout .ic{flex:0 0 auto;font-size:18px;color:var(--gold)}
+.callout.dark .ic{color:#F2CE73}
+.callout p{font-size:15px;line-height:1.6;color:var(--grey-600)}
+.callout p+p{margin-top:8px}
+.quote{border-left:4px solid var(--gold-bright);background:var(--grey-100);border-radius:0 16px 16px 0;padding:20px 26px}
+.quote p{font-size:16.5px;line-height:1.6;color:var(--grey-600);font-weight:500}
+.quote .by{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);margin-top:10px}
+.rhythm{display:grid;gap:12px}
+.rhythm .row{display:grid;grid-template-columns:170px 1fr;gap:18px;background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px 22px;box-shadow:var(--shadow-light)}
+.rhythm .cad{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);padding-top:3px}
+.rhythm h4{font-size:16px;font-weight:700;margin-bottom:4px}
+.rhythm p{font-size:14.5px;color:var(--text-muted);line-height:1.55}
+ul.tick{list-style:none;display:grid;gap:9px;padding:0}
+ul.tick li{font-size:14.5px;color:var(--text-muted);line-height:1.55;padding-left:26px;position:relative}
+ul.tick li::before{content:"✓";position:absolute;left:0;font-weight:700;color:var(--green)}
+ul.tick li strong{color:var(--ink)}
+ul.cross li::before{content:"✕";color:var(--orange-content)}
+footer{border-top:1px solid var(--border);padding:26px 0 44px;margin-top:70px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--text-subtle)}
+@media(max-width:880px){.g2,.g3{grid-template-columns:1fr}.hero .quickfacts{grid-template-columns:repeat(2,1fr)}.rhythm .row{grid-template-columns:1fr;gap:6px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="wordmark">Mindvalley <span>×</span> Vishen Lakhiani</div>
+    <div class="meta">Guild proposal · <a href="/expert-authority">the Mastery it sits above</a> · <a href="/">all programmes</a></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badges">
+      <span class="badge dark">Authority Pathway</span>
+      <span class="badge goldd">Above the Mastery</span>
+      <span class="badge goldd">$10,000 a year · application only</span>
+      <span class="badge dark">Evergreen — members join monthly</span>
+    </div>
+    <div class="promise">Stay chosen.</div>
+    <h1>The Expert &amp; Authority Guild</h1>
+    <p class="answer">The Mastery makes you chosen — a name, a ladder, first revenue. The Guild is where you <strong>stay</strong> chosen: an application-only room of working experts who share what is converting <em>right now</em>, witness each other's commitments, and move as one when a member launches. A Mastery fixes a state. <strong>A Guild maintains an edge — and you never graduate from an edge.</strong></p>
+    <div class="quickfacts">
+      <div class="qf"><div class="n">$10,000/yr</div><div class="l">Stated from stage — "and that's just starting… it may go up to 20,000"</div></div>
+      <div class="qf"><div class="n">$100K</div><div class="l">Revenue floor, from your expert business specifically — Vishen's stated bar</div></div>
+      <div class="qf"><div class="n">Evergreen</div><div class="l">No cohort, no end date — "every month there'll be new members joining"</div></div>
+      <div class="qf"><div class="n">6–12</div><div class="l">Always-on pods, ideally in your city — the witnessing unit, for life</div></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">Why a guild — the frame Vishen already built</div>
+      <h2>He didn't announce a community. He announced the oldest identity technology in the city he was standing in.</h2>
+      <p class="body-lg">On Day 1 of MVU 2026, Vishen spent ten minutes on Tallinn's guildhalls: strangers travelled to step through the city gates into a new identity — "you didn't inherit your way in, you stepped in" — masters and students trading craft because universities didn't exist, and the Guild of the Blackheads inventing the Christmas tree in 1441. His conclusions are this product's doctrine: <strong>identity is environmental</strong>, witnessing is what made guilds work, and guilds don't take courses — <strong>guilds start traditions.</strong></p>
+    </div>
+    <div class="grid g2">
+      <div class="quote">
+        <p>"This is a guild. Remember when you joined Mindvalley, we spoke about guilds… blacksmiths and all of these other experts, leather makers, would come together, join a guild, and share their craft with each other. Because universities didn't exist. That's how they got better."</p>
+        <div class="by">Vishen — accelerator stage, announcing this exact product</div>
+      </div>
+      <div class="quote">
+        <p>"People who are starting out might do the mastery because they have to step into an identity of becoming an expert. But people who join [the guild], they already have an identity… we're giving them a higher identity — being an expert and having a tribe of fellow experts who have your back."</p>
+        <div class="by">Vishen — accelerator stage, the tier boundary in one sentence</div>
+      </div>
+    </div>
+    <div class="callout dark" style="margin-top:18px">
+      <div class="ic">◆</div>
+      <div><p><strong>Why he can charge for a room: his own $100K receipt.</strong> Vishen tells the story of paying $100,000 for the Barry Morgland mastermind — and says the room, not the teacher, was the product: "people join masterminds not just for the teacher, but for the identity of being part of a group of elite performers… anything above 1,000, you are selling an identity." One idea from that room, he says, shifted his life. That is the price logic of this tier, stated by the man who will front it.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The boundary</div>
+      <h2>The Mastery is where you become it. The Guild is where you live it.</h2>
+      <p class="body-md">Same doctrine as our other boundaries: one line, held hard, so the products never cannibalise each other. The Guild never re-teaches the Mastery — it assumes it. Anyone under the floor is routed to the Mastery, exactly as Vishen framed it from stage: "after you do the accelerator, you still do not automatically qualify… you have to prove it."</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>&nbsp;</th><th>Expert &amp; Authority Mastery</th><th>Expert &amp; Authority Guild</th></tr></thead>
+      <tbody>
+        <tr><td><strong>The promise</strong></td><td>Be chosen</td><td><strong>Stay chosen</strong></td></tr>
+        <tr><td><strong>The job</strong></td><td>Transformation — unknown → chosen</td><td>An edge, maintained — in a market that keeps moving</td></tr>
+        <tr><td><strong>Format</strong></td><td>Cohort: starts, runs 17 weeks, ends</td><td>Evergreen: always on, members join monthly, no end date</td></tr>
+        <tr><td><strong>The learning</strong></td><td>Curriculum — doctrine, taught in sequence</td><td>Intelligence — what's converting <em>this month</em>, from members' live numbers</td></tr>
+        <tr><td><strong>Who gets in</strong></td><td>Anyone ready to build the identity</td><td>Application only · $100K from your expert business · concierge review</td></tr>
+        <tr><td><strong>What you leave with</strong></td><td>Your Ladder, Live — certification by shipped assets</td><td>You don't leave. Standing is earned by contribution, not attendance</td></tr>
+        <tr><td><strong>Community</strong></td><td>Pods for the duration of the cohort</td><td>Pods for life, city-based, plus the commons and real-world tables</td></tr>
+        <tr><td><strong>Price</strong></td><td>$4,999 one-time (anchor open with the Academy)</td><td>$10,000/yr — stage-stated, "may go up to 20,000"</td></tr>
+        <tr><td><strong>Identity sold</strong></td><td>"I am becoming an expert"</td><td>"I am an expert, among experts"</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">The architecture</div>
+      <h2>Six pillars — what medieval guilds did that no course does</h2>
+      <p class="body-md">Gated entry by proven craft, pooled trade secrets, enforced generosity, rank by contribution, and a physical place. Modernised, they become the offer — and every one of them is already named in Vishen's stage pitch.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card">
+        <div class="pillnum">1</div>
+        <h3>The Floor</h3>
+        <p class="body-md">Application only. $100K earned from your expert-and-authority business specifically — "if you're making 90K from your supplement business… you don't qualify." Concierge call, monthly intake, and the enforcement Vishen promised from stage: <strong>kicked out and refunded if you take without giving.</strong> The floor is the product: everyone in the room is worth being in a room with.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">2</div>
+        <h3>The Pulse</h3>
+        <p class="body-md">No curriculum — a briefing. A monthly <strong>State of the Craft</strong>: which webinar structures are converting this quarter, what the platform algorithms changed, the AEO shifts, which AI tools just moved the cost of producing authority. Live teardowns of members' wins. The Mastery teaches doctrine; <strong>the Guild reports from the front.</strong></p>
+      </div>
+      <div class="card">
+        <div class="pillnum">3</div>
+        <h3>The Commons</h3>
+        <p class="body-md">The shared-secrets platform, verbatim from stage: "when I crack the masterclass code, you crack the masterclass code. If you crack the LinkedIn code, everybody has the opportunity to crack the LinkedIn code." Landing pages, webinar numbers, Claude skills — posted, with <strong>leaderboards of top givers</strong>. Courses can be copied; two years of members' real conversion data cannot.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">4</div>
+        <h3>Proximity &amp; Guild Launches</h3>
+        <p class="body-md">Vishen as patron; authors paid "to come and teach and stay"; monthly marquee sessions — his stage examples were Alessio deep on quiz funnels and John Lee on stage closes. And the mechanic that makes it a guild rather than an audience: <strong>when a member launches, the room moves</strong> — the marquee slot, the intro chain, the first hundred customers from inside the commons.</p>
+      </div>
+      <div class="card">
+        <div class="pillnum">5</div>
+        <h3>Pods &amp; Witnessing</h3>
+        <p class="body-md">Always-on pods of 6–12, ideally same city — Vishen's stated spec. The Mastery's discipline track continued for life: commitments named aloud, the weekly numbers review, the Friday text. His Day 1 line is the mechanism: <strong>"in guilds… what made it so effective was that they held each other accountable."</strong></p>
+      </div>
+      <div class="card">
+        <div class="pillnum">6</div>
+        <h3>The Moot</h3>
+        <p class="body-md">Real-world tables in member cities, the London meetups Vishen named from stage, and <strong>MVU as the annual guild moot</strong> — which makes MVU itself make more sense as a product. Joining gets a threshold moment, not a Stripe receipt: if identity is environmental, entry needs a ritual. Tallinn hands us the language for free.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The distribution edge</div>
+      <h2>What only this guild can offer: Mindvalley owns stages</h2>
+      <p class="body-md">Every mastermind sells access. Only this one can sell <strong>being seen</strong> — summit hosting slots, MVU stage time, features across a media engine reaching millions. The accelerator's closing line was literally this promise: <em>"In 10 years, someone on this stage will be telling their story… and we hope it's you."</em> The Guild is where that sentence becomes a mechanism: members earn visibility through contribution, and the top of the Expert &amp; Authority ladder becomes a stage with your name on the screen. A distribution network, wearing a community's clothes.</p>
+    </div>
+    <div class="callout">
+      <div class="ic">◆</div>
+      <div><p><strong>The proof this already works — the story we keep telling internally.</strong> Around Mindvalley's unofficial author guild, a member of the extended circle launched an AI-built app — and authors of the calibre of Daniel Priestley and John Lee flocked to support the launch unprompted. Nobody scheduled that. That is what proximity to a generous room produces naturally; the Guild's job is to make it a system instead of a lucky accident.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">A year inside</div>
+      <h2>The rhythm — always on, never aimless</h2>
+    </div>
+    <div class="rhythm">
+      <div class="row"><div class="cad">Always on</div><div><h4>The commons + your pod</h4><p>The shared-secrets platform with giver leaderboards, and your city pod of 6–12 holding the witnessing cadence — commitments, numbers, the Friday text.</p></div></div>
+      <div class="row"><div class="cad">Weekly</div><div><h4>Community mastermind</h4><p>Vishen's stage spec, verbatim: weekly community sharing sessions — hot seats on live funnels, positioning and launches, run by the guildmaster.</p></div></div>
+      <div class="row"><div class="cad">Monthly</div><div><h4>Marquee session + State of the Craft</h4><p>A paid world-class author goes deep on one discipline (the stage examples: Alessio on quiz funnels, John Lee on closing from stage) — plus the Pulse briefing: what's converting now, with members' real numbers.</p></div></div>
+      <div class="row"><div class="cad">Quarterly</div><div><h4>Guild tables — real world</h4><p>City meetups (London named from stage), member-hosted tables, and a quarterly Guild Launch window where the room gets behind whoever is shipping.</p></div></div>
+      <div class="row"><div class="cad">Annually</div><div><h4>The moot — MVU</h4><p>The guild gathers where the guilds were invented. Initiation for the year's new members, stage slots for the year's top givers.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Commercial logic</div>
+      <h2>The price is already public. The scarcity is built in.</h2>
+    </div>
+    <div class="grid g3">
+      <div class="card goldt">
+        <div class="kicker gold">The anchor — validated</div>
+        <h3>$10,000 a year</h3>
+        <p class="body-md" style="margin-top:8px">Stated twice from the accelerator stage: "$9,999… you must be earning over 100K" and "this is 10,000 a year, and that's just starting. Eventually, it may go up to 20,000 a year." Annual-first, with a quarterly payment plan rather than a true monthly — an edge product wants commitment. Founding members lock the founding price: the $20K line is the built-in urgency, spoken by Vishen himself.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">The model</div>
+        <h3>Evergreen, capacity-capped</h3>
+        <p class="body-md" style="margin-top:8px">No cohorts. Monthly intake through application and concierge review — "we're going to be opening it up to people even outside this room. Every month there'll be new members joining." Capacity caps per city pod keep the room's quality ahead of its size. The AI tools layer is priced from stage as an add-on: ~$49.99/month processing.</p>
+      </div>
+      <div class="card">
+        <div class="kicker">The economics</div>
+        <h3>Recurring, near-zero content cost</h3>
+        <p class="body-md" style="margin-top:8px">Illustrative, not a target: 200 members is $2M ARR, recurring — with the members' own results as most of the content. The Guild is also the retention layer for the whole pathway: the Mastery's top rung stops being a page and becomes a room. Our own doctrine says the top of a ladder is never a product, always a tribe. <strong>This is our ladder obeying our own rules.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">What this is not</div>
+      <h2>Held boundaries, so the Guild never eats the Mastery</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card">
+        <ul class="tick cross">
+          <li><strong>Not a course.</strong> "Build assets, not notes. This is different from a course because courses give you more notes" — Vishen, from stage. The Guild never re-teaches SAS, the ladder laws or the masterclass doctrine. It assumes them.</li>
+          <li><strong>Not Zoom-only.</strong> The differentiator from the Mastery is proximity: city pods, guild tables, the annual moot. Calls are the connective tissue, not the product.</li>
+          <li><strong>Not for people under the floor.</strong> The route for them is the Mastery — "you have to prove it. You have to get to 100K." The floor protects the room and feeds the funnel in the right order.</li>
+          <li><strong>Not an audience for Vishen.</strong> He is patron, not performer. The members' numbers are the content; the guildmaster runs the week.</li>
+        </ul>
+      </div>
+      <div class="card tint">
+        <div class="kicker">The funnel, complete</div>
+        <p class="body-md">Quest → Membership → <strong>Mastery (become it, $4,999)</strong> → prove the floor → <strong>Guild (live it, $10,000/yr)</strong>. Vishen's stage ladder ends exactly here: "then the newest thing we are launching is $10,000 masterminds." Mastery graduates who cross $100K get the application in their certification pack; the alumni reunion at +6 weeks is the Guild's warmest room.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Decisions</div>
+      <h2>Open before this goes external</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card" style="border-left:4px solid var(--orange)">
+        <div class="kicker" style="color:var(--orange-content)">Open</div>
+        <ul class="tick">
+          <li><strong>The name.</strong> The stage announced "Expert &amp; Authority Mastermind"; this proposal argues for <strong>Guild</strong> — Vishen's own framing, differentiated in market, and clear of the Mastermind/Mastery confusion. Needs Vishen + Jaideep sign-off.</li>
+          <li><strong>Guildmaster.</strong> The week-to-week host is a role, not Vishen — a lab-lead-grade operator. Candidate and compensation to be named.</li>
+          <li><strong>Anything resembling co-investment</strong> between members needs a legal read before it appears on any page. Until then the promise is "the room moves for you," never "the room funds you."</li>
+          <li><strong>Commons infrastructure.</strong> Day 2 names Finerminds as "a very sophisticated tool for community building, for mastermind communities" — confirm it carries leaderboards, pods and the wins wall.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left:4px solid var(--green)">
+        <div class="kicker" style="color:var(--green)">Decided in this proposal</div>
+        <ul class="tick">
+          <li>$10,000/yr anchor, annual-first — stage-validated verbatim, with the $20K escalation as founding-member urgency</li>
+          <li>$100K floor from expert-business revenue only, application + concierge + monthly intake, kick-and-refund for takers</li>
+          <li>Evergreen, no cohorts; six-pillar architecture; pods of 6–12, city-based</li>
+          <li>The Guild never re-teaches the Mastery; under the floor → Mastery, exactly as stage-framed</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline gold">Sources</div>
+      <h2>Where every claim comes from</h2>
+      <p class="body-md"><strong>Expert &amp; Authority Accelerator transcript</strong> (MVU 2026) — the launch pitch: pricing ($9,999 / "10K a year… may go up to 20,000"), the $100K floor, application and concierge flow, kick-and-refund rule, weekly/monthly cadence, pods of 6–12, real-world meetups, AI tools add-on, "build assets, not notes", monthly open intake. <strong>MVU 2026 Day 1 stage talk</strong> — the Tallinn guild doctrine: identity is environmental, witnessing, the Blackheads. <strong>Day 2 stage talk</strong> — the earlier $5,000 framing (superseded on the accelerator stage) and Finerminds as the community platform. <strong>Day 9 stage talk</strong> — the Saturday announcement teaser. All quotes verbatim from the transcripts; self-reported figures are marked as such.</p>
+    </div>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>Expert &amp; Authority Guild — proposal · Mindvalley Curriculum Team.</div>
+    <div>Internal — contains pricing and qualification criteria. <a href="/expert-authority">Mastery proposal</a> · <a href="/ai-founders-guild">AI for Founders Guild</a></div>
+  </div>
+</footer>
+
+</body>
+</html>

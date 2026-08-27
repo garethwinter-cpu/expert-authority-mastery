@@ -226,6 +226,20 @@
         "index.html",
         "authors/*.jpg"
       ]
+    },
+    {
+      "id": "guild-tier-aug25",
+      "source": "MVU 2026 transcripts (Day 1 Tallinn guild doctrine; accelerator launch pitch; Day 2 early $5K version; Day 9 teaser) + Gareth's guild brief",
+      "finding": "Guild tier built: /expert-authority-guild ('Stay chosen.') and /ai-founders-guild ('Stay ahead.'). $10,000/yr VALIDATED verbatim from the accelerator stage ('this is 10,000 a year, and that's just starting… may go up to 20,000'); $9,999 stated in the same pitch; Day 2's $5,000 framing is the earlier draft, superseded — resolves the parked Mastermind price conflict. E&A Guild floor: $100K from expert business (verbatim). AIF Guild floor: OPEN — proposed OS-in-production + revenue floor TBD. Six-pillar architecture (Floor, Pulse, Commons, Proximity/Guild Launches, Pods & Witnessing, Moot); evergreen monthly intake; kick-and-refund; AI tools add-on ~$49.99/mo (stage). Naming 'Guild' over stage's 'Mastermind' pending Vishen+Jaideep sign-off. Co-investment language withheld pending legal. E&A page's Mastermind references renamed to Guild ($9,999 -> $10,000 per the stage's own '10K a year'); AIF continuity rung absorbed into the Guild.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-guild.html",
+        "ai-founders-guild.html",
+        "index.html",
+        "server.js",
+        "expert-authority.html",
+        "ai-founders.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
