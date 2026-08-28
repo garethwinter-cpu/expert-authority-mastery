@@ -240,6 +240,18 @@
         "expert-authority.html",
         "ai-founders.html"
       ]
+    },
+    {
+      "id": "tomkirby-playbook-aug27",
+      "source": "Tom Kirby, 'The Mastery Playbook 2027 — Academy build' (p.mval.me, 27 Aug 2026), cross-checked against the Mastery Performance Dashboard; uploaded by Gareth 28 Aug",
+      "finding": "ADOPTED into both Mastery format specs: two-week deliberate onboarding arc (summit -> early-value call -> Finerminds journey -> day-14 handoff); materials-within-24h compliance; guaranteed personal review (feedback lottery retired); effort-based satisfaction guarantee (in design, pairs with certification by shipped assets/running systems). ADOPTED into both Guild pages: top-10-by-contribution auto-invite at graduation (waives application, never floor/fee); 'renewal is the only metric'. SOURCED AT LAST: AI Mastery 2026 = +84 NPS (dashboard-pulled) AND 23.8% refunds / 40.7% deposits from reactive onboarding — high NPS does not protect a launch. Coach-host evidence now citable: Vyk integration sessions 9.14 vs 8.94 lessons, ~61/96 NPS mentions, +43 NPS jump; cross-mastery NPS: SMM +109 recovery, Manifesting +76, Spiritual +86. HELD/REJECTED: the ~4-day lesson-to-integration cadence standard conflicts with our S&I paired Tue->Thu retention data — flagged on both pages for a data conversation before the dashboard cadence-integrity check ships, not silently adopted; the one-coach-host doctrine vs our two-anchor E&A lab design raised as an explicit launch-gate decision (candidates Alessio/Kash/Sabrina), not a silent restructure. FLAGS: Tom's guild pilot (~50 members, this quarter, no price/floor) must reconcile with the $10K/floor spec — one owner; his 'AI for Entrepreneurs' naming drifts from AI for Founders; he references an 'E&A 2026 certification cohort' that exists in no plan we hold.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html",
+        "ai-founders.html",
+        "expert-authority-guild.html",
+        "ai-founders-guild.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
