@@ -25,6 +25,10 @@
 html{scroll-behavior:smooth}
 body{font-family:"Google Sans","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
 a{color:var(--brand);text-decoration:none}
+h1,h2,h3,h4{text-wrap:balance}
+p,li{text-wrap:pretty}
+.section-head p{max-width:70ch}
+
 .wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
 .overline{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-content)}
 .overline.on-dark{color:#D7B6F7}
