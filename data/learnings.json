@@ -252,6 +252,15 @@
         "expert-authority-guild.html",
         "ai-founders-guild.html"
       ]
+    },
+    {
+      "id": "ea-speaker-table-pull-aug31",
+      "source": "Live E&A speaker table appnHZYcirCg1VqUP/tblShRX4kUaq1Ur1P, pulled 31 Aug 2026",
+      "finding": "Summit (Sep 2026, promo) has 20 rows: Confirmed = Vishen only; Outreach done = Alessio Pieroni, Natalie Ellis; In consideration = Chris Do (added 30 Aug — resolves the 'not on the list' action), John Lee, Kwame, Jimmy, Sabrina, Kash, Maria Wendt (added 31 Aug), Marisa Peer (STILL live despite Jaideep's cut — discrepancy), Keith Ferrazzi, Nir Eyal, Simone Vincenzi, Jason Goldberg, Regan Hillyer; NOT APPROVED = Paul McKenna (!), Lisa Nichols, Safwaan Mohammed (!), Vykintas. Mastery table (Oct 2026, the programme) = one unstatused Vishen row + one empty row; Vishen's Accelerator row = 'Contract to be signed'. Actions surfaced on-page: W2 occupant ruling (Paul not approved vs Marisa in consideration), Safwaan lab seat ruling, Ajit has no E&A row, six Summit-only promo names are not Mastery authors, Kash spelling on table is 'Rupareliaa' vs our 'Rupalia'. Page statuses updated: Chris Do -> In consideration; Natalie + Alessio -> Outreach done; Paul -> Not approved (Summit) flag; Safwaan flagged; evidence stat now shows the 20-row breakdown.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
