@@ -261,6 +261,17 @@
       "applied_to": [
         "expert-authority.html"
       ]
+    },
+    {
+      "id": "ea-fee-allocation-sep1",
+      "source": "Expert to Authority fee table (appdKUVBsaerckWY3/tblTTbxXgpurBbTS4) + Gareth's session allocation + naming ruling (2026-09-01)",
+      "finding": "Naming ruled: the curriculum stays Expert & Authority Mastery; the summit is the Expert to Authority Summit. Teach allocation locked around quoted fees: Vishen 8 weeks + intensive; Marisa Peer W2 ($15K package incl. summit); John Lee W10+W16 ($5K/class, <=$12K package); Regan Hillyer W11 ($15K package, one class only); Ben Greenfield W12 ('maybe 12K for both'); Ajit Nawalkha W13-W15 (~$12K for 3). Labs: Alessio 7 days + build floor (no fee row - open), Kash 6 days + shoot floor ($6K), Sabrina 3 days ($3K). Open: Jimmy's unallocated $15K package (summit-only vs W5-W6 labs back), Regan second-session renegotiation, Alessio fee, Ben's 'maybe'. Chris Do/Paul/Kwame/Natalie/Maria/Priestley/Safwaan moved to considered-not-allocated with evidence preserved.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html",
+        "index.html",
+        "data/boundary.json"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
