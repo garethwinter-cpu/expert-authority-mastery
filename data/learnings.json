@@ -18,8 +18,8 @@
       "id": "L1",
       "name": "A multi-day intensive on the mainline cadence breaks retention permanently",
       "evidence": "SIM 2025: show-up averaged ~57% across sessions 1–9. The One Talk Workshop ran as three consecutive mainline sessions: 39% → 31% → 34%. Attendance NEVER recovered — the post-OTW half of the programme ran 45% declining to 33%, a permanent ~14-point break in the curve.",
-      "rule": "A multi-day intensive must not consume mainline slots. Run it as an optional weekend block; the Tue/Thu cadence continues uninterrupted around it.",
-      "verified_fix": "SIM 2026 ran the same 3-day OTW as an unrated weekend Bonus (Fri–Sun, Aug 7–9). The next mainline sessions held at 56% and 58%. The fix is proven, not theoretical."
+      "rule": "A multi-day intensive must not consume mainline slots, and should not be assumed to draw on a weekend either. Put the keystone content on the normal weekly cadence; keep any extra day single, optional, with a mainline fallback, and measure it.",
+      "verified_fix": "SIM 2026 ran the same 3-day OTW as a Fri–Sun Bonus (Aug 7–9). The next mainline sessions held at 56% and 58%, so the weekend protected the cadence. But the base holds no attendance and no ratings for the weekend itself (the rating fields on the 2026 rows are 2025 values copied across). Proven for cadence protection; unproven for the workshop's own uptake. Corrected 7 Sep 2026."
     },
     {
       "id": "L2",
@@ -340,6 +340,16 @@
       "applied_to": [
         "expert-authority.html#tab-v2",
         "index.html"
+      ]
+    },
+    {
+      "id": "ea-w9-mainline-sep7",
+      "source": "S&I base appKlfvxdXofNlFfk: Lessons (OTW 2025 Day 1–3 attendance 190/154/168 of 492; ratings 9.02/9.57/9.81; 2026 Bonus rows unmeasured), Workshop Live Feedback (21 in-person forms, NPS ≈ +5), 2026 Tuesday workshops 220–282 of 456 at 9.11–9.59; Gareth's ruling 7 Sep 2026",
+      "finding": "E&A Week 9 moved from a three-day weekend intensive to the Tue/Thu mainline (Vishen doctrine Tuesday, Alessio script build Thursday) with one optional Saturday shoot floor and a Week 10 fallback. Vishen's live load: 8 teach weeks, no weekend. The in-person 2025 complaints were specific: 400+ non-students admitted, Day 1 repeated month one, promised coaching absent, an hour cut.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html",
+        "data/boundary.json"
       ]
     }
   ],

@@ -88,6 +88,50 @@ h3{font-size:20px;font-weight:700;line-height:1.3}
 .pp.p1{background:var(--grey-300);color:var(--grey-600)}
 .pp.p2{background:var(--brand-bright)}
 .pp.p3{background:var(--brand-dark)}
+/* Programme: visual layout */
+.modmap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:22px 0 14px}
+.mm{display:block;border-radius:16px;padding:16px 16px 14px;color:#fff;text-decoration:none;background:var(--brand);box-shadow:var(--shadow-light);transition:transform .18s var(--ease)}
+.mm:hover{transform:translateY(-2px)}
+.mm.m2{background:var(--green)} .mm.mi{background:var(--ink)} .mm.m3{background:var(--orange)} .mm.m4{background:var(--pink)}
+.mm-weeks{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.8}
+.mm-name{font-size:17px;font-weight:700;line-height:1.2;margin-top:4px}
+.mm-br{font-size:12.5px;line-height:1.45;opacity:.9;margin-top:8px;min-height:54px}
+.mm-faces{margin-top:10px} .mm-faces img{width:32px;height:32px;border-color:rgba(255,255,255,.7)}
+.curr-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.tool{border:1px solid var(--border);background:#fff;color:var(--ink);font:inherit;font-size:13px;font-weight:600;padding:7px 14px;border-radius:128px;cursor:pointer}
+.tool:hover{background:var(--grey-100)}
+.legend{margin-left:auto;font-size:12.5px;color:var(--text-subtle);display:flex;align-items:center;gap:6px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:4px;margin-left:8px}
+.sw.teach{background:var(--brand)} .sw.lab{background:var(--green)} .sw.fire{background:var(--pink)}
+.module.m1 .module-head{border-left:6px solid var(--brand)} .module.m2 .module-head{border-left:6px solid var(--green)} .module.mi .module-head{border-left:6px solid var(--ink)} .module.m3 .module-head{border-left:6px solid var(--orange)} .module.m4 .module-head{border-left:6px solid var(--pink)}
+.faces{display:flex;flex:0 0 auto}
+.faces img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #fff;box-shadow:var(--shadow-light);background:var(--grey-200)}
+.faces img+img{margin-left:-12px}
+.mfaces{margin-left:auto;margin-right:14px;align-self:center} .mfaces img{width:36px;height:36px}
+.wk2{display:grid;grid-template-columns:68px 1fr 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--grey-200);align-items:start}
+.wk2:last-of-type{border-bottom:0}
+.wk2-num{display:flex;flex-direction:column;align-items:center;justify-content:center;width:62px;height:58px;padding:0 4px;border-radius:14px;background:var(--brand);color:#fff;font-weight:700;font-size:15px;line-height:1;text-align:center}
+.wk2-num small{font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.8;margin-top:3px}
+.module.m2 .wk2-num{background:var(--green)} .module.mi .wk2-num{background:var(--ink)} .module.m3 .wk2-num{background:var(--orange)} .module.m4 .wk2-num{background:var(--pink)}
+.slot{border-radius:16px;padding:16px 18px 14px;border:1px solid var(--border);background:#fff;min-width:0}
+.slot.teach{background:var(--brand-light);border-color:var(--brand-border)}
+.slot.lab{background:var(--green-light);border-color:var(--green-border)}
+.slot.fire{background:var(--pink-light);border-color:#F3C4D9}
+.slot.misc{background:var(--grey-100)}
+.slot-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;min-height:44px}
+.slot-kind{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-subtle)}
+.slot.teach .slot-kind{color:var(--brand-content)} .slot.lab .slot-kind{color:var(--green)} .slot.fire .slot-kind{color:var(--pink)}
+.slot-who{font-size:14px;font-weight:700;color:var(--ink);line-height:1.25}
+.slot h4{font-size:17px;font-weight:700;line-height:1.3;margin:0 0 6px;text-wrap:balance}
+.slot .lede{font-size:14px;color:var(--text-muted);line-height:1.55}
+.more{margin-top:6px}
+.more summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--brand-content);list-style:none;display:inline-block}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:" +"} .more[open] summary::after{content:" \2212"}
+.more[open] summary{color:var(--text-subtle)}
+.more p{font-size:13.5px;color:var(--text-muted);line-height:1.6;margin-top:8px}
+.slot .win{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--green);background:#fff;border:1px solid var(--green-border);border-radius:128px;padding:5px 12px}
+@media(max-width:960px){.wk2{grid-template-columns:1fr}.wk2-rail{display:flex}.modmap{grid-template-columns:repeat(2,1fr)}.mfaces{display:none}}
 /* Tabs */
 .tabbar-outer{position:sticky;top:60px;z-index:55;background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow-light)}
 .tabbar{display:flex;gap:4px;overflow-x:auto;padding:10px 0;-ms-overflow-style:none;scrollbar-width:none}
@@ -300,7 +344,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="quickfacts">
       <div class="qf"><div class="n">17 weeks</div><div class="l">Teach (Tue) + Implementation Day (Thu)</div></div>
       <div class="qf"><div class="n">6 authors</div><div class="l">Vishen + 5 guests, transcript-verified · 4 build lanes</div></div>
-      <div class="qf"><div class="n">3-day</div><div class="l">Week 9 Masterclass Intensive: script, shoot, review</div></div>
+      <div class="qf"><div class="n">Week 9</div><div class="l">Masterclass Week: doctrine Tuesday, script Thursday, optional Saturday shoot</div></div>
       <div class="qf"><div class="n">$4,999</div><div class="l">Price already stated on stage · BOGO-eligible</div></div>
     </div>
   </div>
@@ -352,7 +396,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="answer-cell">
         <div class="letter a-l">A</div>
         <h4>Answer</h4>
-        <p>17 weeks. Vishen as Curriculum Expert on the main stage: 7 teach weeks plus the intensive (the largest share on the floor), the close doctrine in his voice, and recorded bookends around all nine guest weeks. Five guests, every seat verified against their own Mindvalley transcripts: four teachers (Jimmy Naraine, Marisa Peer, John Lee, Ajit Nawalkha) and one proof point interviewed fireside (Regan Hillyer). Labs in fixed lanes: Alessio (money), Kash (camera), Sabrina (AI), Jimmy (course build). One graduating artefact: <strong>a live product ladder with three paid rungs, a traffic tap running, and a masterclass shot.</strong></p>
+        <p>17 weeks. Vishen as Curriculum Expert on the main stage: 8 teach weeks (the largest share on the floor), the close doctrine in his voice, and recorded bookends around all nine guest weeks. Five guests, every seat verified against their own Mindvalley transcripts: four teachers (Jimmy Naraine, Marisa Peer, John Lee, Ajit Nawalkha) and one proof point interviewed fireside (Regan Hillyer). Labs in fixed lanes: Alessio (money), Kash (camera), Sabrina (AI), Jimmy (course build). One graduating artefact: <strong>a live product ladder with three paid rungs, a traffic tap running, and a masterclass shot.</strong></p>
       </div>
     </div>
   </section>
@@ -397,13 +441,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="kicker">Tuesday · Teach</div>
         <h3>Six authors, one lane each</h3>
-        <p class="body-md" style="margin-top:8px"><strong>Vishen Lakhiani</strong> (Curriculum Expert, 7 weeks + the intensive with the close doctrine) · <strong>Marisa Peer</strong> the identity shift · <strong>Jimmy Naraine</strong> the course build · <strong>John Lee</strong> build + monetise the platform · <strong>Regan Hillyer</strong> the zero-to-hero fireside · <strong>Ajit Nawalkha</strong> offers, pricing &amp; enrolment. All quoted, all in consideration.</p>
+        <p class="body-md" style="margin-top:8px"><strong>Vishen Lakhiani</strong> (Curriculum Expert, 8 weeks including the Week 9 close doctrine) · <strong>Marisa Peer</strong> the identity shift · <strong>Jimmy Naraine</strong> the course build · <strong>John Lee</strong> build + monetise the platform · <strong>Regan Hillyer</strong> the zero-to-hero fireside · <strong>Ajit Nawalkha</strong> offers, pricing &amp; enrolment. All quoted, all in consideration.</p>
         <p class="body-md" style="margin-top:10px">Each teaches inside Vishen's arc. He opens and closes every guest week with recorded framing, so the programme has one voice even when it has six teachers.</p>
       </div>
       <div class="card">
         <div class="kicker">Thursday · Implementation Day</div>
         <h3>Four builders, four fixed lanes</h3>
-        <p class="body-md" style="margin-top:8px">The two anchors split eleven of the sixteen lab days along the only line that matters: <strong>Alessio Pieroni</strong> owns funnels, offers and money mechanics (7 days + the intensive build floor, approved at $8K). <strong>Akash "Kash" Rupalia</strong> owns content, camera and production (4 days + the intensive shoot floor).</p>
+        <p class="body-md" style="margin-top:8px">The two anchors split eleven of the sixteen lab days along the only line that matters: <strong>Alessio Pieroni</strong> owns funnels, offers and money mechanics (8 days including the Week 9 script build, approved at $8K). <strong>Akash "Kash" Rupalia</strong> owns content, camera and production (4 days + the optional Week 9 shoot floor).</p>
         <p class="body-md" style="margin-top:10px"><strong>Sabrina Stocker</strong> owns the AI and credibility layer (3 days, $3K) and <strong>Jimmy Naraine</strong> — an author, not a lab lead — runs the three course-build days his own quest invented, inside his $15K package. Nobody improvises a part two.</p>
       </div>
     </div>
@@ -439,7 +483,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="ic">▸</div>
       <div>
         <p><strong>The uncomfortable truth this proposal is built on.</strong> The accelerator's own closing Q&amp;A contained the diagnosis. A student who runs a similar business asked: "What I found with my clients is that they struggle with execution — it's not that they don't learn the techniques, they just burn out one month after." That is the failure mode of every expert programme ever sold, including ours.</p>
-        <p>Every structural choice below — the specialist-owned build day, the shipped-artefact rule, the pods, the mid-programme intensive, certification by asset — exists to answer that one question.</p>
+        <p>Every structural choice below — the specialist-owned build day, the shipped-artefact rule, the pods, the mid-programme masterclass week, certification by asset — exists to answer that one question.</p>
       </div>
     </div>
   </section>
@@ -497,8 +541,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td><strong>The edge</strong></td><td>Skill A × Skill B × Skill C. "Everyone has knowledge, but almost nobody has an edge"</td><td>Week 3</td></tr>
         <tr><td><strong>The nine-part autoresponder</strong></td><td>The lead-magnet sequence that lifted sales 96% overnight in 2004. What / why / when, never the how</td><td>Week 13</td></tr>
         <tr><td><strong>The three laws of the ladder</strong></td><td>Every rung a complete transformation · the jump must feel inevitable, not pushy · the top is never a product, it's an identity</td><td>Week 14</td></tr>
-        <tr><td><strong>The 60-minute masterclass doctrine</strong></td><td>Two covenants, the hinge at minute 40, the crowned belief, the named villain, the four nevers, the before-and-after rating at minute 41</td><td>Week 9 Intensive, Day 1</td></tr>
-        <tr><td><strong>The Claude shooting-script stack</strong></td><td>Master shooting script → belief map → teleprompter scripts → shoot review → edit-bay sheet → self-improving system prompt</td><td>Week 9 Intensive, Days 2–3</td></tr>
+        <tr><td><strong>The 60-minute masterclass doctrine</strong></td><td>Two covenants, the hinge at minute 40, the crowned belief, the named villain, the four nevers, the before-and-after rating at minute 41</td><td>Week 9 teach</td></tr>
+        <tr><td><strong>The Claude shooting-script stack</strong></td><td>Master shooting script → belief map → teleprompter scripts → shoot review → edit-bay sheet → self-improving system prompt</td><td>Week 9 lab and the optional Saturday shoot</td></tr>
         <tr><td><strong>The 30/70 rule</strong></td><td>30% of effort on new customers, 70% on climbing existing ones up the ladder</td><td>Week 14</td></tr>
       </tbody>
     </table>
@@ -548,14 +592,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <table class="tbl">
       <thead><tr><th>Learning</th><th>The evidence</th><th>Where this design obeys it</th></tr></thead>
       <tbody>
-        <tr><td><strong>A mainline multi-day intensive breaks retention permanently</strong></td><td>S&amp;I 2025 One Talk Workshop as three mainline sessions: 39% → 31% → 34%, then a permanent ~14-point break. 2026 ran it as a weekend bonus: next sessions held 56–58%</td><td>The Masterclass Intensive is a Fri–Sun weekend between weeks 8 and 9. The Tue/Thu cadence never breaks</td></tr>
-        <tr><td><strong>Off-cadence add-ons die regardless of teacher</strong></td><td>Paul McKenna, the strongest guest asset, drew <strong>23%</strong> for an off-rhythm Monday add-on, the worst attendance in the base</td><td>Nothing is scheduled outside Tue/Thu + the one weekend. Extra material becomes recorded bonuses</td></tr>
+        <tr><td><strong>A mainline multi-day intensive breaks retention permanently</strong></td><td>S&amp;I 2025 One Talk Workshop as three mainline sessions: 39% → 31% → 34%, then a permanent ~14-point break. 2026 ran it as a weekend bonus: the next mainline sessions held 56–58%, but the weekend itself was never measured (no attendance, no ratings in the base)</td><td>No multi-day block anywhere. Week 9 runs on the Tue/Thu mainline; the shoot is one optional Saturday, attended and rated</td></tr>
+        <tr><td><strong>Off-cadence add-ons die regardless of teacher</strong></td><td>Paul McKenna, the strongest guest asset, drew <strong>23%</strong> for an off-rhythm Monday add-on, the worst attendance in the base</td><td>Nothing is scheduled outside Tue/Thu except one optional Saturday shoot floor. Extra material becomes recorded bonuses</td></tr>
         <tr><td><strong>Teacher substitution destroys a session</strong></td><td>The one S&amp;I workshop that swapped hosts drew <strong>24 detractor submissions</strong>, the most of any session. "Changed speaker, very disjointed, disappointed"</td><td>Authors are announced only when contracted; the lab always has its named owner as cover, so a guest cancellation never becomes a substitution</td></tr>
         <tr><td><strong>Breakout rooms are the #1 detractor theme</strong></td><td>20 of 148 detractor comments, more than tech issues and session length combined</td><td>Breakouts only with an artefact-producing brief, a time-box, and an opt-out</td></tr>
         <tr><td><strong>Single-lead programmes hit a repetition cliff at month two</strong></td><td>"Lost interest since 2nd month… pretty much the same topic. More like a chit chat session than a real Mastery"</td><td>Six named authors rotate the teach slot; every week ships a distinct artefact; 17 weeks, not 20+</td></tr>
         <tr><td><strong>Q&amp;A-only sessions are punished</strong></td><td>"Only Q&amp;A — would have loved more content." AIM unstructured community calls: 5.89</td><td>Q&amp;A attaches to content; every touchpoint has a deliverable</td></tr>
         <tr><td><strong>Scope drift generates refund requests</strong></td><td>S&amp;I detractor, verbatim: <em>"I'm only interested in speaking, not creating a course or teaching or creating a business"</em>, on the week S&amp;I drifted into this programme's territory</td><td>The three-programme boundary below. Each programme teaches its own promise and cross-refers the rest</td></tr>
-        <tr><td><strong>Integration capstones are our best-rated format</strong></td><td>AIM "Tying Everything Together": teach 9.87 (n=99), Q&amp;A 9.66, lab 9.46, the best-rated cluster in that base</td><td>W17 assembles the whole ladder; the intensive assembles the masterclass. Integration is explicit, twice</td></tr>
+        <tr><td><strong>Integration capstones are our best-rated format</strong></td><td>AIM "Tying Everything Together": teach 9.87 (n=99), Q&amp;A 9.66, lab 9.46, the best-rated cluster in that base</td><td>W17 assembles the whole ladder; Week 9 assembles the masterclass. Integration is explicit, twice</td></tr>
       </tbody>
     </table>
     </div>
@@ -576,7 +620,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="kicker" style="color:var(--orange-content)">Finding 01</div>
         <h3>Vishen's ratings are bimodal, and the ladder is on the weak side</h3>
         <p class="body-md" style="margin-top:8px">His content and webinar teaching is excellent: <strong>Using Webinars to Sell 9.58</strong> (n=57), Impactful Videos 9.81, Founder's Content System 9.79. His direct-response mechanics are not: <strong>Own Your Audience — List Building &amp; Email Lists 8.68</strong> (n=69), Writing Copy that Sells 8.71, Lead Magnet Funnel 8.87, and <strong>Optimizing Revenue with Upsells &amp; Downsells 8.29</strong> (n=90).</p>
-        <p class="body-md" style="margin-top:8px">Those two topics were weeks 13 and 14 of this proposal on large, reliable samples. <strong>Resolved by the 1 Sep allocation:</strong> weeks 13–15 now belong to Ajit Nawalkha, whose ladder-mechanics scores run roughly a point higher; Vishen carries the doctrine in recorded bookends. The masterclass intensive stays his, well supported by the 9.58.</p>
+        <p class="body-md" style="margin-top:8px">Those two topics were weeks 13 and 14 of this proposal on large, reliable samples. <strong>Resolved by the 1 Sep allocation:</strong> weeks 13–15 now belong to Ajit Nawalkha, whose ladder-mechanics scores run roughly a point higher; Vishen carries the doctrine in recorded bookends. The masterclass week stays his, well supported by the 9.58.</p>
       </div>
       <div class="card" style="border-left:4px solid var(--brand)">
         <div class="kicker">Finding 02</div>
@@ -659,7 +703,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="grid g4">
       <div class="stat"><div class="n">#2</div><div class="l">Imposter syndrome, the second most-voted audience question</div><div class="s">196 Mentimeter respondents, Day 2. Live demand for W2's confidence week, now held by Marisa Peer</div></div>
       <div class="stat green"><div class="n">$40–50K</div><div class="l">Monthly revenue from faceless Instagram posts</div><div class="s">Cityscape B-roll + caption → ManyChat "speak better" → S&amp;I webinar → $5K programme. The no-face path in W2/W10, with its funnel named</div></div>
-      <div class="stat orange"><div class="n">4 of 42</div><div class="l">Ads that worked in Vishen's 2022 test (~10%)</div><div class="s">Those four pulled ~a quarter-billion over three years. The testing doctrine behind the intensive: operational efficiency beats creative genius</div></div>
+      <div class="stat orange"><div class="n">4 of 42</div><div class="l">Ads that worked in Vishen's 2022 test (~10%)</div><div class="s">Those four pulled ~a quarter-billion over three years. The testing doctrine behind Week 9: operational efficiency beats creative genius</div></div>
       <div class="stat pink"><div class="n">70%</div><div class="l">Opt-in on a "coming soon" pop-up, as the critic, not the author</div><div class="s">The Critic Path proof: biggest list in the niche in six months, $970K in 18 months on revenue shares</div></div>
     </div>
   </section>
@@ -728,7 +772,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="kicker">Module 2 · Weeks 5–8</div>
         <h3>The First Rung</h3>
-        <p class="body-md" style="margin-top:8px">A shipped product with your name on it: a 45–90 minute MVP course, a challenge with a believable promise, or a quiz that diagnoses. Filmed in your pyjamas with Jimmy, funnelled with Alessio, and given its story in the week-8 story build before the intensive.</p>
+        <p class="body-md" style="margin-top:8px">A shipped product with your name on it: a 45–90 minute MVP course, a challenge with a believable promise, or a quiz that diagnoses. Filmed in your pyjamas with Jimmy, funnelled with Alessio, and given its story in the week-8 story build before Week 9.</p>
       </div>
       <div class="card">
         <div class="kicker">Module 3 · Weeks 10–13</div>
@@ -743,7 +787,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
     <div class="callout dark" style="margin-top:18px">
       <div class="ic">★</div>
-      <div><p><strong>Week 9: The Masterclass Intensive (3 days).</strong> The mid-programme keystone. Students arrive with a product and leave with the 60-minute masterclass that sells it: scripted against Vishen's doctrine on Day 1, built on the Claude shooting-script stack on Day 2, shot and machine-reviewed on Day 3. Every week after this one runs on a real, sellable asset.</p></div>
+      <div><p><strong>Week 9: The Masterclass Week.</strong> The mid-programme keystone, on the normal cadence. Students arrive with a product and leave with the 60-minute masterclass that sells it: scripted against Vishen's doctrine on Tuesday, built on the Claude shooting-script stack on Thursday, shot and machine-reviewed on one optional Saturday (or in the Week 10 lab). Every week after this one runs on a real, sellable asset.</p></div>
     </div>
   </section>
 
@@ -809,7 +853,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr>
           <td><strong>The four nevers</strong></td>
           <td>Never certify the free gift as sufficient · never teach the complete how · never issue a competing ask at peak openness · never bless the exit at a decision moment.</td>
-          <td>A checklist run against their own masterclass on Day 3 of the intensive</td>
+          <td>A checklist run against their own masterclass on the Week 9 shoot day</td>
         </tr>
         <tr>
           <td><strong>The Critic Path</strong></td>
@@ -844,7 +888,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="grid g4">
       <div class="card">
         <div class="kicker">Completion</div>
-        <p class="body-md">An early win in week 1: a published video, from someone who has never posted. A felt breakthrough per module. The week-9 intensive as a mid-programme re-commitment spike. Pods that make quitting visible.</p>
+        <p class="body-md">An early win in week 1: a published video, from someone who has never posted. A felt breakthrough per module. Week 9's shot masterclass as a mid-programme re-commitment spike. Pods that make quitting visible.</p>
       </div>
       <div class="card">
         <div class="kicker">Substance</div>
@@ -870,7 +914,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card" style="border-left:4px solid var(--orange)">
         <div class="kicker" style="color:var(--orange-content)">Risk 01</div>
         <h3>It feels like a conference, not a Mastery</h3>
-        <p class="body-md" style="margin-top:8px">Five guests plus the lab bench is still a lot of faces. <strong>Mitigation:</strong> Vishen holds the largest share of the floor (six teach weeks plus the intensive) and bookends all ten guest weeks with recorded framing; every builder owns a fixed lane (Alessio money, Kash camera, Jimmy course build, Sabrina AI) so the build floor never rotates; Ajit holds three consecutive weeks so module 4 has one voice; Jimmy holds the whole course-build fortnight so module 2 has one voice; and every guest week's lab day is tied to the student's own ladder, never to the guest's platform.</p>
+        <p class="body-md" style="margin-top:8px">Five guests plus the lab bench is still a lot of faces. <strong>Mitigation:</strong> Vishen holds the largest share of the floor (eight teach weeks) and bookends all ten guest weeks with recorded framing; every builder owns a fixed lane (Alessio money, Kash camera, Jimmy course build, Sabrina AI) so the build floor never rotates; Ajit holds three consecutive weeks so module 4 has one voice; Jimmy holds the whole course-build fortnight so module 2 has one voice; and every guest week's lab day is tied to the student's own ladder, never to the guest's platform.</p>
       </div>
       <div class="card" style="border-left:4px solid var(--orange)">
         <div class="kicker" style="color:var(--orange-content)">Risk 02</div>
@@ -893,75 +937,78 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <p class="body-md">Click a module to expand. Each week: Tuesday <span class="pill b">TEACH</span> + Thursday <span class="pill g">IMPLEMENTATION DAY</span>. The Expert &amp; Authority Accelerator is the assumed on-ramp; nothing below repeats it. Every session title gets an ABCS pass before launch.</p>
     </div>
 
+    <div class="modmap"><a class="mm m1" href="#mod-m1" data-open="mod-m1"><div class="mm-weeks">weeks 1–4</div><div class="mm-name">Be Seen</div><div class="mm-br">"I posted. The world didn't end. And someone replied."</div><div class="faces mm-faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"><img src="authors/marisa-peer.jpg" alt="Marisa Peer" title="Marisa Peer"></div></a><a class="mm m2" href="#mod-m2" data-open="mod-m2"><div class="mm-weeks">weeks 5–8</div><div class="mm-name">The First Rung</div><div class="mm-br">"There is a product with my name on it, live on the internet — and I can tell you why it exists in ninety seconds."</div><div class="faces mm-faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a><a class="mm mi" href="#mod-mi" data-open="mod-mi"><div class="mm-weeks">Week 9 · one optional Saturday</div><div class="mm-name">The Masterclass Week</div><div class="mm-br">In: a product. Out: the 60-minute masterclass that sells it, shot and reviewed.</div><div class="faces mm-faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a><a class="mm m3" href="#mod-m3" data-open="mod-m3"><div class="mm-weeks">weeks 10–13</div><div class="mm-name">Turn On The Tap</div><div class="mm-br">"Strangers found me this week. One of them paid."</div><div class="faces mm-faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/regan-hillyer.jpg" alt="Regan Hillyer" title="Regan Hillyer"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div></a><a class="mm m4" href="#mod-m4" data-open="mod-m4"><div class="mm-weeks">weeks 14–17</div><div class="mm-name">The Ladder &amp; The Identity Tier</div><div class="mm-br">"I have three rungs, and a customer has climbed two of them."</div><div class="faces mm-faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a></div>
+    <div class="curr-tools"><button type="button" class="tool" data-all="open">Expand all modules</button><button type="button" class="tool" data-all="close">Collapse all</button><span class="legend"><span class="sw teach"></span>Teach (Tuesday)<span class="sw lab"></span>Lab (Thursday)<span class="sw fire"></span>Fireside</span></div>
+
     <!-- MODULE 1 -->
-    <div class="module open" data-mod>
+    <div class="module open m1" data-mod id="mod-m1">
       <div class="module-head">
         <div class="mnum">1</div>
         <div class="mtitle">
           <h3>Be Seen · weeks 1–4</h3>
           <div class="msub">Breakthrough: "I posted. The world didn't end. And someone replied."</div>
         </div>
-        <div class="chev">⌄</div>
+        <div class="faces mfaces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"><img src="authors/marisa-peer.jpg" alt="Marisa Peer" title="Marisa Peer"></div><div class="chev">⌄</div>
       </div>
       <div class="module-body">
 
-        <div class="week">
-          <div class="wk">WEEK 1</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W1<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>The Visibility Wound</h4>
-            <p>Opens with a build, not a vision board. "Hey Hayden": the 2015 video where Vishen addressed his eight-year-old son so the internet couldn't judge him. The three tells: afraid to address the world, looking away, refusing the camera. The villain named on day one: no child is born with a visibility wound; the world installs it. And the reframe from the MVU stage: change is not a willpower problem, it is a <strong>witness problem</strong>: other people's expectations lock in who you were (the expectancy effect), so the cohort becomes the new witnesses. Every student opens with the identity sabbatical: "Back home I'm the person who… For these 17 weeks I'm the person who…" And the week now opens with proof it works: Regan Hillyer's Expert to Authority Summit fireside plays as the onboarding bonus asset (the presenter agreement licenses summit talks for three years, so this costs nothing): the zero-to-hero story lands before the first rep is asked of anyone.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Akash Rupalia</div>
+            <p class="lede">Opens with a build, not a vision board. "Hey Hayden": the 2015 video where Vishen addressed his eight-year-old son so the internet couldn't judge him.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The three tells: afraid to address the world, looking away, refusing the camera. The villain named on day one: no child is born with a visibility wound; the world installs it. And the reframe from the MVU stage: change is not a willpower problem, it is a <strong>witness problem</strong>: other people's expectations lock in who you were (the expectancy effect), so the cohort becomes the new witnesses. Every student opens with the identity sabbatical: "Back home I'm the person who… For these 17 weeks I'm the person who…" And the week now opens with proof it works: Regan Hillyer's Expert to Authority Summit fireside plays as the onboarding bonus asset (the presenter agreement licenses summit talks for three years, so this costs nothing): the zero-to-hero story lands before the first rep is asked of anyone.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/kash-rupalia.jpg" alt="Kash Rupalia" title="Kash Rupalia"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Akash Rupalia</div></div></div>
             <h4>Post the Thing</h4>
-            <p>Film the awkward video in-session, on camera, together. Publish it live before the call ends. Handle the first comment with the group watching. Nobody leaves unposted.</p>
+            <p class="lede">Film the awkward video in-session, on camera, together. Publish it live before the call ends. Handle the first comment with the group watching. Nobody leaves unposted.</p>
             <div class="win">Win: you published, publicly, in week one</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 2</div>
-          <div class="call">
-            <div class="ct teach">Teach · Marisa Peer</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W2<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/marisa-peer.jpg" alt="Marisa Peer" title="Marisa Peer"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Marisa Peer</div></div></div>
             <h4>I Am Enough: The Identity Shift</h4>
-            <p>The visibility wound treated at the root by the creator of Rapid Transformational Therapy, teaching her flagship lesson, verified in our vault as Uncompromised Life Lesson 14. Enough-ness, not "confidence": the mind rejects "I'm a goddess, I'm a rockstar" because it can find counter-evidence, and cannot reject "I am enough" because it's true. The 9 Rules of the Mind, the never-ever word list, and the shift that begins in one session ("30 years of therapy in under an hour") then gets wired in by her 21-day repetition protocol, which becomes the module's homework spine. The "being seen" frame is our synthesis of her material (her three types of exposure; "when you put yourself out there… you meet more critics"), stated as such. Per the 1 Sep ruling this is a taught identity session, not a story interview. (Paul McKenna, 9.61 in S&amp;I, remains the named alternative.)</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Akash Rupalia</div>
+            <p class="lede">The visibility wound treated at the root by the creator of Rapid Transformational Therapy, teaching her flagship lesson, verified in our vault as Uncompromised Life Lesson 14.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Enough-ness, not "confidence": the mind rejects "I'm a goddess, I'm a rockstar" because it can find counter-evidence, and cannot reject "I am enough" because it's true. The 9 Rules of the Mind, the never-ever word list, and the shift that begins in one session ("30 years of therapy in under an hour") then gets wired in by her 21-day repetition protocol, which becomes the module's homework spine. The "being seen" frame is our synthesis of her material (her three types of exposure; "when you put yourself out there… you meet more critics"), stated as such. Per the 1 Sep ruling this is a taught identity session, not a story interview. (Paul McKenna, 9.61 in S&amp;I, remains the named alternative.)</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/kash-rupalia.jpg" alt="Kash Rupalia" title="Kash Rupalia"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Akash Rupalia</div></div></div>
             <h4>On Camera, and the Formats That Don't Need You On Camera</h4>
-            <p>Reps in front of a lens, plus the honest escape hatch: B-roll and carousel formats that perform without a face. Students who cannot yet be seen still leave with published content.</p>
+            <p class="lede">Reps in front of a lens, plus the honest escape hatch: B-roll and carousel formats that perform without a face. Students who cannot yet be seen still leave with published content.</p>
             <div class="win">Win: a protocol for the fear, and a format that works around it</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 3</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W3<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>Find Your Weirdness: The Edge and the Niche</h4>
-            <p>The edge is skill A × skill B × skill C. Meditation × stage presence × photography × martial arts is why Mindvalley's events look the way they do. The dentist who rode horses in Mongolia. The makeup artist who reads energy. Then the narrowing: "Master Confidence" is a commodity; "stay calm during high-stakes negotiations for female entrepreneurs" is a business. The RAS test: does your avatar's brain scream <em>this is for me</em>? And for the student who cannot yet claim authority, <strong>the Critic Path</strong>, the zero-to-list route Vishen opened at MVU: become your niche's trusted reviewer before you become its teacher. His remote-viewing blog built the biggest list in that industry in six months, a "coming soon" pop-up converted at 70% <em>because</em> he was the critic and not the author, and revenue-share webinars with the actual experts did $970K in eighteen months. You don't need to be the expert to own the niche; you need to be the person the niche trusts.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio Pieroni</div>
+            <p class="lede">The edge is skill A × skill B × skill C. Meditation × stage presence × photography × martial arts is why Mindvalley's events look the way they do.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The dentist who rode horses in Mongolia. The makeup artist who reads energy. Then the narrowing: "Master Confidence" is a commodity; "stay calm during high-stakes negotiations for female entrepreneurs" is a business. The RAS test: does your avatar's brain scream <em>this is for me</em>? And for the student who cannot yet claim authority, <strong>the Critic Path</strong>, the zero-to-list route Vishen opened at MVU: become your niche's trusted reviewer before you become its teacher. His remote-viewing blog built the biggest list in that industry in six months, a "coming soon" pop-up converted at 70% <em>because</em> he was the critic and not the author, and revenue-share webinars with the actual experts did $970K in eighteen months. You don't need to be the expert to own the niche; you need to be the person the niche trusts.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio Pieroni</div></div></div>
             <h4>The Edge Audit and the RAS Test</h4>
-            <p>Three columns of weirdness, stress-tested by a peer instructed to reject anything a hundred other people could also say. Twenty candidate niches generated, killed down to one, then surveyed the way Vishen surveys a room: five closed questions plus one open-ended "what is your biggest…", answered as voice rambles, fed to Claude for the psychology read. Students who can't yet claim the expert seat choose their Critic Path publication instead.</p>
-            <div class="win">Win: a niche you can say in nine words, that only you could say</div>
+            <p class="lede">Three columns of weirdness, stress-tested by a peer instructed to reject anything a hundred other people could also say.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Twenty candidate niches generated, killed down to one, then surveyed the way Vishen surveys a room: five closed questions plus one open-ended "what is your biggest…", answered as voice rambles, fed to Claude for the psychology read. Students who can't yet claim the expert seat choose their Critic Path publication instead.</p></details><div class="win">Win: a niche you can say in nine words, that only you could say</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 4</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W4<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>From Attention to Authority: Position, Belief, Villain</h4>
-            <p>The bridge every expert falls off: from being interesting to being trusted enough to be paid. Vishen teaches this live, because it is his stage material end to end: the crowned belief and named villain (one sentence you will repeat for four months, and one true enemy that makes you the audience's ally rather than its critic), then the Three Founder Stories doctrine from the MVU stage: the <strong>vision story</strong> ("Imagine a world where…", spoken ten years ahead; mission, never product: one mission-led LinkedIn message put Nora Cavani in Forbes in two days), the <strong>plan story</strong> (the backward staircase: year one, three, six, ten; the what and the why, never the how), and the <strong>values story</strong> (wound → fury → what you'd change, three times over, becomes your manifesto, the mechanism that got Lisa Nichols on the first Mindvalley stage for free).</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio Pieroni</div>
+            <p class="lede">The bridge every expert falls off: from being interesting to being trusted enough to be paid.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Vishen teaches this live, because it is his stage material end to end: the crowned belief and named villain (one sentence you will repeat for four months, and one true enemy that makes you the audience's ally rather than its critic), then the Three Founder Stories doctrine from the MVU stage: the <strong>vision story</strong> ("Imagine a world where…", spoken ten years ahead; mission, never product: one mission-led LinkedIn message put Nora Cavani in Forbes in two days), the <strong>plan story</strong> (the backward staircase: year one, three, six, ten; the what and the why, never the how), and the <strong>values story</strong> (wound → fury → what you'd change, three times over, becomes your manifesto, the mechanism that got Lisa Nichols on the first Mindvalley stage for free).</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio Pieroni</div></div></div>
             <h4>Crown the Belief</h4>
-            <p>Vishen's stage mechanic, run as the lab: describe what you do in 30 seconds, partner scores it 1–10, rewrite it as a ten-years-ahead mission, rescore; most of an MVU room saw the number rise on the spot. Then the belief tested on ten strangers in the community, and a first-draft manifesto from the wound-to-values formula. Everything becomes the spine of every asset built from week 5 onward.</p>
-            <div class="win">Win: a score that went up, and one sentence you will repeat for four months</div>
+            <p class="lede">Vishen's stage mechanic, run as the lab: describe what you do in 30 seconds, partner scores it 1–10, rewrite it as a ten-years-ahead mission, rescore; most of an MVU room saw the number rise on the spot.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Then the belief tested on ten strangers in the community, and a first-draft manifesto from the wound-to-values formula. Everything becomes the spine of every asset built from week 5 onward.</p></details><div class="win">Win: a score that went up, and one sentence you will repeat for four months</div>
           </div>
         </div>
 
@@ -969,74 +1016,74 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
 
     <!-- MODULE 2 -->
-    <div class="module m2" data-mod>
+    <div class="module m2" data-mod id="mod-m2">
       <div class="module-head">
         <div class="mnum">2</div>
         <div class="mtitle">
           <h3>The First Rung · weeks 5–8</h3>
           <div class="msub">Breakthrough: "There is a product with my name on it, live on the internet — and I can tell you why it exists in ninety seconds."</div>
         </div>
-        <div class="chev">⌄</div>
+        <div class="faces mfaces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div class="chev">⌄</div>
       </div>
       <div class="module-body">
 
-        <div class="week">
-          <div class="wk">WEEK 5</div>
-          <div class="call">
-            <div class="ct teach">Teach · Jimmy Naraine</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W5<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Jimmy Naraine</div></div></div>
             <h4>What to Teach, and How to Structure It</h4>
-            <p>Jimmy's own Course Pro lane, from the quest he already co-teaches with Vishen on our platform: the niche with a unique flavour ("yoga for busy corporate people"), a customer avatar with a real name, and a curriculum reverse-engineered from the student's objectives rather than the expert's knowledge. Vishen's recorded bookend carries the doctrine that used to hold this slot: the 48-hour MVP (what can you ship in 48 hours that a customer would call great value?), minimum livable income, and celebrating the first $4.50 day.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Jimmy + Sabrina</div>
+            <p class="lede">Jimmy's own Course Pro lane, from the quest he already co-teaches with Vishen on our platform: the niche with a unique flavour ("yoga for busy corporate people"), a customer avatar with a real name, and a curriculum reverse-engineered from the student's objectives rather than the expert's knowledge.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Vishen's recorded bookend carries the doctrine that used to hold this slot: the 48-hour MVP (what can you ship in 48 hours that a customer would call great value?), minimum livable income, and celebrating the first $4.50 day.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"><img src="authors/sabrina-stocker.jpg" alt="Sabrina Stocker" title="Sabrina Stocker"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Jimmy + Sabrina</div></div></div>
             <h4>Idea Dump to Idea Clusters</h4>
-            <p>Jimmy's named method, run as he actually runs it: everything the student knows dumped out without filtering ("this is not the time to hold yourself back"), clustered into sections, each candidate lesson on a Post-it. Our scaffold caps it at three to seven sections of three to seven videos and locks at good-not-perfect; his own test is qualitative: "not perfect, not perfect, but good about." Sabrina runs the AI layer, her verified lane (AI Build live feedback, 9.93, the highest lesson in the Social Media Mastery base): the avatar stress-tester, never the author.</p>
-            <div class="win">Win: a curriculum you stop editing</div>
+            <p class="lede">Jimmy's named method, run as he actually runs it: everything the student knows dumped out without filtering ("this is not the time to hold yourself back"), clustered into sections, each candidate lesson on a Post-it.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Our scaffold caps it at three to seven sections of three to seven videos and locks at good-not-perfect; his own test is qualitative: "not perfect, not perfect, but good about." Sabrina runs the AI layer, her verified lane (AI Build live feedback, 9.93, the highest lesson in the Social Media Mastery base): the avatar stress-tester, never the author.</p></details><div class="win">Win: a curriculum you stop editing</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 6</div>
-          <div class="call">
-            <div class="ct teach">Teach · Jimmy Naraine</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W6<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Jimmy Naraine</div></div></div>
             <h4>Film It Cheap, Present It With Charisma</h4>
-            <p>The permission week, from the teacher whose father shot a best-selling Udemy course in his fifties on an iPhone 4 and a $20 microphone. Audio is king, light in front of the face, film waist-up with palms visible, lens at eye level. Then the +20% energy rule and the body-language reset he demonstrates live. Toxic perfectionism named as the enemy: a smaller course shipped always beats a masterpiece stuck in never-ending draft mode. Vishen's recorded bookend carries the soul doctrine: "the best marketing is a great product," under-promise and over-deliver at every rung, and the hard AI line: a course generated wholesale by a machine has no soul and will not sell.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Jimmy Naraine</div>
+            <p class="lede">The permission week, from the teacher whose father shot a best-selling Udemy course in his fifties on an iPhone 4 and a $20 microphone.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Audio is king, light in front of the face, film waist-up with palms visible, lens at eye level. Then the +20% energy rule and the body-language reset he demonstrates live. Toxic perfectionism named as the enemy: a smaller course shipped always beats a masterpiece stuck in never-ending draft mode. Vishen's recorded bookend carries the soul doctrine: "the best marketing is a great product," under-promise and over-deliver at every rung, and the hard AI line: a course generated wholesale by a machine has no soul and will not sell.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Jimmy Naraine</div></div></div>
             <h4>The Pajama Draft, Filmed Today</h4>
-            <p>His own Lesson 19, run to his own design: film the entire course start to finish on a phone, dressed ridiculously on purpose. The costume is the mechanism, because footage that cannot be published switches perfectionism off. Then the part most people miss: the draft is deleted, unwatched. It is a rehearsal that proves capability, not raw material. The real shoot happens days later on the intensive's shoot floor, exactly the gap his method prescribes.</p>
-            <div class="win">Win: proof, on camera, that you can film the whole thing</div>
+            <p class="lede">His own Lesson 19, run to his own design: film the entire course start to finish on a phone, dressed ridiculously on purpose.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The costume is the mechanism, because footage that cannot be published switches perfectionism off. Then the part most people miss: the draft is deleted, unwatched. It is a rehearsal that proves capability, not raw material. The real shoot happens days later on the Week 9 shoot floor, exactly the gap his method prescribes.</p></details><div class="win">Win: proof, on camera, that you can film the whole thing</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 7</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W7<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>Selling Without Selling: The Two Laws</h4>
-            <p>Vishen carries the doctrine (the laws are his stage material) with Alessio's published benchmarks as the targets, and Alessio on the build floor the same afternoon. <strong>The law of momentum</strong>: narrow the gap with a challenge whose promise is believable, simple and stretched ("lose five pounds in 10 days," not twenty). His 7-day challenge for a monk who refused to sell converted 8% of 20,000 people. <strong>The law of precision</strong>: the quiz that diagnoses rather than asks: 8–12 questions on the ARC, aspirational to reflective to honest, first person, three to five results. And the reason the quiz matters here: <strong>it does not need your face</strong>, the first revenue path for a student still healing the visibility wound.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio Pieroni</div>
+            <p class="lede">Vishen carries the doctrine (the laws are his stage material) with Alessio's published benchmarks as the targets, and Alessio on the build floor the same afternoon.</p>
+            <details class="more"><summary>Read the full brief</summary><p><strong>The law of momentum</strong>: narrow the gap with a challenge whose promise is believable, simple and stretched ("lose five pounds in 10 days," not twenty). His 7-day challenge for a monk who refused to sell converted 8% of 20,000 people. <strong>The law of precision</strong>: the quiz that diagnoses rather than asks: 8–12 questions on the ARC, aspirational to reflective to honest, first person, three to five results. And the reason the quiz matters here: <strong>it does not need your face</strong>, the first revenue path for a student still healing the visibility wound.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio Pieroni</div></div></div>
             <h4>Build the Quiz, Ship the Quiz</h4>
-            <p>Students choose their funnel. Challenge builders write the promise and design the VIP; quiz builders write questions to the ARC and put the quiz live before the call ends. Benchmarks handed over as targets: 40% opt-in, 4% VIP, 30% total show-up, 7% conversion.</p>
-            <div class="win">Win: an asset collecting leads while you sleep</div>
+            <p class="lede">Students choose their funnel. Challenge builders write the promise and design the VIP; quiz builders write questions to the ARC and put the quiz live before the call ends.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Benchmarks handed over as targets: 40% opt-in, 4% VIP, 30% total show-up, 7% conversion.</p></details><div class="win">Win: an asset collecting leads while you sleep</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 8</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W8<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>Your Story Is the Asset</h4>
-            <p>The last thing built before the intensive, because the teacher story is a required component of the 60-minute masterclass and most experts arrive without one. Vishen carries the story doctrine himself (the Three Founder Stories from the MVU stage) and the case studies stay: Lisa Nichols' line from week 1 (<em>"Shine your light so bright, and if anybody complains, tell them to just put on some shades"</em>) and her first-Mindvalley-stage story now teach as material rather than as a guest seat, per the Academy roster.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Jimmy Naraine</div>
+            <p class="lede">The last thing built before Week 9, because the teacher story is a required component of the 60-minute masterclass and most experts arrive without one.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Vishen carries the story doctrine himself (the Three Founder Stories from the MVU stage) and the case studies stay: Lisa Nichols' line from week 1 (<em>"Shine your light so bright, and if anybody complains, tell them to just put on some shades"</em>) and her first-Mindvalley-stage story now teach as material rather than as a guest seat, per the Academy roster.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Jimmy Naraine</div></div></div>
             <h4>The Story Bank</h4>
-            <p>Five stories built to structure and timed: the origin story, the failure story, the client transformation, plus the two from the founder-stories doctrine: the "imagine a world" vision story and the values story born from your wound. Each tagged to where it will sit in the masterclass script one week later. Recorded, so the intensive starts with material rather than a blank page. Jimmy runs it the way he runs his own practice: a story bank kept as a spreadsheet. His holds almost six hundred.</p>
-            <div class="win">Win: five stories you can tell without notes</div>
+            <p class="lede">Five stories built to structure and timed: the origin story, the failure story, the client transformation, plus the two from the founder-stories doctrine: the "imagine a world" vision story and the values story born from your wound.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Each tagged to where it will sit in the masterclass script one week later. Recorded, so Week 9 starts with material rather than a blank page. Jimmy runs it the way he runs his own practice: a story bank kept as a spreadsheet. His holds almost six hundred.</p></details><div class="win">Win: five stories you can tell without notes</div>
           </div>
         </div>
 
@@ -1044,138 +1091,139 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
 
     <!-- INTENSIVE -->
-    <div class="module mi" data-mod>
+    <div class="module mi" data-mod id="mod-mi">
       <div class="module-head">
         <div class="mnum">★</div>
         <div class="mtitle">
-          <h3>Week 9 · The Masterclass Intensive (3 days)</h3>
-          <div class="msub">The mid-programme keystone. In: a product. Out: the 60-minute masterclass that sells it, shot and machine-reviewed.</div>
+          <h3>Week 9 · The Masterclass Week, plus one optional Saturday</h3>
+          <div class="msub">The mid-programme keystone, on the normal Tuesday/Thursday cadence. In: a product. Out: the 60-minute masterclass that sells it, shot and machine-reviewed.</div>
         </div>
-        <div class="chev">⌄</div>
+        <div class="faces mfaces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div class="chev">⌄</div>
       </div>
       <div class="module-body">
 
-        <div class="week">
-          <div class="wk">DAY 1</div>
-          <div class="call">
-            <div class="ct teach">Doctrine floor · Vishen, live</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W9<small>Tue</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani, live</div></div></div>
             <h4>The 60 Minutes That Sold Half a Billion Dollars</h4>
-            <p>The two covenants. The hinge at minute 40. The crowned belief and named villain, already chosen in week 4, now placed. What, why, when. Never the how. The four nevers. The before-and-after rating at minute 41, so the close argues from what the viewer felt rather than what we claimed. The close doctrine lives here, in Vishen's voice (seeding, the offer stack, the guarantee, reading the room) and in no guest week. The full anatomy: hook and promise, teacher story, worldview shift, mechanism, taste, debrief, bridge, proof, offer, guarantee. Students arrive with the story bank built in week 8, so the teacher-story slot is filled before Day 1 begins.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Afternoon</div>
+            <p class="lede">The two covenants. The hinge at minute 40. The crowned belief and named villain, already chosen in week 4, now placed.</p>
+            <details class="more"><summary>Read the full brief</summary><p>What, why, when. Never the how. The four nevers. The before-and-after rating at minute 41, so the close argues from what the viewer felt rather than what we claimed. The close doctrine lives here, in Vishen's voice (seeding, the offer stack, the guarantee, reading the room) and in no guest week. The full anatomy: hook and promise, teacher story, worldview shift, mechanism, taste, debrief, bridge, proof, offer, guarantee. Students arrive with the story bank built in week 8, so the teacher-story slot is filled before Day 1 begins.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div><div class="slot-kind">Assignment</div><div class="slot-who">before Thursday</div></div></div>
             <h4>Your Script, Structured</h4>
-            <p>Each student maps their own hour against the doctrine and identifies exactly where their current pitch leaks: most commonly by giving away the how.</p>
+            <p class="lede">Each student maps their own hour against the doctrine and identifies exactly where their current pitch leaks: most commonly by giving away the how.</p>
             <div class="win">Win: a structure, not a hope</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">DAY 2</div>
-          <div class="call">
-            <div class="ct teach">Build floor · Alessio Pieroni</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W9<small>Thu</small></div></div>
+          <div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio Pieroni</div></div></div>
             <h4>The Shooting-Script Stack</h4>
-            <p>Vishen's actual Claude agent architecture, handed over: the master shooting script, the belief map that engineers where conviction is built, student-story and testimonial placement, CTA placement, and teleprompter scripts for host and guest. The stack that gets built before Jim Kwik ever sits down.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Afternoon</div>
+            <p class="lede">Vishen's actual Claude agent architecture, handed over: the master shooting script, the belief map that engineers where conviction is built, student-story and testimonial placement, CTA placement, and teleprompter scripts for host and guest. The stack that gets built before Jim Kwik ever sits down.</p>
+            
+          </div><div class="slot lab">
+            <div class="slot-head"><div><div class="slot-kind">Same lab</div><div class="slot-who">second half</div></div></div>
             <h4>Build Yours</h4>
-            <p>Every student's masterclass documented to the same standard, on their own product, with lab coaches on the floor.</p>
+            <p class="lede">Every student's masterclass documented to the same standard, on their own product, with lab coaches on the floor.</p>
             <div class="win">Win: a shoot document you could hand to a crew</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">DAY 3</div>
-          <div class="call">
-            <div class="ct teach">Shoot floor · Kash + Jimmy</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">Sat<small>optional</small></div></div>
+          <div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"><img src="authors/kash-rupalia.jpg" alt="Kash Rupalia" title="Kash Rupalia"></div><div><div class="slot-kind">Shoot floor</div><div class="slot-who">Kash + Jimmy · optional Saturday</div></div></div>
             <h4>Shoot, Review, Reshoot</h4>
-            <p>Students shoot. The shoot-review agent grades the take against the doctrine, flags unverifiable claims and misspoken names, returns a pickup list with scripts, and produces the edit-bay sheet. Then the part that makes it a system: the review rewrites its own guardrails, so every masterclass a student shoots afterwards is better than the last.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Close</div>
+            <p class="lede">Students shoot. The shoot-review agent grades the take against the doctrine, flags unverifiable claims and misspoken names, returns a pickup list with scripts, and produces the edit-bay sheet.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Then the part that makes it a system: the review rewrites its own guardrails, so every masterclass a student shoots afterwards is better than the last.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div><div class="slot-kind">Close</div><div class="slot-who">and the safety net</div></div></div>
             <h4>Cohort Showcase</h4>
-            <p>Openings played to the room. Students return to module 3 with a sellable asset and a live offer.</p>
-            <div class="win">Win: a masterclass in the can, and a system that improves it</div>
+            <p class="lede">Openings played to the room. Students return to module 3 with a sellable asset and a live offer.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Anyone who cannot make Saturday shoots in the Week 10 lab with the same review agent; nobody is stranded, and nobody is asked for three days in a row.</p></details><div class="win">Win: a masterclass in the can, and a system that improves it</div>
           </div>
         </div>
 
-        <div class="callout" style="margin-top:20px">
-          <div class="ic">◆</div>
-          <div><p><strong>Why a weekend, and why this is now a hard rule.</strong> S&amp;I 2025 ran its three-day One Talk Workshop as three consecutive <em>mainline</em> sessions. Attendance went 39% → 31% → 34%, and never recovered: the back half of that programme ran 45% declining to 33%, a permanent ~14-point break in the retention curve. S&amp;I 2026 ran the identical workshop as an optional Friday–Sunday bonus with the weekly cadence untouched, and the next mainline sessions held at 56% and 58%. <strong>The fix is proven, not theoretical.</strong> So this intensive runs Friday–Sunday between weeks 8 and 9, three hours a day, full replay, two-speed build floor, and Tuesday's teach happens as normal the following week. Mid-programme placement still compounds (every week after it runs on a live asset); it just never costs the cadence.</p></div>
+        <div class="callout warn" style="margin-top:20px">
+          <div class="ic">!</div>
+          <div><p><strong>Why this sits on the mainline, and why the extra day is optional. Corrected 7 September against the S&amp;I base.</strong> S&amp;I 2025 ran the three-day One Talk Workshop as three consecutive mainline days during MVU Amsterdam. Live attendance fell to 39%, 31% and 34% against a cohort average near 57%, and never recovered; the people who rated the sessions gave them 9.0 to 9.8, while the Mastery students who travelled left a form averaging roughly +5 NPS: 400 or more non-students in the room, a first day that repeated month one, promised coaching that never happened. S&amp;I 2026 moved the same workshop to a Friday-to-Sunday bonus and the next mainline sessions held at 56% and 58%, so the weekend protected the cadence. But the base holds no attendance and no ratings for that weekend at all; the rating fields on its rows are the 2025 numbers copied across. An earlier version of this page called the weekend fix "proven". It is proven for retention of the weekly rhythm and unproven for the workshop itself. What is proven is the ordinary week: Eric's 2026 Tuesday workshops draw 48 to 62% and rate 9.1 to 9.6.</p>
+          <p>So Week 9 runs like every other week. Tuesday is Vishen's doctrine session, Thursday is Alessio's script build, and the shoot is one optional Saturday with a Week 10 fallback. Three hours of Vishen's time, not a weekend of it. Every session is attended and rated, which S&amp;I never did for its weekend.</p></div>
         </div>
 
       </div>
     </div>
 
     <!-- MODULE 3 -->
-    <div class="module m3" data-mod>
+    <div class="module m3" data-mod id="mod-m3">
       <div class="module-head">
         <div class="mnum">3</div>
         <div class="mtitle">
           <h3>Turn On The Tap · weeks 10–13</h3>
           <div class="msub">Breakthrough: "Strangers found me this week. One of them paid."</div>
         </div>
-        <div class="chev">⌄</div>
+        <div class="faces mfaces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/regan-hillyer.jpg" alt="Regan Hillyer" title="Regan Hillyer"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><div class="chev">⌄</div>
       </div>
       <div class="module-body">
 
-        <div class="week">
-          <div class="wk">WEEK 10</div>
-          <div class="call">
-            <div class="ct teach">Teach · John Lee</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W10<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><div><div class="slot-kind">Teach</div><div class="slot-who">John Lee</div></div></div>
             <h4>From Viral to Valuable: The Conversion Map</h4>
-            <p>The specific pathway from a cold viewer to a paying client, taught in his own named vocabulary from The 7-Figure Creator: TLC (Traffic, Leads, Conversion), the 3C strategy (content, call to action, conversion), "market in public, sell in private," and the EDUCATE framework for content built to convert rather than to trend. The thesis is verbatim his: "followers and likes don't pay the bills." Rated 9.54 with our students (n=35). First of his two weeks (the build here, the monetisation in week 16), and it doubles as the pilot the author deck asked for. This is the strategic frame that makes the three platform build days below add up to revenue rather than followers.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Akash Rupalia</div>
+            <p class="lede">The specific pathway from a cold viewer to a paying client, taught in his own named vocabulary from The 7-Figure Creator: TLC (Traffic, Leads, Conversion), the 3C strategy (content, call to action, conversion), "market in public, sell in private," and the EDUCATE framework for content built to convert rather than to trend.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The thesis is verbatim his: "followers and likes don't pay the bills." Rated 9.54 with our students (n=35). First of his two weeks (the build here, the monetisation in week 16), and it doubles as the pilot the author deck asked for. This is the strategic frame that makes the three platform build days below add up to revenue rather than followers.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/kash-rupalia.jpg" alt="Kash Rupalia" title="Kash Rupalia"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Akash Rupalia</div></div></div>
             <h4>The Hook Bank, and Two Posts Without Your Face</h4>
-            <p>Priority order taught by doing: topic and hook first, format second, editing last. Thirty verified outlier hooks banked. One B-roll and one carousel built from the same research, both published, both with a comment-to-DM automation wired into the week-8 quiz.</p>
-            <div class="win">Win: you never run out of ideas again</div>
+            <p class="lede">Priority order taught by doing: topic and hook first, format second, editing last.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Thirty verified outlier hooks banked. One B-roll and one carousel built from the same research, both published, both with a comment-to-DM automation wired into the week-8 quiz.</p></details><div class="win">Win: you never run out of ideas again</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 11</div>
-          <div class="call">
-            <div class="ct teach">Fireside · Regan Hillyer, interviewed</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W11<small>week</small></div></div>
+          <div class="slot fire">
+            <div class="slot-head"><div class="faces"><img src="authors/regan-hillyer.jpg" alt="Regan Hillyer" title="Regan Hillyer"></div><div><div class="slot-kind">Fireside</div><div class="slot-who">Regan Hillyer, interviewed</div></div></div>
             <h4>Zero to Hero: The Proof Point</h4>
-            <p>Not a lesson. Evidence. We took Regan from a Mindvalley U community member to one of the biggest authorities in manifesting in the world, and this fireside walks her through the three acts her own transcripts already tell. The before: the architecture degree studied "in an unconscious quest to fulfill my father's dreams," the walk-out ("this voice deep inside me was like, 'Get out'"), six figures of debt, failing businesses. The turn: dropping the "too spiritual, dumb it down" filter. "The more I leaned into that… I noticed that my audience would get bigger. Platforms were wanting me to talk about those things." The proof: first million at 23, an online business from zero past $1M in eight months, clients writing in at their first $100K month. The how stays deliberately missing; that is the conversion mechanism. She sits at week 11 because the post-intensive stretch is where our retention data says proof-of-possibility earns its keep. Interviewer-led by design, because with warm audiences she skips her own story.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Sabrina Stocker</div>
+            <p class="lede">Not a lesson. Evidence. We took Regan from a Mindvalley U community member to one of the biggest authorities in manifesting in the world, and this fireside walks her through the three acts her own transcripts already tell.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The before: the architecture degree studied "in an unconscious quest to fulfill my father's dreams," the walk-out ("this voice deep inside me was like, 'Get out'"), six figures of debt, failing businesses. The turn: dropping the "too spiritual, dumb it down" filter. "The more I leaned into that… I noticed that my audience would get bigger. Platforms were wanting me to talk about those things." The proof: first million at 23, an online business from zero past $1M in eight months, clients writing in at their first $100K month. The how stays deliberately missing; that is the conversion mechanism. She sits at week 11 because the post-Week-9 stretch is where our retention data says proof-of-possibility earns its keep. Interviewer-led by design, because with warm audiences she skips her own story.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/sabrina-stocker.jpg" alt="Sabrina Stocker" title="Sabrina Stocker"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Sabrina Stocker</div></div></div>
             <h4>LinkedIn and the Answer-Engine Layer</h4>
-            <p>Roughly 37% of searches now begin with AI, and AI returns one answer rather than a page of options. Headline keywords, banner, and the featured section rebuilt live into three offers (something free, a waitlist, and a DM conversation) because the only objection that ever comes is "will this work for me?" Plus the shift from applying for opportunities to orchestrating them.</p>
-            <div class="win">Win: a profile that books you while you sleep</div>
+            <p class="lede">Roughly 37% of searches now begin with AI, and AI returns one answer rather than a page of options.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Headline keywords, banner, and the featured section rebuilt live into three offers (something free, a waitlist, and a DM conversation) because the only objection that ever comes is "will this work for me?" Plus the shift from applying for opportunities to orchestrating them.</p></details><div class="win">Win: a profile that books you while you sleep</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 12</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W12<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>The Long-Form Advantage: Why Human Attention Got More Valuable</h4>
-            <p>Restored to Vishen live after Ben Greenfield came off the bench (2 Sep); this was always his stage doctrine. The counter-intuitive read on AI: as talking-head video became easy to generate, it became cheap to value, and everything human got more expensive. Event sales up 70% in a year. What AI can organise and what it can never replace: voice modulation, timing, story, taste, the room. Why the students who win are studying comedy, writing and stagecraft while everyone else studies prompts. And the thesis the whole week builds on: podcasts, books and deep-dive writing compound into an authority moat while short-form evaporates.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Akash Rupalia</div>
+            <p class="lede">Restored to Vishen live after Ben Greenfield came off the bench (2 Sep); this was always his stage doctrine.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The counter-intuitive read on AI: as talking-head video became easy to generate, it became cheap to value, and everything human got more expensive. Event sales up 70% in a year. What AI can organise and what it can never replace: voice modulation, timing, story, taste, the room. Why the students who win are studying comedy, writing and stagecraft while everyone else studies prompts. And the thesis the whole week builds on: podcasts, books and deep-dive writing compound into an authority moat while short-form evaporates.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/kash-rupalia.jpg" alt="Kash Rupalia" title="Kash Rupalia"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Akash Rupalia</div></div></div>
             <h4>YouTube: Ten Ideas, Packaged and One Committed</h4>
-            <p>The outlier score: views divided by the average of the previous ten. Your TAM sets your ceiling. Splicing two proven formats, spinning them through the edge from week 3. The five levers: authority, dream outcome, time constraint, FOMO, specificity. Ten titles and thumbnails built, scored, one committed to and shot.</p>
-            <div class="win">Win: an idea validated before you make it</div>
+            <p class="lede">The outlier score: views divided by the average of the previous ten.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Your TAM sets your ceiling. Splicing two proven formats, spinning them through the edge from week 3. The five levers: authority, dream outcome, time constraint, FOMO, specificity. Ten titles and thumbnails built, scored, one committed to and shot.</p></details><div class="win">Win: an idea validated before you make it</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 13</div>
-          <div class="call">
-            <div class="ct teach">Teach · Ajit Nawalkha</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W13<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Ajit Nawalkha</div></div></div>
             <h4>The Free Rung: What, Why, When — Never How</h4>
-            <p>The first of Ajit's three weeks, and the base of the ladder his whole arc builds: the free asset that sells the paid one. Vishen's recorded bookend carries the origin doctrine (the technique that lifted Mindvalley's sales 96% overnight in 2004: name the free thing like a book, make them wait 24 hours because anything too easy to get is assumed worthless); Ajit teaches the build: nine lessons of what, why and when, a did-you-listen reminder, a PS line under every one, and where the free rung sits in a coach's offer stack — his lane, where he holds The Essential Three Offers at 9.81. It took Vishen thirty days to write his. With AI it takes two.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio Pieroni</div>
+            <p class="lede">The first of Ajit's three weeks, and the base of the ladder his whole arc builds: the free asset that sells the paid one.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Vishen's recorded bookend carries the origin doctrine (the technique that lifted Mindvalley's sales 96% overnight in 2004: name the free thing like a book, make them wait 24 hours because anything too easy to get is assumed worthless); Ajit teaches the build: nine lessons of what, why and when, a did-you-listen reminder, a PS line under every one, and where the free rung sits in a coach's offer stack — his lane, where he holds The Essential Three Offers at 9.81. It took Vishen thirty days to write his. With AI it takes two.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio Pieroni</div></div></div>
             <h4>Nine Emails, Written and Scheduled</h4>
-            <p>The full sequence drafted, audited against the never-give-the-how rule, and loaded into the student's platform before the call ends.</p>
+            <p class="lede">The full sequence drafted, audited against the never-give-the-how rule, and loaded into the student's platform before the call ends.</p>
             <div class="win">Win: an asset that sells without you in the room</div>
           </div>
         </div>
@@ -1184,89 +1232,89 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
 
     <!-- MODULE 4 -->
-    <div class="module m4" data-mod>
+    <div class="module m4" data-mod id="mod-m4">
       <div class="module-head">
         <div class="mnum">4</div>
         <div class="mtitle">
           <h3>The Ladder &amp; The Identity Tier · weeks 14–17</h3>
           <div class="msub">Breakthrough: "I have three rungs, and a customer has climbed two of them."</div>
         </div>
-        <div class="chev">⌄</div>
+        <div class="faces mfaces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div class="chev">⌄</div>
       </div>
       <div class="module-body">
 
-        <div class="week">
-          <div class="wk">WEEK 14</div>
-          <div class="call">
-            <div class="ct teach">Teach · Ajit Nawalkha</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W14<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Ajit Nawalkha</div></div></div>
             <h4>The Product Step Ladder: The Three Laws</h4>
-            <p>The single biggest mistake experts make: spending their time on new customers. Thirty per cent there, seventy per cent moving existing customers up. Then the three laws: every rung delivers a complete transformation, even the $49 one; the jump must feel inevitable rather than pushy, because it is revealing and not selling; and above a thousand dollars you are no longer selling a product, you are selling an identity. The worked example is Marisa Peer's own ladder: a low-ticket hypnosis audio, a course collection, a certification that trained the largest therapy organisation in the world; the same teacher students met in week 2. Vishen's recorded bookends carry the laws, the identity doctrine and <strong>the 30-day rule</strong>, the post-purchase playbook the ladder runs on: days 1–7 over-deliver and drive consumption (a student who doesn't consume never buys again), days 8–14 engagement and celebration with no selling, days 14–28 the free monthly summit where the high-ticket offer is made; a solopreneur recoups ad spend inside 30 days. Ajit teaches the pricing and offer mechanics live: Designing Your $10K+ Offer holds 9.45 in his base.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio Pieroni</div>
+            <p class="lede">The single biggest mistake experts make: spending their time on new customers.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Thirty per cent there, seventy per cent moving existing customers up. Then the three laws: every rung delivers a complete transformation, even the $49 one; the jump must feel inevitable rather than pushy, because it is revealing and not selling; and above a thousand dollars you are no longer selling a product, you are selling an identity. The worked example is Marisa Peer's own ladder: a low-ticket hypnosis audio, a course collection, a certification that trained the largest therapy organisation in the world; the same teacher students met in week 2. Vishen's recorded bookends carry the laws, the identity doctrine and <strong>the 30-day rule</strong>, the post-purchase playbook the ladder runs on: days 1–7 over-deliver and drive consumption (a student who doesn't consume never buys again), days 8–14 engagement and celebration with no selling, days 14–28 the free monthly summit where the high-ticket offer is made; a solopreneur recoups ad spend inside 30 days. Ajit teaches the pricing and offer mechanics live: Designing Your $10K+ Offer holds 9.45 in his base.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio Pieroni</div></div></div>
             <h4>Map It, Price It, Sequence It</h4>
-            <p>Three columns (what you have, what's missing below, what's missing above), then priced, with the transformation at each rung written out and the bridge between rungs scripted. Then the till: order bumps ($9–17 zero-cost tools at checkout), upsell one, the downsell, upsell two; price-tested at three points; and the sell-mechanism rule: above ~$500 needs a webinar, under $99 sells off a single ad or reel. Plus a 30-day post-purchase map for rung one.</p>
-            <div class="win">Win: three paid rungs, a checkout that compounds, and a 30-day map</div>
+            <p class="lede">Three columns (what you have, what's missing below, what's missing above), then priced, with the transformation at each rung written out and the bridge between rungs scripted.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Then the till: order bumps ($9–17 zero-cost tools at checkout), upsell one, the downsell, upsell two; price-tested at three points; and the sell-mechanism rule: above ~$500 needs a webinar, under $99 sells off a single ad or reel. Plus a 30-day post-purchase map for rung one.</p></details><div class="win">Win: three paid rungs, a checkout that compounds, and a 30-day map</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 15</div>
-          <div class="call">
-            <div class="ct teach">Teach · Ajit Nawalkha</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W15<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Ajit Nawalkha</div></div></div>
             <h4>The Enrolment Conversation</h4>
-            <p>The moment a $5,000 relationship is won or lost, taught by the person who has trained more coaches to have it than anyone else on our roster. The discovery call as coaching rather than persuasion: qualification without interrogation, the objection underneath the objection, and the ask that doesn't cost the relationship when the answer is no. Directly answers the room's own show of hands on discomfort with selling, and closes Ajit's three-week arc: the free rung, the ladder, the conversation that moves people up it.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio + Ajit</div>
+            <p class="lede">The moment a $5,000 relationship is won or lost, taught by the person who has trained more coaches to have it than anyone else on our roster.</p>
+            <details class="more"><summary>Read the full brief</summary><p>The discovery call as coaching rather than persuasion: qualification without interrogation, the objection underneath the objection, and the ask that doesn't cost the relationship when the answer is no. Directly answers the room's own show of hands on discomfort with selling, and closes Ajit's three-week arc: the free rung, the ladder, the conversation that moves people up it.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio + Ajit</div></div></div>
             <h4>Run the Call, Get the Tape Reviewed</h4>
-            <p>Live role-play in pairs, recorded, then reviewed against a rubric. Students leave with a call structure and their own tape, not a theory.</p>
+            <p class="lede">Live role-play in pairs, recorded, then reviewed against a rubric. Students leave with a call structure and their own tape, not a theory.</p>
             <div class="win">Win: you can ask for the money without flinching</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 16</div>
-          <div class="call">
-            <div class="ct teach">Teach · John Lee</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W16<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><div><div class="slot-kind">Teach</div><div class="slot-who">John Lee</div></div></div>
             <h4>$1M Without Being Famous: Monetise the Platform</h4>
-            <p>The second half of his arc, rebuilt around what his transcripts verifiably teach. "Without being famous" is verbatim his ("I was somebody, even though I'm not famous"). The arithmetic: a thousand clients at a thousand dollars, which is three people a day. The offer as core, bonus, fast action ("if you're not good at selling, the offer should sell itself"); recurring income through memberships and the $1 paid trial; affiliate and strategic-alliance models; and VVVS follow-up, because "the fortune is in the follow-up." The stage-close doctrine that used to sit here (seeding, the stack, the guarantee) has moved home to Vishen's intensive, where it always lived. The AI segment is scripted as the honest tension: John clones his voice and runs pre-recorded lives openly with us, while his own on-record advice is "if it's not live, don't tell them it's live". That is exactly the disclosure line this cohort must choose a side of.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Lab · Alessio + John</div>
+            <p class="lede">The second half of his arc, rebuilt around what his transcripts verifiably teach.</p>
+            <details class="more"><summary>Read the full brief</summary><p>"Without being famous" is verbatim his ("I was somebody, even though I'm not famous"). The arithmetic: a thousand clients at a thousand dollars, which is three people a day. The offer as core, bonus, fast action ("if you're not good at selling, the offer should sell itself"); recurring income through memberships and the $1 paid trial; affiliate and strategic-alliance models; and VVVS follow-up, because "the fortune is in the follow-up." The stage-close doctrine that used to sit here (seeding, the stack, the guarantee) has moved home to Vishen's Week 9 doctrine session, where it always lived. The AI segment is scripted as the honest tension: John clones his voice and runs pre-recorded lives openly with us, while his own on-record advice is "if it's not live, don't tell them it's live". That is exactly the disclosure line this cohort must choose a side of.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/alessio-pieroni.jpg" alt="Alessio Pieroni" title="Alessio Pieroni"></div><div><div class="slot-kind">Lab</div><div class="slot-who">Alessio + John</div></div></div>
             <h4>Your Offer, Built and Delivered</h4>
-            <p>The core/bonus/fast-action offer written, the recurring rung priced with its $1-trial mechanic, the follow-up sequence loaded, and the pitch rehearsed to camera and critiqued in the room.</p>
+            <p class="lede">The core/bonus/fast-action offer written, the recurring rung priced with its $1-trial mechanic, the follow-up sequence loaded, and the pitch rehearsed to camera and critiqued in the room.</p>
             <div class="win">Win: an offer you can deliver without apologising for it</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">WEEK 17</div>
-          <div class="call">
-            <div class="ct teach">Teach · Vishen Lakhiani</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">W17<small>week</small></div></div>
+          <div class="slot teach">
+            <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Teach</div><div class="slot-who">Vishen Lakhiani</div></div></div>
             <h4>The Identity Tier, and Graduation</h4>
-            <p>The top rung is never a product. It is an invitation, an acceptance, a tribe: the reason a coach who becomes a certified hypnotherapist doubles their revenue in seven months, and the reason Vishen paid $100,000 to sit in a room with people who had also paid $100,000. Students design their identity tier: who is admitted, what they become, and how they meet each other. Then the closing lesson, from a photograph of sixteen people in Tallinn in 2016 that became a publishing partnership, a co-created course and a lifelong friendship: start small, start sucky, and support the room you're in.</p>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Close · Sabrina Stocker</div>
+            <p class="lede">The top rung is never a product. It is an invitation, an acceptance, a tribe: the reason a coach who becomes a certified hypnotherapist doubles their revenue in seven months, and the reason Vishen paid $100,000 to sit in a room with people who had also paid $100,000.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Students design their identity tier: who is admitted, what they become, and how they meet each other. Then the closing lesson, from a photograph of sixteen people in Tallinn in 2016 that became a publishing partnership, a co-created course and a lifelong friendship: start small, start sucky, and support the room you're in.</p></details>
+          </div><div class="slot lab">
+            <div class="slot-head"><div class="faces"><img src="authors/sabrina-stocker.jpg" alt="Sabrina Stocker" title="Sabrina Stocker"></div><div><div class="slot-kind">Close</div><div class="slot-who">Sabrina Stocker</div></div></div>
             <h4>Certification &amp; the Bridge</h4>
-            <p>Certification granted against shipped assets. Pods continue. Alumni reunion booked for +6 weeks. Anyone who has crossed $100K from their expert business is invited to apply to the Guild.</p>
-            <div class="win">Win: a ladder that keeps earning after the calls stop</div>
+            <p class="lede">Certification granted against shipped assets. Pods continue. Alumni reunion booked for +6 weeks.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Anyone who has crossed $100K from their expert business is invited to apply to the Guild.</p></details><div class="win">Win: a ladder that keeps earning after the calls stop</div>
           </div>
         </div>
 
-        <div class="week">
-          <div class="wk">+6 WEEKS</div>
-          <div class="call">
-            <div class="ct teach">Alumni</div>
+        <div class="wk2">
+          <div class="wk2-rail"><div class="wk2-num">+6<small>weeks</small></div></div>
+          <div class="slot misc">
+            <div class="slot-head"><div><div class="slot-kind">Alumni</div></div></div>
             <h4>Reunion &amp; Wins Audit</h4>
-            <p>The S&amp;I continuity mechanic: reunion call, revenue and asset audit against the graduation baseline, and a quarterly ladder-upgrade call as the bridge to the next cohort and to the Guild.</p>
+            <p class="lede">The S&amp;I continuity mechanic: reunion call, revenue and asset audit against the graduation baseline, and a quarterly ladder-upgrade call as the bridge to the next cohort and to the Guild.</p>
             <div class="win">Win: the ladder compounds after the course ends</div>
-          </div>
-          <div class="call lab">
-            <div class="ct lab-t">Measurement</div>
+          </div><div class="slot lab">
+            <div class="slot-head"><div><div class="slot-kind">Measurement</div></div></div>
             <h4>The number that decides cohort two</h4>
-            <p>Share of graduates with three live paid rungs, and share who banked first revenue during the programme. Not completion rate: that is the metric this whole design is trying to make obsolete.</p>
+            <p class="lede">Share of graduates with three live paid rungs, and share who banked first revenue during the programme.</p>
+            <details class="more"><summary>Read the full brief</summary><p>Not completion rate: that is the metric this whole design is trying to make obsolete.</p></details>
           </div>
         </div>
 
@@ -1458,13 +1506,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <thead><tr><th>Name</th><th>Speaker-table status</th><th>Summit sessions (Airtable)</th><th>Also in the Mastery?</th></tr></thead>
       <tbody>
         <tr><td><strong>Jason Goldberg</strong></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 1 VIP Q&amp;A; 17 host segments</td><td>No. Hosts both summits (1 Sep ruling)</td></tr>
-        <tr><td><strong>Vishen Lakhiani</strong> <span class="who">MVU 4.54/5</span></td><td><span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></td><td>Day 1 The Visibility Wound; Day 1 Built to Be Chosen: MV Authors and Students Success Stories; Day 1 Find Your Weirdness &amp; Crown Your Belief; Day 1 VIP Q&amp;A; Day 2 The 60 Minutes That Sold Half a Billion Dollars; Day 2 Fireside; Day 2 Sales Pitch; Day 3 REPITCH; Day 3 The Identity Tier; Day 3 FINAL CLOSE; 1 host segment</td><td>Curriculum Expert; 7 teach weeks, the intensive, all bookends</td></tr>
+        <tr><td><strong>Vishen Lakhiani</strong> <span class="who">MVU 4.54/5</span></td><td><span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></td><td>Day 1 The Visibility Wound; Day 1 Built to Be Chosen: MV Authors and Students Success Stories; Day 1 Find Your Weirdness &amp; Crown Your Belief; Day 1 VIP Q&amp;A; Day 2 The 60 Minutes That Sold Half a Billion Dollars; Day 2 Fireside; Day 2 Sales Pitch; Day 3 REPITCH; Day 3 The Identity Tier; Day 3 FINAL CLOSE; 1 host segment</td><td>Curriculum Expert; 8 teach weeks, all bookends</td></tr>
         <tr><td><strong>Dawn Hoang</strong></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 1 Built to Be Chosen: MV Authors and Students Success Stories</td><td>No. Success-story guest only</td></tr>
         <tr><td><strong>Nora Cavani</strong></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 1 Built to Be Chosen: MV Authors and Students Success Stories</td><td>No. Success-story guest only</td></tr>
         <tr><td><strong>Ronan Diego</strong></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 1 Built to Be Chosen: MV Authors and Students Success Stories</td><td>No. Success-story guest only</td></tr>
         <tr><td><strong>Marisa Peer</strong> <span class="who">MVU 4.77/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 1 I Am Enough: The Identity Shift</td><td>Yes: W2 "I Am Enough: The Identity Shift"</td></tr>
-        <tr><td><strong>Akash (Kash) Rupareliaa</strong> <span class="who">MVU 4.67/5</span></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 2 The Visibility Proof: Why Getting Found Isn't Luck</td><td>Yes: labs W1, W2, W10, W12 and intensive Day 3 (page spells him Kash Rupalia)</td></tr>
-        <tr><td><strong>Jimmy Naraine</strong> <span class="who">MVU 4.68/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 2 The Course Is Already in You; Day 3 HEART CLOSE</td><td>Yes: W5, W6 teach + labs, W8 lab, intensive Day 3</td></tr>
+        <tr><td><strong>Akash (Kash) Rupareliaa</strong> <span class="who">MVU 4.67/5</span></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 2 The Visibility Proof: Why Getting Found Isn't Luck</td><td>Yes: labs W1, W2, W10, W12 and the Week 9 shoot floor (page spells him Kash Rupalia)</td></tr>
+        <tr><td><strong>Jimmy Naraine</strong> <span class="who">MVU 4.68/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 2 The Course Is Already in You; Day 3 HEART CLOSE</td><td>Yes: W5, W6 teach + labs, W8 lab, Week 9 shoot floor</td></tr>
         <tr><td><strong>Regan Hillyer</strong> <span class="who">MVU 4.53/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 2 Fireside</td><td>Yes: W11 fireside; this summit fireside replays as the W1 onboarding asset</td></tr>
         <tr><td><strong>John Lee</strong> <span class="who">MVU 4.54/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 3 The Exposure Equation: You Don't Need to Be Famous, You Need to Be Found</td><td>Yes: W10 and W16</td></tr>
         <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 3 The Conversation Where They Say Yes</td><td>Yes: W13 to W15</td></tr>
@@ -1532,7 +1580,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="sc"><div class="v">9.34</div><div class="k">AI First Blueprint</div></div>
       </div>
       <p class="body-md"><strong>Why him, beyond the obvious.</strong> He announced this programme from the stage, so the voice that sold it must be the voice that teaches it. But the data adds a real caveat worth stating: his ratings are strongest when the material is structured rather than improvised. This curriculum is the most structured thing he has ever taught: a doctrine he has already written down, in a sequence he has already delivered once at speed. That is the condition under which he scores 9.9.</p>
-      <div class="covers"><strong>Teaches (7 weeks + intensive):</strong> W1 the visibility wound · W3 your edge and niche · W4 position, belief, villain · W7 selling without selling · W8 your story is the asset · W12 the long-form advantage · W17 identity &amp; graduation · Intensive Day 1, carrying the full close doctrine (seeding, the stack, the guarantee) · recorded bookends opening and closing all nine guest weeks (18 bookends)</div>
+      <div class="covers"><strong>Teaches (8 weeks):</strong> W1 the visibility wound · W3 your edge and niche · W4 position, belief, villain · W7 selling without selling · W8 your story is the asset · W12 the long-form advantage · W17 identity &amp; graduation · W9 the 60-minute masterclass doctrine, carrying the full close doctrine (seeding, the stack, the guarantee) · recorded bookends opening and closing all nine guest weeks (18 bookends)</div>
     </div>
   </section>
 
@@ -1582,7 +1630,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div class="sc"><div class="v na">$15K</div><div class="k">Mastery-only package<br>(flex to $20K) · 6 lessons</div></div>
         </div>
         <p class="body-md"><strong>Upgraded from lab lead to author on 1 Sep</strong> ("he's much more of an author given that he has a program on our platform"), and the transcript mining makes it the strongest alignment on the bench: Course Pro is nearly a 1:1 blueprint for Module 2, and inside his own quest the deeper layers already belong to Vishen: exactly the division this programme runs. His named methods are our build days: the idea dump, the Post-it Notes strategy, toxic perfectionism, the pajama draft, the 600-story bank. Vishen announced him from the MVU stage: "Jimmy Naraine is going to be joining this mastery."</p>
-        <div class="covers"><strong>Teaches:</strong> W5 what to teach &amp; how to structure it · W6 film it cheap, present with charisma<br><strong>Builds:</strong> W5 idea clusters (with Sabrina) · W6 the pajama draft · W8 the story bank · intensive Day 3 shoot floor (with Kash)<br><strong>Note:</strong> summit slot expected but pends the summit brainstorm; summit fee sits outside the $15K</div>
+        <div class="covers"><strong>Teaches:</strong> W5 what to teach &amp; how to structure it · W6 film it cheap, present with charisma<br><strong>Builds:</strong> W5 idea clusters (with Sabrina) · W6 the pajama draft · W8 the story bank · W9 shoot floor (with Kash)<br><strong>Note:</strong> summit slot expected but pends the summit brainstorm; summit fee sits outside the $15K</div>
       </div>
 
       <div class="card">
@@ -1601,7 +1649,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div class="sc"><div class="v">9.54</div><div class="k">$1M from Social Media<br>&amp; AI · n=35</div></div>
           <div class="sc"><div class="v na">$5K</div><div class="k">Quoted per class ·<br>"don't go higher than $12K package"</div></div>
         </div>
-        <p class="body-md">"Without being famous" is verbatim his, and his 7-Figure Creator transcripts fully cover both weeks in his own named IP: TLC, the 3C strategy, "market in public, sell in private," EDUCATE, core/bonus/fast-action offers, the $1 trial. One honest correction from the mining: he never teaches stage-closing (no seeding, no offer stack, no guarantee anywhere in his quest), so week 16 is now his verified monetisation material and the close doctrine returned to Vishen's intensive. His own fee note caps the package at $12K covering summit plus Mastery.</p>
+        <p class="body-md">"Without being famous" is verbatim his, and his 7-Figure Creator transcripts fully cover both weeks in his own named IP: TLC, the 3C strategy, "market in public, sell in private," EDUCATE, core/bonus/fast-action offers, the $1 trial. One honest correction from the mining: he never teaches stage-closing (no seeding, no offer stack, no guarantee anywhere in his quest), so week 16 is now his verified monetisation material and the close doctrine returned to Vishen's Week 9 session. His own fee note caps the package at $12K covering summit plus Mastery.</p>
         <div class="covers"><strong>Teaches:</strong> W10 the conversion map (TLC · 3C) · W16 monetise the platform · co-hosts the W16 build day<br><strong>Condition:</strong> the author deck's pilot-first advice stands; W10 is the pilot, W16 the confirmation. Marketing headliner per the 1 Sep meeting</div>
       </div>
 
@@ -1677,7 +1725,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="section-head">
       <div class="overline">The lab</div>
       <h2>Three lab leads plus one author on the floor, zero rotation</h2>
-      <p class="body-md">Thursday is where this programme either works or repeats the Speaking &amp; Influence workshop dip. Alessio Pieroni and Kash Rupalia anchor the two disciplines (<strong>the money half and the camera half</strong>, eleven of the sixteen weekly days between them plus both intensive floors), Sabrina Stocker owns the AI-build lane on three days, and Jimmy — an author, not a lab lead, per the 1 Sep ruling — runs the three course-build days his own quest invented. Students see the same faces on the build floor for four months.</p>
+      <p class="body-md">Thursday is where this programme either works or repeats the Speaking &amp; Influence workshop dip. Alessio Pieroni and Kash Rupalia anchor the two disciplines (<strong>the money half and the camera half</strong>, eleven of the sixteen weekly days between them plus the Week 9 script and shoot floors), Sabrina Stocker owns the AI-build lane on three days, and Jimmy — an author, not a lab lead, per the 1 Sep ruling — runs the three course-build days his own quest invented. Students see the same faces on the build floor for four months.</p>
     </div>
     <div class="grid g2" style="margin-bottom:18px">
       <div class="card">
@@ -1687,7 +1735,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
             <div>
               <div class="fac-role">Lab lead · funnels, offers &amp; money</div>
               <div class="fac-name">Alessio Pieroni</div>
-              <div class="fac-sub">7 lab days + the intensive build floor (8 of 17 slots) · lab lead only, not an author</div>
+              <div class="fac-sub">8 lab days including the Week 9 script build (8 of 17 slots) · lab lead only, not an author</div>
             </div>
           </div>
           <span class="status confirmed">Outreach done</span>
@@ -1698,7 +1746,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div class="sc"><div class="v na">2M</div><div class="k">Leads<br>generated</div></div>
         </div>
         <p class="body-md">He is the only person here who arrives with published conversion benchmarks (40% opt-in, 4% VIP, 7% challenge conversion), which is exactly what a lab lead needs: a number to build against, not an opinion. Every day he owns is a money mechanic, so he is auditing the same thing week after week rather than switching disciplines.</p>
-        <div class="covers"><strong>Owns (8 slots):</strong> W3 edge audit · W4 crown the belief · W7 ship the quiz · W13 nine emails · W14 map, price, sequence the ladder · W15 run the call (with Ajit) · W16 offer stacked (with John) · intensive Day 2 build floor</div>
+        <div class="covers"><strong>Owns (8 slots):</strong> W3 edge audit · W4 crown the belief · W7 ship the quiz · W13 nine emails · W14 map, price, sequence the ladder · W15 run the call (with Ajit) · W16 offer stacked (with John) · W9 script build floor</div>
       </div>
       <div class="card">
         <div class="fac-head">
@@ -1707,7 +1755,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
             <div>
               <div class="fac-role">Lab lead · content, camera &amp; production</div>
               <div class="fac-name">Akash "Kash" Rupalia</div>
-              <div class="fac-sub">4 lab days + the intensive shoot floor (5 slots)</div>
+              <div class="fac-sub">4 lab days + the optional W9 shoot floor (5 slots)</div>
             </div>
           </div>
           <span class="status roster">In consideration</span>
@@ -1718,7 +1766,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div class="sc"><div class="v na">40</div><div class="k">People in his<br>agency</div></div>
         </div>
         <p class="body-md">Former monk; runs Vishen's Instagram. He owns every day where a student has to point a camera at themselves or publish something, starting with week 1, which is the single highest-stakes lab in the programme because it is where the visibility wound either breaks or wins. His no-face formats are the practical escape hatch for the many students who raised a hand at "who doesn't want to be on camera."</p>
-        <div class="covers"><strong>Owns (4 days + shoot floor):</strong> W1 post the thing · W2 on-camera reps and no-face formats · W10 the hook bank · W12 YouTube ideas · intensive Day 3 shoot floor (with Jimmy)<br><strong>Note:</strong> W6 and W8 moved to Jimmy with his author upgrade; the meeting declared Kash and Sabrina's counts fungible by availability</div>
+        <div class="covers"><strong>Owns (4 days + shoot floor):</strong> W1 post the thing · W2 on-camera reps and no-face formats · W10 the hook bank · W12 YouTube ideas · W9 shoot floor (with Jimmy)<br><strong>Note:</strong> W6 and W8 moved to Jimmy with his author upgrade; the meeting declared Kash and Sabrina's counts fungible by availability</div>
       </div>
     </div>
     <div class="section-head" style="margin-top:36px">
@@ -1792,7 +1840,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td><strong>W6</strong></td><td>Jimmy · film it cheap, present with charisma</td><td>Jimmy · the pajama draft</td><td>Bookends (quality-is-marketing)</td></tr>
         <tr><td><strong>W7</strong></td><td>Vishen · selling without selling</td><td>Alessio · ship the quiz</td><td>Live</td></tr>
         <tr><td><strong>W8</strong></td><td>Vishen · your story is the asset</td><td>Jimmy · the story bank</td><td>Live</td></tr>
-        <tr><td><strong>W9</strong> <span class="pill gold">Intensive</span></td><td>Vishen · the masterclass doctrine incl. the close: seeding, the stack, the guarantee (Day 1)</td><td>Alessio build floor · Kash + Jimmy shoot floor (Days 2–3)</td><td>Live · flagship</td></tr>
+        <tr><td><strong>W9</strong> <span class="pill gold">Masterclass week</span></td><td>Vishen · the masterclass doctrine incl. the close: seeding, the stack, the guarantee (Tuesday)</td><td>Alessio script build (Thursday) · Kash + Jimmy shoot floor (optional Saturday, W10 fallback)</td><td>Live · flagship</td></tr>
         <tr><td><strong>W10</strong></td><td>John Lee · the conversion map (TLC · 3C)</td><td>Kash · the hook bank</td><td>Recorded bookends</td></tr>
         <tr><td><strong>W11</strong></td><td>Regan Hillyer · zero to hero (fireside)</td><td>Sabrina · LinkedIn &amp; AEO</td><td>Recorded bookends</td></tr>
         <tr><td><strong>W12</strong></td><td>Vishen · the long-form advantage</td><td>Kash · YouTube ideas</td><td>Live</td></tr>
@@ -1832,7 +1880,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card">
         <div class="kicker">01 · Who is the Curriculum Expert?</div>
         <h3>Vishen Lakhiani</h3>
-        <p class="body-md" style="margin-top:10px">Not a close call. He owns the IP, announced the programme, priced it, and his name is the product. He owns the full architecture (lesson sequence, module logic, transformation journey) and teaches 7 of 17 weeks plus Intensive Day 1 (including the close doctrine), with recorded bookends wrapping all nine guest weeks. The largest single share on the floor, and every guest teaches inside his arc.</p>
+        <p class="body-md" style="margin-top:10px">Not a close call. He owns the IP, announced the programme, priced it, and his name is the product. He owns the full architecture (lesson sequence, module logic, transformation journey) and teaches 8 of 17 weeks (including the Week 9 close doctrine), with recorded bookends wrapping all nine guest weeks. The largest single share on the floor, and every guest teaches inside his arc.</p>
         <p class="body-md" style="margin-top:10px"><strong>Compensation:</strong> ongoing % of programme revenue.</p>
       </div>
       <div class="card">
@@ -1860,20 +1908,20 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <table class="tbl">
       <thead><tr><th>Person</th><th>Tier</th><th>Live sessions</th><th>Recorded</th><th>Payment model</th></tr></thead>
       <tbody>
-        <tr><td><strong>Vishen Lakhiani</strong></td><td><span class="pill b">Curriculum Expert</span></td><td>7 teach + 1 intensive day = <strong>8</strong> · the largest share on the floor</td><td>18 bookends (9 guest weeks × open/close)</td><td>~20% royalty · summit share under negotiation (his 60% ask deferred)</td></tr>
-        <tr><td><strong>Jimmy Naraine</strong></td><td><span class="pill">Guest author</span></td><td><strong>6</strong>: 2 teach (W5, W6) + 3 build days (W5, W6, W8) + intensive shoot floor</td><td>—</td><td><strong>$15K Mastery-only package, flex to $20K</strong> · summit fee separate</td></tr>
+        <tr><td><strong>Vishen Lakhiani</strong></td><td><span class="pill b">Curriculum Expert</span></td><td><strong>8</strong> teach weeks · the largest share on the floor</td><td>18 bookends (9 guest weeks × open/close)</td><td>~20% royalty · summit share under negotiation (his 60% ask deferred)</td></tr>
+        <tr><td><strong>Jimmy Naraine</strong></td><td><span class="pill">Guest author</span></td><td><strong>6</strong>: 2 teach (W5, W6) + 3 build days (W5, W6, W8) + the optional W9 shoot floor</td><td>—</td><td><strong>$15K Mastery-only package, flex to $20K</strong> · summit fee separate</td></tr>
         <tr><td><strong>Marisa Peer</strong></td><td><span class="pill">Guest author</span></td><td><strong>1</strong> teach (W2, taught identity session)</td><td>—</td><td>$7.5K/class quoted · <strong>$15K package</strong> (summit + 1 Mastery class) · top tier</td></tr>
         <tr><td><strong>John Lee</strong></td><td><span class="pill">Guest author</span></td><td><strong>2</strong> teach + 1 build-day co-host (W10, W16)</td><td>—</td><td>$5K/class quoted · his note: <strong>"don't go higher than $12K package"</strong> · top tier</td></tr>
         <tr><td><strong>Regan Hillyer</strong></td><td><span class="pill">Proof point</span></td><td><strong>1</strong> fireside (W11) · summit fireside replays free in W1</td><td>—</td><td>$10K class + $5K summit fireside = <strong>$15K</strong> · top tier · headliner</td></tr>
         <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="pill">Guest author</span></td><td><strong>3</strong> teach + 1 build-day co-host (W13–W15) · 4th class optional</td><td>—</td><td>$4K/class quoted · <strong>~$12K for 3</strong> · speaker-table row In Negotiation (7 Sep)</td></tr>
-        <tr><td><strong>Alessio Pieroni</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>7</strong> lab days + intensive build floor (8 slots; lab lead only, never an author seat)</td><td>—</td><td><strong>Approved 1 Sep: $1K/class = $8K</strong> · summit free</td></tr>
-        <tr><td><strong>Akash "Kash" Rupalia</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>4</strong> lab days + intensive shoot floor (5 slots)</td><td>—</td><td>$1K/class · <strong>$5K</strong> · summit free as lead-gen · fungible with Sabrina</td></tr>
+        <tr><td><strong>Alessio Pieroni</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>8</strong> lab days including the W9 script build (8 slots; lab lead only, never an author seat)</td><td>—</td><td><strong>Approved 1 Sep: $1K/class = $8K</strong> · summit free</td></tr>
+        <tr><td><strong>Akash "Kash" Rupalia</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>4</strong> lab days + the optional W9 shoot floor (5 slots)</td><td>—</td><td>$1K/class · <strong>$5K</strong> · summit free as lead-gen · fungible with Sabrina</td></tr>
         <tr><td><strong>Sabrina Stocker</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>3</strong> lab days (W5 co-host, W11, W17)</td><td>—</td><td>$1K/class · <strong>$3K</strong> · summit unpaid · affiliate-link question open</td></tr>
         <tr><td><strong>Jason Goldberg</strong></td><td><span class="pill g">Summit host</span></td><td>Hosts both summits (E2A + AIF), one package · not a Mastery seat</td><td>—</td><td>$8K quoted · note: <strong>"Host – $15K package for both"</strong></td></tr>
       </tbody>
     </table>
     </div>
-    <p class="small" style="margin-top:12px">Totals: 16 teach sessions · 16 build days · 3 intensive days = <strong>35 live touchpoints</strong>, plus 18 recorded Vishen bookends. Guest spend sums to <strong>≈$85K</strong> — Ben Greenfield's ~$12K came off the table when he was removed on 2 Sep — against a speaker budget of 15% of programme revenue ($225K ideal, $300K maximum), before Vishen's royalty. The freed $12K is held as negotiation headroom, with one pre-endorsed use: flexing Jimmy's package to $20K ("we can go for more with Jimmy") if his summit slot or a seventh lesson needs securing. House rules from the 1 Sep meeting: packages only, per-class rates never disclosed; fees deliberately below other Mastery norms because the programme itself builds these speakers' authority; if pushed, "it depends on the program revenue, which is actually true." Every figure is a quote under consideration, not a contract.</p>
+    <p class="small" style="margin-top:12px">Totals: 17 teach sessions · 17 build days · 1 optional shoot day = <strong>35 live touchpoints</strong>, plus 18 recorded Vishen bookends. Guest spend sums to <strong>≈$85K</strong> — Ben Greenfield's ~$12K came off the table when he was removed on 2 Sep — against a speaker budget of 15% of programme revenue ($225K ideal, $300K maximum), before Vishen's royalty. The freed $12K is held as negotiation headroom, with one pre-endorsed use: flexing Jimmy's package to $20K ("we can go for more with Jimmy") if his summit slot or a seventh lesson needs securing. House rules from the 1 Sep meeting: packages only, per-class rates never disclosed; fees deliberately below other Mastery norms because the programme itself builds these speakers' authority; if pushed, "it depends on the program revenue, which is actually true." Every figure is a quote under consideration, not a contract.</p>
   </section>
 
   <section>
@@ -1888,8 +1936,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td>On-ramp</td><td>The Expert &amp; Authority Accelerator and Summit, assumed and never re-taught</td><td>The accelerator explicitly positions itself as "a compass" and points at this programme</td></tr>
         <tr><td>Duration</td><td>17 weeks + onboarding week + alumni reunion at +6 weeks</td><td>"Four months," stated on stage. S&amp;I ran ~20 weeks with strong completion mechanics</td></tr>
         <tr><td>Cadence</td><td>Twice weekly: Teach (Tue) → Implementation Day (Thu)</td><td>S&amp;I's paired redesign lifted last-3-session attendance from 41.5% to 56.4%. Held against the Academy playbook's proposed ~4-day lesson-to-integration gap: our Tue→Thu pairing comes from this retention data, and the two readings need reconciling before the dashboard's cadence-integrity check ships</td></tr>
-        <tr><td>Session count</td><td>32 live calls (16 teach + 16 build) + 3-day intensive = 35 touchpoints</td><td>Comparable to S&amp;I (46) and AIM 2026 (~40): a familiar, proven load</td></tr>
-        <tr><td>Mid-programme intensive</td><td>Week 9, three days, three hours a day, live + streamed + full replay</td><td>S&amp;I's One Talk Workshop, with its four-hour days reduced after the 2025 attendance data</td></tr>
+        <tr><td>Session count</td><td>34 live calls (17 teach + 17 build) + 1 optional shoot day = 35 touchpoints</td><td>Comparable to S&amp;I (46) and AIM 2026 (~40): a familiar, proven load</td></tr>
+        <tr><td>Mid-programme masterclass week</td><td>Week 9 on the normal Tue/Thu cadence, plus one optional Saturday shoot with a Week 10 fallback; full replay</td><td>S&amp;I's One Talk Workshop broke retention as three mainline days (39%, 31%, 34%); its 2026 weekend version protected the cadence but was never measured. Corrected 7 Sep</td></tr>
         <tr><td>Lab ownership</td><td>16 weekly days in fixed lanes: Alessio on funnels and offers (7), Kash on content and camera (4), Jimmy on the course build his own quest invented (3), Sabrina on the AI layer (2 + the W5 co-host). The one exception to never-the-teacher-builds is deliberate: Jimmy's build days are his quest's own exercises</td><td>Direct fix for S&amp;I 2026 workshops rating 9.25 vs 9.55 for teaching lessons</td></tr>
                 <tr><td>Onboarding</td><td>A deliberate two-week arc: summit, an early-value call in week 1, the Finerminds engagement journey, handoff to the weekly cadence at day 14. No reactive extras</td><td>Academy playbook: AIM 2026 finished at +84 NPS yet refunded 23.8% on a reactive onboarding scramble; Manifesting and S&amp;I 2026 ran the deliberate arc and did not</td></tr>
         <tr><td>Materials</td><td>Replay, transcript, AI summary and workbook shipped within 24 hours of every session, tracked as compliance</td><td>Academy 2027 standard; the dashboard compliance metric ships Q1 2027</td></tr>
@@ -1998,7 +2046,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="grid g4">
       <div class="stat"><div class="n">3 rungs</div><div class="l">Share of graduates with three live paid rungs</div><div class="s">The primary success metric. Everything else is secondary</div></div>
       <div class="stat green"><div class="n">First $</div><div class="l">Share who banked revenue during the programme</div><div class="s">Vishen's "celebrate every dollar" turned into a cohort statistic</div></div>
-      <div class="stat orange"><div class="n">Wk 11 show-up</div><div class="l">Live attendance two weeks after the intensive</div><div class="s">The point at which S&amp;I 2025 collapsed to 31%. Our early-warning line</div></div>
+      <div class="stat orange"><div class="n">Wk 11 show-up</div><div class="l">Live attendance two weeks after Week 9</div><div class="s">The point at which S&amp;I 2025 collapsed to 31%. Our early-warning line</div></div>
       <div class="stat pink"><div class="n">Lab-day Δ</div><div class="l">Lab-day rating minus teach rating</div><div class="s">If lab days land below teaches as workshops did in S&amp;I 2026, the specialist-owner design failed</div></div>
     </div>
   </section>
@@ -2024,7 +2072,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <div class="kicker">Expert & Authority Mastery · this proposal · Authority Pathway</div>
         <div style="font-size:30px;font-weight:700;letter-spacing:-.02em;line-height:1.1;margin:6px 0 10px">Be chosen.</div><h3>"I'm great at what I do, but nobody knows me."</h3>
         <p class="body-md" style="margin-top:10px">They already know something valuable. The problem is that nobody is buying it yet: no profile, no offer, no path from stranger to client. Seventeen weeks building a name and a ladder for it to climb.</p>
-        <div class="covers"><strong>Outcome:</strong> your expertise, earning. A niche only you could own, a product live on the internet, strangers finding you weekly, and a ladder that carries someone from a free download to a five-figure relationship. Proof: <em>assets published and first revenue banked.</em><br><strong>Graduating artefact:</strong> Your Ladder, Live: an edge, a published product, a masterclass shot, a traffic tap running, three paid rungs<br><strong>Led by:</strong> Vishen Lakhiani as Curriculum Expert and main-stage voice (7 weeks + the intensive, all bookends, the close doctrine), with Jimmy Naraine, Marisa Peer, John Lee and Ajit Nawalkha teaching their transcript-verified lanes, and Regan Hillyer as the fireside proof point. Build floor: Alessio Pieroni, Kash Rupalia, Sabrina Stocker and Jimmy in fixed lanes</div>
+        <div class="covers"><strong>Outcome:</strong> your expertise, earning. A niche only you could own, a product live on the internet, strangers finding you weekly, and a ladder that carries someone from a free download to a five-figure relationship. Proof: <em>assets published and first revenue banked.</em><br><strong>Graduating artefact:</strong> Your Ladder, Live: an edge, a published product, a masterclass shot, a traffic tap running, three paid rungs<br><strong>Led by:</strong> Vishen Lakhiani as Curriculum Expert and main-stage voice (8 weeks, all bookends, the close doctrine), with Jimmy Naraine, Marisa Peer, John Lee and Ajit Nawalkha teaching their transcript-verified lanes, and Regan Hillyer as the fireside proof point. Build floor: Alessio Pieroni, Kash Rupalia, Sabrina Stocker and Jimmy in fixed lanes</div>
       </div>
       <div class="card">
         <div class="kicker">AI for Founders Mastery · Entrepreneurship Pathway</div>
@@ -2125,13 +2173,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card" style="border-left:4px solid var(--green)">
         <div class="kicker" style="color:var(--green)">Decided · in this proposal</div>
         <ul class="tick" style="margin-top:12px">
-          <li><strong>Vishen Lakhiani as Curriculum Expert and main-stage voice</strong>: owns the architecture, teaches 6 of 17 weeks plus Intensive Day 1 (the largest share on the floor), carries the close doctrine and all 20 bookends, royalty model</li>
+          <li><strong>Vishen Lakhiani as Curriculum Expert and main-stage voice</strong>: owns the architecture, teaches 8 of 17 weeks (the largest share on the floor), carries the close doctrine and all 20 bookends, royalty model</li>
           <li><strong>Every seat transcript-verified.</strong> Teachers hold weeks their own quests cover (Jimmy, Marisa, John, Ajit); the proof point gets a fireside (Regan); the stage-close doctrine moved home to Vishen after the mining showed it appears nowhere in John Lee's quest</li>
           <li><strong>Jimmy Naraine upgraded to author</strong> (1 Sep): six lessons at $15K, the whole course-build arc of module 2, drawn from his own Course Pro quest, where Vishen already plays the doctrine role</li>
           <li><strong>Regan is the proof point, once</strong>: one fireside at W11 (where the retention data says inspiration earns its keep) plus her summit fireside replayed free in W1 under the 3-year licence</li>
           <li><strong>SAS (Be Seen · Architecture · Show Up) as the spine, the product step ladder as the artefact</strong>: four modules, one shipped asset per week</li>
           <li><strong>Sequence: one rung → the masterclass that sells it → traffic → the rungs above.</strong> No ladder is built before there is traffic to climb it</li>
-          <li><strong>17 weeks</strong>, twice weekly; Masterclass Intensive at week 9, three hours a day rather than four</li>
+          <li><strong>17 weeks</strong>, twice weekly; Masterclass Week at week 9 on the normal cadence, with one optional Saturday shoot</li>
           <li>The Accelerator is the assumed on-ramp; the Guild keeps its hard $100K floor and is never pitched from the teaching chair</li>
           <li>Certification by <strong>live ladder</strong>, two valid paths by stage; every lab day must ship a named artefact</li>
         </ul>
@@ -2139,7 +2187,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <div class="card" style="border-left:4px solid var(--orange)">
         <div class="kicker" style="color:var(--orange-content)">To decide next</div>
         <ol class="numbered" style="margin-top:12px">
-          <li><strong>Vishen's diary</strong>: confirm 8 teach weeks plus Intensive Day 1, and agree which two can run recorded if it tightens (recommend W3 and W6)</li>
+          <li><strong>Vishen's diary</strong>: confirm 8 teach weeks, and agree which two can run recorded if it tightens (recommend W3 and W6)</li>
           <li><strong>Lesson-count decision for the Curriculum Expert tier</strong>: do recorded bookends count toward the 15–25 band? Settle before the royalty conversation</li>
           <li><strong>Correct the author-proposal deck</strong>: Chris Do 9.78, John Lee 9.54, Natalie Ellis 9.16, and remove the "highest in SM Mastery" claim. The deck is driving hiring and royalty conversations</li>
           <li><strong>Ben's freed ~$12K</strong>: removed from the curriculum 2 Sep (Gareth); W12 restored to Vishen. Hold the budget as negotiation headroom for the top-tier packages, or spend the meeting-endorsed +$5K flexing Jimmy to $20K to lock his summit slot or a seventh lesson</li>
@@ -2156,7 +2204,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <li><strong>Guild boundary</strong>: sign off in writing with the Academy what the Mastery teaches and what stays exclusive to the <a href="/expert-authority-guild">Guild</a></li>
           <li><strong>AI for Founders boundary</strong>: agree the one-question router and the three overlap rules (content, offers, demand) with both curriculum teams before either page is written, so the two Masteries never argue in market</li>
           <li><strong>S&amp;I boundary</strong>: agree with the S&amp;I team which programme owns Getting Booked, Business Models for Speakers and Productizing Your Message from 2027; their own detractors flag the drift</li>
-          <li><strong>Cohort dates</strong> against the accelerator's November start, and intensive format (live-and-streamed vs stream-only)</li>
+          <li><strong>Cohort dates</strong> against the accelerator's November start, and the Saturday shoot-day format (live-and-streamed vs stream-only)</li>
           <li><strong>Starter-kit build sprint</strong>, 4–6 weeks: shooting-script stack, quiz template, sequence skeleton, hook bank, ladder canvas. Owner needed</li>
           <li><strong>Title lockup and an ABCS pass</strong> on all 32 session titles, then load them into the empty Lessons and Modules tables</li>
         </ol>
@@ -2248,14 +2296,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td>Authority Statement: one sentence that positions you in any room (his Week 1)</td><td><span class="pill g">Adopted</span></td><td>Cheap, concrete, on-outcome, and 9 of 36 registrants say they cannot put what they do into words. It closes the identity sabbatical.</td><td class="who">W1 artefact</td></tr>
         <tr><td>Named Signature Method with coined language (his Weeks 1 and 2, summit Session 2)</td><td><span class="pill g">Adopted</span></td><td>The strongest thing on his page. A named method is what turns an expert into a reference point; Priestley's KPI research and Vishen's own coined-language habit agree. Our W3 had the edge but no name for the thing the edge produces.</td><td class="who">W3 renamed: Your Edge and Your Named Method</td></tr>
         <tr><td>Cialdini's six principles as a week (his Week 3)</td><td><span class="pill o">Declined</span></td><td>Theory week with no artefact. Our kickoff and Q&amp;A data punish sessions that teach without shipping (AIM kickoff 6.04; Q&amp;A-only detractors). Useful as a recorded bonus for the Founder path.</td><td class="who">Recorded bonus</td></tr>
-        <tr><td>Schwartz's five levels of awareness (his Week 4)</td><td><span class="pill b">Adapted</span></td><td>The right tool in the wrong size. As one exercise it sharpens the positioning line and the first four minutes of the masterclass script. As a week it is copywriting, which drifts toward marketing.</td><td class="who">One exercise in W4, one in the intensive script</td></tr>
+        <tr><td>Schwartz's five levels of awareness (his Week 4)</td><td><span class="pill b">Adapted</span></td><td>The right tool in the wrong size. As one exercise it sharpens the positioning line and the first four minutes of the masterclass script. As a week it is copywriting, which drifts toward marketing.</td><td class="who">One exercise in W4, one in the Week 9 script</td></tr>
         <tr><td>The Social Platform Dance across Instagram, YouTube, LinkedIn, TikTok (his Week 5)</td><td><span class="pill o">Declined</span></td><td>Four platforms for a room earning under $25K is the fastest way to a burnt-out student and a Social Media Mastery refund request. One platform, chosen, found. John Lee's line is the doctrine: you don't need to be famous, you need to be found.</td><td class="who">W10 to W12 hold one platform each; SMM owns the dance</td></tr>
         <tr><td>Reels, Shorts and viral content (his Week 6)</td><td><span class="pill b">Adapted</span></td><td>Short-form is in the programme already, as a lab not a lecture: Kash's hook bank and camera days. Virality is not the outcome; being chosen is.</td><td class="who">W1, W2, W10 labs</td></tr>
-        <tr><td>Webinars and VSLs that convert (his Week 7)</td><td><span class="pill g">Adopted</span></td><td>Already the spine of the programme and his own doctrine. Credit stands with him.</td><td class="who">Week 9 intensive</td></tr>
+        <tr><td>Webinars and VSLs that convert (his Week 7)</td><td><span class="pill g">Adopted</span></td><td>Already the spine of the programme and his own doctrine. Credit stands with him.</td><td class="who">Week 9 (mainline, corrected 7 Sep)</td></tr>
         <tr><td>Paid advertising and testing, the $30M playbook (his Week 8)</td><td><span class="pill o">Declined</span></td><td>One registrant in 36 has the revenue to fund ads. This is a scale lever, not an authority lever, and it is the AI for Founders demand pillar.</td><td class="who">AI for Founders</td></tr>
         <tr><td>Funnel architecture: free → lead magnet → membership → mastery → certification (his Week 9)</td><td><span class="pill b">Adapted</span></td><td>Right shape, oversized. The three-rung ladder is the funnel at this room's scale. The claimed 30% lift from ascension is not verified in any base we hold and does not go into copy.</td><td class="who">W7 quiz funnel, W13 to W14 ladder</td></tr>
         <tr><td>Summits and live events as authority accelerators (his Week 10)</td><td><span class="pill o">Declined</span></td><td>Nobody in the room can fill a summit yet; the registrant who hosts summits for others is the exception and is looking for their own offer. Right idea for the Guild.</td><td class="who">Guild curriculum</td></tr>
-        <tr><td>Sales psychology and high-ticket conversion, Hormozi value equation (his Week 11)</td><td><span class="pill b">Adapted</span></td><td>The enrolment conversation is Ajit's lane and rates 9.81 with our students; Vishen's close doctrine sits in the intensive. We do not teach Hormozi's framework under Vishen's name.</td><td class="who">W15, intensive Day 1</td></tr>
+        <tr><td>Sales psychology and high-ticket conversion, Hormozi value equation (his Week 11)</td><td><span class="pill b">Adapted</span></td><td>The enrolment conversation is Ajit's lane and rates 9.81 with our students; Vishen's close doctrine sits in Week 9. We do not teach Hormozi's framework under Vishen's name.</td><td class="who">W15, Week 9 Tuesday</td></tr>
         <tr><td>Email, autoresponders and lead nurturing (his Week 12)</td><td><span class="pill b">Adapted</span></td><td>Vishen's own nine-part sequence is W13. A segmented email machine with revenue-per-subscriber benchmarks is a business-operations build for AI for Founders.</td><td class="who">W13</td></tr>
         <tr><td>Course design and marketplace validation with Jimmy Naraine (his Week 13)</td><td><span class="pill g">Adopted</span></td><td>This is Course Pro, and it already fills W5 and W6 with Jimmy as an author. His marketplace-first validation idea is added to W5 as the option it is.</td><td class="who">W5, W6</td></tr>
         <tr><td>Your Signature Offer (his Week 14)</td><td><span class="pill g">Adopted</span></td><td>The language is better than ours for the middle rung. Adopted into the ladder week. Hormozi's $100M Offers reference dropped for the same reason as above.</td><td class="who">W14</td></tr>
@@ -2263,7 +2311,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td>Stage authority and PR strategy (his Week 16)</td><td><span class="pill b">Adapted</span></td><td>Getting booked is authority work and S&amp;I's own detractors said it belongs here. Stagecraft does not. A 30-minute lab thread ships a speaker one-sheet and a PR one-pager.</td><td class="who">W16 lab</td></tr>
         <tr><td>Building your lean dream team (his Week 17)</td><td><span class="pill o">Declined</span></td><td>A hiring week for a room where 19 of 36 have not sold anything. AI for Founders, Weeks 14 to 15.</td><td class="who">AI for Founders</td></tr>
         <tr><td>Your 90-Day Authority Plan capstone (his Week 18)</td><td><span class="pill g">Adopted</span></td><td>Our best-rated format is the integration capstone (AIM 9.87). A 90-day plan next to the live ladder is the right second artefact and the natural Guild handoff.</td><td class="who">W17 graduation</td></tr>
-        <tr><td>18 weeks</td><td><span class="pill o">Declined</span></td><td>The stage promise is four months; the S&amp;I data puts the repetition cliff at month two and warns against length. Seventeen weeks plus a weekend intensive holds. His extra week is absorbed: the capstone folds into W17.</td><td class="who">17 weeks</td></tr>
+        <tr><td>18 weeks</td><td><span class="pill o">Declined</span></td><td>The stage promise is four months; the S&amp;I data puts the repetition cliff at month two and warns against length. Seventeen weeks holds; the Week 9 masterclass build sits inside them. His extra week is absorbed: the capstone folds into W17.</td><td class="who">17 weeks</td></tr>
         <tr><td>Guest teachers on his Week 1: Jon Butcher, Jeffrey Allen; case studies Michael Beckwith, Lisa Nichols</td><td><span class="pill b">Adapted</span></td><td>Butcher and Allen are authors Mindvalley built: exactly the proof the Day 1 success-story fireside wants. Not teaching seats. Beckwith and Nichols stay as case studies in Vishen's bookends; Lisa Nichols is Not Approved on the table.</td><td class="who">Summit Day 1 fireside candidates</td></tr>
         <tr><td>Unverified figures: $500M+, 3M students, 190 countries, 20M followers, 40% story lift, 30% ascension lift, $30M ad spend</td><td><span class="pill o">Declined</span></td><td>None verified in a base we hold. Copy carries the range Vishen gave twice from stage ($400 to 500M) and nothing else until legal and comms sign it off.</td><td class="who">House rule: one number, one source</td></tr>
         <tr><td>Summit arc: gap selling, workbook exercise, Day 2 reveal as a graduation, hot seats, Q&amp;A as objection handling, hard deadline</td><td><span class="pill g">Adopted</span></td><td>His strongest document. It converts and it matches the ratings: hot seats 4.39 and VIP access 4.44 to 4.46 beat ordinary keynotes at the AI Summit. Adopted onto the team's run-of-show without moving a contracted speaker.</td><td class="who">Summit V2 below</td></tr>
@@ -2282,7 +2330,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <div class="grid g3">
       <div class="card"><div class="kicker">Pillar 1 · Message &amp; Identity · W1 to W4, W8</div><h3>Kept whole, with two additions</h3><p class="body-md" style="margin-top:8px">The visibility wound, Marisa's identity shift, the edge, the crowned belief, the story. Vishen adds the Authority Statement and the Named Signature Method. This pillar is where 27 of 36 registrants say they are stuck, so it gets the most weeks and the strongest teachers.</p></div>
       <div class="card"><div class="kicker">Pillar 4 · Offer &amp; Product · W5 to W8, W14</div><h3>Moved earlier, because a name needs a thing</h3><p class="body-md" style="margin-top:8px">His page puts product at Week 14. Ours ships the first rung by Week 8 because an authority with nothing to buy is a commentator. Jimmy's course build, the marketplace-validation option, then the ladder with the signature offer as its middle rung.</p></div>
-      <div class="card"><div class="kicker">Pillar 3 · Funnel &amp; Revenue · Intensive, W7, W13, W15, W16</div><h3>Kept at the room's scale</h3><p class="body-md" style="margin-top:8px">The 60-minute masterclass, the quiz funnel, nine emails, the enrolment conversation, monetising one platform. Ascension architecture, segmentation and revenue-per-subscriber benchmarks go to AI for Founders.</p></div>
+      <div class="card"><div class="kicker">Pillar 3 · Funnel &amp; Revenue · W7, W9, W13, W15, W16</div><h3>Kept at the room's scale</h3><p class="body-md" style="margin-top:8px">The 60-minute masterclass, the quiz funnel, nine emails, the enrolment conversation, monetising one platform. Ascension architecture, segmentation and revenue-per-subscriber benchmarks go to AI for Founders.</p></div>
       <div class="card"><div class="kicker">Pillar 2 · Platform &amp; Reach · W10 to W12, W16</div><h3>One platform, found, not four platforms, famous</h3><p class="body-md" style="margin-top:8px">Hooks, camera, LinkedIn and the answer-engine layer, long-form. His platform dance, Reels week and paid ads are declined as weeks. The Get Booked thread from his stage-authority week is added because being asked onto stages is the authority outcome itself.</p></div>
       <div class="card tint"><div class="kicker">Pillar 5 · Show Up &amp; Stay Chosen · every week, W17, the Guild</div><h3>Replaces Team &amp; Scale</h3><p class="body-md" style="margin-top:8px">Pods of 6 to 12 as the witnesses, the Friday text, the posting streak, the weekly numbers review, the 90-day plan and the Guild handoff. Our own accelerator floor named the failure: "they just burn out one month after." A team-building week does not fix that; a show-up system does.</p></div>
       <div class="card dark"><div class="kicker">What we tell Vishen</div><p class="body-md" style="margin-top:8px">"Your five pillars are on the page in your words. Four kept their content once we held it to the authority outcome; the fifth moved to the programme you co-own with Daniel, where it belongs. Your named-method idea is now the Week 3 deliverable and the Day 1 summit exercise. Your summit arc is the summit."</p></div>
@@ -2307,9 +2355,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td style="white-space:nowrap"><strong>Week 6</strong></td><td class="who">4 · Offer &amp; Product</td><td><strong>Film It Cheap, Present It With Charisma</strong> <span class="who">Teach · Jimmy Naraine</span> <span class="who">·</span> <strong>The Pajama Draft, Filmed Today</strong> <span class="who">Lab · Jimmy Naraine</span></td><td>Unchanged.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p2" title="Founder: core">F</span><span class="pp p2" title="Creator: core">C</span><span class="pp p1" title="Stagnating Expert: replay">S</span></td></tr>
         <tr><td style="white-space:nowrap"><strong>Week 7</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>Selling Without Selling: The Two Laws</strong> <span class="who">Teach · Vishen Lakhiani</span> <span class="who">·</span> <strong>Build the Quiz, Ship the Quiz</strong> <span class="who">Lab · Alessio Pieroni</span></td><td>Unchanged. The quiz funnel is Vishen's funnel architecture sized to a room where 86% earn under $25K.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
         <tr><td style="white-space:nowrap"><strong>Week 8</strong></td><td class="who">1 · Message &amp; Identity</td><td><strong>Your Story Is the Asset</strong> <span class="who">Teach · Vishen Lakhiani</span> <span class="who">·</span> <strong>The Story Bank</strong> <span class="who">Lab · Jimmy Naraine</span></td><td>Unchanged. This is his Week 2 (story, voice) taught where the story has a product to sell.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p2" title="Stagnating Expert: core">S</span></td></tr>
-        <tr><td style="white-space:nowrap"><strong>Intensive Day 1</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>The 60 Minutes That Sold Half a Billion Dollars</strong> <span class="who">Doctrine floor · Vishen, live</span> <span class="who">·</span> <strong>Your Script, Structured</strong> <span class="who">Afternoon</span></td><td>Unchanged. His Week 7 (webinars and VSLs) is our intensive; it is his own doctrine. <strong>Adds</strong> the awareness level to the script's first four minutes.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
-        <tr><td style="white-space:nowrap"><strong>Intensive Day 2</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>The Shooting-Script Stack</strong> <span class="who">Build floor · Alessio Pieroni</span> <span class="who">·</span> <strong>Build Yours</strong> <span class="who">Afternoon</span></td><td>Unchanged.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
-        <tr><td style="white-space:nowrap"><strong>Intensive Day 3</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>Shoot, Review, Reshoot</strong> <span class="who">Shoot floor · Kash + Jimmy</span> <span class="who">·</span> <strong>Cohort Showcase</strong> <span class="who">Close</span></td><td>Unchanged.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
+        <tr><td style="white-space:nowrap"><strong>Week 9 · Tue</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>The 60 Minutes That Sold Half a Billion Dollars</strong> <span class="who">Doctrine floor · Vishen, live</span> <span class="who">·</span> <strong>Your Script, Structured</strong> <span class="who">Afternoon</span></td><td>Now on the mainline (7 Sep): his Week 7 (webinars and VSLs) is our Week 9 Tuesday, his own doctrine. <strong>Adds</strong> the awareness level to the script's first four minutes.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
+        <tr><td style="white-space:nowrap"><strong>Week 9 · Thu</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>The Shooting-Script Stack</strong> <span class="who">Build floor · Alessio Pieroni</span> <span class="who">·</span> <strong>Build Yours</strong> <span class="who">Afternoon</span></td><td>Unchanged.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
+        <tr><td style="white-space:nowrap"><strong>Week 9 · Sat (optional)</strong></td><td class="who">3 · Funnel &amp; Revenue</td><td><strong>Shoot, Review, Reshoot</strong> <span class="who">Shoot floor · Kash + Jimmy</span> <span class="who">·</span> <strong>Cohort Showcase</strong> <span class="who">Close</span></td><td>Unchanged.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
         <tr><td style="white-space:nowrap"><strong>Week 10</strong></td><td class="who">2 · Platform &amp; Reach</td><td><strong>From Viral to Valuable: The Conversion Map</strong> <span class="who">Teach · John Lee</span> <span class="who">·</span> <strong>The Hook Bank, and Two Posts Without Your Face</strong> <span class="who">Lab · Akash Rupalia</span></td><td>Unchanged. His Reels and Shorts week is Kash's hook bank; his four-platform dance becomes one platform, chosen. Found beats famous.</td><td style="white-space:nowrap"><span class="pp p3" title="Expert: priority">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p2" title="Stagnating Expert: core">S</span></td></tr>
         <tr><td style="white-space:nowrap"><strong>Week 11</strong></td><td class="who">2 · Platform &amp; Reach</td><td><strong>Zero to Hero: The Proof Point</strong> <span class="who">Fireside · Regan Hillyer, interviewed</span> <span class="who">·</span> <strong>LinkedIn and the Answer-Engine Layer</strong> <span class="who">Lab · Sabrina Stocker</span></td><td>Unchanged.</td><td style="white-space:nowrap"><span class="pp p2" title="Expert: core">E</span><span class="pp p3" title="Founder: priority">F</span><span class="pp p2" title="Creator: core">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
         <tr><td style="white-space:nowrap"><strong>Week 12</strong></td><td class="who">2 · Platform &amp; Reach</td><td><strong>The Long-Form Advantage: Why Human Attention Got More Valuable</strong> <span class="who">Teach · Vishen Lakhiani</span> <span class="who">·</span> <strong>YouTube: Ten Ideas, Packaged and One Committed</strong> <span class="who">Lab · Akash Rupalia</span></td><td>Unchanged. His Summits and Live Events week is declined as curriculum and handed to the Guild, where the people who can run one live.</td><td style="white-space:nowrap"><span class="pp p2" title="Expert: core">E</span><span class="pp p2" title="Founder: core">F</span><span class="pp p3" title="Creator: priority">C</span><span class="pp p3" title="Stagnating Expert: priority">S</span></td></tr>
@@ -2403,14 +2451,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     <table class="tbl">
       <thead><tr><th>Name</th><th>Table status</th><th>Vishen's proposal</th><th>Version 2 verdict</th></tr></thead>
       <tbody>
-        <tr><td><strong>Vishen Lakhiani</strong></td><td><span class="status confirmed">Confirmed</span></td><td class="small">Curriculum owner; 4 to 5 hours a day on the summit stage</td><td><strong>Main stage, as V1.</strong> 7 teach weeks, the intensive, all bookends, every offer moment. Summit load trimmed by handing the hot seats half to Ajit. His summit row on the fee table reads "20% author fee"; his 60% ask is a separate negotiation.</td></tr>
+        <tr><td><strong>Vishen Lakhiani</strong></td><td><span class="status confirmed">Confirmed</span></td><td class="small">Curriculum owner; 4 to 5 hours a day on the summit stage</td><td><strong>Main stage, as V1.</strong> 8 teach weeks, all bookends, every offer moment. Summit load trimmed by handing the hot seats half to Ajit. His summit row on the fee table reads "20% author fee"; his 60% ask is a separate negotiation.</td></tr>
         <tr><td><strong>Jason Goldberg</strong></td><td><span class="status roster">In Negotiation</span></td><td class="small">Not mentioned</td><td><strong>Hosts both summits</strong> ($15K package across Expert to Authority and AI for Founders). Gains the workbook segment.</td></tr>
         <tr><td><strong>Marisa Peer</strong></td><td><span class="status roster">In Negotiation</span></td><td class="small">30-minute live interview on her viral methodologies</td><td><strong>Kept in her lane:</strong> the 60-minute identity session on Day 1 and W2 in the Mastery ($15K package). 4.85 on Your Mind, Your Rules (n=55). Virality is not what she is for.</td></tr>
         <tr><td><strong>Jimmy Naraine</strong></td><td><span class="status roster">In Negotiation</span></td><td class="small">45-minute teaching session on his Udemy empire</td><td><strong>Kept as an author:</strong> W5, W6 and labs, the Day 2 course session and the Day 3 heart close. His marketplace-validation idea enters W5. 4.81 (n=21), the cleanest file on the table. $15K package, flex to $20K pre-endorsed.</td></tr>
         <tr><td><strong>John Lee</strong></td><td><span class="status roster">In Negotiation</span></td><td class="small">Not mentioned</td><td><strong>Kept:</strong> W10, W16 and the Day 3 opener. 4.78 (n=50). Package capped at $12K.</td></tr>
         <tr><td><strong>Regan Hillyer</strong></td><td><span class="status roster">In Negotiation</span></td><td class="small">"Reagan Hillier", interview pending, slot reserved Day 3</td><td><strong>Kept, spelt right, on Day 2</strong> with Vishen in the chair; W11 fireside; her summit fireside replays as the W1 onboarding asset. $15K for both.</td></tr>
         <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="status roster">In Negotiation</span></td><td class="small">Not mentioned</td><td><strong>Kept and extended:</strong> W13 to W15, the Day 3 conversation, and half of the new hot seats. 9.81 on offers with our students. ~$12K for three classes.</td></tr>
-        <tr><td><strong>Alessio Pieroni</strong></td><td><span class="status proposal">In consideration</span></td><td class="small">Not mentioned</td><td><strong>Kept:</strong> seven labs and the intensive build floor at $8K approved. 4.76 (n=49).</td></tr>
+        <tr><td><strong>Alessio Pieroni</strong></td><td><span class="status proposal">In consideration</span></td><td class="small">Not mentioned</td><td><strong>Kept:</strong> eight lab days including the Week 9 script build at $8K approved. 4.76 (n=49).</td></tr>
         <tr><td><strong>Kash Rupareliaa</strong></td><td><span class="status proposal">In consideration</span></td><td class="small">Not mentioned</td><td><strong>Kept:</strong> camera labs and the Day 2 opener (summit free, ~$6K for six classes). 4.77 (n=26). Settle the spelling.</td></tr>
         <tr><td><strong>Sabrina Stocker</strong></td><td><span class="status proposal">In consideration</span></td><td class="small">Not mentioned</td><td><strong>Kept:</strong> three labs (~$3K). 4.63 (n=16).</td></tr>
         <tr><td><strong>Dawn Hoang, Nora Cavani, Ronan Diego</strong></td><td><span class="status proposal">In consideration</span></td><td class="small">Not mentioned</td><td><strong>Kept</strong> as the Day 1 success stories. Add Jon Butcher and Jeffrey Allen as candidates from Vishen's page.</td></tr>
@@ -2481,6 +2529,22 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   if(h) show(h, false);
   document.querySelectorAll('[data-mod] .module-head').forEach(function(h){
     h.addEventListener('click', function(){ h.parentElement.classList.toggle('open'); });
+  });
+  document.querySelectorAll('.modmap a[data-open]').forEach(function(a){
+    a.addEventListener('click', function(ev){
+      ev.preventDefault();
+      var m = document.getElementById(a.getAttribute('data-open'));
+      if(!m) return;
+      m.classList.add('open');
+      var y = m.getBoundingClientRect().top + window.pageYOffset - 130;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    });
+  });
+  document.querySelectorAll('.tool[data-all]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var open = b.getAttribute('data-all') === 'open';
+      document.querySelectorAll('[data-mod]').forEach(function(m){ m.classList.toggle('open', open); });
+    });
   });
 })();
 </script>
