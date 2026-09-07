@@ -303,6 +303,24 @@
       "applied_to": [
         "expert-authority.html#tab-summit"
       ]
+    },
+    {
+      "id": "ais-summit-ratings-sep7",
+      "source": "AI Summit & Mastery base appHS19yXObg8sHZv / Summit Agenda tblOPKBItHXRd6LXc, 103 rows 2023-2026, read 7 Sep 2026",
+      "finding": "AI Summit 2026: best sessions Noelle Russell Building Your AI Workforce 4.60 (n=105), Daniel Priestley 4.51 (n=99), Eliza demo 4.51; worst Day 3 System demo 3.92, Day 3 Q&A 3.94, Shawn Kanungo 4.12 (n=93). Laser Coaching 4.39 (n=85), VIP Q&As 4.46/4.44. Votes per session fell 337 -> 99 -> 93 across the three days (2025: 3,900 -> 2,040 -> 2,050). 2023 hard close 3.78 vs 2025 integration close 4.53. Rules: open with a build; strongest content on Day 2 as demos; coaching and VIP access out-rate keynotes; close by assembling; no standalone Q&A; plant the offer on Day 1.",
+      "status": "applied",
+      "applied_to": [
+        "ai-founders.html#tab-summit"
+      ]
+    },
+    {
+      "id": "aif-summit-proposal-sep7",
+      "source": "Curriculum Team proposal, 7 Sep 2026; speaker table rows for 'AI for Founders Summit | Oct 2026' (14 rows) and an empty 35-row Summit Agenda in app7lhR1V9Fts0mNc",
+      "finding": "Proposed AI for Founders Summit run-of-show (Oct 2026, Mastery Nov 2026): Day 1 Vishen W1 frame + Daniel five pillars + Vykintas live company-brain build + founders fireside + soft open + VIP Q&A; Day 2 Noelle workforce + Marie customer intelligence + Vishen pipeline demo + Mastery Reveal + hot seats (Vishen+Daniel) + VIP Q&A; Day 3 Daniel/Alex 4-day founder week + Shawn 30-min finance cockpit demo + REPITCH + Domenic heart close + FINAL CLOSE + buyers' welcome. Same sales spine as Expert to Authority. Flags: Marie Forleo and Domenic Ashburn have no summit rows; Shawn below bar but In Negotiation; Daniel/Vykintas only Outreach done; founder stories unnamed; dates undated.",
+      "status": "proposed",
+      "applied_to": [
+        "ai-founders.html#tab-summit"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

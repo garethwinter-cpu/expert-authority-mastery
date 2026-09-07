@@ -65,6 +65,24 @@ h3{font-size:20px;font-weight:700;line-height:1.3}
 .qf .n{font-size:26px;font-weight:700;letter-spacing:-.01em}
 .qf .l{font-size:13px;color:#B9C6FF;margin-top:4px;line-height:1.4}
 
+/* Summit tab */
+.summit-tbl td.mono-t{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--text-subtle);font-size:13px}
+.summit-tbl .spk{white-space:nowrap;margin:2px 0}
+.summit-tbl .spk .status{font-size:10px;padding:3px 9px}
+.summit-tbl tr.offer td{background:var(--pink-light)}
+.summit-tbl tr.vip td{background:var(--gold-light)}
+.briefs{display:grid;gap:10px;margin-top:12px}
+.brief{border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow-light)}
+.brief summary{cursor:pointer;padding:16px 20px;font-size:14.5px;line-height:1.4;display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;list-style:none}
+.brief summary::-webkit-details-marker{display:none}
+.brief summary .who{color:var(--text-subtle);font-size:13px}
+.brief summary::after{content:"Read brief";margin-left:auto;font-size:12px;font-weight:700;color:var(--brand-content);letter-spacing:.06em;text-transform:uppercase}
+.brief[open] summary::after{content:"Close"}
+.brief-body{padding:0 20px 18px}
+.brief-body p{font-size:14px;line-height:1.6;color:var(--text-muted);margin-top:10px;text-wrap:pretty}
+.brief-body p.ev{color:var(--grey-600);border-left:3px solid var(--brand-border);padding-left:12px}
+.flags{margin:12px 0 0 18px;padding:0}
+.flags li{margin:8px 0;line-height:1.55;font-size:14px}
 /* Tabs */
 .tabbar-outer{position:sticky;top:60px;z-index:55;background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow-light)}
 .tabbar{display:flex;gap:4px;overflow-x:auto;padding:10px 0;-ms-overflow-style:none;scrollbar-width:none}
@@ -288,8 +306,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
   <div class="wrap">
     <nav class="tabbar" id="tabbar">
       <button class="tab-btn active" data-tab="case"><span class="num">01</span>The Case</button>
-      <button class="tab-btn" data-tab="programme"><span class="num">02</span>The Programme</button>
-      <button class="tab-btn" data-tab="weeks"><span class="num">03</span>Week by Week</button>
+      <button class="tab-btn" data-tab="summit"><span class="num">02</span>The Summit</button>
+      <button class="tab-btn" data-tab="programme"><span class="num">03</span>The Programme</button>
       <button class="tab-btn" data-tab="faculty"><span class="num">04</span>Authors</button>
       <button class="tab-btn" data-tab="next"><span class="num">05</span>Positioning &amp; Next Steps</button>
       <button class="tab-btn" data-tab="evidence"><span class="num">06</span>The Evidence</button>
@@ -565,7 +583,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div>
 </div>
 
-<!-- ============ 03 THE PROGRAMME ============ -->
+<!-- ============ 03 THE PROGRAMME (overview + week by week) ============ -->
 <div class="tab-panel" id="tab-programme">
 <div class="wrap">
 
@@ -666,12 +684,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
   </section>
 
-</div>
-</div>
-
-<!-- ============ 04 WEEK BY WEEK ============ -->
-<div class="tab-panel" id="tab-weeks">
-<div class="wrap">
 
   <section>
     <div class="section-head">
@@ -854,6 +866,256 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       </div>
     </div>
 
+  </section>
+
+</div>
+</div>
+
+<!-- ============ 02 THE SUMMIT (proposal) ============ -->
+<div class="tab-panel" id="tab-summit">
+<div class="wrap">
+
+  <section>
+    <div class="callout dark">
+      <div class="ic">■</div>
+      <div>
+        <p><strong>AI for Founders Summit. Three days, free, live on Zoom, October 2026, feeding a Mastery that opens in November. This tab is a proposal, not the team's plan.</strong></p>
+        <p>The speaker table already carries an "AI for Founders Summit | Oct 2026" event with fourteen rows, and the base's Summit Agenda table holds 35 empty rows waiting for a run-of-show. Nobody has written one yet, so this is ours to argue for. It is built from four years of AI Summit agendas with their ratings and votes (2023 to 2026, 103 rows), the Expert to Authority run-of-show the team just built, Vishen's own summit doctrine, and the learnings file. Every speaker keeps the lane they teach in the Mastery. Times are anchored on 11:00am New York, with London shown at British Summer Time; if the dates land after 25 October, London moves an hour earlier.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">What four AI Summits taught us</div>
+      <h2>Demos out-rate talks, Day 2 out-rates Day 3, and the room leaves fast</h2>
+      <p class="body-md">Ratings are the 1-to-5 session scores from the AI Summit &amp; Mastery base; "n" is the vote count on each row. The rules below are what this run-of-show obeys.</p>
+    </div>
+    <div class="grid g4">
+      <div class="stat"><div class="kicker">Best of 2026</div><h3>4.60</h3><p class="small" style="margin-top:6px">Noelle Russell, Building Your AI Workforce (n=105). Then Daniel Priestley 4.51 and the Eliza demo 4.51 (n=99). All three on Day 2, all three built around a system doing something on screen.</p></div>
+      <div class="stat"><div class="kicker">Worst of 2026</div><h3>3.92</h3><p class="small" style="margin-top:6px">A Day 3 "System: Demo" (n=93), next to a Q&amp;A at 3.94 and a 45-minute System talk at 4.12. Day 3 carried the tired content and rated like it.</p></div>
+      <div class="stat"><div class="kicker">The formats that hold</div><h3>4.39 to 4.46</h3><p class="small" style="margin-top:6px">Laser Coaching 4.39 (n=85) and the two VIP Q&amp;As 4.46 / 4.44 out-rated every ordinary keynote bar Noelle and Daniel. Coaching and access beat content.</p></div>
+      <div class="stat"><div class="kicker">The room shrinks</div><h3>337 → 99 → 93</h3><p class="small" style="margin-top:6px">Survey votes per session on Days 1, 2 and 3 of 2026. In 2025 the same curve ran 3,900 → 2,040 → 2,050. Whatever must be seen by the most people belongs on Day 1; the offer has to be planted there.</p></div>
+    </div>
+    <div class="tbl-scroll" style="margin-top:18px">
+    <table class="tbl">
+      <thead><tr><th>Rule this run-of-show obeys</th><th>The evidence</th><th>Where it lands</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Open with a build, not a vision</strong></td><td>Kickoffs are our weakest type (AIM average 7.26; the 2026 visioning kickoff 6.04, n=116). Vykintas's outcome-shaped app build rated 4.61 in 2023; his tool tour rated 3.97 in 2025</td><td>Day 1: Vishen's Week 1 frame runs 60 minutes, then Vykintas stands up a company brain live before lunch</td></tr>
+        <tr><td><strong>Put the strongest content on Day 2 and make it a demo</strong></td><td>Every 4.4-plus session of 2026 was a Day 2 demo or workforce session; Day 3's three system sessions rated 3.92 to 4.26</td><td>Day 2 carries Noelle, the pipeline demo and the reveal; Day 3 is shorter and shaped around the decision</td></tr>
+        <tr><td><strong>Coaching converts; keep it live and keep it VIP</strong></td><td>Laser Coaching 4.39, VIP Q&amp;As 4.46 and 4.44; Vishen's note names hot seats the strongest conversion session</td><td>Sixty-minute hot seats right after the reveal; VIP Q&amp;A closes Days 1 and 2</td></tr>
+        <tr><td><strong>Close by assembling, not by pressing</strong></td><td>The 2023 hard close rated 3.78; the 2025 "Bringing It All Together" close rated 4.53 (n=2,056) and 4.28 on Day 2</td><td>The reveal is a graduation; FINAL CLOSE is a walk through the first fourteen days</td></tr>
+        <tr><td><strong>Q&amp;A attaches to content, never replaces it</strong></td><td>The 2026 Day 3 Q&amp;A rated 3.94; unstructured AIM community calls 5.89 (learning L6)</td><td>No general-room Q&amp;A sessions. Questions live inside hot seats and the VIP rooms</td></tr>
+        <tr><td><strong>Every summit seat is a Mastery lane</strong></td><td>The Expert to Authority run-of-show does this for all six guests; S&amp;I's host-swap week drew 24 detractor submissions (L3)</td><td>Each brief names the week it points to. Nobody appears on the summit who does not teach in the Mastery, except the heart-close storyteller</td></tr>
+        <tr><td><strong>One sales spine across both summits</strong></td><td>Reveal on Day 2, REPITCH and heart close on Day 3, FINAL CLOSE, buyers' welcome: the Expert to Authority structure, three weeks earlier</td><td>Same session names, same order, so the team runs one playbook in September and again in October</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Day 1 · proposed</div>
+      <h2>Why your business can't run without you, and why now</h2>
+      <p class="body-md" style="margin-top:8px">11:00am to 3:40pm New York · 4:00pm to 8:40pm London. General room 4:10, with a 30-minute VIP Q&amp;A after. Total on the clock 4:40.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl summit-tbl">
+      <thead><tr><th>New York</th><th>London</th><th>Session</th><th>Speaker</th><th>Type</th><th>Length</th></tr></thead>
+      <tbody>
+        <tr><td class="mono-t">11:00am–11:10am</td><td class="mono-t">4:00pm–4:10pm</td><td>Welcome, and the hours exercise</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr><td class="mono-t">11:10am–12:10pm</td><td class="mono-t">4:10pm–5:10pm</td><td><strong>Your Business Is Already Dead (Good News)</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div></td><td><span class="pill b">Keynote</span></td><td>60 min</td></tr>
+        <tr><td class="mono-t">12:10pm–12:15pm</td><td class="mono-t">5:10pm–5:15pm</td><td>Host thanking Vishen and introducing Daniel</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">12:15pm–1:00pm</td><td class="mono-t">5:15pm–6:00pm</td><td><strong>How AI Rewrites the Entrepreneur's Playbook: the five pillars</strong></td><td><div class="spk">Daniel Priestley <span class="status rising">Outreach done</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">1:00pm–1:05pm</td><td class="mono-t">6:00pm–6:05pm</td><td>Host thanking Daniel and introducing Vykintas</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">1:05pm–1:50pm</td><td class="mono-t">6:05pm–6:50pm</td><td><strong>Stand Up Your Company Brain, live in 45 minutes</strong></td><td><div class="spk">Vykintas Glodenis <span class="status rising">Outreach done</span></div></td><td><span class="pill g">Live build</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">1:50pm–1:55pm</td><td class="mono-t">6:50pm–6:55pm</td><td>Host thanking Vykintas and introducing the founders</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">1:55pm–2:55pm</td><td class="mono-t">6:55pm–7:55pm</td><td><strong>Built to Run Without Me: three AI Mastery founders</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div><div class="spk">AIM alumni (3) <span class="status proposal" title="To be sourced from the AI Mastery Awards table">No table row</span></div></td><td><span class="pill p">Fireside chat</span></td><td>60 min</td></tr>
+        <tr><td class="mono-t">2:55pm–3:10pm</td><td class="mono-t">7:55pm–8:10pm</td><td>Closing Day 1, tease for Day 2, soft open</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>15 min</td></tr>
+        <tr class="vip"><td class="mono-t">3:10pm–3:40pm</td><td class="mono-t">8:10pm–8:40pm</td><td><strong>VIP Q&amp;A</strong> <span class="pill gold">VIP</span></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div><div class="spk">Vykintas Glodenis <span class="status rising">Outreach done</span></div></td><td><span class="pill g">Q&amp;A</span></td><td>30 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="overline" style="margin-top:28px">Session briefs, with the evidence behind each seat</div>
+    <div class="briefs">
+      <details class="brief">
+        <summary><span class="pill">Host</span> <strong>Welcome, and the hours exercise</strong> <span class="who">Jason Goldberg · 10 min</span></summary>
+        <div class="brief-body"><p>Jason opens and runs the March 2026 exercise that worked: every founder writes down how their week actually splits before AI touched it. Ten minutes, on camera, everyone participating.</p><p class="ev"><strong>Why this seat:</strong> The same exercise ran as a host segment on Day 1 of AI Summit 2026.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>Your Business Is Already Dead (Good News)</strong> <span class="who">Vishen Lakhiani · 60 min</span></summary>
+        <div class="brief-body"><p>The Week 1 teach, given to the free room. The founder as bottleneck; the two sides of business (speed to market, speed to value); why the AI-first founder rebuilds five pillars rather than buying tools. Ends with a before/after self-rating: how many hours a week run through you today. The gap: the Company Brain gets stood up in Week 1 of the Mastery, with the starter kit installed for you.</p><p class="lane"><strong>Mastery lane:</strong> Week 1 teach</p><p class="ev"><strong>Why this seat:</strong> Vishen's AI First Blueprint opened AI Summit 2026 at 4.20 (n=337); his Second Brain session the same day rated 4.33 (n=343), the best-rated general session of Day 1.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>How AI Rewrites the Entrepreneur's Playbook: the five pillars</strong> <span class="who">Daniel Priestley · 45 min</span></summary>
+        <div class="brief-body"><p>The co-owner's map. Marketing, sales, operations, people, finance, each as a system a founder can own, with the Oversubscribed and Scorecard logic underneath. One taste of Signals Before Sales. The gap: the demand engine is Weeks 5 to 8 of the Mastery.</p><p class="lane"><strong>Mastery lane:</strong> Weeks 6 and 14 teach</p><p class="ev"><strong>Why this seat:</strong> Daniel's session was the highest-rated keynote of AI Summit 2026 Day 2 at 4.51 (n=99). He also carries a 9.55 average across 12 EM sessions.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill g">Live build</span> <strong>Stand Up Your Company Brain, live in 45 minutes</strong> <span class="who">Vykintas Glodenis · 45 min</span></summary>
+        <div class="brief-body"><p>Not a talk. Vykintas builds a company brain for one volunteer founder on screen, with the room building along in their own account. Everyone leaves Day 1 with something running. This is the Week 1 lab in miniature and the reason the summit opens with a build rather than a vision.</p><p class="lane"><strong>Mastery lane:</strong> Week 1 lab</p><p class="ev"><strong>Why this seat:</strong> Kickoffs are our weakest session type (AIM average 7.26; the 2026 visioning kickoff 6.04). Vykintas's outcome-shaped Build Your First AI App rated 4.61 at AI Summit 2023; his tool-tour talk in 2025 rated 3.97. Shape the build around an outcome, not a tool.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill p">Fireside chat</span> <strong>Built to Run Without Me: three AI Mastery founders</strong> <span class="who">Vishen Lakhiani, AIM alumni (3) · 60 min</span></summary>
+        <div class="brief-body"><p>Three back-to-back interviews, Vishen in the chair, roughly eighteen minutes each: where the founder started, the system they built, the number that proves it, what their week looks like now. Source the three from the AI Mastery Awards table, not from memory.</p><p class="ev"><strong>Why this seat:</strong> Mirrors the Built to Be Chosen format on the Expert to Authority run-of-show, and the 2026 Stories panel. Proof beats promise on Day 1.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill">Host</span> <strong>Closing Day 1, tease for Day 2, soft open</strong> <span class="who">Jason Goldberg · 15 min</span></summary>
+        <div class="brief-body"><p>Recap the five pillars, show the Founder OS blueprint (the five graduating systems) as a list, and say once that enrolment is open for those who are ready. No pitch.</p><p class="ev"><strong>Why this seat:</strong> Vishen's own summit note: soft mention at the end of Day 1, full reveal on Day 2. The 2026 survey response count fell from 337 on Day 1 to 99 on Day 2, so Day 1 has to plant the offer.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill g">Q&amp;A</span> <strong>VIP Q&amp;A</strong> <span class="who">Vishen Lakhiani, Vykintas Glodenis · 30 min</span></summary>
+        <div class="brief-body"><p class="ev"><strong>Why this seat:</strong> The VIP Q&amp;A was the best-rated item of AI Summit 2026 Day 1 at 4.46 (n=95). Keep it, keep it VIP.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Day 2 · proposed</div>
+      <h2>The machine, and the reveal</h2>
+      <p class="body-md" style="margin-top:8px">11:00am to 4:00pm New York · 4:00pm to 9:00pm London. General room 4:30, with a 30-minute VIP Q&amp;A after. Total on the clock 5:00.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl summit-tbl">
+      <thead><tr><th>New York</th><th>London</th><th>Session</th><th>Speaker</th><th>Type</th><th>Length</th></tr></thead>
+      <tbody>
+        <tr><td class="mono-t">11:00am–11:10am</td><td class="mono-t">4:00pm–4:10pm</td><td>Opening by host</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr><td class="mono-t">11:10am–11:55am</td><td class="mono-t">4:10pm–4:55pm</td><td><strong>Building Your AI Workforce</strong></td><td><div class="spk">Noelle Russell <span class="status roster">In Negotiation</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">11:55am–12:00pm</td><td class="mono-t">4:55pm–5:00pm</td><td>Host thanking Noelle and introducing Marie</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">12:00pm–12:45pm</td><td class="mono-t">5:00pm–5:45pm</td><td><strong>Know Exactly Who It's For</strong></td><td><div class="spk">Marie Forleo <span class="status proposal" title="No AI for Founders Summit row on the speaker table">No table row</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">12:45pm–12:50pm</td><td class="mono-t">5:45pm–5:50pm</td><td>Host thanking Marie and introducing Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">12:50pm–1:35pm</td><td class="mono-t">5:50pm–6:35pm</td><td><strong>The Pipeline That Follows Up Itself</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div></td><td><span class="pill g">Demo</span></td><td>45 min</td></tr>
+        <tr class="offer"><td class="mono-t">1:35pm–2:20pm</td><td class="mono-t">6:35pm–7:20pm</td><td><strong>The Mastery Reveal</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div></td><td><span class="pill o">Offer</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">2:20pm–2:25pm</td><td class="mono-t">7:20pm–7:25pm</td><td>Host thanking Vishen and introducing the hot seats</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">2:25pm–3:25pm</td><td class="mono-t">7:25pm–8:25pm</td><td><strong>Hot Seats: five founders, five bottlenecks</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div><div class="spk">Daniel Priestley <span class="status rising">Outreach done</span></div></td><td><span class="pill gold">Laser coaching</span></td><td>60 min</td></tr>
+        <tr><td class="mono-t">3:25pm–3:30pm</td><td class="mono-t">8:25pm–8:30pm</td><td>Host closing Day 2</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr class="vip"><td class="mono-t">3:30pm–4:00pm</td><td class="mono-t">8:30pm–9:00pm</td><td><strong>VIP Q&amp;A</strong> <span class="pill gold">VIP</span></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div><div class="spk">Daniel Priestley <span class="status rising">Outreach done</span></div></td><td><span class="pill g">Q&amp;A</span></td><td>30 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="overline" style="margin-top:28px">Session briefs, with the evidence behind each seat</div>
+    <div class="briefs">
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>Building Your AI Workforce</strong> <span class="who">Noelle Russell · 45 min</span></summary>
+        <div class="brief-body"><p>Delivery agents and the customer experience: what an agent is allowed to do, how a founder governs it, and a live agent handling a real customer moment. The gap: the first delivery agent goes into production in Week 10 of the Mastery, and governance is Week 3.</p><p class="lane"><strong>Mastery lane:</strong> Weeks 3, 10 and 15 teach</p><p class="ev"><strong>Why this seat:</strong> Noelle's Building Your AI Workforce was the highest-rated session of the whole AI Summit 2026 at 4.60 (n=105). Her Founder to AI-Leveraged session rates 9.97 with our students.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>Know Exactly Who It's For</strong> <span class="who">Marie Forleo · 45 min</span></summary>
+        <div class="brief-body"><p>The marketing pillar's first move: customer intelligence before content. Marie on the ideal-customer work that makes every downstream system cheaper, with one AI-assisted teardown of a real founder's audience. The gap: the customer intelligence system and the brand-voice content engine are Weeks 5 and 7.</p><p class="lane"><strong>Mastery lane:</strong> Weeks 5 and 7 teach</p><p class="ev"><strong>Why this seat:</strong> Marie carries 9.61 with our students (Never Run Out of Ideas). She teaches two Mastery weeks but has no AI for Founders Summit row on the speaker table yet; see the flags.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill g">Demo</span> <strong>The Pipeline That Follows Up Itself</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>A live demo, not a lecture: a lead arrives, gets qualified, gets a reply in the founder's voice, gets booked, and nothing goes cold. Vishen runs it end to end on screen, then names the hinge: everything you just watched is what Week 8 builds. Straight into the reveal.</p><p class="lane"><strong>Mastery lane:</strong> Week 8 teach</p><p class="ev"><strong>Why this seat:</strong> The Eliza demo rated 4.51 (n=99) at AI Summit 2026, tied for the day's best keynote score. Demos out-rate talks across every year of the AI base.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill o">Offer</span> <strong>The Mastery Reveal</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>Framed as a graduation, not a pitch, per Vishen's own summit doctrine: recap the five systems, show which two the room has already started (brain, hours map), show the three they have not touched, then the offer with price, tiers ($5,999 Install, $7,999 Install + Certify), Labs model, and the deadline: enrolment closes at the end of Day 3. Day 2 enrollees get the early-value call in the first week.</p><p class="ev"><strong>Why this seat:</strong> The Offer rated 4.35 (n=99) in March 2026; the 2025 Day 2 integration-and-offer session rated 4.28 (n=1,991). Both sit above the Day 3 offers, which is why the main reveal belongs on Day 2.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill gold">Laser coaching</span> <strong>Hot Seats: five founders, five bottlenecks</strong> <span class="who">Vishen Lakhiani, Daniel Priestley · 60 min</span></summary>
+        <div class="brief-body"><p>Five volunteers, twelve minutes each. Daniel diagnoses the pillar that is broken, Vishen names the system that fixes it. The room watches what a Mastery hot seat feels like.</p><p class="ev"><strong>Why this seat:</strong> Laser Coaching rated 4.39 (n=85) on Day 2 of AI Summit 2026, above every Day 3 session. Vishen's note calls it the most powerful conversion session in the format.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill g">Q&amp;A</span> <strong>VIP Q&amp;A</strong> <span class="who">Vishen Lakhiani, Daniel Priestley · 30 min</span></summary>
+        <div class="brief-body"><p class="ev"><strong>Why this seat:</strong> Day 2 VIP Q&amp;A rated 4.44 (n=36) in 2026.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Day 3 · proposed</div>
+      <h2>Your Fridays back, and the decision</h2>
+      <p class="body-md" style="margin-top:8px">11:00am to 3:05pm New York · 4:00pm to 8:05pm London. General room 3:35, then a buyers-only welcome. Total on the clock 4:05.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl summit-tbl">
+      <thead><tr><th>New York</th><th>London</th><th>Session</th><th>Speaker</th><th>Type</th><th>Length</th></tr></thead>
+      <tbody>
+        <tr><td class="mono-t">11:00am–11:10am</td><td class="mono-t">4:00pm–4:10pm</td><td>Opening by host</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr><td class="mono-t">11:10am–11:55am</td><td class="mono-t">4:10pm–4:55pm</td><td><strong>The 4-Day Founder Week and the AI-Centred Company</strong></td><td><div class="spk">Daniel Priestley <span class="status rising">Outreach done</span></div><div class="spk">Alex Dogliotti <span class="status proposal">In consideration</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">11:55am–12:00pm</td><td class="mono-t">4:55pm–5:00pm</td><td>Host thanking Daniel and Alex and introducing Shawn</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">12:00pm–12:30pm</td><td class="mono-t">5:00pm–5:30pm</td><td><strong>The Finance Cockpit, live</strong></td><td><div class="spk">Shawn Kanungo <span class="status roster">In Negotiation</span></div></td><td><span class="pill g">Demo</span></td><td>30 min</td></tr>
+        <tr><td class="mono-t">12:30pm–12:35pm</td><td class="mono-t">5:30pm–5:35pm</td><td>Host thanking Shawn and introducing Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr class="offer"><td class="mono-t">12:35pm–1:20pm</td><td class="mono-t">5:35pm–6:20pm</td><td><strong>REPITCH: Why AI Stops After a Week</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div></td><td><span class="pill o">Offer</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">1:20pm–1:25pm</td><td class="mono-t">6:20pm–6:25pm</td><td>Host thanking Vishen and introducing Domenic</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">1:25pm–1:55pm</td><td class="mono-t">6:25pm–6:55pm</td><td><strong>How I Scaled My Identity by Building an AI Team</strong></td><td><div class="spk">Domenic Ashburn <span class="status proposal" title="No AI for Founders Summit row on the speaker table">No table row</span></div></td><td><span class="pill p">Heart close</span></td><td>30 min</td></tr>
+        <tr class="offer"><td class="mono-t">1:55pm–2:25pm</td><td class="mono-t">6:55pm–7:25pm</td><td><strong>FINAL CLOSE: a practical taste, then the deadline</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div></td><td><span class="pill o">Offer</span></td><td>30 min</td></tr>
+        <tr><td class="mono-t">2:25pm–2:35pm</td><td class="mono-t">7:25pm–7:35pm</td><td>Closing Day 3</td><td><div class="spk">Jason Goldberg <span class="status roster">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr class="vip"><td class="mono-t">2:35pm–3:05pm</td><td class="mono-t">7:35pm–8:05pm</td><td><strong>Welcome celebration for enrolled founders</strong> <span class="pill gold">Buyers</span></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed">Confirmed</span></div><div class="spk">Vykintas Glodenis <span class="status rising">Outreach done</span></div></td><td><span class="pill p">Fireside chat</span></td><td>30 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="overline" style="margin-top:28px">Session briefs, with the evidence behind each seat</div>
+    <div class="briefs">
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The 4-Day Founder Week and the AI-Centred Company</strong> <span class="who">Daniel Priestley, Alex Dogliotti · 45 min</span></summary>
+        <div class="brief-body"><p>Daniel on the org redesign: which roles become agents, which stay human, and the week a founder gets back. Alex Dogliotti brings the Mindvalley case for fifteen minutes: what changed inside our own company, and what the people side actually took. The gap: Weeks 13 to 15.</p><p class="lane"><strong>Mastery lane:</strong> Weeks 13, 14 and 15</p><p class="ev"><strong>Why this seat:</strong> Daniel is the best-rated guest in the 2026 AI base; Alex is internal, so his slot costs nothing and needs no outreach. People sessions were absent from the 2026 summit entirely.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill g">Demo</span> <strong>The Finance Cockpit, live</strong> <span class="who">Shawn Kanungo · 30 min</span></summary>
+        <div class="brief-body"><p>Thirty minutes, one dashboard: cash, runway, unit economics and a forecast built live from a founder's real numbers. A demo rather than a keynote, because the format is what his 2026 score argues for. The gap: the money dashboard is Week 16.</p><p class="lane"><strong>Mastery lane:</strong> Weeks 16 and 17</p><p class="ev"><strong>Why this seat:</strong> Shawn's 2026 System talk rated 4.12 (n=93), below the bar we hold elsewhere. He is In Negotiation on the table, so he keeps a seat, shortened and reshaped. Confirm the W16 pilot-review checkpoint stands.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill o">Offer</span> <strong>REPITCH: Why AI Stops After a Week</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>The five reasons a founder has not enrolled (price, time, relevance, confidence, fear of commitment), answered through the one failure everyone in the room has lived: the AI tool that was exciting for a week and abandoned by the third. The Mastery is the structure that stops the drop-off.</p><p class="ev"><strong>Why this seat:</strong> The title is Vishen's own 2026 Day 3 offer session. REPITCH mirrors the Expert to Authority run-of-show so the two summits share one sales spine.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill p">Heart close</span> <strong>How I Scaled My Identity by Building an AI Team</strong> <span class="who">Domenic Ashburn · 30 min</span></summary>
+        <div class="brief-body"><p>The heart-close slot: one founder's story of handing his business to a team of agents and what it gave back. Vulnerable, specific, no method taught. Clears the am-I-the-kind-of-person block before the final ask.</p><p class="ev"><strong>Why this seat:</strong> Domenic rated 4.47 (n=99) in 2026 and 4.97 in 2023, the highest single score in the AI base. He is on the Academy roster but has no AI for Founders Summit row; see the flags.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill o">Offer</span> <strong>FINAL CLOSE: a practical taste, then the deadline</strong> <span class="who">Vishen Lakhiani · 30 min</span></summary>
+        <div class="brief-body"><p>What the first fourteen days of the Mastery look like, hour by hour: onboarding week, starter kit installed, the early-value call, then Week 1. The direct ask. Enrolment closes tonight.</p><p class="ev"><strong>Why this seat:</strong> Matches the Expert to Authority FINAL CLOSE; the 2023 hard close rated 3.78 while the 2025 integration-framed close rated 4.53, so close by assembling, not by pressing.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill p">Fireside chat</span> <strong>Welcome celebration for enrolled founders</strong> <span class="who">Vishen Lakhiani, Vykintas Glodenis · 30 min</span></summary>
+        <div class="brief-body"><p>Buyers only: meet Vykintas, get the starter-kit link, book the early-value call. Non-buyers see a replay of the hot seats.</p><p class="ev"><strong>Why this seat:</strong> Ran as the Day 3 welcome celebration at AI Summit 2026 and feeds the two-week onboarding arc the Format tab already commits to.</p></div>
+      </details>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Who is on this run-of-show, and where each name stands</div>
+      <h2>Ten seats: one confirmed, three in negotiation, two with outreach done, four with no row yet</h2>
+      <p class="body-md" style="margin-top:8px">Status is the "Status" field on each person's AI for Founders Summit row in the Speaker Engagements table, read 7 September. Anyone In Negotiation keeps a seat here, as the team has committed to them in outreach. Scores are the summit ratings out of 5 and, where we hold them, the cohort ratings out of 10.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>Name</th><th>Speaker-table status</th><th>Proposed summit sessions</th><th>Also in the Mastery?</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Jason Goldberg</strong></td><td><span class="status roster">In Negotiation</span></td><td>15 host segments</td><td>No. Hosts both summits (1 Sep ruling)</td></tr>
+        <tr><td><strong>Vishen Lakhiani</strong> <span class="who">4.20 to 4.51 (2026 summit)</span></td><td><span class="status confirmed">Confirmed</span></td><td>Day 1 Your Business Is Already Dead (Good News); Day 1 Built to Run Without Me; Day 1 VIP Q&amp;A; Day 2 The Pipeline That Follows Up Itself; Day 2 The Mastery Reveal; Day 2 Hot Seats; Day 2 VIP Q&amp;A; Day 3 REPITCH; Day 3 FINAL CLOSE; Day 3 Welcome celebration for enrolled founders</td><td>Co-owner and anchor: 5 teach weeks, the intensive, all bookends</td></tr>
+        <tr><td><strong>Daniel Priestley</strong> <span class="who">4.51 (2026 summit) · 9.55 EM</span></td><td><span class="status rising">Outreach done</span></td><td>Day 1 How AI Rewrites the Entrepreneur's Playbook; Day 2 Hot Seats; Day 2 VIP Q&amp;A; Day 3 The 4-Day Founder Week and the AI-Centred Company</td><td>Co-owner and architect: W1, W6, W9, W14, W18 and the intensive strategy floor</td></tr>
+        <tr><td><strong>Vykintas Glodenis</strong> <span class="who">4.04 (2026) · 4.61 (2023) · 9.87 AIM capstone</span></td><td><span class="status rising">Outreach done</span></td><td>Day 1 Stand Up Your Company Brain, live in 45 minutes; Day 1 VIP Q&amp;A; Day 3 Welcome celebration for enrolled founders</td><td>Lab lead, all 17 labs, W11 teach, the intensive build floor</td></tr>
+        <tr><td><strong>AIM alumni (3)</strong></td><td><span class="status proposal" title="To be sourced from the AI Mastery Awards table">No table row</span></td><td>Day 1 Built to Run Without Me</td><td>No. Proof points; source from the AI Mastery Awards table</td></tr>
+        <tr><td><strong>Noelle Russell</strong> <span class="who">4.60 (2026 summit) · 9.97 AIM</span></td><td><span class="status roster">In Negotiation</span></td><td>Day 2 Building Your AI Workforce</td><td>Yes: W3, W10, W15</td></tr>
+        <tr><td><strong>Marie Forleo</strong> <span class="who">9.61 (EM)</span></td><td><span class="status proposal" title="No AI for Founders Summit row on the speaker table">No table row</span></td><td>Day 2 Know Exactly Who It's For</td><td>Yes: W5, W7</td></tr>
+        <tr><td><strong>Alex Dogliotti</strong></td><td><span class="status proposal">In consideration</span></td><td>Day 3 The 4-Day Founder Week and the AI-Centred Company</td><td>Yes: co-teaches W14 and W15 labs (internal)</td></tr>
+        <tr><td><strong>Shawn Kanungo</strong> <span class="who">4.12 (2026 summit)</span></td><td><span class="status roster">In Negotiation</span></td><td>Day 3 The Finance Cockpit, live</td><td>Yes: W16, W17 (pilot-review checkpoint after W16)</td></tr>
+        <tr><td><strong>Domenic Ashburn</strong> <span class="who">4.47 (2026) · 4.97 (2023)</span></td><td><span class="status proposal" title="No AI for Founders Summit row on the speaker table">No table row</span></td><td>Day 3 How I Scaled My Identity by Building an AI Team</td><td>Bench option only (creative engine)</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="small" style="margin-top:12px">Also on the AI for Founders Summit rows, not used here: Chris Do, Natalie Ellis and John Lee (In consideration) sit in Expert &amp; Authority lanes under the zero-overlap rule; Iman Oubou, Ajit Nawalkha and Jason Campbell are Not Approved.</p>
+  </section>
+
+  <section>
+    <div class="callout warn">
+      <div class="ic">!</div>
+      <div>
+        <p><strong>Six things to settle before this goes into the Airtable.</strong></p>
+        <ol class="flags">
+          <li><strong>Marie Forleo has no AI for Founders Summit row</strong> despite teaching two Mastery weeks. Add the row and start outreach, or her Day 2 seat goes to Domenic Ashburn's content-engine talk.</li>
+          <li><strong>Domenic Ashburn is the best summit performer in the AI base (4.97 in 2023, 4.47 in 2026) and has no row either.</strong> He is cast here as the heart close only; if the team prefers a Mastery author in that slot, Vykintas can carry it, unproven.</li>
+          <li><strong>Shawn Kanungo is In Negotiation and below the bar (4.12).</strong> He keeps a seat, cut to a 30-minute live dashboard. The W16 pilot-review checkpoint on the Format tab should stay.</li>
+          <li><strong>The three founder stories need names.</strong> The AI Mastery Awards and Award Submissions tables in the AI Summit &amp; Mastery base are the source; pick founders whose proof is a running system and a number.</li>
+          <li><strong>Daniel Priestley and Vykintas are "Outreach done", not confirmed.</strong> Daniel carries three sessions here, including the hot seats; the run-of-show does not work without him, so his confirmation is the gating item.</li>
+          <li><strong>Dates.</strong> The table says October 2026 for the summit and November for the Mastery, with no days. The Positioning tab still asks for cohort dates sequenced against Expert &amp; Authority; the 30-day rule (days 1 to 7 over-deliver, 14 to 28 sell) wants the summit no more than four weeks before the Mastery's Week 1.</li>
+        </ol>
+      </div>
+    </div>
   </section>
 
 </div>
