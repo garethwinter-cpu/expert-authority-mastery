@@ -321,6 +321,26 @@
       "applied_to": [
         "ai-founders.html#tab-summit"
       ]
+    },
+    {
+      "id": "ea-quiz-registrants-sep7",
+      "source": "appnHZYcirCg1VqUP/tblxGaIBEs265rYAd Expert to Authority Quiz 2026, 40 rows (36 with revenue), read 7 Sep 2026",
+      "finding": "Summit registrants: 19/36 pre-revenue, 12/36 under $25K (86% under $25K), 4 at $25-100K, 1 at $100-500K, none above. Breakdown: 18 'nobody knows I exist', 9 'can't put what I do into words' (75%), 4 plateaued, 3 one-offer, 2 followers-don't-buy. Success: 11 'THE name', 10 fully booked premium, 7 product line, 5 first clients, 3 peers. New type question: 11/14 The Expert. 20/35 two-plus years at it. Open text: visibility, articulation, self-belief, overwhelm, referrals-only.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html#tab-v2"
+      ],
+      "rule": "Weight the curriculum to the Expert path; decline scale-lever weeks (ads, app, team, multi-platform) for this room; re-read the quiz before each cohort."
+    },
+    {
+      "id": "ea-v2-vishen-inputs-sep7",
+      "source": "Vishen's Blinklife 18-week page + summit note vs team V1; Gareth's brief 7 Sep 2026",
+      "finding": "Version 2 built as an extra tab. Adopted: Authority Statement (W1), Named Signature Method (W3 renamed), marketplace validation (W5), Signature Offer language (W14), 90-day plan capstone (W17), summit arc (workbook, graduation reveal, hot seats, objection handling, hard close). Adapted: four paths as routing (Scaler -> Stagnating Expert), five pillars with Team & Scale replaced by Show Up & Stay Chosen, Schwartz as one exercise, Get Booked lab thread (W16). Declined: Cialdini week, platform dance, paid ads, app, lean team, summits week, 18 weeks, unverified figures; casting of Marisa on virality, Priestley, Shade Zahrai (cost), Roxie Nafousi (subject). Maria Wendt open question (4.91 n=33; Not Approved 31 Aug, re-added 7 Sep).",
+      "status": "proposed",
+      "applied_to": [
+        "expert-authority.html#tab-v2",
+        "index.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

@@ -128,6 +128,16 @@ ul.symptom li::before{content:"—";position:absolute;left:0;top:0;color:var(--t
  .jarrow{padding:10px 0;justify-content:center;transform:rotate(90deg)}
  .chapter .ghost{display:none}
 }
+
+/* Version column */
+.versions{display:grid;gap:10px;margin-bottom:6px}
+.ver{display:block;border:1px solid var(--ea-border);border-radius:16px;padding:16px 18px;background:#fff;text-decoration:none;color:inherit;box-shadow:0 4px 15px 0 rgba(0,0,0,.05);transition:transform .18s cubic-bezier(0.2,0,0,1),box-shadow .18s}
+.ver:hover{transform:translateY(-2px);box-shadow:0 5px 20px 0 rgba(0,0,0,.10)}
+.ver.v2{background:var(--ea-light)}
+.ver-k{display:block;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ea-content)}
+.ver-t{display:block;font-size:13.5px;line-height:1.5;color:#595E67;margin-top:6px}
+.ver-cta{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--ea)}
+.ver-cta::after{content:" \2192"}
 </style>
 </head>
 <body>
@@ -181,6 +191,19 @@ ul.symptom li::before{content:"—";position:absolute;left:0;top:0;color:var(--t
         </div>
       </div>
       <div class="ch-side">
+        <div class="versions">
+          <div class="ch-lbl">Two versions of the curriculum</div>
+          <a class="ver" href="/expert-authority">
+            <span class="ver-k">Version 1 · The team proposal</span>
+            <span class="ver-t">Data-backed, team-aligned, in progress. Seventeen weeks, six authors, the summit as the team built it in Airtable.</span>
+            <span class="ver-cta">Open Version 1</span>
+          </a>
+          <a class="ver v2" href="/expert-authority#v2">
+            <span class="ver-k">Version 2 · with Vishen's inputs</span>
+            <span class="ver-t">The same proposal, strengthened where Vishen's five pillars, four paths, named method and summit arc pass the authority test, and declined where they do not. Every verdict shown with its evidence.</span>
+            <span class="ver-cta">Open Version 2</span>
+          </a>
+        </div>
         <div>
           <div class="ch-lbl">Who it's for</div>
           <p>Coaches, consultants, healers, authors and founders-as-the-face — people with <strong>real expertise earning under $100K from it</strong>, because nobody knows they exist yet. No profile, no offer, no path from stranger to client.</p>
