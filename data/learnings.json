@@ -294,6 +294,15 @@
         "index.html",
         "data/boundary.json"
       ]
+    },
+    {
+      "id": "ea-summit-airtable-sep7",
+      "source": "Airtable appnHZYcirCg1VqUP / Summit Agenda (tblJTtf6jll2UyRbW), view 2026 | Summit, read 7 Sep 2026; Speaker Engagements statuses same date",
+      "finding": "Team run-of-show for the Expert to Authority Summit (18-20 Sep 2026): 33 rows, 11 keynotes, 2 firesides, 2 offer sessions + FINAL CLOSE, 17 host segments, 2 VIP Q&As; Vishen on every offer moment; guests Marisa, Kash, Jimmy, Regan, John, Ajit plus Dawn/Nora/Ronan success stories; Jason Goldberg hosts. Eight data flags (Regan fireside dated Day 1 but Day field Day 2; Jimmy keynote at 04:00; '[speaker]' placeholder Day 3; empty Status column; no briefs for Sales Pitch/REPITCH; truncated masterclass brief; Regan brief sequencing; four names still In consideration).",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority.html#tab-summit"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

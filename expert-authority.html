@@ -65,6 +65,23 @@ h3{font-size:20px;font-weight:700;line-height:1.3}
 .qf .n{font-size:26px;font-weight:700;letter-spacing:-.01em}
 .qf .l{font-size:13px;color:#CDB2EE;margin-top:4px;line-height:1.4}
 
+/* Summit tab */
+.summit-tbl td.mono-t{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--text-subtle);font-size:13px}
+.summit-tbl .spk{white-space:nowrap;margin:2px 0}
+.summit-tbl .spk .status{font-size:10px;padding:3px 9px}
+.summit-tbl tr.offer td{background:var(--pink-light)}
+.summit-tbl tr.vip td{background:var(--gold-light)}
+.briefs{display:grid;gap:10px;margin-top:12px}
+.brief{border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow-light)}
+.brief summary{cursor:pointer;padding:16px 20px;font-size:14.5px;line-height:1.4;display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;list-style:none}
+.brief summary::-webkit-details-marker{display:none}
+.brief summary .who{color:var(--text-subtle);font-size:13px}
+.brief summary::after{content:"Read brief";margin-left:auto;font-size:12px;font-weight:700;color:var(--brand-content);letter-spacing:.06em;text-transform:uppercase}
+.brief[open] summary::after{content:"Close"}
+.brief-body{padding:0 20px 18px}
+.brief-body p{font-size:14px;line-height:1.6;color:var(--text-muted);margin-top:10px;text-wrap:pretty}
+.flags{margin:12px 0 0 18px;padding:0}
+.flags li{margin:8px 0;line-height:1.55;font-size:14px}
 /* Tabs */
 .tabbar-outer{position:sticky;top:60px;z-index:55;background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow-light)}
 .tabbar{display:flex;gap:4px;overflow-x:auto;padding:10px 0;-ms-overflow-style:none;scrollbar-width:none}
@@ -289,11 +306,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
       <button class="tab-btn active" data-tab="case"><span class="num">01</span>The Case</button>
       <button class="tab-btn" data-tab="programme"><span class="num">02</span>The Programme</button>
       <button class="tab-btn" data-tab="weeks"><span class="num">03</span>Week by Week</button>
-      <button class="tab-btn" data-tab="faculty"><span class="num">04</span>Authors</button>
-      <button class="tab-btn" data-tab="next"><span class="num">05</span>Positioning &amp; Next Steps</button>
-      <button class="tab-btn" data-tab="evidence"><span class="num">06</span>The Evidence</button>
-      <button class="tab-btn" data-tab="format"><span class="num">07</span>Format &amp; Contracts</button>
-      <button class="tab-btn" data-tab="artefact"><span class="num">08</span>The Artefact</button>
+      <button class="tab-btn" data-tab="summit"><span class="num">04</span>The Summit</button>
+      <button class="tab-btn" data-tab="faculty"><span class="num">05</span>Authors</button>
+      <button class="tab-btn" data-tab="next"><span class="num">06</span>Positioning &amp; Next Steps</button>
+      <button class="tab-btn" data-tab="evidence"><span class="num">07</span>The Evidence</button>
+      <button class="tab-btn" data-tab="format"><span class="num">08</span>Format &amp; Contracts</button>
+      <button class="tab-btn" data-tab="artefact"><span class="num">09</span>The Artefact</button>
     </nav>
   </div>
 </div>
@@ -1261,6 +1279,231 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 </div>
 
 <!-- ============ 05 AUTHORS ============ -->
+<div class="tab-panel" id="tab-summit">
+<div class="wrap">
+
+  <section>
+    <div class="callout dark">
+      <div class="ic">■</div>
+      <div>
+        <p><strong>Expert to Authority Summit. Three days, free, live on Zoom. 18 to 20 September 2026. This tab is the team's run-of-show exactly as it stands in Airtable.</strong></p>
+        <p>Source: the <em>Summit Agenda</em> table in the Expert &amp; Authority base, view "2026 | Summit", read on 7 September 2026: 33 rows, every title, speaker, timing, session type and session brief carried verbatim (typos and all). Speaker statuses come from the <em>Speaker Engagements</em> table on the same date. Nothing on this tab comes from Vishen's Blinklife summit note; that comparison is a separate build, and the Mastery curriculum on the other tabs is untouched. Times are shown in London first because the New York column in Airtable is the master clock and the London formula is derived from it; New York and Los Angeles follow.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The shape of it</div>
+      <h2>Three days, one funnel: identity on Day 1, the machine on Day 2, the close on Day 3</h2>
+    </div>
+    <div class="grid g4">
+      <div class="stat"><div class="kicker">Sessions in Airtable</div><h3>33</h3><p class="small" style="margin-top:6px">11 keynotes · 2 firesides · 2 offer sessions · 17 host segments · 2 VIP Q&amp;As</p></div>
+      <div class="stat"><div class="kicker">Daily running time</div><h3 style="white-space:nowrap">4h40 · 5h · 4h40</h3><p class="small" style="margin-top:6px">General room 4h 10 / 4h 30 / 4h 40, plus a 30-minute VIP Q&amp;A on Days 1 and 2. Doors 4:00pm London, 11:00am New York, 8:00am Los Angeles, every day.</p></div>
+      <div class="stat"><div class="kicker">People on the agenda</div><h3>11</h3><p class="small" style="margin-top:6px">Vishen in 11 sessions (plus both VIP Q&amp;As), Jason Goldberg hosting every segment, six guest authors, three success-story guests.</p></div>
+      <div class="stat"><div class="kicker">Sales moments</div><h3>3</h3><p class="small" style="margin-top:6px">Sales Pitch (Day 2, 45 min), REPITCH (Day 3, 45 min), FINAL CLOSE (Day 3, 30 min). Day 1 carries no offer; the whole day is identity work.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Day 1 · Friday 18 September</div>
+      <h2>Why your voice matters, and why now</h2>
+      <p class="body-md" style="margin-top:8px">4:00pm to 8:40pm London · 11:00am to 3:40pm New York · 8:00am to 12:40pm Los Angeles. General room closes 8:10pm London; VIP Q&amp;A follows.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl summit-tbl">
+      <thead><tr><th>London</th><th>New York</th><th>Session (Airtable title)</th><th>Speaker</th><th>Type</th><th>Length</th></tr></thead>
+      <tbody>
+        <tr><td class="mono-t">4:00pm–4:10pm</td><td class="mono-t">11:00am–11:10am</td><td>Welcome by the Host</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr><td class="mono-t">4:10pm–4:55pm</td><td class="mono-t">11:10am–11:55am</td><td><strong>The Visibility Wound — identity &amp; permission; "no one is born with a visibility wound, the world installs it"</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">4:55pm–5:00pm</td><td class="mono-t">11:55am–12:00pm</td><td>Host Invites Dawn, Ronan and Nora</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">5:00pm–6:00pm</td><td class="mono-t">12:00pm–1:00pm</td><td><strong>Built to Be Chosen: MV Authors and Students Success Stories</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div><div class="spk">Dawn Hoang <span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></div><div class="spk">Nora Cavani <span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></div><div class="spk">Ronan Diego <span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></div></td><td><span class="pill p">Fireside chat</span></td><td>1h 00</td></tr>
+        <tr><td class="mono-t">6:00pm–6:05pm</td><td class="mono-t">1:00pm–1:05pm</td><td>Host Thanking speakers and Introducing Marisa</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">6:05pm–7:05pm</td><td class="mono-t">1:05pm–2:05pm</td><td><strong>I Am Enough: The Identity Shift — clearing the subconscious block to being seen</strong></td><td><div class="spk">Marisa Peer <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill b">Keynote</span></td><td>1h 00</td></tr>
+        <tr><td class="mono-t">7:05pm–7:10pm</td><td class="mono-t">2:05pm–2:10pm</td><td>Host Thanking Marisa and Introducing Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">7:10pm–7:55pm</td><td class="mono-t">2:10pm–2:55pm</td><td><strong>Find Your Weirdness &amp; Crown Your Belief — the edge (Skill A × B × C), the RAS test, naming your villain</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">7:55pm–8:10pm</td><td class="mono-t">2:55pm–3:10pm</td><td>Closing of Day 1, tease for Day 2</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>15 min</td></tr>
+        <tr class="vip"><td class="mono-t">8:10pm–8:40pm</td><td class="mono-t">3:10pm–3:40pm</td><td><strong>VIP Q&amp;A</strong> <span class="pill gold">VIP</span></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill g">Q&amp;A</span></td><td>30 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="overline" style="margin-top:28px">Session briefs, verbatim from the Airtable "Session Description" field</div>
+    <div class="briefs">
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The Visibility Wound — identity &amp; permission; "no one is born with a visibility wound, the world installs it"</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>Vishen's core claim: most people aren't held back by lack of skill, they're held back by a conditioned aversion to being seen — fear of judgment, the internalized rule that self-promotion is "bragging," the specific ages people use as an excuse ("I'm too old to start" / "I'm too young to be taken seriously"). He frames overcoming this as a switch you flip, not a gradual fix you work up to over months — you don't become ready first and then get visible, visibility is what makes you ready. The session uses a visibility-wound video case study (referred to in his source material as "the Hey Hayden video") as a concrete illustration, and includes a live stage exercise — pulling volunteers up to do something exposing in front of the room (dance, be filmed, be looked at) as a real-time demonstration that the fear is survivable and mostly imagined.</p><p>Outcome: Every attendee can name their own specific version of the wound, and — more importantly — has just watched someone else survive doing the exposing thing live, which does more to disprove the fear than any amount of telling them it's safe.</p><p>Aha moment &amp; emotional arc: The turn from "I'm not ready yet" to "I've been calling fear humility" — reinforced live by watching a stranger get visible on stage and be fine. Arc moves from quiet defensiveness into something exposed and a little raw, which is the intended opening note for the whole three days.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill p">Fireside chat</span> <strong>Built to Be Chosen: MV Authors and Students Success Stories</strong> <span class="who">Vishen Lakhiani, Dawn Hoang, Nora Cavani, Ronan Diego · 1h 00</span></summary>
+        <div class="brief-body"><p>Three back-to-back interviews, Vishen in the chair, each guest walking through where they started, the specific thing that changed once they applied the method, and a real number that proves it — roughly 18–20 minutes per guest rather than one deep sit-down, so it plays as a montage of proof rather than a single long story. Framed around outcomes (before → specific shift → proof number → what's different now)<br>The intent is "showcase how we used our method and helped them grow"</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>I Am Enough: The Identity Shift — clearing the subconscious block to being seen</strong> <span class="who">Marisa Peer · 1h 00</span></summary>
+        <div class="brief-body"><p>Central teaching: the mind operates like a "proof-making machine" — whatever belief you hold, present-tense, it will go find you evidence for, whether that belief serves you or not. Her core intervention is switching people out of striving language ("I will be enough once...") and into present-tense identity language ("I am enough"), on the logic that you can't build durable authority on a belief you've deferred to some future achievement.</p><p>The session includes a live guided exercise — in her original MVU version this runs as a genuine visualization/affirmation practice, roughly 15–20 minutes on its own</p><p>Outcome: A felt shift, not just an idea — attendees go through a live identity-reframe exercise on stage.</p><p>Aha moment &amp; emotional arc: The realization that their striving has been an attempt to prove something no achievement will ever fully settle. This is the emotional peak of Day 1 — arc lands at something like relief, or grief-turning-into-relief</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>Find Your Weirdness &amp; Crown Your Belief — the edge (Skill A × B × C), the RAS test, naming your villain</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>Two real curriculum weeks compressed into one session. Week 3's core exercise is "finding your edge" — the claim that your differentiator isn't one skill, it's 2–3 unrelated skills or traits combined in a way no one else has (Vishen's own example, straight from the source material: meditation + stage presence + photography).<br>The session runs this as audience participation — attendees are prompted to name their own 2–3-trait combination live, out loud, with Vishen or the host calling on people. Week 3 also introduces "the Critic Path" — the idea that you earn the right to teach by first becoming a trusted reviewer of the space you're in (commenting thoughtfully, engaging publicly) before you ever publish original teaching. Week 4 folds in "crowning your belief" — naming the one core belief that will run through everything you teach, plus naming your audience's actual villain — explicitly never the customer themselves, but the external force or lie that's been shrinking them.</p><p>Outcome: Each attendee leaves with a first-draft version of their own "edge" (their unique trait combination) and has heard the room's answers reinforce that this is learnable, not something only naturally distinctive people have.</p><p>Aha moment &amp; emotional arc: The reframe of "weird" from flaw to differentiator, landing hardest in the moment attendees hear their neighbor's combination out loud and realize theirs is just as valid. Arc moves from hopeful into something closer to permission.</p></div>
+      </details>
+    </div>
+    <p class="small" style="margin-top:12px">No session description in Airtable yet for: VIP Q&amp;A.</p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Day 2 · Saturday 19 September</div>
+      <h2>The craft and business of influence</h2>
+      <p class="body-md" style="margin-top:8px">4:00pm to 9:00pm London · 11:00am to 4:00pm New York · 8:00am to 1:00pm Los Angeles. General room closes 8:30pm London; VIP Q&amp;A follows.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl summit-tbl">
+      <thead><tr><th>London</th><th>New York</th><th>Session (Airtable title)</th><th>Speaker</th><th>Type</th><th>Length</th></tr></thead>
+      <tbody>
+        <tr><td class="mono-t">4:00pm–4:10pm</td><td class="mono-t">11:00am–11:10am</td><td>Opening by Host</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr><td class="mono-t">4:10pm–4:55pm</td><td class="mono-t">11:10am–11:55am</td><td><strong>The Visibility Proof: Why Getting Found Isn't Luck</strong></td><td><div class="spk">Akash (Kash) Rupareliaa <span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">4:55pm–5:00pm</td><td class="mono-t">11:55am–12:00pm</td><td>Host Thanking Kash and Introducing Jimmy</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">5:00pm–5:45pm</td><td class="mono-t">12:00pm–12:45pm</td><td><strong>The Course Is Already in You <span class="pill o" title="Airtable timestamp disagrees with the Day field or the host bookends; see Data flags">time flagged</span></strong></td><td><div class="spk">Jimmy Naraine <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">5:45pm–5:50pm</td><td class="mono-t">12:45pm–12:50pm</td><td>Host Thanking Jimmy and Introducing Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">5:50pm–6:35pm</td><td class="mono-t">12:50pm–1:35pm</td><td><strong>The 60 Minutes That Sold Half a Billion Dollars — the masterclass doctrine</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">6:35pm–6:40pm</td><td class="mono-t">1:35pm–1:40pm</td><td>Host introducing Regan and Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">6:40pm–7:40pm</td><td class="mono-t">1:40pm–2:40pm</td><td><strong>Fireside — Zero to Hero: The Proof Point <span class="pill o" title="Airtable timestamp disagrees with the Day field or the host bookends; see Data flags">time flagged</span></strong></td><td><div class="spk">Regan Hillyer <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill p">Fireside chat</span></td><td>1h 00</td></tr>
+        <tr class="offer"><td class="mono-t">7:40pm–8:25pm</td><td class="mono-t">2:40pm–3:25pm</td><td><strong>Sales Pitch</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill o">Offer</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">8:25pm–8:30pm</td><td class="mono-t">3:25pm–3:30pm</td><td>Host Thanking Vishen and Closing the Day</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr class="vip"><td class="mono-t">8:30pm–9:00pm</td><td class="mono-t">3:30pm–4:00pm</td><td>VIP Q&amp;A <span class="pill gold">VIP</span></td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill">Host</span></td><td>30 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="overline" style="margin-top:28px">Session briefs, verbatim from the Airtable "Session Description" field</div>
+    <div class="briefs">
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The Visibility Proof: Why Getting Found Isn't Luck</strong> <span class="who">Akash (Kash) Rupareliaa · 45 min</span></summary>
+        <div class="brief-body"><p>(Sourced from Kash's real MVU 2026 talk ("How To Go Viral" rebalanced under the no-HOW rule — proof and reframe stay, his actual teachable method is deliberately left out)</p><p>Kash opens on the reframe that visibility runs on a system, not luck or talent: the platform runs a small test on new content, sees what a sample of people do with it, and pushes it further or doesn't — meaning the algorithm isn't "for" or "against" anyone, it's just responding to data. His proof: 200+ brands scaled through his agency across every kind of niche (including named Mindvalley authors), using the same underlying method regardless of industry, plus his own account's growth from roughly 15,000 to over 200,000 followers within a year. The one teachable idea kept in (because it's an insight, not a method): most people who fail at this have invested in the wrong layer — better editing, better cameras — when what actually determines whether something gets pushed is the topic and the hook, decided before a single frame is shot. He also names the real ceiling honestly: for most people it isn't skill, it's fear of being seen and perfectionism about posting anything less than polished.</p><p>Outcome: Belief shift — the room now believes getting found is learnable, not magic, and not something only "certain people" can do.</p><p>Aha moment &amp; emotional arc: "The algorithm isn't against you" — the moment people stop outsourcing blame to a system they don't understand. Arc moves from Day-1's inward identity work to outward, practical possibility.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The Course Is Already in You</strong> <span class="who">Jimmy Naraine · 45 min</span></summary>
+        <div class="brief-body"><p>Presumed to cover how to take what you know and structure it into a teachable curriculum — sequencing, what to include vs. cut, how much to give away.</p><p>Outcome (provisional): Attendees leave believing their knowledge is already structurable, not that they need to invent a framework from scratch.</p><p>Aha moment &amp; emotional arc (provisional): Likely the realization that "I don't know what to teach" is usually "I know too much to see the shape of it"</p><p>Offer tie-in: Should close by naming that full curriculum design is taught inside the Mastery, consistent with the no-HOW rule applied elsewhere on Day 2</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The 60 Minutes That Sold Half a Billion Dollars — the masterclass doctrine</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>This is the single most detailed, most reusable piece of doctrine in Vishen's own material.<br>The real anatomy he teaches: a masterclass runs hook/promise in the first 0–4 minutes, then a teacher story, then a worldview shift built around naming a villain (never the customer — always an external force or lie), then the mechanism or "taste" of the actual method, then a hard hinge at minute 40 where the session consciously switches from teaching mode into selling mode, then the close. Every masterclass repeats one "crowned belief" throughout — the same device behind Regan's "you manifest what you broadcast" and (per the doctrine's own other example) Jim Kwik's "there's no such thing as a good or bad memory, only a trained or untrained one." Two covenants run underneath the whole structure: the transformational covenant (people who never buy still walk away better off) and the conversion covenant (the offer still gets made, without apology). Four hard rules govern it: never certify the free content as sufficient on its own, never teach the complete "how" of the core method (that's what payment is for), never issue a second, competing ask at the moment of peak openness, and never "bless the exit" — never make it feel okay to leave without deciding. A before/after self-rating exercise is used partway through to generate real emotional proof, on the logic that people buy on emotion and justify the purchase with logic afterward.<br>Vishen's own proof points anchor the session: half a billion dollars sold through masterclasses over his career, Code of the Extraordinary Mind reaching #1 globally, 110 Mindvalley-built author brands.<br>rk.</p><p>Aha moment &amp; emotional arc: The specific moment the room realizes the "hinge at minute 40" concept applies to the very session they're sitting in right now. Arc moves from curious into primed.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill p">Fireside chat</span> <strong>Fireside — Zero to Hero: The Proof Point</strong> <span class="who">Regan Hillyer, Vishen Lakhiani · 1h 00</span></summary>
+        <div class="brief-body"><p>Live interview. Regan's own rags-to-authority story, drawn out by Vishen.</p><p>Outcome: The wound named in the previous session now has a face and a name attached to "it's beatable."</p></div>
+      </details>
+    </div>
+    <p class="small" style="margin-top:12px">No session description in Airtable yet for: Sales Pitch.</p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Day 3 · Sunday 20 September</div>
+      <h2>Your audience is waiting</h2>
+      <p class="body-md" style="margin-top:8px">4:00pm to 8:40pm London · 11:00am to 3:40pm New York · 8:00am to 12:40pm Los Angeles. General room closes 8:40pm London; no VIP session in Airtable for this day.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl summit-tbl">
+      <thead><tr><th>London</th><th>New York</th><th>Session (Airtable title)</th><th>Speaker</th><th>Type</th><th>Length</th></tr></thead>
+      <tbody>
+        <tr><td class="mono-t">4:00pm–4:10pm</td><td class="mono-t">11:00am–11:10am</td><td>Opening by Host</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+        <tr><td class="mono-t">4:10pm–4:55pm</td><td class="mono-t">11:10am–11:55am</td><td><strong>The Exposure Equation: You Don't Need to Be Famous, You Need to Be Found</strong></td><td><div class="spk">John Lee <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">4:55pm–5:00pm</td><td class="mono-t">11:55am–12:00pm</td><td>Host Thanking John Lee and Introducing Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr class="offer"><td class="mono-t">5:00pm–5:45pm</td><td class="mono-t">12:00pm–12:45pm</td><td><strong>REPITCH — the five reasons you haven't enrolled (price, time, relevance, confidence, fear of commitment)</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill o">Offer</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">5:45pm–5:50pm</td><td class="mono-t">12:45pm–12:50pm</td><td>Host Thanking Vishen and Introducing [speaker] <span class="pill o">placeholder in Airtable</span></td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">5:50pm–6:35pm</td><td class="mono-t">12:50pm–1:35pm</td><td><strong>The Conversation Where They Say Yes</strong></td><td><div class="spk">Ajit Nawalkha <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">6:35pm–6:40pm</td><td class="mono-t">1:35pm–1:40pm</td><td>Host Thanking Ajit and Introducing Vishen</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">6:40pm–7:25pm</td><td class="mono-t">1:40pm–2:25pm</td><td><strong>The Identity Tier — why the top rung is never a product</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill b">Keynote</span></td><td>45 min</td></tr>
+        <tr><td class="mono-t">7:25pm–7:30pm</td><td class="mono-t">2:25pm–2:30pm</td><td>Host Thanking Vishen and Introducing Jimmy Naraine</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>5 min</td></tr>
+        <tr><td class="mono-t">7:30pm–8:00pm</td><td class="mono-t">2:30pm–3:00pm</td><td><strong>HEART CLOSE — The Message I Never Answered</strong></td><td><div class="spk">Jimmy Naraine <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill b">Keynote</span></td><td>30 min</td></tr>
+        <tr><td class="mono-t">8:00pm–8:30pm</td><td class="mono-t">3:00pm–3:30pm</td><td><strong>FINAL CLOSE — practical taste + direct CTA</strong></td><td><div class="spk">Vishen Lakhiani <span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></div></td><td><span class="pill b">Keynote</span></td><td>30 min</td></tr>
+        <tr><td class="mono-t">8:30pm–8:40pm</td><td class="mono-t">3:30pm–3:40pm</td><td>Closing of Day 3</td><td><div class="spk">Jason Goldberg <span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></div></td><td><span class="pill">Host</span></td><td>10 min</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="overline" style="margin-top:28px">Session briefs, verbatim from the Airtable "Session Description" field</div>
+    <div class="briefs">
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The Exposure Equation: You Don't Need to Be Famous, You Need to Be Found</strong> <span class="who">John Lee · 45 min</span></summary>
+        <div class="brief-body"><p>Sourced from John Lee's real MVU 2026 talk ("From Zero to $20K/Month").</p><p>Opens on his reframe that nobody is "doing social media" anymore — everyone is running a media company, whether they think of it that way or not ("Nike is a media company selling shoes... you should be a media company selling what?"), and the line the whole session hangs on: "the best known beats the best." He walks the room through the actual chain, spelled out as math: social media creates exposure, exposure creates leads, leads create deals, deals create revenue — literally, "the deals are in the leads." His own worked example: 200 people paying $100 each is an extra $20,000/month, which only requires around 50 new relationships a week — a deliberately small, unintimidating number. From his "marketing matrix," the one piece kept in the summit version is Strategic Alliance Partners — his own definition, illustrated with his daughter: she loves pizza, he only likes the crust, so they have a standing "alliance" where she eats the middle and he eats the crust; a SAP is exactly that, a partner with your same audience who isn't your competitor. The proof point that lands hardest, and the reason for the session's title: he built two entirely fictional AI personas — "David Chen" and "Diana Carter" — neither a real person, and within 30 days David Chen alone pulled 1.9 million views and 46,000 followers, with Diana Carter (styled as his "ex-wife") posting content that hit hundreds of thousands of views per clip. Neither of them exists. The session closes with the math behind his own "Riff Challenge" — post daily, 30–60 seconds, and a brand-new account should expect roughly 500 views a day; at 500×365 that's 182,500 views a year, and even a 1% conversion rate at $100 a head is real revenue, entirely from consistency rather than fame.</p><p>Outcome: Removes "I'm not known enough" as a valid excuse — the room sees that the system, not personal fame, is what converts.</p><p>Aha moment &amp; emotional arc: The fictional-persona proof point — the specific moment the room realizes celebrity was never the requirement. Arc moves from any lingering pitch-hesitation toward renewed practical hope, ahead of REPITCH.</p><p>Offer tie-in: Softens the ground for REPITCH — proof that the math works even for people starting with zero recognition.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The Conversation Where They Say Yes</strong> <span class="who">Ajit Nawalkha · 45 min</span></summary>
+        <div class="brief-body"><p>Enrolment isn't persuasion, it's "compassionate curiosity" — a conversation built on genuine questions, not a script designed to overcome resistance. The central move he teaches: every objection someone states out loud has a different, truer objection underneath it ("I don't have time" is rarely about time), and the entire skill is learning to hear past the stated one to the real one. Rather than walking the room through the full framework step by step, this plays best as a live demonstration — Ajit runs an actual enrolment conversation on stage with a volunteer, unscripted, so the room watches a real "yes" arrive out of genuine listening rather than pressure. The one structural principle worth naming directly, because it's counterintuitive and memorable on its own: the ask itself is built to preserve the relationship even when the answer is no — he never tries to convert a "not now" into a "yes" by force, because a respected "no" is what makes someone come back later, or send someone else. Closes by naming that the full conversation framework — how to structure the questions, how to surface the real objection, how to handle every kind of no — is what's taught and practiced live inside the Mastery.</p><p>Outcome: The room's fear of "the sales conversation" drops — they've just watched one happen in real time, and it looked like a good conversation, not a pitch.</p><p>Aha moment &amp; emotional arc: The moment the volunteer's "yes" arrives — not because Ajit pushed, but because he asked the one question that got underneath what was actually stopping them. Arc moves from REPITCH's directness into something calmer and more human, right before the day turns toward Heart Close.</p><p>Offer tie-in: A lower-intensity companion to REPITCH, positioned right after it — softer, relationship-first counterweight to REPITCH's more direct pressure, without teaching the mechanics that are reserved for paid enrollment in the Mastery.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>The Identity Tier — why the top rung is never a product</strong> <span class="who">Vishen Lakhiani · 45 min</span></summary>
+        <div class="brief-body"><p>Why the top rung of any authority ladder is never a product — it's identity and status.</p><p>Outcome: Attendees see where the Mastery actually leads long-term, past the tactics.</p><p>Aha moment &amp; emotional arc: Understanding that "the top" isn't a course they finish, it's who they become. Arc shifts from tactical momentum (previous session) into something more aspirational and long-view.</p><p>Offer tie-in: Positions the Mastery as identity transformation, not just a tactics library — supports retention and the case for going all-in, not just enrolling.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>HEART CLOSE — The Message I Never Answered</strong> <span class="who">Jimmy Naraine · 30 min</span></summary>
+        <div class="brief-body"><p>A story he's never told on any stage — in 2017, already running a successful course business, he got a message from Jay Shetty wanting to connect, and quietly avoided the call for months out of imposter syndrome, not conscious refusal.</p><p>Outcome: Gives explicit permission to act imperfectly — confidence is reframed as collected evidence, not a prerequisite.</p><p>Aha moment &amp; emotional arc: The coin-flip metaphor landing — refusing to take the risk doesn't just avoid the loss, it gives up everything that could have been won. Arc is the most vulnerable and quiet of the whole summit, deliberately, right before the final ask.</p><p>Offer tie-in: Emotional permission to say yes — clears the "am I ready/worthy" block immediately before Final Close.</p></div>
+      </details>
+      <details class="brief">
+        <summary><span class="pill b">Keynote</span> <strong>FINAL CLOSE — practical taste + direct CTA</strong> <span class="who">Vishen Lakhiani · 30 min</span></summary>
+        <div class="brief-body"><p>Direct call to action, a practical taste of what enrolling actually looks like day-to-day.</p><p>Outcome: Last-call conversions. Aha moment &amp; emotional arc: No new insight — this session's job is to crystallize urgency built across three days into one clear action.</p></div>
+      </details>
+    </div>
+    <p class="small" style="margin-top:12px">No session description in Airtable yet for: REPITCH — the five reasons you haven't enrolled (price, time, relevance, confidence, fear of commitment).</p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Who is on the agenda, and where each name stands</div>
+      <h2>Eleven names, one confirmed, six in negotiation, four not yet approached</h2>
+      <p class="body-md" style="margin-top:8px">Status is the "Status" field on each person's Expert &amp; Authority row in the Speaker Engagements table, 7 September. Anyone marked In Negotiation is a commitment the team has made in outreach and must keep a seat at the summit and in the Mastery, or the Mastery at least. Ratings are the MVU Rating Adjusted average on the same table, out of 5.</p>
+    </div>
+    <div class="tbl-scroll">
+    <table class="tbl">
+      <thead><tr><th>Name</th><th>Speaker-table status</th><th>Summit sessions (Airtable)</th><th>Also in the Mastery?</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Jason Goldberg</strong></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 1 VIP Q&amp;A; 17 host segments</td><td>No. Hosts both summits (1 Sep ruling)</td></tr>
+        <tr><td><strong>Vishen Lakhiani</strong> <span class="who">MVU 4.54/5</span></td><td><span class="status confirmed" title="Speaker Engagements table, 7 Sep">Confirmed</span></td><td>Day 1 The Visibility Wound; Day 1 Built to Be Chosen: MV Authors and Students Success Stories; Day 1 Find Your Weirdness &amp; Crown Your Belief; Day 1 VIP Q&amp;A; Day 2 The 60 Minutes That Sold Half a Billion Dollars; Day 2 Fireside; Day 2 Sales Pitch; Day 3 REPITCH; Day 3 The Identity Tier; Day 3 FINAL CLOSE; 1 host segment</td><td>Curriculum Expert; 7 teach weeks, the intensive, all bookends</td></tr>
+        <tr><td><strong>Dawn Hoang</strong></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 1 Built to Be Chosen: MV Authors and Students Success Stories</td><td>No. Success-story guest only</td></tr>
+        <tr><td><strong>Nora Cavani</strong></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 1 Built to Be Chosen: MV Authors and Students Success Stories</td><td>No. Success-story guest only</td></tr>
+        <tr><td><strong>Ronan Diego</strong></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 1 Built to Be Chosen: MV Authors and Students Success Stories</td><td>No. Success-story guest only</td></tr>
+        <tr><td><strong>Marisa Peer</strong> <span class="who">MVU 4.77/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 1 I Am Enough: The Identity Shift</td><td>Yes: W2 "I Am Enough: The Identity Shift"</td></tr>
+        <tr><td><strong>Akash (Kash) Rupareliaa</strong> <span class="who">MVU 4.67/5</span></td><td><span class="status proposal" title="Speaker Engagements table, 7 Sep">In consideration</span></td><td>Day 2 The Visibility Proof: Why Getting Found Isn't Luck</td><td>Yes: labs W1, W2, W10, W12 and intensive Day 3 (page spells him Kash Rupalia)</td></tr>
+        <tr><td><strong>Jimmy Naraine</strong> <span class="who">MVU 4.68/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 2 The Course Is Already in You; Day 3 HEART CLOSE</td><td>Yes: W5, W6 teach + labs, W8 lab, intensive Day 3</td></tr>
+        <tr><td><strong>Regan Hillyer</strong> <span class="who">MVU 4.53/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 2 Fireside</td><td>Yes: W11 fireside; this summit fireside replays as the W1 onboarding asset</td></tr>
+        <tr><td><strong>John Lee</strong> <span class="who">MVU 4.54/5</span></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 3 The Exposure Equation: You Don't Need to Be Famous, You Need to Be Found</td><td>Yes: W10 and W16</td></tr>
+        <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="status roster" title="Speaker Engagements table, 7 Sep">In Negotiation</span></td><td>Day 3 The Conversation Where They Say Yes</td><td>Yes: W13 to W15</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section>
+    <div class="callout warn">
+      <div class="ic">!</div>
+      <div>
+        <p><strong>Data flags: eight things in the Airtable that need a human hand before this run-of-show is sent to anyone.</strong> Shown here, not silently fixed.</p>
+        <ol class="flags">
+          <li><strong>Regan's fireside is timestamped 18 September (Day 1's date) at 5:40pm London, but its Day field says Day 2, and Day 2 has a host segment "introducing Regan and Vishen" at 5:35pm followed by an empty hour before the Sales Pitch.</strong> This tab places it on Day 2 at 5:40pm. Correct the date in Airtable. As written on Day 1 it would collide with Marisa and with Vishen's second keynote.</li>
+          <li><strong>Jimmy's "The Course Is Already in You" is timestamped 4:00am London on 19 September.</strong> The host bookends ("Thanking Kash and Introducing Jimmy" 3:55pm, "Thanking Jimmy and Introducing Vishen" 4:45pm) leave exactly 45 minutes at 4:00pm, so it is shown there. Set the real start time.</li>
+          <li><strong>Day 3, 4:45pm: "Host Thanking Vishen and Introducing [speaker]".</strong> The next session is Ajit's. Fill in the name.</li>
+          <li><strong>The Status column (Confirmed / In progress) is empty on all 33 rows.</strong> Nothing on the agenda is marked confirmed inside the agenda table itself; only the speaker table carries status.</li>
+          <li><strong>Sales Pitch and REPITCH have no session description.</strong> Given the 60-minute masterclass doctrine sits on Day 2 and REPITCH is titled around the five reasons, both briefs should be written before Vishen's rehearsal.</li>
+          <li><strong>The masterclass-doctrine brief contains a stray fragment ("rk.") and its Outcome line is missing</strong>, most likely a paste that lost a sentence. Restore it.</li>
+          <li><strong>Regan's brief says "the wound named in the previous session".</strong> On Day 2 the previous session is the masterclass doctrine, not the Visibility Wound. Either the brief was written when the fireside sat on Day 1, or the placement should be revisited. Both readings need the same fix: decide the day, then rewrite the line.</li>
+          <li><strong>Four agenda names are still "In consideration" on the speaker table: Kash (a 45-minute keynote) and Dawn Hoang, Nora Cavani and Ronan Diego (the hour-long success-story fireside).</strong> Their outreach has not started per the table, and the summit is eleven days out. Kash's spelling also differs between the table ("Akash (Kash) Rupareliaa") and this page ("Rupalia"); settle it once.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="callout good">
+      <div class="ic">✓</div>
+      <div>
+        <p><strong>What the Airtable plan already gets right, read against the Mastery on the other tabs.</strong> Every guest on the summit stage also teaches in the Mastery, in the same lane: Marisa's identity session, Jimmy's course-structure talk and heart close, Kash's visibility proof, John's exposure equation, Ajit's enrolment conversation, Regan's zero-to-hero fireside. The summit is the free rung of the same ladder. Vishen carries every offer moment and the doctrine sessions, which matches the "main stage" ruling. Every in-negotiation name from the speaker table has a slot. Jason Goldberg hosts, as ruled on 1 September. The summit-to-Mastery handoff is explicit in the briefs ("taught inside the Mastery", "the no-HOW rule"), so nothing on the free stage certifies the free content as sufficient.</p>
+      </div>
+    </div>
+  </section>
+
+</div>
+</div>
+
 <div class="tab-panel" id="tab-faculty">
 <div class="wrap">
 
@@ -1400,7 +1643,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
           <div class="sc"><div class="v na">$4K</div><div class="k">Quoted per class ·<br>~$12K for 3 classes</div></div>
         </div>
         <p class="body-md">The largest guest allocation, and the easiest to defend: the whole monetisation arc (the free rung, the ladder, the enrolment conversation) is his verified lane, he is family (Mindvalley Coach co-founder), and his quoted rate is the lowest per class on the table. Three consecutive weeks give module 4 what the Academy playbook asks for: one constant teaching voice across a build sequence rather than a new face every Tuesday.</p>
-        <div class="covers"><strong>Teaches:</strong> W13 the free rung · W14 the product step ladder · W15 the enrolment conversation · co-hosts the W15 build day<br><strong>Action:</strong> his fee row sits on the table at ~3 classes per Mastery, which is exactly this allocation; add his E&amp;A speaker-table row (currently missing)</div>
+        <div class="covers"><strong>Teaches:</strong> W13 the free rung · W14 the product step ladder · W15 the enrolment conversation · co-hosts the W15 build day<br><strong>Action:</strong> his fee row sits on the table at ~3 classes per Mastery, which is exactly this allocation; his E&amp;A speaker-table row now exists, marked In Negotiation (7 Sep)</div>
       </div>
 
     </div>
@@ -1528,7 +1771,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
     <div class="callout" style="margin-top:18px">
       <div class="ic">◆</div>
-      <div><p><strong>Alignment actions, updated after the 1 Sep meeting and the transcript mining.</strong> (1) <strong>Resolved:</strong> Marisa holds W2 as a taught identity session; Jimmy returns as an author with six lessons; Regan becomes the single fireside; Ben Greenfield is removed (2 Sep) and W12 restored to Vishen; Alessio's fee is approved at $8K; Jason Goldberg hosts both summits. (2) <strong>Still open on the tables:</strong> Ajit has no E&amp;A speaker-table row despite carrying three weeks (add it); who appears in the summit vs Mastery-only blocks the outreach wording for Sabrina, Kash and Ajit (Vishen rules next week). (3) Remaining Summit-only names (Ferrazzi, Eyal, Vincenzi, plus Maria Wendt's summit slot) are promo candidates, not Mastery authors. (4) Outreach to Jimmy, John, Regan, Marisa and Jason is live (Marta + Marijana, Gareth CC'd); marketing headliners: Vishen, Regan, John, Marisa. (5) The table spells Kash "Akash (Kash) Rupareliaa"; our pages carry "Rupalia" — settle the spelling once.</p></div>
+      <div><p><strong>Alignment actions, updated after the 1 Sep meeting and the transcript mining.</strong> (1) <strong>Resolved:</strong> Marisa holds W2 as a taught identity session; Jimmy returns as an author with six lessons; Regan becomes the single fireside; Ben Greenfield is removed (2 Sep) and W12 restored to Vishen; Alessio's fee is approved at $8K; Jason Goldberg hosts both summits. (2) <strong>Still open on the tables:</strong> Ajit's E&amp;A speaker-table row now exists and reads In Negotiation (7 Sep); who appears in the summit vs Mastery-only blocks the outreach wording for Sabrina, Kash and Ajit (Vishen rules next week). (3) Remaining Summit-only names (Ferrazzi, Eyal, Vincenzi, plus Maria Wendt's summit slot) are promo candidates, not Mastery authors. (4) Outreach to Jimmy, John, Regan, Marisa and Jason is live (Marta + Marijana, Gareth CC'd); marketing headliners: Vishen, Regan, John, Marisa. (5) The table spells Kash "Akash (Kash) Rupareliaa"; our pages carry "Rupalia" — settle the spelling once.</p></div>
     </div>
   </section>
 
@@ -1622,7 +1865,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
         <tr><td><strong>Marisa Peer</strong></td><td><span class="pill">Guest author</span></td><td><strong>1</strong> teach (W2, taught identity session)</td><td>—</td><td>$7.5K/class quoted · <strong>$15K package</strong> (summit + 1 Mastery class) · top tier</td></tr>
         <tr><td><strong>John Lee</strong></td><td><span class="pill">Guest author</span></td><td><strong>2</strong> teach + 1 build-day co-host (W10, W16)</td><td>—</td><td>$5K/class quoted · his note: <strong>"don't go higher than $12K package"</strong> · top tier</td></tr>
         <tr><td><strong>Regan Hillyer</strong></td><td><span class="pill">Proof point</span></td><td><strong>1</strong> fireside (W11) · summit fireside replays free in W1</td><td>—</td><td>$10K class + $5K summit fireside = <strong>$15K</strong> · top tier · headliner</td></tr>
-        <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="pill">Guest author</span></td><td><strong>3</strong> teach + 1 build-day co-host (W13–W15) · 4th class optional</td><td>—</td><td>$4K/class quoted · <strong>~$12K for 3</strong> · add his missing speaker-table row</td></tr>
+        <tr><td><strong>Ajit Nawalkha</strong></td><td><span class="pill">Guest author</span></td><td><strong>3</strong> teach + 1 build-day co-host (W13–W15) · 4th class optional</td><td>—</td><td>$4K/class quoted · <strong>~$12K for 3</strong> · speaker-table row In Negotiation (7 Sep)</td></tr>
         <tr><td><strong>Alessio Pieroni</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>7</strong> lab days + intensive build floor (8 slots; lab lead only, never an author seat)</td><td>—</td><td><strong>Approved 1 Sep: $1K/class = $8K</strong> · summit free</td></tr>
         <tr><td><strong>Akash "Kash" Rupalia</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>4</strong> lab days + intensive shoot floor (5 slots)</td><td>—</td><td>$1K/class · <strong>$5K</strong> · summit free as lead-gen · fungible with Sabrina</td></tr>
         <tr><td><strong>Sabrina Stocker</strong></td><td><span class="pill g">Lab lead</span></td><td><strong>3</strong> lab days (W5 co-host, W11, W17)</td><td>—</td><td>$1K/class · <strong>$3K</strong> · summit unpaid · affiliate-link question open</td></tr>
