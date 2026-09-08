@@ -330,11 +330,11 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 .vs-k{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--vc)}
 .vs-t{display:block;font-size:15px;font-weight:700;margin-top:3px;line-height:1.25;color:var(--ink)}
 .vs-by{display:block;font-size:12px;color:var(--text-subtle);margin-top:3px;line-height:1.35}
-.vs-rec{display:inline-block;font-style:normal;margin-left:6px;background:var(--green-light);color:var(--green);border-radius:128px;padding:2px 8px;font-size:10px;letter-spacing:.06em;vertical-align:1px}
+.vs-rec{display:inline-block;font-style:normal;margin-left:6px;background:var(--green-light);color:var(--green);border-radius:128px;padding:2px 8px;font-size:10px;letter-spacing:.06em;vertical-align:1px;white-space:nowrap}
 .vs.current{background:var(--vc);border-color:var(--vc);color:#fff;box-shadow:var(--shadow-medium)}
-.vs.current .vs-k,.vs.current .vs-by{color:rgba(255,255,255,.82)} .vs.current .vs-t{color:#fff}
+.vs.current .vs-k,.vs.current .vs-by{color:rgba(255,255,255,.82);padding-right:84px} .vs.current .vs-t{color:#fff}
 .vs.current .vs-rec{background:#fff;color:var(--green)}
-.vs-here{position:absolute;top:10px;right:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.vs-here{position:absolute;bottom:11px;right:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9)}
 .vs.cmp.current{background:var(--green);border-style:solid}
 .vstripe{height:6px;background:var(--vc,var(--grey-500))}
 .vstripe.v1{--vc:var(--grey-500)} .vstripe.v2{--vc:var(--gold)} .vstripe.v3{--vc:var(--brand)} .vstripe.cmp{--vc:var(--green)}
@@ -342,6 +342,58 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 .vs-lbl+.vswitch{padding-top:8px}
 @media(max-width:900px){.vswitch{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.vswitch{grid-template-columns:1fr}}
+
+/* Accelerator */
+.acc-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.acc-day{display:block;background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px 16px 14px;text-decoration:none;color:var(--ink);border-top:6px solid var(--brand);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
+a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
+.acc-day .dn,.acc-day .dt,.acc-day .dm{display:block}
+.acc-day .dn{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content)}
+.acc-day .dt{font-size:16px;font-weight:700;line-height:1.25;margin:4px 0 8px;text-wrap:balance}
+.acc-day .dm{font-size:12.5px;color:var(--text-subtle);line-height:1.4}
+.acc-belief{font-size:19px;line-height:1.45;font-weight:500;color:var(--ink);padding:18px 22px;border-left:6px solid var(--brand);background:var(--brand-light);border-radius:0 16px 16px 0;margin:0 0 18px}
+.acc-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:22px}
+.acc-meta .card{padding:18px 20px}
+.acc-meta .kicker{margin-bottom:6px}
+.acc-meta p{font-size:14.5px;line-height:1.55;color:var(--text-muted)}
+.acc-vid{border:1px solid var(--border);border-radius:16px;background:#fff;margin-bottom:14px;overflow:hidden}
+.acc-vid-head{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:16px 20px;background:var(--grey-100);border-bottom:1px solid var(--border)}
+.acc-vid-head .vn{width:44px;height:44px;border-radius:12px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.acc-vid-head h4{font-size:17px;line-height:1.3;margin:0;text-wrap:balance}
+.acc-chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.acc-chips span{font-size:11.5px;font-weight:700;letter-spacing:.02em;background:#fff;border:1px solid var(--border);border-radius:128px;padding:4px 10px;color:var(--text-muted);white-space:nowrap}
+.acc-chips span.rt{background:var(--brand);border-color:var(--brand);color:#fff}
+.acc-chips span.pf{background:var(--pink-light);border-color:#F3C4D9;color:var(--pink)}
+.acc-vid-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.acc-vid-body>div{padding:16px 20px}
+.acc-vid-body>div+div{border-left:1px solid var(--border)}
+.acc-lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-subtle);margin:0 0 6px}
+.acc-lbl+.acc-lbl{margin-top:14px}
+.acc-cue{font-size:14px;line-height:1.55;color:var(--ink);margin:0 0 10px;padding-left:12px;border-left:3px solid var(--grey-300)}
+.acc-cue b{color:var(--text-subtle);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:block}
+.acc-cue.in{border-color:var(--green)} .acc-cue.out{border-color:var(--orange)}
+.acc-list{list-style:none;padding:0;margin:0}
+.acc-list li{font-size:14px;line-height:1.5;color:var(--text-muted);padding:5px 0 5px 14px;position:relative}
+.acc-list li:before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--brand)}
+.acc-list.cuts li:before{background:var(--orange)}
+.acc-list.screen li{color:var(--ink);font-weight:500}
+.acc-list li .ln{font-size:11.5px;font-weight:700;color:var(--text-subtle);letter-spacing:.02em}
+.acc-note{font-size:14px;line-height:1.55;color:var(--text-muted);margin:0}
+.acc-ex{margin-top:18px;background:var(--green-light);border:1px solid var(--green-border);border-radius:16px;padding:18px 22px}
+.acc-ex .kicker{color:var(--green);margin-bottom:6px}
+.acc-ex p{font-size:15px;line-height:1.6;color:var(--ink);margin:0}
+.acc-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.acc-rules .card{padding:20px 22px}
+.acc-rules .card h4{font-size:15.5px;margin:0 0 6px}
+.acc-rules .card p{font-size:14px;line-height:1.55;color:var(--text-muted);margin:0}
+.acc-dayhead{display:grid;grid-template-columns:62px 1fr;gap:16px;align-items:center;flex:1}
+.acc-dayhead .dnum{width:62px;height:58px;border-radius:14px;background:var(--brand);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:20px;line-height:1}
+.acc-dayhead .dnum small{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-top:3px}
+.module.acc .module-head{border-left:6px solid var(--brand)}
+.acc-tools{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.acc-flag{border-left:4px solid var(--orange);padding:10px 16px;margin-bottom:10px;background:#fff;border-radius:0 12px 12px 0;border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.acc-flag h4{font-size:15px;margin:0 0 4px} .acc-flag p{font-size:14px;line-height:1.55;color:var(--text-muted);margin:0}
+@media(max-width:800px){.acc-vid-body{grid-template-columns:1fr}.acc-vid-body>div+div{border-left:0;border-top:1px solid var(--border)}.acc-vid-head{grid-template-columns:44px 1fr}.acc-chips{justify-content:flex-start;grid-column:1/-1}}
 </style>
 </head>
 <body>
@@ -392,6 +444,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
       <button class="tab-btn" data-tab="evidence"><span class="num">06</span>The Evidence</button>
       <button class="tab-btn" data-tab="format"><span class="num">07</span>Format &amp; Contracts</button>
       <button class="tab-btn" data-tab="artefact"><span class="num">08</span>The Artefact</button>
+      <button class="tab-btn" data-tab="accelerator"><span class="num">09</span>The Accelerator</button>
     </nav>
   </div>
 </div>
@@ -2278,6 +2331,913 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 </div>
 </div>
 
+<!-- ACCEL-START -->
+<div class="tab-panel" id="tab-accelerator">
+<div class="wrap">
+  <section>
+    <div class="callout dark">
+      <div class="ic">09</div>
+      <div><p><strong>The Accelerator is the pre-recorded programme: Vishen's six-hour MVU Tallinn accelerator, cut into a seven-day learning journey.</strong> This tab is the brief for the editors. Every video has a title, a source line range, verbatim in and out cues, its internal cuts with reasons, on-screen text and notes. Nothing is rewritten. The learner gets one day at a time; each day ends on one exercise.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The shape of the cut</div>
+      <h2>Six hours on stage becomes 4h 39m across seven days</h2>
+      <p class="body-lg">Become a World-Class Expert And Authority In Your Niche Accelerator · Vishen Lakhiani · MVU Tallinn, live-event transcript (3,603 lines, 56,630 words). Of 56,630 spoken words, 41,864 are kept (74%); the rest is live-room logistics, handovers, a pre-launch product demo, the offer pitch and Q&amp;A that does not travel. Runtimes are estimates at 150 words a minute and will land shorter once the room is taken out.</p>
+    </div>
+    <div class="grid g4">
+      <div class="stat"><div class="n">7</div><div class="l">Days, one a day, each ending on an exercise</div></div>
+      <div class="stat green"><div class="n">45</div><div class="l">Titled videos, two to twenty minutes each</div></div>
+      <div class="stat orange"><div class="n">4h 39m</div><div class="l">Estimated finished runtime from 6h 18m of source</div></div>
+      <div class="stat pink"><div class="n">74</div><div class="l">Listed cuts, each with a reason</div></div>
+    </div>
+    <div class="acc-map modmap"><a class="acc-day" href="#acc-d1" data-open="acc-d1"><span class="dn">Day 1</span><span class="dt">Start on the Way</span><span class="dm">4 videos · ~20 min</span></a><a class="acc-day" href="#acc-d2" data-open="acc-d2"><span class="dn">Day 2</span><span class="dt">Be Seen</span><span class="dm">6 videos · ~23 min</span></a><a class="acc-day" href="#acc-d3" data-open="acc-d3"><span class="dn">Day 3</span><span class="dt">Your First Course</span><span class="dm">7 videos · ~48 min</span></a><a class="acc-day" href="#acc-d4" data-open="acc-d4"><span class="dn">Day 4</span><span class="dt">Sell Without Selling</span><span class="dm">6 videos · ~42 min</span></a><a class="acc-day" href="#acc-d5" data-open="acc-d5"><span class="dn">Day 5</span><span class="dt">Your Edge and Your Ladder</span><span class="dm">7 videos · ~46 min</span></a><a class="acc-day" href="#acc-d6" data-open="acc-d6"><span class="dn">Day 6</span><span class="dt">Turn On the Tap</span><span class="dm">7 videos · ~1h 02m</span></a><a class="acc-day" href="#acc-d7" data-open="acc-d7"><span class="dn">Day 7</span><span class="dt">The Masterclass, and What Only You Can Do</span><span class="dm">8 videos · ~38 min</span></a></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">How to read the brief</div>
+      <h2>Six rules for the edit</h2>
+    </div>
+    <div class="acc-rules"><div class="card"><h4>Verbatim, always</h4><p>Every word in the cut is Vishen&#x27;s or a guest&#x27;s, from the transcript. No re-voicing, no paraphrase in captions. If a join needs a bridge, it is an on-screen card, not a new line.</p></div><div class="card"><h4>Line numbers, not timecodes</h4><p>The transcript has no timestamps, so every segment is an inclusive line range of the source file, with the opening and closing words quoted so the editor can find the frame. The full script page shows every line.</p></div><div class="card"><h4>One idea per video</h4><p>Each video is a single teaching beat with its own title, between two and twenty minutes. Days run 45 to 90 minutes so a learner finishes one a day.</p></div><div class="card"><h4>Cuts have reasons</h4><p>Everything removed is listed with why: live-room logistics, clock times, product demos that will date, applause, handovers, offer copy. Nothing is cut silently.</p></div><div class="card"><h4>On-screen text is the scaffold</h4><p>The listed lines are the lower-thirds and cards for each video. Quotes in them are from the transcript; numbers that are the speaker&#x27;s own claims are flagged below.</p></div><div class="card"><h4>Lower-thirds on every voice</h4><p>Vishen, Jimmy Naraine, Alessio Pieroni, Kash Rupareliaa, Sabrina Stocker, Safwaan Mohammed. Spellings to be checked against credits before captioning; see the flags.</p></div></div>
+    <div class="callout" style="margin-top:20px">
+      <div class="ic">→</div>
+      <div><p><strong>The full edit script</strong> lays out every video with its complete verbatim text, line by line, the cuts collapsed in place with their reasons, and language marked. <a href="/accelerator-edit-script">Open the edit script</a>. The transcript file itself is the source of truth; the script page is a view of it.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">The journey, day by day</div>
+      <h2>Seven days, 45 videos</h2>
+      <p class="body-md">Days 1 and 2 are Vishen alone: the compass, the visibility wound, the three things every paid expert needs. Days 3, 4 and 6 hand the room to the guest experts for the first product, the funnel and traffic. Day 5 is the edge and the ladder. Day 7 is the masterclass doctrine and the close, bookending Day 1. Open a day to see its videos.</p>
+    </div>
+    <div class="acc-tools"><button class="tool" data-all="open">Open all days</button><button class="tool" data-all="close">Close all</button></div>
+    <div class="module acc" data-mod id="acc-d1">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">1<small>Day</small></div>
+      <div class="mtitle"><h3>Start on the Way</h3><div class="msub">4 videos · ~20 min · Be Seen · the compass</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;When you start on the way, the way appears.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 1 you have written the first email of a nine-part sequence and said the suckiest thing about your business out loud.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>3,045 words across 4 videos, about 20 min at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d1v1">
+  <div class="acc-vid-head"><div class="vn">1.1</div><h4>Six Hours Is a Compass. Only You Can Set Foot on the Way.</h4><div class="acc-chips"><span>Lines 55–59, 65–102</span><span>730 words</span><span class="rt">~4.9 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“So, we have so many things to talk about today.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…continue growing as an expert and authority. So we&#x27;ll talk about those as well.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 65 is shared: start at “I&#x27;m not just going to be sharing”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">60–64</span> · Live-room logistics: moving seats for family; the lunch half of line 65 goes with it.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Rumi: &quot;When you start on the way, the way appears.&quot;</li><li>2004 · no Stripe, no Facebook, no YouTube, no iPhone</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Opening of the whole programme. Vishen names the guest experts here; keep, since they appear on Days 3, 4 and 6. Lower-third each name as it is said.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d1v2">
+  <div class="acc-vid-head"><div class="vn">1.2</div><h4>Barbara from Atlanta: The Ugly Website That Started Everything</h4><div class="acc-chips"><span>Lines 103–159</span><span>847 words</span><span class="rt">~5.6 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“You are starting in a different era. Let me give you an example. One…”</p>
+      <p class="acc-cue out"><b>Out</b>“…want to make them dance to get there. So this is what we did.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>December 22, 2002 · the first website</li><li>Two skills: copywriting · the lead magnet</li><li>&quot;Small and sucky is good.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Screen share: Vishen shows the original 2004 site live. Editors need the capture or a clean screenshot of the page (it is still up).</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d1v3">
+  <div class="acc-vid-head"><div class="vn">1.3</div><h4>The Nine-Part Email Sequence: What, Why, When. Never How.</h4><div class="acc-chips"><span>Lines 160–235</span><span>1,149 words</span><span class="rt">~7.7 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“When they signed up, they got a nine-part email sequence. Okay,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…So can you see how you can do this?”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Nine-part email sequence</li><li>&quot;Phraseology&quot;: name the free thing</li><li>Lesson 1: the what and the why · Lesson 2 (24 hours later): the how, a taste</li><li>What · Why · When → the how is what they buy</li><li>P.S. line under every lesson</li><li>Sales up 96% overnight</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The single most complete lesson in the transcript. Keep every step of the sequence; the L-theanine example (197–207) is the transferable version for non-education products. The &quot;repeat after me / say it louder&quot; beats (130–131, 167) can stay as audience texture or be trimmed.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d1v4">
+  <div class="acc-vid-head"><div class="vn">1.4</div><h4>Start Small. Start Sucky.</h4><div class="acc-chips"><span>Lines 236–254, 294–298</span><span>319 words</span><span class="rt">~2.1 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“So that&#x27;s how Mindvalley started. It started with a simple, ugly,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…but what you got to learn to build is an infrastructure that helps you”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">244–254</span> · Partner exercise addressed to the room (&quot;turn to your partner&quot;). Keep Vishen&#x27;s own example (249–253); cover the instruction with an on-screen prompt for the viewer.</li><li><span class="ln">255–293</span> · Agenda for the live day; time references (&quot;from 11 to 8&quot;, &quot;before lunch&quot;).</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;I&#x27;m okay starting small and sucky.&quot;</li><li>Your prompt: say the suckiest thing about your business right now, with a smile</li><li>200,000 Apple stores · it started with this website</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Closes Day 1 on the compass metaphor (294–298): &quot;give you the map so you understand the direction you need to go.&quot;</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 1 exercise (closing card)</div><p>Write Email 1 of your own nine-part sequence: the what, the why, the when. Not the how. Then tell one person the suckiest thing about your business right now, with a smile.</p></div>
+  </div>
+</div>
+<div class="module acc" data-mod id="acc-d2">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">2<small>Day</small></div>
+      <div class="mtitle"><h3>Be Seen</h3><div class="msub">6 videos · ~23 min · Be Seen · Architecture · Show Up</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;The idea that you did not deserve to be seen is nothing more than a faulty algorithm.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 2 you have filmed yourself for sixty seconds and written the one test you will run this week.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>3,489 words across 6 videos, about 23 min at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d2v1">
+  <div class="acc-vid-head"><div class="vn">2.1</div><h4>Three Things Every Paid Expert Needs: S-A-S</h4><div class="acc-chips"><span>Lines 299–304</span><span>79 words</span><span class="rt">~32 sec</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“test. So what makes an expert on authority successful? I now want to talk…”</p>
+      <p class="acc-cue out"><b>Out</b>“…The first one is you need to be able to be comfortable being seen.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>S · Be Seen</li><li>A · Architecture</li><li>S · Show Up</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Short framing card. Could be joined to the front of the next video if a 45-second standalone is too thin.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d2v2">
+  <div class="acc-vid-head"><div class="vn">2.2</div><h4>Hey Hayden: The Visibility Wound in Action</h4><div class="acc-chips"><span>Lines 305–306, 313–367</span><span>925 words</span><span class="rt">~6.2 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“What do I mean by comfortable being seen? I want to show you something…”</p>
+      <p class="acc-cue out"><b>Out</b>“…the first big block that we have to solve. The block of being seen.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">307–312</span> · Tech setup: &quot;Give me one sec&quot;, screen share, sound check.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>May 6, 2015</li><li>Three signs of the visibility gap: 1 afraid to speak to the wider world · 2 nervous on camera · 3 not wanting to be on camera</li><li>&quot;We&#x27;re all conditioned to not be seen.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Asset: the 2015 &quot;Hey Hayden&quot; video (323–338 is Vishen narrating over it, then the clip itself). Needs the original file. The bullied-kid story (359–366) is the villain beat Vishen later cites on Day 7; keep intact.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d2v3">
+  <div class="acc-vid-head"><div class="vn">2.3</div><h4>Shine Your Light So Bright</h4><div class="acc-chips"><span>Lines 368–424</span><span>891 words</span><span class="rt">~5.9 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Lisa Nichols, who later was the first teacher who got on my stage and…”</p>
+      <p class="acc-cue out"><b>Out</b>“…The switch was flipped. Okay? But the first thing is you got to be”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">403–405</span> · &quot;Please bring on my monitor&quot; and sound cue; keep the reel itself.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Lisa Nichols: &quot;Shine your light so bright, and if anybody complains, tell them to put on some shades.&quot;</li><li>2018 · the first Instagram post · a bad haircut</li><li>1.1 million followers</li><li>&quot;A faulty algorithm.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Asset: the first Instagram post reel (bad haircut). The Jay Shetty hair-drying story is the comic relief of the day; keep whole.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d2v4">
+  <div class="acc-vid-head"><div class="vn">2.4</div><h4>Take One Step. Film Yourself.</h4><div class="acc-chips"><span>Lines 472–474, 542–577</span><span>637 words</span><span class="rt">~4.2 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Now, for those of you watching, okay, watching online. Take your cell phone,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…The question is, did you grow? Okay, so that&#x27;s the first one, seen,”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">425–471</span> · Live stage dance exercise, partner logistics, Michael Jackson music.</li><li><span class="ln">475–541</span> · Filming logistics, Leigh Simons live testimonial, standing/mic exercise. Leigh&#x27;s story (489–519) is a candidate for a separate 2-minute bonus clip.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;Take your cell phone, put it on your table, film yourself dancing. You just need to take one step.&quot;</li><li>&quot;Humanity is overwhelmingly good.&quot;</li><li>Srikumar Rao: &quot;Did you grow?&quot;</li><li>Your test for this week: ______</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The instruction at 472–474 was spoken to the online audience, so it lands naturally in a pre-recorded edit. Vishen&#x27;s bot statistic (546–547) is his claim; flag for comms before it stays in.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d2v5">
+  <div class="acc-vid-head"><div class="vn">2.5</div><h4>Architecture: The Foundation of the House</h4><div class="acc-chips"><span>Lines 578–586, 589–616</span><span>598 words</span><span class="rt">~4.0 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“being seen. Now, the A, and this is what we&#x27;re going to start going…”</p>
+      <p class="acc-cue out"><b>Out</b>“…We&#x27;ll talk about that. All right?”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 616 is shared: end after “All right?”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">587–588</span> · &quot;Are we having a connection issue?&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>A learning architecture</li><li>A sales architecture: summit → $5,000 → downsell → upsell → 30-day sequence</li><li>&quot;The best marketing is a great product.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Screen share of two Figma flowcharts. Recapture cleanly or rebuild as motion graphics from the spoken description. Vishen states these are hypotheses, not Mindvalley&#x27;s real numbers (604–612); keep that sentence.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d2v6">
+  <div class="acc-vid-head"><div class="vn">2.6</div><h4>Sharpen the Sword: Showing Up</h4><div class="acc-chips"><span>Lines 616–642</span><span>359 words</span><span class="rt">~2.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“The final part, so there&#x27;s scene,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…up, you will never succeed. Okay, so with that,”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 616 is shared: start at “The final part,”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;The samurai sharpens his sword a thousand times before battle.&quot;</li><li>Maria Wendt · two days a week</li><li>&quot;Masters show up.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Ends the SAS frame. Stop at &quot;you will never succeed.&quot; (642); the handover to Jimmy (643–646) is cut.</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 2 exercise (closing card)</div><p>Put your phone on the table and film yourself dancing for one minute. Keep it or post it as a story. Then write: &quot;What can I do in the next one week that will be a test in my expertise that will help me grow?&quot;</p></div>
+  </div>
+</div>
+<div class="module acc" data-mod id="acc-d3">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">3<small>Day</small></div>
+      <div class="mtitle"><h3>Your First Course</h3><div class="msub">7 videos · ~48 min · Architecture · the first product · Jimmy Naraine</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;Everything you release is a draft mode.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 3 you have a brain dump, three to seven idea clusters, and a date to film your pyjama draft.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>7,208 words across 7 videos, about 48 min at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d3v1">
+  <div class="acc-vid-head"><div class="vn">3.1</div><h4>Two Socially Anxious Men Outside a Bar</h4><div class="acc-chips"><span>Lines 679–700</span><span>382 words</span><span class="rt">~2.5 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“By the way, we bonded over social anxiety. We didn&#x27;t tell them that. So…”</p>
+      <p class="acc-cue out"><b>Out</b>“…really when you embrace vulnerability, when you connect with people through our common humanity,”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">645–678</span> · Handover, Jimmy&#x27;s bio read with jokes, Tallinn 2016 story (told better at 2893–2933, used on Day 7).</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Tallinn, 2016 · Manna La Roosa</li><li>&quot;When you embrace vulnerability, that&#x27;s when the magic happens.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Jimmy and Vishen alternate; lower-third both. Opens Day 3 on common humanity, which is the through-line of Jimmy&#x27;s talk.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d3v2">
+  <div class="acc-vid-head"><div class="vn">3.2</div><h4>Nobody Cares About Your Accent</h4><div class="acc-chips"><span>Lines 701–785</span><span>1,411 words</span><span class="rt">~9.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“that&#x27;s when the magic happens. And the same thing applies to building courses. And…”</p>
+      <p class="acc-cue out"><b>Out</b>“…about it later. But you want to go from broad to very, very niche.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;People don&#x27;t want to learn from perfection.&quot;</li><li>200,000 students · a part-time thing</li><li>&quot;Information is not even free.&quot;</li><li>&quot;Pick one problem and solve it exceptionally well.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Asset: Jimmy&#x27;s viral eye-contact clip (735–739) and his father&#x27;s instructor profile. Both are Jimmy&#x27;s to clear.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d3v3">
+  <div class="acc-vid-head"><div class="vn">3.3</div><h4>The 40-Minute Course That Reached 100,000 People</h4><div class="acc-chips"><span>Lines 786–851</span><span>1,137 words</span><span class="rt">~7.6 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Now, there are exceptions. If you have an audience, you can build broad courses,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…to really, don&#x27;t just think about it, but today I want you to start”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>MVP: minimum viable transformation</li><li>&quot;Everything you release is a draft mode.&quot;</li><li>Too broad: &quot;Master confidence&quot; · Specific: &quot;Stay calm during high-stakes negotiations for female entrepreneurs&quot;</li><li>RAS: the part of the brain that says &quot;this is for me&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The course page with the student count (805) is a screen asset.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d3v4">
+  <div class="acc-vid-head"><div class="vn">3.4</div><h4>The MVP Course Blueprint</h4><div class="acc-chips"><span>Lines 852–903</span><span>905 words</span><span class="rt">~6.0 min</span><span class="pf">Language ×2</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“designing this. Okay, so let&#x27;s talk about the course blueprint.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…updates based on the feedback from your customers. Make sense? Yeah?”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>45 to 90 minutes</li><li>Promo video · welcome video</li><li>3 to 7 sections × 3 to 7 videos</li><li>&quot;First video earns the next one.&quot;</li><li>Two quick-win videos at the start</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Diagrammatic; the doorway metaphor (859–862) wants a simple graphic.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d3v5">
+  <div class="acc-vid-head"><div class="vn">3.5</div><h4>Brain Dump, Idea Clusters, Pyjama Draft</h4><div class="acc-chips"><span>Lines 904–999</span><span>1,675 words</span><span class="rt">~11 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Okay, amazing. So, you may ask, how do we even go about designing the…”</p>
+      <p class="acc-cue out"><b>Out</b>“…exceptionally well.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">906–907</span> · &quot;we have a big party tonight. Tomorrow, tomorrow&quot; — live-only aside; keep &quot;play with this&quot;.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Start with the end in mind</li><li>Avatar → wins → brain dump → idea clusters → 80% curriculum → film</li><li>&quot;You learn the most while filming.&quot;</li><li>The pyjama draft</li><li>iPhone 4 and a basic microphone</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The longest single lesson of the day and the most-cited by past students. Keep the AI-as-avatar tip (921–926) and the crew-on-percentage story (985–993).</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d3v6">
+  <div class="acc-vid-head"><div class="vn">3.6</div><h4>You Won&#x27;t Feel Ready. Build the Damn Thing.</h4><div class="acc-chips"><span>Lines 1000–1045</span><span>826 words</span><span class="rt">~5.5 min</span><span class="pf">Language ×3</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“And you want to do it ASAP. This doesn&#x27;t have to take two months.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…wings. All right? Mindvalley, thank you so much. I appreciate you. Thank you so”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1046–1049</span> · Thank-yous and applause.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Bugatti or the car that fits your life?</li><li>&quot;Build the MVP.&quot;</li><li>&quot;Just because you don&#x27;t feel ready doesn&#x27;t mean that you aren&#x27;t ready.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">End on &quot;you will realize that you have the wings. All right?&quot; (1045).</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d3v7">
+  <div class="acc-vid-head"><div class="vn">3.7</div><h4>I Solve All Problems That Come My Way in a Fun and Easy Way</h4><div class="acc-chips"><span>Lines 1052–1102</span><span>872 words</span><span class="rt">~5.8 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“so now you&#x27;ve learned how to get started with an online course. How many…”</p>
+      <p class="acc-cue out"><b>Out</b>“…I solve all problems that come my way in... Perfect.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1050–1051</span> · Handover from Jimmy.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Dr. Barry Morguelan · a $100,000 mastermind</li><li>&quot;I solve all problems that come my way in a fun and easy way.&quot;</li><li>&quot;Your identity creates your reality.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Vishen&#x27;s mantra for overwhelm, placed as the Day 3 closer because the day hands the viewer the most to do. Name spelling: the transcript has &quot;Morgland&quot;; the doctor is Barry Morguelan. Check before captioning.</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 3 exercise (closing card)</div><p>Brain dump everything you could teach on your one problem. Sort it into three to seven idea clusters. Put your pyjama draft in the calendar this week: phone, no mic, one session, the whole thing.</p></div>
+  </div>
+</div>
+<div class="module acc" data-mod id="acc-d4">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">4<small>Day</small></div>
+      <div class="mtitle"><h3>Sell Without Selling</h3><div class="msub">6 videos · ~42 min · Architecture · the funnel · Alessio Pieroni</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;The best way to sell is to narrow the gap.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 4 you have a challenge promise or a quiz diagnostic, a 48-hour product, and your minimum livable income written down.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>6,290 words across 6 videos, about 42 min at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d4v1">
+  <div class="acc-vid-head"><div class="vn">4.1</div><h4>This Is Not Just for Educators</h4><div class="acc-chips"><span>Lines 1105–1121, 1543–1560</span><span>548 words</span><span class="rt">~3.7 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Today, he&#x27;s one of the top digital marketers in the world. When Navi Jain,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…So you can use these tools to move any type of product. And today,”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1103–1104</span> · Handover.</li><li><span class="ln">1122–1132</span> · Bridge into Alessio, used at the top of the next video.</li><li><span class="ln">1536–1542</span> · After-lunch recap.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Naveen Jain · Viome · &quot;even billion-dollar companies use expert and authority&quot;</li><li>Nora Cavani · Alba Health · +300% in three months</li><li>&quot;Founder marketing is essential.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Two founder examples joined into one short video. The Nora passage is from the afternoon session; the join is clean because both are Vishen to camera.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d4v2">
+  <div class="acc-vid-head"><div class="vn">4.2</div><h4>The Monk Who Never Sold: The Law of Momentum</h4><div class="acc-chips"><span>Lines 1122–1199</span><span>1,207 words</span><span class="rt">~8.0 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“I want to double stress this. Okay, now, you&#x27;ve learned the importance of being…”</p>
+      <p class="acc-cue out"><b>Out</b>“…an expected time frame. And the goal narrowed the gap that we saw before.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1170–1171</span> · &quot;slides will be available at the end&quot; — live-only.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>20,000 in the challenge · 1,600 joined · ~8%</li><li>Law 1: Momentum</li><li>&quot;Marketing is about bridging this gap.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Alessio&#x27;s opening story. Lower-third: Alessio Pieroni, former CMO of Mindvalley, Scale for Impact.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d4v3">
+  <div class="acc-vid-head"><div class="vn">4.3</div><h4>Build a Challenge Funnel: Promise, VIP, Benchmarks</h4><div class="acc-chips"><span>Lines 1200–1306</span><span>1,782 words</span><span class="rt">~12 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Now, I always say that you need to use a challenge for different reasons.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…free challenge when you want to build your community.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 1306 is shared: end after “build your community.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>A promise: believable · simple · stretched</li><li>&quot;Gain 500 Instagram followers in five days&quot;</li><li>Free community · VIP · product · upsell</li><li>50% of big-ticket buyers bought the VIP first</li><li>Opt-in → upgrade → show-up sequence → challenge → sales sequence</li><li>Benchmarks: 40% opt-in · 4% VIP · 15% live / 30% total · 7% conversion</li><li>Free challenge vs paid challenge ($7 to $99)</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Alessio&#x27;s slides carry the benchmarks; rebuild them as clean cards.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d4v4">
+  <div class="acc-vid-head"><div class="vn">4.4</div><h4>The Law of Precision: Quiz Funnels</h4><div class="acc-chips"><span>Lines 1306–1384</span><span>1,282 words</span><span class="rt">~8.5 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Now, let&#x27;s go back to the basic.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…and you can take things to the next level.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 1306 is shared: start at “Now, let&#x27;s go back to the basic.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1385–1389</span> · &quot;DM me the word slides&quot;, thank-yous.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Law 2: Precision</li><li>A bad quiz collects data. A good quiz creates the customer.</li><li>The ARC: aspirational → reflective → the honesty question</li><li>8 to 12 questions · 3 to 5 results · a page for each</li><li>Archetype · Diagnostic · Score · Potential · Risk</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The quiz funnel needs no face on camera (1321–1324): say so on screen, it is the answer for viewers still carrying the Day 2 wound.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d4v5">
+  <div class="acc-vid-head"><div class="vn">4.5</div><h4>48 Hours to Your First Product</h4><div class="acc-chips"><span>Lines 1445–1480</span><span>615 words</span><span class="rt">~4.1 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“If you have many different offerings and types of audience you want to serve,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…tiny, that&#x27;s light, that&#x27;s great value? but do it in 48 hours. Okay?”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1390–1444</span> · Italian suit story, lunch logistics (Bolt, Wolt), and the &quot;courses stopped working&quot; question, which is answered with a product demo that will date. The one keepable line, &quot;courses are not dead, just the mechanism changes&quot; (1433–1444), can be a bonus clip.</li><li><span class="ln">1481–1483</span> · Applause.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;What can you do in 48 hours?&quot;</li><li>Feature-itis: the enemy of launching</li><li>&quot;The customer must say: great value.&quot;</li><li>16 people came to Estonia · the next event had a thousand</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Opens on an audience question (1445–1447). Show the question as an on-screen card rather than the room audio.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d4v6">
+  <div class="acc-vid-head"><div class="vn">4.6</div><h4>Celebrate Every Dollar: Your Minimum Livable Income</h4><div class="acc-chips"><span>Lines 1484–1534</span><span>856 words</span><span class="rt">~5.7 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Come on stage, Jimmy. Like when you build products, right? When you do your…”</p>
+      <p class="acc-cue out"><b>Out</b>“…quit. Celebrate every dollar. That&#x27;s how I suggest you start if you&#x27;re just beginning.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1535</span> · &quot;I&#x27;ll see you guys after lunch.&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;Treat products like social posts.&quot;</li><li>&quot;No one has even seen it. So there is no rejection.&quot;</li><li>$4.50 a day · a grande at Starbucks</li><li>MLI: minimum livable income · $4,000 → quit → $8,000 in one month</li><li>Don&#x27;t quit your day job. Know the number.</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Jimmy and Vishen together; the Starbucks escalation is the laugh of the day. Both speakers on lower-thirds.</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 4 exercise (closing card)</div><p>Write one challenge promise that is believable, simple and stretched, or the eight to twelve questions of your quiz. Decide the product you can ship in 48 hours. Write down your minimum livable income.</p></div>
+  </div>
+</div>
+<div class="module acc" data-mod id="acc-d5">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">5<small>Day</small></div>
+      <div class="mtitle"><h3>Your Edge and Your Ladder</h3><div class="msub">7 videos · ~46 min · Architecture · the product step ladder</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;Your edge gets you noticed. Your ladder gets you paid.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 5 you have three things that make you weird written down and a three-column map of your product ladder.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>6,876 words across 7 videos, about 46 min at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d5v1">
+  <div class="acc-vid-head"><div class="vn">5.1</div><h4>30/70: The Single Biggest Mistake Experts Make</h4><div class="acc-chips"><span>Lines 1561–1579, 1583–1604</span><span>637 words</span><span class="rt">~4.2 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“what we want to talk about is a product step ladder. So could we…”</p>
+      <p class="acc-cue out"><b>Out</b>“…appearing. Okay? That&#x27;s where we begin.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 1604 is shared: end after “That&#x27;s where we begin.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1580–1582</span> · Aside to Nora in the room.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>30% new customers · 70% moving existing customers up the ladder</li><li>$99 → $399 → summit → $5,000</li><li>&quot;A product step ladder rooted in quality.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Slides: &quot;could we get the slides on screen&quot; (1561) is a cue for the editor to bring in the ladder graphic.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d5v2">
+  <div class="acc-vid-head"><div class="vn">5.2</div><h4>Everyone Has Knowledge. Almost Nobody Has an Edge.</h4><div class="acc-chips"><span>Lines 1604–1647</span><span>688 words</span><span class="rt">~4.6 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“So let&#x27;s look at the ladder. The first thing you&#x27;ve got to…”</p>
+      <p class="acc-cue out"><b>Out</b>“…that edge, photography, is what gives Mindvalley its advantage. What are you weird about?”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 1604 is shared: start at “So let&#x27;s look at the ladder.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Skill A × Skill B × Skill C = your edge</li><li>Meditation × stage presence × photography</li><li>&quot;What makes you weird?&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The Bosnia photography story (1621–1626) is the emotional centre; do not trim it.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d5v3">
+  <div class="acc-vid-head"><div class="vn">5.3</div><h4>What Makes You Weird? Three Worked Examples</h4><div class="acc-chips"><span>Lines 1648–1733, 1735–1777</span><span>2,054 words</span><span class="rt">~14 min</span><span class="pf">Language ×4</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“I want a couple of hands to raise to go up.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…you. Trino now has a team. She&#x27;s the founder of a company. But for”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1734</span> · &quot;Okay, so I want you to...&quot; broken sentence.</li><li><span class="ln">1745–1751</span> · Trim the stage call for Trinu (&quot;Where&#x27;s Trina Lise? Okay.&quot;) to the introduction only.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Rasmus · a castle in Tuscany</li><li>Nana · Rangoon → refugee → sales manager → meditation for lawyers</li><li>Inka · Mongolian nomad · dentist · bow and arrow from a horse</li><li>Trinu · makeup artist · energy healer · &quot;get your liver checked&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Live coaching. Audience audio needs cleaning; each participant should be asked for consent to appear in the recorded programme. If any decline, the video still works with Vishen&#x27;s own mix (1735–1744) and Trinu.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d5v4">
+  <div class="acc-vid-head"><div class="vn">5.4</div><h4>Write Down Your Weirdness</h4><div class="acc-chips"><span>Lines 1778–1789, 1793–1796, 1801–1810</span><span>393 words</span><span class="rt">~2.6 min</span><span class="pf">Language ×2</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Mindvalley, she wanted to do it. Okay. So combine your weirdness into your course.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…So never apologize for your weirdness.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 1810 is shared: end after “never apologize for your weirdness.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1790–1792</span> · Laugh/cough exchange.</li><li><span class="ln">1797–1800</span> · Swap partners, stop talking, party tonight.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;I&#x27;m weird because…&quot; (write three)</li><li>&quot;Understand your weirdness. Embrace it. Share it. Never apologize for it.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Contains the F-word passage (1794–1809). It is on point (&quot;never apologize for your weirdness&quot;) but the team should decide keep, bleep or cut before the edit. Flagged, not decided here.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d5v5">
+  <div class="acc-vid-head"><div class="vn">5.5</div><h4>Three Laws of the Ladder</h4><div class="acc-chips"><span>Lines 1810–1861, 1864–1905</span><span>1,478 words</span><span class="rt">~9.9 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“But now you have a clue on how to structure that first…”</p>
+      <p class="acc-cue out"><b>Out</b>“…So anything above 1,000, you are selling an identity. Now,”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 1810 is shared: start at “But now you have a clue”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1862–1863</span> · &quot;Could someone just grab this jacket.&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>A ladder is a relationship architecture, not a menu</li><li>Law 1: every rung is a complete transformation</li><li>Law 2: the jump must feel inevitable, not pushy</li><li>Law 3: the top of the ladder is never a product. It&#x27;s an identity.</li><li>$49 → $299 a year → $5,000 certification</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The sports-car and Hermès passage (1880–1898) is Vishen in full flow; keep, but comms may want the &quot;small penis&quot; line (1882–1883) trimmed. Flagged.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d5v6">
+  <div class="acc-vid-head"><div class="vn">5.6</div><h4>The Seven-Rung Ladder. Now Build Yours.</h4><div class="acc-chips"><span>Lines 1906–1944, 1951–1982, 1985–1999</span><span>1,267 words</span><span class="rt">~8.4 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“let&#x27;s look at what a ladder looks like. So this is an actual ladder.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…But yeah, it&#x27;s about 10 times faster than it was back when I started.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">1945–1950</span> · Blink Life tool plug (&quot;not available for sale yet&quot;).</li><li><span class="ln">1983–1984</span> · &quot;I can&#x27;t take questions right now.&quot;</li><li><span class="ln">2000–2001</span> · Timer.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Free → $49 → $99/yr → $499/yr → $2,000 → Mastery → $10,000</li><li>A $99 subscription sells like a $300 one-off</li><li>Three columns: have · missing below · missing above</li><li>&quot;Start at the bottom of the ladder.&quot;</li><li>The paradox of choice: seven jams beat thirty</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The exercise runs to a timer in the room; in the edit, end the video on the instruction and let the viewer pause.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d5v7">
+  <div class="acc-vid-head"><div class="vn">5.7</div><h4>Your Edge Gets You Noticed. Your Ladder Gets You Paid.</h4><div class="acc-chips"><span>Lines 2002–2004, 2014–2034</span><span>359 words</span><span class="rt">~2.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Okay, so now you…”</p>
+      <p class="acc-cue out"><b>Out</b>“…have enlightened ideas to spread. But now let&#x27;s talk about how to allow people”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2005–2013</span> · Introductions of the traffic speakers; they open Day 6.</li><li><span class="ln">2035–2038</span> · Handover.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Find your edge · build your ladder · let them climb</li><li>Nike · BMW · identity</li><li>&quot;The world is waiting to learn from your message.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Day 5 summary in Vishen&#x27;s words.</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 5 exercise (closing card)</div><p>Write three things about yourself that make you weird. Then draw three columns: what you already have, what is missing below it, what is missing above it. Aim for three paid rungs.</p></div>
+  </div>
+</div>
+<div class="module acc" data-mod id="acc-d6">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">6<small>Day</small></div>
+      <div class="mtitle"><h3>Turn On the Tap</h3><div class="msub">7 videos · ~1h 02m · Architecture · traffic · Kash, Sabrina, Safwaan</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;Topic and hook matter the most on all platforms.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 6 you have a bank of ten hooks, &quot;speaker&quot; in your LinkedIn headline, and one YouTube idea built on an outlier.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>9,248 words across 7 videos, about 1h 02m at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d6v1">
+  <div class="acc-vid-head"><div class="vn">6.1</div><h4>Topic and Hook Matter Most</h4><div class="acc-chips"><span>Lines 2042–2104, 2108–2116</span><span>1,111 words</span><span class="rt">~7.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“about building a product, basically building the machine. But the question is,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…Thank you.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2039–2041</span> · &quot;raise the energy&quot; warm-up.</li><li><span class="ln">2105–2107</span> · &quot;Can we pause the video&quot; logistics.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>The viral client attraction system: niche eyeballs → convert → double down</li><li>Priority order: topic &amp; hook · format · editing</li><li>Stop inventing. Start researching.</li><li>An outlier: a video that beats its own account&#x27;s average</li><li>200,000 views on a 15,000 account</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Assets: the two example reels (2104–2112) belong to third parties and to Kash; clear or replace with stills. Lower-third: Kash Rupareliaa, founder, Rise Voice.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d6v2">
+  <div class="acc-vid-head"><div class="vn">6.2</div><h4>The Lazy Viral System: B-Rolls, Carousels, Comment CTAs</h4><div class="acc-chips"><span>Lines 2117–2217</span><span>1,628 words</span><span class="rt">~11 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“OK, so I said topics and hooks matter the most. What I want you…”</p>
+      <p class="acc-cue out"><b>Out</b>“…double down on the data that&#x27;s working.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Three formats: talking head · B-roll · carousel</li><li>B-roll: 6 to 12 seconds · trending audio · long caption</li><li>The first 1.5 seconds</li><li>&quot;Comment the word X and I&#x27;ll send you the link&quot;</li><li>ManyChat</li><li>Study the data. Double down.</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The Claude caption prompt (2151) was on a slide; recreate it as a downloadable card. Client screenshots (2166, 2190) need Kash&#x27;s clearance.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d6v3">
+  <div class="acc-vid-head"><div class="vn">6.3</div><h4>Homework: Teach Your Algorithm</h4><div class="acc-chips"><span>Lines 2218–2241</span><span>367 words</span><span class="rt">~2.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“I have some homework for you all. Are you guys okay with homework? Yeah?…”</p>
+      <p class="acc-cue out"><b>Out</b>“…exactly. That could be a B-roll of me. So I&#x27;ve taught you guys Instagram.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Two to three hours of conscious scrolling · save the outliers</li><li>Ask your friends: &quot;B-roll time, here&#x27;s my phone&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Short assignment video; ends at 2241 (&quot;That could be a B-roll of me.&quot;). Cut the mixed-up introduction (2242–2251).</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d6v4">
+  <div class="acc-vid-head"><div class="vn">6.4</div><h4>One Connection Away: LinkedIn Is Where the Bookers Are</h4><div class="acc-chips"><span>Lines 2252–2330</span><span>1,097 words</span><span class="rt">~7.3 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“You&#x27;re only one connection away from completely changing your life.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…ranking?”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2242–2251</span> · Speaker mix-up (&quot;So I&#x27;m not Safwan&quot;).</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;You&#x27;re only one connection away.&quot;</li><li>37% of searches start with AI</li><li>AEO: does AI name you as the trusted authority?</li><li>Event organisers are thinking one word: risk</li><li>Put &quot;speaker&quot; in your bio</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Sabrina opens with an eyes-closed exercise; it works to camera. Asset: the Google AI search screenshot (2294–2305) is hers to provide. Lower-third: Sabrina Stocker, The Apprentice UK finalist.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d6v5">
+  <div class="acc-vid-head"><div class="vn">6.5</div><h4>Perception Selling: Reduce the Organiser&#x27;s Risk</h4><div class="acc-chips"><span>Lines 2331–2430</span><span>1,416 words</span><span class="rt">~9.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Guess what the AI terms will start coming up as? The second aspect,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…speakers.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2431–2449</span> · Live press-feature challenge with QR code.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Perception selling: show the stage, don&#x27;t say &quot;speaker&quot;</li><li>&quot;Join 5,000 others&quot; · publishers want 10,000 subscribers, organisers 5,000</li><li>Featured section: something free · a waitlist · a DM conversation</li><li>&quot;Stop applying. Start orchestrating.&quot;</li><li>Stand-up comedy · improvised musical theatre · fully booked</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Ends on &quot;who does something different to other speakers.&quot; (2430).</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d6v6">
+  <div class="acc-vid-head"><div class="vn">6.6</div><h4>20 Million Videos a Day: Build on Pre-Validated Demand</h4><div class="acc-chips"><span>Lines 2455–2463, 2465–2542</span><span>1,487 words</span><span class="rt">~9.9 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Good afternoon.…”</p>
+      <p class="acc-cue out"><b>Out</b>“…copying outliers is, in my opinion, table stakes in 2026.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 2455 is shared: start at “Good afternoon.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2450–2454</span> · Vishen&#x27;s handover.</li><li><span class="ln">2464</span> · &quot;This clicker isn&#x27;t working.&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>20 million uploads a day</li><li>Five components of a winning video · today: the idea</li><li>Outlier score = views ÷ average of the previous ten</li><li>vidIQ (Chrome extension) · VPH and the multiple</li><li>&quot;Every video idea has a ceiling.&quot;</li><li>Copying outliers is table stakes in 2026</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Assets: Safwaan&#x27;s YouTube homepage screenshot and the therapist thumbnail (2520–2527) are third-party; use as fair-use stills or recreate. Lower-third: Safwaan Mohammed, YouTube strategist.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d6v7">
+  <div class="acc-vid-head"><div class="vn">6.7</div><h4>Splicing, Spinning and the Wembley Question</h4><div class="acc-chips"><span>Lines 2543–2666</span><span>2,142 words</span><span class="rt">~14 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Most people are running this YouTube strategy now, but I still really encourage you…”</p>
+      <p class="acc-cue out"><b>Out</b>“…able to take money on the other side of it as well Thank”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2667–2668</span> · Thank-yous.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Splicing: combine two outlier formats</li><li>Five levers: authority · dream outcome · time constraint · FOMO · your spin</li><li>152 videos to the first 10,000 subscribers</li><li>Curiosity-led → value-proposition-led</li><li>&quot;Wembley, 30,000 people, 15 minutes: what do you talk about?&quot;</li><li>Homework: install vidIQ · 30 minutes of outliers · make one video</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The Priestley/Branson example (2606–2635) needs Daniel Priestley&#x27;s thumbnails as stills; Safwaan can supply.</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 6 exercise (closing card)</div><p>Spend 30 minutes scrolling your niche on purpose and save ten outliers. Ask a friend for ten seconds of B-roll. Add &quot;speaker&quot; to your LinkedIn headline. Install vidIQ and write one video idea.</p></div>
+  </div>
+</div>
+<div class="module acc" data-mod id="acc-d7">
+  <div class="module-head">
+    <div class="acc-dayhead"><div class="dnum">7<small>Day</small></div>
+      <div class="mtitle"><h3>The Masterclass, and What Only You Can Do</h3><div class="msub">8 videos · ~38 min · Architecture · the masterclass · Show Up</div></div></div>
+    <div class="chev">⌄</div>
+  </div>
+  <div class="module-body">
+    <p class="acc-belief">&quot;You give the what, the why and the when. The how is what people pay for.&quot;</p>
+    <div class="acc-meta">
+      <div class="card"><div class="kicker">The promise</div><p>By the end of Day 7 you have your one belief, your villain, and a list you protect. You know the sixty minutes that sell.</p></div>
+      <div class="card"><div class="kicker">Source words kept</div><p>5,708 words across 8 videos, about 38 min at 150 words a minute. Line numbers refer to the transcript file.</p></div>
+    </div>
+    <div class="acc-vid" id="acc-d7v1">
+  <div class="acc-vid-head"><div class="vn">7.1</div><h4>Gift Machine, Sales Machine, and the Secret In Between</h4><div class="acc-chips"><span>Lines 3121–3147</span><span>430 words</span><span class="rt">~2.9 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Okay, so I want to show you how we build masterclasses. I&#x27;ve sold half…”</p>
+      <p class="acc-cue out"><b>Out</b>“…So that&#x27;s the general philosophy. Okay? So,”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">3120</span> · &quot;Let&#x27;s get the slide back up.&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Pure gift machine · pure sales machine · the secret is in between</li><li>60 minutes</li><li>Five ways to ride a bicycle: show all five, go deep on step one</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Vishen&#x27;s &quot;half a billion dollars&quot; figure (3121–3122) is his own stage claim, not verified in a base the team holds; carry as his words with attribution, or trim, per comms.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v2">
+  <div class="acc-vid-head"><div class="vn">7.2</div><h4>Two Covenants, a Hinge at Minute 40, One Belief, One Villain</h4><div class="acc-chips"><span>Lines 3148–3211</span><span>933 words</span><span class="rt">~6.2 min</span><span class="pf">Language ×1</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“there are two covenants in a script. And feel free to take a picture…”</p>
+      <p class="acc-cue out"><b>Out</b>“…Okay.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">3182–3185</span> · &quot;These slides are complex… take a photo&quot; aside; optional.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>The transformational covenant: the viewer who buys nothing still improves</li><li>The conversion covenant</li><li>The hinge at minute 40</li><li>One belief, repeated 14 times: &quot;There is no such thing as a good or bad memory, only a trained and untrained memory.&quot;</li><li>&quot;You do not manifest what you want. You manifest what you broadcast.&quot;</li><li>Name the villain. Never blame the customer.</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Vishen references the Day 2 material (3195–3206) as his own worked example of a villain; the callback is why Day 2 must stay intact.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v3">
+  <div class="acc-vid-head"><div class="vn">7.3</div><h4>Give the What, the Why, the When. Never the How.</h4><div class="acc-chips"><span>Lines 3212–3247</span><span>554 words</span><span class="rt">~3.7 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Now, this is important. As you go through the webinar,…”</p>
+      <p class="acc-cue out"><b>Out</b>“…But there&#x27;s one exit ramp, and that is to enroll.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 3247 is shared: end after “and that is to enroll.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>What · Why · When · never the How</li><li>Paul McKenna: a seven-minute taste of a 26-minute audio</li><li>Never certify the free gift as sufficient</li><li>Never teach the complete how</li><li>Never issue a competing ask at peak openness</li><li>Never bless the exit at a decision moment</li><li>One ask: enrol</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Mirrors Day 1&#x27;s email lesson; consider an on-screen callback &quot;Day 1: the nine-part sequence&quot;.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v4">
+  <div class="acc-vid-head"><div class="vn">7.4</div><h4>The 60 Minutes, Minute by Minute</h4><div class="acc-chips"><span>Lines 3247–3261, 3274–3298</span><span>568 words</span><span class="rt">~3.8 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Okay, now this is what the 60 minutes of a…”</p>
+      <p class="acc-cue out"><b>Out</b>“…don&#x27;t need to worry about this. This one is a little bit too much.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 3247 is shared: start at “Okay, now this is what the 60 minutes”. Line 3298 is shared: end after “a little bit too much.”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">3262–3273</span> · Live self-reference: &quot;I&#x27;m going to talk about the mastermind… shift respectfully to an invite.&quot; Ties to the live pitch, not the doctrine.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Minutes 0–4: hook and promise · teacher story · worldview shift · mechanism · experience · debrief and bridge · proof · offer · guarantee</li><li>Minute 41: rate yourself before and after, then write how you feel</li><li>&quot;People do not buy on logic. We act on emotion, we justify with logic.&quot;</li><li>The close is a process, not a moment: seed the product at minute 17</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Dense slides; rebuild the 60-minute timeline as one clean graphic that stays on screen while he talks.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v5">
+  <div class="acc-vid-head"><div class="vn">7.5</div><h4>The Shooting Script System</h4><div class="acc-chips"><span>Lines 3298–3299, 3309–3353</span><span>634 words</span><span class="rt">~4.2 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Okay. Now, we…”</p>
+      <p class="acc-cue out"><b>Out</b>“…And this is how you do half a billion dollars in sales.”</p>
+      <p class="acc-note" style="font-size:13px"><strong>Split line.</strong> Line 3298 is shared: start at “Okay. Now, we”.</p>
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">3300–3308</span> · Screen fumbling: &quot;let me show you something else… that was a shoot review.&quot;</li><li><span class="ln">3354–3360</span> · MVU-specific: five masterclasses shot during the event and the $100M estimate. Unverified figure; live-only context.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Master shooting script → belief map → teleprompter scripts → shoot review → edit-bay sheet → self-improving system prompt</li><li>&quot;Did Jim say 117 pounds? Can that be verified?&quot;</li><li>Every masterclass gets better</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Screen shares of internal Superbrain scripts and shoot reviews. Blur names and figures, or rebuild as abstracted screens; these are internal documents and Jim Kwik&#x27;s material.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v6">
+  <div class="acc-vid-head"><div class="vn">7.6</div><h4>What AI Can&#x27;t Replace</h4><div class="acc-chips"><span>Lines 2671–2686, 3066–3078, 3081–3119</span><span>1,080 words</span><span class="rt">~7.2 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“What happened in the past one year has been really, really interesting. AI has…”</p>
+      <p class="acc-cue out"><b>Out</b>“…couple of jokes in Spanish.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">2687–2892</span> · Belly-dance trailer and the Blink Life / BlinkLearn product demo. Product is pre-launch and will date the programme; the strongest principle lines are kept in this video. The trailer (2687–2694) is a possible 40-second bonus if the clip is cleared.</li><li><span class="ln">3064–3065</span> · Question preamble.</li><li><span class="ln">3079–3080</span> · &quot;Final question.&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>&quot;People value the transcript more than they value the video.&quot;</li><li>Event sales up 70%</li><li>Let students download the transcript as an MD file</li><li>&quot;AI can&#x27;t replace you. AI can organize you. AI is your chief of staff.&quot;</li><li>Stand-up comedy · writing with Steven Kotler · dance · singing · Spanish</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Three passages joined: the industry shift (2671–2686), the downloadable-transcript answer (3066–3078) and the &quot;what stays human&quot; answer (3081–3119). One reference dangles: &quot;like I generated that belly dancing video&quot; (3098) assumes the trailer was seen; either keep the trailer as the bonus before this video or trim the clause.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v7">
+  <div class="acc-vid-head"><div class="vn">7.7</div><h4>Build a List. Protect the Trust. Don&#x27;t Start With the Book.</h4><div class="acc-chips"><span>Lines 3001–3033, 3522–3538</span><span>843 words</span><span class="rt">~5.6 min</span><span class="pf">Language ×2</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“Yes. So could you speak to the latter principle when we have a niche…”</p>
+      <p class="acc-cue out"><b>Out</b>“…and then you start writing. And writing is probably six months out. Thank you.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">3514–3521</span> · The questioner&#x27;s preamble; show the question as a card: &quot;When is the best time to write a book?&quot;</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Pregnant for nine months, then a one-year-old, then a teenager: the list outlives the niche</li><li>&quot;Build a list and get data on your list and build loyalty with your list.&quot;</li><li>&quot;I only recommend products if I have actually used the product myself.&quot;</li><li>&quot;Don&#x27;t start on the book. Nobody is going to buy your book if you don&#x27;t have the architecture.&quot;</li><li>Content creation half of the week · architecture half of the week</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Two Q&amp;A answers with lasting value. The first opens with a live question (3001–3002); card it.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v8">
+  <div class="acc-vid-head"><div class="vn">7.8</div><h4>Sixteen People Showed Up</h4><div class="acc-chips"><span>Lines 2893–2933</span><span>666 words</span><span class="rt">~4.4 min</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“With the rest of the class so I told you about starting sucky starting…”</p>
+      <p class="acc-cue out"><b>Out</b>“…mouth magic. That&#x27;s where you start stepping into stages like this, okay? Now,”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li>No internal cuts. Runs straight through.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Estonia, 2016 · 16 people</li><li>Marisa Peer · Jimmy Naraine · Course Pro · Jamia · Be Extraordinary for Teens · Rola</li><li>&quot;Human-to-human interaction is more valuable than ever.&quot;</li><li>&quot;When you start on the way, the way appears.&quot;</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">The close of the programme, bookending Day 1. Asset: the 2016 photo (2896–2898). End on &quot;That&#x27;s where you start stepping into stages like this, okay?&quot; (2933); cut the Q&amp;A handover after it.</p>
+    </div>
+  </div>
+</div>
+<div class="acc-vid" id="acc-d7v9">
+  <div class="acc-vid-head"><div class="vn">7.9</div><h4>Your Next Step (separate asset, not in the day count)</h4><div class="acc-chips"><span>Lines 3039–3062</span><span>385 words</span><span class="rt">~2.6 min</span><span>Not in day count</span></div></div>
+  <div class="acc-vid-body">
+    <div>
+      <div class="acc-lbl">Cues (verbatim)</div>
+      <p class="acc-cue in"><b>In</b>“learned before. What you should be doing now is what we&#x27;ve already suggested to…”</p>
+      <p class="acc-cue out"><b>Out</b>“…that architecture. Okay? So that&#x27;s the next step if some of you are interested.”</p>
+      
+      <div class="acc-lbl">Internal cuts</div><ul class="acc-list cuts"><li><span class="ln">3034–3038</span> · Question preamble.</li></ul>
+    </div>
+    <div>
+      <div class="acc-lbl">On-screen text</div><ul class="acc-list screen"><li>Expert &amp; Authority Mastery · four months</li><li>The Guild · application only</li></ul>
+      <div class="acc-lbl">Editor notes</div><p class="acc-note">Vishen&#x27;s answer to &quot;what should I be doing now&quot; doubles as the invitation to the Mastery. Cut as a standalone so the offer copy (price, dates, &quot;mastermind&quot; now the Guild at $10,000 a year) can be re-recorded or captioned when the offer is final. Do not lock this into the Day 7 sequence.</p>
+    </div>
+  </div>
+</div>
+    <div class="acc-ex"><div class="kicker">Day 7 exercise (closing card)</div><p>Write your one belief in a single sentence and name your villain. Draft the minute-40 hinge: the rating before, the exercise, the rating after. Download this programme&#x27;s transcript and feed it to your AI.</p></div>
+  </div>
+</div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Removed from the programme</div>
+      <h2>The global cut list</h2>
+      <p class="body-md">Passages not used by any video, with the reason. Three are marked as candidate bonus clips if the people in them consent.</p>
+    </div>
+    <div class="tbl-wrap"><table class="tbl"><thead><tr><th>Lines</th><th>Words</th><th>What it is, and why it goes</th></tr></thead><tbody><tr><td><span class="ln">12–54</span></td><td>658</td><td>Francesca&#x27;s live opening: breathing, jumping, the Francesca story. Live-room warm-up; not part of the teaching.</td></tr><tr><td><span class="ln">60–64</span></td><td>85</td><td>Seating logistics for Vishen&#x27;s family.</td></tr><tr><td><span class="ln">255–293</span></td><td>651</td><td>The agenda for the live day, with clock times and lunch. Replaced by the Day 1 to Day 7 structure.</td></tr><tr><td><span class="ln">425–471</span></td><td>620</td><td>The stage dance exercise and its logistics. The instruction to the online audience (472–474) survives.</td></tr><tr><td><span class="ln">475–541</span></td><td>802</td><td>Filming logistics, Leigh Simons&#x27;s live story, the standing exercise. Leigh is a candidate bonus clip with his consent.</td></tr><tr><td><span class="ln">643–678</span></td><td>556</td><td>Handover to Jimmy, bio read, first telling of the Tallinn story.</td></tr><tr><td><span class="ln">1046–1051</span></td><td>51</td><td>Applause and handover.</td></tr><tr><td><span class="ln">1390–1444</span></td><td>907</td><td>Italian suit, lunch logistics (Bolt, Wolt), and the &quot;courses stopped working&quot; question answered with a pre-launch product.</td></tr><tr><td><span class="ln">1481–1483</span></td><td>8</td><td>Applause.</td></tr><tr><td><span class="ln">1535–1542</span></td><td>116</td><td>&quot;See you after lunch&quot; and the after-lunch recap.</td></tr><tr><td><span class="ln">1945–1950</span></td><td>95</td><td>Blink Life tool plug.</td></tr><tr><td><span class="ln">2005–2013</span></td><td>152</td><td>Speaker introductions, duplicated on Day 6.</td></tr><tr><td><span class="ln">2035–2041</span></td><td>86</td><td>Handover and &quot;raise the energy&quot;.</td></tr><tr><td><span class="ln">2242–2251</span></td><td>137</td><td>Speaker order mix-up.</td></tr><tr><td><span class="ln">2431–2454</span></td><td>320</td><td>Sabrina&#x27;s live press-feature challenge and Vishen&#x27;s handover.</td></tr><tr><td><span class="ln">2667–2670</span></td><td>39</td><td>Thank-yous and &quot;this next presentation&quot;.</td></tr><tr><td><span class="ln">2687–2892</span></td><td>3,453</td><td>Belly-dance trailer and the Blink Life / BlinkLearn / True Memory demo. Pre-launch product; would date the programme within months. Principles retained in Day 7 video 6.</td></tr><tr><td><span class="ln">2934–3000</span></td><td>1,084</td><td>Q&amp;A: Blink Life model choice (BYOK), privacy, royalties and subscription. The subscription answer (2983–2992) is a candidate bonus clip.</td></tr><tr><td><span class="ln">3034–3038</span></td><td>84</td><td>Question preamble.</td></tr><tr><td><span class="ln">3063–3065</span></td><td>48</td><td>Transition.</td></tr><tr><td><span class="ln">3120–3120</span></td><td>15</td><td>Slide cue.</td></tr><tr><td><span class="ln">3262–3273</span></td><td>206</td><td>Live self-reference to the mastermind pitch.</td></tr><tr><td><span class="ln">3300–3308</span></td><td>103</td><td>Screen fumbling.</td></tr><tr><td><span class="ln">3354–3496</span></td><td>2,304</td><td>MVU-specific $100M estimate, the mastermind (Guild) pitch, credentials, pricing, QR code, Jaideep on the application. Offer copy belongs in a separately produced invitation.</td></tr><tr><td><span class="ln">3497–3513</span></td><td>277</td><td>Q&amp;A: ManyChat on LinkedIn (answered on Day 6), mastermind format.</td></tr><tr><td><span class="ln">3539–3601</span></td><td>964</td><td>Final Q&amp;A: time commitment, AI scary, BOGO, team access, dual founders, execution support, wrap. The &quot;is AI scary&quot; answer contains a political bot statistic that comms should not have to carry.</td></tr></tbody></table></div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <div class="overline">Before the edit starts</div>
+      <h2>Decisions and clearances the brief cannot make</h2>
+      <p class="body-md">Seven items for the producer. None blocks the paper edit; all block the release.</p>
+    </div>
+    <div class="acc-flag"><h4>Unverified figures spoken from stage</h4><p>&quot;Half a billion dollars&quot; in masterclass sales (3121, 3260, 3353), &quot;$100 million&quot; from five masterclasses (3355), &quot;$40 million&quot; for the Jim Kwik masterclass (3382), &quot;1.1 million followers&quot; (407), Jimmy &quot;six to seven hundred thousand&quot; (76) versus &quot;over 1 million&quot; (651, 721), Maria Wendt &quot;$21 million&quot; (629, 1504), &quot;30% of all posts are bots&quot; (546). House rule: one number, one source. Carry these as the speaker&#x27;s own words with attribution, or trim, on comms&#x27; call. None verifies in a base the team holds.</p></div><div class="acc-flag"><h4>Profanity</h4><p>Vishen uses the F-word deliberately and defends it (1794–1809). Jimmy: &quot;build the damn thing&quot;, &quot;holy shit&quot;. Decide keep, bleep or cut once for the whole programme; the brief marks each instance in the script view.</p></div><div class="acc-flag"><h4>Third-party assets</h4><p>2004 website, Hey Hayden video (2015), first Instagram reel (2018), Figma architectures, Jimmy&#x27;s eye-contact clip and his father&#x27;s profile, Alessio&#x27;s slides, Kash&#x27;s example reels and client screenshots, Sabrina&#x27;s search screenshot, Safwaan&#x27;s vidIQ and thumbnail screenshots, Superbrain shooting-script screens. Each needs the file and the right to use it in a paid product.</p></div><div class="acc-flag"><h4>People appearing on camera</h4><p>Rasmus, Nana, Inka (Day 5), Trinu (Day 5), audience questioners (Days 4 and 7). Consent to appear in a recorded, sold programme, or replace with cards.</p></div><div class="acc-flag"><h4>Names and spellings</h4><p>Transcript spellings to check against the credits: Jimmy Naraine (&quot;Narain&quot;, &quot;Norin&quot;), Kash Rupareliaa (&quot;Rupalia&quot;), Sabrina Stocker (&quot;Stoker&quot;), Safwaan Mohammed (&quot;Safwan&quot;), Marisa Peer (&quot;Marissa Pierce&quot;), Regan Hillyer (&quot;Reagan Hillier&quot;), Barry Morguelan (&quot;Morgland&quot;), Srikumar Rao (&quot;Sri Kumar Rao&quot;), Eugene Schwartz (&quot;Gene Swatch&quot;), Manna La Roosa (&quot;Mana La Rosa&quot;), Trinu Lees (&quot;Trina Lise&quot;).</p></div><div class="acc-flag"><h4>Live-only references</h4><p>&quot;Tonight&#x27;s party&quot;, &quot;after lunch&quot;, &quot;two weeks at MVU&quot;, &quot;Estonia&quot;, clock times. All inside cut ranges; check the joins for stragglers.</p></div><div class="acc-flag"><h4>The offer</h4><p>The Mastery is named &quot;the accelerator&quot; on stage and priced at $4,999; the mastermind is now the Guild at $10,000 a year. Only the separate &quot;Your Next Step&quot; asset carries offer copy, so it can be re-recorded when final.</p></div>
+  </section>
+</div>
+</div>
+<!-- ACCEL-END -->
 <footer>
   <div class="wrap">
     <div>Expert &amp; Authority Mastery · proposal. Prepared by the Curriculum Team.</div>
