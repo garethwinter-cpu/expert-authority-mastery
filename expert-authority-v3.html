@@ -328,6 +328,27 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 
 /* author headshots */
 .face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
+
+/* Version switcher */
+.vswitch{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 0 6px}
+.vs{--vc:var(--grey-500);display:block;position:relative;border-radius:16px;padding:12px 14px 12px 16px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);border-left:6px solid var(--vc);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
+a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
+.vs.v1{--vc:var(--grey-500)} .vs.v2{--vc:var(--gold)} .vs.v3{--vc:var(--brand)} .vs.cmp{--vc:var(--green);border-style:dashed;border-left-style:solid}
+.vs-k{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--vc)}
+.vs-t{display:block;font-size:15px;font-weight:700;margin-top:3px;line-height:1.25;color:var(--ink)}
+.vs-by{display:block;font-size:12px;color:var(--text-subtle);margin-top:3px;line-height:1.35}
+.vs-rec{display:inline-block;font-style:normal;margin-left:6px;background:var(--green-light);color:var(--green);border-radius:128px;padding:2px 8px;font-size:10px;letter-spacing:.06em;vertical-align:1px}
+.vs.current{background:var(--vc);border-color:var(--vc);color:#fff;box-shadow:var(--shadow-medium)}
+.vs.current .vs-k,.vs.current .vs-by{color:rgba(255,255,255,.82)} .vs.current .vs-t{color:#fff}
+.vs.current .vs-rec{background:#fff;color:var(--green)}
+.vs-here{position:absolute;top:10px;right:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.vs.cmp.current{background:var(--green);border-style:solid}
+.vstripe{height:6px;background:var(--vc,var(--grey-500))}
+.vstripe.v1{--vc:var(--grey-500)} .vstripe.v2{--vc:var(--gold)} .vstripe.v3{--vc:var(--brand)} .vstripe.cmp{--vc:var(--green)}
+.vs-lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-subtle);padding-top:14px}
+.vs-lbl+.vswitch{padding-top:8px}
+@media(max-width:900px){.vswitch{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.vswitch{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -359,10 +380,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
     </div>
   </div>
 </header>
+<div class="vstripe v3"></div>
 
 <div class="tabbar-outer">
   <div class="wrap">
-    <div class="verbar"><a class="ver-link" href="/expert-authority">Version 1 · The team proposal</a><a class="ver-link" href="/expert-authority-v2">Version 2 · Vishen's proposal</a><span class="ver-link current">Version 3 · The combined build</span><a class="ver-link cmp" href="/expert-authority-compare">Compare the three</a></div>
+    <div class="vs-lbl">Three versions of one curriculum, and the comparison. You are reading:</div>
+    <div class="vswitch">
+    <a class="vs v1" href="/expert-authority"><span class="vs-k">Version 1</span><span class="vs-t">The team proposal</span><span class="vs-by">By the Curriculum Team · seventeen weeks, six authors, the summit as built in Airtable</span></a>
+    <a class="vs v2" href="/expert-authority-v2"><span class="vs-k">Version 2</span><span class="vs-t">Vishen's proposal</span><span class="vs-by">By Vishen · eighteen weeks, five pillars, four paths, his own three-day agenda</span></a>
+    <span class="vs v3 current"><span class="vs-here">You are here</span><span class="vs-k">Version 3<em class="vs-rec">Recommended path</em></span><span class="vs-t">The combined build</span><span class="vs-by">Team + Vishen · every input tested against the evidence</span></span>
+    <a class="vs cmp" href="/expert-authority-compare"><span class="vs-k">Compare</span><span class="vs-t">All three, side by side</span><span class="vs-by">Thirteen dimensions, eight criteria, one decision</span></a>
+    </div>
     <nav class="tabbar" id="tabbar">
       <button class="tab-btn active" data-tab="case"><span class="num">01</span>The Case</button>
       <button class="tab-btn" data-tab="summit"><span class="num">02</span>The Summit</button>

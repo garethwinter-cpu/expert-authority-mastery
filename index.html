@@ -135,6 +135,13 @@ ul.symptom li::before{content:"—";position:absolute;left:0;top:0;color:var(--t
 .ver:hover{transform:translateY(-2px);box-shadow:0 5px 20px 0 rgba(0,0,0,.10)}
 .ver.v2{background:var(--ea-light)}
 .ver.cmp{border-color:var(--ea);border-style:dashed}
+/* version cards: colour identity */
+.ver{border-left:6px solid var(--vc,var(--ea-border))}
+.ver.vA{--vc:#595E67} .ver.vB{--vc:#946A00} .ver.vC{--vc:var(--ea)} .ver.cmp{--vc:#159F65;border-style:dashed;border-left-style:solid}
+.ver .ver-k{color:var(--vc)}
+.ver-rec{display:inline-block;margin-left:8px;background:#E8F8F1;color:#159F65;border-radius:128px;padding:2px 9px;font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;vertical-align:1px}
+.ver.vC{background:var(--ea-light);box-shadow:0 5px 20px 0 rgba(0,0,0,.10)}
+
 .ver-k{display:block;font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--ea-content)}
 .ver-t{display:block;font-size:13.5px;line-height:1.5;color:#595E67;margin-top:6px}
 .ver-cta{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--ea)}
@@ -193,19 +200,19 @@ ul.symptom li::before{content:"—";position:absolute;left:0;top:0;color:var(--t
       </div>
       <div class="ch-side">
         <div class="versions">
-          <div class="ch-lbl">Three versions, one decision</div>
-          <a class="ver" href="/expert-authority">
-            <span class="ver-k">Version 1 · The team proposal</span>
+          <div class="ch-lbl">Three versions of one curriculum, one recommended path</div>
+          <a class="ver vA" href="/expert-authority">
+            <span class="ver-k">Version 1 · By the team</span>
             <span class="ver-t">What the team presented: seventeen weeks, six authors, the summit as built in Airtable. Data-backed and contractable.</span>
             <span class="ver-cta">Open Version 1</span>
           </a>
-          <a class="ver" href="/expert-authority-v2">
-            <span class="ver-k">Version 2 · Vishen's proposal</span>
+          <a class="ver vB" href="/expert-authority-v2">
+            <span class="ver-k">Version 2 · By Vishen</span>
             <span class="ver-t">What Vishen presented, rendered faithfully from his BlinkLife documents: eighteen weeks, five pillars, four paths, and his own three-day summit agenda.</span>
             <span class="ver-cta">Open Version 2</span>
           </a>
-          <a class="ver v2" href="/expert-authority-v3">
-            <span class="ver-k">Version 3 · The combined build</span>
+          <a class="ver vC" href="/expert-authority-v3">
+            <span class="ver-k">Version 3 · The combined build<span class="ver-rec">Recommended path</span></span>
             <span class="ver-t">The version we take to Vishen: the team's spine with every one of his inputs tested and adopted, adapted or declined, each with its evidence.</span>
             <span class="ver-cta">Open Version 3</span>
           </a>
