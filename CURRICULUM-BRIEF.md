@@ -66,8 +66,8 @@ proposal. Assume the same until proven otherwise.
 > intake is mixed, but do not soften it.
 >
 > **Faculty.** Use the deck's tiers exactly: Curriculum Expert (owns the
-> architecture, teaches the majority, royalty) / core author (4–8 lessons, flat
-> fee or hybrid) / guest specialist (1–3 lessons, flat fee). Give every named
+> architecture, teaches the majority) / core author (4–8 lessons) / guest
+> specialist (1–3 lessons). Commercial terms stay with Author Relations. Give every named
 > teacher their real score with the sample size. Apply the 9.3 bar. Where
 > someone doesn't clear it or has no cohort data, keep the lane and flag the
 > teacher — lanes are non-negotiable, occupants are not.

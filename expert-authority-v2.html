@@ -329,36 +329,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 /* author headshots */
 .face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
 
-/* Version 2: Vishen's page */
-.paths{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:18px 0 8px}
-.path{border:1px solid var(--border);border-radius:16px;padding:16px 18px;background:#fff;cursor:pointer;text-align:left;font:inherit;color:var(--ink);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
-.path:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
-.path .pk{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content)}
-.path h4{margin:6px 0 6px;font-size:17px}
-.path p{font-size:13.5px;color:var(--text-muted);line-height:1.5;margin:0}
-.path .pn{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;color:var(--text-subtle)}
-.path.on{border-color:var(--brand);background:var(--brand-light);box-shadow:0 0 0 2px var(--brand-border)}
-.pri{display:none;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);background:var(--gold-light);border-radius:128px;padding:3px 9px;margin-left:8px;vertical-align:middle}
-body.path-founder .wk2[data-f="3"] .pri,body.path-expert .wk2[data-e="3"] .pri,body.path-creator .wk2[data-c="3"] .pri,body.path-scaler .wk2[data-s="3"] .pri{display:inline-block}
-.why{display:none;margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--gold-light);border:1px dashed #E7D8A8;font-size:13px;line-height:1.5;color:var(--text-muted)}
-body.path-founder .why.f,body.path-expert .why.x,body.path-creator .why.c,body.path-scaler .why.s{display:block}
-.why strong{color:var(--ink)}
-.face-init{width:44px;height:44px;border-radius:50%;background:var(--brand-dark);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:13px;border:2px solid #fff;box-shadow:var(--shadow-light);flex:0 0 44px}
-.face-init.lg{width:64px;height:64px;border-radius:14px;font-size:18px;flex:0 0 64px}
-.slot.v-teach{background:var(--brand-light);border-color:var(--brand-border)}
-.slot.v-teach .slot-kind{color:var(--brand-content)}
-.slot .meta-row{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:10px;font-size:13px;color:var(--text-muted)}
-.slot .meta-row b{color:var(--ink);font-weight:700}
-.wk2.single{grid-template-columns:68px 1fr}
-.sic{font-size:11px;color:var(--text-subtle);font-style:italic}
-.verdict{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:128px;padding:3px 10px;white-space:nowrap}
-.verdict.ok{background:var(--green-light);color:var(--green)}
-.verdict.no{background:var(--orange-light);color:var(--orange-content)}
-.verdict.part{background:var(--gold-light);color:var(--gold)}
-.verdict.ext{background:var(--grey-200);color:var(--grey-500)}
-@media (max-width:900px){.paths{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:600px){.paths{grid-template-columns:1fr}}
-
 /* Version switcher */
 .vswitch{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 0 6px}
 .vs{--vc:var(--grey-500);display:block;position:relative;border-radius:16px;padding:12px 14px 12px 16px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);border-left:6px solid var(--vc);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
@@ -511,7 +481,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="callout dark">
       <div class="ic">▸</div>
       <div>
-        <p><strong>How to read this version.</strong> Two source documents, both re-read on 8 September and unchanged since they were shared: the curriculum page (published 6 September, 08:39 UTC) and the summit agenda note (last edited 7 September, 09:23 UTC). Everything in quotation marks is his. Where the two documents disagree with each other, the disagreement is shown, not resolved. Where a detail is missing (a price, a fee, who teaches a week, a clock time), the page says "not stated" rather than inventing one. How each input landed in the combined build is on Version 3, not here.</p>
+        <p><strong>How to read this version.</strong> Two source documents, both re-read on 8 September and unchanged since they were shared: the curriculum page (published 6 September, 08:39 UTC) and the summit agenda note (last edited 7 September, 09:23 UTC). Everything in quotation marks is his. Where the two documents disagree with each other, the disagreement is shown, not resolved. Where a detail is missing (a price, who teaches a week, a clock time), the page says "not stated" rather than inventing one. How each input landed in the combined build is on Version 3, not here.</p>
       </div>
     </div>
   </section>
@@ -958,7 +928,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="section-head">
       <div class="overline">Guest teachers on the summit</div>
       <h2>Five names in his "Confirmed Guest Teachers" table</h2>
-      <p class="body-md">His topic and format for each, then where the name stands on the Expert to Authority speaker table in Airtable as of 8 September, and the package on the fee table where one exists. Names spelt as he wrote them, with the Airtable spelling alongside.</p>
+      <p class="body-md">His topic and format for each, then where the name stands on the Expert to Authority speaker table in Airtable as of 8 September. Names spelt as he wrote them, with the Airtable spelling alongside.</p>
     </div>
     <div class="grid g2">
     
@@ -974,7 +944,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
           </div>
           <span class="status proposal">In Negotiation</span>
         </div>
-        <p class="body-md">The only person besides Vishen who appears in both documents. Note the two figures for the same story: 500k+ students in the summit note, 1M+ enrollments on the curriculum page. His $15K Mastery-only package (flex to $20K) sits on the fee table from Version 1; the summit fee is separate.</p>
+        <p class="body-md">The only person besides Vishen who appears in both documents. Note the two figures for the same story: 500k+ students in the summit note, 1M+ enrollments on the curriculum page. He holds an author seat (six lessons) in Versions 1 and 3.</p>
       </div>
     
       <div class="card">
@@ -989,7 +959,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
           </div>
           <span class="status proposal">In Negotiation</span>
         </div>
-        <p class="body-md">Cast on virality, in interview format, inside a break. Not named anywhere in the 18 weeks. The fee table carries a $15K package (summit + one Mastery class) from the 1 September alignment.</p>
+        <p class="body-md">Cast on virality, in interview format, inside a break. Not named anywhere in the 18 weeks. Versions 1 and 3 give her the Week 2 identity session as well as the summit.</p>
       </div>
     
       <div class="card">
@@ -1004,7 +974,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
           </div>
           <span class="status proposal">In Negotiation</span>
         </div>
-        <p class="body-md">Also listed as a Week 1 guest teacher on the curriculum page, spelt "Reagan Hilger" there. Two documents, two spellings, neither the one on her Airtable row. Her $15K (class + summit fireside) is on the fee table.</p>
+        <p class="body-md">Also listed as a Week 1 guest teacher on the curriculum page, spelt "Reagan Hilger" there. Two documents, two spellings, neither the one on her Airtable row. Versions 1 and 3 carry her as the Week 11 fireside and the summit fireside.</p>
       </div>
     
       <div class="card">
@@ -1019,7 +989,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
           </div>
           <span class="status roster">In consideration</span>
         </div>
-        <p class="body-md">Added to the Expert to Authority speaker table on 7 September, the day the note was shared. Not named in the 18 weeks. The Author Relations fee table now carries a $25K package for him on this summit, added 7 September: $10K summit session + $15K Mastery class, noted as ’based on the Speaking & Influence Summit’.</p>
+        <p class="body-md">Added to the Expert to Authority speaker table on 7 September, the day the note was shared. Not named in the 18 weeks. Author Relations opened his file on 7 September; Marta and Marijana are reaching out.</p>
       </div>
     
       <div class="card">
@@ -1034,7 +1004,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
           </div>
           <span class="status roster">In consideration</span>
         </div>
-        <p class="body-md">Added to the speaker table on 7 September. Not named in the 18 weeks. The fee table carries a $25K package for her too ($10K summit + $15K Mastery class, added 7 September); the team’s call of 7 September is that the package is too costly for one 30 to 45 minute slot.</p>
+        <p class="body-md">Added to the speaker table on 7 September. Not named in the 18 weeks. The team’s call of 7 September is that the 30 to 45 minute slot is already covered twice over in Versions 1 and 3.</p>
       </div>
     </div>
   </section>
@@ -1104,7 +1074,6 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="tbl-scroll"><table class="tbl"><thead><tr><th>Item</th><th>What his documents say</th><th>Where the team's answer lives</th></tr></thead><tbody>
       <tr><td><strong>Price of the Mastery</strong></td><td class="small">"Here's the price." No figure. The ladder session cites "$49-to-$10,000" as the product architecture, not the Mastery price.</td><td class="small">$4,999, stated from the MVU stage (Version 1, Case)</td></tr>
       <tr><td><strong>Who teaches each week</strong></td><td class="small">Named on Week 1 (Butcher, "Hilger", Allen) and Week 13 (Jimmy). Sixteen weeks name nobody.</td><td class="small">Version 1 and 3 allocation: Vishen 8 weeks, five guests, four lab leads</td></tr>
-      <tr><td><strong>Fees</strong></td><td class="small">None.</td><td class="small">Author Relations fee table, summarised on the Format &amp; Contracts tab</td></tr>
       <tr><td><strong>Lab content</strong></td><td class="small">"One lesson + one live implementation call per week." No lab briefs.</td><td class="small">16 lab days in fixed lanes (Version 1, Programme)</td></tr>
       <tr><td><strong>Clock times, dates, host</strong></td><td class="small">Durations only. No London times, no dates, no host named.</td><td class="small">Airtable run-of-show: 18–20 September, Jason Goldberg hosting (Version 1, Summit)</td></tr>
       <tr><td><strong>The 13 deliverables</strong></td><td class="small">The count is given four times; the list is never enumerated.</td><td class="small">The pieces his sessions name are on the Artefact tab; Version 3 names nine</td></tr>
@@ -1185,26 +1154,10 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
       <tr><td><strong>Summit</strong></td><td>3 days × 4–5 hours, live, online; 13 sessions; sales window opens end of Day 1, full reveal Day 2, hard close Day 3</td><td class="small">Summit note</td></tr>
       <tr><td><strong>Summit format decision</strong></td><td>Open: "All 3 days live vs. Day 1–2 live + Day 3 replay/encore?"</td><td class="small">Summit note, Open Items</td></tr>
       <tr><td><strong>Enrolment incentive</strong></td><td>"Bonus stack for Day 2 enrollees (e.g., early-bird bonus or extra coaching call)"; incentive itself open</td><td class="small">Summit note</td></tr>
-      <tr><td><strong>Price, fees, guarantee, recording, community, onboarding</strong></td><td>Not stated</td><td class="small">—</td></tr>
+      <tr><td><strong>Price, guarantee, recording, community, onboarding</strong></td><td>Not stated</td><td class="small">—</td></tr>
     </tbody></table></div>
   </section>
 
-  <section>
-    <div class="section-head">
-      <div class="overline">Read against the fee table</div>
-      <h2>What his summit casting would cost, using packages already quoted</h2>
-      <p class="body-md">His documents carry no fees. These are the packages on the Author Relations fee table (1 September alignment) for the people he names, so the three versions can be compared on cost. Packages only; per-class rates are never disclosed to talent.</p>
-    </div>
-    <div class="tbl-scroll"><table class="tbl"><thead><tr><th>Person he names</th><th>His use</th><th>Package on the fee table</th><th>Note</th></tr></thead><tbody>
-      <tr><td><strong>Jimmy Naraine</strong></td><td>Summit 45 min + Week 13 guest teacher</td><td>$15K Mastery package + $4K summit fee</td><td class="small">Same package as Versions 1 and 3</td></tr>
-      <tr><td><strong>Marisa Peer</strong></td><td>30-min live interview</td><td>$15K package (summit + 1 Mastery class)</td><td class="small">He gives her no Mastery week; the package assumes one</td></tr>
-      <tr><td><strong>Regan Hillyer</strong></td><td>Summit interview (TBC) + Week 1 guest teacher</td><td>$10K class + $5K summit fireside = $15K</td><td class="small">Same package as Versions 1 and 3</td></tr>
-      <tr><td><strong>Daniel Priestley</strong></td><td>Summit teaching session (TBC)</td><td>$25K package on the fee table (7 Sep): $10K summit + $15K Mastery class</td><td class="small">Also co-owner of AI for Founders</td></tr>
-      <tr><td><strong>Dr. Shadé Zahrai</strong></td><td>Summit 30–45 min</td><td>$25K package on the fee table (7 Sep): $10K summit + $15K Mastery class</td><td class="small">Ruled too costly for one slot (Gareth, 7 Sep)</td></tr>
-      <tr><td><strong>Jon Butcher, Jeffrey Allen</strong></td><td>Week 1 guest teachers</td><td>Not on the E&amp;A speaker table</td><td class="small">No fee to compare</td></tr>
-    </tbody></table></div>
-    <p class="small" style="margin-top:12px">Packages on the fee table for the five summit guests he names total $99K (Jimmy $19K including summit, Marisa $15K, Regan $15K, Priestley $25K, Shadé $25K); Butcher and Allen are uncosted. Versions 1 and 3 carry Jimmy, Marisa and Regan plus John Lee, Ajit Nawalkha, Jason Goldberg and the three lab leads at ≈$104.5K; the comparison is on the Compare page.</p>
-  </section>
 
   <section>
     <div class="callout">
@@ -1260,7 +1213,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 <footer>
   <div class="wrap">
     <div>Expert &amp; Authority Mastery · Version 2, Vishen's proposal, rendered from his BlinkLife documents by the Curriculum Team.</div>
-    <div>Sources: "Expert Authority Summit — 18-Week Curriculum" (BlinkLife, 6 Sep 2026) · "Expert Authority Summit — 3-Day Agenda" (BlinkLife note, 7 Sep 2026) · Expert to Authority speaker table and Author Relations fee table (Airtable, 8 Sep 2026)</div>
+    <div>Sources: "Expert Authority Summit — 18-Week Curriculum" (BlinkLife, 6 Sep 2026) · "Expert Authority Summit — 3-Day Agenda" (BlinkLife note, 7 Sep 2026) · Expert to Authority speaker table (Airtable, 8 Sep 2026)</div>
   </div>
 </footer>
 

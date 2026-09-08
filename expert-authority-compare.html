@@ -329,6 +329,79 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 /* author headshots */
 .face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
 
+/* Version switcher */
+.vswitch{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 0 6px}
+.vs{--vc:var(--grey-500);display:block;position:relative;border-radius:16px;padding:12px 14px 12px 16px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);border-left:6px solid var(--vc);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
+a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
+.vs.v1{--vc:var(--grey-500)} .vs.v2{--vc:var(--gold)} .vs.v3{--vc:var(--brand)} .vs.cmp{--vc:var(--green);border-style:dashed;border-left-style:solid}
+.vs-k{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--vc)}
+.vs-t{display:block;font-size:15px;font-weight:700;margin-top:3px;line-height:1.25;color:var(--ink)}
+.vs-by{display:block;font-size:12px;color:var(--text-subtle);margin-top:3px;line-height:1.35}
+.vs-rec{display:inline-block;font-style:normal;margin-left:6px;background:var(--green-light);color:var(--green);border-radius:128px;padding:2px 8px;font-size:10px;letter-spacing:.06em;vertical-align:1px;white-space:nowrap}
+.vs.current{background:var(--vc);border-color:var(--vc);color:#fff;box-shadow:var(--shadow-medium)}
+.vs.current .vs-k,.vs.current .vs-by{color:rgba(255,255,255,.82);padding-right:84px} .vs.current .vs-t{color:#fff}
+.vs.current .vs-rec{background:#fff;color:var(--green)}
+.vs-here{position:absolute;bottom:11px;right:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9)}
+.vs.cmp.current{background:var(--green);border-style:solid}
+.vstripe{height:6px;background:var(--vc,var(--grey-500))}
+.vstripe.v1{--vc:var(--grey-500)} .vstripe.v2{--vc:var(--gold)} .vstripe.v3{--vc:var(--brand)} .vstripe.cmp{--vc:var(--green)}
+.vs-lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-subtle);padding-top:14px}
+.vs-lbl+.vswitch{padding-top:8px}
+@media(max-width:900px){.vswitch{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.vswitch{grid-template-columns:1fr}}
+
+/* Accelerator */
+.acc-map{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:18px}
+.acc-day{display:block;background:#fff;border:1px solid var(--border);border-radius:16px;padding:16px 16px 14px;text-decoration:none;color:var(--ink);border-top:6px solid var(--brand);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
+a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
+.acc-day .dn,.acc-day .dt,.acc-day .dm{display:block}
+.acc-day .dn{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content)}
+.acc-day .dt{font-size:16px;font-weight:700;line-height:1.25;margin:4px 0 8px;text-wrap:balance}
+.acc-day .dm{font-size:12.5px;color:var(--text-subtle);line-height:1.4}
+.acc-belief{font-size:19px;line-height:1.45;font-weight:500;color:var(--ink);padding:18px 22px;border-left:6px solid var(--brand);background:var(--brand-light);border-radius:0 16px 16px 0;margin:0 0 18px}
+.acc-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:22px}
+.acc-meta .card{padding:18px 20px}
+.acc-meta .kicker{margin-bottom:6px}
+.acc-meta p{font-size:14.5px;line-height:1.55;color:var(--text-muted)}
+.acc-vid{border:1px solid var(--border);border-radius:16px;background:#fff;margin-bottom:14px;overflow:hidden}
+.acc-vid-head{display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;padding:16px 20px;background:var(--grey-100);border-bottom:1px solid var(--border)}
+.acc-vid-head .vn{width:44px;height:44px;border-radius:12px;background:var(--ink);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.acc-vid-head h4{font-size:17px;line-height:1.3;margin:0;text-wrap:balance}
+.acc-chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.acc-chips span{font-size:11.5px;font-weight:700;letter-spacing:.02em;background:#fff;border:1px solid var(--border);border-radius:128px;padding:4px 10px;color:var(--text-muted);white-space:nowrap}
+.acc-chips span.rt{background:var(--brand);border-color:var(--brand);color:#fff}
+.acc-chips span.pf{background:var(--pink-light);border-color:#F3C4D9;color:var(--pink)}
+.acc-vid-body{display:grid;grid-template-columns:1fr 1fr;gap:0}
+.acc-vid-body>div{padding:16px 20px}
+.acc-vid-body>div+div{border-left:1px solid var(--border)}
+.acc-lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-subtle);margin:0 0 6px}
+.acc-lbl+.acc-lbl{margin-top:14px}
+.acc-cue{font-size:14px;line-height:1.55;color:var(--ink);margin:0 0 10px;padding-left:12px;border-left:3px solid var(--grey-300)}
+.acc-cue b{color:var(--text-subtle);font-weight:700;font-size:11px;letter-spacing:.06em;text-transform:uppercase;display:block}
+.acc-cue.in{border-color:var(--green)} .acc-cue.out{border-color:var(--orange)}
+.acc-list{list-style:none;padding:0;margin:0}
+.acc-list li{font-size:14px;line-height:1.5;color:var(--text-muted);padding:5px 0 5px 14px;position:relative}
+.acc-list li:before{content:"";position:absolute;left:0;top:12px;width:6px;height:6px;border-radius:50%;background:var(--brand)}
+.acc-list.cuts li:before{background:var(--orange)}
+.acc-list.screen li{color:var(--ink);font-weight:500}
+.acc-list li .ln{font-size:11.5px;font-weight:700;color:var(--text-subtle);letter-spacing:.02em}
+.acc-note{font-size:14px;line-height:1.55;color:var(--text-muted);margin:0}
+.acc-ex{margin-top:18px;background:var(--green-light);border:1px solid var(--green-border);border-radius:16px;padding:18px 22px}
+.acc-ex .kicker{color:var(--green);margin-bottom:6px}
+.acc-ex p{font-size:15px;line-height:1.6;color:var(--ink);margin:0}
+.acc-rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.acc-rules .card{padding:20px 22px}
+.acc-rules .card h4{font-size:15.5px;margin:0 0 6px}
+.acc-rules .card p{font-size:14px;line-height:1.55;color:var(--text-muted);margin:0}
+.acc-dayhead{display:grid;grid-template-columns:62px 1fr;gap:16px;align-items:center;flex:1}
+.acc-dayhead .dnum{width:62px;height:58px;border-radius:14px;background:var(--brand);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:700;font-size:20px;line-height:1}
+.acc-dayhead .dnum small{font-size:8.5px;letter-spacing:.06em;text-transform:uppercase;opacity:.85;margin-top:3px}
+.module.acc .module-head{border-left:6px solid var(--brand)}
+.acc-tools{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.acc-flag{border-left:4px solid var(--orange);padding:10px 16px;margin-bottom:10px;background:#fff;border-radius:0 12px 12px 0;border-top:1px solid var(--border);border-right:1px solid var(--border);border-bottom:1px solid var(--border)}
+.acc-flag h4{font-size:15px;margin:0 0 4px} .acc-flag p{font-size:14px;line-height:1.55;color:var(--text-muted);margin:0}
+@media(max-width:800px){.acc-vid-body{grid-template-columns:1fr}.acc-vid-body>div+div{border-left:0;border-top:1px solid var(--border)}.acc-vid-head{grid-template-columns:44px 1fr}.acc-chips{justify-content:flex-start;grid-column:1/-1}}
+
 /* compare page */
 .cmp-nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--border)}
 .cmp-nav .wrap{display:flex;gap:6px;flex-wrap:wrap;padding:10px 0}
@@ -370,27 +443,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .rec p{color:#E9DDF7;font-size:15px;line-height:1.6}
 .rec strong{color:#fff}
 @media (max-width:900px){.three{grid-template-columns:1fr}.ctbl th:first-child,.ctbl td:first-child{width:90px}}
-
-/* Version switcher */
-.vswitch{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 0 6px}
-.vs{--vc:var(--grey-500);display:block;position:relative;border-radius:16px;padding:12px 14px 12px 16px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);border-left:6px solid var(--vc);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
-a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
-.vs.v1{--vc:var(--grey-500)} .vs.v2{--vc:var(--gold)} .vs.v3{--vc:var(--brand)} .vs.cmp{--vc:var(--green);border-style:dashed;border-left-style:solid}
-.vs-k{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--vc)}
-.vs-t{display:block;font-size:15px;font-weight:700;margin-top:3px;line-height:1.25;color:var(--ink)}
-.vs-by{display:block;font-size:12px;color:var(--text-subtle);margin-top:3px;line-height:1.35}
-.vs-rec{display:inline-block;font-style:normal;margin-left:6px;background:var(--green-light);color:var(--green);border-radius:128px;padding:2px 8px;font-size:10px;letter-spacing:.06em;vertical-align:1px;white-space:nowrap}
-.vs.current{background:var(--vc);border-color:var(--vc);color:#fff;box-shadow:var(--shadow-medium)}
-.vs.current .vs-k,.vs.current .vs-by{color:rgba(255,255,255,.82);padding-right:84px} .vs.current .vs-t{color:#fff}
-.vs.current .vs-rec{background:#fff;color:var(--green)}
-.vs-here{position:absolute;bottom:11px;right:12px;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.9)}
-.vs.cmp.current{background:var(--green);border-style:solid}
-.vstripe{height:6px;background:var(--vc,var(--grey-500))}
-.vstripe.v1{--vc:var(--grey-500)} .vstripe.v2{--vc:var(--gold)} .vstripe.v3{--vc:var(--brand)} .vstripe.cmp{--vc:var(--green)}
-.vs-lbl{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-subtle);padding-top:14px}
-.vs-lbl+.vswitch{padding-top:8px}
-@media(max-width:900px){.vswitch{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:560px){.vswitch{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -433,7 +485,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
   </div>
 </div>
-<div class="cmp-nav"><div class="wrap"><a href="#problem">The problem</a><a href="#glance">At a glance</a><a href="#decision">Decision scorecard</a><a href="#weeks">Week by week</a><a href="#summit">Summit</a><a href="#authors">Authors &amp; fees</a><a href="#model">Retention &amp; the money</a><a href="#change">What would change the call</a></div></div>
+<div class="cmp-nav"><div class="wrap"><a href="#problem">The problem</a><a href="#glance">At a glance</a><a href="#decision">Decision scorecard</a><a href="#weeks">Week by week</a><a href="#summit">Summit</a><a href="#authors">Authors</a><a href="#model">Retention &amp; the money</a><a href="#change">What would change the call</a></div></div>
 
 <div class="wrap">
   <section id="problem">
@@ -458,8 +510,8 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
       <div class="card" style="border-top:4px solid var(--orange)">
         <div class="kicker">The business</div>
         <h3>High retention, low refunds, an experience people talk about</h3>
-        <p class="body-md" style="margin-top:8px">The nearest precedent is a warning: AI Mastery 2026 finished at <strong>+84 NPS</strong> and still refunded <strong>23.8%</strong>, with 40.7% on deposits, because onboarding was reactive. Speaking &amp; Influence held <strong>56%</strong> late-programme attendance on a paired cadence where the previous cohort fell to <strong>31%</strong>. The speaker budget line is 15% of programme revenue. The design has to earn its retention in the first fourteen days, not at the close.</p>
-        <p class="small" style="margin-top:8px">AIM 2026 dashboard; S&amp;I 2025–26 attendance base; 1 Sep budget line. Detail in the Retention &amp; the money section.</p>
+        <p class="body-md" style="margin-top:8px">The nearest precedent is a warning: AI Mastery 2026 finished at <strong>+84 NPS</strong> and still refunded <strong>23.8%</strong>, with 40.7% on deposits, because onboarding was reactive. Speaking &amp; Influence held <strong>56%</strong> late-programme attendance on a paired cadence where the previous cohort fell to <strong>31%</strong>. The design has to earn its retention in the first fourteen days, not at the close.</p>
+        <p class="small" style="margin-top:8px">AIM 2026 dashboard; S&amp;I 2025–26 attendance base. Detail in the Retention &amp; the money section.</p>
       </div>
     </div>
   </section>
@@ -470,7 +522,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="three">
       <div class="vcard v1"><div class="vk">Version 1</div><h3>The team proposal</h3><p>Seventeen weeks, Tuesday Teach and Thursday Implementation Day, six authors verified against their own transcripts, labs in fixed lanes, one graduating artefact: a live ladder with three paid rungs. The summit as the team built it in Airtable.</p><p><strong>Strength:</strong> every claim sourced, every seat contractable, every lane owned.<br><strong>Open:</strong> it was written before Vishen's documents, and its summit pitches rather than sells a gap.</p><a class="go" href="/expert-authority">Open Version 1</a></div>
       <div class="vcard v2"><div class="vk">Version 2</div><h3>Vishen's proposal</h3><p>Eighteen weeks in five pillars, four persona paths with priority weeks, guest teachers on two weeks, a 13-deliverable Authority Blueprint, and a three-day summit built as gap selling with a graduation reveal, hot seats and a hard close.</p><p><strong>Strength:</strong> the summit arc and the identity-and-method thinking are the best of the three.<br><strong>Open:</strong> five weeks serve a business one stage further along than most of the room; sixteen weeks name no teacher yet; ten of fifteen cited figures are not in a base the team holds.</p><a class="go" href="/expert-authority-v2">Open Version 2</a></div>
-      <div class="vcard v3"><div class="vk">Version 3</div><h3>The combined build</h3><p>Version 1's spine with every one of Vishen's inputs tested against the registrant quiz, four years of summit ratings and the fee table: 7 adopted, 10 adapted, 9 routed elsewhere, and Priestley carried as two conditional seats. Vishen's arc runs the summit; the authors already in conversation run the weeks.</p><p><strong>Strength:</strong> fit, evidence, time and budget all hold, and the best ideas from both drafts are in.<br><strong>Open:</strong> one open money question (Priestley's $25K package against ~$12K of freed budget) and 26 verdicts awaiting Vishen's read.</p><a class="go" href="/expert-authority-v3">Open Version 3</a></div>
+      <div class="vcard v3"><div class="vk">Version 3</div><h3>The combined build</h3><p>Version 1's spine with every one of Vishen's inputs tested against the registrant quiz, four years of summit ratings: 7 adopted, 10 adapted, 9 routed elsewhere, and Priestley carried as two conditional seats. Vishen's arc runs the summit; the authors already in conversation run the weeks.</p><p><strong>Strength:</strong> fit, evidence and time all hold, and the best ideas from both drafts are in.<br><strong>Open:</strong> Priestley's confirmation and 26 verdicts awaiting Vishen's read.</p><a class="go" href="/expert-authority-v3">Open Version 3</a></div>
     </div>
   </section>
 
@@ -481,7 +533,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
       <p class="body-md">Every cell traces to a page: Version 1 and 3 figures come from their Format &amp; Contracts and Authors tabs; Version 2 figures from Vishen's two documents. Where a document is silent, the cell says so.</p>
     </div>
     <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th></th><th class="v1">Version 1 · The team</th><th class="v2">Version 2 · Vishen</th><th class="v3">Version 3 · Combined</th></tr></thead><tbody>
-<tr><td>Who wrote it</td><td>The Curriculum Team (Gareth, Marta, Marijana), from the bases, the transcripts and the fee table. August–September 2026.</td><td>Vishen Lakhiani. Curriculum page published on BlinkLife 6 Sep; summit agenda note 7 Sep.</td><td>The team, on Version 1, with all 26 inputs from Vishen's draft tested against the room and the ratings: 7 adopted, 10 adapted, 9 routed elsewhere. Priestley is carried inside the adapted ten as two conditional seats.</td></tr>
+<tr><td>Who wrote it</td><td>The Curriculum Team (Gareth, Marta, Marijana), from the bases and the transcripts. August–September 2026.</td><td>Vishen Lakhiani. Curriculum page published on BlinkLife 6 Sep; summit agenda note 7 Sep.</td><td>The team, on Version 1, with all 26 inputs from Vishen's draft tested against the room and the ratings: 7 adopted, 10 adapted, 9 routed elsewhere. Priestley is carried inside the adapted ten as two conditional seats.</td></tr>
 <tr><td>Length</td><td>17 weeks + onboarding week + alumni reunion at +6 weeks. "Four months," as stated from stage.</td><td>18 weeks in five pillars (4 + 4 + 5 + 3 + 2).</td><td>17 weeks. His 18th week (the 90-Day Authority Plan) folded into Week 17 as the second graduating artefact.</td></tr>
 <tr><td>Cadence</td><td>Tuesday Teach + Thursday Implementation Day: 17 + 17 + one optional Saturday shoot = 35 touchpoints.</td><td>"One lesson + one live implementation call per week": 36 if read literally. Not totalled in his documents.</td><td>As Version 1: 35 touchpoints, Week 9 on the mainline (corrected 7 Sep on the S&I evidence).</td></tr>
 <tr><td>Organising idea</td><td>One graduating artefact: a live product ladder with three paid rungs, a traffic tap running, a masterclass shot. Five modules: Be Seen → The First Rung → Masterclass Week → Turn On The Tap → The Ladder.</td><td>"Credibility × Clarity × Consistency = Authority." Five pillars: Message → Platform → Funnel → Offer → Team. Four persona paths with priority weeks.</td><td>Version 1's ladder and modules, with his five pillars labelled on every week (Pillar 5 replaced by Show Up &amp; Stay Chosen), his four paths as quiz-driven routing, and his Named Signature Method as the Week 3 deliverable.</td></tr>
@@ -489,10 +541,9 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 <tr><td>Authors named for the Mastery</td><td>Vishen + Jimmy Naraine, Marisa Peer, John Lee, Ajit Nawalkha (teach), Regan Hillyer (fireside). Labs: Alessio Pieroni, Kash Rupareliaa, Sabrina Stocker, Jimmy.</td><td>Week 1: Jon Butcher, "Reagan Hilger", Jeffrey Allen. Week 13: Jimmy Naraine. Case studies: Beckwith, Lisa Nichols, Vishen. Nobody else.</td><td>As Version 1, plus Daniel Priestley co-teaching Week 4 if he confirms. Butcher and Allen proposed as Day 1 success-story candidates, not teachers.</td></tr>
 <tr><td>Summit</td><td>18–20 Sep, London 4pm–8:40/9pm, Jason Goldberg hosting. 33 Airtable rows, three keynote-heavy days, Sales Pitch Day 2, REPITCH + FINAL CLOSE Day 3.</td><td>3 days × 4–5 hours, 13 sessions, no clock times. Gap selling every session; workbook; soft open Day 1; Mastery Reveal Day 2; hot seats, Q&amp;A as objection handling, hard close Day 3. Five guests: Jimmy, Marisa, Regan, Priestley, Shadé.</td><td>The Airtable run-of-show with his arc laid over it: workbook exercise 7:05pm Day 1, soft open, Mastery Reveal reframed as graduation, Day 3 hot seats (45 min) and Priestley KPI keynote (45 min, if confirmed), REPITCH cut to 30.</td></tr>
 <tr><td>Price and offer</td><td>$4,999, stated from the MVU stage. BOGO-eligible. Guild above at $10K a year.</td><td>Not stated. "Here's the price." Product ladder cited as "$49-to-$10,000".</td><td>$4,999. Day 2 enrolee bonus open (Gareth: "open to it"), needs a name and a date.</td></tr>
-<tr><td>Fee exposure, known packages</td><td>Fee table, 8 Sep: Mastery packages ≈$66.5K (Jimmy 15, Ajit 12, Regan 10, Alessio 8, Marisa 7.5, Kash 6, John 5, Sabrina 3) + summit fees ≈$38K (Jason 10 + 1.5 hospitality, Marisa 7.5, Ajit 5, Regan 5, John 5, Jimmy 4) ≈ <strong>$104.5K</strong>. John's note: might ask $14K; team cap $12K.</td><td>The five named guests on the fee table: Jimmy $19K (15 + 4 summit), Marisa $15K, Regan $15K, Priestley $25K, Shadé $25K = <strong>$99K</strong>. Butcher and Allen uncosted. No lab leads, no host named.</td><td>As Version 1 (≈ $104.5K) plus Priestley's $25K package, conditional, against ~$12K freed when Ben Greenfield came off the bench. Maria Wendt not costed (recommendation: do not pursue).</td></tr>
-<tr><td>Evidence base</td><td>S&amp;I 2025–26 attendance and ratings, AIM 2026 labs and NPS, Manifesting Mastery ratings, transcripts (~2.1MB), fee table, speaker table, accelerator transcript.</td><td>"22 years of Mindvalley data." 15 cited figures: 1 verifies in a base we hold (84 NPS), 3 partly, 1 external, 10 not in any base we hold.</td><td>Version 1's base plus the summit quiz (626 registrants by 8 Sep), four years of AI Summit ratings, and Vishen's two documents read as evidence.</td></tr>
+<tr><td>Evidence base</td><td>S&amp;I 2025–26 attendance and ratings, AIM 2026 labs and NPS, Manifesting Mastery ratings, transcripts (~2.1MB), speaker table, accelerator transcript.</td><td>"22 years of Mindvalley data." 15 cited figures: 1 verifies in a base we hold (84 NPS), 3 partly, 1 external, 10 not in any base we hold.</td><td>Version 1's base plus the summit quiz (626 registrants by 8 Sep), four years of AI Summit ratings, and Vishen's two documents read as evidence.</td></tr>
 <tr><td>Fit to the room (quiz, 626 registrants by 8 Sep)</td><td>Built for experts earning under $100K who are not yet known. 76% of registrants earn under $25K; 66% say unseen or unclear; 63% have been at it two years or more.</td><td>Four personas weighted for a business that already sells: paid ads ($30M playbook), an app, a lean team, a four-platform dance. About one registrant in ten is at $100K+; 9% pick the Stagnating Expert path.</td><td>Expert path weighted first (69% pick it). Scale weeks routed to AI for Founders and the Guild for the one in ten; the identity, method, offer and 90-day pieces kept for everyone.</td></tr>
-<tr><td>Open items</td><td>Airtable flags (Regan date, Jimmy 04:00, [speaker] placeholder); Vishen 60% ask vs "20% author fee"; Kash spelling; guarantee design.</td><td>Regan TBC; Priestley duration TBC; all-live vs Day 3 replay; Day 2 incentive. Plus: no price, no fees, no teacher on 16 weeks, two documents that disagree on week numbers.</td><td>Priestley's yes and fee; Day 2 bonus name and date; Marta and Marijana's outreach; quiz re-read before the summit.</td></tr>
+<tr><td>Open items</td><td>Airtable flags (Regan date, Jimmy 04:00, [speaker] placeholder); Kash spelling; guarantee design.</td><td>Regan TBC; Priestley duration TBC; all-live vs Day 3 replay; Day 2 incentive. Plus: no price, no teacher on 16 weeks, two documents that disagree on week numbers.</td><td>Priestley's yes and Author Relations sign-off; Day 2 bonus name and date; Marta and Marijana's outreach; quiz re-read before the summit.</td></tr>
 <tr><td>Status</td><td>Team record. Complete.</td><td>Rendered faithfully. Complete as a record; incomplete as a build (see open items).</td><td>The version to take to Vishen. Complete, pending Vishen's read of the 26 verdicts.</td></tr>
     </tbody></table></div>
   </section>
@@ -501,14 +552,14 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="section-head">
       <div class="overline">Decision scorecard</div>
       <h2>Eight criteria, one colour each</h2>
-      <p class="body-md"><span class="dot g"></span>holds &nbsp; <span class="dot a"></span>holds with a condition &nbsp; <span class="dot r"></span>does not hold. The criteria are the ones the team has used since the first fee alignment: who the room is, what the data says, what Vishen can carry, who can be contracted, what it costs, whether it sells from stage, whether it honours what was asked, and whether it can be delivered.</p>
+      <p class="body-md"><span class="dot g"></span>holds &nbsp; <span class="dot a"></span>holds with a condition &nbsp; <span class="dot r"></span>does not hold. The criteria are the ones the team has used since the first author alignment: who the room is, what the data says, what Vishen can carry, who can be contracted, whether it fits the plan, whether it sells from stage, whether it honours what was asked, and whether it can be delivered.</p>
     </div>
     <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Criterion</th><th class="v1">Version 1</th><th class="v2">Version 2</th><th class="v3">Version 3</th><th>Source</th></tr></thead><tbody>
 <tr><td>Fit to the registrant room</td><td><span class="dot g"></span>Under-$25K, unseen, experienced experts: the whole programme is built for them.</td><td><span class="dot r"></span>Paid ads, app, team and platform-dance weeks serve the one in ten already past $100K. Identity and method weeks fit everyone; five of eighteen serve a later stage.</td><td><span class="dot g"></span>Expert path first; the later-stage weeks routed to the programme built for them.</td><td class="small">Quiz on the summit thank-you page, 626 registrants, pulled 8 Sep</td></tr>
 <tr><td>Evidence behind the structure</td><td><span class="dot g"></span>Paired Teach + Implementation Day lifted S&I last-3-session attendance; Week 9 on the mainline after the One Talk Workshop data.</td><td><span class="dot a"></span>Labs model credited to AIM (84 NPS: verified). The rest of the cited data is not in any base we hold.</td><td><span class="dot g"></span>As V1, plus his summit arc validated against AI Summit ratings (hot seats 4.39, VIP 4.44–4.46).</td><td class="small">S&I and AIM bases; AI Summit 2023–26 agenda ratings</td></tr>
 <tr><td>Vishen&#x27;s time</td><td><span class="dot g"></span>8 teach weeks, 18 recorded bookends; the load he can carry alongside the Mastermind.</td><td><span class="dot r"></span>Unbounded: 16 unassigned weeks and ~10 hours of summit stage time by his own durations.</td><td><span class="dot g"></span>8 (7 with Priestley) teach weeks; summit stage time held; one keynote traded for hot seats.</td><td class="small">Author-proposal standard: Curriculum Expert teaches the majority, not all</td></tr>
 <tr><td>Authors ready to contract</td><td><span class="dot g"></span>Six In Negotiation, three lab leads In consideration, every seat transcript-verified.</td><td><span class="dot a"></span>Three In Negotiation (Jimmy, Marisa, Regan). Priestley and Shadé In consideration; Butcher, Allen, Beckwith not on the table; Lisa Nichols Not Approved.</td><td><span class="dot g"></span>As V1; Priestley conditional with outreach live (Marta, Marijana).</td><td class="small">Expert to Authority speaker table, 8 Sep</td></tr>
-<tr><td>Budget</td><td><span class="dot g"></span>≈ $104.5K on the fee table, inside the 15% speaker budget ($225K ideal) at the planning volumes.</td><td><span class="dot a"></span>$99K for the five summit guests as costed on the fee table, two of them at $25K for one slot each; Butcher and Allen uncosted; no labs or host costed.</td><td><span class="dot a"></span>≈ $104.5K plus Priestley's $25K package, conditional, against ~$12K freed. The one open money question.</td><td class="small">Author Relations fee table</td></tr>
+<tr><td>Deliverable inside the plan</td><td><span class="dot g"></span>Every seat is a signed author already in conversation; nothing new to source.</td><td><span class="dot a"></span>Two of the five named guests are one-slot additions with no Mastery week; Butcher and Allen are not on the speaker table; no labs and no host named.</td><td><span class="dot a"></span>As Version 1 plus one conditional two-seat addition (Priestley), pending his yes and Author Relations sign-off.</td><td class="small">Speaker table, 8 Sep</td></tr>
 <tr><td>Sellability from the stage</td><td><span class="dot a"></span>Clear artefact (the ladder). Summit sells keynotes, not a gap: Sales Pitch is a pitch.</td><td><span class="dot g"></span>Strongest document of the three on conversion: gap selling, workbook, graduation reveal, hot seats, hard deadline.</td><td><span class="dot g"></span>His arc over our run-of-show: the same conversion logic with the authors we can actually field.</td><td class="small">AI Summit close ratings: 2023 hard close 3.78 vs 2025 integration close 4.53</td></tr>
 <tr><td>Carries Vishen&#x27;s inputs</td><td><span class="dot r"></span>Written before the documents existed; none of the inputs present yet.</td><td><span class="dot g"></span>All of them, by definition.</td><td><span class="dot g"></span>All 26 inputs carry a verdict and a reason; the pillars, paths, named method, Authority Statement, 90-day plan and summit arc are in.</td><td class="small">Reconciliation table, V3 Positioning tab</td></tr>
 <tr><td>Delivery risk</td><td><span class="dot g"></span>Every lane owned; onboarding arc, materials standard and guarantee designed.</td><td><span class="dot r"></span>No labs briefed, no teacher on 16 weeks, two documents disagree on which week builds what, price unstated.</td><td><span class="dot g"></span>As V1, with one conditional seat that has a fallback either way.</td><td class="small">V1 Format &amp; Contracts; V2 Summit flag</td></tr>
@@ -517,7 +568,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="rec" style="margin-top:22px">
       <div class="kicker">The recommendation</div>
       <h2>Build Version 3. Take it to Vishen as the answer to his documents, not a substitute for them.</h2>
-      <p>Version 1 is the safer build but it was written before Vishen's documents, and its summit sells the way the lowest-rated closes did (a 2023-style hard pitch at 3.78 against a 2025-style integration close at 4.53). Version 2 has the best summit arc and the sharpest identity thinking of the three, and it is not deliverable as written: sixteen weeks with no teacher, five weeks aimed at a customer who is one person in thirty-six, a price and fees that do not exist yet, and two documents that disagree on which week builds what. <strong>Version 3 keeps everything from Version 2 that the evidence supports and everything from Version 1 that makes it deliverable.</strong> It holds on seven of eight criteria; the eighth is a single open number, Priestley's fee, which resolves either way with a fallback already scheduled.</p>
+      <p>Version 1 is the safer build but it was written before Vishen's documents, and its summit sells the way the lowest-rated closes did (a 2023-style hard pitch at 3.78 against a 2025-style integration close at 4.53). Version 2 has the best summit arc and the sharpest identity thinking of the three, and it is not deliverable as written: sixteen weeks with no teacher, five weeks aimed at a customer who is one person in thirty-six, a price that does not exist yet, and two documents that disagree on which week builds what. <strong>Version 3 keeps everything from Version 2 that the evidence supports and everything from Version 1 that makes it deliverable.</strong> It holds on seven of eight criteria; the eighth is a single open item, Priestley's confirmation, which resolves either way with a fallback already scheduled.</p>
       <p><strong>Choose Version 1</strong> only if the decision is to set Vishen's documents aside entirely, which nobody has proposed. <strong>Choose Version 2</strong> only if the room changes: if the quiz re-read before the summit shows Founders and Scalers outnumbering Experts, his Weeks 8, 15 and 17 come back into scope and the argument re-opens. <strong>Otherwise, Version 3.</strong></p>
     </div>
   </section>
@@ -590,25 +641,25 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 
   <section id="authors">
     <div class="section-head">
-      <div class="overline">Authors and fees</div>
+      <div class="overline">Authors</div>
       <h2>Every name in any of the three, with where they stand today</h2>
-      <p class="body-md">Status from the Expert to Authority speaker table, 8 September. Fees are packages from the Author Relations table; per-class rates are never shown to talent. Every teacher must be a signed Mindvalley author.</p>
+      <p class="body-md">Status from the Expert to Authority speaker table, 8 September. Commercial terms are held by Author Relations and are not part of this comparison. Every teacher must be a signed Mindvalley author.</p>
     </div>
-    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Name</th><th class="v1">Version 1</th><th class="v2">Version 2</th><th class="v3">Version 3</th><th>Airtable status</th><th>Package</th></tr></thead><tbody>
-<tr><td>Vishen Lakhiani</td><td>Curriculum Expert · 8 teach weeks · summit keynotes and closes</td><td>Designer · every unassigned week · ~10h summit stage</td><td>Curriculum Expert · 8 (7) teach weeks · every offer moment</td><td class="small">Confirmed</td><td class="small">$—, royalty; summit share under negotiation</td></tr>
-<tr><td>Jimmy Naraine</td><td>W5, W6 teach + 3 labs · Day 2 keynote · Day 3 heart close</td><td>Summit 45 min (Udemy empire) · W13 guest</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$15K Mastery package (flex $20K) + $4K summit</td></tr>
-<tr><td>Marisa Peer</td><td>W2 teach · Day 1 identity keynote (60)</td><td>30-min live interview on virality, Day 2 break</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$15K package</td></tr>
-<tr><td>John Lee</td><td>W10, W16 teach · Day 3 opener</td><td>Not mentioned</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$5K/class + $5K summit · note: might ask $14K · team cap $12K</td></tr>
-<tr><td>Ajit Nawalkha</td><td>W13–W15 teach · Day 3 keynote</td><td>Not mentioned</td><td>As V1 + co-hosts Day 3 hot seats</td><td class="small">In Negotiation</td><td class="small">$12K Mastery package + $5K summit</td></tr>
-<tr><td>Regan Hillyer</td><td>W11 fireside · Day 2 fireside with Vishen</td><td>"Reagan Hillier" Day 3 interview TBC · "Reagan Hilger" W1 guest</td><td>As V1, spelt right</td><td class="small">In Negotiation</td><td class="small">$15K</td></tr>
-<tr><td>Jason Goldberg</td><td>Summit host, both summits</td><td>Not mentioned (no host named)</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$10K package (summit + highlights) + $1.5K hospitality</td></tr>
-<tr><td>Alessio Pieroni</td><td>8 lab days incl. Week 9 script build</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">$8K approved 1 Sep</td></tr>
-<tr><td>Kash Rupareliaa</td><td>4 lab days + optional shoot · Day 2 opener</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">~$6K</td></tr>
-<tr><td>Sabrina Stocker</td><td>3 lab days</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">~$3K</td></tr>
-<tr><td>Daniel Priestley</td><td>Considered, not allocated</td><td>Summit teaching session, duration TBC</td><td>Day 3 KPI keynote (45) + W4 co-teach, both if confirmed</td><td class="small">In consideration (7 Sep) · outreach live</td><td class="small">$25K package on the fee table (7 Sep): $10K summit + $15K class</td></tr>
-<tr><td>Dr. Shadé Zahrai</td><td>—</td><td>Summit 30–45 min, imposter syndrome</td><td>Declined on cost</td><td class="small">In consideration (7 Sep)</td><td class="small">$25K package on the fee table (7 Sep)</td></tr>
-<tr><td>Roxie Nafousi</td><td>—</td><td>Not in either document</td><td>Declined on subject</td><td class="small">In consideration (7 Sep)</td><td class="small">Row on the fee table, no figures</td></tr>
-<tr><td>Maria Wendt</td><td>Considered, not allocated</td><td>Not mentioned</td><td>In consideration; strong recommendation not to pursue ($1 course)</td><td class="small">Not Approved 31 Aug; re-added 7 Sep</td><td class="small">Not costed</td></tr>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Name</th><th class="v1">Version 1</th><th class="v2">Version 2</th><th class="v3">Version 3</th><th>Airtable status</th><th>Note</th></tr></thead><tbody>
+<tr><td>Vishen Lakhiani</td><td>Curriculum Expert · 8 teach weeks · summit keynotes and closes</td><td>Designer · every unassigned week · ~10h summit stage</td><td>Curriculum Expert · 8 (7) teach weeks · every offer moment</td><td class="small">Confirmed</td><td class="small">Curriculum Expert tier · summit terms a separate conversation</td></tr>
+<tr><td>Jimmy Naraine</td><td>W5, W6 teach + 3 labs · Day 2 keynote · Day 3 heart close</td><td>Summit 45 min (Udemy empire) · W13 guest</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">Author seat: six lessons · summit slot pending</td></tr>
+<tr><td>Marisa Peer</td><td>W2 teach · Day 1 identity keynote (60)</td><td>30-min live interview on virality, Day 2 break</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">Top tier · W2 and the Day 1 keynote</td></tr>
+<tr><td>John Lee</td><td>W10, W16 teach · Day 3 opener</td><td>Not mentioned</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">Two teach weeks and the Day 3 opener</td></tr>
+<tr><td>Ajit Nawalkha</td><td>W13–W15 teach · Day 3 keynote</td><td>Not mentioned</td><td>As V1 + co-hosts Day 3 hot seats</td><td class="small">In Negotiation</td><td class="small">Speaker-table row added 7 Sep · three weeks</td></tr>
+<tr><td>Regan Hillyer</td><td>W11 fireside · Day 2 fireside with Vishen</td><td>"Reagan Hillier" Day 3 interview TBC · "Reagan Hilger" W1 guest</td><td>As V1, spelt right</td><td class="small">In Negotiation</td><td class="small">Top tier · headliner · one fireside</td></tr>
+<tr><td>Jason Goldberg</td><td>Summit host, both summits</td><td>Not mentioned (no host named)</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">Hosts both summits and the highlights (ruled 1 Sep)</td></tr>
+<tr><td>Alessio Pieroni</td><td>8 lab days incl. Week 9 script build</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">Eight slots approved 1 Sep</td></tr>
+<tr><td>Kash Rupareliaa</td><td>4 lab days + optional shoot · Day 2 opener</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">Five slots · fungible with Sabrina</td></tr>
+<tr><td>Sabrina Stocker</td><td>3 lab days</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">Three slots · fungible with Kash</td></tr>
+<tr><td>Daniel Priestley</td><td>Considered, not allocated</td><td>Summit teaching session, duration TBC</td><td>Day 3 KPI keynote (45) + W4 co-teach, both if confirmed</td><td class="small">In consideration (7 Sep) · outreach live</td><td class="small">Two conditional seats · Author Relations sign-off pending</td></tr>
+<tr><td>Dr. Shadé Zahrai</td><td>—</td><td>Summit 30–45 min, imposter syndrome</td><td>Declined: slot already covered</td><td class="small">In consideration (7 Sep)</td><td class="small">One 30 to 45 minute slot, covered twice over by Marisa and the wound session</td></tr>
+<tr><td>Roxie Nafousi</td><td>—</td><td>Not in either document</td><td>Declined on subject</td><td class="small">In consideration (7 Sep)</td><td class="small">Off-subject for this programme</td></tr>
+<tr><td>Maria Wendt</td><td>Considered, not allocated</td><td>Not mentioned</td><td>In consideration; strong recommendation not to pursue ($1 course)</td><td class="small">Not Approved 31 Aug; re-added 7 Sep</td><td class="small">Not pursued</td></tr>
 <tr><td>Jon Butcher · Jeffrey Allen</td><td>—</td><td>W1 guest teachers</td><td>Day 1 success-story candidates</td><td class="small">Not on the table</td><td class="small">—</td></tr>
 <tr><td>Michael Beckwith · Lisa Nichols</td><td>—</td><td>W2 case studies</td><td>Case studies fine; no seats</td><td class="small">Beckwith not on table · Nichols Not Approved</td><td class="small">—</td></tr>
 <tr><td>Dawn Hoang · Nora Cavani · Ronan Diego</td><td>Day 1 success-story fireside</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">Unpaid</td></tr>
@@ -634,16 +685,16 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     <div class="section-head" style="margin-top:34px">
       <div class="overline">What the numbers do</div>
       <h2>An illustration, not a forecast</h2>
-      <p class="body-md">Enrolment counts below are placeholders chosen to bracket the team's own speaker-budget line (15% of programme revenue: "$225K ideal, $300K maximum" implies planning at roughly $1.5M to $2M, or 300 to 400 seats at $4,999). Every rate is sourced and named; the seat counts are not predictions. The point is the size of the levers, not the totals.</p>
+      <p class="body-md">Enrolment counts below are placeholders (200, 300 and 400 seats at $4,999) chosen to show the size of the lever, not to predict volume. Every rate is sourced and named; the seat counts are not predictions.</p>
     </div>
-    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Seats (placeholder)</th><th>Gross at $4,999</th><th>Refunds at 23.8% (AIM 2026, observed)</th><th>Refunds at 10% (a target, not a precedent)</th><th>Difference: what onboarding is worth</th><th>Guest fees on the table</th></tr></thead><tbody>
-      <tr><td class="mono-t">200</td><td>$999,800</td><td>−$237,952</td><td>−$99,980</td><td><strong>$137,972</strong></td><td>≈$104.5K</td></tr>
-      <tr><td class="mono-t">300</td><td>$1,499,700</td><td>−$356,929</td><td>−$149,970</td><td><strong>$206,959</strong></td><td>≈$104.5K (+$25K Priestley if confirmed)</td></tr>
-      <tr><td class="mono-t">400</td><td>$1,999,600</td><td>−$475,905</td><td>−$199,960</td><td><strong>$275,945</strong></td><td>≈$104.5K (+$25K Priestley if confirmed)</td></tr>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Seats (placeholder)</th><th>Gross at $4,999</th><th>Refunds at 23.8% (AIM 2026, observed)</th><th>Refunds at 10% (a target, not a precedent)</th><th>Difference: what onboarding is worth</th></tr></thead><tbody>
+      <tr><td class="mono-t">200</td><td>$999,800</td><td>−$237,952</td><td>−$99,980</td><td><strong>$137,972</strong></td></tr>
+      <tr><td class="mono-t">300</td><td>$1,499,700</td><td>−$356,929</td><td>−$149,970</td><td><strong>$206,959</strong></td></tr>
+      <tr><td class="mono-t">400</td><td>$1,999,600</td><td>−$475,905</td><td>−$199,960</td><td><strong>$275,945</strong></td></tr>
     </tbody></table></div>
     <div class="callout good" style="margin-top:18px">
       <div class="ic">◆</div>
-      <div><p><strong>The reading.</strong> At any of these volumes, moving the refund rate from the last cohort's 23.8% to 10% is worth more than the entire guest bench. That is the case for the onboarding arc, the personal review and the artefact-a-week rule, and it is the case for building the Mastery as a system that earns its retention in the first fourteen days. Vishen's royalty (~20% on the Mastery; his summit row reads "20% author fee") and the summit's own costs sit outside this table; they apply to all three versions equally.</p></div>
+      <div><p><strong>The reading.</strong> At any of these volumes, moving the refund rate from the last cohort's 23.8% to 10% is the largest single lever in the plan. That is the case for the onboarding arc, the personal review and the artefact-a-week rule, and it is the case for building the Mastery as a system that earns its retention in the first fourteen days. Author terms and the summit's own costs sit outside this table; they apply to all three versions equally.</p></div>
     </div>
   </section>
 
@@ -654,7 +705,7 @@ a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
     <div class="grid g2">
       <div class="card"><div class="kicker">The quiz</div><h3>If Founders and Scalers overtake Experts</h3><p class="body-md" style="margin-top:8px">Today 69% pick The Expert on the four-type question and 76% earn under $25K (626 registrants, 8 September; 36 on 7 September, same direction). Re-read the quiz the week before the summit. If the $100K+ share climbs from one in ten toward one in four, the paid-ads, app and team weeks come back into scope for this room.</p></div>
-      <div class="card"><div class="kicker">Priestley</div><h3>If Daniel confirms, and at what shape</h3><p class="body-md" style="margin-top:8px">Version 3 carries him as two conditional seats. The fee table holds a $25K package (summit + one Mastery class) against ~$12K freed; a yes at that package needs ~$13K found, a one-seat shape needs less, and a no reverts Day 3 and Week 4 to Version 1's shape with no other change.</p></div>
+      <div class="card"><div class="kicker">Priestley</div><h3>If Daniel confirms, and at what shape</h3><p class="body-md" style="margin-top:8px">Version 3 carries him as two conditional seats. A yes at two seats or a one-seat shape is Author Relations' call on terms; a no reverts Day 3 and Week 4 to Version 1's shape with no other change.</p></div>
       <div class="card"><div class="kicker">Vishen's read</div><h3>Where Vishen sees a routed input differently</h3><p class="body-md" style="margin-top:8px">Each of the nine inputs routed elsewhere carries its evidence on Version 3's reconciliation table. A different view is a conversation about that evidence, and it can move a verdict; the build was made to be re-tested, not defended. The one most likely to be debated: the four-platform dance.</p></div>
       <div class="card"><div class="kicker">The authors</div><h3>If an In Negotiation seat falls through</h3><p class="body-md" style="margin-top:8px">Named alternatives already exist for Marisa (Paul McKenna, 9.61 S&amp;I) and for the Day 3 keynotes. The lab lanes are fungible between Kash and Sabrina. Version 2 has no such fallbacks because it names no bench.</p></div>
     </div>
