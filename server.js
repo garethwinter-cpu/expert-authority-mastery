@@ -14,6 +14,8 @@ const page = (file) => (req, res) => res.sendFile(path.resolve(ROOT, file));
 app.get('/', page('index.html'));
 app.get('/expert-authority', page('expert-authority.html'));
 app.get('/expert-authority-v2', page('expert-authority-v2.html'));
+app.get('/expert-authority-v3', page('expert-authority-v3.html'));
+app.get('/expert-authority-compare', page('expert-authority-compare.html'));
 app.get('/ai-founders', page('ai-founders.html'));
 app.get('/positioning', page('positioning.html'));
 app.get('/expert-authority-guild', page('expert-authority-guild.html'));

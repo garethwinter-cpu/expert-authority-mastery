@@ -359,6 +359,14 @@
       "finding": "Vishen asked for Priestley. Speaker table: In consideration (added 7 Sep); Marta and Marijana are reaching out per Gareth's ruling; no E&A fee on the table. 2026 fee pattern: $10K summit session (AI Summit Mar 26, S&I Jun 26), $15K Mastery class; ~$25K package vs ~$12K headroom from Ben's removal. Ratings: 9.55 avg across 12 EM sessions; 4.51 best keynote AI Summit 2026 Day 2.",
       "decision": "Version 2 carries him as two conditional seats, both marked 'if confirmed': Day 3 keynote 'The Key Person of Influence Scorecard' at 5:00pm London (45 min; REPITCH and hot seats each cut 15 min to fit; day ends 9:15pm with him, 8:55pm without) and Week 4 co-teach of the KPI scorecard with Vishen (Vishen live weeks 8 to 7). Reconciliation row moved from Declined (summit casting) to its own Adapted row: 7 adopted / 10 adapted / 9 declined. Boundary by lane: KPI here, AI machine in AIF.",
       "source": "Airtable appnHZYcirCg1VqUP Speaker Engagements; Author Relations fee table appdKUVBsaerckWY3; AI Summit 2026 agenda ratings; EM lesson ratings"
+    },
+    {
+      "id": "ea-three-versions-sep8",
+      "date": "2026-09-08",
+      "area": "E&A · versions",
+      "finding": "Gareth reframed the lineup: V1 = what the team presented; V2 = what Vishen presented; V3 = the combined build (previously called V2). Vishen's two BlinkLife documents were re-fetched on 8 Sep and are unchanged since 6–7 Sep. Reading them whole surfaced: his summit note's 'gap' week numbers do not match his curriculum page's weeks (method W2 vs Story; talk W4 vs Schwartz; ladder W6 vs Reels; content system W9 vs Funnel); Jimmy's Udemy figure is 500k+ in the note and 1M+ on the page; Regan is spelt two different wrong ways; 16 of 18 weeks name no teacher; his summit durations sum to 5h00–5h15 / 3h45 / 3h30 against his stated 4–5 / 4–5 / ~4 hours, and to ~10 hours of Vishen stage time; 10 of his 15 cited figures are in no base we hold (84 NPS verifies; 100k registrations and laser-coaching conversion partly).",
+      "decision": "Three self-contained pages plus a Compare page (/expert-authority, /expert-authority-v2, /expert-authority-v3, /expert-authority-compare) with a shared version bar. Compare carries a 13-row at-a-glance table, an 8-criterion scorecard (V1 6/1/1, V2 2/3/3, V3 7/1/0), week-by-week (18 rows), summit and authors side by side, and the recommendation: build V3; V1 only if Vishen withdraws his inputs; V2 only if the quiz re-read shows Founders/Scalers overtaking Experts.",
+      "source": "BlinkLife pages API (pages/public/vishen/expert-authority-summit; smart-notes/public/vishen/5a034b25…); Expert to Authority speaker table 8 Sep; team pages"
     }
   ],
   "verified_corrections_to_live_pages": [

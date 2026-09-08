@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Expert &amp; Authority Mastery · Compare</title>
+<meta name="description" content="Three versions of the Expert &amp; Authority Mastery side by side: the team proposal, Vishen's proposal, and the combined build, with the decision scorecard."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+ --brand:#7A12D4;--brand-bright:#9D4EE8;--brand-content:#6810B4;--brand-dark:#44087A;
+ --brand-light:#F6EEFD;--brand-border:#E4D2F8;--green:#159F65;--green-light:#E8F8F1;--green-border:#BEE9D6;
+ --orange:#ED6325;--orange-content:#C9541F;--orange-light:#FFF4E9;--orange-border:#FBD9BC;
+ --pink:#DF1A6F;--pink-light:#FDEBF3;--gold:#946A00;--gold-light:#FBF3DE;
+ --grey-100:#F9F9F9;--grey-200:#F3F4F6;--grey-300:#CED1D7;--grey-400:#979CA5;
+ --grey-500:#595E67;--grey-600:#292D38;--ink:#0F131A;
+ --bg:#fff;--surface:#fff;--text:#0F131A;--text-muted:#595E67;--text-subtle:#71767F;
+ --border:#DFE1E5;--border-strong:#CED1D7;
+ --shadow-light:0 4px 15px 0 rgba(0,0,0,.05);--shadow-medium:0 5px 20px 0 rgba(0,0,0,.10);--shadow-strong:0 8px 30px 0 rgba(0,0,0,.20);
+ --dusk:linear-gradient(135deg,#0F131A 0%,#44087A 52%,#7A12D4 100%);
+ --container:1180px;--ease:cubic-bezier(0.2,0,0,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Google Sans","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--text);background:var(--bg);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none}
+h1,h2,h3,h4{text-wrap:balance}
+p,li{text-wrap:pretty}
+.section-head p{max-width:70ch}
+
+.wrap{max-width:var(--container);margin:0 auto;padding:0 24px}
+.overline{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-content)}
+.overline.on-dark{color:#D7B6F7}
+h1{font-size:clamp(38px,5.4vw,64px);font-weight:700;line-height:1.08;letter-spacing:-.02em}
+h2{font-size:clamp(26px,3.4vw,38px);font-weight:700;line-height:1.15;letter-spacing:-.02em}
+h3{font-size:20px;font-weight:700;line-height:1.3}
+.body-lg{font-size:19px;line-height:1.65;color:var(--text-muted)}
+.body-md{font-size:16px;line-height:1.6;color:var(--text-muted)}
+.small{font-size:13px;color:var(--text-subtle)}
+.badge{display:inline-flex;align-items:center;gap:6px;border-radius:128px;padding:6px 14px;font-size:12.5px;font-weight:600;background:var(--brand-light);color:var(--brand-content)}
+.badge.green{background:var(--green-light);color:var(--green)}
+.badge.orange{background:var(--orange-light);color:var(--orange-content)}
+.badge.grey{background:var(--grey-200);color:var(--grey-500)}
+.badge.dark{background:rgba(255,255,255,.14);color:#fff}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:60;height:60px;background:rgba(255,255,255,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);display:flex;align-items:center}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;width:100%}
+.wordmark{font-size:18px;font-weight:700;letter-spacing:-.01em;color:var(--ink)}
+.wordmark span{color:var(--brand)}
+.topbar .meta{font-size:13px;color:var(--text-subtle);font-weight:500}
+
+/* Hero */
+.hero{background:var(--dusk);color:#fff;padding:72px 0 100px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-180px;top:-180px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(157,78,232,.5),transparent 66%)}
+.hero .wrap{position:relative;z-index:2}
+.hero .badges{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px}
+.hero h1{max-width:920px;margin:14px 0 20px}
+.hero .answer{max-width:840px;font-size:20px;line-height:1.65;color:#E6D8F8}
+.hero .answer strong{color:#fff}
+.hero .quickfacts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px}
+.qf{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:18px 20px}
+.qf .n{font-size:26px;font-weight:700;letter-spacing:-.01em}
+.qf .l{font-size:13px;color:#CDB2EE;margin-top:4px;line-height:1.4}
+
+/* Summit tab */
+.summit-tbl td.mono-t{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--text-subtle);font-size:13px}
+.summit-tbl .spk{white-space:nowrap;margin:2px 0}
+.summit-tbl .spk .status{font-size:10px;padding:3px 9px}
+.summit-tbl tr.offer td{background:var(--pink-light)}
+.summit-tbl tr.vip td{background:var(--gold-light)}
+.briefs{display:grid;gap:10px;margin-top:12px}
+.brief{border:1px solid var(--border);border-radius:16px;background:var(--surface);box-shadow:var(--shadow-light)}
+.brief summary{cursor:pointer;padding:16px 20px;font-size:14.5px;line-height:1.4;display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;list-style:none}
+.brief summary::-webkit-details-marker{display:none}
+.brief summary .who{color:var(--text-subtle);font-size:13px}
+.brief summary::after{content:"Read brief";margin-left:auto;font-size:12px;font-weight:700;color:var(--brand-content);letter-spacing:.06em;text-transform:uppercase}
+.brief[open] summary::after{content:"Close"}
+.brief-body{padding:0 20px 18px}
+.brief-body p{font-size:14px;line-height:1.6;color:var(--text-muted);margin-top:10px;text-wrap:pretty}
+.flags{margin:12px 0 0 18px;padding:0}
+.flags li{margin:8px 0;line-height:1.55;font-size:14px}
+/* Programme: visual layout */
+.modmap{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:22px 0 14px}
+.mm{display:block;border-radius:16px;padding:16px 16px 14px;color:#fff;text-decoration:none;background:var(--brand);box-shadow:var(--shadow-light);transition:transform .18s var(--ease)}
+.mm:hover{transform:translateY(-2px)}
+.mm.m2{background:var(--green)} .mm.mi{background:var(--ink)} .mm.m3{background:var(--orange)} .mm.m4{background:var(--pink)}
+.mm-weeks{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;opacity:.8}
+.mm-name{font-size:17px;font-weight:700;line-height:1.2;margin-top:4px}
+.mm-br{font-size:12.5px;line-height:1.45;opacity:.9;margin-top:8px;min-height:54px}
+.mm-faces{margin-top:10px} .mm-faces img{width:32px;height:32px;border-color:rgba(255,255,255,.7)}
+.curr-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 18px}
+.tool{border:1px solid var(--border);background:#fff;color:var(--ink);font:inherit;font-size:13px;font-weight:600;padding:7px 14px;border-radius:128px;cursor:pointer}
+.tool:hover{background:var(--grey-100)}
+.legend{margin-left:auto;font-size:12.5px;color:var(--text-subtle);display:flex;align-items:center;gap:6px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:4px;margin-left:8px}
+.sw.teach{background:var(--brand)} .sw.lab{background:var(--green)} .sw.fire{background:var(--pink)}
+.module.m1 .module-head{border-left:6px solid var(--brand)} .module.m2 .module-head{border-left:6px solid var(--green)} .module.mi .module-head{border-left:6px solid var(--ink)} .module.m3 .module-head{border-left:6px solid var(--orange)} .module.m4 .module-head{border-left:6px solid var(--pink)}
+.faces{display:flex;flex:0 0 auto}
+.faces img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #fff;box-shadow:var(--shadow-light);background:var(--grey-200)}
+.faces img+img{margin-left:-12px}
+.mfaces{margin-left:auto;margin-right:14px;align-self:center} .mfaces img{width:36px;height:36px}
+.wk2{display:grid;grid-template-columns:68px 1fr 1fr;gap:14px;padding:16px 0;border-bottom:1px solid var(--grey-200);align-items:start}
+.wk2:last-of-type{border-bottom:0}
+.wk2-num{display:flex;flex-direction:column;align-items:center;justify-content:center;width:62px;height:58px;padding:0 4px;border-radius:14px;background:var(--brand);color:#fff;font-weight:700;font-size:15px;line-height:1;text-align:center}
+.wk2-num small{font-size:8.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;opacity:.8;margin-top:3px}
+.module.m2 .wk2-num{background:var(--green)} .module.mi .wk2-num{background:var(--ink)} .module.m3 .wk2-num{background:var(--orange)} .module.m4 .wk2-num{background:var(--pink)}
+.slot{border-radius:16px;padding:16px 18px 14px;border:1px solid var(--border);background:#fff;min-width:0}
+.slot.teach{background:var(--brand-light);border-color:var(--brand-border)}
+.slot.lab{background:var(--green-light);border-color:var(--green-border)}
+.slot.fire{background:var(--pink-light);border-color:#F3C4D9}
+.slot.misc{background:var(--grey-100)}
+.slot-head{display:flex;align-items:center;gap:10px;margin-bottom:10px;min-height:44px}
+.slot-kind{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-subtle)}
+.slot.teach .slot-kind{color:var(--brand-content)} .slot.lab .slot-kind{color:var(--green)} .slot.fire .slot-kind{color:var(--pink)}
+.slot-who{font-size:14px;font-weight:700;color:var(--ink);line-height:1.25}
+.slot h4{font-size:17px;font-weight:700;line-height:1.3;margin:0 0 6px;text-wrap:balance}
+.slot .lede{font-size:14px;color:var(--text-muted);line-height:1.55}
+.more{margin-top:6px}
+.more summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--brand-content);list-style:none;display:inline-block}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:" +"} .more[open] summary::after{content:" \2212"}
+.more[open] summary{color:var(--text-subtle)}
+.more p{font-size:13.5px;color:var(--text-muted);line-height:1.6;margin-top:8px}
+.slot .win{display:inline-block;margin-top:10px;font-size:12.5px;font-weight:700;color:var(--green);background:#fff;border:1px solid var(--green-border);border-radius:128px;padding:5px 12px}
+@media(max-width:960px){.wk2{grid-template-columns:1fr}.wk2-rail{display:flex}.modmap{grid-template-columns:repeat(2,1fr)}.mfaces{display:none}}
+/* Version bar */
+.verbar{display:flex;gap:6px;padding:12px 0 2px;flex-wrap:wrap}
+.ver-link{display:inline-block;border:1px solid var(--border);background:#fff;border-radius:128px;padding:8px 16px;font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none}
+.ver-link:hover{background:var(--grey-100);color:var(--ink)}
+.ver-link.current{background:var(--ink);color:#fff;border-color:var(--ink)}
+.ver-link.cmp{border-color:var(--brand);color:var(--brand)}
+.ver-link.cmp:hover{background:var(--brand-light,#F3E9FC);color:var(--brand)}
+.tabbar{flex-wrap:wrap;overflow:visible}
+.same-note{border-radius:16px;padding:12px 18px;background:var(--grey-100);border:1px solid var(--border);font-size:13.5px;color:var(--text-subtle);margin-bottom:26px}
+.same-note strong{color:var(--ink)}
+.pillar-tag{font-size:10.5px;font-weight:700;letter-spacing:.04em;color:var(--text-subtle);margin-top:8px;line-height:1.3;text-transform:uppercase}
+.pips{display:flex;gap:2px;margin-top:6px}
+.wk2-rail .pp{width:14px;height:14px;font-size:8.5px;border-radius:4px;margin:0}
+.v2add{margin-top:10px;padding:10px 12px;border-radius:12px;background:#fff;border:1px dashed var(--green-border);font-size:13px;line-height:1.5;color:var(--text-muted)}
+.v2add .pill{margin-right:6px}
+/* Tabs */
+.tabbar-outer{position:sticky;top:60px;z-index:55;background:#fff;border-bottom:1px solid var(--border);box-shadow:var(--shadow-light)}
+.tabbar{display:flex;gap:4px;overflow-x:auto;padding:10px 0;-ms-overflow-style:none;scrollbar-width:none}
+.tabbar::-webkit-scrollbar{display:none}
+.tab-btn{flex:0 0 auto;border:1px solid transparent;background:transparent;color:var(--text-muted);font:inherit;font-size:14.5px;font-weight:600;padding:9px 18px;border-radius:128px;cursor:pointer;transition:all .18s var(--ease);white-space:nowrap}
+.tab-btn:hover{background:var(--grey-200);color:var(--ink)}
+.tab-btn.active{background:var(--brand);color:#fff}
+.tab-btn .num{display:inline-block;font-size:11px;font-weight:700;opacity:.65;margin-right:6px}
+.tab-panel{display:none;padding:56px 0 80px}
+.tab-panel.active{display:block}
+section+section{margin-top:56px}
+.section-head{margin-bottom:26px;max-width:880px}
+.section-head p{margin-top:10px}
+
+/* Cards & grids */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:repeat(2,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;box-shadow:var(--shadow-light)}
+.card.tint{background:var(--brand-light);border-color:var(--brand-border)}
+.card.dark{background:var(--ink);color:#fff;border-color:var(--ink)}
+.card.dark .body-md{color:#B9BEC9}
+.card h3{margin-bottom:8px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content);margin-bottom:10px}
+.card.dark .kicker{color:#D7B6F7}
+
+/* Stat blocks */
+.stat{border-radius:16px;padding:24px;border:1px solid var(--border);background:#fff}
+.stat .n{font-size:40px;font-weight:700;letter-spacing:-.02em;color:var(--brand);line-height:1}
+.stat.green .n{color:var(--green)}
+.stat.orange .n{color:var(--orange)}
+.stat.pink .n{color:var(--pink)}
+.stat .l{font-size:14px;font-weight:600;color:var(--ink);margin-top:10px;line-height:1.4}
+.stat .s{font-size:12.5px;color:var(--text-subtle);margin-top:5px;line-height:1.45}
+
+/* SCQA */
+.scqa{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.scqa>div{padding:26px;border-right:1px solid var(--border)}
+.scqa>div:last-child{border-right:0}
+.scqa .letter{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:17px;margin-bottom:14px}
+.scqa .s-l{background:var(--grey-200);color:var(--grey-600)}
+.scqa .c-l{background:var(--orange-light);color:var(--orange-content)}
+.scqa .q-l{background:var(--pink-light);color:var(--pink)}
+.scqa .a-l{background:var(--brand);color:#fff}
+.scqa h4{font-size:13px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-subtle);margin-bottom:8px}
+.scqa p{font-size:14.5px;line-height:1.6;color:var(--text-muted)}
+.scqa .answer-cell{background:var(--brand-light)}
+.scqa .answer-cell p{color:var(--brand-dark);font-weight:500}
+
+/* Keyline */
+.keyline{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.keyline .kl{background:#fff;border:1px solid var(--border);border-top:4px solid var(--brand);border-radius:16px;padding:22px;box-shadow:var(--shadow-light)}
+.keyline .kl:nth-child(2){border-top-color:var(--green)}
+.keyline .kl:nth-child(3){border-top-color:var(--orange)}
+.keyline .kl:nth-child(4){border-top-color:var(--pink)}
+.keyline .kl .idx{font-size:12px;font-weight:700;color:var(--text-subtle);letter-spacing:.08em}
+.keyline .kl h3{font-size:16.5px;margin:8px 0 8px;line-height:1.35}
+.keyline .kl p{font-size:13.5px;color:var(--text-muted);line-height:1.55}
+
+/* Tables */
+.tbl-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--border);border-radius:16px;overflow:hidden;font-size:14px;min-width:660px}
+.tbl th{background:var(--grey-100);text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--text-subtle);padding:12px 16px;border-bottom:1px solid var(--border)}
+.tbl td{padding:12px 16px;border-bottom:1px solid var(--grey-200);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl .score{font-weight:700;color:var(--green);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tbl .score.warn{color:var(--orange)}
+.tbl .score.bad{color:var(--pink)}
+.tbl .who{color:var(--text-subtle);font-size:13px}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:128px;background:var(--grey-200);color:var(--grey-500);white-space:nowrap}
+.pill.b{background:var(--brand-light);color:var(--brand-content)}
+.pill.g{background:var(--green-light);color:var(--green)}
+.pill.o{background:var(--orange-light);color:var(--orange-content)}
+.pill.p{background:var(--pink-light);color:var(--pink)}
+.pill.gold{background:var(--gold-light);color:var(--gold)}
+
+/* Status chips (mirrors the author-proposal deck) */
+.status{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:128px}
+.status.confirmed{background:var(--green-light);color:var(--green)}
+.status.roster{background:var(--brand-light);color:var(--brand-content)}
+.status.proposal{background:var(--orange-light);color:var(--orange-content)}
+.status.rising{background:var(--gold-light);color:var(--gold)}
+
+/* Modules / weeks */
+.module{border:1px solid var(--border);border-radius:16px;overflow:hidden;margin-bottom:18px;background:#fff}
+.module-head{padding:24px 28px;display:flex;align-items:flex-start;gap:18px;cursor:pointer;user-select:none}
+.module-head:hover{background:var(--grey-100)}
+.mnum{flex:0 0 46px;height:46px;border-radius:13px;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
+.module.m2 .mnum{background:var(--green)}
+.module.m3 .mnum{background:var(--orange)}
+.module.m4 .mnum{background:var(--pink)}
+.module.mi .mnum{background:var(--ink)}
+.module-head .mtitle{flex:1}
+.module-head h3{font-size:19px}
+.module-head .msub{font-size:14px;color:var(--text-muted);margin-top:4px}
+.module-head .chev{flex:0 0 auto;font-size:20px;color:var(--text-subtle);transition:transform .2s var(--ease);margin-top:8px}
+.module.open .chev{transform:rotate(180deg)}
+.module-body{display:none;border-top:1px solid var(--grey-200);padding:6px 28px 26px}
+.module.open .module-body{display:block}
+.week{display:grid;grid-template-columns:96px 1fr 1fr;gap:16px;padding:18px 0;border-bottom:1px solid var(--grey-200)}
+.week:last-child{border-bottom:0}
+.week .wk{font-size:13px;font-weight:700;color:var(--text-subtle);padding-top:2px}
+.call{border-left:3px solid var(--brand-border);padding-left:14px}
+.call.lab{border-left-color:var(--green-border)}
+.call .ct{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:4px}
+.call .ct.teach{color:var(--brand-content)}
+.call .ct.lab-t{color:var(--green)}
+.call h4{font-size:15px;font-weight:700;line-height:1.35}
+.call p{font-size:13px;color:var(--text-muted);margin-top:4px;line-height:1.5}
+.call .win{font-size:12.5px;margin-top:7px;color:var(--green);font-weight:600}
+
+/* Callouts */
+.callout{border-radius:16px;padding:24px 28px;border:1px solid var(--brand-border);background:var(--brand-light);display:flex;gap:16px;align-items:flex-start}
+.callout.warn{background:var(--orange-light);border-color:var(--orange-border)}
+.callout.good{background:var(--green-light);border-color:var(--green-border)}
+.callout.dark{background:var(--ink);border-color:var(--ink)}
+.callout.dark p{color:#B9BEC9}
+.callout.dark strong{color:#fff}
+.callout .ic{font-size:19px;line-height:1.4;font-weight:700;color:var(--brand-content)}
+.callout.warn .ic{color:var(--orange-content)}
+.callout.good .ic{color:var(--green)}
+.callout.dark .ic{color:#D7B6F7}
+.callout p{font-size:14.5px;color:var(--grey-600);line-height:1.6}
+.callout p+p{margin-top:10px}
+.callout strong{color:var(--ink)}
+
+/* Quote */
+.quote{border-left:4px solid var(--brand);padding:6px 0 6px 22px;margin:10px 0}
+.quote p{font-size:17px;line-height:1.6;color:var(--ink);font-style:italic}
+.quote .by{font-size:13px;color:var(--text-subtle);margin-top:8px;font-style:normal;font-weight:600}
+
+/* Faculty */
+.fac-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;margin-bottom:14px}
+.mono{width:64px;height:64px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:22px;font-weight:700;color:#fff;background:var(--dusk);letter-spacing:-.02em;flex:0 0 64px}
+.fac-role{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-subtle)}
+.fac-name{font-size:21px;font-weight:700;line-height:1.2;margin-top:4px}
+.fac-sub{font-size:13.5px;color:var(--text-muted);margin-top:4px;line-height:1.45}
+.scorebar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}
+.sc{border:1px solid var(--border);border-radius:12px;padding:10px 14px;background:var(--grey-100);min-width:96px}
+.sc .v{font-size:20px;font-weight:700;color:var(--green);line-height:1;font-variant-numeric:tabular-nums}
+.sc .v.na{color:var(--text-subtle);font-size:15px;padding-top:4px}
+.sc .k{font-size:11.5px;color:var(--text-subtle);margin-top:5px;line-height:1.35}
+.covers{font-size:12.5px;color:var(--text-subtle);margin-top:14px;padding-top:12px;border-top:1px dashed var(--grey-300);line-height:1.55}
+.covers strong{color:var(--grey-600)}
+
+/* Artefact steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{border:1px solid var(--border);border-radius:16px;padding:24px;background:#fff;box-shadow:var(--shadow-light)}
+.step .sn{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-content);margin-bottom:10px}
+.step h3{font-size:17px;margin-bottom:8px}
+.step p{font-size:13.5px;color:var(--text-muted);line-height:1.55}
+
+/* Ladder */
+.ladder{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.rung{display:grid;grid-template-columns:126px 1fr;gap:18px;align-items:center;border:1px solid var(--border);border-radius:14px;padding:16px 20px;background:#fff}
+.rung .price{font-size:19px;font-weight:700;color:var(--brand);font-variant-numeric:tabular-nums}
+.rung .price small{display:block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--text-subtle);margin-top:3px}
+.rung h4{font-size:15.5px;font-weight:700}
+.rung p{font-size:13px;color:var(--text-muted);margin-top:3px;line-height:1.5}
+.rung.identity{background:var(--brand-light);border-color:var(--brand-border)}
+.rung.identity .price{color:var(--brand-dark)}
+
+/* Lists */
+ul.tick{list-style:none;display:grid;gap:9px}
+ul.tick li{font-size:14.5px;color:var(--text-muted);line-height:1.55;padding-left:26px;position:relative}
+ul.tick li::before{content:"\2713";position:absolute;left:0;top:0;color:var(--green);font-weight:700}
+ol.numbered{list-style:none;counter-reset:n;display:grid;gap:9px}
+ol.numbered li{font-size:14.5px;color:var(--text-muted);line-height:1.55;padding-left:30px;position:relative;counter-increment:n}
+ol.numbered li::before{content:counter(n);position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--brand-light);color:var(--brand-content);font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
+
+footer{background:var(--ink);color:#8D93A0;padding:36px 0;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+
+@media(max-width:960px){
+ .g3,.g4,.keyline,.scqa,.hero .quickfacts,.steps{grid-template-columns:repeat(2,1fr)}
+ .scqa>div{border-bottom:1px solid var(--border);border-right:0}
+ .week{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ .g2,.g3,.g4,.keyline,.scqa,.hero .quickfacts,.steps{grid-template-columns:1fr}
+ .rung{grid-template-columns:1fr;gap:8px}
+ .module-head,.module-body{padding-left:20px;padding-right:20px}
+}
+
+/* author headshots */
+.face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
+
+/* compare page */
+.cmp-nav{position:sticky;top:0;z-index:30;background:#fff;border-bottom:1px solid var(--border)}
+.cmp-nav .wrap{display:flex;gap:6px;flex-wrap:wrap;padding:10px 0}
+.cmp-nav a{font-size:13px;font-weight:600;color:var(--text-muted);text-decoration:none;padding:7px 12px;border-radius:128px;border:1px solid transparent}
+.cmp-nav a:hover{background:var(--grey-100);color:var(--ink)}
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vcard{border-radius:16px;padding:24px;border:1px solid var(--border);background:#fff;box-shadow:var(--shadow-light);display:flex;flex-direction:column}
+.vcard.v1{border-top:5px solid var(--grey-500)}.vcard.v2{border-top:5px solid var(--gold)}.vcard.v3{border-top:5px solid var(--brand)}
+.vcard .vk{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-subtle)}
+.vcard h3{margin:6px 0 10px;font-size:20px}
+.vcard p{font-size:14px;color:var(--text-muted);line-height:1.55;margin:0 0 12px}
+.vcard a.go{margin-top:auto;display:inline-block;font-size:13px;font-weight:700;color:var(--brand);text-decoration:none}
+.vcard a.go::after{content:" \2192"}
+.ctbl th:first-child,.ctbl td:first-child{width:150px;background:var(--grey-100);font-weight:700}
+.ctbl th{font-size:12px}
+.ctbl td{vertical-align:top;font-size:13.5px;line-height:1.5}
+.ctbl th.v1{color:var(--grey-500)}.ctbl th.v2{color:var(--gold)}.ctbl th.v3{color:var(--brand)}
+.cw{padding:6px 0;border-bottom:1px dashed var(--grey-200)}
+.cw:last-child{border-bottom:0}
+.cw strong{display:block;font-size:13.5px;margin-top:2px}
+.cw .pill{font-size:10px}
+.cwho{display:block;font-size:12px;color:var(--text-subtle);margin-top:2px}
+.cadd{display:block;font-size:12px;color:var(--text-muted);margin-top:6px;padding:6px 8px;border-radius:8px;background:var(--green-light);border:1px dashed var(--green-border)}
+.sl{list-style:none;margin:0;padding:0}
+.sl li{padding:5px 0;border-bottom:1px dashed var(--grey-200);font-size:13px;line-height:1.45}
+.sl li:last-child{border-bottom:0}
+.sl .mono-t{font-size:11.5px;color:var(--text-subtle);margin-right:4px}
+.sl strong{font-weight:600}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.dot.g{background:var(--green)}.dot.a{background:#E2B100}.dot.r{background:var(--orange)}
+.score{font-weight:700}
+.pips{display:flex;gap:2px}
+.pp{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;font-size:8.5px;border-radius:4px;font-weight:700;color:#fff;background:var(--grey-300)}
+.pp.p2{background:var(--grey-400)}.pp.p3{background:var(--brand)}
+.verdict-row td{background:var(--brand-light)}
+.rec{border-radius:16px;padding:28px 32px;background:var(--dusk);color:#fff}
+.rec .kicker{color:#CDB2EE}
+.rec h2{color:#fff;margin:0 0 12px}
+.rec p{color:#E9DDF7;font-size:15px;line-height:1.6}
+.rec strong{color:#fff}
+@media (max-width:900px){.three{grid-template-columns:1fr}.ctbl th:first-child,.ctbl td:first-child{width:90px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="wordmark">Mindvalley <span>×</span> Vishen Lakhiani</div>
+    <div class="meta">Compare · three versions side by side · Curriculum Team · 8 September 2026</div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="badges">
+      <span class="badge dark">Authority Pathway</span>
+      <span class="badge dark">Decision page</span>
+      <span class="badge dark">Three versions, one table</span>
+    </div>
+    <div class="overline on-dark">Compare the three</div>
+    <h1>Which Expert &amp; Authority Mastery do we build?</h1>
+    <p class="answer"><strong>Version 1</strong> is what the team presented: 17 weeks, six authors, the summit as built in Airtable. <strong>Version 2</strong> is what Vishen presented: 18 weeks, five pillars, four paths, and his own three-day agenda. <strong>Version 3</strong> is the combined build: the team's spine with every one of his inputs tested and either adopted, adapted or declined. This page puts them in one table so the decision can be made quickly, on evidence, in one sitting.</p>
+    <div class="quickfacts">
+      <div class="qf"><div class="n">17 · 18 · 17</div><div class="l">Weeks, V1 · V2 · V3</div></div>
+      <div class="qf"><div class="n">35 · 36 · 35</div><div class="l">Live touchpoints (V2 read literally: one lesson + one lab a week)</div></div>
+      <div class="qf"><div class="n">8 · ? · 8</div><div class="l">Vishen's live teach weeks (V2 names no teacher on 16 weeks)</div></div>
+      <div class="qf"><div class="n">6 · 5 · 6+1</div><div class="l">People named on Mastery weeks, Vishen included (V2 names him as designer only; V3's +1 is Priestley, conditional)</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="tabbar-outer">
+  <div class="wrap">
+    <div class="verbar"><a class="ver-link" href="/expert-authority">Version 1 · The team proposal</a><a class="ver-link" href="/expert-authority-v2">Version 2 · Vishen's proposal</a><a class="ver-link" href="/expert-authority-v3">Version 3 · The combined build</a><span class="ver-link current">Compare the three</span></div>
+  </div>
+</div>
+<div class="cmp-nav"><div class="wrap"><a href="#glance">At a glance</a><a href="#decision">Decision scorecard</a><a href="#weeks">Week by week</a><a href="#summit">Summit</a><a href="#authors">Authors &amp; fees</a><a href="#change">What would change the call</a></div></div>
+
+<div class="wrap">
+  <section>
+    <div class="three">
+      <div class="vcard v1"><div class="vk">Version 1</div><h3>The team proposal</h3><p>Seventeen weeks, Tuesday Teach and Thursday Implementation Day, six authors verified against their own transcripts, labs in fixed lanes, one graduating artefact: a live ladder with three paid rungs. The summit as the team built it in Airtable.</p><p><strong>Strength:</strong> every claim sourced, every seat contractable, every lane owned.<br><strong>Weakness:</strong> it pre-dates Vishen's documents, and its summit pitches rather than sells a gap.</p><a class="go" href="/expert-authority">Open Version 1</a></div>
+      <div class="vcard v2"><div class="vk">Version 2</div><h3>Vishen's proposal</h3><p>Eighteen weeks in five pillars, four persona paths with priority weeks, guest teachers on two weeks, a 13-deliverable Authority Blueprint, and a three-day summit built as gap selling with a graduation reveal, hot seats and a hard close.</p><p><strong>Strength:</strong> the summit arc and the identity-and-method thinking are the best of the three.<br><strong>Weakness:</strong> five weeks serve a business that already sells; sixteen weeks name no teacher; ten of fifteen cited figures verify nowhere we can see.</p><a class="go" href="/expert-authority-v2">Open Version 2</a></div>
+      <div class="vcard v3"><div class="vk">Version 3</div><h3>The combined build</h3><p>Version 1's spine with every one of Vishen's inputs tested against the registrant quiz, four years of summit ratings and the fee table: 7 adopted, 10 adapted, 9 declined, and Priestley carried as two conditional seats. His arc runs the summit; the authors we can field run the weeks.</p><p><strong>Strength:</strong> fit, evidence, time and budget all hold, and his best ideas are in.<br><strong>Weakness:</strong> one open money question (Priestley ~$25K vs ~$12K headroom) and 27 verdicts he has not yet seen.</p><a class="go" href="/expert-authority-v3">Open Version 3</a></div>
+    </div>
+  </section>
+
+  <section id="glance">
+    <div class="section-head">
+      <div class="overline">At a glance</div>
+      <h2>Thirteen dimensions, three columns</h2>
+      <p class="body-md">Every cell traces to a page: Version 1 and 3 figures come from their Format &amp; Contracts and Authors tabs; Version 2 figures from Vishen's two documents. Where a document is silent, the cell says so.</p>
+    </div>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th></th><th class="v1">Version 1 · The team</th><th class="v2">Version 2 · Vishen</th><th class="v3">Version 3 · Combined</th></tr></thead><tbody>
+<tr><td>Who wrote it</td><td>The Curriculum Team (Gareth, Marta, Marijana), from the bases, the transcripts and the fee table. August–September 2026.</td><td>Vishen Lakhiani. Curriculum page published on BlinkLife 6 Sep; summit agenda note 7 Sep.</td><td>The team, on Version 1, with all 27 of Vishen's inputs tested against the room and the ratings. 7 adopted, 10 adapted, 9 declined, 1 pending (Priestley).</td></tr>
+<tr><td>Length</td><td>17 weeks + onboarding week + alumni reunion at +6 weeks. "Four months," as stated from stage.</td><td>18 weeks in five pillars (4 + 4 + 5 + 3 + 2).</td><td>17 weeks. His 18th week (the 90-Day Authority Plan) folded into Week 17 as the second graduating artefact.</td></tr>
+<tr><td>Cadence</td><td>Tuesday Teach + Thursday Implementation Day: 17 + 17 + one optional Saturday shoot = 35 touchpoints.</td><td>"One lesson + one live implementation call per week": 36 if read literally. Not totalled in his documents.</td><td>As Version 1: 35 touchpoints, Week 9 on the mainline (corrected 7 Sep on the S&I evidence).</td></tr>
+<tr><td>Organising idea</td><td>One graduating artefact: a live product ladder with three paid rungs, a traffic tap running, a masterclass shot. Five modules: Be Seen → The First Rung → Masterclass Week → Turn On The Tap → The Ladder.</td><td>"Credibility × Clarity × Consistency = Authority." Five pillars: Message → Platform → Funnel → Offer → Team. Four persona paths with priority weeks.</td><td>Version 1's ladder and modules, with his five pillars labelled on every week (Pillar 5 replaced by Show Up &amp; Stay Chosen), his four paths as quiz-driven routing, and his Named Signature Method as the Week 3 deliverable.</td></tr>
+<tr><td>Vishen&#x27;s live load</td><td>8 teach weeks + 18 recorded bookends + Week 9 doctrine + every summit offer moment.</td><td>Not stated. 16 weeks name no teacher. On the summit: 9 sessions + 3 closes ≈ 10 hours of stage time by his durations.</td><td>8 teach weeks (7 if Priestley co-teaches Week 4) + 18 bookends. Summit: Vishen keeps every offer moment; his Day 3 keynote becomes hot seats.</td></tr>
+<tr><td>Authors named for the Mastery</td><td>Vishen + Jimmy Naraine, Marisa Peer, John Lee, Ajit Nawalkha (teach), Regan Hillyer (fireside). Labs: Alessio Pieroni, Kash Rupareliaa, Sabrina Stocker, Jimmy.</td><td>Week 1: Jon Butcher, "Reagan Hilger", Jeffrey Allen. Week 13: Jimmy Naraine. Case studies: Beckwith, Lisa Nichols, Vishen. Nobody else.</td><td>As Version 1, plus Daniel Priestley co-teaching Week 4 if he confirms. Butcher and Allen proposed as Day 1 success-story candidates, not teachers.</td></tr>
+<tr><td>Summit</td><td>18–20 Sep, London 4pm–8:40/9pm, Jason Goldberg hosting. 33 Airtable rows, three keynote-heavy days, Sales Pitch Day 2, REPITCH + FINAL CLOSE Day 3.</td><td>3 days × 4–5 hours, 13 sessions, no clock times. Gap selling every session; workbook; soft open Day 1; Mastery Reveal Day 2; hot seats, Q&amp;A as objection handling, hard close Day 3. Five guests: Jimmy, Marisa, Regan, Priestley, Shadé.</td><td>The Airtable run-of-show with his arc laid over it: workbook exercise 7:05pm Day 1, soft open, Mastery Reveal reframed as graduation, Day 3 hot seats (45 min) and Priestley KPI keynote (45 min, if confirmed), REPITCH cut to 30.</td></tr>
+<tr><td>Price and offer</td><td>$4,999, stated from the MVU stage. BOGO-eligible. Guild above at $10K a year.</td><td>Not stated. "Here's the price." Product ladder cited as "$49-to-$10,000".</td><td>$4,999. Day 2 enrolee bonus open (Gareth: "open to it"), needs a name and a date.</td></tr>
+<tr><td>Fee exposure, known packages</td><td>Marisa $15K · Jimmy $15K (flex $20K) · John ≤$12K · Regan $15K · Ajit ~$12K · Alessio $8K · Kash ~$6K · Sabrina $3K · Jason $15K (both summits) ≈ $101K, all quoted.</td><td>Jimmy $15K · Marisa $15K · Regan $15K = $45K quoted. Priestley (2026 pattern ~$25K), Shadé, Butcher, Allen: no E&amp;A fee on the table.</td><td>As Version 1 (≈ $101K) plus Priestley ~$25K conditional against ~$12K headroom from Ben's removal. Maria Wendt not costed (recommendation: do not pursue).</td></tr>
+<tr><td>Evidence base</td><td>S&amp;I 2025–26 attendance and ratings, AIM 2026 labs and NPS, Manifesting Mastery ratings, transcripts (~2.1MB), fee table, speaker table, accelerator transcript.</td><td>"22 years of Mindvalley data." 15 cited figures: 1 verifies in a base we hold (84 NPS), 3 partly, 1 external, 10 not in any base we hold.</td><td>Version 1's base plus the summit quiz (n=36), four years of AI Summit ratings, and his two documents read as evidence.</td></tr>
+<tr><td>Fit to the room (quiz, n=36)</td><td>Built for experts earning under $100K who are not yet known. 86% of registrants are under $25K; 75% say unseen or unclear.</td><td>Four personas weighted for a business that already sells: paid ads ($30M playbook), an app, a lean team, a four-platform dance. The Scaler is 1 registrant in 36.</td><td>Expert path weighted first (11 of 14 pick it). Scale weeks moved to AI for Founders or the Guild; his identity, method, offer and 90-day pieces kept.</td></tr>
+<tr><td>Open items</td><td>Airtable flags (Regan date, Jimmy 04:00, [speaker] placeholder); Vishen 60% ask vs "20% author fee"; Kash spelling; guarantee design.</td><td>Regan TBC; Priestley duration TBC; all-live vs Day 3 replay; Day 2 incentive. Plus: no price, no fees, no teacher on 16 weeks, two documents that disagree on week numbers.</td><td>Priestley's yes and fee; Day 2 bonus name and date; Marta and Marijana's outreach; quiz re-read before the summit.</td></tr>
+<tr><td>Status</td><td>Team record. Complete.</td><td>Rendered faithfully. Complete as a record; incomplete as a build (see open items).</td><td>The version to take to Vishen. Complete, pending his response on the 27 verdicts.</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section id="decision">
+    <div class="section-head">
+      <div class="overline">Decision scorecard</div>
+      <h2>Eight criteria, one colour each</h2>
+      <p class="body-md"><span class="dot g"></span>holds &nbsp; <span class="dot a"></span>holds with a condition &nbsp; <span class="dot r"></span>does not hold. The criteria are the ones the team has used since the first fee alignment: who the room is, what the data says, what Vishen can carry, who can be contracted, what it costs, whether it sells from stage, whether it honours what was asked, and whether it can be delivered.</p>
+    </div>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Criterion</th><th class="v1">Version 1</th><th class="v2">Version 2</th><th class="v3">Version 3</th><th>Source</th></tr></thead><tbody>
+<tr><td>Fit to the registrant room</td><td><span class="dot g"></span>Under-$25K, unseen experts: the whole programme is built for them.</td><td><span class="dot r"></span>Paid ads, app, team and platform-dance weeks serve the one Scaler in 36. Identity and method weeks fit; five of eighteen do not.</td><td><span class="dot g"></span>Expert path first; the misfit weeks moved to the programme they belong to.</td><td class="small">Quiz on the summit thank-you page, n=36, 7 Sep</td></tr>
+<tr><td>Evidence behind the structure</td><td><span class="dot g"></span>Paired Teach + Implementation Day lifted S&I last-3-session attendance; Week 9 on the mainline after the One Talk Workshop data.</td><td><span class="dot a"></span>Labs model credited to AIM (84 NPS: verified). The rest of the cited data is not in any base we hold.</td><td><span class="dot g"></span>As V1, plus his summit arc validated against AI Summit ratings (hot seats 4.39, VIP 4.44–4.46).</td><td class="small">S&I and AIM bases; AI Summit 2023–26 agenda ratings</td></tr>
+<tr><td>Vishen&#x27;s time</td><td><span class="dot g"></span>8 teach weeks, 18 recorded bookends; the load he can carry alongside the Mastermind.</td><td><span class="dot r"></span>Unbounded: 16 unassigned weeks and ~10 hours of summit stage time by his own durations.</td><td><span class="dot g"></span>8 (7 with Priestley) teach weeks; summit stage time held; one keynote traded for hot seats.</td><td class="small">Author-proposal standard: Curriculum Expert teaches the majority, not all</td></tr>
+<tr><td>Authors ready to contract</td><td><span class="dot g"></span>Six In Negotiation, three lab leads In consideration, every seat transcript-verified.</td><td><span class="dot a"></span>Three In Negotiation (Jimmy, Marisa, Regan). Priestley and Shadé In consideration; Butcher, Allen, Beckwith not on the table; Lisa Nichols Not Approved.</td><td><span class="dot g"></span>As V1; Priestley conditional with outreach live (Marta, Marijana).</td><td class="small">Expert to Authority speaker table, 8 Sep</td></tr>
+<tr><td>Budget</td><td><span class="dot g"></span>≈ $101K quoted, all inside the alignment of 1 Sep.</td><td><span class="dot a"></span>$45K quoted for the three he names who are on the table; four more names uncosted, one ruled too costly.</td><td><span class="dot a"></span>≈ $101K plus ~$25K conditional against ~$12K headroom. The one open money question.</td><td class="small">Author Relations fee table</td></tr>
+<tr><td>Sellability from the stage</td><td><span class="dot a"></span>Clear artefact (the ladder). Summit sells keynotes, not a gap: Sales Pitch is a pitch.</td><td><span class="dot g"></span>Strongest document of the three on conversion: gap selling, workbook, graduation reveal, hot seats, hard deadline.</td><td><span class="dot g"></span>His arc over our run-of-show: the same conversion logic with the authors we can actually field.</td><td class="small">AI Summit close ratings: 2023 hard close 3.78 vs 2025 integration close 4.53</td></tr>
+<tr><td>Honours what Vishen asked for</td><td><span class="dot r"></span>Pre-dates his documents; none of his inputs present.</td><td><span class="dot g"></span>It is his.</td><td><span class="dot g"></span>27 inputs each carry a verdict and a reason; his pillars, paths, method, statement, 90-day plan and summit arc are in.</td><td class="small">Reconciliation table, V3 Positioning tab</td></tr>
+<tr><td>Delivery risk</td><td><span class="dot g"></span>Every lane owned; onboarding arc, materials standard and guarantee designed.</td><td><span class="dot r"></span>No labs briefed, no teacher on 16 weeks, two documents disagree on which week builds what, price unstated.</td><td><span class="dot g"></span>As V1, with one conditional seat that has a fallback either way.</td><td class="small">V1 Format &amp; Contracts; V2 Summit flag</td></tr>
+      <tr class="verdict-row"><td>Tally</td><td class="score"><span class="dot g"></span>6 &nbsp; <span class="dot a"></span>1 &nbsp; <span class="dot r"></span>1</td><td class="score"><span class="dot g"></span>2 &nbsp; <span class="dot a"></span>3 &nbsp; <span class="dot r"></span>3</td><td class="score"><span class="dot g"></span>7 &nbsp; <span class="dot a"></span>1 &nbsp; <span class="dot r"></span>0</td><td class="small">Counted from the rows above</td></tr>
+    </tbody></table></div>
+    <div class="rec" style="margin-top:22px">
+      <div class="kicker">The recommendation</div>
+      <h2>Build Version 3. Take it to Vishen as the answer to his documents, not a substitute for them.</h2>
+      <p>Version 1 is the safer build but it ignores what Vishen asked for, and its summit sells the way our lowest-rated closes did (a 2023-style hard pitch at 3.78 against a 2025-style integration close at 4.53). Version 2 has the best summit arc and the sharpest identity thinking of the three, and it is not deliverable as written: sixteen weeks with no teacher, five weeks aimed at a customer who is one person in thirty-six, a price and fees that do not exist yet, and two documents that disagree on which week builds what. <strong>Version 3 keeps everything from Version 2 that the evidence supports and everything from Version 1 that makes it deliverable.</strong> It holds on seven of eight criteria; the eighth is a single open number, Priestley's fee, which resolves either way with a fallback already scheduled.</p>
+      <p><strong>Choose Version 1</strong> only if Vishen withdraws his inputs entirely. <strong>Choose Version 2</strong> only if the room changes: if the quiz re-read before the summit shows Founders and Scalers outnumbering Experts, his Weeks 8, 15 and 17 come back into scope and the argument re-opens. <strong>Otherwise, Version 3.</strong></p>
+    </div>
+  </section>
+
+  <section id="weeks">
+    <div class="section-head">
+      <div class="overline">Week by week</div>
+      <h2>Eighteen weeks and the reunion, three curricula</h2>
+      <p class="body-md">Version 1 and 3 show each week's Teach and Lab with the author. Version 2 shows his week title, pillar, named teacher where he gives one, and his priority pips for E Expert · F Founder · C Creator · S Scaler (dark = priority). Green notes in Version 3 are the additions taken from his documents.</p>
+    </div>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Week</th><th class="v1">Version 1 · The team</th><th class="v2">Version 2 · Vishen</th><th class="v3">Version 3 · Combined</th></tr></thead><tbody>
+<tr><td class="mono-t">W1</td><td><div class="cw"><span class="pill b">Teach</span><strong>The Visibility Wound</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Post the Thing</strong><span class="cwho">Akash Rupalia</span></div></td><td><div class="cw"><span class="pill p">P1</span><strong>The Authority Equation: Why Most Experts Stay Invisible</strong><span class="cwho">Guest: Jon Butcher (Lifebook), Reagan Hilger, Jeffrey Allen · <em>Message &amp; Identity</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p2" title="Creator">C</span><span class="pp p1" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The Visibility Wound</strong><span class="cwho">Vishen Lakhiani</span><span class="cadd"><span class="pill g">V3</span> Adds Vishen&#x27;s Authority Statement as the closing artefact of the identity sabbatical: one sentence that positions you in any room, written on camera. …</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Post the Thing</strong><span class="cwho">Akash Rupalia</span></div></td></tr><tr><td class="mono-t">W2</td><td><div class="cw"><span class="pill b">Teach</span><strong>I Am Enough: The Identity Shift</strong><span class="cwho">Marisa Peer</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>On Camera, and the Formats That Don&#x27;t Need You On Camera</strong><span class="cwho">Akash Rupalia</span></div></td><td><div class="cw"><span class="pill p">P1</span><strong>Story, Voice &amp; Coined Language</strong><span class="cwho">No teacher named · <em>Message &amp; Identity</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p2" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>I Am Enough: The Identity Shift</strong><span class="cwho">Marisa Peer</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>On Camera, and the Formats That Don&#x27;t Need You On Camera</strong><span class="cwho">Akash Rupalia</span></div></td></tr><tr><td class="mono-t">W3</td><td><div class="cw"><span class="pill b">Teach</span><strong>Find Your Weirdness: The Edge and the Niche</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Edge Audit and the RAS Test</strong><span class="cwho">Alessio Pieroni</span></div></td><td><div class="cw"><span class="pill p">P1</span><strong>The Psychology of Influence</strong><span class="cwho">No teacher named · <em>Message &amp; Identity</em></span><span class="pips" style="margin-top:4px"><span class="pp p2" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>Your Edge and Your Named Method</strong><span class="cwho">Vishen Lakhiani</span><span class="cadd"><span class="pill g">V3</span> Renamed and widened. The edge (Skill A × B × C) plus Vishen&#x27;s Named Signature Method: a name, three to seven components, coined language. The lab ship…</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Edge Audit and the RAS Test</strong><span class="cwho">Alessio Pieroni</span></div></td></tr><tr><td class="mono-t">W4</td><td><div class="cw"><span class="pill b">Teach</span><strong>From Attention to Authority: Position, Belief, Villain</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Crown the Belief</strong><span class="cwho">Alessio Pieroni</span></div></td><td><div class="cw"><span class="pill p">P1</span><strong>Market Awareness &amp; Copywriting</strong><span class="cwho">No teacher named · <em>Message &amp; Identity</em></span><span class="pips" style="margin-top:4px"><span class="pp p2" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>From Attention to Authority: Position, Belief, Villain</strong><span class="cwho">Vishen Lakhiani · Daniel Priestley</span><span class="cadd"><span class="pill g">V3</span> Adds Schwartz&#x27;s five awareness levels as the positioning tool: which level your niche sits at, which level your line speaks to. Cialdini becomes a rec…</span><span class="cadd"><span class="pill o">if confirmed</span> Daniel Priestley co-teaches the Key Person of Influence scorecard (Pitch, Publish, Product, Profile, Partnership) inside this week, with the Week 3 na…</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Crown the Belief</strong><span class="cwho">Alessio Pieroni</span></div></td></tr><tr><td class="mono-t">W5</td><td><div class="cw"><span class="pill b">Teach</span><strong>What to Teach, and How to Structure It</strong><span class="cwho">Jimmy Naraine</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Idea Dump to Idea Clusters</strong><span class="cwho">Jimmy + Sabrina</span></div></td><td><div class="cw"><span class="pill p">P2</span><strong>The Social Platform Dance</strong><span class="cwho">No teacher named · <em>Platform &amp; Reach</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p2" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>What to Teach, and How to Structure It</strong><span class="cwho">Jimmy Naraine</span><span class="cadd"><span class="pill g">V3</span> Adds the marketplace-validation option from Vishen&#x27;s Week 13: publish the first rung where buyers already are before building anything of your own.</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Idea Dump to Idea Clusters</strong><span class="cwho">Jimmy + Sabrina</span></div></td></tr><tr><td class="mono-t">W6</td><td><div class="cw"><span class="pill b">Teach</span><strong>Film It Cheap, Present It With Charisma</strong><span class="cwho">Jimmy Naraine</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Pajama Draft, Filmed Today</strong><span class="cwho">Jimmy Naraine</span></div></td><td><div class="cw"><span class="pill p">P2</span><strong>Reels, Shorts &amp; Viral Content</strong><span class="cwho">No teacher named · <em>Platform &amp; Reach</em></span><span class="pips" style="margin-top:4px"><span class="pp p2" title="Expert">E</span><span class="pp p2" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p2" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>Film It Cheap, Present It With Charisma</strong><span class="cwho">Jimmy Naraine</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Pajama Draft, Filmed Today</strong><span class="cwho">Jimmy Naraine</span></div></td></tr><tr><td class="mono-t">W7</td><td><div class="cw"><span class="pill b">Teach</span><strong>Selling Without Selling: The Two Laws</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Build the Quiz, Ship the Quiz</strong><span class="cwho">Alessio Pieroni</span></div></td><td><div class="cw"><span class="pill p">P2</span><strong>Webinars &amp; VSLs That Convert</strong><span class="cwho">No teacher named · <em>Platform &amp; Reach</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>Selling Without Selling: The Two Laws</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Build the Quiz, Ship the Quiz</strong><span class="cwho">Alessio Pieroni</span></div></td></tr><tr><td class="mono-t">W8</td><td><div class="cw"><span class="pill b">Teach</span><strong>Your Story Is the Asset</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Story Bank</strong><span class="cwho">Jimmy Naraine</span></div></td><td><div class="cw"><span class="pill p">P2</span><strong>Paid Advertising &amp; Testing</strong><span class="cwho">No teacher named · <em>Platform &amp; Reach</em></span><span class="pips" style="margin-top:4px"><span class="pp p2" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p2" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>Your Story Is the Asset</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Story Bank</strong><span class="cwho">Jimmy Naraine</span></div></td></tr><tr><td class="mono-t">W9</td><td><div class="cw"><span class="pill b">Teach</span><strong>The 60 Minutes That Sold Half a Billion Dollars</strong><span class="cwho">Vishen Lakhiani, live · <em>Tue</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Your Script, Structured</strong><span class="cwho">before Thursday · <em>Tue</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Shooting-Script Stack</strong><span class="cwho">Alessio Pieroni · <em>Thu</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Build Yours</strong><span class="cwho">second half · <em>Thu</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Shoot, Review, Reshoot</strong><span class="cwho">Kash + Jimmy · optional Saturday · <em>Sat optional</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Cohort Showcase</strong><span class="cwho">and the safety net · <em>Sat optional</em></span></div></td><td><div class="cw"><span class="pill p">P3</span><strong>Funnel Architecture</strong><span class="cwho">No teacher named · <em>Funnel &amp; Revenue</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The 60 Minutes That Sold Half a Billion Dollars</strong><span class="cwho">Vishen Lakhiani, live · <em>Tue</em></span><span class="cadd"><span class="pill g">V3</span> Adds the awareness level to the script&#x27;s first four minutes.</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Your Script, Structured</strong><span class="cwho">before Thursday · <em>Tue</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Shooting-Script Stack</strong><span class="cwho">Alessio Pieroni · <em>Thu</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Build Yours</strong><span class="cwho">second half · <em>Thu</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Shoot, Review, Reshoot</strong><span class="cwho">Kash + Jimmy · optional Saturday · <em>Sat optional</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Cohort Showcase</strong><span class="cwho">and the safety net · <em>Sat optional</em></span></div></td></tr><tr><td class="mono-t">W10</td><td><div class="cw"><span class="pill b">Teach</span><strong>From Viral to Valuable: The Conversion Map</strong><span class="cwho">John Lee</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Hook Bank, and Two Posts Without Your Face</strong><span class="cwho">Akash Rupalia</span></div></td><td><div class="cw"><span class="pill p">P3</span><strong>Summits &amp; Live Events</strong><span class="cwho">No teacher named · <em>Funnel &amp; Revenue</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p2" title="Founder">F</span><span class="pp p2" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>From Viral to Valuable: The Conversion Map</strong><span class="cwho">John Lee</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The Hook Bank, and Two Posts Without Your Face</strong><span class="cwho">Akash Rupalia</span></div></td></tr><tr><td class="mono-t">W11</td><td><div class="cw"><span class="pill p">Fireside</span><strong>Zero to Hero: The Proof Point</strong><span class="cwho">Regan Hillyer, interviewed</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>LinkedIn and the Answer-Engine Layer</strong><span class="cwho">Sabrina Stocker</span></div></td><td><div class="cw"><span class="pill p">P3</span><strong>Sales Psychology &amp; High-Ticket Conversion</strong><span class="cwho">No teacher named · <em>Funnel &amp; Revenue</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill p">Fireside</span><strong>Zero to Hero: The Proof Point</strong><span class="cwho">Regan Hillyer, interviewed</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>LinkedIn and the Answer-Engine Layer</strong><span class="cwho">Sabrina Stocker</span></div></td></tr><tr><td class="mono-t">W12</td><td><div class="cw"><span class="pill b">Teach</span><strong>The Long-Form Advantage: Why Human Attention Got More Valuable</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>YouTube: Ten Ideas, Packaged and One Committed</strong><span class="cwho">Akash Rupalia</span></div></td><td><div class="cw"><span class="pill p">P3</span><strong>Email, Autoresponders &amp; Lead Nurturing</strong><span class="cwho">No teacher named · <em>Funnel &amp; Revenue</em></span><span class="pips" style="margin-top:4px"><span class="pp p2" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The Long-Form Advantage: Why Human Attention Got More Valuable</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>YouTube: Ten Ideas, Packaged and One Committed</strong><span class="cwho">Akash Rupalia</span></div></td></tr><tr><td class="mono-t">W13</td><td><div class="cw"><span class="pill b">Teach</span><strong>The Free Rung: What, Why, When — Never How</strong><span class="cwho">Ajit Nawalkha</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Nine Emails, Written and Scheduled</strong><span class="cwho">Alessio Pieroni</span></div></td><td><div class="cw"><span class="pill p">P3</span><strong>Course Design &amp; Marketplace Validation</strong><span class="cwho">Guest: Jimmy Naraine (Udemy Innovation Award Winner, 1M+ enrollments) · <em>Funnel &amp; Revenue</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p2" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The Free Rung: What, Why, When — Never How</strong><span class="cwho">Ajit Nawalkha</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Nine Emails, Written and Scheduled</strong><span class="cwho">Alessio Pieroni</span></div></td></tr><tr><td class="mono-t">W14</td><td><div class="cw"><span class="pill b">Teach</span><strong>The Product Step Ladder: The Three Laws</strong><span class="cwho">Ajit Nawalkha</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Map It, Price It, Sequence It</strong><span class="cwho">Alessio Pieroni</span></div></td><td><div class="cw"><span class="pill p">P4</span><strong>Your Signature Offer</strong><span class="cwho">No teacher named · <em>Offer &amp; Product</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The Product Step Ladder: The Three Laws</strong><span class="cwho">Ajit Nawalkha</span><span class="cadd"><span class="pill g">V3</span> Adds the Signature Offer language: the middle rung is the signature offer, the thing you are known for.</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Map It, Price It, Sequence It</strong><span class="cwho">Alessio Pieroni</span></div></td></tr><tr><td class="mono-t">W15</td><td><div class="cw"><span class="pill b">Teach</span><strong>The Enrolment Conversation</strong><span class="cwho">Ajit Nawalkha</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Run the Call, Get the Tape Reviewed</strong><span class="cwho">Alessio + Ajit</span></div></td><td><div class="cw"><span class="pill p">P4</span><strong>Building Your App &amp; Digital Platform</strong><span class="cwho">No teacher named · <em>Offer &amp; Product</em></span><span class="pips" style="margin-top:4px"><span class="pp p1" title="Expert">E</span><span class="pp p2" title="Founder">F</span><span class="pp p2" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The Enrolment Conversation</strong><span class="cwho">Ajit Nawalkha</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Run the Call, Get the Tape Reviewed</strong><span class="cwho">Alessio + Ajit</span></div></td></tr><tr><td class="mono-t">W16</td><td><div class="cw"><span class="pill b">Teach</span><strong>$1M Without Being Famous: Monetise the Platform</strong><span class="cwho">John Lee</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Your Offer, Built and Delivered</strong><span class="cwho">Alessio + John</span></div></td><td><div class="cw"><span class="pill p">P4</span><strong>Stage Authority &amp; PR Strategy</strong><span class="cwho">No teacher named · <em>Offer &amp; Product</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p2" title="Founder">F</span><span class="pp p2" title="Creator">C</span><span class="pp p2" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>$1M Without Being Famous: Monetise the Platform</strong><span class="cwho">John Lee</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Your Offer, Built and Delivered</strong><span class="cwho">Alessio + John</span><span class="cadd"><span class="pill g">V3</span> Adds a 30-minute Get Booked thread: a speaker one-sheet and a PR one-pager, shipped.</span></div></td></tr><tr><td class="mono-t">W17</td><td><div class="cw"><span class="pill b">Teach</span><strong>The Identity Tier, and Graduation</strong><span class="cwho">Vishen Lakhiani</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Certification &amp; the Bridge</strong><span class="cwho">Sabrina Stocker</span></div></td><td><div class="cw"><span class="pill p">P5</span><strong>Building Your Lean Dream Team</strong><span class="cwho">No teacher named · <em>Team &amp; Scale</em></span><span class="pips" style="margin-top:4px"><span class="pp p2" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p2" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><div class="cw"><span class="pill b">Teach</span><strong>The Identity Tier, and Graduation</strong><span class="cwho">Vishen Lakhiani</span><span class="cadd"><span class="pill g">V3</span> Adds Your 90-Day Authority Plan as the second graduating artefact, handing into the Guild.</span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>Certification &amp; the Bridge</strong><span class="cwho">Sabrina Stocker</span></div></td></tr><tr><td class="mono-t">W18</td><td><span class="small">—</span></td><td><div class="cw"><span class="pill p">P5</span><strong>Your 90-Day Authority Plan</strong><span class="cwho">No teacher named · <em>Team &amp; Scale</em></span><span class="pips" style="margin-top:4px"><span class="pp p3" title="Expert">E</span><span class="pp p3" title="Founder">F</span><span class="pp p3" title="Creator">C</span><span class="pp p3" title="Scaler">S</span></span></div></td><td><span class="small">—</span></td></tr><tr><td class="mono-t">+6 wks</td><td><div class="cw"><span class="pill">—</span><strong>Reunion &amp; Wins Audit</strong><span class="cwho"><em>+6 weeks</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The number that decides cohort two</strong><span class="cwho"><em>+6 weeks</em></span></div></td><td><div class="cw"><span class="pill">—</span><strong>No alumni reunion in his documents</strong></div></td><td><div class="cw"><span class="pill">—</span><strong>Reunion &amp; Wins Audit</strong><span class="cwho"><em>+6 weeks</em></span></div>
+<div class="cw"><span class="pill g">Lab</span><strong>The number that decides cohort two</strong><span class="cwho"><em>+6 weeks</em></span></div></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section id="summit">
+    <div class="section-head">
+      <div class="overline">The summit</div>
+      <h2>Three days, three run-of-shows</h2>
+      <p class="body-md">Host links and breaks removed for legibility. Version 1 is the Airtable run-of-show as built; Version 2 is his agenda with his durations; Version 3 is the run-of-show with his arc laid over it. Full tables with briefs are on each version's Summit tab.</p>
+    </div>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th></th><th class="v1">Version 1 · Airtable</th><th class="v2">Version 2 · Vishen's note</th><th class="v3">Version 3 · Combined</th></tr></thead><tbody>
+<tr><td class="mono-t">Day 1</td><td><ul class="sl"><li><span class="mono-t">4:10pm</span> <strong>The Visibility Wound</strong><span class="cwho">Vishen Lakhiani</span></li><li><span class="mono-t">5:00pm</span> <strong>Built to Be Chosen: MV Authors and Students Success Stories</strong><span class="cwho">Vishen Lakhiani · Dawn Hoang · Nora Cavani · Ronan Diego</span></li><li><span class="mono-t">6:05pm</span> <strong>I Am Enough: The Identity Shift</strong><span class="cwho">Marisa Peer</span></li><li><span class="mono-t">7:10pm</span> <strong>Find Your Weirdness &amp; Crown Your Belief</strong><span class="cwho">Vishen Lakhiani</span></li><li><span class="mono-t">8:10pm</span> <strong>VIP Q&amp;A</strong><span class="cwho">Vishen Lakhiani · Jason Goldberg</span></li></ul></td><td><ul class="sl"><li><span class="mono-t">60 min</span> <strong>The Authority Gap</strong><span class="cwho">Vishen Lakhiani · Keynote</span></li><li><span class="mono-t">60 min</span> <strong>Your Signature Method</strong><span class="cwho">Vishen Lakhiani · Keynote</span></li><li><span class="mono-t">30–45 min</span> <strong>Guest: Shadi Zerai — Overcoming Imposter Syndrome</strong><span class="cwho">Shadi Zerai · Guest teaching</span></li><li><span class="mono-t">15 min</span> <strong>BREAK + Workbook Exercise</strong><span class="cwho">Attendees · Workbook</span></li><li><span class="mono-t">60 min</span> <strong>The Audience Awareness Map</strong><span class="cwho">Vishen Lakhiani · Keynote</span></li><li><span class="mono-t">60 min</span> <strong>The Authority Talk</strong><span class="cwho">Vishen Lakhiani · Keynote</span></li><li><span class="mono-t">15 min</span> <strong>Day 1 Close</strong><span class="cwho">Vishen Lakhiani · Close · soft open</span></li></ul><p class="small" style="margin-top:6px">Durations, no clock times, no host in his note.</p></td><td><ul class="sl"><li><span class="mono-t">4:10pm</span> <strong>The Visibility Wound</strong><span class="cwho">Vishen Lakhiani · 45 min</span></li><li><span class="mono-t">5:00pm</span> <strong>Built to Be Chosen: MV Authors and Students Success Stories</strong><span class="cwho">Vishen + Dawn Hoang, Nora Cavani, Ronan Diego · 60 min</span></li><li><span class="mono-t">6:05pm</span> <strong>I Am Enough: The Identity Shift</strong><span class="cwho">Marisa Peer · 60 min</span></li><li><span class="mono-t">7:20pm</span> <strong>Your Edge and Your Named Method</strong><span class="cwho">Vishen Lakhiani · 45 min</span></li><li><span class="mono-t">8:20pm</span> <strong>VIP Q&amp;A</strong><span class="cwho">Vishen + Jason · 30 min</span></li></ul></td></tr><tr><td class="mono-t">Day 2</td><td><ul class="sl"><li><span class="mono-t">4:10pm</span> <strong>The Visibility Proof: Why Getting Found Isn&#x27;t Luck</strong><span class="cwho">Akash (Kash) Rupareliaa</span></li><li><span class="mono-t">5:00pm</span> <strong>The Course Is Already in You</strong><span class="cwho">Jimmy Naraine</span></li><li><span class="mono-t">5:50pm</span> <strong>The 60 Minutes That Sold Half a Billion Dollars</strong><span class="cwho">Vishen Lakhiani</span></li><li><span class="mono-t">6:40pm</span> <strong>Fireside</strong><span class="cwho">Regan Hillyer · Vishen Lakhiani</span></li><li><span class="mono-t">7:40pm</span> <strong>Sales Pitch</strong><span class="cwho">Vishen Lakhiani</span></li></ul></td><td><ul class="sl"><li><span class="mono-t">60 min</span> <strong>The Product Step Ladder</strong><span class="cwho">Vishen Lakhiani · Keynote</span></li><li><span class="mono-t">TBC</span> <strong>Guest: Daniel Priestley — The Weekly Cadence</strong><span class="cwho">Daniel Priestley · Guest teaching</span></li><li><span class="mono-t">45 min</span> <strong>Guest: Jimmy Naraine — Building a Udemy Empire</strong><span class="cwho">Jimmy Naraine · Guest teaching</span></li><li><span class="mono-t">30 min</span> <strong>BREAK + Live Interview: Marisa Peer</strong><span class="cwho">Marisa Peer · Live interview</span></li><li><span class="mono-t">60 min</span> <strong>The Content Machine</strong><span class="cwho">Vishen Lakhiani · Keynote · live demo</span></li><li><span class="mono-t">30 min</span> <strong>The Mastery Reveal</strong><span class="cwho">Vishen Lakhiani · Offer</span></li></ul><p class="small" style="margin-top:6px">Durations, no clock times, no host in his note.</p></td><td><ul class="sl"><li><span class="mono-t">4:10pm</span> <strong>The Visibility Proof: Why Getting Found Isn&#x27;t Luck</strong><span class="cwho">Kash Rupareliaa · 45 min</span></li><li><span class="mono-t">5:00pm</span> <strong>The Course Is Already in You</strong><span class="cwho">Jimmy Naraine · 45 min</span></li><li><span class="mono-t">5:50pm</span> <strong>The 60 Minutes That Sold Half a Billion Dollars</strong><span class="cwho">Vishen Lakhiani · 45 min</span></li><li><span class="mono-t">6:40pm</span> <strong>Fireside: Zero to Hero: The Proof Point</strong><span class="cwho">Regan Hillyer + Vishen · 60 min</span></li><li><span class="mono-t">7:40pm</span> <strong>The Mastery Reveal: a graduation, not a pitch</strong><span class="cwho">Vishen Lakhiani · 45 min</span></li><li><span class="mono-t">8:30pm</span> <strong>VIP Q&amp;A</strong><span class="cwho">Jason + Vishen · 30 min</span></li></ul></td></tr><tr><td class="mono-t">Day 3</td><td><ul class="sl"><li><span class="mono-t">4:10pm</span> <strong>The Exposure Equation: You Don&#x27;t Need to Be Famous, You Need to Be Found</strong><span class="cwho">John Lee</span></li><li><span class="mono-t">5:00pm</span> <strong>REPITCH</strong><span class="cwho">Vishen Lakhiani</span></li><li><span class="mono-t">5:50pm</span> <strong>The Conversation Where They Say Yes</strong><span class="cwho">Ajit Nawalkha</span></li><li><span class="mono-t">6:40pm</span> <strong>The Identity Tier</strong><span class="cwho">Vishen Lakhiani</span></li><li><span class="mono-t">7:30pm</span> <strong>HEART CLOSE</strong><span class="cwho">Jimmy Naraine</span></li><li><span class="mono-t">8:00pm</span> <strong>FINAL CLOSE</strong><span class="cwho">Vishen Lakhiani</span></li></ul></td><td><ul class="sl"><li><span class="mono-t">60 min</span> <strong>The Funnel That Runs While You Sleep</strong><span class="cwho">Vishen Lakhiani · Keynote · teardown</span></li><li><span class="mono-t">60 min</span> <strong>Hot Seat / Laser Coaching</strong><span class="cwho">Vishen Lakhiani · Laser coaching</span></li><li><span class="mono-t">TBC</span> <strong>Guest: Reagan Hillier</strong><span class="cwho">Reagan Hillier · Live interview</span></li><li><span class="mono-t">15 min</span> <strong>BREAK</strong><span class="cwho">— · Break</span></li><li><span class="mono-t">45 min</span> <strong>Q&amp;A + Objection Handling</strong><span class="cwho">Vishen Lakhiani · Q&amp;A</span></li><li><span class="mono-t">30 min</span> <strong>The Final Offer</strong><span class="cwho">Vishen Lakhiani · Offer · hard close</span></li></ul><p class="small" style="margin-top:6px">Durations, no clock times, no host in his note.</p></td><td><ul class="sl"><li><span class="mono-t">4:10pm</span> <strong>The Exposure Equation: You Don&#x27;t Need to Be Famous, You Need to Be Found</strong><span class="cwho">John Lee · 45 min</span></li><li><span class="mono-t">5:00pm</span> <strong>The Key Person of Influence Scorecard</strong><span class="cwho">Daniel Priestley · 45 min</span></li><li><span class="mono-t">5:50pm</span> <strong>REPITCH: the five reasons, answered live</strong><span class="cwho">Vishen Lakhiani · 30 min</span></li><li><span class="mono-t">6:25pm</span> <strong>The Conversation Where They Say Yes</strong><span class="cwho">Ajit Nawalkha · 45 min</span></li><li><span class="mono-t">7:15pm</span> <strong>Hot Seats: four experts, four positioning lines</strong><span class="cwho">Vishen + Ajit · 45 min</span></li><li><span class="mono-t">8:05pm</span> <strong>HEART CLOSE: The Message I Never Answered</strong><span class="cwho">Jimmy Naraine · 30 min</span></li><li><span class="mono-t">8:35pm</span> <strong>FINAL CLOSE: the top rung is who you become</strong><span class="cwho">Vishen Lakhiani · 30 min</span></li></ul></td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section id="authors">
+    <div class="section-head">
+      <div class="overline">Authors and fees</div>
+      <h2>Every name in any of the three, with where they stand today</h2>
+      <p class="body-md">Status from the Expert to Authority speaker table, 8 September. Fees are packages from the Author Relations table; per-class rates are never shown to talent. Every teacher must be a signed Mindvalley author.</p>
+    </div>
+    <div class="tbl-scroll"><table class="tbl ctbl"><thead><tr><th>Name</th><th class="v1">Version 1</th><th class="v2">Version 2</th><th class="v3">Version 3</th><th>Airtable status</th><th>Package</th></tr></thead><tbody>
+<tr><td>Vishen Lakhiani</td><td>Curriculum Expert · 8 teach weeks · summit keynotes and closes</td><td>Designer · every unassigned week · ~10h summit stage</td><td>Curriculum Expert · 8 (7) teach weeks · every offer moment</td><td class="small">Confirmed</td><td class="small">$—, royalty; summit share under negotiation</td></tr>
+<tr><td>Jimmy Naraine</td><td>W5, W6 teach + 3 labs · Day 2 keynote · Day 3 heart close</td><td>Summit 45 min (Udemy empire) · W13 guest</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$15K Mastery package, flex $20K</td></tr>
+<tr><td>Marisa Peer</td><td>W2 teach · Day 1 identity keynote (60)</td><td>30-min live interview on virality, Day 2 break</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$15K package</td></tr>
+<tr><td>John Lee</td><td>W10, W16 teach · Day 3 opener</td><td>Not mentioned</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">≤ $12K package</td></tr>
+<tr><td>Ajit Nawalkha</td><td>W13–W15 teach · Day 3 keynote</td><td>Not mentioned</td><td>As V1 + co-hosts Day 3 hot seats</td><td class="small">In Negotiation</td><td class="small">~$12K</td></tr>
+<tr><td>Regan Hillyer</td><td>W11 fireside · Day 2 fireside with Vishen</td><td>"Reagan Hillier" Day 3 interview TBC · "Reagan Hilger" W1 guest</td><td>As V1, spelt right</td><td class="small">In Negotiation</td><td class="small">$15K</td></tr>
+<tr><td>Jason Goldberg</td><td>Summit host, both summits</td><td>Not mentioned (no host named)</td><td>As V1</td><td class="small">In Negotiation</td><td class="small">$15K package, both summits</td></tr>
+<tr><td>Alessio Pieroni</td><td>8 lab days incl. Week 9 script build</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">$8K approved 1 Sep</td></tr>
+<tr><td>Kash Rupareliaa</td><td>4 lab days + optional shoot · Day 2 opener</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">~$6K</td></tr>
+<tr><td>Sabrina Stocker</td><td>3 lab days</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">~$3K</td></tr>
+<tr><td>Daniel Priestley</td><td>Considered, not allocated</td><td>Summit teaching session, duration TBC</td><td>Day 3 KPI keynote (45) + W4 co-teach, both if confirmed</td><td class="small">In consideration (7 Sep) · outreach live</td><td class="small">No E&amp;A fee; 2026 pattern ~$25K</td></tr>
+<tr><td>Dr. Shadé Zahrai</td><td>—</td><td>Summit 30–45 min, imposter syndrome</td><td>Declined on cost</td><td class="small">In consideration (7 Sep)</td><td class="small">None on table</td></tr>
+<tr><td>Roxie Nafousi</td><td>—</td><td>Not in either document</td><td>Declined on subject</td><td class="small">In consideration (7 Sep)</td><td class="small">None on table</td></tr>
+<tr><td>Maria Wendt</td><td>Considered, not allocated</td><td>Not mentioned</td><td>In consideration; strong recommendation not to pursue ($1 course)</td><td class="small">Not Approved 31 Aug; re-added 7 Sep</td><td class="small">Not costed</td></tr>
+<tr><td>Jon Butcher · Jeffrey Allen</td><td>—</td><td>W1 guest teachers</td><td>Day 1 success-story candidates</td><td class="small">Not on the table</td><td class="small">—</td></tr>
+<tr><td>Michael Beckwith · Lisa Nichols</td><td>—</td><td>W2 case studies</td><td>Case studies fine; no seats</td><td class="small">Beckwith not on table · Nichols Not Approved</td><td class="small">—</td></tr>
+<tr><td>Dawn Hoang · Nora Cavani · Ronan Diego</td><td>Day 1 success-story fireside</td><td>Not mentioned</td><td>As V1</td><td class="small">In consideration</td><td class="small">Unpaid</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section id="change">
+    <div class="section-head">
+      <div class="overline">What would change the call</div>
+      <h2>Four things to watch before the summit</h2>
+    </div>
+    <div class="grid g2">
+      <div class="card"><div class="kicker">The quiz</div><h3>If Founders and Scalers overtake Experts</h3><p class="body-md" style="margin-top:8px">Today 11 of 14 pick The Expert on the four-type question and 86% of 36 earn under $25K. Re-read the quiz the week before the summit. If the mix moves, Vishen's paid-ads, app and team weeks stop being for someone else.</p></div>
+      <div class="card"><div class="kicker">Priestley</div><h3>If he confirms at or under the headroom</h3><p class="body-md" style="margin-top:8px">Version 3 carries him as two conditional seats. A yes at ~$25K needs ~$13K found; a yes at ~$12K needs nothing; a no reverts Day 3 and Week 4 to Version 1's shape with no other change.</p></div>
+      <div class="card"><div class="kicker">Vishen's response</div><h3>If he pushes back on a declined input</h3><p class="body-md" style="margin-top:8px">Each of the nine declines has its evidence on Version 3's reconciliation table. A push-back is a conversation about that evidence, not a re-open of the whole build. The one the team expects: the four-platform dance.</p></div>
+      <div class="card"><div class="kicker">The authors</div><h3>If an In Negotiation seat falls through</h3><p class="body-md" style="margin-top:8px">Named alternatives already exist for Marisa (Paul McKenna, 9.61 S&amp;I) and for the Day 3 keynotes. The lab lanes are fungible between Kash and Sabrina. Version 2 has no such fallbacks because it names no bench.</p></div>
+    </div>
+  </section>
+</div>
+<footer>
+  <div class="wrap">
+    <div>Expert &amp; Authority Mastery · Compare: three versions side by side. Prepared by the Curriculum Team, 8 September 2026.</div>
+    <div>Sources: Accelerator transcript · Author-proposal deck · S&amp;I Mastery comparison · EM, SMM &amp; AIM Airtable bases</div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
