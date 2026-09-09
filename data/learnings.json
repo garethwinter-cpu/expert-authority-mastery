@@ -391,6 +391,14 @@
       "finding": "Gareth's ruling 8 Sep: author compensation figures are team-only and never appear in the proposal pages, the comparison, the data files or the builders. The repo is public and the Cloud Run pages are unauthenticated.",
       "decision": "Every compensation figure, rate and budget line removed from V1, V2, V3, Compare, AI for Founders, both Guild pages, the brief and learnings.json; contract tables now show seat and status only. scrub_fees.py runs last in the pipeline and verifies zero matches. Commercial terms are referred to as held by Author Relations. Note: earlier git history still contains the removed figures.",
       "source": "Gareth, 8 Sep 2026"
+    },
+    {
+      "id": "ea-summit-agenda-approved-sep9",
+      "date": "2026-09-09",
+      "area": "E&A · Expert to Authority Summit, approved agenda v3",
+      "finding": "Approved agenda v3 (8 Sep, refines Vishen's draft per Jaideep's rules): three days of exactly 4:00 mainstage, one pillar chapter a day (Day 1 The Foundation: Message & Identity; Day 2 The Machine: Platform & Reach + Funnel & Revenue; Day 3 The Business: Offer & Product + Team & Scale). Sales on Days 2 and 3 only, always second-to-last; no ask on Day 1; VIP hour after mainstage on Days 2 and 3 only; every session tags a week on Vishen's published 18-week map. Sixteen sessions. Speakers: Marisa Peer (Day 1 identity keynote, re-briefed from viral methodologies), Jimmy Naraine (Day 2 Udemy Empire, named as the Week 13 teacher), Daniel Priestley (Day 2 closer, The Weekly Cadence), Ronan Diego + Dawn Hoang (Day 2 proof fireside), Regan Hillyer (Day 3 Zero to Hero, confirm by 12 Sep, Dawn understudy), Ajit Nawalkha (Day 3 Hot Seat, coaching only, never the pitch), Jason Goldberg hosting inside session times. Out: Shadé Zahrai (replaced by Marisa), Kash (removed everywhere). John Lee has no summit session. Source discrepancy: Regan 0:30 in the agenda table vs 0:35 in the slate; 0:30 is what sums Day 3 to 4:00.",
+      "decision": "Version 3's Summit tab replaced with the approved agenda exactly (rules, structure, three day tables with offsets, speaker slate, ten changes, open items); V3 cross-references updated (Authors verdicts, Format contracts, Positioning reconciliation: Jimmy's Udemy casting moves from declined to adapted, so the tally is 7 adopted, 11 adapted, 8 declined). Compare's summit column now extracts the approved agenda. Version 1 untouched as the team's record; Version 2 untouched as Vishen's draft. Open for the team: mapping the agenda's 18-week tags onto V3's 17 weeks (the source's own 'one canonical map' item).",
+      "source": "https://shareable-page.vercel.app/expert-summit-agenda-v3.html (fetched 9 Sep 2026), shared by Gareth"
     }
   ],
   "verified_corrections_to_live_pages": [
