@@ -15,7 +15,7 @@ Built to the Mastery Onboarding Survey DNA (core block, then Goals & Motivation,
 | Background | Expert & Authority Mastery key art |
 | Where it lives | Base `appnHZYcirCg1VqUP` (Expert to Authority). The **🙋‍♀️ Student Onboarding Survey** table already exists there, cloned from Speaking & Influence. Add the fields below to that table and build the form on it. Do not delete the inherited fields; hide the ones this survey does not use. |
 | Responses view | "Onboarding survey answers", filtered by submission date for the October 2026 cohort |
-| Timing | Live two weeks before the summit (target 4 September equivalents for future cohorts; for this cohort, the moment the form is approved, since the summit is 18 to 20 September and the Mastery starts October) |
+| Timing | Two weeks before the summit for future cohorts. For this cohort, live the moment the form is approved: the summit runs 18 to 20 September and the Mastery starts in October |
 | Distribution | Embedded at multiple points in the onboarding email journey, and shared by the host and concierges in the community |
 | Approval | Operations sends the form via Slack to Customer Experience and Learning Experience for review and sign-off before it goes live |
 | Reporting | Customer Experience analyses and compiles the cohort report for the Academy team; Author Relations or Learning Experience forwards it to Vishen, Marisa, Jimmy, John, Regan, Ajit and Daniel so each can pitch their week to the room |
