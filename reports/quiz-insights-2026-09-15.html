@@ -1,0 +1,423 @@
+<title>The Room, Measured</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#7A12D4;--brand-content:#6810B4;--brand-light:#F6EEFD;--brand-border:#E4D2F8;--brand-dark:#44087A;
+--ink:#0F131A;--text:#0F131A;--muted:#595E67;--subtle:#71767F;--bg:#FFFFFF;--surface:#FFFFFF;--grey-100:#F9F9F9;--grey-200:#F3F4F6;--border:#DFE1E5;
+--green:#159F65;--green-light:#E8F8F1;--orange:#ED6325;--orange-light:#FFF4E9;--orange-content:#C9541F;
+--hero-bg:#0F131A;--hero-text:#FFFFFF;--hero-muted:#CDB2EE;
+--sh-light:0 4px 15px rgba(0,0,0,.05);--sh-med:0 5px 20px rgba(0,0,0,.10)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--brand:#B47CF0;--brand-content:#C99AF5;--brand-light:#22162F;--brand-border:#3D2757;--brand-dark:#E4D2F8;
+--ink:#F3F4F6;--text:#F3F4F6;--muted:#B9BEC9;--subtle:#979CA5;--bg:#0F131A;--surface:#161B24;--grey-100:#1B212B;--grey-200:#222937;--border:#2C3441;
+--green:#3FCF8E;--green-light:#0F2A1E;--orange:#F5905C;--orange-light:#2E1A10;--orange-content:#F5905C;--hero-bg:#080A0E;--sh-light:none;--sh-med:none}}
+:root[data-theme="dark"]{--brand:#B47CF0;--brand-content:#C99AF5;--brand-light:#22162F;--brand-border:#3D2757;--brand-dark:#E4D2F8;
+--ink:#F3F4F6;--text:#F3F4F6;--muted:#B9BEC9;--subtle:#979CA5;--bg:#0F131A;--surface:#161B24;--grey-100:#1B212B;--grey-200:#222937;--border:#2C3441;
+--green:#3FCF8E;--green-light:#0F2A1E;--orange:#F5905C;--orange-light:#2E1A10;--orange-content:#F5905C;--hero-bg:#080A0E;--sh-light:none;--sh-med:none}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Google Sans","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding-inline:24px}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(34px,5vw,56px);font-weight:700} h2{font-size:clamp(24px,3vw,34px);font-weight:700} h3{font-size:19px;font-weight:700;line-height:1.3}
+p{text-wrap:pretty} .lead{font-size:18px;color:var(--muted);max-width:68ch} .body{color:var(--muted);max-width:68ch}
+.over{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--brand-content)}
+.hero{background:var(--hero-bg);color:var(--hero-text);padding-block:64px 72px}
+.hero .over{color:var(--hero-muted)} .hero .lead{color:#E6D8F8} .hero h1{margin:12px 0 18px;max-width:20ch}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:40px}
+.qf{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:16px;padding:18px 20px}
+.qf .n{font-size:30px;font-weight:700;letter-spacing:-.02em;font-variant-numeric:tabular-nums} .qf .l{font-size:13px;color:var(--hero-muted);margin-top:4px;line-height:1.4}
+section{padding-block:56px} section+section{border-top:1px solid var(--border)}
+.head{max-width:820px;margin-bottom:28px} .head p{margin-top:10px}
+.grid{display:grid;gap:18px} .g2{grid-template-columns:1fr 1fr} .g3{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px;box-shadow:var(--sh-light)}
+.card h3{margin-bottom:6px} .card .body{font-size:15px}
+.kick{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--brand-content);margin-bottom:10px}
+.bars{display:grid;gap:9px;margin-top:14px}
+.bar{display:grid;grid-template-columns:minmax(150px,40%) 1fr 84px;gap:12px;align-items:center;font-size:14px}
+.bl{color:var(--text);line-height:1.3} .bt{height:12px;background:var(--grey-200);border-radius:4px;overflow:hidden} .bf{height:100%;background:var(--brand);border-radius:0 4px 4px 0}
+.bv{font-weight:700;font-variant-numeric:tabular-nums;text-align:right} .bv span{display:block;font-weight:400;font-size:12px;color:var(--subtle)}
+.cap{font-size:13px;color:var(--subtle);margin-top:10px;max-width:70ch}
+.tbl-scroll{overflow-x:auto}
+table.heat{width:100%;border-collapse:separate;border-spacing:0;font-size:13.5px;min-width:640px;border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.heat th{text-align:left;font-weight:600;padding:10px 12px;background:var(--grey-100);color:var(--muted);font-size:12px;line-height:1.3;vertical-align:bottom}
+.heat tbody th{color:var(--text);font-weight:600;font-size:13.5px;background:var(--surface)}
+.heat td{padding:10px 12px;font-variant-numeric:tabular-nums;text-align:right;border-top:1px solid var(--border);background:color-mix(in oklab,var(--brand) calc(var(--a)*55%),var(--surface));color:var(--text)}
+.heat td.n,.heat th.n{text-align:right;color:var(--subtle);background:var(--surface)}
+.insight{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:32px;align-items:start;padding-block:32px} .insight+.insight{border-top:1px dashed var(--border)}
+.insight .num{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--subtle);margin-bottom:8px}
+.insight h3{font-size:22px;margin-bottom:10px} .insight .body{font-size:15.5px}
+.big{font-size:44px;font-weight:700;letter-spacing:-.02em;color:var(--brand);line-height:1;font-variant-numeric:tabular-nums;margin:6px 0 2px}
+.rec{display:grid;grid-template-columns:56px 1fr;gap:18px;padding:22px 0;border-top:1px solid var(--border)} .rec:last-child{border-bottom:1px solid var(--border)}
+.rec .wk{font-size:12px;font-weight:700;letter-spacing:.06em;color:var(--brand-content);background:var(--brand-light);border:1px solid var(--brand-border);border-radius:12px;padding:8px 6px;text-align:center;line-height:1.25;align-self:start}
+.rec h3{font-size:18px;margin-bottom:6px} .rec .body{font-size:15px} .rec .ev{font-size:13px;color:var(--subtle);margin-top:8px}
+.rec .ev b{color:var(--brand-content);font-weight:700}
+.quote{border-left:3px solid var(--brand-border);padding:2px 0 2px 14px;font-size:14px;color:var(--muted);font-style:italic;margin-top:10px}
+.callout{border-radius:16px;padding:22px 26px;background:var(--brand-light);border:1px solid var(--brand-border);color:var(--text);font-size:15px}
+.callout.warn{background:var(--orange-light);border-color:transparent} .callout strong{color:var(--text)}
+.pill{display:inline-block;font-size:11px;font-weight:700;padding:3px 9px;border-radius:128px;background:var(--grey-200);color:var(--muted);white-space:nowrap}
+.pill.g{background:var(--green-light);color:var(--green)} .pill.o{background:var(--orange-light);color:var(--orange-content)} .pill.b{background:var(--brand-light);color:var(--brand-content)}
+footer{padding-block:32px;color:var(--subtle);font-size:13px;border-top:1px solid var(--border)}
+@media(max-width:900px){.facts,.g3{grid-template-columns:1fr 1fr}.insight{grid-template-columns:1fr}}
+@media(max-width:600px){.facts,.g2,.g3{grid-template-columns:1fr}.bar{grid-template-columns:1fr}.bv{text-align:left}.bv span{display:inline;margin-left:8px}.rec{grid-template-columns:1fr}.rec .wk{justify-self:start;padding:6px 10px}}
+</style>
+
+<header class="hero"><div class="wrap">
+  <div class="over">Expert to Authority Quiz · 7,739 responses · 6 to 15 September 2026</div>
+  <h1>The Room, Measured</h1>
+  <p class="lead">Every answer from the quiz on the summit thank-you page, read as a brief for the Expert &amp; Authority Mastery. Six closed questions are counted exhaustively. The open question, 5,582 answers in the registrants&rsquo; own words, is coded by theme and quoted directly.</p>
+  <div class="facts">
+    <div class="qf"><div class="n">69%</div><div class="l">call themselves The Expert. Founders 14%, Creators 10%, Established 7%</div></div>
+    <div class="qf"><div class="n">50%</div><div class="l">have never sold anything from their expertise. Another 24% earn under $25K</div></div>
+    <div class="qf"><div class="n">48%</div><div class="l">say the thing that breaks is &ldquo;nobody knows I exist&rdquo;</div></div>
+    <div class="qf"><div class="n">35%</div><div class="l">have been at their craft for more than ten years. One in three of them has never sold</div></div>
+  </div>
+</div></header>
+
+<section><div class="wrap">
+  <div class="head"><div class="over">The shape of the room</div><h2>Experienced, unseen, and not yet paid for what they know</h2>
+  <p class="lead">This is not a beginners&rsquo; room. It is a room of people with a decade of craft and no product, no audience and no price.</p></div>
+  <div class="grid g2">
+    <div class="card"><div class="kick">Q1 · Which type are you</div><div class="bars">
+<div class="bar"><div class="bl">The Expert</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">69%<span>4,599</span></div></div>
+<div class="bar"><div class="bl">The Founder</div><div class="bt"><div class="bf" style="width:20.8%"></div></div><div class="bv">14%<span>956</span></div></div>
+<div class="bar"><div class="bl">The Creator</div><div class="bt"><div class="bf" style="width:14.7%"></div></div><div class="bv">10%<span>676</span></div></div>
+<div class="bar"><div class="bl">The Established Expert</div><div class="bt"><div class="bf" style="width:9.9%"></div></div><div class="bv">7%<span>456</span></div></div>
+</div><p class="cap">Answered by 6,687. &ldquo;The Established Expert&rdquo; is the renamed &ldquo;Stagnating Expert&rdquo;; one legacy response is folded in. A further 447 answered the original Q1 wording before the question was replaced.</p></div>
+    <div class="card"><div class="kick">Q2 · How long have you been at it</div><div class="bars">
+<div class="bar"><div class="bl">Under 1 year</div><div class="bt"><div class="bf" style="width:62.0%"></div></div><div class="bv">22%<span>1,509</span></div></div>
+<div class="bar"><div class="bl">1–2 years</div><div class="bt"><div class="bf" style="width:36.7%"></div></div><div class="bv">13%<span>894</span></div></div>
+<div class="bar"><div class="bl">2–5 years</div><div class="bt"><div class="bf" style="width:44.3%"></div></div><div class="bv">15%<span>1,077</span></div></div>
+<div class="bar"><div class="bl">5–10 years</div><div class="bt"><div class="bf" style="width:42.7%"></div></div><div class="bv">15%<span>1,038</span></div></div>
+<div class="bar"><div class="bl">10+ years</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">35%<span>2,433</span></div></div>
+</div><p class="cap">Answered by 6,951. Two peaks: a fifth just starting, a third with more than a decade behind them.</p></div>
+    <div class="card"><div class="kick">Q3 · Revenue from expertise, last 12 months</div><div class="bars">
+<div class="bar"><div class="bl">Nothing yet</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">50%<span>3,412</span></div></div>
+<div class="bar"><div class="bl">Under $25K</div><div class="bt"><div class="bf" style="width:48.6%"></div></div><div class="bv">24%<span>1,657</span></div></div>
+<div class="bar"><div class="bl">$25K–$100K</div><div class="bt"><div class="bf" style="width:28.4%"></div></div><div class="bv">14%<span>969</span></div></div>
+<div class="bar"><div class="bl">$100K–$500K</div><div class="bt"><div class="bf" style="width:17.4%"></div></div><div class="bv">9%<span>594</span></div></div>
+<div class="bar"><div class="bl">$500K–$1M</div><div class="bt"><div class="bf" style="width:3.7%"></div></div><div class="bv">2%<span>127</span></div></div>
+<div class="bar"><div class="bl">Over $1M</div><div class="bt"><div class="bf" style="width:3.5%"></div></div><div class="bv">2%<span>121</span></div></div>
+</div><p class="cap">Answered by 6,880. 842 people, 12%, earn $100K or more. That is the Guild room, and it is larger than one cohort can hold.</p></div>
+    <div class="card"><div class="kick">Q4 · Where it breaks down</div><div class="bars">
+<div class="bar"><div class="bl">Nobody knows I exist</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">48%<span>3,255</span></div></div>
+<div class="bar"><div class="bl">I can&#x27;t put what I do into words</div><div class="bt"><div class="bf" style="width:44.1%"></div></div><div class="bv">21%<span>1,435</span></div></div>
+<div class="bar"><div class="bl">People follow me but don&#x27;t buy</div><div class="bt"><div class="bf" style="width:30.3%"></div></div><div class="bv">15%<span>987</span></div></div>
+<div class="bar"><div class="bl">I&#x27;m known, but I&#x27;ve plateaued</div><div class="bt"><div class="bf" style="width:21.0%"></div></div><div class="bv">10%<span>683</span></div></div>
+<div class="bar"><div class="bl">One offer, nowhere for customers to go next</div><div class="bt"><div class="bf" style="width:11.3%"></div></div><div class="bv">5%<span>368</span></div></div>
+</div><p class="cap">Answered by 6,728. The two visibility answers, unseen and unable to say what they do, are 70% between them.</p></div>
+  </div>
+  <div class="card" style="margin-top:18px"><div class="kick">Q5 · Twelve months from now, what would make you say this worked</div><div class="bars">
+<div class="bar"><div class="bl">My first paying clients</div><div class="bt"><div class="bf" style="width:56.8%"></div></div><div class="bv">19%<span>1,264</span></div></div>
+<div class="bar"><div class="bl">Fully booked at premium rates</div><div class="bt"><div class="bf" style="width:71.5%"></div></div><div class="bv">24%<span>1,591</span></div></div>
+<div class="bar"><div class="bl">A product line that sells without trading hours</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">33%<span>2,224</span></div></div>
+<div class="bar"><div class="bl">Being THE name in my niche</div><div class="bt"><div class="bf" style="width:54.6%"></div></div><div class="bv">18%<span>1,214</span></div></div>
+<div class="bar"><div class="bl">A room of peers at my level</div><div class="bt"><div class="bf" style="width:16.8%"></div></div><div class="bv">6%<span>373</span></div></div>
+</div><p class="cap">Answered by 6,666. The product line beats every other definition of success, in every revenue band and every type.</p></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><div class="over">Seven insights</div><h2>What the answers say when you cross them</h2><p class="lead">Single counts describe the room. Crossing them describes the rooms inside it, and that is what a curriculum has to be built for.</p></div>
+
+  <div class="insight"><div><div class="num">Insight 1</div><h3>Tenure does not buy revenue. A decade in, a third have still never sold.</h3>
+    <p class="body">Of the 2,359 people with more than ten years&rsquo; experience, 788 have never sold anything from it. Only the under-one-year group is meaningfully greener. This is the whole thesis of the programme in one row: expertise is not the bottleneck, the machine around it is.</p></div>
+    <div><div class="tbl-scroll"><table class="heat"><thead><tr><th>Tenure</th>
+<th>Nothing yet</th>
+<th>Under $25K</th>
+<th>$25K–$100K</th>
+<th>$100K–$500K</th>
+<th>$500K–$1M</th>
+<th>Over $1M</th>
+<th class="n">n</th></tr></thead><tbody>
+<tr><th>Under 1 year</th>
+<td style="--a:1.00">87%</td>
+<td style="--a:0.15">11%</td>
+<td style="--a:0.03">2%</td>
+<td style="--a:0.00">0%</td>
+<td style="--a:0.00">0%</td>
+<td style="--a:0.00">0%</td>
+<td class="n">1,479</td></tr>
+<tr><th>1–2 years</th>
+<td style="--a:0.80">56%</td>
+<td style="--a:0.47">33%</td>
+<td style="--a:0.13">9%</td>
+<td style="--a:0.02">2%</td>
+<td style="--a:0.00">0%</td>
+<td style="--a:0.00">0%</td>
+<td class="n">872</td></tr>
+<tr><th>2–5 years</th>
+<td style="--a:0.56">39%</td>
+<td style="--a:0.53">37%</td>
+<td style="--a:0.20">14%</td>
+<td style="--a:0.11">8%</td>
+<td style="--a:0.01">1%</td>
+<td style="--a:0.01">1%</td>
+<td class="n">1,057</td></tr>
+<tr><th>5–10 years</th>
+<td style="--a:0.49">35%</td>
+<td style="--a:0.42">30%</td>
+<td style="--a:0.28">19%</td>
+<td style="--a:0.17">12%</td>
+<td style="--a:0.05">3%</td>
+<td style="--a:0.02">1%</td>
+<td class="n">1,002</td></tr>
+<tr><th>10+ years</th>
+<td style="--a:0.48">33%</td>
+<td style="--a:0.31">22%</td>
+<td style="--a:0.31">22%</td>
+<td style="--a:0.23">16%</td>
+<td style="--a:0.05">3%</td>
+<td style="--a:0.05">4%</td>
+<td class="n">2,359</td></tr>
+</tbody></table></div><p class="cap">Row percentages. Each row is one tenure band; cells are the share of that band in each revenue band. Darker is higher.</p></div></div>
+
+  <div class="insight"><div><div class="num">Insight 2</div><h3>Four types, and they are genuinely different rooms.</h3>
+    <p class="body">Creators are the least monetised (68% never sold) and the most likely to say they cannot put what they do into words (26%). Founders are the most likely to have followers who do not buy (22%). Established Experts are a different species: 63% earn six figures or more and 41% name the plateau, not invisibility, as the problem.</p></div>
+    <div><div class="tbl-scroll"><table class="heat"><thead><tr><th>Type</th>
+<th>Nobody knows I exist</th>
+<th>I can&#x27;t put what I do into words</th>
+<th>People follow me but don&#x27;t buy</th>
+<th>I&#x27;m known, but I&#x27;ve plateaued</th>
+<th>One offer, nowhere for customers to go next</th>
+<th class="n">n</th></tr></thead><tbody>
+<tr><th>The Expert</th>
+<td style="--a:0.75">53%</td>
+<td style="--a:0.32">22%</td>
+<td style="--a:0.19">13%</td>
+<td style="--a:0.10">7%</td>
+<td style="--a:0.07">5%</td>
+<td class="n">4,262</td></tr>
+<tr><th>The Founder</th>
+<td style="--a:0.61">43%</td>
+<td style="--a:0.26">18%</td>
+<td style="--a:0.31">22%</td>
+<td style="--a:0.15">10%</td>
+<td style="--a:0.10">7%</td>
+<td class="n">861</td></tr>
+<tr><th>The Creator</th>
+<td style="--a:0.55">38%</td>
+<td style="--a:0.37">26%</td>
+<td style="--a:0.27">19%</td>
+<td style="--a:0.14">10%</td>
+<td style="--a:0.10">7%</td>
+<td class="n">604</td></tr>
+<tr><th>The Established Expert</th>
+<td style="--a:0.35">24%</td>
+<td style="--a:0.22">15%</td>
+<td style="--a:0.16">11%</td>
+<td style="--a:0.58">41%</td>
+<td style="--a:0.12">8%</td>
+<td class="n">403</td></tr>
+</tbody></table></div><p class="cap">Q1 against Q4. The Expert and Founder rows are dominated by invisibility; the Established row flips to the plateau.</p></div></div>
+
+  <div class="insight"><div><div class="num">Insight 3</div><h3>The pain moves with the money, in a predictable order.</h3>
+    <p class="body">At zero revenue, 61% say nobody knows they exist. Under $25K, &ldquo;people follow me but don&rsquo;t buy&rdquo; jumps to 26%, its peak. From $100K up, the plateau takes over and reaches 46% above $1M. That is the same left-to-right walk as the curriculum: Be Seen, then Architecture, then Show Up and stay chosen. The sequence is right. The question is whether each stage is weighted for the people actually in it.</p></div>
+    <div><div class="tbl-scroll"><table class="heat"><thead><tr><th>Revenue</th>
+<th>Nobody knows I exist</th>
+<th>I can&#x27;t put what I do into words</th>
+<th>People follow me but don&#x27;t buy</th>
+<th>I&#x27;m known, but I&#x27;ve plateaued</th>
+<th>One offer, nowhere for customers to go next</th>
+<th class="n">n</th></tr></thead><tbody>
+<tr><th>Nothing yet</th>
+<td style="--a:0.87">61%</td>
+<td style="--a:0.34">24%</td>
+<td style="--a:0.13">9%</td>
+<td style="--a:0.04">3%</td>
+<td style="--a:0.04">3%</td>
+<td class="n">3,300</td></tr>
+<tr><th>Under $25K</th>
+<td style="--a:0.56">39%</td>
+<td style="--a:0.28">20%</td>
+<td style="--a:0.37">26%</td>
+<td style="--a:0.11">8%</td>
+<td style="--a:0.10">7%</td>
+<td class="n">1,604</td></tr>
+<tr><th>$25K–$100K</th>
+<td style="--a:0.48">34%</td>
+<td style="--a:0.30">21%</td>
+<td style="--a:0.25">18%</td>
+<td style="--a:0.26">18%</td>
+<td style="--a:0.13">9%</td>
+<td class="n">943</td></tr>
+<tr><th>$100K–$500K</th>
+<td style="--a:0.47">33%</td>
+<td style="--a:0.21">15%</td>
+<td style="--a:0.19">14%</td>
+<td style="--a:0.46">32%</td>
+<td style="--a:0.10">7%</td>
+<td class="n">570</td></tr>
+<tr><th>$500K–$1M</th>
+<td style="--a:0.43">30%</td>
+<td style="--a:0.19">13%</td>
+<td style="--a:0.14">10%</td>
+<td style="--a:0.55">38%</td>
+<td style="--a:0.12">8%</td>
+<td class="n">120</td></tr>
+<tr><th>Over $1M</th>
+<td style="--a:0.34">24%</td>
+<td style="--a:0.17">12%</td>
+<td style="--a:0.17">12%</td>
+<td style="--a:0.66">46%</td>
+<td style="--a:0.09">6%</td>
+<td class="n">109</td></tr>
+</tbody></table></div><p class="cap">Q3 against Q4. Read down the columns: invisibility falls as revenue rises, the plateau rises to replace it.</p></div></div>
+
+  <div class="insight"><div><div class="num">Insight 4</div><h3>Success moves too: first clients, then fully booked, then a product line, then the name.</h3>
+    <p class="body">A third of the never-sold want their first paying client. By $25K that collapses to 3% and &ldquo;fully booked at premium rates&rdquo; peaks at 36%. From $100K the answer becomes the product line and the name, and above $1M one in eight wants the room of peers, more than double any other band. The Guild is the right answer for that top band, and the quiz already routes them there.</p></div>
+    <div><div class="tbl-scroll"><table class="heat"><thead><tr><th>Revenue</th>
+<th>My first paying clients</th>
+<th>Fully booked at premium rates</th>
+<th>A product line that sells without trading hours</th>
+<th>Being THE name in my niche</th>
+<th>A room of peers at my level</th>
+<th class="n">n</th></tr></thead><tbody>
+<tr><th>Nothing yet</th>
+<td style="--a:0.47">33%</td>
+<td style="--a:0.22">16%</td>
+<td style="--a:0.44">31%</td>
+<td style="--a:0.21">14%</td>
+<td style="--a:0.08">6%</td>
+<td class="n">3,251</td></tr>
+<tr><th>Under $25K</th>
+<td style="--a:0.11">8%</td>
+<td style="--a:0.52">36%</td>
+<td style="--a:0.49">34%</td>
+<td style="--a:0.25">18%</td>
+<td style="--a:0.06">4%</td>
+<td class="n">1,591</td></tr>
+<tr><th>$25K–$100K</th>
+<td style="--a:0.04">3%</td>
+<td style="--a:0.47">33%</td>
+<td style="--a:0.53">37%</td>
+<td style="--a:0.32">23%</td>
+<td style="--a:0.06">4%</td>
+<td class="n">931</td></tr>
+<tr><th>$100K–$500K</th>
+<td style="--a:0.04">2%</td>
+<td style="--a:0.35">24%</td>
+<td style="--a:0.54">38%</td>
+<td style="--a:0.41">28%</td>
+<td style="--a:0.10">7%</td>
+<td class="n">571</td></tr>
+<tr><th>$500K–$1M</th>
+<td style="--a:0.07">5%</td>
+<td style="--a:0.31">22%</td>
+<td style="--a:0.54">38%</td>
+<td style="--a:0.40">28%</td>
+<td style="--a:0.11">8%</td>
+<td class="n">119</td></tr>
+<tr><th>Over $1M</th>
+<td style="--a:0.09">6%</td>
+<td style="--a:0.18">12%</td>
+<td style="--a:0.47">33%</td>
+<td style="--a:0.53">37%</td>
+<td style="--a:0.16">12%</td>
+<td class="n">113</td></tr>
+</tbody></table></div><p class="cap">Q3 against Q5. Success is a ladder in the registrants&rsquo; own answers, and it matches the product ladder the programme teaches.</p></div></div>
+
+  <div class="insight"><div><div class="num">Insight 5</div><h3>In their own words, the biggest ask is a system they can follow.</h3>
+    <p class="body">5,582 people answered the open question. Two in five ask, in some form, for the how: a roadmap, a structure, a step-by-step, someone to tell them where to start. A third talk about selling, pricing and making an offer. A quarter talk about being seen. Only 6% name fear, even though 48% chose invisibility as the thing that breaks. People describe the symptom, not the wound.</p>
+    <p class="quote">&ldquo;Giving a blueprint or system from start to finish like a dummies version.&rdquo;</p><p class="quote">&ldquo;I know I can but I don&rsquo;t know how to structure a product, an offer, and how to have automatic sales.&rdquo;</p></div>
+    <div><div class="card"><div class="kick">Q6 themes · share of 5,582 open answers · one answer can carry several</div><div class="bars">
+<div class="bar"><div class="bl">A system I can follow, start to finish</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">23%<span>2,246</span></div></div>
+<div class="bar"><div class="bl">Selling, pricing and making an offer</div><div class="bt"><div class="bf" style="width:86.2%"></div></div><div class="bv">20%<span>1,935</span></div></div>
+<div class="bar"><div class="bl">Being seen and growing an audience</div><div class="bt"><div class="bf" style="width:67.9%"></div></div><div class="bv">16%<span>1,526</span></div></div>
+<div class="bar"><div class="bl">Clarity, niche and putting it into words</div><div class="bt"><div class="bf" style="width:49.3%"></div></div><div class="bv">12%<span>1,107</span></div></div>
+<div class="bar"><div class="bl">Time, overwhelm and consistency</div><div class="bt"><div class="bf" style="width:30.8%"></div></div><div class="bv">7%<span>692</span></div></div>
+<div class="bar"><div class="bl">Money, tools and tech</div><div class="bt"><div class="bf" style="width:25.2%"></div></div><div class="bv">6%<span>565</span></div></div>
+<div class="bar"><div class="bl">Credibility and proof</div><div class="bt"><div class="bf" style="width:22.2%"></div></div><div class="bv">5%<span>499</span></div></div>
+<div class="bar"><div class="bl">Network and not doing it alone</div><div class="bt"><div class="bf" style="width:16.8%"></div></div><div class="bv">4%<span>378</span></div></div>
+<div class="bar"><div class="bl">Fear, confidence and self-doubt</div><div class="bt"><div class="bf" style="width:14.9%"></div></div><div class="bv">3%<span>335</span></div></div>
+<div class="bar"><div class="bl">Mindset and old stories</div><div class="bt"><div class="bf" style="width:13.1%"></div></div><div class="bv">3%<span>295</span></div></div>
+</div><p class="cap">1,110 answers (20%) matched no theme: single words, a job title, a URL, or a wish too general to code. Coding is keyword-based and was validated against a read sample of about sixty answers.</p></div></div></div>
+
+  <div class="insight"><div><div class="num">Insight 6</div><h3>&ldquo;I&rsquo;m good at what I do, but.&rdquo;</h3>
+    <p class="body">428 people wrote a version of that sentence unprompted. The recurring vocabulary underneath it is the vocabulary of leverage: without me, trading time, while I sleep, a course, a product. That is the product line answer from Q5, said as a feeling. It is also the strongest possible endorsement of the programme&rsquo;s graduating artefact.</p>
+    <p class="quote">&ldquo;How to turn a 1:1 service based business into one that runs without me and makes more revenue than I do now.&rdquo;</p><p class="quote">&ldquo;I&rsquo;m good at what I do but I don&rsquo;t know how to turn my knowledge into money without trading money for hours.&rdquo;</p></div>
+    <div><div class="card"><div class="kick">Recurring phrases · mentions in the open answers</div><div class="bars">
+<div class="bar"><div class="bl">a book, speaking, a stage, a podcast</div><div class="bt"><div class="bf" style="width:100.0%"></div></div><div class="bv">14%<span>787</span></div></div>
+<div class="bar"><div class="bl">fear, courage, shy, self-doubt</div><div class="bt"><div class="bf" style="width:62.9%"></div></div><div class="bv">9%<span>495</span></div></div>
+<div class="bar"><div class="bl">pricing, charging, premium, worth</div><div class="bt"><div class="bf" style="width:53.9%"></div></div><div class="bv">8%<span>424</span></div></div>
+<div class="bar"><div class="bl">a course, programme or digital product</div><div class="bt"><div class="bf" style="width:50.8%"></div></div><div class="bv">7%<span>400</span></div></div>
+<div class="bar"><div class="bl">&quot;without me&quot;, &quot;trading time&quot;, &quot;while I sleep&quot;, &quot;passive&quot;</div><div class="bt"><div class="bf" style="width:48.7%"></div></div><div class="bv">7%<span>383</span></div></div>
+<div class="bar"><div class="bl">a funnel, a website, tech, AI</div><div class="bt"><div class="bf" style="width:45.6%"></div></div><div class="bv">6%<span>359</span></div></div>
+<div class="bar"><div class="bl">leaving a job or employment</div><div class="bt"><div class="bf" style="width:31.1%"></div></div><div class="bv">4%<span>245</span></div></div>
+<div class="bar"><div class="bl">what to post, consistency, showing up</div><div class="bt"><div class="bf" style="width:22.5%"></div></div><div class="bv">3%<span>177</span></div></div>
+<div class="bar"><div class="bl">my story, my message, articulating it</div><div class="bt"><div class="bf" style="width:19.6%"></div></div><div class="bv">3%<span>154</span></div></div>
+<div class="bar"><div class="bl">the right rooms, network, connections</div><div class="bt"><div class="bf" style="width:17.8%"></div></div><div class="bv">3%<span>140</span></div></div>
+<div class="bar"><div class="bl">where to start, step by step, a blueprint</div><div class="bt"><div class="bf" style="width:15.9%"></div></div><div class="bv">2%<span>125</span></div></div>
+<div class="bar"><div class="bl">testimonials, proof, a credibility gap</div><div class="bt"><div class="bf" style="width:8.3%"></div></div><div class="bv">1%<span>65</span></div></div>
+</div><p class="cap">Share of the 5,582 open answers containing the phrase family. Books, speaking and stages appear in one answer in seven, mostly as the thing the person wants to be known for.</p></div></div></div>
+
+  <div class="insight"><div><div class="num">Insight 7</div><h3>The Guild room is already here, and it is 842 people.</h3>
+    <div class="big">842</div><p class="body">registrants earn $100K or more. Their problem is the plateau (35%) and their definition of success is the product line or being the name (67% between them). 456 people picked the Established Expert type, but 368 six-figure earners still call themselves The Expert. The type question under-counts the top of the room. Of the 952 responses the routing has processed so far, 100 were sent to the Guild and 852 to the Mastery.</p></div>
+    <div><div class="tbl-scroll"><table class="heat"><thead><tr><th>Type</th>
+<th>My first paying clients</th>
+<th>Fully booked at premium rates</th>
+<th>A product line that sells without trading hours</th>
+<th>Being THE name in my niche</th>
+<th>A room of peers at my level</th>
+<th class="n">n</th></tr></thead><tbody>
+<tr><th>The Expert</th>
+<td style="--a:0.29">20%</td>
+<td style="--a:0.35">25%</td>
+<td style="--a:0.46">32%</td>
+<td style="--a:0.25">17%</td>
+<td style="--a:0.07">5%</td>
+<td class="n">4,219</td></tr>
+<tr><th>The Founder</th>
+<td style="--a:0.24">17%</td>
+<td style="--a:0.37">26%</td>
+<td style="--a:0.48">34%</td>
+<td style="--a:0.27">19%</td>
+<td style="--a:0.06">4%</td>
+<td class="n">857</td></tr>
+<tr><th>The Creator</th>
+<td style="--a:0.35">25%</td>
+<td style="--a:0.24">16%</td>
+<td style="--a:0.56">39%</td>
+<td style="--a:0.20">14%</td>
+<td style="--a:0.08">6%</td>
+<td class="n">594</td></tr>
+<tr><th>The Established Expert</th>
+<td style="--a:0.11">8%</td>
+<td style="--a:0.28">20%</td>
+<td style="--a:0.53">37%</td>
+<td style="--a:0.39">27%</td>
+<td style="--a:0.11">8%</td>
+<td class="n">401</td></tr>
+</tbody></table></div><p class="cap">Q1 against Q5. The Established row wants the name and the product line; the Creator row wants first clients and the product line.</p></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><div class="over">Recommendations</div><h2>How I would strengthen the curriculum from this</h2><p class="lead">Nine moves, each tied to the evidence above and to the week it lands in. None of them changes the spine. The sequence the quiz describes is the sequence Version 3 already teaches.</p></div>
+
+  <div class="rec"><div class="wk">W1<br>to<br>W17</div><div><h3>Make the Authority Blueprint the weekly tracker, not a summit slide.</h3><p class="body">The single largest ask in the open answers is a system to follow, start to finish. The summit shows thirteen Blueprint pieces on Day 1 and promises them finished in the Mastery. Hand every student a one-page Blueprint on Day 1 of Week 1 with the thirteen pieces and the week each is built, and open every Tuesday by marking the next one. It costs one slide a week and answers the question two in five people asked.</p><div class="ev"><b>Evidence</b> · 2,246 open answers (40%) ask for the how · &ldquo;where to start&rdquo; and &ldquo;blueprint&rdquo; named outright by 125</div></div></div>
+
+  <div class="rec"><div class="wk">W14<br>W15</div><div><h3>Give pricing and the ask a full clinic, not a lab afternoon.</h3><p class="body">Pricing and charging appear in the open answers as often as fear, courage and self-doubt combined. &ldquo;Fully booked at premium rates&rdquo; is the second most chosen definition of success and peaks in exactly the band that has started selling and stalled. Ajit&rsquo;s pricing hour on the Week 14 build day should become a named pricing clinic with a price set and defended out loud by every student, and the Week 15 enrolment conversation should end with each student having asked one real person for real money, on tape.</p><div class="ev"><b>Evidence</b> · pricing family 424 mentions (8%) · &ldquo;fully booked&rdquo; chosen by 1,591 (24%), 36% of the under-$25K band · &ldquo;follow but don&rsquo;t buy&rdquo; peaks at 26% in the same band</div></div></div>
+
+  <div class="rec"><div class="wk">W14<br>W16<br>W17</div><div><h3>Name leverage as an outcome and audit for it.</h3><p class="body">&ldquo;Without me&rdquo;, &ldquo;trading time&rdquo;, &ldquo;while I sleep&rdquo; is the emotional centre of the open answers, and the product line wins Q5 in every revenue band. Weeks 14 to 17 already build the ladder and the cadence. Add a ten-minute leverage audit to the Week 17 cadence class: for each rung, does it run without you, and if not, what is the one change that would make it. Then say the word on stage. The room used it; the curriculum should too.</p><div class="ev"><b>Evidence</b> · product line is the top success answer in all six revenue bands (33% overall) · leverage phrase family 383 mentions · 47% of &ldquo;one offer, nowhere to go next&rdquo; want the product line</div></div></div>
+
+  <div class="rec"><div class="wk">W1</div><div><h3>Put the one-sentence exercise in Week 1, before the first post.</h3><p class="body">One in five chose &ldquo;I can&rsquo;t put what I do into words&rdquo; and it is the Creator&rsquo;s top answer after invisibility. Week 3 names the edge and Week 4 crowns the belief, which is right, but two weeks is a long time to post without a sentence. The onboarding survey already asks for the one sentence. Have Week 1&rsquo;s identity sabbatical end with a rough version of it, so the Week 1 video has words in it, and let Weeks 3 and 4 sharpen rather than invent.</p><div class="ev"><b>Evidence</b> · 1,435 chose it (21%) · 26% of Creators · clarity theme in 1,107 open answers</div></div></div>
+
+  <div class="rec"><div class="wk">W9<br>W10</div><div><h3>Send students out of Week 10 with thirty days of posts, not a hook bank.</h3><p class="body">&ldquo;I struggle with what to post, so I&rsquo;m not posting at all&rdquo; is the visibility wound in operational clothing. The summit sells a 30-day content plan built live from one idea. The Mastery should deliver it as the Week 10 artefact: each student leaves the lab with thirty scheduled posts generated from their named method, not a bank of hooks to draw on later. Consistency was named by 177 people as the thing they lack.</p><div class="ev"><b>Evidence</b> · visibility theme 1,526 open answers (27%) · 3,255 chose &ldquo;nobody knows I exist&rdquo; · summit Session &ldquo;The Free Product Content Machine&rdquo; already promises the 30-day plan</div></div></div>
+
+  <div class="rec"><div class="wk">W3<br>W11<br>W12</div><div><h3>Give the Established Experts their own thread, and the Guild bridge earlier.</h3><p class="body">Eight hundred people earn six figures and their problem is not being seen, it is being stuck. For them Weeks 1 and 2 are review, Weeks 3 and 4 (the edge, the belief) are the real work, and Weeks 11 and 12 (the fireside, the long-form advantage) are where they break the plateau. Pod them together from the onboarding survey&rsquo;s revenue question, brief the Week 3 and Week 12 sessions to speak to the plateau explicitly, and put the Guild invitation in front of them in Week 12 rather than at graduation. Above $1M, the peer room is the success answer for one in eight.</p><div class="ev"><b>Evidence</b> · 842 at $100K+ · plateau is 35% of their Q4 · 12% of the $1M+ band want peers vs 6% overall · 368 six-figure earners still self-select as The Expert, so the pod cannot rely on Q1 alone</div></div></div>
+
+  <div class="rec"><div class="wk">W5<br>to<br>W8</div><div><h3>Keep the first rung early. It is the proof the job-leavers need.</h3><p class="body">245 people wrote about leaving employment, and 400 named a course or digital product as the thing they want to build. Half the room has never sold. Module 2 puts a $49 product live by Week 8 and that is exactly right: the first rung is not a revenue event, it is the moment a person with a job becomes a person with a product. Do not let anything push it later.</p><div class="ev"><b>Evidence</b> · 3,412 never sold (50%) · 33% of them want their first paying client · course/product named 400 times</div></div></div>
+
+  <div class="rec"><div class="wk">W16</div><div><h3>Signpost the book and the stage, without teaching them.</h3><p class="body">One open answer in seven mentions a book, speaking, a stage or a podcast. That is Speaking &amp; Influence territory and the three-programme boundary should hold. But the room is telling us where it wants to be known, so the Week 16 Get Booked thread should say so plainly: your book and your talk are rungs on this ladder, here is where they sit, and here is the programme that builds them. A boundary the student can see is a referral. One they cannot see is a disappointment.</p><div class="ev"><b>Evidence</b> · 787 mentions (14%) · Week 16 already carries a 30-minute Get Booked thread</div></div></div>
+
+  <div class="rec"><div class="wk">W1<br>W2</div><div><h3>Do not add a mindset week. The room named symptoms, and Weeks 1 and 2 already treat the wound.</h3><p class="body">Only 6% of open answers name fear, self-doubt or confidence, and 5% name mindset. Yet 48% chose invisibility. The gap is diagnostic: people do not experience the visibility wound as fear, they experience it as &ldquo;I don&rsquo;t know what to post&rdquo; and &ldquo;nobody knows I exist&rdquo;. Week 1 names the wound for them and Week 2 gives Marisa the identity shift. That is the right dose. Adding more mindset would be teaching to a complaint the room did not make.</p><div class="ev"><b>Evidence</b> · fear theme 335 answers · mindset theme 295 · &ldquo;imposter&rdquo; appears 46 times in 5,582 answers</div></div></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="head"><div class="over">Data hygiene</div><h2>Three things to fix in the quiz itself</h2></div>
+  <div class="grid g3">
+    <div class="card"><h3>Browser-translated answers split the counts</h3><p class="body">151 responses arrived with the option text in Spanish, Portuguese, German, Italian, Polish, Russian and a dozen others, because the quiz was submitted through a translated browser. The tenure question alone produced forty variant strings. Every figure on this page is normalised, but the Airtable is not. Lock the option values at ingest or map them in a formula field.</p></div>
+    <div class="card"><h3>Q1 changed mid-flight</h3><p class="body">447 people answered the original &ldquo;which sounds most like you&rdquo; before it was replaced with the four types, and 605 more answered neither. The four-type question is answered by 86% of the table. If the types drive routing, the old answers need mapping or the routing has a blind spot.</p></div>
+    <div class="card"><h3>The type question under-reads the top of the room</h3><p class="body">368 people earning six figures or more still chose &ldquo;The Expert&rdquo;. Revenue is the more reliable signal for routing to the Guild and for podding Established Experts in the Mastery. Treat Q3 as the primary fork and Q1 as flavour.</p></div>
+  </div>
+  <div class="callout" style="margin-top:18px"><strong>Method.</strong> 7,739 records read in full from the quiz table on 15 September 2026. Closed questions are counted exhaustively after normalising translated option text. The open question was coded with a keyword taxonomy, multi-label, and checked against a read sample of about sixty answers across the four types; 20% of answers matched no theme and are reported as such. Percentages are of those who answered each question, not of the whole table. 99 respondents are flagged VIP. Submissions ran from 6 to 15 September, peaking at 1,848 on 2026-09-09.</div>
+</div></section>
+
+<footer><div class="wrap">Expert &amp; Authority Mastery · quiz analysis for the curriculum team · built from the Expert to Authority Quiz 2026 table, base appnHZYcirCg1VqUP</div></footer>

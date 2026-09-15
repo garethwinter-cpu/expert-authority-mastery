@@ -447,6 +447,14 @@
       "finding": "The Programme tab opened with seven sections of justification before the curriculum itself: the organising idea, the weekly rhythm, the seven pieces of doctrine, the Mindvalley standards check, the three honest risks and the five pillars. Vishen reads this page to see the curriculum, not the case for it.",
       "decision": "The seventeen-week curriculum now opens the Programme tab. Every justification section moves below it behind a dark divider that says so plainly, so the reasoning is one scroll away for anyone who wants to argue with a decision and invisible to anyone who just wants the weeks.",
       "source": "Gareth's instruction, 11 Sep 2026"
+    },
+    {
+      "id": "ea-quiz-7739-read-sep15",
+      "date": "2026-09-15",
+      "area": "Expert & Authority · the room",
+      "finding": "Full read of the Expert to Authority Quiz table: 7,739 responses, 6 to 15 September. 69% The Expert, 14% Founder, 10% Creator, 7% Established Expert. 50% have never sold from their expertise, 24% under $25K, 12% (842 people) at $100K+. 35% have 10+ years' tenure and a third of those have never sold. 48% choose 'nobody knows I exist', 21% 'can't put what I do into words'. Product line is the top success answer in every revenue band (33%); fully booked peaks at 36% in the under-$25K band; peers is 12% above $1M. Pain moves with revenue: invisibility 61% at zero, 'follow but don't buy' peaks 26% under $25K, plateau reaches 46% above $1M. Open question (5,582 answers): 40% ask for a system/the how, 35% selling and pricing, 27% visibility, 20% clarity, only 6% name fear. 428 wrote 'I'm good at what I do, but'. Browser-translated option strings split counts across 40+ variants; 447 answered the retired Q1; 368 six-figure earners still self-select as The Expert.",
+      "decision": "Nine recommendations published as an artefact for the curriculum team, none changing the spine: Blueprint as weekly tracker (W1–17), a pricing clinic (W14–15), leverage named and audited (W14/16/17), one-sentence exercise in W1, thirty scheduled posts as the W10 artefact, an Established Expert pod thread with the Guild bridge at W12, keep the first rung early, signpost book and stage at W16 without teaching them, and no added mindset week. Data hygiene: lock quiz option values at ingest, map the retired Q1, treat Q3 revenue as the primary routing fork.",
+      "source": "Quiz table tblxGaIBEs265rYAd, base appnHZYcirCg1VqUP, all 7,739 records read 15 Sep 2026 · reports/quiz-insights-2026-09-15.html · https://claude.ai/artifact/YbXAATbVEaTDGga2HKQX88"
     }
   ],
   "verified_corrections_to_live_pages": [
