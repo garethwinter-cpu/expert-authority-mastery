@@ -483,6 +483,17 @@
         "expert-authority-v3.html#tab-programme",
         "briefs/MARISA-PEER-W2-LIVE-CALL.md"
       ]
+    },
+    {
+      "id": "ea-programme-reader-mode-sep16",
+      "date": "2026-09-16",
+      "area": "Expert & Authority Mastery · V3 · Programme tab UX",
+      "finding": "Gareth asked that the Programme tab open with every week expanded so Vishen only scrolls, keep the colour coding, keep per-module collapse, and hide everything that is context rather than curriculum.",
+      "decision": "All six curriculum modules (Lesson 0 to Module 4) carry the open class by default; module headers still fold each one. A reader-mode switch in the tools row defaults to 'Curriculum only', which hides the in-module callouts, the version notes and the whole reasoning block below the divider; 'Show the reasoning' restores them. The intro paragraph is one line and its former text moved into the hidden reasoning block. Lesson 0's full brief is collapsed like every other brief.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-v3.html#tab-programme"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

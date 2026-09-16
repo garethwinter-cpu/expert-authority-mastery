@@ -99,6 +99,9 @@ h3{font-size:20px;font-weight:700;line-height:1.3}
 .legend{margin-left:auto;font-size:12.5px;color:var(--text-subtle);display:flex;align-items:center;gap:6px}
 .sw{display:inline-block;width:12px;height:12px;border-radius:4px;margin-left:8px}
 .sw.teach{background:var(--brand)} .sw.lab{background:var(--green)} .sw.fire{background:var(--pink)} .sw.bonus{background:var(--gold)}
+.tool-sep{display:inline-block;width:1px;height:22px;background:var(--border);margin:0 4px}
+.tool.mode.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.prog-plain .module-body .callout,.prog-plain .module-body .v2add,.prog-plain #prog-reasoning{display:none}
 .module.m1 .module-head{border-left:6px solid var(--brand)} .module.m2 .module-head{border-left:6px solid var(--green)} .module.mi .module-head{border-left:6px solid var(--ink)} .module.m3 .module-head{border-left:6px solid var(--orange)} .module.m4 .module-head{border-left:6px solid var(--pink)}
 .faces{display:flex;flex:0 0 auto}
 .faces img{width:44px;height:44px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #fff;box-shadow:var(--shadow-light);background:var(--grey-200)}
@@ -806,13 +809,13 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 </div>
 
 <!-- ============ 03 THE PROGRAMME (overview + week by week) ============ -->
-<div class="tab-panel" id="tab-programme">
+<div class="tab-panel prog-plain" id="tab-programme">
 <div class="wrap">
 <section>
     <div class="section-head">
       <div class="overline">The curriculum</div>
       <h2>17 weeks, 36 live touchpoints, one ladder switched on</h2>
-      <p class="body-md">Click a module to expand. Each week: Tuesday <span class="pill b">TEACH</span> + Thursday <span class="pill g">IMPLEMENTATION DAY</span>. The Expert &amp; Authority Accelerator is the assumed on-ramp; nothing below repeats it. Every session title gets an ABCS pass before launch. Every Tuesday opens by marking the next piece of the <strong>Authority Blueprint</strong>, the thirteen-piece tracker handed out at Lesson 0 and shown finished on the summit stage. <strong>Lesson 0 is a bonus call on Wednesday 23 September</strong>, led by Vishen, bridging the summit and the 7 October kickoff.</p>
+      <p class="body-md">Tuesday teaches, Thursday builds. Every week is open below; click a header to fold it away. <strong>Lesson 0 is the bonus call on Wednesday 23 September.</strong> The reasoning, evidence and version notes are hidden by default: use the switch on the right to show them.</p>
     </div>
     <div class="grid g3" style="margin:14px 0 22px">
       <div class="card" style="border-top:4px solid var(--ink)"><div class="kicker">Fri 18 to Sun 20 Sep &middot; free</div><h3>The Expert to Authority Summit</h3><p class="body-md" style="margin-top:8px">Three free days. The job is to give, then to gather the leads the Mastery is sold to. Marisa&rsquo;s 30-minute live interview with Vishen sits here, on Day 1: the fireside, not the lesson.</p></div>
@@ -821,7 +824,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
 
     <div class="modmap"><a class="mm m0" href="#mod-m0-v3" data-open="mod-m0-v3"><div class="mm-weeks">Wed 23 Sep &middot; bonus</div><div class="mm-name">Lesson 0</div><div class="mm-br">"I know the room, I know the machine, and I have written my before picture down."</div><div class="faces mm-faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a><a class="mm m1" href="#mod-m1-v3" data-open="mod-m1-v3"><div class="mm-weeks">weeks 1–4</div><div class="mm-name">Be Seen</div><div class="mm-br">"I posted. The world didn't end. And someone replied."</div><div class="faces mm-faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"><img src="authors/marisa-peer.jpg" alt="Marisa Peer" title="Marisa Peer"></div></a><a class="mm m2" href="#mod-m2-v3" data-open="mod-m2-v3"><div class="mm-weeks">weeks 5–8</div><div class="mm-name">The First Rung</div><div class="mm-br">"There is a product with my name on it, live on the internet — and I can tell you why it exists in ninety seconds."</div><div class="faces mm-faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a><a class="mm mi" href="#mod-mi-v3" data-open="mod-mi-v3"><div class="mm-weeks">Week 9 · one optional Saturday</div><div class="mm-name">The Masterclass Week</div><div class="mm-br">In: a product. Out: the 60-minute masterclass that sells it, shot and reviewed.</div><div class="faces mm-faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a><a class="mm m3" href="#mod-m3-v3" data-open="mod-m3-v3"><div class="mm-weeks">weeks 10–13</div><div class="mm-name">Turn On The Tap</div><div class="mm-br">"Strangers found me this week. One of them paid."</div><div class="faces mm-faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/regan-hillyer.jpg" alt="Regan Hillyer" title="Regan Hillyer"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div></a><a class="mm m4" href="#mod-m4-v3" data-open="mod-m4-v3"><div class="mm-weeks">weeks 14–17</div><div class="mm-name">The Ladder &amp; The Identity Tier</div><div class="mm-br">"I have three rungs, and a customer has climbed two of them."</div><div class="faces mm-faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div></a></div>
-    <div class="curr-tools"><button type="button" class="tool" data-all="open">Expand all modules</button><button type="button" class="tool" data-all="close">Collapse all</button><span class="legend"><span class="sw teach"></span>Teach (Tuesday)<span class="sw lab"></span>Lab (Thursday)<span class="sw fire"></span>Fireside<span class="sw bonus"></span>Bonus (Lesson 0)</span></div>
+    <div class="curr-tools"><button type="button" class="tool" data-all="open">Expand all modules</button><button type="button" class="tool" data-all="close">Collapse all</button><span class="tool-sep"></span><button type="button" class="tool mode active" data-mode="plain">Curriculum only</button><button type="button" class="tool mode" data-mode="full">Show the reasoning</button><span class="legend"><span class="sw teach"></span>Teach (Tuesday)<span class="sw lab"></span>Lab (Thursday)<span class="sw fire"></span>Fireside<span class="sw bonus"></span>Bonus (Lesson 0)</span></div>
 
     <!-- MODULE 1 -->
     <!-- DAY ZERO · THE BRIDGE -->
@@ -847,7 +850,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
             <div class="slot-head"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><div><div class="slot-kind">Bonus &middot; Lesson 0 &middot; live &middot; Wed 23 Sep</div><div class="slot-who">Vishen Lakhiani &middot; 75 minutes</div></div></div>
             <h4>Lesson 0: The Room, the Blueprint, and Your Before Picture</h4>
             <p class="lede">Three days ago you saw the Authority Blueprint finished on stage. Tonight you see how it gets built, week by week, name by name, and you take the one measurement that graduation will be judged against.</p>
-            <details class="more" open><summary>Read the full brief</summary>
+            <details class="more"><summary>Read the full brief</summary>
               <p><strong>The subject.</strong> Not a lesson the Mastery will teach later, and not a replay of the summit. Three moves only a bridge can make: show the room to itself, show the machine that is about to start, and take the before picture. Buyers leave with the calendar in their hands and a number written down. Non-buyers leave having watched the thing they are deciding about become real.</p>
               <div class="rs">
                 <div class="t">0:00</div><div class="s"><strong>Open, 5 min.</strong> &ldquo;On Sunday you saw the Blueprint finished. Tonight you see how it gets built.&rdquo; The date, said once and written on screen: 7 October, kickoff. Time to be confirmed with the calendar, and the weekday with it: the planning diagram says Tuesday, and 7 October 2026 falls on a Wednesday, so either the date or the Tuesday cadence needs one ruling before this call.</div>
@@ -976,7 +979,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
 
     <!-- MODULE 2 -->
-    <div class="module m2" data-mod id="mod-m2-v3">
+    <div class="module open m2" data-mod id="mod-m2-v3">
       <div class="module-head">
         <div class="mnum">2</div>
         <div class="mtitle">
@@ -1052,7 +1055,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
 
     <!-- INTENSIVE -->
-    <div class="module mi" data-mod id="mod-mi-v3">
+    <div class="module open mi" data-mod id="mod-mi-v3">
       <div class="module-head">
         <div class="mnum">★</div>
         <div class="mtitle">
@@ -1119,7 +1122,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
 
     <!-- MODULE 3 -->
-    <div class="module m3" data-mod id="mod-m3-v3">
+    <div class="module open m3" data-mod id="mod-m3-v3">
       <div class="module-head">
         <div class="mnum">3</div>
         <div class="mtitle">
@@ -1196,7 +1199,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
 
     <!-- MODULE 4 -->
-    <div class="module m4" data-mod id="mod-m4-v3">
+    <div class="module open m4" data-mod id="mod-m4-v3">
       <div class="module-head">
         <div class="mnum">4</div>
         <div class="mtitle">
@@ -1310,6 +1313,8 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
     </div>
 
   </section>
+<div id="prog-reasoning">
+<div class="callout" style="margin-bottom:26px"><div class="ic">&#9670;</div><div><p>Each week: Tuesday <span class="pill b">TEACH</span> + Thursday <span class="pill g">IMPLEMENTATION DAY</span>. The Expert &amp; Authority Accelerator is the assumed on-ramp; nothing below repeats it. Every session title gets an ABCS pass before launch. Every Tuesday opens by marking the next piece of the <strong>Authority Blueprint</strong>, the thirteen-piece tracker handed out at Lesson 0 and shown finished on the summit stage. <strong>Lesson 0 is a bonus call on Wednesday 23 September</strong>, led by Vishen, bridging the summit and the 7 October kickoff.</p></div></div>
 <section style="margin-top:72px">
     <div class="callout dark">
       <div class="ic">&#9632;</div>
@@ -1510,6 +1515,7 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
       <div class="card dark"><div class="kicker">A note to Vishen on the pillars</div><p class="body-md" style="margin-top:8px">"Your five pillars are on the page in your words. Four kept their content once we held it to the authority outcome; the fifth moved to the programme you co-own with Daniel, where it belongs. Your named-method idea is now the Week 3 deliverable and the Day 1 summit exercise. Your summit arc is the summit."</p></div>
     </div>
   </section>
+</div>
 </div>
 </div>
 
@@ -3450,6 +3456,13 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
       m.classList.add('open');
       var y = m.getBoundingClientRect().top + window.pageYOffset - 130;
       window.scrollTo({top: y, behavior: 'smooth'});
+    });
+  });
+  document.querySelectorAll('.tool[data-mode]').forEach(function(b){
+    b.addEventListener('click', function(){
+      var plain = b.getAttribute('data-mode') === 'plain';
+      document.getElementById('tab-programme').classList.toggle('prog-plain', plain);
+      document.querySelectorAll('.tool[data-mode]').forEach(function(x){ x.classList.toggle('active', x === b); });
     });
   });
   document.querySelectorAll('.tool[data-all]').forEach(function(b){
