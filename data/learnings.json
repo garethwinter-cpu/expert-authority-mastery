@@ -471,6 +471,18 @@
       "finding": "Jaideep's plan adds a Vishen bonus call on Wednesday 23 September between the summit (18 to 20 Sep) and the Mastery kickoff (Tuesday 7 Oct), for two stated reasons: fast-action buying, and engaging students inside the two-week sales period so the refund rate is lower. Gareth's framing: the gap between paying and starting is where buyers ask whether it was a scam; the call positions the gap as anticipation. The format spec had already adopted an early-value call in the first week after the summit from the Tom Kirby playbook; AI Mastery 2026 ran 23.8% refunds against +84 NPS.",
       "decision": "Built into Version 3 as Day Zero, a gold module above Week 1 on the Programme tab, with a 75-minute run of show: the room read back from the quiz (10), the Be Seen / Architecture / Show Up compass with a live self-diagnosis from each person's quiz answer (15), the Blueprint walked week by week with the faculty named (15), the Before Picture taken live and submitted through the onboarding survey (10), the fourteen-day plan (5), the ask second to last (5), a compass close (5), Q&A (15). Nothing brings a Mastery week forward. The Summit tab gains an after-the-summit strip with the three dates. Open item: the fast-action bonus is still undefined.",
       "source": "Jaideep Chagger's flow diagram via Gareth, 16 Sep 2026 · learnings tomkirby-playbook-aug27"
+    },
+    {
+      "id": "ea-marisa-w2-live-brief-sep16",
+      "date": "2026-09-16",
+      "area": "Expert & Authority Mastery · Week 2 · Marisa Peer",
+      "finding": "Gareth ruled that anything presented as Marisa Peer's must be hers, and anything assembled must stand on her captured teaching. Both quests were read in full: Uncompromised Life (17 lessons) and RTHA (35 lessons). Her real material: the 'I am enough' practice and homework (UL L14/15), 21 days per subject (RTHA L7), the criticism scripts and three rules (UL L16, RTHA L9), the Financial Upper Limit exercise with tripling (RTHA L25), the four beliefs of abundant people (RTHA L11), the Rules of the Mind (RTHA L5), 'you cannot be rejected unless you allow people to reject you' (RTHA L8). Two phrases earlier attributed to her ('no is a delay to the next yes', 'if I ask for more someone else has less') are in neither transcript. Marisa's summit slot is a 30-minute live interview with Vishen whose brief rules out mindset content; Gareth confirmed the Mastery keeps the taught session because the summit is the fireside. He also framed the three layers: free 3-day summit that gives and gathers leads; a bonus call to cut refunds between purchase and cohort start; a 17-week Mastery with two lessons a week, one teach and one integration lab. Date check: 7 October 2026 is a Wednesday, and the planning diagram calls it Tuesday.",
+      "decision": "Week 2 rebuilt in V3 as a 90-minute live Zoom teach with a timed run of show citing her lessons, a ten-minute being-paid segment that seeds Week 14, a 21-day homework landing on Module 2, seven bonus audios from her quests on a release calendar, guardrails and asks for her team. Day Zero renamed Lesson 0, flagged BONUS with the date, added to the module map and legend, and a summit → bonus → Mastery strip put at the top of the Programme tab. 'Seventeen days before kickoff' corrected to fourteen. The kickoff weekday is flagged on the page, not resolved. Full brief at briefs/MARISA-PEER-W2-LIVE-CALL.md.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-v3.html#tab-programme",
+        "briefs/MARISA-PEER-W2-LIVE-CALL.md"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

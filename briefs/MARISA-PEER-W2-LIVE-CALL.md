@@ -1,14 +1,16 @@
 # Marisa Peer · Week 2 live teach · "I Am Enough: The Identity Shift"
 
-**Expert & Authority Mastery · Tuesday 14 October 2026 · 90 minutes live on Zoom · brief for Marisa and her team · 16 September 2026**
+**Expert & Authority Mastery · Week 2 Tuesday teach (week of 12 October 2026; see date note) · 90 minutes live on Zoom · brief for Marisa and her team · 16 September 2026**
 
 Marisa is live, teaching her own work. Nothing here is pre-recorded. Every segment below is taken from a lesson she already teaches in Uncompromised Life (UL) or Rapid Transformational Hypnotherapy for Abundance (RTHA), cited by lesson number so her team can check it against her own material. The sequence and the two "Expert & Authority" applications are ours and are marked as such. She is free to swap any segment for the version she prefers to teach live.
+
+**Date note.** The planning diagram says the Mastery starts Tuesday 7 October. 7 October 2026 is a Wednesday. Until that is ruled, this brief uses week numbers: Week 2 Tuesday is 13 October if the cohort opens Tuesday 6 October, or the Wednesday 14 October if the date holds and the cadence moves.
 
 ---
 
 ## 1. The recommendation in one paragraph
 
-Treat one thing, enough-ness, at the two moments this room flinches: being seen and being paid. Week 1 made every student publish. Week 2 is the morning after, when the mind says "who do you think you are". Marisa treats the visibility wound at the root (UL Lesson 14), runs her hypnotic exercise live (UL Lesson 15), arms the room against the first critical comment (UL Lesson 16, RTHA Lesson 9), and plants the number the room will need in Week 14 by running her Financial Upper Limit exercise once (RTHA Lesson 25). She leaves the room on her own 21-day protocol, and the 21st day lands on Tuesday 4 November, the day Module 2 opens.
+Treat one thing, enough-ness, at the two moments this room flinches: being seen and being paid. Week 1 made every student publish. Week 2 is the morning after, when the mind says "who do you think you are". Marisa treats the visibility wound at the root (UL Lesson 14), runs her hypnotic exercise live (UL Lesson 15), arms the room against the first critical comment (UL Lesson 16, RTHA Lesson 9), and plants the number the room will need in Week 14 by running her Financial Upper Limit exercise once (RTHA Lesson 25). She leaves the room on her own 21-day protocol, and the 21st day lands on the Tuesday Module 2 opens (Week 5).
 
 ## 2. What the room is arriving with
 
@@ -36,7 +38,7 @@ Everything else in the run of show is her lesson, in her order of ideas.
 | 39–54 | Live hypnotic exercise: internalising "I am enough" | Marisa | UL L15 | Her exercise, run live, cameras optional. Fifteen minutes including the settle and return. This is the altered-state pillar of the session and the reason it must be her, live. |
 | 54–64 | Don't let in criticism, but do let in praise | Marisa | UL L16 · RTHA L9 | The seesaw: the inadequate diminish you to elevate themselves. Her three rules: it is not about you; you do not have to let it in; critics reserve the most criticism for themselves. The two scripts: "Thank you for sharing that." and "I didn't hear that, would you mind repeating it?" Praise yourself specifically, because self-praise has no agenda. **Drill (4 min):** host reads three real comments from Week 1 posts (with the students' consent). The room answers each in chat with one of the two scripts. |
 | 64–74 | The second flinch: being paid | Marisa | RTHA L25 · L8 · L11 | "What is the most you could ask for before you think that's greedy?" Write it. Triple it. Sit with the discomfort. Then her four beliefs of abundant people (L11): I have something unique to offer; it is worth a lot of money; I earned it; I share it. Her line: "People like it when I charge more because it represents my skill, my expertise." Host: "That number goes in your Blueprint. We open it again in Week 14." |
-| 74–79 | Homework: the 21 days | Marisa | UL L14/15 · RTHA L7 | Her prescription, verbatim: say "I am enough" every morning, every night, in the shower, brushing your teeth. Write it on your mirror. Put it in your phone alerts twice a day. Fridge, screensaver, the back of your hand. Play the audio every day. Twenty-one days per subject to rewire (RTHA L7). Day 21 is Tuesday 4 November, the day Module 2 opens. |
+| 74–79 | Homework: the 21 days | Marisa | UL L14/15 · RTHA L7 | Her prescription, verbatim: say "I am enough" every morning, every night, in the shower, brushing your teeth. Write it on your mirror. Put it in your phone alerts twice a day. Fridge, screensaver, the back of your hand. Play the audio every day. Twenty-one days per subject to rewire (RTHA L7). Day 21 is the Tuesday Module 2 opens (Week 5). |
 | 79–87 | Q&A | Marisa + host | | Host filters for questions about being seen and being paid. Anything clinical or personal-therapy goes to the community thread. |
 | 87–90 | Close and hand-off | Host | | Host names Thursday: Kash, on camera, and the formats that do not need you on camera. "You will be filming again in 48 hours. This time you'll be enough while you do it." |
 
@@ -64,7 +66,7 @@ All of these exist today in the Mindvalley library. Nothing to record. Released 
 | Hypnotic Exercise for Praising Yourself | UL Lesson 17 | Week 2, same day | For the night of the first negative comment |
 | You Are Enough (the taught lesson) | UL Lesson 14 | Week 2, as replay companion | For students who want her full version of the argument |
 | Don't Let In Criticism, But Do Let In Praise | UL Lesson 16 | Week 3, before the Established Expert pod | Reinforces the two scripts before the room's first pod critique |
-| RTT Session for an Abundance Mindset | RTHA Lesson 13 | Tuesday 4 November, Module 2 opens | Day 21 of the first protocol; starts the second, on the offer |
+| RTT Session for an Abundance Mindset | RTHA Lesson 13 | Week 5 Tuesday, Module 2 opens | Day 21 of the first protocol; starts the second, on the offer |
 | Raise Your Financial Upper Limit (lesson and workbook page) | RTHA Lesson 25 | Week 14, Pricing Clinic | The tripled number is reopened here |
 | RTT Session for Abundant Wealth | RTHA Lesson 27 | Week 14, same day | 21 days of it carries the student through Week 15's real ask to graduation |
 
@@ -78,9 +80,9 @@ Optional pre-watch, not required: UL Lesson 1, Your Mind Does What It Thinks You
 - **Her words, her framing.** We do not call anything "the Marisa Peer protocol" beyond what she calls it herself. The Week 2 page names her lessons by their own titles.
 - **Nothing pitched on camera.** Bonuses appear as post-lesson resources in the platform, never announced as an offer during the call.
 
-## 8. What we need from Marisa's team before 14 October
+## 8. What we need from Marisa's team before Week 2
 
-1. Confirm 90 minutes live on Zoom, Tuesday 14 October, and the call time once the cohort clock is set.
+1. Confirm 90 minutes live on Zoom on the Week 2 Tuesday, and the call time once the cohort clock is set.
 2. Confirm she is happy to run the UL Lesson 15 hypnotic exercise live, or name the version she prefers.
 3. Confirm the seven bonus releases in section 6, or strike any she does not want inside a paid Mastery.
 4. Tell us if she wants to teach the Rules of the Mind segment from RTHA or from Uncompromised Life; both work.
