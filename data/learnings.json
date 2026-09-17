@@ -569,6 +569,17 @@
         "expert-authority-v5.html",
         "authors/marisha-lakhiani.png"
       ]
+    },
+    {
+      "id": "ea-v5-wed-fri-cadence-sep17",
+      "date": "2026-09-17",
+      "area": "Expert & Authority Mastery · Version 5 · schedule",
+      "finding": "Gareth ruled the cadence: kickoff of the Mastery on Wednesday 7 October 2026, Wednesday lesson and Friday workshop instead of Tuesday and Thursday. Run straight through, Week 18 lands on Wednesday 3 February and Friday 5 February 2027. Two holiday collisions: Week 12's workshop falls on Friday 25 December and Week 13's on Friday 1 January.",
+      "decision": "Version 5 now prints the date on every lesson and workshop from 7 October; hero states Wednesday 7 October to Friday 5 February. The holiday weeks are shown as they fall and flagged to Gareth for a break decision rather than moved on the page.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-v5.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
