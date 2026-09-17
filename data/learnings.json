@@ -557,6 +557,18 @@
       "applied_to": [
         "expert-authority-v5.html"
       ]
+    },
+    {
+      "id": "ea-v5-vykintas-marisha-kickoff-sep17",
+      "date": "2026-09-17",
+      "area": "Expert & Authority Mastery · Version 5",
+      "finding": "Gareth's rulings on the three gaps between the meeting and Vishen's published page: Vykintas joins every workshop including Jimmy's Week 5, as the consistent thread of the curriculum; Marisha Lakhiani (Head of Growth, Vishen's cousin) is added as guest on Week 9 paid advertising, per Vishen's ask in the meeting; the kickoff call is added; the Expert Guild is ignored on the curriculum page; the 'Register now, it's free' summit footer from Vishen's page is not carried over.",
+      "decision": "Applied to Version 5. Marisha's headshot taken from the Authors table picture in the Author Relations base and saved as authors/marisha-lakhiani.png.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-v5.html",
+        "authors/marisha-lakhiani.png"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
