@@ -1,173 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Expert &amp; Authority Mastery · Version 5</title>
-<meta name="description" content="The final curriculum: Vishen's 18 weeks, one lesson Tuesday, one workshop Thursday.">
+<meta name="description" content="Vishen's 18-week curriculum as published on 17 September 2026, with the workshop leads added.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--brand:#7A12D4;--brand-light:#F6EEFD;--brand-content:#6810B4;--green:#159F65;--green-light:#E8F8F1;--orange:#ED6325;--orange-light:#FFF4E9;--pink:#DF1A6F;--pink-light:#FDEBF3;--gold:#946A00;--gold-light:#FBF3DE;--ink:#0F131A;--ink-light:#EEF0F3;--text:#0F131A;--muted:#595E67;--subtle:#71767F;--border:#DFE1E5;--bg:#fff;--shadow:0 4px 15px 0 rgba(0,0,0,.05)}
+:root{--brand:#7A12D4;--green:#159F65;--orange:#ED6325;--pink:#DF1A6F;--gold:#946A00;--gold-light:#FBF3DE;--ink:#0F131A;--text:#0F131A;--muted:#595E67;--subtle:#71767F;--border:#DFE1E5;--shadow:0 4px 15px 0 rgba(0,0,0,.05)}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:"Google Sans","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body{font-family:"Google Sans","Segoe UI",system-ui,sans-serif;background:#fff;color:var(--text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
 .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 .top{height:56px;display:flex;align-items:center;border-bottom:1px solid var(--border)}
 .top .wrap{display:flex;justify-content:space-between;align-items:center;width:100%}
-.wm{font-weight:700;font-size:17px} .wm span{color:var(--brand)}
-.top .meta{font-size:13px;color:var(--subtle)}
-.hero{padding:48px 0 28px}
+.wm{font-weight:700;font-size:17px} .wm span{color:var(--brand)} .top .meta{font-size:13px;color:var(--subtle)}
+.hero{padding:48px 0 24px}
 h1{font-size:clamp(32px,4.5vw,48px);font-weight:700;line-height:1.1;letter-spacing:-.02em}
 .hero p{margin-top:12px;font-size:18px;color:var(--muted);max-width:760px}
 .facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
-.fact{border:1px solid var(--border);border-radius:128px;padding:8px 16px;font-size:14px;font-weight:600}
-.fact b{color:var(--brand)}
-.legend{display:flex;gap:16px;flex-wrap:wrap;margin:22px 0 8px;font-size:13px;color:var(--subtle)}
+.fact{border:1px solid var(--border);border-radius:128px;padding:8px 16px;font-size:14px;font-weight:600} .fact b{color:var(--brand)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin:22px 0 4px;font-size:13px;color:var(--subtle)}
 .legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
 .sec{display:flex;align-items:baseline;gap:12px;margin:34px 0 10px;padding-left:14px;border-left:4px solid var(--c)}
-.sec-w{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--c)}
-.sec-n{font-size:15px;color:var(--muted)}
-.wk{display:grid;grid-template-columns:64px 1.15fr 1fr;gap:18px;padding:18px 20px 18px 0;border:1px solid var(--border);border-left:6px solid var(--c);border-radius:16px;background:#fff;margin-bottom:12px;box-shadow:var(--shadow)}
+.sec-w{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--c)} .sec-n{font-size:15px;color:var(--muted)}
+.wk{display:grid;grid-template-columns:64px 1.3fr 1fr;gap:18px;padding:18px 20px 18px 0;border:1px solid var(--border);border-left:6px solid var(--c);border-radius:16px;background:#fff;margin-bottom:12px;box-shadow:var(--shadow)}
 .num{display:flex;justify-content:center;padding-top:2px}
 .num span{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--c);color:#fff;font-weight:700;font-size:14px}
-.k{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);margin-bottom:6px}
+.k{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);margin-bottom:6px} .k b{color:var(--c)}
 .col h3{font-size:18px;font-weight:700;line-height:1.3;margin-bottom:6px;text-wrap:balance}
 .col p{font-size:14.5px;color:var(--muted)}
-.thu{border-left:1px solid var(--border);padding-left:18px}
-.thu .k{color:var(--green)}
+details{margin-top:8px} summary{cursor:pointer;font-size:12.5px;font-weight:700;color:var(--brand);list-style:none} summary::-webkit-details-marker{display:none} summary::after{content:" +"} details[open] summary::after{content:" −"}
+details ul{margin:8px 0 0 18px;font-size:13.5px;color:var(--muted);display:grid;gap:3px}
+.thu{border-left:1px solid var(--border);padding-left:18px} .thu .k{color:var(--green)}
 .lead{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13.5px;font-weight:600}
 .faces{display:flex} .faces img{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #fff;box-shadow:var(--shadow)} .faces img+img{margin-left:-9px}
-.cue{margin-top:10px;font-size:12.5px;color:var(--subtle);border-top:1px dashed var(--border);padding-top:8px}
-.notes{grid-column:2/4;display:grid;gap:8px}
-.note{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:var(--muted);padding:10px 12px;border-radius:12px}
-.note .tag{flex:0 0 auto;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:128px;margin-top:2px}
-.p-sug{background:var(--gold-light)} .p-sug .tag{background:var(--gold);color:#fff}
-.p-open{background:var(--ink-light)} .p-open .tag{background:var(--ink);color:#fff}
-.s0{--c:var(--gold)} .s1{--c:var(--brand)} .s2{--c:var(--orange)} .s3{--c:var(--pink)} .s4{--c:var(--green)} .s5{--c:var(--ink)}
-.around{margin:40px 0 60px;padding:18px 20px;border-radius:16px;background:#F9F9F9;border:1px solid var(--border);font-size:14px;color:var(--muted)}
-.around b{color:var(--text)}
-.opens{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
-.opens div{font-size:13.5px;color:var(--muted);padding:12px 14px;border-radius:12px;background:var(--ink-light)}
-.opens b{color:var(--text);display:block;margin-bottom:2px}
-@media(max-width:820px){.wk{grid-template-columns:52px 1fr}.thu{grid-column:2;border-left:0;padding-left:0;border-top:1px solid var(--border);padding-top:12px}.notes{grid-column:1/3}.opens{grid-template-columns:1fr}}
+.fmt{margin-top:6px;font-size:12.5px;color:var(--subtle)}
+.notes{grid-column:2/4}
+.note{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:var(--muted);padding:10px 12px;border-radius:12px;background:var(--gold-light)}
+.note .tag{flex:0 0 auto;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:128px;background:var(--gold);color:#fff;margin-top:2px}
+.foot{margin:40px 0 60px;font-size:13px;color:var(--subtle)}
+@media(max-width:820px){.wk{grid-template-columns:52px 1fr}.thu{grid-column:2;border-left:0;padding-left:0;border-top:1px solid var(--border);padding-top:12px}.notes{grid-column:1/3}}
 </style>
 </head>
 <body>
-<div class="top"><div class="wrap"><div class="wm">Mindvalley <span>×</span> Vishen Lakhiani</div><div class="meta">Version 5 · the final curriculum · 17 September 2026</div></div></div>
-
+<div class="top"><div class="wrap"><div class="wm">Mindvalley <span>×</span> Vishen Lakhiani</div><div class="meta">Version 5 · 18-week curriculum · designed by Vishen Lakhiani · 17 September 2026</div></div></div>
 <header class="hero"><div class="wrap">
   <h1>Expert &amp; Authority Mastery</h1>
-  <p>Vishen’s 18 weeks. Tuesday is the lesson, Thursday is the workshop where it gets built. Vishen teaches 11 weeks; Daniel Priestley, John Lee, Ajit and Jimmy carry the rest. Vykintas leads the workshops, and the guest authors run their own with him alongside.</p>
-  <div class="facts"><span class="fact"><b>18</b> weeks</span><span class="fact"><b>36</b> live sessions</span><span class="fact"><b>11</b> taught by Vishen</span><span class="fact"><b>1</b> workshop lead</span><span class="fact">Starts <b>7 October</b></span></div>
-  <div class="legend"><span style="--c:var(--gold)">Kickoff</span><span style="--c:var(--brand)">Foundation</span><span style="--c:var(--orange)">Content and platform</span><span style="--c:var(--pink)">Conversion and traffic</span><span style="--c:var(--green)">Products and revenue</span><span style="--c:var(--ink)">Scale and legacy</span></div>
+  <p>Build the authority that changes everything. 18 weeks, one curriculum that turns your expertise into a movement. Tuesday is the lesson, exactly as Vishen published it. Thursday is the workshop where it gets built, led by Vykintas, with Jimmy, John and Ajit running their own.</p>
+  <div class="facts"><span class="fact"><b>18</b> weeks</span><span class="fact"><b>36</b> live sessions</span><span class="fact"><b>12</b> taught by Vishen</span><span class="fact"><b>4</b> guest authors</span><span class="fact"><b>1</b> workshop lead</span></div>
+  <div class="legend"><span style="--c:var(--brand)">Message &amp; Positioning</span><span style="--c:var(--orange)">Platform &amp; Content</span><span style="--c:var(--pink)">Funnel &amp; Conversion</span><span style="--c:var(--green)">Scale &amp; Products</span><span style="--c:var(--ink)">Legacy &amp; Systems</span></div>
 </div></header>
-
 <main class="wrap">
-<article class="wk s0">
-  <div class="num"><span>W0</span></div>
-  <div class="col tue"><div class="k">Wednesday 23 September · kickoff call</div><h3>The Room, the Blueprint and Your Before Picture</h3><p>One live call between the summit and Week 1: the calendar with names, the tracker every Tuesday marks, and the two baselines graduation is judged against.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani · 75 minutes</span></div></div>
-  <div class="col thu"><div class="k">Before Week 1</div><p>Onboarding survey submitted; the seven Accelerator days watched, one a day; introduce yourself in the community with your one sentence.</p></div>
-  <div class="notes"><div class="note p-open"><span class="tag">Open</span><span>Vishen to decide whether this call stays. It is an onboarding bridge to cut refunds in the sales window, not the fast-action bonus, which is the Skill Pack.</span></div></div>
-</article>
-<div class="sec s1"><span class="sec-w">Weeks 1 to 4</span><span class="sec-n">Foundation · message and identity</span></div><article class="wk s1">
+<div class="sec" style="--c:var(--brand)"><span class="sec-w">Weeks 1–4</span><span class="sec-n">Pillar 1 — Message &amp; Positioning</span></div><article class="wk" style="--c:var(--brand)">
   <div class="num"><span>W1</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Proprietary Framework and Niche</h3><p>Your named framework, the niche it serves, and the one sentence that says what you do and for whom.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">69% of 7,739 quiz respondents chose “The Expert: nobody knows I exist”; 21% cannot put what they do into words.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Write the framework on one page; test the niche in nine words; the Authority Statement drafted.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Why Most Experts Stay Invisible</h3>
+    <p>The gap between expertise and authority isn't talent — it's positioning. This week Vishen breaks down why brilliant people stay unknown, what separates the experts who get paid from those who get ignored, and how to identify the category you were born to own. You'll map your current authority level, pinpoint your unfair advantage, and write the one-sentence statement that makes you the only logical choice in your space.</p>
+    <details><summary>You’ll learn</summary><ul><li>The Authority Gap: why credentials don't equal influence</li><li>The 3 stages of expert evolution — and where you are now</li><li>Niche Vision: how to own a category instead of just occupying one</li><li>How to identify your unfair advantage</li><li>Writing your one-sentence authority statement</li><li>Your Authority Audit: a diagnostic for your current positioning</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your Authority Audit completed and your one-sentence authority statement written and tested on the room.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><article class="wk s1">
+</article><article class="wk" style="--c:var(--brand)">
   <div class="num"><span>W2</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Story, Voice and Authentic Positioning</h3><p>Your story as the marketing asset, your voice, and the coined language that marks the work as yours.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">428 open answers began some version of “I’m good at what I do, but…”.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Five stories built to structure, timed and recorded; positioning statement written.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
-  
-</article><article class="wk s1">
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Your Signature Method</h3>
+    <p>Authority isn't built on opinions — it's built on systems. This week you'll develop your proprietary framework: the named, structured methodology that makes your approach teachable, repeatable, and impossible to copy. Your signature method becomes the spine of every product, talk, and piece of content you ever create. You'll also learn how to define the precise audience your method was built for — because the right message to the wrong person is still a miss.</p>
+    <details><summary>You’ll learn</summary><ul><li>What makes a methodology "signature" vs. generic</li><li>The 4-step framework extraction process</li><li>How to name your method for maximum memorability</li><li>Building your method into a visual one-pager</li><li>Identifying the exact audience your method serves best</li><li>Why selling to the wrong audience kills even great offers</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your method extracted with the 4-step process, named, and built into the visual one-pager.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
+  <div class="notes"><div class="note"><span class="tag">Suggested</span><span>Suggested: Marisa Peer with Vishen. Her contract for one Mastery class is signed. Rapid Transformational Therapy is the worked example of this lesson: a named method that became teachable, repeatable and certified across thousands of therapists. Vishen interviews her on how she named it, structured it and built every product on its spine. She is the case study, not a mindset teacher, per Vishen’s rule. Alternative placement: Week 13 (superfans and continuity). Vishen to decide.</span></div></div>
+</article><article class="wk" style="--c:var(--brand)">
   <div class="num"><span>W3</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Persuasion and Influence: the Cialdini Principles</h3><p>Reciprocity, social proof, authority, liking, scarcity and commitment, as they run inside every Mindvalley launch.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>The six triggers mapped onto your first offer page and your first campaign.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson · <b>Daniel Priestley</b></div>
+    <h3>Turn Your Expertise Into a High-Value Signature Offer</h3>
+    <p>Knowing your method is one thing. Packaging it into an offer people will pay premium prices for is another. Daniel Priestley — author of <em>Oversubscribed</em> and one of the world's leading experts on high-value positioning — shows you exactly how to turn your expertise into a signature offer that commands the price it deserves. This is a live workshop with hot seats: you'll leave with a real Signature Offer Brief, not just a framework.</p>
+    <details><summary>You’ll learn</summary><ul><li>The anatomy of a high-value signature offer</li><li>How to price for transformation, not time</li><li>The Offer Clarity framework: from vague idea to compelling package</li><li>Live hot seat: refine your offer with Daniel in real time</li><li>Output: your completed Signature Offer Brief</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/daniel-priestley.jpg" alt="Daniel Priestley" title="Daniel Priestley"></div><span>Daniel Priestley</span></div><div class="fmt">Format: Live Workshop · 120 min · 2 Hot Seats</div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Daniel’s Tuesday is itself a live workshop. Thursday finishes every Signature Offer Brief that did not get a hot seat, to the same standard.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><article class="wk s1">
+</article><article class="wk" style="--c:var(--brand)">
   <div class="num"><span>W4</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Market Awareness and Copywriting Mastery</h3><p>Schwartz’s five levels of awareness, and copy that meets the reader exactly where they are.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>One offer page written in the buyer’s language and tested on a stranger for comprehension.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Persuasion Vision: Copywriting, Cialdini & the Right Audience</h3>
+    <p>The best offer in the world dies with bad copy. This week Vishen teaches the persuasion principles that separate forgettable content from copy that converts — drawing on Cialdini's influence science, the psychology of desire, and the art of speaking directly to the person most likely to say yes. You'll rewrite your core message from the ground up and learn why most experts are selling to the wrong audience entirely.</p>
+    <details><summary>You’ll learn</summary><ul><li>Cialdini's 7 principles of influence — applied to your offer</li><li>The Persuasion Vision framework: writing copy that feels inevitable</li><li>How to identify and speak directly to your ideal buyer</li><li>The 5 emotional triggers that move people from interest to action</li><li>Rewriting your core message for maximum resonance</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your core message rewritten with the 7 principles and the 5 triggers, read aloud to your ideal buyer.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><div class="sec s2"><span class="sec-w">Weeks 5 to 6</span><span class="sec-n">Content and platform</span></div><article class="wk s2">
+</article><div class="sec" style="--c:var(--orange)"><span class="sec-w">Weeks 5–7</span><span class="sec-n">Pillar 2 — Platform &amp; Content</span></div><article class="wk" style="--c:var(--orange)">
   <div class="num"><span>W5</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>The Content Machine: Building Your Publishing System</h3><p>One principal channel, a repeatable publishing system, and the map from views to buyers.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><span>John Lee</span></div><div class="cue">John Lee, $1M from Social Media &amp; AI: 9.54 (n=35), Social Media Mastery 2026.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Thirty posts built from your framework and scheduled before the call ends.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>John Lee, with Vykintas</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson · <b>Jimmy Naraine</b></div>
+    <h3>Course Design: Build the Course That Defines Your Legacy</h3>
+    <p>A great course isn't a collection of videos — it's a transformation engine. Jimmy Naraine, one of Udemy's top instructors with over 500,000 students worldwide, shows you how to architect a course that gets results, earns rave reviews, and sells itself through student outcomes. You'll learn how to sequence content for maximum retention, design learning experiences that create real change, and build the course that becomes the cornerstone of your authority.</p>
+    <details><summary>You’ll learn</summary><ul><li>The transformation arc: how to structure a course around outcomes, not topics</li><li>Jimmy's proven lesson design formula for maximum engagement</li><li>How to sequence content so students actually finish — and rave about it</li><li>The difference between a course and a curriculum (and why it matters)</li><li>Building your course outline from scratch in one session</li><li>How great course design drives organic word-of-mouth sales</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><span>Jimmy Naraine</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your course outline built from scratch in one session, sequenced so students finish.</p>
+    <div class="lead"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><span>Jimmy Naraine</span></div>
+  </div>
   
-</article><article class="wk s2">
+</article><article class="wk" style="--c:var(--orange)">
   <div class="num"><span>W6</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Social Media, Reels and Algorithmic Growth</h3><p>Hooks, formats, the shooting script and the shoot review; turning one idea into ten platforms.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><span>John Lee</span></div><div class="cue">Asset Leverage &amp; Repurposing rated 9.82 in Entrepreneurship Mastery; Vishen has assigned the theme to John.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Film, review, reshoot: one B-roll and one carousel published live.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>John Lee, with Vykintas</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson · <b>John Lee</b></div>
+    <h3>Content Machine: Build a Publishing System That Never Runs Dry</h3>
+    <p>Consistency is the unfair advantage most experts never develop. John Lee — one of the world's most prolific content creators — shows you how to build a content machine that produces authority-building material week after week without burning out. You'll design a personal publishing system, learn to repurpose one idea into ten formats, and create the content calendar that keeps you visible while you sleep.</p>
+    <details><summary>You’ll learn</summary><ul><li>The Content Machine framework: from idea to published in under an hour</li><li>How to repurpose one core idea across 10 formats and platforms</li><li>Building your 90-day content calendar in one session</li><li>The authority content types that build trust fastest</li><li>Batching and scheduling: how to stay consistent without living online</li><li>John's personal system for generating ideas that never run dry</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><span>John Lee</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your 90-day content calendar built in one session; one idea repurposed into ten formats.</p>
+    <div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>John Lee, with Vykintas</span></div>
+  </div>
   
-</article><div class="sec s3"><span class="sec-w">Weeks 7 to 10</span><span class="sec-n">Conversion and traffic</span></div><article class="wk s3">
+</article><article class="wk" style="--c:var(--orange)">
   <div class="num"><span>W7</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Webinars, VSLs and Live Conversion</h3><p>The 60-minute masterclass structure and the close, from the playbook behind Mindvalley’s revenue.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">Using Webinars to Sell: 9.58 (n=57), Entrepreneurship Mastery.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your masterclass scripted with Vishen’s shooting-script stack; the belief map built.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson · <b>John Lee</b></div>
+    <h3>Platforms, Reels & Algorithmic Growth</h3>
+    <p>Knowing what to say is only half the battle — knowing where to say it and how to make the algorithm work for you is what separates experts with 500 followers from those with 500,000. John Lee breaks down the platform-by-platform playbook for 2025 and beyond: which platforms reward your content type, how to engineer virality through Reels and short-form video, and how to build an audience that compounds over time.</p>
+    <details><summary>You’ll learn</summary><ul><li>Platform selection: where your audience actually lives</li><li>The Reels formula: hooks, pacing, and calls-to-action that convert</li><li>How algorithms decide who gets reach — and how to play the game</li><li>Cross-platform distribution without doubling your workload</li><li>The compounding effect: how consistent posting builds exponential reach</li><li>John's personal growth playbook: from zero to authority in 12 months</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><span>John Lee</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Platform chosen, first Reels scripted to the formula, cross-platform distribution set up.</p>
+    <div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>John Lee, with Vykintas</span></div>
+  </div>
   
-</article><article class="wk s3">
+</article><div class="sec" style="--c:var(--pink)"><span class="sec-w">Weeks 8–12</span><span class="sec-n">Pillar 3 — Funnel &amp; Conversion</span></div><article class="wk" style="--c:var(--pink)">
   <div class="num"><span>W8</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Premium Positioning: High-Value Offers, Price Anchoring and Oversubscription</h3><p>Daniel Priestley’s lane, in Vishen’s word: premium positioning. Design the offer people queue for, anchor its price, and build the waitlist before you buy a single click.</p><div class="lead"><div class="faces"><img src="authors/daniel-priestley.jpg" alt="Daniel Priestley" title="Daniel Priestley"></div><span>Daniel Priestley</span></div><div class="cue">Priestley: High Value Offers &amp; Price Anchoring 9.74 (n=68); Waitlists, Scarcity and Launch Mechanics 9.22; Oversubscription Strategies 9.26. Entrepreneurship Mastery 2025.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your waitlist page and five research questions live; then paid advertising, testing and scaling as a bounded first test, with Marisha as guest.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis · Marisha Lakhiani, guest</span></div></div>
-  <div class="notes"><div class="note p-open"><span class="tag">Open</span><span>Daniel’s first of two agreed lessons. Week 8 is the week Vishen opened to him on 17 September (“guest Marisha or Daniel”). Vishen’s paid-advertising material moves to the Thursday workshop so nothing is lost. Vishen to confirm.</span></div></div>
-</article><article class="wk s3">
+  <div class="col tue">
+    <div class="k">Tuesday · lesson · <b>Daniel Priestley</b></div>
+    <h3>Oversubscribed: Build Demand Before You Sell</h3>
+    <p>The most dangerous place to be is launching to silence. Daniel Priestley returns to teach the system behind his bestselling book <em>Oversubscribed</em> — how to build so much demand for your offer that people are waiting to buy before you even open the doors. This isn't hype. It's a methodical, repeatable approach to demand generation that works for coaches, consultants, course creators, and thought leaders at every level.</p>
+    <details><summary>You’ll learn</summary><ul><li>The Oversubscribed framework: supply, demand, and perceived scarcity</li><li>How to build a waitlist that converts at 3x the rate of cold traffic</li><li>The Campaign Driven Enterprise: launching in rhythmic cycles, not one-off pushes</li><li>How to signal exclusivity without being inaccessible</li><li>Daniel's 7-step demand generation sequence</li><li>Building your pre-launch campaign from scratch</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/daniel-priestley.jpg" alt="Daniel Priestley" title="Daniel Priestley"></div><span>Daniel Priestley</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your pre-launch campaign built from scratch: the waitlist and the 7-step demand sequence.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
+  
+</article><article class="wk" style="--c:var(--pink)">
   <div class="num"><span>W9</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Ascension, Upsells and Lifetime Value</h3><p>The product ladder and the ecosystem around it: gift, entry product, core offer, product for clients. Vishen’s own framework.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">Nora’s favourite MVU training was the product ladder. It was Vishen’s, not Daniel’s; confirmed 17 September.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your ladder mapped and priced; each price said aloud to the room and defended.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Paid Advertising: Scale What's Already Working</h3>
+    <p>Organic reach builds authority. Paid advertising builds speed. This week Vishen breaks down the paid advertising playbook that has generated millions in revenue for Mindvalley — from Meta and YouTube to retargeting sequences and lookalike audiences. You'll learn how to identify what's worth scaling, how to read your numbers, and how to build an ad strategy that amplifies your best content without wasting a dollar.</p>
+    <details><summary>You’ll learn</summary><ul><li>The paid advertising mindset: when to spend and when to wait</li><li>Meta and YouTube ad structures that work for expert businesses</li><li>How to read your key metrics: CPL, ROAS, and what they actually mean</li><li>Retargeting sequences: converting warm audiences who didn't buy yet</li><li>Lookalike audiences: finding more of your best customers at scale</li><li>Vishen's personal ad framework from Mindvalley's growth playbook</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>One bounded ad test set up on your best content, with CPL and ROAS targets written down.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><article class="wk s3">
+</article><article class="wk" style="--c:var(--pink)">
   <div class="num"><span>W10</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Summits, Live Events and Audience Building</h3><p>Virtual summits and live events as list builders and authority accelerators, at your scale.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>A feasible event plan tied to your offer: format, partners, show-up, follow-up.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Funnel Design: From Stranger to Superfan</h3>
+    <p>A funnel isn't a sales trick — it's a relationship architecture. This week Vishen maps the complete journey from first touch to loyal buyer: how to design a funnel that educates, builds trust, and converts without feeling manipulative. You'll build your own funnel blueprint, understand the role of every touchpoint, and learn how to plug the leaks where most experts lose 80% of their potential revenue.</p>
+    <details><summary>You’ll learn</summary><ul><li>The 5-stage funnel: Awareness → Interest → Decision → Action → Loyalty</li><li>How to design a lead magnet that attracts your ideal buyer (not everyone)</li><li>The trust-building sequence: what to say between opt-in and offer</li><li>Where most funnels leak — and how to fix each stage</li><li>Mapping your complete funnel blueprint in one session</li><li>How to turn one-time buyers into repeat customers automatically</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your complete funnel blueprint mapped across the five stages, leaks marked.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><div class="sec s4"><span class="sec-w">Weeks 11 to 15</span><span class="sec-n">Products and revenue</span></div><article class="wk s4">
+</article><article class="wk" style="--c:var(--pink)">
   <div class="num"><span>W11</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Building One-to-One Products: Coaching and Consulting</h3><p>The high-ticket one-to-one offer, and the enrolment conversation that sells it without pressure.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><span>Ajit Nawalkha</span></div><div class="cue">Ajit: The Essential Three Offers 9.81; Designing Your $10K+ Offer 9.45, Entrepreneurship Mastery.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>The call run in pairs and recorded; before Sunday, one real ask for real money, on tape.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Ajit Nawalkha, with Vykintas</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Webinar & VSL Playbook: Convert Audiences Into Buyers</h3>
+    <p>The webinar is still the highest-converting sales format in the expert economy — when it's done right. This week Vishen breaks down the anatomy of a webinar that sells without feeling like a pitch fest, and the Video Sales Letter (VSL) structure that converts cold traffic around the clock. You'll script your own webinar outline and VSL framework, ready to deploy in your next launch.</p>
+    <details><summary>You’ll learn</summary><ul><li>The Perfect Webinar structure: teach, inspire, and close with integrity</li><li>How to open a webinar so powerfully that people stay until the offer</li><li>The 5-part VSL formula that converts cold traffic 24/7</li><li>Handling objections before they're raised — inside the content itself</li><li>The close: how to make an offer that feels like a gift, not a pitch</li><li>Scripting your webinar outline and VSL framework live</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your webinar outline and VSL framework scripted, ready for the next launch.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><article class="wk s4">
+</article><article class="wk" style="--c:var(--pink)">
   <div class="num"><span>W12</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Email Marketing, Autoresponders and Revenue Sequences</h3><p>The sequences, segmentation and nurture that turn cold leads into buyers, with real Mindvalley data.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Nine emails written, audited and scheduled in your platform.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Email Marketing: Your Most Valuable Asset</h3>
+    <p>Social media platforms come and go. Your email list is the one asset you own outright — and it's still the highest-ROI channel in digital marketing. This week Vishen teaches the email strategy that has driven hundreds of millions in revenue at Mindvalley: how to grow a list of buyers (not just subscribers), write emails people actually open, and build sequences that sell while you sleep.</p>
+    <details><summary>You’ll learn</summary><ul><li>List building: how to grow a list of buyers, not just freebie-seekers</li><li>The email types that build relationship vs. the ones that sell</li><li>Subject line formulas that get 40%+ open rates</li><li>The 7-email welcome sequence that turns strangers into fans</li><li>Automated email sequences: revenue while you sleep</li><li>Vishen's personal email playbook from Mindvalley's 3M+ subscriber list</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your 7-email welcome sequence written and loaded.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><article class="wk s4">
+</article><div class="sec" style="--c:var(--green)"><span class="sec-w">Weeks 13–15</span><span class="sec-n">Pillar 4 — Scale &amp; Products</span></div><article class="wk" style="--c:var(--green)">
   <div class="num"><span>W13</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Course Design and Marketplace Validation</h3><p>Idea dump to idea clusters; validate where 57 million learners already are; the Quest model.</p><div class="lead"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><span>Jimmy Naraine</span></div><div class="cue">Jimmy: Course Pro, 1M+ enrolments, Udemy’s first Innovation Award.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>The pajama draft: the whole course filmed on a phone today, then deleted unwatched.</p><div class="lead"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><span>Jimmy Naraine</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Membership, Continuity & Superfans: Build Revenue That Renews Itself</h3>
+    <p>Recurring revenue is the difference between a business and a job. A well-designed membership means you wake up every month with revenue already in the bank before you've done a single thing. This week you'll design your membership model — the pricing, the content cadence, the community layer, and the retention strategies that keep members paying month after month. You'll also learn how to turn customers into superfans: the people who buy everything you release, refer everyone they know, and become the heartbeat of your brand.</p>
+    <details><summary>You’ll learn</summary><ul><li>The 4 membership models — and how to choose the right one for your business</li><li>Pricing for continuity: monthly vs. annual vs. lifetime structures</li><li>The content cadence that keeps members engaged without burning you out</li><li>Community design: how to build the layer that makes people stay</li><li>Retention strategies: the first 30, 60, and 90 days that determine lifetime value</li><li>Customer care and nurturing: how to turn a buyer into a superfan</li><li>The Superfan Loop: why your best customers are your best marketers</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your membership model chosen and priced; the 30, 60 and 90-day retention plan drafted.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
-</article><article class="wk s4">
+</article><article class="wk" style="--c:var(--green)">
   <div class="num"><span>W14</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Certification Programmes and Community Monetisation</h3><p>Certifying others in your method, and a community that pays.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><span>Ajit Nawalkha</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>The certification decision written: standard, assessment, delivery load, or not yet.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Ajit Nawalkha, with Vykintas</span></div></div>
-  <div class="notes"><div class="note p-sug"><span class="tag">Suggested</span><span>Suggested: Jimmy Naraine’s second week here, <em>Building the Udemy Ecosystem</em>, with certification and community folded into Week 15 alongside membership. Vishen said Jimmy can carry two weeks; this is the only slot that does not displace Vishen or John.</span></div></div>
-</article><article class="wk s4">
-  <div class="num"><span>W15</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Membership Models and Recurring Revenue</h3><p>Recurring value, retention and the economics of a membership.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Choose your next product: membership, community, certification, or not yet, with the numbers.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
-  <div class="notes"><div class="note p-sug"><span class="tag">Suggested</span><span>Suggested: Marisa Peer with Vishen. Her contract for one Mastery class is signed. Vishen’s rule is that she is a case study, not a mindset teacher, so the fit is her own business: a hypnosis audio, a course, and the certification that became the largest hypnotherapy organisation in the world. Vishen interviews; the room takes notes on the ladder.</span></div></div>
-</article><div class="sec s5"><span class="sec-w">Weeks 16 to 18</span><span class="sec-n">Scale and legacy</span></div><article class="wk s5">
-  <div class="num"><span>W16</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Team, Systems and Delegation for Scale</h3><p>Systems, spokespeople and a repeatable operating rhythm, so the business runs beyond your own hours. Daniel’s second lesson, in the week Vishen named for him.</p><div class="lead"><div class="faces"><img src="authors/daniel-priestley.jpg" alt="Daniel Priestley" title="Daniel Priestley"></div><span>Daniel Priestley</span></div><div class="cue">Priestley: Scaling Influence Systems 9.52 (n=48); Designing Your Next 12 Months 9.87 (n=46), his highest-rated class. Entrepreneurship Mastery 2025.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your operating week on one page, one delegation brief, and the two or three moves for the next quarter.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
-  <div class="notes"><div class="note p-open"><span class="tag">Open</span><span>Daniel’s second of two agreed lessons. Vishen’s assignment on 17 September was “Vishen and/or Daniel”. The alternative is Week 11, which Vishen also said “could be Daniel” before giving it to Ajit. Vishen to confirm.</span></div></div>
-</article><article class="wk s5">
-  <div class="num"><span>W17</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Partners, Co-creation and Strategic Alliances</h3><p>Introductions, partnerships and joint ventures that multiply reach without ad spend.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>One partner or booking proposal sent, with your proof packet attached.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson · <b>Ajit Nawalkha</b></div>
+    <h3>High-Ticket Mastery: One-on-One, Coaching, Consulting & Certification</h3>
+    <p>The highest-margin products in any expert business are the ones where you work closely with people — coaching, consulting, masterminds, and certification programs. Ajit Nawalkha, co-founder of Evercoach and one of the world's leading authorities on coaching business models, brings together everything you need to build, price, sell, and deliver high-ticket offers that command premium fees and create life-changing results. This is the complete high-end playbook in a single session.</p>
+    <details><summary>You’ll learn</summary><ul><li>The one-on-one model: structuring coaching and consulting for premium pricing</li><li>High-ticket sales psychology: how to enroll clients without feeling pushy</li><li>The enrollment conversation framework that closes at 60%+</li><li>Certification programs: how to license your methodology and create a movement</li><li>Community monetization: turning your audience into a high-value ecosystem</li><li>Designing your high-end offer suite from entry point to top tier</li><li>Ajit's personal framework for building a coaching empire that scales</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><span>Ajit Nawalkha</span></div><div class="fmt">Format: Extended Session · Combines Coaching, Consulting & Certification</div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your high-end offer suite designed from entry point to top tier; the enrolment conversation practised in pairs.</p>
+    <div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Ajit Nawalkha, with Vykintas</span></div>
+  </div>
   
-</article><article class="wk s5">
+</article><article class="wk" style="--c:var(--green)">
+  <div class="num"><span>W15</span></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Speaking & Stages: Turn Every Room Into a Revenue Engine</h3>
+    <p>The stage — physical or virtual — is still the fastest path to authority at scale. One great talk can generate more leads, revenue, and credibility than months of content creation. This week Vishen teaches the speaking playbook he's used to command stages from TED to A-Fest: how to craft a signature talk, get booked on the right stages, and design live events that become the cornerstone of your brand and your business.</p>
+    <details><summary>You’ll learn</summary><ul><li>The signature talk structure: how to open, teach, and close for maximum impact</li><li>How to get booked on stages — even before you're famous</li><li>Speaking fees: when to charge, when to speak for free, and how to negotiate</li><li>Designing live events that create transformation and generate revenue</li><li>Virtual stages: how to command the same authority on Zoom as in a ballroom</li><li>Vishen's personal talk architecture from 20+ years on global stages</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your signature talk structured: open, teach, close; one stage approached.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
+  
+</article><div class="sec" style="--c:var(--ink)"><span class="sec-w">Weeks 16–18</span><span class="sec-n">Pillar 5 — Legacy &amp; Systems</span></div><article class="wk" style="--c:var(--ink)">
+  <div class="num"><span>W16</span></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Team, Systems & Delegation: Build a Business That Runs Without You</h3>
+    <p>The expert who does everything stays small. The expert who builds systems and delegates strategically builds an empire. This week Vishen breaks down the operational architecture behind Mindvalley — the team structures, the SOPs, the hiring frameworks, and the delegation principles that let a business scale without the founder becoming the bottleneck. You'll design your own org chart and identify the first three hires that will multiply your output.</p>
+    <details><summary>You’ll learn</summary><ul><li>The 3 roles every expert business needs first (and in what order to hire them)</li><li>How to document your processes so anyone can run them</li><li>Delegation frameworks: what to keep, what to hand off, and how</li><li>Building a team culture that attracts A-players</li><li>The tools and systems stack for a lean, high-output expert business</li><li>Vishen's personal org chart evolution from 1 to 1,000+ at Mindvalley</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your org chart designed and the first three hires named, in order.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
+  
+</article><article class="wk" style="--c:var(--ink)">
+  <div class="num"><span>W17</span></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Partnerships & Collaboration: Grow 10x Faster by Playing Together</h3>
+    <p>The fastest way to grow isn't to outwork the competition — it's to collaborate with people who already have your audience. This week Vishen reveals the partnership playbook behind Mindvalley's most explosive growth periods: how to identify the right collaborators, structure deals that benefit both parties, and build a network of allies who actively send you their best customers.</p>
+    <details><summary>You’ll learn</summary><ul><li>The 4 types of partnerships — and which one fits your stage of growth</li><li>How to approach potential partners without desperation or awkwardness</li><li>Joint venture structures: revenue shares, list swaps, and co-creation deals</li><li>How to become the partner everyone wants to work with</li><li>Building your collaboration pipeline: 10 strategic relationships in 90 days</li><li>Vishen's personal partnership playbook from Mindvalley's growth years</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your collaboration pipeline started: ten strategic relationships listed, first approach sent.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
+  
+</article><article class="wk" style="--c:var(--ink)">
   <div class="num"><span>W18</span></div>
-  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Movement Building, Legacy and the Long Game</h3><p>The capstone: from a business to a movement, and the 90-day plan that starts on the Monday after.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">Priestley’s Designing Your Next 12 Months, 9.87 (n=46), is the closest rated precedent and a ready framework for the plan.</div></div>
-  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your 90-day plan inside a 12-month direction; certification granted against shipped assets.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="col tue">
+    <div class="k">Tuesday · lesson</div>
+    <h3>Legacy: Build Something That Outlasts You</h3>
+    <p>The final week isn't about tactics — it's about meaning. Vishen closes the curriculum with the question every serious expert must eventually answer: what do you want to be remembered for? You'll design your legacy vision, identify the movement you're building (not just the business), and create the long-game plan that turns your expertise into a contribution that outlasts any single product, launch, or platform.</p>
+    <details><summary>You’ll learn</summary><ul><li>The difference between building a business and building a movement</li><li>How to define your legacy vision in one clear, compelling statement</li><li>The long-game strategy: decisions that compound over decades, not quarters</li><li>How to structure your business so it can outlast you</li><li>Vishen's personal legacy framework and the vision behind Mindvalley</li><li>Your final output: a one-page Legacy Blueprint</li></ul></details>
+    <div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div>
+  </div>
+  <div class="col thu">
+    <div class="k">Thursday · workshop</div>
+    <p>Your one-page Legacy Blueprint completed.</p>
+    <div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div>
+  </div>
   
 </article>
-
-<div class="opens">
-  <div><b>Daniel Priestley’s two weeks</b>Placed at 8 and 16, the two weeks Vishen named for him. Week 11 is the alternative.</div>
-  <div><b>18 weeks against “four months”</b>The stage promise was four months. 18 weeks from 7 October ends in February. 7 October 2026 is a Wednesday; the cadence says Tuesday.</div>
-  <div><b>The kickoff call</b>Keep as the onboarding bridge, or drop. It is not the fast-action bonus.</div>
-</div>
-
-<div class="around"><b>Around the Mastery, as agreed on 17 September.</b> Fast-action bonus: the Skill Pack, every class as an installable skill, demonstrated by Vishen, later sold to the list at $499. Downsell: <em>Build, Sell and Monetise Your First Online Course</em>, seven days with Jimmy Naraine. Ascension: the Expert Guild, application only, for the room above $100K, $10,000 alone or $7,500 with the Mastery. Marisa Peer and Regan Hillyer stay at the summit as case studies.</div>
+<p class="foot">Lesson titles, descriptions, learning points, teachers and formats are reproduced from Vishen’s published curriculum of 17 September 2026. The Thursday workshop lead and the one suggested placement for Marisa Peer are the team’s additions.</p>
 </main>
-</body>
-</html>
+</body></html>
