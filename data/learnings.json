@@ -494,6 +494,23 @@
       "applied_to": [
         "expert-authority-v3.html#tab-programme"
       ]
+    },
+    {
+      "id": "ea-v4-one-voice-per-week-sep17",
+      "date": "2026-09-17",
+      "area": "Expert & Authority Mastery · Version 4 · delivery model",
+      "finding": "Jaideep asked for a Version 4 in which the curriculum stays as Version 3 but the author who teaches Tuesday also runs the Thursday build day, removing the lab-lead seats, so the team can price the two models. Mapping every V3 Thursday to its Tuesday voice: live voices fall from 10 to 7; lab-lead seats from 3 to 0 (16 contracted build days released); Vishen's live sessions rise from 9 to 19 of 36 (ten Thursdays plus the optional Saturday); five guest weeks become two-call weeks (Marisa W2, John W10 and W16, Ajit W13, Priestley W14), each a new ask of a confirmed author; W6 and W15 were already author-led. Two labs have no natural V4 owner: W11 (Sabrina's LinkedIn layer under Regan's fireside, so the interviewer Vishen runs it) and the optional Saturday shoot floor. V4 gives up the fixed-faces continuity argument that V3 used against the S&I workshop dip, and the specialist craft of Kash, Alessio and Sabrina.",
+      "decision": "expert-authority-v4.html generated from V3 by build_v4.py: every Thursday slot re-owned with a black V4 note naming the V3 lead and what moves; a Version 4 section at the top of the Case tab with per-person load (V3 vs V4), Thursday-by-Thursday table, five finance comparisons stated without figures (including the hybrid: guests run their own Thursdays, Vishen keeps one lab lead), and what V4 gives up; Authors tab lab section and author-curriculum map carry the V4 column; Format tab totals updated. Route /expert-authority-v4; V4 card added to the switcher on V1, V2, V3, compare and index. No fee figures anywhere; the fee guard passes.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-v4.html",
+        "server.js",
+        "index.html",
+        "expert-authority.html",
+        "expert-authority-v2.html",
+        "expert-authority-v3.html",
+        "expert-authority-compare.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [

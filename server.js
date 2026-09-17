@@ -15,6 +15,7 @@ app.get('/', page('index.html'));
 app.get('/expert-authority', page('expert-authority.html'));
 app.get('/expert-authority-v2', page('expert-authority-v2.html'));
 app.get('/expert-authority-v3', page('expert-authority-v3.html'));
+app.get('/expert-authority-v4', page('expert-authority-v4.html'));
 app.get('/expert-authority-compare', page('expert-authority-compare.html'));
 app.get('/accelerator-edit-script', page('expert-authority-accelerator-script.html'));
 app.get('/ai-founders', page('ai-founders.html'));

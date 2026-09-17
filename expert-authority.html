@@ -323,10 +323,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .face{width:64px;height:64px;border-radius:14px;object-fit:cover;object-position:center 20%;flex:0 0 64px;display:block;background:var(--grey-200)}
 
 /* Version switcher */
-.vswitch{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:14px 0 6px}
+.vswitch{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;padding:14px 0 6px}
 .vs{--vc:var(--grey-500);display:block;position:relative;border-radius:16px;padding:12px 14px 12px 16px;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);border-left:6px solid var(--vc);box-shadow:var(--shadow-light);transition:transform .18s var(--ease),box-shadow .18s}
 a.vs:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
-.vs.v1{--vc:var(--grey-500)} .vs.v2{--vc:var(--gold)} .vs.v3{--vc:var(--brand)} .vs.cmp{--vc:var(--green);border-style:dashed;border-left-style:solid}
+.vs.v1{--vc:var(--grey-500)} .vs.v2{--vc:var(--gold)} .vs.v3{--vc:var(--brand)} .vs.v4{--vc:var(--ink)} .vs.cmp{--vc:var(--green);border-style:dashed;border-left-style:solid}
 .vs-k{display:block;font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--vc)}
 .vs-t{display:block;font-size:15px;font-weight:700;margin-top:3px;line-height:1.25;color:var(--ink)}
 .vs-by{display:block;font-size:12px;color:var(--text-subtle);margin-top:3px;line-height:1.35}
@@ -428,11 +428,12 @@ a.acc-day:hover{transform:translateY(-2px);box-shadow:var(--shadow-medium)}
 
 <div class="tabbar-outer">
   <div class="wrap">
-    <div class="vs-lbl">Three versions of one curriculum, and the comparison. You are reading:</div>
+    <div class="vs-lbl">Four versions of one curriculum, and the comparison. You are reading:</div>
     <div class="vswitch">
     <span class="vs v1 current"><span class="vs-here">You are here</span><span class="vs-k">Version 1</span><span class="vs-t">The team proposal</span><span class="vs-by">By the Curriculum Team · seventeen weeks, six authors, the summit as built in Airtable</span></span>
     <a class="vs v2" href="/expert-authority-v2"><span class="vs-k">Version 2</span><span class="vs-t">Vishen's proposal</span><span class="vs-by">By Vishen · eighteen weeks, five pillars, four paths, his own three-day agenda</span></a>
     <a class="vs v3" href="/expert-authority-v3"><span class="vs-k">Version 3<em class="vs-rec">Recommended path</em></span><span class="vs-t">The combined build</span><span class="vs-by">Team + Vishen · every input tested against the evidence</span></a>
+    <a class="vs v4" href="/expert-authority-v4"><span class="vs-k">Version 4</span><span class="vs-t">One voice per week</span><span class="vs-by">Jaideep's ask · same curriculum, the Tuesday author runs Thursday, no lab leads</span></a>
     <a class="vs cmp" href="/expert-authority-compare"><span class="vs-k">Compare</span><span class="vs-t">All three, side by side</span><span class="vs-by">Thirteen dimensions, eight criteria, one decision</span></a>
     </div>
     <nav class="tabbar" id="tabbar">
