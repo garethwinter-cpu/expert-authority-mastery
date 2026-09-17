@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Expert &amp; Authority Mastery · Version 5</title>
+<meta name="description" content="The final curriculum: Vishen's 18 weeks, one lesson Tuesday, one workshop Thursday.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--brand:#7A12D4;--brand-light:#F6EEFD;--brand-content:#6810B4;--green:#159F65;--green-light:#E8F8F1;--orange:#ED6325;--orange-light:#FFF4E9;--pink:#DF1A6F;--pink-light:#FDEBF3;--gold:#946A00;--gold-light:#FBF3DE;--ink:#0F131A;--ink-light:#EEF0F3;--text:#0F131A;--muted:#595E67;--subtle:#71767F;--border:#DFE1E5;--bg:#fff;--shadow:0 4px 15px 0 rgba(0,0,0,.05)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Google Sans","Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.top{height:56px;display:flex;align-items:center;border-bottom:1px solid var(--border)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;width:100%}
+.wm{font-weight:700;font-size:17px} .wm span{color:var(--brand)}
+.top .meta{font-size:13px;color:var(--subtle)}
+.hero{padding:48px 0 28px}
+h1{font-size:clamp(32px,4.5vw,48px);font-weight:700;line-height:1.1;letter-spacing:-.02em}
+.hero p{margin-top:12px;font-size:18px;color:var(--muted);max-width:760px}
+.facts{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.fact{border:1px solid var(--border);border-radius:128px;padding:8px 16px;font-size:14px;font-weight:600}
+.fact b{color:var(--brand)}
+.legend{display:flex;gap:16px;flex-wrap:wrap;margin:22px 0 8px;font-size:13px;color:var(--subtle)}
+.legend span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:6px;vertical-align:-1px;background:var(--c)}
+.sec{display:flex;align-items:baseline;gap:12px;margin:34px 0 10px;padding-left:14px;border-left:4px solid var(--c)}
+.sec-w{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--c)}
+.sec-n{font-size:15px;color:var(--muted)}
+.wk{display:grid;grid-template-columns:64px 1.15fr 1fr;gap:18px;padding:18px 20px 18px 0;border:1px solid var(--border);border-left:6px solid var(--c);border-radius:16px;background:#fff;margin-bottom:12px;box-shadow:var(--shadow)}
+.num{display:flex;justify-content:center;padding-top:2px}
+.num span{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:12px;background:var(--c);color:#fff;font-weight:700;font-size:14px}
+.k{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--subtle);margin-bottom:6px}
+.col h3{font-size:18px;font-weight:700;line-height:1.3;margin-bottom:6px;text-wrap:balance}
+.col p{font-size:14.5px;color:var(--muted)}
+.thu{border-left:1px solid var(--border);padding-left:18px}
+.thu .k{color:var(--green)}
+.lead{display:flex;align-items:center;gap:8px;margin-top:10px;font-size:13.5px;font-weight:600}
+.faces{display:flex} .faces img{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #fff;box-shadow:var(--shadow)} .faces img+img{margin-left:-9px}
+.cue{margin-top:10px;font-size:12.5px;color:var(--subtle);border-top:1px dashed var(--border);padding-top:8px}
+.notes{grid-column:2/4;display:grid;gap:8px}
+.note{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:var(--muted);padding:10px 12px;border-radius:12px}
+.note .tag{flex:0 0 auto;font-size:10.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:128px;margin-top:2px}
+.p-sug{background:var(--gold-light)} .p-sug .tag{background:var(--gold);color:#fff}
+.p-open{background:var(--ink-light)} .p-open .tag{background:var(--ink);color:#fff}
+.s0{--c:var(--gold)} .s1{--c:var(--brand)} .s2{--c:var(--orange)} .s3{--c:var(--pink)} .s4{--c:var(--green)} .s5{--c:var(--ink)}
+.around{margin:40px 0 60px;padding:18px 20px;border-radius:16px;background:#F9F9F9;border:1px solid var(--border);font-size:14px;color:var(--muted)}
+.around b{color:var(--text)}
+.opens{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px}
+.opens div{font-size:13.5px;color:var(--muted);padding:12px 14px;border-radius:12px;background:var(--ink-light)}
+.opens b{color:var(--text);display:block;margin-bottom:2px}
+@media(max-width:820px){.wk{grid-template-columns:52px 1fr}.thu{grid-column:2;border-left:0;padding-left:0;border-top:1px solid var(--border);padding-top:12px}.notes{grid-column:1/3}.opens{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><div class="wm">Mindvalley <span>×</span> Vishen Lakhiani</div><div class="meta">Version 5 · the final curriculum · 17 September 2026</div></div></div>
+
+<header class="hero"><div class="wrap">
+  <h1>Expert &amp; Authority Mastery</h1>
+  <p>Vishen’s 18 weeks. Tuesday is the lesson, Thursday is the workshop where it gets built. Vishen teaches 13 weeks; John Lee, Ajit and Jimmy carry the rest. Vykintas leads the workshops, and the guest authors run their own with him alongside.</p>
+  <div class="facts"><span class="fact"><b>18</b> weeks</span><span class="fact"><b>36</b> live sessions</span><span class="fact"><b>13</b> taught by Vishen</span><span class="fact"><b>1</b> workshop lead</span><span class="fact">Starts <b>7 October</b></span></div>
+  <div class="legend"><span style="--c:var(--gold)">Kickoff</span><span style="--c:var(--brand)">Foundation</span><span style="--c:var(--orange)">Content and platform</span><span style="--c:var(--pink)">Conversion and traffic</span><span style="--c:var(--green)">Products and revenue</span><span style="--c:var(--ink)">Scale and legacy</span></div>
+</div></header>
+
+<main class="wrap">
+<article class="wk s0">
+  <div class="num"><span>W0</span></div>
+  <div class="col tue"><div class="k">Wednesday 23 September · kickoff call</div><h3>The Room, the Blueprint and Your Before Picture</h3><p>One live call between the summit and Week 1: the calendar with names, the tracker every Tuesday marks, and the two baselines graduation is judged against.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani · 75 minutes</span></div></div>
+  <div class="col thu"><div class="k">Before Week 1</div><p>Onboarding survey submitted; the seven Accelerator days watched, one a day; introduce yourself in the community with your one sentence.</p></div>
+  <div class="notes"><div class="note p-open"><span class="tag">Open</span><span>Vishen to decide whether this call stays. It is an onboarding bridge to cut refunds in the sales window, not the fast-action bonus, which is the Skill Pack.</span></div></div>
+</article>
+<div class="sec s1"><span class="sec-w">Weeks 1 to 4</span><span class="sec-n">Foundation · message and identity</span></div><article class="wk s1">
+  <div class="num"><span>W1</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Proprietary Framework and Niche</h3><p>Your named framework, the niche it serves, and the one sentence that says what you do and for whom.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">69% of 7,739 quiz respondents chose “The Expert: nobody knows I exist”; 21% cannot put what they do into words.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Write the framework on one page; test the niche in nine words; the Authority Statement drafted.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><article class="wk s1">
+  <div class="num"><span>W2</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Story, Voice and Authentic Positioning</h3><p>Your story as the marketing asset, your voice, and the coined language that marks the work as yours.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">428 open answers began some version of “I’m good at what I do, but…”.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Five stories built to structure, timed and recorded; positioning statement written.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><article class="wk s1">
+  <div class="num"><span>W3</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Persuasion and Influence: the Cialdini Principles</h3><p>Reciprocity, social proof, authority, liking, scarcity and commitment, as they run inside every Mindvalley launch.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>The six triggers mapped onto your first offer page and your first campaign.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><article class="wk s1">
+  <div class="num"><span>W4</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Market Awareness and Copywriting Mastery</h3><p>Schwartz’s five levels of awareness, and copy that meets the reader exactly where they are.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>One offer page written in the buyer’s language and tested on a stranger for comprehension.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><div class="sec s2"><span class="sec-w">Weeks 5 to 6</span><span class="sec-n">Content and platform</span></div><article class="wk s2">
+  <div class="num"><span>W5</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>The Content Machine: Building Your Publishing System</h3><p>One principal channel, a repeatable publishing system, and the map from views to buyers.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><span>John Lee</span></div><div class="cue">John Lee, $1M from Social Media &amp; AI: 9.54 (n=35), Social Media Mastery 2026.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Thirty posts built from your framework and scheduled before the call ends.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>John Lee, with Vykintas</span></div></div>
+  
+</article><article class="wk s2">
+  <div class="num"><span>W6</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Social Media, Reels and Algorithmic Growth</h3><p>Hooks, formats, the shooting script and the shoot review; turning one idea into ten platforms.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"></div><span>John Lee</span></div><div class="cue">Asset Leverage &amp; Repurposing rated 9.82 in Entrepreneurship Mastery; Vishen has assigned the theme to John.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Film, review, reshoot: one B-roll and one carousel published live.</p><div class="lead"><div class="faces"><img src="authors/john-lee.jpg" alt="John Lee" title="John Lee"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>John Lee, with Vykintas</span></div></div>
+  
+</article><div class="sec s3"><span class="sec-w">Weeks 7 to 10</span><span class="sec-n">Conversion and traffic</span></div><article class="wk s3">
+  <div class="num"><span>W7</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Webinars, VSLs and Live Conversion</h3><p>The 60-minute masterclass structure and the close, from the playbook behind Mindvalley’s revenue.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">Using Webinars to Sell: 9.58 (n=57), Entrepreneurship Mastery.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your masterclass scripted with Vishen’s shooting-script stack; the belief map built.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><article class="wk s3">
+  <div class="num"><span>W8</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Paid Advertising, Testing and Scaling</h3><p>Creative testing, audience segmentation and scaling, taught with Marisha as guest.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani · Marisha Lakhiani, guest</span></div><div class="cue">Priestley: Waitlists, Scarcity and Launch Mechanics 9.22 (n=49); Oversubscription Strategies 9.26 (n=38).</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>A demand test live before any spend: waitlist page, five research questions, first small campaign; a bounded paid test only when the offer is ready.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="notes"><div class="note p-sug"><span class="tag">Suggested</span><span>Suggested: Daniel Priestley, class one of two. <em>Become Oversubscribed: build demand before you sell.</em> Vishen opened this week to Daniel on 17 September.</span></div></div>
+</article><article class="wk s3">
+  <div class="num"><span>W9</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Ascension, Upsells and Lifetime Value</h3><p>The product ladder and the ecosystem around it: gift, entry product, core offer, product for clients. Vishen’s own framework.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">Priestley: High Value Offers &amp; Price Anchoring 9.74 (n=68); Monetization Frameworks 9.61 (n=84), Entrepreneurship Mastery 2025.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your ladder mapped and priced; each price said aloud to the room and defended.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="notes"><div class="note p-sug"><span class="tag">Suggested</span><span>Suggested: Daniel Priestley, class two of two, alongside Vishen. <em>Premium Positioning: high-value offers and price anchoring.</em> His highest-rated commercial class; Vishen keeps the ladder.</span></div></div>
+</article><article class="wk s3">
+  <div class="num"><span>W10</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Summits, Live Events and Audience Building</h3><p>Virtual summits and live events as list builders and authority accelerators, at your scale.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>A feasible event plan tied to your offer: format, partners, show-up, follow-up.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><div class="sec s4"><span class="sec-w">Weeks 11 to 15</span><span class="sec-n">Products and revenue</span></div><article class="wk s4">
+  <div class="num"><span>W11</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Building One-to-One Products: Coaching and Consulting</h3><p>The high-ticket one-to-one offer, and the enrolment conversation that sells it without pressure.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><span>Ajit Nawalkha</span></div><div class="cue">Ajit: The Essential Three Offers 9.81; Designing Your $10K+ Offer 9.45, Entrepreneurship Mastery.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>The call run in pairs and recorded; before Sunday, one real ask for real money, on tape.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Ajit Nawalkha, with Vykintas</span></div></div>
+  
+</article><article class="wk s4">
+  <div class="num"><span>W12</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Email Marketing, Autoresponders and Revenue Sequences</h3><p>The sequences, segmentation and nurture that turn cold leads into buyers, with real Mindvalley data.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Nine emails written, audited and scheduled in your platform.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><article class="wk s4">
+  <div class="num"><span>W13</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Course Design and Marketplace Validation</h3><p>Idea dump to idea clusters; validate where 57 million learners already are; the Quest model.</p><div class="lead"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><span>Jimmy Naraine</span></div><div class="cue">Jimmy: Course Pro, 1M+ enrolments, Udemy’s first Innovation Award.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>The pajama draft: the whole course filmed on a phone today, then deleted unwatched.</p><div class="lead"><div class="faces"><img src="authors/jimmy-naraine.jpg" alt="Jimmy Naraine" title="Jimmy Naraine"></div><span>Jimmy Naraine</span></div></div>
+  
+</article><article class="wk s4">
+  <div class="num"><span>W14</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Certification Programmes and Community Monetisation</h3><p>Certifying others in your method, and a community that pays.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"></div><span>Ajit Nawalkha</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>The certification decision written: standard, assessment, delivery load, or not yet.</p><div class="lead"><div class="faces"><img src="authors/ajit-nawalkha.jpg" alt="Ajit Nawalkha" title="Ajit Nawalkha"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Ajit Nawalkha, with Vykintas</span></div></div>
+  <div class="notes"><div class="note p-sug"><span class="tag">Suggested</span><span>Suggested: Jimmy Naraine’s second week here, <em>Building the Udemy Ecosystem</em>, with certification and community folded into Week 15 alongside membership. Vishen said Jimmy can carry two weeks; this is the only slot that does not displace Vishen or John.</span></div></div>
+</article><article class="wk s4">
+  <div class="num"><span>W15</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Membership Models and Recurring Revenue</h3><p>Recurring value, retention and the economics of a membership.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Choose your next product: membership, community, certification, or not yet, with the numbers.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="notes"><div class="note p-sug"><span class="tag">Suggested</span><span>Suggested: Marisa Peer with Vishen. Her contract for one Mastery class is signed. Vishen’s rule is that she is a case study, not a mindset teacher, so the fit is her own business: a hypnosis audio, a course, and the certification that became the largest hypnotherapy organisation in the world. Vishen interviews; the room takes notes on the ladder.</span></div></div>
+</article><div class="sec s5"><span class="sec-w">Weeks 16 to 18</span><span class="sec-n">Scale and legacy</span></div><article class="wk s5">
+  <div class="num"><span>W16</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Team, Systems and Delegation for Scale</h3><p>Hire for leverage, build systems that scale, keep the team lean.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your operating week on one page and one delegation brief written.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  <div class="notes"><div class="note p-open"><span class="tag">Open</span><span>Vishen on 17 September: “Vishen and/or Daniel.” Left with Vishen unless Daniel’s two classes move here.</span></div></div>
+</article><article class="wk s5">
+  <div class="num"><span>W17</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Partners, Co-creation and Strategic Alliances</h3><p>Introductions, partnerships and joint ventures that multiply reach without ad spend.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>One partner or booking proposal sent, with your proof packet attached.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article><article class="wk s5">
+  <div class="num"><span>W18</span></div>
+  <div class="col tue"><div class="k">Tuesday · lesson</div><h3>Movement Building, Legacy and the Long Game</h3><p>The capstone: from a business to a movement, and the 90-day plan that starts on the Monday after.</p><div class="lead"><div class="faces"><img src="authors/vishen-lakhiani.jpg" alt="Vishen Lakhiani" title="Vishen Lakhiani"></div><span>Vishen Lakhiani</span></div><div class="cue">Priestley’s Designing Your Next 12 Months, 9.87 (n=46), is the closest rated precedent and a ready framework for the plan.</div></div>
+  <div class="col thu"><div class="k">Thursday · workshop</div><p>Your 90-day plan inside a 12-month direction; certification granted against shipped assets.</p><div class="lead"><div class="faces"><img src="authors/vykintas-glodenis.jpg" alt="Vykintas Glodenis" title="Vykintas Glodenis"></div><span>Vykintas Glodenis</span></div></div>
+  
+</article>
+
+<div class="opens">
+  <div><b>Daniel Priestley’s two weeks</b>Suggested at 8 and 9. Vishen also opened 16.</div>
+  <div><b>18 weeks against “four months”</b>The stage promise was four months. 18 weeks from 7 October ends in February. 7 October 2026 is a Wednesday; the cadence says Tuesday.</div>
+  <div><b>The kickoff call</b>Keep as the onboarding bridge, or drop. It is not the fast-action bonus.</div>
+</div>
+
+<div class="around"><b>Around the Mastery, as agreed on 17 September.</b> Fast-action bonus: the Skill Pack, every class as an installable skill, demonstrated by Vishen, later sold to the list at $499. Downsell: <em>Build, Sell and Monetise Your First Online Course</em>, seven days with Jimmy Naraine. Ascension: the Expert Guild, application only, for the room above $100K, $10,000 alone or $7,500 with the Mastery. Marisa Peer and Regan Hillyer stay at the summit as case studies.</div>
+</main>
+</body>
+</html>

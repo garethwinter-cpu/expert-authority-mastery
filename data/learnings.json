@@ -533,6 +533,19 @@
       "applied_to": [
         "expert-authority-v4.html"
       ]
+    },
+    {
+      "id": "ea-v5-final-curriculum-sep17",
+      "date": "2026-09-17",
+      "area": "Expert & Authority Mastery · Version 5 · final curriculum",
+      "finding": "Curriculum meeting 17 Sep (Vishen, Gareth, Jaideep, Marisha). Vishen: the curriculum is his 18 weeks; assign the authors already in progress and keep the data cues; no mindset (Visibility Wound and I Am Enough out), no story week, no 'blog titles', no Regan fireside; Cialdini, market awareness and copywriting must be in. His assignments: W1-4 Vishen; W5-6 John Lee; W7 Vishen; W8 Vishen with Marisha as guest, or Daniel; W9-10 Vishen; W11 Ajit (one-to-one products, renamed from high-ticket sales); W12 Vishen; W13 Jimmy (two weeks: course design, then the Udemy ecosystem); W14 Ajit (certification and community); W15 Vishen; W16 Vishen and/or Daniel; W17-18 Vishen. The product ladder is Vishen's own (Nora had misattributed it to Priestley). Labs: Vykintas leads all workshops, Jimmy his own; John, Daniel and Jimmy may run their own with Vykintas alongside; Kash, Sabrina, Alessio and Safwaan out. Marisa and Regan are summit case studies only. Daniel: two classes, lane 'premium positioning'; the in-meeting agent briefing proposed a signature-offer class and a demand-before-you-sell class. Sales: Mastery on stage; the Expert Guild as ascension, application only, $10,000 alone or $7,500 with the Mastery, a Wednesday session from Estonia. Bonuses: Skill Pack at $499 as the fast-action bonus and later downsell; accelerator becomes 'Build, Sell and Monetise Your First Online Course', seven days with Jimmy, around $899. 'Don't do a bonus call with Vishen as a fast-action bonus.' Trailer must lead with Vishen. Gareth's nuance: Marisa Peer's contract for one Mastery class is signed, so V5 must suggest one place for her and hand Vishen the fit.",
+      "decision": "expert-authority-v5.html built as a single clean page: no version switcher, no tabs, one hero line, five colour-coded sections (Foundation W1-4, Content and platform W5-6, Conversion and traffic W7-10, Products and revenue W11-15, Scale and legacy W16-18) plus a gold kickoff row. Each week: Tuesday lesson in Vishen's spoken title with a one-line description and lead, Thursday workshop with what gets built and its lead (Vykintas by default), one muted data cue where one exists. Suggestions marked in gold: Daniel Priestley at W8 (demand before you sell) and W9 (premium positioning alongside Vishen); Jimmy's second week at W14 with certification and community folded into W15; Marisa Peer with Vishen at W15 as the certification case study. Open items in ink: the kickoff call, 18 weeks against the four-month promise and the 7 October weekday, Daniel's placement, W16 Vishen and/or Daniel. Footer carries the Skill Pack, the accelerator and the Expert Guild pricing. Versions 1 to 4 keep their switchers with a V5 card added; V5 itself links to nothing.",
+      "status": "applied",
+      "applied_to": [
+        "expert-authority-v5.html",
+        "server.js",
+        "index.html"
+      ]
     }
   ],
   "verified_corrections_to_live_pages": [
