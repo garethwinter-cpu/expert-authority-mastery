@@ -1,0 +1,102 @@
+{
+ "id": "D2_05_Crafting-the-Customer-Experience_Vishen",
+ "title": "Crafting the Customer Experience",
+ "day": "Day 2",
+ "date": "Saturday 19 September 2026",
+ "speakers": [
+  "Vishen Lakhiani"
+ ],
+ "host": "Jason Goldberg",
+ "format": "keynote",
+ "overview": "Vishen closed his run of sessions with what happens after someone says yes. You learned why the sale is the starting line, how a single customer-stories page lifted his early website's revenue 40% across every traffic source, the three phases of the customer journey (onboarding, journey, graduation) and the exact first-week emails and touchpoints that turn buyers into raving fans who buy again and bring others with them.",
+ "key_ideas": [
+  "It is far more expensive to create a customer than to keep one, so when you get a customer, do everything you can to keep them. The sale is the starting line, not the finish, yet most businesses put all their attention on acquisition and drop the customer the moment they pay.",
+  "Customer obsession shows up in public trust. Mindvalley's Trustpilot score is 4.3; Vishen compared it live with MasterClass at 1.6 and Calm at 1.4 and said he has not found a competitor with a higher score. This matters more every year because people increasingly ask AI for recommendations, and AI reads customer reviews rather than marketing.",
+  "In 2016 Vishen emailed everyone who had ever bought a ticket to a Mindvalley event and invited them to hang out in Estonia. Eighteen people came, a three-day meet-up stretched to seven, and one of those customers later became a Mindvalley author. You do not need to go to pubs with your customers, but being this focused on them has powerful side effects.",
+  "The 40% move: on his 2003 Silva website he added a single 'User Experience' tab, one long page of customer stories. Almost nobody read it, but seeing that it existed made the offer feel real, and revenue rose 40% from email traffic and 40% from Google ads alike. Every one of you needs a testimonial or user-stories page.",
+  "Mindvalley scaled that idea into stories.mindvalley.com, where 25,974 customers have submitted stories through a simple form (language, programme, name, job title, email, city, story, photo). Stories can be filtered by topic and shown by the visitor's country. One team member built the whole system in about a week using Claude; you can do it with a form plus a Google Sheet or Airtable.",
+  "Every customer passes through three phases, onboarding, journey and graduation, but most experts only build for one. Onboarding answers 'I bought it, how do I log in, what if I don't like it, how do I get a refund?' The journey needs support, a place to share wins and a live touchpoint. Graduation is completion and what comes after.",
+  "Make refunds easy. Mindvalley offers one-click refunds, and if someone asks past the refund date, give it anyway; it is not worth angering a customer. On the journey, one live touchpoint matters most: Vishen borrowed the idea of teaching-assistant office hours from his University of Michigan days, so Mastery students get a class early in the week and community hours on Friday where they help each other.",
+  "Graduation is where stories are born. On a graduation call everyone receives a certificate, people share, sharing inspires more sharing, and only then does the team ask permission to use those stories or point people to the stories page. If someone will not give a testimonial, ask instead what could have been done better. Every graduate becomes a story that brings in the next graduates, and graduates kept in the community keep buying: Vishen met a customer at an Estonian airport who had bought six $5,000 Mastery programmes, one after another, because each one delighted her."
+ ],
+ "frameworks": [
+  {
+   "name": "The Three Phases of the Customer Journey",
+   "steps": [
+    "Phase 1, Onboarding: how do I log in, what happens if I don't like it, how do I get a refund. Build an onboarding sequence, or at least one email that explains everything.",
+    "Phase 2, Journey: supportive help while they go through the programme (Mindvalley gives 21 days), a number or place to reach if they get stuck, an easy one-click refund.",
+    "Phase 3, Graduation: completion and what comes after; nurture the customer, gather stories, keep them in the community and invite them to events."
+   ]
+  },
+  {
+   "name": "Phase 1 Onboarding: The First 7 Days",
+   "steps": [
+    "Day 1: a welcome email within 5 minutes of purchase.",
+    "Day 2: tell the customer what to do first.",
+    "Day 3: a first win. Congratulate them for signing up and for watching Lesson 1."
+   ]
+  },
+  {
+   "name": "Phase 2 Journey: Nobody Finishes a Programme Alone",
+   "steps": [
+    "Progress markers.",
+    "A place to share wins (a community).",
+    "Automated check-ins.",
+    "One live touchpoint: a Q&A call, office hours or a group session."
+   ]
+  },
+  {
+   "name": "Phase 3 Graduation",
+   "steps": [
+    "Hold a graduation call and give everyone a completion certificate.",
+    "Invite people to share; each share inspires the next.",
+    "Ask for a testimonial. If they will not give one, ask what you could have done better.",
+    "Ask permission to use their story on your website, and point them to your stories form.",
+    "Keep them in the community, gather feedback and invite them to your events."
+   ]
+  },
+  {
+   "name": "The Customer Story Format",
+   "steps": [
+    "Before this program, I...",
+    "Thanks to this program, I...",
+    "And now my life is..."
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "It is far more expensive to create a customer than to keep a customer. So when you get a customer, you want to do everything you can to keep the customer."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "I want you to understand that the sale is the starting line. This is where you begin. The sale is not the end. It is absolutely the starting line."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "You have to be customer-focused, and most of us are not. The world gets us obsessed with marketing. But we need to be obsessed with retaining and making sure our customers experience magic."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "All of you need a user experience or testimonial page on your website."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "If a customer wants a refund, just give it to them. Even if it's past the refund date, just give it to them."
+  }
+ ],
+ "dialogue": [],
+ "exercises": [
+  "Go to stories.mindvalley.com, click 'Tell us your story' and submit your own story about the summit. Doing this shows you the exact form and process for collecting customer stories.",
+  "Photograph the Phase 1 onboarding slide (welcome within 5 minutes, what to do first, a first win) and either hand it to whoever runs your email, or paste it into Claude, describe your business and have it write the three emails.",
+  "Create a customer story form using the three-line format (Before this program, I... Thanks to this program, I... And now my life is...) with fields for name, job title, city, programme and a photo, and store the responses in a Google Sheet or Airtable."
+ ],
+ "next_steps": [
+  "Add a testimonial or user-stories page to your website this week, even if it is one long plain page.",
+  "Write and schedule your three onboarding emails for the first week after purchase.",
+  "Schedule one live touchpoint for current customers, such as a monthly Q&A or office hours.",
+  "Simplify your refund process and decide in advance that you will honour late requests."
+ ],
+ "attribution_notes": "Lines marked Vishen are Vishen Lakhiani; lines marked Mindvalley are host Jason Goldberg introducing the session, and afterwards reflecting, leading a movement break and setting up the following session. Transcription errors in names were corrected (Vision to Vishen, Frost pilot to Trustpilot, Claud to Claude, Marissa Pierre to Marisa Peer)."
+}

@@ -1,0 +1,233 @@
+{
+ "id": "D3_06_VIP-QA_Vishen_Jason-Goldberg",
+ "title": "VIP Q&A with Vishen",
+ "day": "Day 3",
+ "date": "Sunday 20 September 2026",
+ "speakers": [
+  "Vishen Lakhiani"
+ ],
+ "host": "Jason Goldberg",
+ "format": "q&a",
+ "overview": "In the closing VIP session Vishen sits beside Jason Goldberg for a round of five-minute website hot seats followed by rapid questions. You get worked examples for an artist, a pre-revenue fasting coach and a grief coach, then direct answers on founder-led versus company brands, boutique practices, first offers without testimonials, building assessments, funnel build order, small-language markets, tech stack, self-improving AI projects and ethical selling to a traumatised audience.",
+ "key_ideas": [
+  "Art, like expertise, sells on story and likability. The Mona Lisa became famous because it was stolen, not because it was the greatest painting; Bert Goldman sold pieces for $10,000 because people followed his creative process and liked him. Engineer fame, tell the story of every piece, and educate the buyer instead of just showing the work.",
+  "Lived experience beats credentials for most consumers. Eric Edmeades built WildFit on the story of living with the Hadza bushmen, not on a nutrition degree; what you do need for credibility is customer stories, and you should always show your own face on the site.",
+  "A gentle product ladder for a sensitive niche: a five-day autoresponder that teaches, a quiz that identifies the right-fit client, an affordable mini course, a booked call, and later a weekly one-to-many class, all built around one signature method. Start with low call prices because every early call is training wheels and market intelligence.",
+  "Always build the authority around the founder, not the company. Virgin has a few hundred thousand followers and Richard Branson has millions; Diary of a CEO is dwarfed by Steven Bartlett. People follow people, and founder-led marketing is a gift to the thing you built.",
+  "Scale does not have to mean a 50-hour week. The system is a tap you open as far as you want: AI, agencies or talented people do the heavy lifting while you design your day, whether that means 20 hours a week or a Tuesday spent walking the dog.",
+  "Your first offer without testimonials should be an 'unbeatable offer': your best work at a no-brainer price (free, $1, $3), with a stated reason for the price. Cialdini's photocopier study showed people comply when they hear a 'because', even if the reason is trivial; explain why the offer is so good or people suspect a catch.",
+  "Give AI real data and it will design what you would not have asked for. Seven hours of raw scientist interviews plus the instruction to act as a world-class supplement marketer produced a full website, a quiz built in an hour, an e-book and an autoresponder, with the human in the loop supplying the truth.",
+  "Build order for a funnel: flagship course first, then whichever entry funnel suits you. The email funnel is easiest (course transcript into AI), the quiz is next (you may need to record an interview), and the masterclass is hardest only because you still have to record it; the only edit it needs is captions.",
+  "Train your AI projects to improve themselves. Start with a real problem in a plain conversation, correct the first output, then ask 'what did you learn, and how would you update your instructions and project files?' Vishen's page-building project has been revised 14 times in two weeks this way.",
+  "Never manufacture urgency or fake scarcity, for a traumatised audience or anyone else. Ethics and reputation matter more than money in the bank today; if a countdown banner is not true, it does not run, and your marketing should carry the same compassion and safety as your delivery."
+ ],
+ "frameworks": [
+  {
+   "name": "Visibility playbook for an artist or maker who won't reveal technique",
+   "steps": [
+    "Engineer fame and likability through PR and a social channel tied to the website",
+    "Tell the story behind every piece: one video of the making, one interview-style video (a podcast mic and speaking to air is fine)",
+    "Educate the buyer with the 'educate the reader' model: a report or quiz on choosing and placing art",
+    "Use AI to mock up the customer's own wall with several of your pieces so they can choose"
+   ]
+  },
+  {
+   "name": "Product ladder for a sensitive niche (grief coaching example)",
+   "steps": [
+    "Five-day email autoresponder teaching one principle a day, each email inviting the reader to find out if you are right for them",
+    "A quiz that pre-qualifies the right-fit client by type of loss, age and situation",
+    "A short mini course (five to seven days, $99 to $149) bought automatically",
+    "Book a call at your hourly rate, starting low while each call teaches you the market",
+    "A weekly one-to-many class ($99 to $499) as demand grows, all built around your signature method"
+   ]
+  },
+  {
+   "name": "The unbeatable offer",
+   "steps": [
+    "Put your best foot forward: a genuinely valuable asset such as a 20-minute meditation or audio lecture",
+    "Price it as a no-brainer: free, $1, $3 or $5 (a token price often increases perceived value)",
+    "Give the 'because why': explain why it costs so little so people don't suspect a catch",
+    "Tell them exactly what to do with it and what the next step is (listen three days in a row, then book a call)"
+   ]
+  },
+  {
+   "name": "Funnel build order",
+   "steps": [
+    "Build the flagship course first, always",
+    "Email funnel next: feed the course into AI and the sequence is produced",
+    "Quiz: fast to build, but you may need to record an interview to give the AI real material",
+    "Masterclass last: after the script you still have to record it; skip heavy editing and add captions only, with a good voice, mic and camera"
+   ]
+  },
+  {
+   "name": "Building a self-improving AI project",
+   "steps": [
+    "Open a plain AI conversation and state a real problem you're trying to solve",
+    "Correct the first output: tone, humour, language, what doesn't sound like you",
+    "Ask 'what did you learn from this?'",
+    "Ask it to produce a new instruction set and project files so it does better next time, and repeat after each use"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Art is about story. The Mona Lisa is not the greatest work of art. It was the work of art with the best story, because it was stolen."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "People follow people. People don't want to follow companies. People want to follow people, like, that's who we follow."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "When you just start, you bring the price low, because every call is also giving you intelligence."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Never manufacture urgency. Never, ever, ever, ever, ever do that. Ethics and reputation are more important than money in your bank today."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "People don't even hear the reason. They just want to know you have a reason."
+  }
+ ],
+ "dialogue": [
+  {
+   "speaker": "Jason Goldberg",
+   "text": "First hot seat: Ann, an artist who doesn't want to reveal her core technique, so pillar videos and lead magnets don't seem to fit. What replaces the weekly video as her central system for reach, collector relationships and repeat sales?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "I was a black-and-white photographer myself, so I love artists. Art is about story: the Mona Lisa became famous because it was stolen. I'd engineer fame and likability, tell the story of every piece on social media (one video of the making, one interview-style video even if you're speaking to air), teach how to beautify a space, and let people upload a photo of their wall so AI mocks up six of Ann's pieces in their living room. No other artist is doing that, and it's one prompt."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Kim is pre-revenue with 13 years of personal intermittent fasting practice but no coaching credential. Is that enough, and how does she teach lived experience she has never sold?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "People don't come to a site looking for a coaching certificate or a medical degree. Eric Edmeades was a film producer and speech coach; the story of living with the Hadza bushmen built WildFit's credibility. Most consumers don't care about credentials; what you need are customer stories, and Kim should show her picture, because not doing so is a big red flag."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "You can learn more about alcoholism from a recovering alcoholic than from someone who studied it in school."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Exactly. I met an author who never studied alcoholism, is a recovering alcoholic, and wrote a best-selling book on giving up drinking."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Justin is a grief coach, best-selling author and 30-year professional musician who uses songwriting as a healing method. He believes grieving people won't pay for coaching and that belief is capping his business. How does he test it, validate demand and build authority in the grief niche?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "First, the website is all about the music; there's nothing on grief. Don't just say 'hire a grief coach'. Start with a five-day autoresponder on dealing with grief where each email teaches a principle and invites people to see if Justin is right for them, then a quiz that identifies the right-fit client, then a $99 to $149 mini course, then a booked call, and as demand grows a weekly one-to-many class at a reasonable price. Start call prices low, because every call is intelligence. And, as Jason added, all of it is built around one signature method that runs the entire ladder."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "David asks whether to build authority around the founders or around the company as a category and philosophy, and what to leave in the background."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Always the founder. Virgin employs 50,000 people and has a couple of hundred thousand followers; Richard Branson has millions. Diary of a CEO is small next to Steven Bartlett. People follow people, not companies, so if you're a founder you should be the figurehead, and that's a gift to the thing you built."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Michelle says everything here points at massive scale and she doesn't want it: a boutique practice, 20 hours a week, she hates social media. Can she scale on email and AI alone?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "What she's really saying is she doesn't want a 50-hour week, and that's a damn good goal. The way I teach, AI, agencies or talented people do the heavy lifting while you design your day. If Tuesday is walking the dog through Hyde Park and three matchas without opening a laptop, good on you."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "It's like a tap: you decide how far to open it, and it's the same system either way. Laura has no testimonials yet. How does she design a first offer that attracts 100 people, delivers measurable results and turns into real proof, or is that what the free offer is for?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "It's the unbeatable offer: relative to the price, fantastic, your best foot forward, a no-brainer. It could be free or a dollar; sometimes people value it more when they pay something. But if you charge a dollar, explain why, or people wonder if you're stealing card details. Cialdini's photocopier study showed people let a stranger cut the line simply because he gave a reason; they don't even hear the reason, they just want to know there is one."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Daryl asks: you build the flagship first and then the assessment around it, but how do you actually build the assessment?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Let me show you the quiz on my supplement brand's site; the whole thing was built in one hour with Claude. We recorded about seven hours of interviews with the scientist behind the formulas, gave the AI the raw audio and told it to act as a world-class supplement marketer, and it came up with the quiz, the science page, the e-book and the autoresponder on its own. It didn't make anything up; the human in the loop supplied the data."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Karolina has five days to connect a book, assessments, coaching and results into one working funnel. What does she build first and what does she leave?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Flagship course first, always. Then a quiz, an email funnel or a masterclass, depending on what you're good at. Email is easiest because the course goes into the AI and the funnel comes out; the quiz is next but may need an interview; the masterclass is last only because you still have to record it. Don't edit it like YouTube: a good voice, mic and camera, and captions, which CapCut adds automatically."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Flavina's courses are in Papiamentu, spoken by about 500,000 people. Can she scale in that language and still use AI?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Yes. Modern models have analysed almost every language with websites, and my children's mother tongue is Estonian, spoken by just over a million people, where everything runs on AI. It will work."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "I have a Romanian client whose entire Claude is in Romanian and it all works. Dr Wala Mohamed isn't ready for a custom site; what stack does she choose so she isn't rebuilding everything in two years?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Framer is a really good one for AI-built websites, and building sites is now very easy. You can also have Claude or the new ChatGPT design the site directly; all you need then is hosting, and services like Vercel make that simple."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Yesterday you had an analysis running on Sylvie's website. Can we pull it up?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Found it. It did a technical analysis, ran simulations and suggested the optimal funnel to boost her revenue, but said there was too little information because her site is two pages, so it produced a set of questions for her, like how many weeks a year she works. That's how you use Claude: don't just say 'rebuild my website', ask it to ask you clarifying questions. Sylvie can drop the three files into her own Claude and literally ask 'what do I do with this?'"
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Anez asks: when you're building an AI operating structure from scratch, what are the first three to five things you map out before creating agents or your environment?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "I don't map first. I open generic Claude and ask it to solve a real problem, like the TikTok script for a grumpy 50-year-old, correct it until it sounds like me, then ask what it learned and have it write new instruction and project files so it does better next time. My page-building project is on version 14 of its instructions after two weeks; every time I use it I ask what it learned."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Notice he started with a problem he was trying to solve, not a grand outline of everything to set up. Katharine asks whether she can use this to make her executive clients into authorities in their industries."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Absolutely. Everything you learn from me you can use on other people; that's how I worked with Marisa Peer and Regan Hillyer. And once you've built an AI project that creates an autoresponder for one client, doing it for client two or client one hundred is easy, so you're also getting a business in a box."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Miles's audience is recovering from trauma and he doesn't want to manufacture urgency around their pain. How do you convert while keeping it psychologically safe and ethical?"
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Never manufacture urgency, for trauma or for anything. Ethics and reputation are more important than money in your bank today. Be extra gentle: give the meditation or advice away or charge a dollar and explain why, make the course affordable, then a call. When marketers show me that a fake 'three days left' banner lifts sign-ups, I ask whether it's true, and if it isn't we don't run it."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Your marketing should match your deliverable: if the delivery is compassion, care and safety, the marketing should show the same."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Exactly."
+  }
+ ],
+ "programme_summary": "",
+ "exercises": [],
+ "next_steps": [
+  "Put your own face, name and story on your homepage and replace at least one product description with the story behind it.",
+  "Draft your unbeatable first offer: the asset, the token price, the 'because' that explains it, and the exact next step you want people to take.",
+  "Sketch your ladder in the order Vishen gave: flagship course, then email funnel, then quiz, then masterclass, and start with the flagship.",
+  "Take one AI project you already use, ask it what it learned from your last session and have it rewrite its own instructions."
+ ],
+ "attribution_notes": "Every line in this transcript is labelled 'Mindvalley', so speakers were separated from content: Jason Goldberg reads or paraphrases the submitted questions, keeps time, offers short affirmations and analogies, and gives his own Instagram handle at the end; Vishen answers at length in the first person about Mindvalley, his photography, his supplement brand, his AI projects and his children. Merged paragraphs were split at the change from question to answer or at Vishen's 'Okay, so'. Confidence is high for the questions and the long answers and medium for a few short interjections: the alcoholism saying, the 'water faucet' analogy, the Romanian client remark and the 'marketing should match your deliverable' line were assigned to Jason because they are outside-observer comments to which Vishen replies 'exactly', but they could not be verified from labels. Names corrected: Bert Goleman = Bert Goldman, Eric Admity = Eric Edmeades, Stephan Butler = Steven Bartlett, Chialdini = Cialdini, Marisa/Reagan = Marisa Peer and Regan Hillyer; two hot seats with non-English websites were skipped on stage and are omitted here."
+}

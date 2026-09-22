@@ -1,0 +1,129 @@
+{
+ "id": "D1_05_How-to-Go-from-Leads-to-Customers_John-Lee",
+ "title": "How to Go from Leads to Customers",
+ "day": "Day 1",
+ "date": "Friday 18 September 2026",
+ "speakers": [
+  "John Lee"
+ ],
+ "host": "Jason Goldberg",
+ "format": "keynote",
+ "overview": "John Lee, entrepreneur, investor and author of the New York Times bestseller Money Unlocked, compressed twenty years of building multi-million businesses into a whiteboard tour of how attention becomes revenue. You saw the four ways to bring people with a problem to your solution, the ladder from unknown to authority, and a rapid-fire set of monetisation mechanisms he uses today, from bottom-of-funnel content and comment automation to AI avatars, an AI clone of his own brain and the seven-figure funnel. The thread through all of it: if you want to make more money, make more offers.",
+ "key_ideas": [
+  "There are four ways to get the people who have a problem to come to you for the solution: free and organic content (people buy why you do it, so demonstrate your mechanism, like his Chinese medicine client Ian Clough whose 'slapping' videos hit 1.4, 3.2 and 5 million views), paid content once you know what works, affiliates (get every customer posting about your product) and Strategic Alliance Partners, where you borrow another brand's audience, as John did by partnering with Mindvalley and speaking at Tony Robbins' 12,500-person event in Sydney.",
+  "Expert to authority is a ladder: unknown, known, expert, authority. To become known you must own one word (John's is monetisation; MrBeast's is entertainment), and to become the authority you need to be seen everywhere. His book Money Unlocked, published by Hay House and a New York Times bestseller, is the mechanism ('unlocked') that moved him up the ladder. The bridge between expert and authority is positioning: keynotes to 2,500 to 3,000 people, radio interviews, stages and webinars all count.",
+  "Content splits into TOF, MOF and BOF (top, middle and bottom of funnel). Top-of-funnel gets millions of views but not money; bottom-of-funnel talks directly to your ideal client, gets few views and converts. His 23-second Facebook video about installing AI marketing infrastructure drew 21,000 comments from people wanting exactly that. Likes and followers do not pay the bills; specificity and interest marketing do.",
+  "The number one rule: if you want to make more money, you need to make more offers, at least one offer a month. Most people do not lack something good to sell, they are scared of selling it. Every business monetises in one of three ways: product-based, service-based, or brand deals and sponsorship (a friend licensed his podcast for $100 million). When someone says they have a cash-flow problem, they actually have a marketing problem.",
+  "The David Chen Method: to prove results come from topic rather than accolades, John created a fictitious grandfather figure, David Chen, as an AI avatar. His videos hit 263,000, 697,000 and 1.2 million views and pulled 2,000 to 7,000 comments each, promoting John's book. His ex-wife character Diana Carter outperforms him. You can build this yourself by dropping a photo and your products into an image model, then using Windsor.ai to find your best-performing content, script new posts and publish them.",
+  "The comment guard, run on ManyChat: end every post with 'if you want to learn more, comment the word guide / book / learn', and the tool automatically sends a direct message with a link. One post drew 1,718 comments, another 10,000, and he has generated over 100,000 automated messages. Comments also boost your reach. He calls this raise-your-hand marketing, and it rests on his DEALS idea: the deals are literally inside the leads, leads come from exposure, and the easiest exposure is social media.",
+  "Three more conversion events: webinar domination (a one-hour webinar with a book-a-call invitation bolted on the end, and consultants should run one on each of five topics); the three Cs of connection, community and collaboration, which matter more as people distrust AI content (his Telegram channel has 8,869 subscribers but individual messages reach 38,000 to 52,000 views, and Instagram now has built-in communities under Messages, Start Community); and IRL events, which he runs 200 of a year using TLC, Traffic to Leads to Customers: market, invite to the event, add massive value, invite again.",
+  "AI qualification and personalised scale: an AI voice or chat agent (he demoed one built in SalesFunnels.io) can speak 50 languages, make outbound calls, qualify leads and hand off to a human the moment buying questions start. He also cloned his own brain at johnlee.ai, fed by a wearable recorder that transcribes everything he says; it holds 15,000 conversations a month, answers as he would (ask it about followers and it gives the 116 strategy: one topic, one platform, post every day for six months), then offers a sign-up link. Finally, the seven-figure sales funnel: social media to a sales page to a payment gateway, a free giveaway to capture name, email and phone, automated email sequences because it takes 23 touchpoints before someone buys, and retargeting everyone who hits your page. He sends about a million emails a month with offers."
+ ],
+ "frameworks": [
+  {
+   "name": "The four ways to bring people to your solution",
+   "steps": [
+    "Free and organic content that shows what you stand for and demonstrates your mechanism",
+    "Paid content, once you know which organic content works",
+    "Affiliates: get your existing customers posting about your product",
+    "Strategic Alliance Partners (SAPs): partner with bigger brands to borrow their brand and audience"
+   ]
+  },
+  {
+   "name": "The expert to authority ladder",
+   "steps": [
+    "Unknown: nobody knows who you are",
+    "Known: people have now heard you, usually through a Strategic Alliance Partner",
+    "Expert: you own one word people come to you for",
+    "Authority: you are seen everywhere, with positioning (books, stages, media, webinars) as the bridge from expert"
+   ]
+  },
+  {
+   "name": "TOF, MOF, BOF content",
+   "steps": [
+    "Top of funnel: broad content that gets millions of views but does not convert",
+    "Middle of funnel",
+    "Bottom of funnel: content that speaks directly to your ideal client, gets fewer views and converts; end it with a comment prompt"
+   ]
+  },
+  {
+   "name": "John's ways to go from leads to customers (as taught, in order)",
+   "steps": [
+    "Bottom-of-funnel content",
+    "The David Chen Method: an AI avatar that makes offers for you",
+    "The comment guard with ManyChat",
+    "Webinar domination: one-hour webinar plus a book-a-call invitation",
+    "The three Cs: connection, community, collaboration",
+    "AI call qualification with a human in the loop",
+    "Chat agent qualification: a chat version of your cloned brain",
+    "IRL events using TLC: Traffic, Leads, Customers",
+    "Strategic Alliance Partners, prospected with an AI research and outreach tool",
+    "The seven-figure sales funnel"
+   ]
+  },
+  {
+   "name": "DEALS",
+   "steps": [
+    "To make money you need deals (customers)",
+    "The deals are in the leads",
+    "To get more leads you need exposure",
+    "The easiest exposure is social media, so keep posting content with a comment guard"
+   ]
+  },
+  {
+   "name": "The 116 strategy",
+   "steps": [
+    "One topic",
+    "One platform",
+    "Post every single day for six months"
+   ]
+  },
+  {
+   "name": "The seven-figure sales funnel",
+   "steps": [
+    "Social media drives people to a sales page connected to a payment gateway such as Stripe",
+    "Give something away for free in exchange for first name, last name, email and telephone number",
+    "Automated email sequences, because it takes 23 touchpoints before someone buys (the fortune is in the follow-up)",
+    "Build a custom audience from everyone who hits your page and retarget them on social media"
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "speaker": "John Lee",
+   "text": "If you want to make more money, you need to make more offers. That's it."
+  },
+  {
+   "speaker": "John Lee",
+   "text": "Most people have a voice like Mariah Carey, but no one's ever heard you sing before."
+  },
+  {
+   "speaker": "John Lee",
+   "text": "Likes don't pay the bills, followers don't pay the bills, specificity, interest marketing and interest media are what pay the bills."
+  },
+  {
+   "speaker": "John Lee",
+   "text": "When people say to me they have a cash flow problem, I say, no, you don't, you have a marketing problem."
+  },
+  {
+   "speaker": "John Lee",
+   "text": "The definition of millionaire is to have touched a million lives before you have left this planet."
+  }
+ ],
+ "dialogue": [],
+ "exercises": [
+  "Write down: 'The best known beats the best.'",
+  "Take a photo of 'If you want to make more money, you need to make more offers', post it on social media tagging John, Vishen Lakhiani, Jason and Mindvalley, then print it and put it up around your house.",
+  "Answer for yourself: what is your word? What is the one word you are going to own and post about?",
+  "Write down the three Cs: connection, community, collaboration.",
+  "Write down: 'The fortune is in the follow-up.'",
+  "Pick one concept from this session, post about it on social media tagging John, Vishen and Jason, and stick to it. The host echoed this: choose one strategy and go deep rather than trying all of them at once."
+ ],
+ "next_steps": [
+  "Decide the one word you want to own and make it the topic of everything you post, following the 116 strategy: one topic, one platform, every day for six months.",
+  "Film one short bottom-of-funnel video that speaks directly to your ideal client and ends with 'comment the word ___ to learn more', then set up a ManyChat automation to send the link.",
+  "Put one offer on the calendar for this month, for example a one-hour webinar on your core topic with a book-a-call invitation at the end.",
+  "Sketch your funnel: a free giveaway that captures name, email and phone, and a short automated email sequence so nobody who shows interest is left without follow-up."
+ ],
+ "attribution_notes": "Lines labelled with John Lee's name were attributed to him; lines labelled 'Mindvalley' were the host Jason Goldberg's introduction and wrap-up; the short segment labelled 'Audio shared by John Lee' was a live demo clip of his AI voice clone and is noted as such rather than treated as his own words."
+}

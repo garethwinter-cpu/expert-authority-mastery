@@ -1,0 +1,91 @@
+{
+ "id": "D2_03_The-Free-Product-Content-Machine_Vishen",
+ "title": "The Free Product Content Machine",
+ "day": "Day 2",
+ "date": "Saturday 19 September 2026",
+ "speakers": [
+  "Vishen Lakhiani"
+ ],
+ "host": "Jason Goldberg",
+ "format": "keynote",
+ "overview": "In a fast 20-minute session, Vishen showed you how to stop treating content as a weekly creative struggle and start running it as a system. You saw how one signature piece a week becomes a YouTube script, an email, a reel and a LinkedIn post, how he uses Claude projects trained on his own style to do the conversion, and where this leads when the whole engine is automated.",
+ "key_ideas": [
+  "Content is not a creative act, it is a system. The best experts spend one day a month, about 8 hours, producing enough content for the next 30 days. Everything else is repurposing.",
+  "Start with one signature piece a week drawn from whatever you are exploring: a book you read, a trip, a conversation. Vishen's example was a long-form email about visiting a village of San Bushmen in Africa, written from his own notes and photographs with AI assistance, then fed into AIs to produce the YouTube video, Instagram posts and LinkedIn version.",
+  "Block specific hours and allow yourself to be imperfect. Vishen's newsletter goes out on Wednesdays, so he blocks about two hours on Tuesday. The weekly maths: one pillar piece, five social posts, one email and one short-form video is 8 pieces a week and 32 a month, your 30-day content plan done in one afternoon. It does not matter if it takes you four or five hours instead of two; it is not a competition.",
+  "Every piece of content should point somewhere. The email teases and drives to the long-form piece; the reel and LinkedIn post drive to it too; the long form drives to a masterclass landing page that sells your flagship course. Vishen's 32-minute Silva Ultramind masterclass has been watched by 825,000 people and converts thousands into the flagship programme.",
+  "Live demo: he pasted his Day 1 impact talk into Claude and asked for a compelling YouTube video; then pasted that script into a Claude project trained on email writing and said only 'Can you turn this into an email? Put the email in HTML and give me two variations so I can split test.' The same talk also became an Instagram reel script. No fancy prompt was needed.",
+  "When the output does not sound like you, fine-tune by talking to it. Vishen dictates feedback using a voice tool rather than typing, adds specific details (where and when a story happened, a line that landed), and supplies a Speaking Style Guide he created by loading his past talks into AI and asking it to analyse them and produce a style guide he can use with any AI.",
+  "Build one small trained AI for each part of your business you care about. If you only care about email and Instagram, your machine has two boxes. Vishen's Instagram Reels Studio project holds instructions, files on his top-performing reels, briefs and reusable prompts, built largely by asking Claude to interview him.",
+  "Three levels again: understanding, optimisation, automation. At the most advanced level Vishen runs a personal AI companion on WhatsApp that holds his notes and memories, sits in his meetings, develops its own skills and drafted the slides for the Product Step Ladder session you had just watched. You can build your own version, but the entry point is one Claude project for one channel."
+ ],
+ "frameworks": [
+  {
+   "name": "The Free Product Content Machine",
+   "steps": [
+    "Block specific hours each week for content (Vishen: about two hours on Tuesday for a Wednesday newsletter) and allow yourself to be imperfect.",
+    "Create one signature (pillar) piece from something you are exploring that week.",
+    "Generate the long-form outputs from it: a YouTube or podcast script, a livestream, a LinkedIn post, a newsletter.",
+    "Create the social derivatives: a carousel, a reel, a TikTok, five social posts.",
+    "Write one email that teases what they will learn and drives to the long-form piece.",
+    "Point all of it at your masterclass landing page, which sells your flagship course.",
+    "Repeat for each platform you use until you have a scalable content engine (weekly total: 8 pieces, 32 a month)."
+   ]
+  },
+  {
+   "name": "Building a Claude Project for a Content Channel (as demonstrated)",
+   "steps": [
+    "Tell Claude plainly what you need it to become good at, in your own words, even grumpy ones. No prompt engineering required.",
+    "Give it a real piece of source material, such as a speech, and let it produce the first draft for that channel.",
+    "Give feedback: make it sound like me, add this detail, change that line. Provide your Speaking Style Guide if you have one.",
+    "Ask it to remember your preferences and create a project for that channel, giving you the project files.",
+    "Copy the project instructions file into a new project's instructions and drop the remaining guideline files into the project.",
+    "Reuse the project every week; you only set it up once."
+   ]
+  },
+  {
+   "name": "Creating a Speaking Style Guide",
+   "steps": [
+    "Gather transcripts of your prior talks or writing.",
+    "Load them into Claude or ChatGPT.",
+    "Ask it to analyse them and produce a speaking style guide you can use with any AI.",
+    "Attach the guide whenever an output does not sound like you."
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "The best experts only spend one day a month, and in one day a month, they produce enough content for the next 30 days."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "The message I want you to take home is this. Content is not a creative act. It is a system."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "And that's what I want you to understand, like, AI has moved beyond prompt engineering."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Once you get it to this level, this is not about working harder. It's about installing a content operating system. You set it up once, and it runs."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "So remember, there are 3 levels of understanding how to become an expert. Understanding. Optimization. Automation. Automation is when work just disappears."
+  }
+ ],
+ "dialogue": [],
+ "exercises": [
+  "Map your own business the way Vishen mapped his: list the content channels you actually care about (for example, just email and Instagram) and draw one box for each.",
+  "Create a Speaking Style Guide: load your past talks, posts or emails into an AI and ask it to analyse them and produce a style guide you can reuse.",
+  "Build your first Claude project for one channel by following the demonstrated steps: describe what you need, feed it a speech or transcript, give feedback, then ask it to turn itself into a reusable project."
+ ],
+ "next_steps": [
+  "Block two hours in your calendar this week for content, on a fixed day, and protect it.",
+  "Write one signature piece from something you are genuinely exploring right now.",
+  "Use an AI to turn that piece into one email, one short video script and one social post, then fine-tune until it sounds like you.",
+  "Make sure each derivative links to the long-form piece, and that the long-form piece links to the page where you sell your flagship course."
+ ],
+ "attribution_notes": "Lines marked Vishen are Vishen Lakhiani; lines marked Mindvalley are host Jason Goldberg introducing the session and, at the end, summarising and reading chat responses. Transcription errors in names were corrected (Vision to Vishen, Claud to Claude, Silver Ultramine to Silva Ultramind, Daniel Prisley to Daniel Priestley)."
+}

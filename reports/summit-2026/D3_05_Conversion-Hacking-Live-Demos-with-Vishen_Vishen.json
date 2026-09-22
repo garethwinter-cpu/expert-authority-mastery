@@ -1,0 +1,103 @@
+{
+ "id": "D3_05_Conversion-Hacking-Live-Demos-with-Vishen_Vishen",
+ "title": "Conversion Hacking: Live Demos with Vishen",
+ "day": "Day 3",
+ "date": "Sunday 20 September 2026",
+ "speakers": [
+  "Vishen Lakhiani"
+ ],
+ "host": "Jason Goldberg",
+ "format": "live demo",
+ "overview": "Vishen Lakhiani took you inside real Mindvalley funnels to show that the money is in the arrows, not the boxes: every arrow on a funnel diagram is a conversion number you can test and improve. Working live, he built an autoresponder sequence in the background while teaching, redesigned a masterclass landing page with AI, showed an AI simulating and grading funnel tests, and finished with the conversion rules that matter most: clarity, credibility and honest urgency, with the headline doing 70 to 80 per cent of the work. Jason Goldberg then closed the summit with a story about permission and one final exercise.",
+ "key_ideas": [
+  "The arrow, not the box. On a funnel diagram most people look at the products (the boxes); the arrow between a 3-minute video and the website is the percentage of viewers who click, and conversion hacking means improving those numbers. If the sign-up rate on a webinar page doubles, revenue more or less doubles. First case, the Quantum Jumping flagship course page: published in 2008, 96,000 students, still doing millions a year, and the author's children still receive royalties. The page looks plain because fancy versions were tested and lost; adding one simple box lifted sales by about 7 per cent. A good flagship course is a long-term asset, like a book.",
+  "Case: building the funnel around the flagship. The mistake is driving free content and ads straight to the paid course. Instead put the course in the middle and send traffic to a free offer, testing two: a webinar and a free email lesson (typically a 14-day sequence). Both produce leads, both point leads to the course, and everyone who does not buy still lands on your author list, which you email about once a week.",
+  "Case: Sonia Choquette's website. Clear sections (start here, programmes, certifications, community), a 'send me the kit' free intuition meditation kit, a thank-you page that delivers the promised meditation plus a Barking Dog Meditation PDF, and a simple, slightly off-centre training video shot on a basic tripod. Sonia found that one or two emails a week was the sweet spot; more emails did not raise revenue, and fewer made each one more valued. From that trust she directs people to certifications, community, consulting, VIP events and mentoring.",
+  "Case: the CoursePro autoresponder, generated in the background while Vishen taught. Every email in the sequence was written in a couple of minutes, in his and Jimmy Naraine's voices, pulling the best stories from the course (one subject line: 'The course I sold to almost nobody'). His estimate for a whole flagship build: outline the course in a day, record at roughly two hours per finished hour, and assemble the entire funnel in weeks with no extra staff. Build and deploy, often the same day.",
+  "Case: redesigning a masterclass landing page. Vishen gave his AI page tool the existing page, asked it to apply conversion psychology and the best conversion patterns, and handed it a design template link. The goal was one number: webinar page to lead, from a 43 per cent sign-up rate towards 50 per cent. Rather than testing the one new version against the control, he asks for five variants, has the AI test them against simulated users, then tests only the winner against the control: what used to be months of work, done in about an hour for a few dollars in AI credits. The key input is a description of your customer: Vishen showed the file built from attendees' own hopes and goals; with that, the AI predicts what will sell, right down to pricing. He cited the founder of Eight Sleep replacing an email team with an AI now running a 100-million-dollar-a-year channel.",
+  "Case: the AI funnel stack. A funnel-analysis AI runs simulations across offers and sequences on around 10,000 simulated users and recommends what ships today; it refused one variant because it broke a customer promise. Its page templates go to a copywriting AI trained on the leading copywriters, then to a page-building AI trained on the product portfolio, which produced a complete upsell page needing only a cover image and a video embed. The system also grades human work: it gave one of the team's tests a C and caught an FAQ still describing a monthly plan that had been removed.",
+  "The average funnel converts at about 2.35 per cent, and visitors decide in 3 seconds. Only three things move a user: is it clear, is it credible, is it urgent. Run a 5-second test: show your page to a stranger and ask what it offers and who it is for. Credibility comes from social proof, authority markers and specificity (real numbers such as 24,574 stories, never made-up ones). Urgency must be real: a class that starts on a date, a bonus that ends at 11.59pm, never a fake 48-hour timer that is still up at 72 hours.",
+  "The headline does 70 to 80 per cent of the work. On the Silva Ultramind site, nothing beat 'Why do some people have it all while others stumble and crawl?' for five years. Test the headline before anything else. And fix your calls to action: never 'Submit', 'Click here' or 'Learn more'; use 'Start my free trial', 'Get my free guide', 'Yes, I want in', 'Claim my spot', 'Watch the webinar'."
+ ],
+ "frameworks": [
+  {
+   "name": "Clarity, Credibility, Urgency",
+   "steps": [
+    "Clarity: the quality of your copy; a stranger can say what the page offers and who it is for within 5 seconds.",
+    "Credibility: testimonials, social proof, authority markers and specific real numbers.",
+    "Urgency: a genuine reason to act now (a start date, a real deadline), never fake timers."
+   ]
+  },
+  {
+   "name": "Conversion hacking with AI",
+   "steps": [
+    "Map the funnel and pick one arrow to improve (for example webinar page to lead, 43 per cent to 50 per cent).",
+    "Give the AI your current page, your customer description and a design template, and ask it to apply conversion psychology.",
+    "Ask for five variants, not one, and let the AI test them against simulated users.",
+    "Test only the winning variant against your live control with real users.",
+    "Feed the results back so every test makes the system smarter, then repeat."
+   ]
+  }
+ ],
+ "quotes": [
+  {
+   "speaker": "Jason Goldberg",
+   "text": "The businesses that win aren't the ones that have the best funnel, they're the ones who test the fastest."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Show your landing page to someone who's never seen it. Ask them, what does this page offer? Who is it for? If they can't answer in 5 seconds, you have a clarity problem."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Real urgency. The class starts on this date, therefore you have to sign up before the class starts."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "I don't want you wasting months building your optimal funnel. I want you doing it in days. And then making money for months."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "If you don't have a plan for Monday, you don't have a plan."
+  }
+ ],
+ "dialogue": [
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Vishen's going to take a real funnel and tear it apart, stage by stage, to show you exactly what you should be looking at to keep testing and optimising. How many people land on your page and sign up versus bounce? How many who sign up for your masterclass actually show up? Most experts have no idea where their funnel is leaking."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Welcome back, everyone. This has been the summit where I've been teaching the longest. Most people look at these boxes, Lifebook, Soul Collection. But really, the most important thing is not the box, it's the arrow. The arrow represents a conversion number."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "Am I going to put this version up and test it against the control? No, it's a waste of time. I'm going to ask the AI to create five more versions, test those five against itself with imaginary AI users, and then test the winner against the control. That's five months of work done in one hour."
+  },
+  {
+   "speaker": "Audience member",
+   "text": "AI can't do as good a test as real users."
+  },
+  {
+   "speaker": "Vishen Lakhiani",
+   "text": "You're right, that's why we're still testing with real users. But I'm pushing the AI, because the cost is minuscule, to give me not one variation but five. It forces the AI to think better. And if you give it a file describing your users, their hopes and dreams, it predicts what would sell, all the way down to pricing."
+  },
+  {
+   "speaker": "Jason Goldberg",
+   "text": "Grab whatever you've been using to take notes and circle that one thing, the idea you can't stop thinking about. Then put a date next to it for when you're actually going to do something with it. A day becomes a week, a week becomes a month, a month becomes a year."
+  }
+ ],
+ "exercises": [
+  "Run a 5-second test: show your landing page to someone who has never seen it and ask what it offers and who it is for. If they cannot answer, rewrite for clarity.",
+  "Audit your funnel arrows: write down the conversion number for each step (content to page, page to sign-up, sign-up to show-up, show-up to purchase) and pick the one leak to fix first.",
+  "Rewrite every call-to-action button on your pages from 'Submit', 'Click here' or 'Learn more' to a first-person outcome such as 'Get my free guide' or 'Claim my spot'.",
+  "Summit close: circle the one idea from these three days you cannot stop thinking about and write a date next to it for when you will act on it. If you do not have a plan for Monday, you do not have a plan."
+ ],
+ "next_steps": [
+  "Draft two headline alternatives for your main page and test them before changing anything else.",
+  "Check every urgency claim on your pages is true (a real start date, a real deadline) and remove anything fake.",
+  "Set up one free offer (a webinar or a free email lesson) between your content and your paid course, and start a weekly email to your list.",
+  "Do the one-thing-with-a-date exercise and put that date in your calendar today."
+ ],
+ "attribution_notes": "Lines marked 'Mindvalley' are the host Jason Goldberg, who introduced the segment and delivered the summit's closing talk; all teaching lines are Vishen Lakhiani (transcribed variously as Vishn, Vision and Vishnu). The live demos used Mindvalley's own pages, Sonia Choquette's public website and the CoursePro course rather than attendee pages. The one audience exchange came from a chat comment (from a participant Vishen addressed by first name) that Vishen read and answered aloud, so the audience line is a paraphrase of his summary. Banter about ordering food at the very end has been left out."
+}
