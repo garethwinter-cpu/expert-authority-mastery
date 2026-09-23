@@ -11,13 +11,26 @@ app.use('/authors', express.static(path.resolve(ROOT, 'authors'), { maxAge: '7d'
 
 const page = (file) => (req, res) => res.sendFile(path.resolve(ROOT, file));
 
+// Expert & Authority curriculum: rendered from Airtable (lib/curriculum.js) on every request.
+const curriculum = require('./lib/curriculum');
+const fs = require('fs');
+const TEMPLATE = path.resolve(ROOT, 'expert-authority.html');
+const safeJson = (obj) => JSON.stringify(obj).replace(/</g, '\\u003c').replace(/\u2028/g, '\\u2028').replace(/\u2029/g, '\\u2029');
+app.use('/covers', express.static(path.resolve(ROOT, 'covers'), { maxAge: '1d' }));
+app.get('/expert-authority', async (req, res) => {
+  const data = await curriculum.load();
+  const html = fs.readFileSync(TEMPLATE, 'utf8').replace('__CURRICULUM_JSON__', safeJson(data));
+  res.set('Cache-Control', 'no-cache').type('html').send(html);
+});
+app.get('/api/curriculum', async (req, res) => {
+  res.set('Cache-Control', 'no-cache').json(await curriculum.load());
+});
+
 app.get('/', page('index.html'));
-app.get('/expert-authority', page('expert-authority.html'));
-app.get('/expert-authority-v2', page('expert-authority-v2.html'));
-app.get('/expert-authority-v3', page('expert-authority-v3.html'));
-app.get('/expert-authority-v4', page('expert-authority-v4.html'));
-app.get('/expert-authority-v5', page('expert-authority-v5.html'));
-app.get('/expert-authority-compare', page('expert-authority-compare.html'));
+// earlier curriculum drafts (v1 to v5 and the comparison) were retired on 23 September 2026;
+// their links land on the live curriculum
+['/expert-authority-v2', '/expert-authority-v3', '/expert-authority-v4', '/expert-authority-v5', '/expert-authority-compare']
+  .forEach((r) => app.get(r, (req, res) => res.redirect(301, '/expert-authority')));
 app.get('/accelerator-edit-script', page('expert-authority-accelerator-script.html'));
 app.get('/ai-founders', page('ai-founders.html'));
 app.get('/positioning', page('positioning.html'));

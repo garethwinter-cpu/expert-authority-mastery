@@ -1,7 +1,7 @@
 {
   "name": "mastery-proposals",
-  "version": "1.1.28",
-  "description": "Mindvalley Mastery curriculum proposals \u2014 one repo, one data source, one design system",
+  "version": "1.2.0",
+  "description": "Mindvalley Mastery curriculum, rendered from Airtable, one design system",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

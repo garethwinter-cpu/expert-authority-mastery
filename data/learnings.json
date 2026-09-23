@@ -1,631 +1,639 @@
 {
-  "_meta": {
-    "purpose": "Curriculum-design learnings mined from our own cohort data. Both Mastery proposals (Expert & Authority, AI for Founders) read from this file so the same mistake is never designed in twice.",
-    "read_at": "2026-08-18",
-    "sources": {
-      "SIM": "appKlfvxdXofNlFfk — Speaking & Influence Mastery: 84 lesson records across 2025 (492 enrolled) and 2026 (456 enrolled), plus 148 detractor feedback submissions (rating ≤6)",
-      "AIM": "appHS19yXObg8sHZv — AI Summit & Mastery: 176 lesson records, 2023–2026 cohorts",
-      "comparison_page": "S&I 2025-vs-2026 comparison rollup, 18 Aug 2026"
-    }
-  },
-  "data_hygiene": [
-    "AIM records from 2023–24 cohorts use a 5-POINT scale (e.g. 'Build Applications with Glide' 5.00/5 = perfect, not 5/10). Never rank across cohorts without checking the scale. The 'bottom of base' is mostly scale confusion, not bad sessions.",
-    "SIM 2025 per-lesson ratings live in the comparison rollup, not the base's Avg Rating lookup — the base carries 2025 attendance only.",
-    "Single-vote rows (n=1–3) appear throughout every base and must be excluded before any ranking."
-  ],
-  "learnings": [
-    {
-      "id": "L1",
-      "name": "A multi-day intensive on the mainline cadence breaks retention permanently",
-      "evidence": "SIM 2025: show-up averaged ~57% across sessions 1–9. The One Talk Workshop ran as three consecutive mainline sessions: 39% → 31% → 34%. Attendance NEVER recovered — the post-OTW half of the programme ran 45% declining to 33%, a permanent ~14-point break in the curve.",
-      "rule": "A multi-day intensive must not consume mainline slots, and should not be assumed to draw on a weekend either. Put the keystone content on the normal weekly cadence; keep any extra day single, optional, with a mainline fallback, and measure it.",
-      "verified_fix": "SIM 2026 ran the same 3-day OTW as a Fri–Sun Bonus (Aug 7–9). The next mainline sessions held at 56% and 58%, so the weekend protected the cadence. But the base holds no attendance and no ratings for the weekend itself (the rating fields on the 2026 rows are 2025 values copied across). Proven for cadence protection; unproven for the workshop's own uptake. Corrected 7 Sep 2026."
-    },
-    {
-      "id": "L2",
-      "name": "Off-cadence add-on sessions die regardless of teacher quality",
-      "evidence": "SIM 2025: Paul McKenna — the base's strongest guest asset (9.61–9.62) — drew 23% (112/492) for an off-rhythm Monday add-on, the worst attendance in the base. Dr. Shadé Zahrai's off-cadence session: 26%.",
-      "rule": "Never schedule content outside the established weekly rhythm. If it matters, it gets a mainline slot; if it doesn't fit, it becomes a recorded bonus."
-    },
-    {
-      "id": "L3",
-      "name": "Teacher substitution destroys a session",
-      "evidence": "SIM 2025: the Strategic Storytelling workshop swapped Eric Edmeades for a substitute host. It drew 24 detractor submissions — the most of any session in the base. Verbatim: 'Not organized, changed speaker, very disjointed, disappointed.'",
-      "rule": "Announce the named teacher only when confirmed, and never swap after announcement. A cancelled session damages less than a substituted one."
-    },
-    {
-      "id": "L4",
-      "name": "Breakout rooms are the #1 detractor theme",
-      "evidence": "20 of 148 SIM detractor comments mention breakout rooms — the largest single theme, ahead of tech issues (7) and length (5).",
-      "rule": "Breakouts only with a tight artefact-producing brief, a time-box, and an opt-out. Never as filler."
-    },
-    {
-      "id": "L5",
-      "name": "A long single-lead programme hits a repetition cliff around month two",
-      "evidence": "SIM 2025 ran ~46 sessions with one lead teacher. Verbatim detractor: 'Lost interest since 2nd month… it's been pretty much the same topic. Now it feels more like a chit chat session than a real Mastery.'",
-      "rule": "Rotate named authors on the teach slot and make each week ship a distinct artefact, so no two weeks feel interchangeable. 17–18 weeks, not 20+."
-    },
-    {
-      "id": "L6",
-      "name": "Q&A-only and low-content sessions are punished",
-      "evidence": "SIM 2025 detractors: 'I was disappointed that this was only Q&A — would have loved more content' (Professional Speaking week). AIM unstructured community calls: 5.89.",
-      "rule": "Every live touchpoint has a job and a deliverable. Q&A attaches to content; it is never the content."
-    },
-    {
-      "id": "L7",
-      "name": "Scope drift into a neighbouring programme's territory generates refund requests",
-      "evidence": "SIM 2025 detractor on the product-creation week: 'I'm only interested in speaking, not creating a course or teaching or creating a business.' Another student asked about refund timing when early weeks felt like business prep. SIM's back half (Getting Booked, Business Models for Speakers, Productizing Your Message) is Expert & Authority territory taught to a speaking audience.",
-      "rule": "Each programme teaches its own promise and cross-refers for the rest. The three-programme boundary (SIM = the talk, E&A = the business of being known, AIF = the machine) is a retention mechanism, not just marketing."
-    },
-    {
-      "id": "L8",
-      "name": "Abstract kickoffs fail; kickoffs are structurally weak even when competent",
-      "evidence": "AIM 'Kick Off & Define Your Vision in the Age of AI' (Mindvalley Team): 6.04, n=116, in front of 661. Even Vishen's own 2025 AIM kickoff only hit 8.47. Kickoff type average across AIM: 7.26 — the weakest session type.",
-      "rule": "Open with a build that produces a personal win in session one. Keep the kickoff short on vision and long on doing."
-    },
-    {
-      "id": "L9",
-      "name": "The paired Teach → Workshop cadence holds a room — but the workshop needs its own owner",
-      "evidence": "SIM 2026 (paired cadence): last-3-session attendance 56.4% vs 41.5% in 2025. But SIM 2026 workshops rate 9.25 vs 9.55 for lessons — every workshop below every teach bar the opener. AIM's dedicated-owner labs average 9.2 with a 9.46 ceiling.",
-      "rule": "Keep the paired cadence. Give the workshop slot a named owner whose only job is implementation, and require a shipped artefact per session."
-    },
-    {
-      "id": "L10",
-      "name": "Capstone integration sessions are the highest-rated thing we run",
-      "evidence": "AIM 'Tying Everything Together' (Vykintas): 9.87 n=99 — the top-rated session in the base, plus 9.66 for its Q&A and 9.46 for its lab. SIM 2026's highest is also an integrative session (Story, 9.74).",
-      "rule": "Design an explicit integration moment where students assemble everything into one working thing. Do not leave integration implicit."
-    },
-    {
-      "id": "L11",
-      "name": "Claims drift when documents cite documents",
-      "evidence": "The AI Founders proposal cites 'a perfect-10 Implementation Lab'. The base shows labs from 8.14 to 9.46 — no 10 exists (the 9.87 was the capstone teach). The author deck's 'Chris Do 9.83, highest in SMM' is 9.78 and ranks 6th. Natalie Ellis 9.25 is 9.16.",
-      "rule": "Every figure in a proposal is re-derived from the base and carries its sample size. data/authors.json is the only citation source."
-    },
-    {
-      "id": "mvu26-critic-path",
-      "source": "MVU 2026 stage talk Day 2 (Vishen)",
-      "finding": "The Critic Path: become the niche's trusted reviewer before its teacher. Remote-viewing blog: 70% opt-in on a coming-soon pop-up, biggest list in the niche in 6 months, $970K in 18 months via 50% revenue-share webinars.",
-      "status": "Vishen's own account, not independently verified",
-      "applied_to": "E&A W3 + doctrine table"
-    },
-    {
-      "id": "mvu26-three-stories",
-      "source": "MVU 2026 stage talks Days 8-9 (Vishen)",
-      "finding": "Three Founder Stories: vision ('imagine a world where…', 10 years ahead, mission not product), plan (backward staircase yr 1/3/6/10, what+why never how), values (wound→fury→change ×3 → manifesto). Partner-scoring exercise: describe, score 1-10, rewrite, rescore.",
-      "status": "framework from stage; Nora Cavani Forbes story as proof point",
-      "applied_to": "E&A W4 teach+lab, W8 story bank"
-    },
-    {
-      "id": "mvu26-aov",
-      "source": "MVU 2026 stage talk Day 2 (Vishen)",
-      "finding": "AOV mechanics: order bumps ($9-17 zero-cost tools), upsell 1, downsell, upsell 2; price-test 29/39/49; webinar needed above ~$500, under $99 sells off a single ad/reel; commenters ~3x more likely to buy.",
-      "status": "Vishen's operating rules, self-reported",
-      "applied_to": "E&A W14 lab"
-    },
-    {
-      "id": "mvu26-30day",
-      "source": "MVU 2026 stage talk Day 2 (Vishen)",
-      "finding": "30-day rule: days 1-7 over-deliver + drive consumption; days 8-14 engagement, no selling; days 14-28 free monthly summit sells high ticket; solopreneur recoups ad spend in 30 days (Mindvalley as publisher: 9 months).",
-      "status": "Vishen's operating rules, self-reported",
-      "applied_to": "E&A W14 teach + doctrine table"
-    },
-    {
-      "id": "mvu26-witness",
-      "source": "MVU 2026 stage talks Days 1+10 (Vishen)",
-      "finding": "Change is a witness problem, not a willpower problem (expectancy effect). Identity sabbatical exercise; accountability by witnessing (Friday text; commitments kept for others per Gretchen Rubin); 'masters never change their mind'.",
-      "status": "framework from stage",
-      "applied_to": "E&A W1 + Show Up track doctrine"
-    },
-    {
-      "id": "mvu26-imposter",
-      "source": "MVU 2026 stage talk Day 2 — Mentimeter, 196 respondents",
-      "finding": "Imposter syndrome was the #2 most-voted audience question on becoming an expert/authority.",
-      "status": "live audience poll, n=196",
-      "applied_to": "E&A W2 demand evidence"
-    },
-    {
-      "id": "mvu26-faceless",
-      "source": "MVU 2026 stage talk Day 2 (Vishen)",
-      "finding": "Faceless Instagram posts (B-roll + caption) earning $40-50K/month via ManyChat comment-to-DM into the S&I webinar funnel selling a $5K programme.",
-      "status": "Vishen's own account of his funnel",
-      "applied_to": "E&A W2/W10 no-face formats"
-    },
-    {
-      "id": "mvu26-42ads",
-      "source": "MVU 2026 stage talk Day 2 (Vishen)",
-      "finding": "2022 ad test: 42 ads produced, 4 worked (~10%); those four pulled ~quarter-billion dollars over three years. Doctrine: the most important skill is operational efficiency in testing.",
-      "status": "Vishen's own figures, not verified",
-      "applied_to": "E&A intensive testing doctrine"
-    },
-    {
-      "id": "mvu26-priestley-nps",
-      "source": "MVU 2026 stage talk Day 1 (Vishen)",
-      "finding": "Daniel Priestley's 8-hour MVU accelerator scored NPS 90 — 'higher NPS than the iPhone when it was first released'.",
-      "status": "stated from stage; corroborates the separately reported 84-NPS AIM lab data",
-      "applied_to": "AIF Priestley case"
-    },
-    {
-      "id": "mvu26-masterclass-total",
-      "source": "Accelerator + MVU Day 2 stage talk (Vishen)",
-      "finding": "Masterclass sales total: 'half a billion' on the accelerator stage vs 'between 400 million to half a billion' on the Day 2 stage. Carry the range $400-500M; both are self-reported.",
-      "status": "self-reported, two versions days apart",
-      "applied_to": "both proposals — range used, legal flag refreshed"
-    },
-    {
-      "id": "mvu26-costdrop",
-      "source": "MVU 2026 stage talk Day 9 (Vishen)",
-      "finding": "Build cost for software down 97% since February 2026 ($100K → $3K); build speed up ~50x. Basis of the 'why now' for founder-built products.",
-      "status": "Vishen's internal figures",
-      "applied_to": "AIF W12 / why-now"
-    },
-    {
-      "id": "jaideep-onepager-adopted",
-      "source": "Jaideep's Academy one-pager (shareable-page.vercel.app/mastery-one-pager.html, Aug 24 2026)",
-      "finding": "Portfolio positioning system adopted: one-verb promises (E&A 'Be chosen.', AIF 'Run on AI.'), signature diagnostic sentences ('I'm great at what I do, but nobody knows me.' / 'My business can't run a single day without me.'), and neighbour boundary lines (Speaking vs Authority: room asks for you; Social vs Authority: chosen by the right ones; AI Mastery vs AIF: transforms you vs your business).",
-      "status": "adopted",
-      "applied_to": [
-        "data/boundary.json",
-        "index.html",
-        "expert-authority.html (via boundary build)",
-        "ai-founders.html (via boundary build)"
-      ]
-    },
-    {
-      "id": "jaideep-pricing-adopted",
-      "source": "Jaideep's Academy one-pager; Jaideep owns the Mastery business",
-      "finding": "AIF priced $5,999 Install / $7,999 Install + Certify (Certified AI Consultant credential + first-client sprint, month 5). Tier structure adopted per Gareth; credential curriculum, certification bar and faculty owner still unspecified. E&A price anchor $4,999 vs $5,999 flagged open by Jaideep; page carries the stage's $4,999 until he rules.",
-      "status": "adopted — Certify tier scope pending spec",
-      "applied_to": [
-        "ai-founders.html",
-        "index.html",
-        "expert-authority.html (price-anchor callout)"
-      ]
-    },
-    {
-      "id": "jaideep-onepager-contested",
-      "source": "Jaideep's Academy one-pager vs E&A proposal + MVU 2026 transcripts",
-      "finding": "Contested and NOT adopted: (1) off-camera/copy-led E&A — contradicts Visibility Wound W1, McKenna confidence-on-camera W2, Kash's camera labs, the shot masterclass; faceless IG is one optional path, not the product; (2) the 60-min masterclass + intensive omitted entirely from his 4-month plan; (3) community demoted to monthly calls — contradicts the weekly witnessing pods doctrine he himself quotes; (4) core author bench absent (McKenna, Do, Nichols, Ellis, Christian, Lee, Ajit) and Priestley moved into E&A, blurring the AIF boundary; (5) AIF six functions vs the deck's five pillars; (6) unsourced figures: '110 of the world's top experts', '$50k/mo' vs verified $40-50K range, NPS +84 cited without source or n. Guild kept out of scope per Gareth (separate, undefined product).",
-      "status": "contested — reconciliation note sent to Jaideep",
-      "applied_to": [
-        "reconciliation note artifact"
-      ]
-    },
-    {
-      "id": "faculty-status-reset-aug24",
-      "source": "Gareth, 24 Aug 2026",
-      "finding": "All guest authors on BOTH programmes are 'In consideration' until Gareth confirms otherwise — no Confirmed status for Lisa Nichols, Paul McKenna, Kwame Christian, John Lee (E&A) or Noelle Russell, Marie Forleo, Shawn Kanungo (AIF). Vishen (and AIF co-owners + internal Vykintas) remain the confirmed spine. Alessio Pieroni is lab lead ONLY, not an author — his W7 teach moved to Vishen (Alessio keeps the W7 lab). E&A lab-lead bench is now FIVE, all in consideration: Alessio, Kash, Jimmy Naraine, Sabrina Stocker, Safwaan Mohammed (no more 'alternate' framing). Marisa Peer ADDED as named alternative to Paul McKenna on the W2 confidence lane (diversification — Paul appears across many programmes); Paul not removed; one of them teaches W2, decided before contracts; Marisa's cohort ratings still need pulling. Alex Dogliotti moved to lab/implementation (W14+W15 labs with Vykintas), not co-teach.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "ai-founders.html",
-        "data/boundary.json",
-        "index.html"
-      ]
-    },
-    {
-      "id": "maria-wendt-option-aug24",
-      "source": "Gareth, 24 Aug 2026; Authors table app4ulN4GnBRvcfAL/tbl1vRMe41Jh468ey (photo attgD11NAA0jccsf0)",
-      "finding": "Maria Wendt added as an E&A author OPTION, in consideration, lane to be assigned (closest fit: audience/traffic, W10-11, adjacent to Natalie Ellis/Kash). No sessions found in SMM or E&A bases — no cohort rating; pilot against the 9.3 bar before contract. Headshot pulled from Authors table and stored as authors/maria-wendt.jpg (Airtable URLs expire).",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "data/boundary.json",
-        "index.html",
-        "authors/maria-wendt.jpg"
-      ]
-    },
-    {
-      "id": "jaideep-final-roster-aug25",
-      "source": "Jaideep's final-roster note (screenshot, 25 Aug 2026) + Gareth's instruction: keep the in-consideration bench, remove the cut names, add the new ones",
-      "finding": "CUT from E&A faculty: Marisa Peer (option removed same day it was added) and Lisa Nichols (out per Gareth's call, relayed by Jaideep) — their stories stay as case-study material (W1 quote, W4 first-stage story); W8 story week moves to Vishen (11 live sessions, 12 bookends). KEPT per Gareth: Paul McKenna, Chris Do, Kwame, John Lee, Natalie, Ajit, all lab leads. ADDED as options: E&A — Daniel Priestley (demand & oversubscription; FLAG: breaks the zero-overlap rule, he co-owns AIF — bounded guest week only, rule to be rewritten deliberately); Maria Wendt lane updated to simple offers/leverage marketing, step-ladder module, roster claim '$20M on $20 products' UNVERIFIED. AIF — Nick Sonnenberg (operations; overlaps Vykintas W11), Cassie Kozyrkov (data & decisions; no photo in Authors table), Domenic Ashburn (marketing/creative; promoted from reserve, verified 9.47+ floor across six sessions), Sara Davison & Tyler Fisk (build-lab support pair). Roster names NOT adopted: 'Jimmy Confirmed' (stays in consideration per Gareth's standing rule); Regan Hillyer, Jeffrey Allen, Jim Kwik were never on our pages. Headshots pulled from Authors table for Nick, Domenic, Sara, Tyler; Cassie has none.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "ai-founders.html",
-        "data/boundary.json",
-        "index.html",
-        "authors/*.jpg"
-      ]
-    },
-    {
-      "id": "guild-tier-aug25",
-      "source": "MVU 2026 transcripts (Day 1 Tallinn guild doctrine; accelerator launch pitch; Day 2 early $5K version; Day 9 teaser) + Gareth's guild brief",
-      "finding": "Guild tier built: /expert-authority-guild ('Stay chosen.') and /ai-founders-guild ('Stay ahead.'). $10,000/yr VALIDATED verbatim from the accelerator stage ('this is 10,000 a year, and that's just starting… may go up to 20,000'); $9,999 stated in the same pitch; Day 2's $5,000 framing is the earlier draft, superseded — resolves the parked Mastermind price conflict. E&A Guild floor: $100K from expert business (verbatim). AIF Guild floor: OPEN — proposed OS-in-production + revenue floor TBD. Six-pillar architecture (Floor, Pulse, Commons, Proximity/Guild Launches, Pods & Witnessing, Moot); evergreen monthly intake; kick-and-refund; AI tools add-on ~$49.99/mo (stage). Naming 'Guild' over stage's 'Mastermind' pending Vishen+Jaideep sign-off. Co-investment language withheld pending legal. E&A page's Mastermind references renamed to Guild ($9,999 -> $10,000 per the stage's own '10K a year'); AIF continuity rung absorbed into the Guild.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-guild.html",
-        "ai-founders-guild.html",
-        "index.html",
-        "server.js",
-        "expert-authority.html",
-        "ai-founders.html"
-      ]
-    },
-    {
-      "id": "tomkirby-playbook-aug27",
-      "source": "Tom Kirby, 'The Mastery Playbook 2027 — Academy build' (p.mval.me, 27 Aug 2026), cross-checked against the Mastery Performance Dashboard; uploaded by Gareth 28 Aug",
-      "finding": "ADOPTED into both Mastery format specs: two-week deliberate onboarding arc (summit -> early-value call -> Finerminds journey -> day-14 handoff); materials-within-24h compliance; guaranteed personal review (feedback lottery retired); effort-based satisfaction guarantee (in design, pairs with certification by shipped assets/running systems). ADOPTED into both Guild pages: top-10-by-contribution auto-invite at graduation (waives application, never floor/price); 'renewal is the only metric'. SOURCED AT LAST: AI Mastery 2026 = +84 NPS (dashboard-pulled) AND 23.8% refunds / 40.7% deposits from reactive onboarding — high NPS does not protect a launch. Coach-host evidence now citable: Vyk integration sessions 9.14 vs 8.94 lessons, ~61/96 NPS mentions, +43 NPS jump; cross-mastery NPS: SMM +109 recovery, Manifesting +76, Spiritual +86. HELD/REJECTED: the ~4-day lesson-to-integration cadence standard conflicts with our S&I paired Tue->Thu retention data — flagged on both pages for a data conversation before the dashboard cadence-integrity check ships, not silently adopted; the one-coach-host doctrine vs our two-anchor E&A lab design raised as an explicit launch-gate decision (candidates Alessio/Kash/Sabrina), not a silent restructure. FLAGS: Tom's guild pilot (~50 members, this quarter, no price/floor) must reconcile with the $10K/floor spec — one owner; his 'AI for Entrepreneurs' naming drifts from AI for Founders; he references an 'E&A 2026 certification cohort' that exists in no plan we hold.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "ai-founders.html",
-        "expert-authority-guild.html",
-        "ai-founders-guild.html"
-      ]
-    },
-    {
-      "id": "ea-speaker-table-pull-aug31",
-      "source": "Live E&A speaker table appnHZYcirCg1VqUP/tblShRX4kUaq1Ur1P, pulled 31 Aug 2026",
-      "finding": "Summit (Sep 2026, promo) has 20 rows: Confirmed = Vishen only; Outreach done = Alessio Pieroni, Natalie Ellis; In consideration = Chris Do (added 30 Aug — resolves the 'not on the list' action), John Lee, Kwame, Jimmy, Sabrina, Kash, Maria Wendt (added 31 Aug), Marisa Peer (STILL live despite Jaideep's cut — discrepancy), Keith Ferrazzi, Nir Eyal, Simone Vincenzi, Jason Goldberg, Regan Hillyer; NOT APPROVED = Paul McKenna (!), Lisa Nichols, Safwaan Mohammed (!), Vykintas. Mastery table (Oct 2026, the programme) = one unstatused Vishen row + one empty row; Vishen's Accelerator row = 'Contract to be signed'. Actions surfaced on-page: W2 occupant ruling (Paul not approved vs Marisa in consideration), Safwaan lab seat ruling, Ajit has no E&A row, six Summit-only promo names are not Mastery authors, Kash spelling on table is 'Rupareliaa' vs our 'Rupalia'. Page statuses updated: Chris Do -> In consideration; Natalie + Alessio -> Outreach done; Paul -> Not approved (Summit) flag; Safwaan flagged; evidence stat now shows the 20-row breakdown.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html"
-      ]
-    },
-    {
-      "id": "ea-author-allocation-sep1",
-      "source": "Gareth's session allocation + naming ruling (2026-09-01)",
-      "finding": "Naming ruled: the curriculum stays Expert & Authority Mastery; the summit is the Expert to Authority Summit. Teach allocation locked: Vishen 8 weeks + intensive; Marisa Peer W2 (incl. summit); John Lee W10+W16; Regan Hillyer W11 (one class only); Ben Greenfield W12 (tentative); Ajit Nawalkha W13-W15. Labs: Alessio 7 days + build floor, Kash 6 days + shoot floor, Sabrina 3 days. Open: Jimmy's seat (summit-only vs W5-W6 labs back), Regan second session, Alessio's row, Ben's 'maybe'. Commercial terms live with Author Relations and never in this repo. Chris Do/Paul/Kwame/Natalie/Maria/Priestley/Safwaan moved to considered-not-allocated with evidence preserved.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "index.html",
-        "data/boundary.json"
-      ]
-    },
-    {
-      "id": "ea-transcript-alignment-sep1",
-      "source": "Quest-transcript mining (Course Pro, Uncompromised Life, RTHA, The 7-Figure Creator, The Longevity Blueprint, The Art of Manifesting, Overflow; ~2.1MB) + Sabrina's 1BFS keynote & SMM 2026 briefing + the 1 Sep author-alignment meeting (2026-09-01)",
-      "finding": "Faculty aligned to the curriculum, not vice versa. Jimmy upgraded to author (6 lessons): Course Pro is a near-1:1 blueprint for Module 2 and Vishen already plays the doctrine role inside it; his term is 'idea dump' (not brain dump), the 3-7x3-7 and 80% numbers are our scaffold, the pajama draft's costume is the mechanism and the footage is deleted unwatched. Marisa's W2 corrected: enough-ness not 'confidence', one session begins the shift + 21-day repetition protocol, 'being seen' is our synthesis; ladder case study cited as observed structure only. John Lee: W10 fully covered by his named IP (TLC, 3C, EDUCATE, market-in-public-sell-in-private); seeding/offer stack/minute-17/guarantee appear NOWHERE in his quest, so W16 became 'Monetise the Platform' and the close doctrine returned to Vishen's intensive; his AI-persona segment scripted as honest tension ('if it's not live, don't tell them it's live'). Regan = proof point, one W11 fireside (post-intensive slump is where inspiration earns its keep) + her summit fireside replays free in W1 under the 3-year presenter licence; zero audience-mechanics content in ~940KB of her transcripts. Ben = fireside about becoming the authority in longevity, pending Vishen (one wild card, banners if bought). Vishen: 6 teach weeks + intensive = largest share, 20 bookends, close doctrine, main stage. Commercial terms held by Author Relations.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "index.html",
-        "data/boundary.json"
-      ]
-    },
-    {
-      "id": "ea-ben-removed-sep2",
-      "source": "Gareth's ruling, 2 Sep 2026",
-      "finding": "Ben Greenfield removed from the E&A curriculum. W12 restored to Vishen live (his long-form doctrine: event sales up 70%, comedy/writing/stagecraft over prompts). Rationale: the one wild card retired: uncertain return, no teachable content-strategy method in his vault (mining verdict), Marijana against, and removing him leaves Regan as the single fireside, inside the one-fireside value rule. Pre-endorsed use of the freed seat: a seventh Jimmy lesson or his summit slot. Vishen now 7 teach weeks + intensive = 8 live, 18 bookends.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "index.html",
-        "data/boundary.json"
-      ]
-    },
-    {
-      "id": "ea-summit-airtable-sep7",
-      "source": "Airtable appnHZYcirCg1VqUP / Summit Agenda (tblJTtf6jll2UyRbW), view 2026 | Summit, read 7 Sep 2026; Speaker Engagements statuses same date",
-      "finding": "Team run-of-show for the Expert to Authority Summit (18-20 Sep 2026): 33 rows, 11 keynotes, 2 firesides, 2 offer sessions + FINAL CLOSE, 17 host segments, 2 VIP Q&As; Vishen on every offer moment; guests Marisa, Kash, Jimmy, Regan, John, Ajit plus Dawn/Nora/Ronan success stories; Jason Goldberg hosts. Eight data flags (Regan fireside dated Day 1 but Day field Day 2; Jimmy keynote at 04:00; '[speaker]' placeholder Day 3; empty Status column; no briefs for Sales Pitch/REPITCH; truncated masterclass brief; Regan brief sequencing; four names still In consideration).",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html#tab-summit"
-      ]
-    },
-    {
-      "id": "ais-summit-ratings-sep7",
-      "source": "AI Summit & Mastery base appHS19yXObg8sHZv / Summit Agenda tblOPKBItHXRd6LXc, 103 rows 2023-2026, read 7 Sep 2026",
-      "finding": "AI Summit 2026: best sessions Noelle Russell Building Your AI Workforce 4.60 (n=105), Daniel Priestley 4.51 (n=99), Eliza demo 4.51; worst Day 3 System demo 3.92, Day 3 Q&A 3.94, Shawn Kanungo 4.12 (n=93). Laser Coaching 4.39 (n=85), VIP Q&As 4.46/4.44. Votes per session fell 337 -> 99 -> 93 across the three days (2025: 3,900 -> 2,040 -> 2,050). 2023 hard close 3.78 vs 2025 integration close 4.53. Rules: open with a build; strongest content on Day 2 as demos; coaching and VIP access out-rate keynotes; close by assembling; no standalone Q&A; plant the offer on Day 1.",
-      "status": "applied",
-      "applied_to": [
-        "ai-founders.html#tab-summit"
-      ]
-    },
-    {
-      "id": "aif-summit-proposal-sep7",
-      "source": "Curriculum Team proposal, 7 Sep 2026; speaker table rows for 'AI for Founders Summit | Oct 2026' (14 rows) and an empty 35-row Summit Agenda in app7lhR1V9Fts0mNc",
-      "finding": "Proposed AI for Founders Summit run-of-show (Oct 2026, Mastery Nov 2026): Day 1 Vishen W1 frame + Daniel five pillars + Vykintas live company-brain build + founders fireside + soft open + VIP Q&A; Day 2 Noelle workforce + Marie customer intelligence + Vishen pipeline demo + Mastery Reveal + hot seats (Vishen+Daniel) + VIP Q&A; Day 3 Daniel/Alex 4-day founder week + Shawn 30-min finance cockpit demo + REPITCH + Domenic heart close + FINAL CLOSE + buyers' welcome. Same sales spine as Expert to Authority. Flags: Marie Forleo and Domenic Ashburn have no summit rows; Shawn below bar but In Negotiation; Daniel/Vykintas only Outreach done; founder stories unnamed; dates undated.",
-      "status": "proposed",
-      "applied_to": [
-        "ai-founders.html#tab-summit"
-      ]
-    },
-    {
-      "id": "ea-quiz-registrants-sep7",
-      "source": "appnHZYcirCg1VqUP/tblxGaIBEs265rYAd Expert to Authority Quiz 2026, 40 rows (36 with revenue), read 7 Sep 2026",
-      "finding": "Summit registrants: 19/36 pre-revenue, 12/36 under $25K (86% under $25K), 4 at $25-100K, 1 at $100-500K, none above. Breakdown: 18 'nobody knows I exist', 9 'can't put what I do into words' (75%), 4 plateaued, 3 one-offer, 2 followers-don't-buy. Success: 11 'THE name', 10 fully booked premium, 7 product line, 5 first clients, 3 peers. New type question: 11/14 The Expert. 20/35 two-plus years at it. Open text: visibility, articulation, self-belief, overwhelm, referrals-only.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html#tab-v2"
-      ],
-      "rule": "Weight the curriculum to the Expert path; decline scale-lever weeks (ads, app, team, multi-platform) for this room; re-read the quiz before each cohort."
-    },
-    {
-      "id": "ea-v2-vishen-inputs-sep7",
-      "source": "Vishen's Blinklife 18-week page + summit note vs team V1; Gareth's brief 7 Sep 2026",
-      "finding": "Version 2 built as an extra tab. Adopted: Authority Statement (W1), Named Signature Method (W3 renamed), marketplace validation (W5), Signature Offer language (W14), 90-day plan capstone (W17), summit arc (workbook, graduation reveal, hot seats, objection handling, hard close). Adapted: four paths as routing (Scaler -> Stagnating Expert), five pillars with Team & Scale replaced by Show Up & Stay Chosen, Schwartz as one exercise, Get Booked lab thread (W16). Declined: Cialdini week, platform dance, paid ads, app, lean team, summits week, 18 weeks, unverified figures; casting of Marisa on virality, Priestley, Shade Zahrai (cost), Roxie Nafousi (subject). Maria Wendt open question (4.91 n=33; Not Approved 31 Aug, re-added 7 Sep).",
-      "status": "proposed",
-      "applied_to": [
-        "expert-authority.html#tab-v2",
-        "index.html"
-      ]
-    },
-    {
-      "id": "ea-w9-mainline-sep7",
-      "source": "S&I base appKlfvxdXofNlFfk: Lessons (OTW 2025 Day 1–3 attendance 190/154/168 of 492; ratings 9.02/9.57/9.81; 2026 Bonus rows unmeasured), Workshop Live Feedback (21 in-person forms, NPS ≈ +5), 2026 Tuesday workshops 220–282 of 456 at 9.11–9.59; Gareth's ruling 7 Sep 2026",
-      "finding": "E&A Week 9 moved from a three-day weekend intensive to the Tue/Thu mainline (Vishen doctrine Tuesday, Alessio script build Thursday) with one optional Saturday shoot floor and a Week 10 fallback. Vishen's live load: 8 teach weeks, no weekend. The in-person 2025 complaints were specific: 400+ non-students admitted, Day 1 repeated month one, promised coaching absent, an hour cut.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority.html",
-        "data/boundary.json"
-      ]
-    },
-    {
-      "id": "ea-v2-priestley-conditional-sep7",
-      "date": "2026-09-07",
-      "area": "E&A Version 2 · Daniel Priestley",
-      "finding": "Vishen asked for Priestley. Speaker table: In consideration (added 7 Sep); Marta and Marijana are reaching out per Gareth's ruling; commercial terms with Author Relations. Ratings: 9.55 avg across 12 EM sessions; 4.51 best keynote AI Summit 2026 Day 2.",
-      "decision": "Version 2 carries him as two conditional seats, both marked 'if confirmed': Day 3 keynote 'The Key Person of Influence Scorecard' at 5:00pm London (45 min; REPITCH and hot seats each cut 15 min to fit; day ends 9:15pm with him, 8:55pm without) and Week 4 co-teach of the KPI scorecard with Vishen (Vishen live weeks 8 to 7). Reconciliation row moved from Declined (summit casting) to its own Adapted row: 7 adopted / 10 adapted / 9 declined. Boundary by lane: KPI here, AI machine in AIF.",
-      "source": "Airtable appnHZYcirCg1VqUP Speaker Engagements; AI Summit 2026 agenda ratings; EM lesson ratings"
-    },
-    {
-      "id": "ea-three-versions-sep8",
-      "date": "2026-09-08",
-      "area": "E&A · versions",
-      "finding": "Gareth reframed the lineup: V1 = what the team presented; V2 = what Vishen presented; V3 = the combined build (previously called V2). Vishen's two BlinkLife documents were re-fetched on 8 Sep and are unchanged since 6–7 Sep. Reading them whole surfaced: his summit note's 'gap' week numbers do not match his curriculum page's weeks (method W2 vs Story; talk W4 vs Schwartz; ladder W6 vs Reels; content system W9 vs Funnel); Jimmy's Udemy figure is 500k+ in the note and 1M+ on the page; Regan is spelt two different wrong ways; 16 of 18 weeks name no teacher; his summit durations sum to 5h00–5h15 / 3h45 / 3h30 against his stated 4–5 / 4–5 / ~4 hours, and to ~10 hours of Vishen stage time; 10 of his 15 cited figures are in no base we hold (84 NPS verifies; 100k registrations and laser-coaching conversion partly).",
-      "decision": "Three self-contained pages plus a Compare page (/expert-authority, /expert-authority-v2, /expert-authority-v3, /expert-authority-compare) with a shared version bar. Compare carries a 13-row at-a-glance table, an 8-criterion scorecard (V1 6/1/1, V2 2/3/3, V3 7/1/0), week-by-week (18 rows), summit and authors side by side, and the recommendation: build V3; V1 only if Vishen withdraws his inputs; V2 only if the quiz re-read shows Founders/Scalers overtaking Experts.",
-      "source": "BlinkLife pages API (pages/public/vishen/expert-authority-summit; smart-notes/public/vishen/5a034b25…); Expert to Authority speaker table 8 Sep; team pages"
-    },
-    {
-      "id": "ea-audit-sep8",
-      "date": "2026-09-08",
-      "area": "E&A · full audit before sharing with Vishen",
-      "finding": "Sources re-read 8 Sep. (1) Quiz grew from 36 to 626 registrants (6–8 Sep): 76% under $25K (53% nothing yet), 10% at $100K+, 66% unseen or unclear, 69% The Expert, 35% ten-plus years; top success answer is now 'a product line that sells without trading hours' (27%), then fully booked (25%), THE name (21%). Direction unchanged from n=36. (2) Author Relations' records for the new names re-read; terms stay there, not here. (3) Speaker table, Summit Agenda (33 rows) and both BlinkLife documents unchanged. (4) Compare said 27 inputs; the reconciliation table has 26 (7+10+9). (5) One unclosed <p> in V1/V3 Evidence.",
-      "decision": "All figures corrected on V1, V2, V3 and Compare. Framing rewritten for a shared reader (Vishen included): no 'sent back', 'hold the line', 'push back', 'pandering'; declines described as routed to the programme built for that stage; scorecard criterion renamed 'Carries Vishen's inputs'. Compare gained 'The problem we are solving together' (customer, promise, business) and 'Retention and the money' (six levers with evidence per version; illustration at 200/300/400 seats: moving refunds from AIM 2026's observed 23.8% to a 10% target is worth $138K–$276K). Pipeline documented in pipeline.md; promote_v3 retired.",
-      "source": "Quiz tblxGaIBEs265rYAd (626 rows, aggregates only); Speaker Engagements; Summit Agenda; BlinkLife pages API; AIM 2026 dashboard figures already in learnings"
-    },
-    {
-      "id": "ea-accelerator-brief-sep8",
-      "date": "2026-09-08",
-      "area": "E&A · 09 The Accelerator (pre-recorded programme) editor's brief",
-      "finding": "Vishen's six-hour MVU Tallinn accelerator transcript (3,603 lines, 56,630 words; Vishen with Jimmy Naraine, Alessio Pieroni, Kash Rupareliaa, Sabrina Stocker, Safwaan Mohammed) cuts cleanly into a seven-day learning journey of 45 titled videos (plus one separate offer asset), 41,864 words kept (74%), about 4h 39m at 150 wpm: Day 1 Start on the Way (4 videos), Day 2 Be Seen (6), Day 3 Your First Course (7, Jimmy), Day 4 Sell Without Selling (6, Alessio), Day 5 Your Edge and Your Ladder (7), Day 6 Turn On the Tap (7, traffic trio), Day 7 The Masterclass and What Only You Can Do (8). Everything removed is listed with a reason: live-room logistics, clock times, the pre-launch BlinkLife demo, the Guild/mastermind pitch and offer copy, Q&A that does not travel. Every line from 12 onward is accounted for as kept, cut inside a video, or globally cut; six boundary lines are split between neighbouring videos with the split text recorded.",
-      "decision": "Shipped as tab 09 on Versions 1 and 3 (editor's brief: titles, line ranges, verbatim in/out cues, internal cuts, on-screen text, notes, day exercise) plus a full verbatim edit-script page at /accelerator-edit-script (line-numbered text, cuts collapsed in place, joins and trims marked, strong language highlighted). Text is never retyped; the transcript file is the source of truth and line numbers stand in for timecodes because the transcript has none. Seven release-blocking decisions are flagged for the producer, not made: unverified stage figures (half a billion, $100M, $40M, 1.1M followers, $21M, 30% bots), profanity policy, third-party assets, on-camera consent for participants, name spellings, live-only stragglers, and offer copy kept only in the separate 'Your Next Step' asset.",
-      "source": "scratchpad accelerator-transcript.txt (user upload 8 Sep), accelerator_journey.py, build_accelerator.py"
-    },
-    {
-      "id": "ea-compensation-house-rule-sep8",
-      "date": "2026-09-08",
-      "area": "House rule · author compensation",
-      "finding": "Gareth's ruling 8 Sep: author compensation figures are team-only and never appear in the proposal pages, the comparison, the data files or the builders. The repo is public and the Cloud Run pages are unauthenticated.",
-      "decision": "Every compensation figure, rate and budget line removed from V1, V2, V3, Compare, AI for Founders, both Guild pages, the brief and learnings.json; contract tables now show seat and status only. scrub_fees.py runs last in the pipeline and verifies zero matches. Commercial terms are referred to as held by Author Relations. Note: earlier git history still contains the removed figures.",
-      "source": "Gareth, 8 Sep 2026"
-    },
-    {
-      "id": "ea-summit-agenda-approved-sep9",
-      "date": "2026-09-09",
-      "area": "E&A · Expert to Authority Summit, approved agenda v3",
-      "finding": "Approved agenda v3 (8 Sep, refines Vishen's draft per Jaideep's rules): three days of exactly 4:00 mainstage, one pillar chapter a day (Day 1 The Foundation: Message & Identity; Day 2 The Machine: Platform & Reach + Funnel & Revenue; Day 3 The Business: Offer & Product + Team & Scale). Sales on Days 2 and 3 only, always second-to-last; no ask on Day 1; VIP hour after mainstage on Days 2 and 3 only; every session tags a week on Vishen's published 18-week map. Sixteen sessions. Speakers: Marisa Peer (Day 1 identity keynote, re-briefed from viral methodologies), Jimmy Naraine (Day 2 Udemy Empire, named as the Week 13 teacher), Daniel Priestley (Day 2 closer, The Weekly Cadence), Ronan Diego + Dawn Hoang (Day 2 proof fireside), Regan Hillyer (Day 3 Zero to Hero, confirm by 12 Sep, Dawn understudy), Ajit Nawalkha (Day 3 Hot Seat, coaching only, never the pitch), Jason Goldberg hosting inside session times. Out: Shadé Zahrai (replaced by Marisa), Kash (removed everywhere). John Lee has no summit session. Source discrepancy: Regan 0:30 in the agenda table vs 0:35 in the slate; 0:30 is what sums Day 3 to 4:00.",
-      "decision": "Version 3's Summit tab replaced with the approved agenda exactly (rules, structure, three day tables with offsets, speaker slate, ten changes, open items); V3 cross-references updated (Authors verdicts, Format contracts, Positioning reconciliation: Jimmy's Udemy casting moves from declined to adapted, so the tally is 7 adopted, 11 adapted, 8 declined). Compare's summit column now extracts the approved agenda. Version 1 untouched as the team's record; Version 2 untouched as Vishen's draft. Open for the team: mapping the agenda's 18-week tags onto V3's 17 weeks (the source's own 'one canonical map' item).",
-      "source": "https://shareable-page.vercel.app/expert-summit-agenda-v3.html (fetched 9 Sep 2026), shared by Gareth"
-    },
-    {
-      "id": "ea-priestley-two-classes-sep11",
-      "date": "2026-09-11",
-      "area": "Expert & Authority Mastery · faculty",
-      "finding": "Vishen asked for two named Daniel Priestley classes in the Mastery: the product ladder and the cadence. Mining the Mindvalley catalogue put his product-ladder material in Entrepreneurship Mastery 2025, where From Idea to Impact: The Strategy Behind Every Successful Product rates 9.49 across 107 students, his largest sample with us, and teaches Product DNA (Problem, Promise, Proof) and the Product Ecosystem. Three adjacent EM sessions support the same week: High Value Offers & Price Anchoring 9.74 (n=68), Monetization Frameworks 9.61 (n=84), Oversubscription Strategies 9.26 (n=38). A targeted search for cadence, rhythm, scorecard, ladder and ascension across that table returned nothing, so there is no existing cadence training of his to lift; the nearest evidence is Designing Your Next 12 Months: From Momentum to Market Leadership at 9.87 (n=46), the highest-rated of his thirteen EM sessions, plus an unscheduled Scorecard Thinking: What You Measure, You Multiply.",
-      "decision": "Week 14 teach goes to Priestley (the product ladder), with Ajit moving to the Week 14 build day alongside Alessio and keeping W13 and W15. Week 17 splits into Tuesday and Thursday: Priestley teaches The Predictable Weekly Cadence on Tuesday, Vishen keeps the identity tier and graduation on Thursday. The conditional Week 4 Key Person of Influence co-teach is retired and the scorecard travels to Week 17, so Vishen's live weeks stay at 8 and Priestley holds exactly the two classes asked for. Live touchpoints go from 35 to 36. Nora Cavani is the named proof point for the ladder week, pending written consent and substantiation of the revenue figure.",
-      "source": "Vishen's instruction via Gareth, 11 Sep 2026 · Entrepreneurship Mastery 2025 base appJVtywkn9mTFbLs table tblV7Z54v3bPdKfgC · E&A Speaker Engagements and Summit Agenda tables, base appnHZYcirCg1VqUP, read 11 Sep 2026"
-    },
-    {
-      "id": "ea-author-status-audit-sep11",
-      "date": "2026-09-11",
-      "area": "Expert & Authority · Author Relations",
-      "finding": "Thirty rows carry the Expert to Authority calendar on the live Speaker Engagements table and every one of them belongs to the summit. Confirmed: Vishen Lakhiani, Marisa Peer, Jimmy Naraine, Regan Hillyer, Ajit Nawalkha, Daniel Priestley. Confirmed but unsigned: Jason Goldberg. In Negotiation: John Lee, Ronan Diego. In consideration: Alessio Pieroni, Sabrina Stocker, Akash (Kash) Rupareliaa, Dawn Hoang, Nora Cavani. Not Approved: thirteen names including Chris Do and Paul McKenna. No row carries Rejected or Can't make it, so no author has declined. The Expert & Authority Mastery programme has only two rows and neither carries a status, so no Mastery teaching seat is tracked at all.",
-      "decision": "The Authors tab now carries the 11 September audit in place of the 31 August table, with a five-item chase list for Author Relations led by Priestley's two untracked Mastery classes. Six status pills on the page were stale and are corrected: Marisa, Jimmy, Regan, Ajit and Priestley to Confirmed, Jason to Confirmed with the agreement outstanding; Shadé Zahrai and Roxie Nafousi are corrected to Not Approved.",
-      "source": "Speaker Engagements table tblShRX4kUaq1Ur1P, base appnHZYcirCg1VqUP, read 11 Sep 2026"
-    },
-    {
-      "id": "ea-summit-agenda-drift-sep11",
-      "date": "2026-09-11",
-      "area": "Expert to Authority Summit · agenda",
-      "finding": "The live Summit Agenda table (39 rows, read 11 Sep) no longer matches the agenda approved on 8 September. Daniel Priestley has moved from Day 2 closer to Day 3 opener: The Predictable Weekly Cadence, 45 minutes, 15:10 New York on 20 September, Confirmed. Day titles are now The Brand, The Products and Scaling the Business. Vishen keeps The Product Step Ladder as the Day 2 opener at 40 minutes. John Lee is back with a Day 1 session marked in progress; Ajit has moved to Day 2; Marisa's session is now How Marisa Peer Built a $20M Coaching Empire. The Authority Talk, the Hot Seat and the named Mastery Reveal have no rows. Day 1 runs 4:10 against the 4:00 hard cap. Three rows are unscheduled and the Ronan and Dawn fireside has host rows either side but no session row.",
-      "decision": "The approved agenda table in Version 3 is left exactly as approved, and the drift is surfaced beneath it as a dated delta rather than silently merged. Which version is canonical is for Vishen and Jaideep to settle.",
-      "source": "Summit Agenda table tblJTtf6jll2UyRbW, base appnHZYcirCg1VqUP, read 11 Sep 2026 vs the approved agenda v3 of 8 Sep"
-    },
-    {
-      "id": "ea-summit-agenda-confirmed-sep11",
-      "date": "2026-09-11",
-      "area": "Expert to Authority Summit · agenda",
-      "finding": "Vishen sent the confirmed summit agenda: nineteen numbered sessions plus Marisa Peer's live interview, across three days titled The Foundation, The Machine and The Close, with rewritten attendee-facing descriptions. Six guests carry named sessions: John Lee (Day 1), Ajit Nawalkha twice, Jimmy Naraine, Marisa Peer, Daniel Priestley and Regan Hillyer. Sessions with no name attached are Vishen's, per Gareth. Joining it to the live Summit Agenda table leaves six sessions sitting on a different day than the table, two sessions with no table row at all (Ajit's certification story and the Q&A), and no day reaching a four-hour mainstage on the durations the table holds.",
-      "decision": "The confirmed agenda replaces the 8 September approved run-of-show inside the SUMMIT3 markers, so the page carries one agenda rather than three. Descriptions are transcribed verbatim. Durations and statuses are joined from the table by title and left blank where no row matches, never guessed. A summit-to-Mastery map was added session by session, and six open items were raised rather than resolved: the Day 3 ordering (Connecting All the Dots sits at 15 with four sessions after it, and the day ends on the offer, which Jaideep's rules forbade), the six day mismatches, the two missing rows, the unverifiable day timing, Ajit now carrying two sessions rather than the one he agreed to, and the Reagan Hillier spelling, which the table and her own brand give as Regan Hillyer.",
-      "source": "Vishen's confirmed agenda via Gareth, 11 Sep 2026 · Summit Agenda table tblJTtf6jll2UyRbW, base appnHZYcirCg1VqUP, read 11 Sep 2026"
-    },
-    {
-      "id": "ea-summit-airtable-canonical-sep11",
-      "date": "2026-09-11",
-      "area": "Expert to Authority Summit · agenda",
-      "finding": "Gareth ruled the Summit Agenda Airtable (base appnHZYcirCg1VqUP, table tblJTtf6jll2UyRbW) the source of truth for the summit, superseding both the 8 September approved agenda and the 11 September confirmed-agenda document. Read the same day: 38 rows, 35 scheduled and 3 with no start time. Daniel Priestley opens Day 3 at 15:10 New York with The Predictable Weekly Cadence, 45 minutes, Confirmed, which settles the Day 2 versus Day 3 question. Marisa Peer is Day 1 at 15:55, a 30-minute live interview whose brief explicitly rules out identity or mindset content. Ajit Nawalkha carries one session, not two: How to Create High End Coaching Solutions, Day 2 at 19:00, 25 minutes, typed Laser Coaching, with no brief written. John Lee is Day 1 at 18:20, 40 minutes, In progress. Regan Hillyer is a Day 3 fireside with Vishen, 30 minutes, In progress. Jason Goldberg hosts all three days across seventeen link rows. Seven session briefs name a Mastery week and all use Vishen's 18-week numbering, so only Week 1 lands where this 17-week build puts it; the Product Step Ladder is the widest gap at Week 6 on the table versus Week 14 in the curriculum. Clock problems: Day 1 runs 4:10 with no VIP hour; Day 2 has a 25-minute hole at 17:55 and a 5-minute collision between Ajit and the VIP Q&A; Day 3 has a 5-minute collision between Priestley and the host row that thanks him.",
-      "decision": "The Summit tab of Version 3 is rebuilt entirely from the table, transcribed verbatim, with blanks shown as blanks and the clock anomalies surfaced rather than fixed. All earlier agendas are removed from the tab so there is one run of show and one place to change it. A session-by-session summit-to-Mastery map translates the table's 18-week references onto this 17-week build. Seven open items are raised for Vishen and Jaideep, led by the week-numbering mismatch and by Day 3 running its longest session as the offer. Cross-references on the Authors, Evidence and Positioning tabs are re-pointed at the table.",
-      "source": "Summit Agenda table tblJTtf6jll2UyRbW, base appnHZYcirCg1VqUP, read 11 Sep 2026"
-    },
-    {
-      "id": "ea-programme-tab-order-sep11",
-      "date": "2026-09-11",
-      "area": "Expert & Authority Mastery · page structure",
-      "finding": "The Programme tab opened with seven sections of justification before the curriculum itself: the organising idea, the weekly rhythm, the seven pieces of doctrine, the Mindvalley standards check, the three honest risks and the five pillars. Vishen reads this page to see the curriculum, not the case for it.",
-      "decision": "The seventeen-week curriculum now opens the Programme tab. Every justification section moves below it behind a dark divider that says so plainly, so the reasoning is one scroll away for anyone who wants to argue with a decision and invisible to anyone who just wants the weeks.",
-      "source": "Gareth's instruction, 11 Sep 2026"
-    },
-    {
-      "id": "ea-quiz-7739-read-sep15",
-      "date": "2026-09-15",
-      "area": "Expert & Authority · the room",
-      "finding": "Full read of the Expert to Authority Quiz table: 7,739 responses, 6 to 15 September. 69% The Expert, 14% Founder, 10% Creator, 7% Established Expert. 50% have never sold from their expertise, 24% under $25K, 12% (842 people) at $100K+. 35% have 10+ years' tenure and a third of those have never sold. 48% choose 'nobody knows I exist', 21% 'can't put what I do into words'. Product line is the top success answer in every revenue band (33%); fully booked peaks at 36% in the under-$25K band; peers is 12% above $1M. Pain moves with revenue: invisibility 61% at zero, 'follow but don't buy' peaks 26% under $25K, plateau reaches 46% above $1M. Open question (5,582 answers): 40% ask for a system/the how, 35% selling and pricing, 27% visibility, 20% clarity, only 6% name fear. 428 wrote 'I'm good at what I do, but'. Browser-translated option strings split counts across 40+ variants; 447 answered the retired Q1; 368 six-figure earners still self-select as The Expert.",
-      "decision": "Nine recommendations published as an artefact for the curriculum team, none changing the spine: Blueprint as weekly tracker (W1–17), a pricing clinic (W14–15), leverage named and audited (W14/16/17), one-sentence exercise in W1, thirty scheduled posts as the W10 artefact, an Established Expert pod thread with the Guild bridge at W12, keep the first rung early, signpost book and stage at W16 without teaching them, and no added mindset week. Data hygiene: lock quiz option values at ingest, map the retired Q1, treat Q3 revenue as the primary routing fork.",
-      "source": "Quiz table tblxGaIBEs265rYAd, base appnHZYcirCg1VqUP, all 7,739 records read 15 Sep 2026 · reports/quiz-insights-2026-09-15.html · https://claude.ai/artifact/YbXAATbVEaTDGga2HKQX88"
-    },
-    {
-      "id": "ea-quiz-into-v3-sep16",
-      "date": "2026-09-16",
-      "area": "Expert & Authority Mastery · curriculum",
-      "finding": "Gareth approved eight of the nine quiz recommendations on 16 September and held the ninth (no added mindset week) with a question: what are we treating, given he wants mindset work with Marisa.",
-      "decision": "Applied to Version 3: the Authority Blueprint becomes the thirteen-piece weekly tracker handed out in Week 1 and marked every Tuesday; Week 1 ends with a rough one-sentence answer to what you do and for whom; the first rung is held at weeks 5 to 8 with the reason stated; Week 10's artefact becomes thirty scheduled posts rather than a hook bank; Established Experts are podded by revenue with Week 3 briefed to the plateau and the Guild invitation moved to Week 12 for the $100K+ pod; Week 14's build day becomes a named pricing clinic where every price is said and defended out loud; Week 15 ends with one real ask for real money on tape; Week 16's Get Booked thread signposts the book and the stage to Speaking & Influence; Week 17 names leverage as the outcome and closes on a ten-minute leverage audit. The Case tab's quiz evidence is refreshed from the 626 sample to the full 7,739. The mindset item is unchanged pending Gareth's answer.",
-      "source": "Gareth, 16 Sep 2026 · The Room, Measured, https://claude.ai/artifact/YbXAATbVEaTDGga2HKQX88"
-    },
-    {
-      "id": "ea-day-zero-bonus-call-sep16",
-      "date": "2026-09-16",
-      "area": "Expert & Authority Mastery · onboarding",
-      "finding": "Jaideep's plan adds a Vishen bonus call on Wednesday 23 September between the summit (18 to 20 Sep) and the Mastery kickoff (Tuesday 7 Oct), for two stated reasons: fast-action buying, and engaging students inside the two-week sales period so the refund rate is lower. Gareth's framing: the gap between paying and starting is where buyers ask whether it was a scam; the call positions the gap as anticipation. The format spec had already adopted an early-value call in the first week after the summit from the Tom Kirby playbook; AI Mastery 2026 ran 23.8% refunds against +84 NPS.",
-      "decision": "Built into Version 3 as Day Zero, a gold module above Week 1 on the Programme tab, with a 75-minute run of show: the room read back from the quiz (10), the Be Seen / Architecture / Show Up compass with a live self-diagnosis from each person's quiz answer (15), the Blueprint walked week by week with the faculty named (15), the Before Picture taken live and submitted through the onboarding survey (10), the fourteen-day plan (5), the ask second to last (5), a compass close (5), Q&A (15). Nothing brings a Mastery week forward. The Summit tab gains an after-the-summit strip with the three dates. Open item: the fast-action bonus is still undefined.",
-      "source": "Jaideep Chagger's flow diagram via Gareth, 16 Sep 2026 · learnings tomkirby-playbook-aug27"
-    },
-    {
-      "id": "ea-marisa-w2-live-brief-sep16",
-      "date": "2026-09-16",
-      "area": "Expert & Authority Mastery · Week 2 · Marisa Peer",
-      "finding": "Gareth ruled that anything presented as Marisa Peer's must be hers, and anything assembled must stand on her captured teaching. Both quests were read in full: Uncompromised Life (17 lessons) and RTHA (35 lessons). Her real material: the 'I am enough' practice and homework (UL L14/15), 21 days per subject (RTHA L7), the criticism scripts and three rules (UL L16, RTHA L9), the Financial Upper Limit exercise with tripling (RTHA L25), the four beliefs of abundant people (RTHA L11), the Rules of the Mind (RTHA L5), 'you cannot be rejected unless you allow people to reject you' (RTHA L8). Two phrases earlier attributed to her ('no is a delay to the next yes', 'if I ask for more someone else has less') are in neither transcript. Marisa's summit slot is a 30-minute live interview with Vishen whose brief rules out mindset content; Gareth confirmed the Mastery keeps the taught session because the summit is the fireside. He also framed the three layers: free 3-day summit that gives and gathers leads; a bonus call to cut refunds between purchase and cohort start; a 17-week Mastery with two lessons a week, one teach and one integration lab. Date check: 7 October 2026 is a Wednesday, and the planning diagram calls it Tuesday.",
-      "decision": "Week 2 rebuilt in V3 as a 90-minute live Zoom teach with a timed run of show citing her lessons, a ten-minute being-paid segment that seeds Week 14, a 21-day homework landing on Module 2, seven bonus audios from her quests on a release calendar, guardrails and asks for her team. Day Zero renamed Lesson 0, flagged BONUS with the date, added to the module map and legend, and a summit → bonus → Mastery strip put at the top of the Programme tab. 'Seventeen days before kickoff' corrected to fourteen. The kickoff weekday is flagged on the page, not resolved. Full brief at briefs/MARISA-PEER-W2-LIVE-CALL.md.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v3.html#tab-programme",
-        "briefs/MARISA-PEER-W2-LIVE-CALL.md"
-      ]
-    },
-    {
-      "id": "ea-programme-reader-mode-sep16",
-      "date": "2026-09-16",
-      "area": "Expert & Authority Mastery · V3 · Programme tab UX",
-      "finding": "Gareth asked that the Programme tab open with every week expanded so Vishen only scrolls, keep the colour coding, keep per-module collapse, and hide everything that is context rather than curriculum.",
-      "decision": "All six curriculum modules (Lesson 0 to Module 4) carry the open class by default; module headers still fold each one. A reader-mode switch in the tools row defaults to 'Curriculum only', which hides the in-module callouts, the version notes and the whole reasoning block below the divider; 'Show the reasoning' restores them. The intro paragraph is one line and its former text moved into the hidden reasoning block. Lesson 0's full brief is collapsed like every other brief.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v3.html#tab-programme"
-      ]
-    },
-    {
-      "id": "ea-v4-one-voice-per-week-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 4 · delivery model",
-      "finding": "Jaideep asked for a Version 4 in which the curriculum stays as Version 3 but the author who teaches Tuesday also runs the Thursday build day, removing the lab-lead seats, so the team can price the two models. Mapping every V3 Thursday to its Tuesday voice: live voices fall from 10 to 7; lab-lead seats from 3 to 0 (16 contracted build days released); Vishen's live sessions rise from 9 to 19 of 36 (ten Thursdays plus the optional Saturday); five guest weeks become two-call weeks (Marisa W2, John W10 and W16, Ajit W13, Priestley W14), each a new ask of a confirmed author; W6 and W15 were already author-led. Two labs have no natural V4 owner: W11 (Sabrina's LinkedIn layer under Regan's fireside, so the interviewer Vishen runs it) and the optional Saturday shoot floor. V4 gives up the fixed-faces continuity argument that V3 used against the S&I workshop dip, and the specialist craft of Kash, Alessio and Sabrina.",
-      "decision": "expert-authority-v4.html generated from V3 by build_v4.py: every Thursday slot re-owned with a black V4 note naming the V3 lead and what moves; a Version 4 section at the top of the Case tab with per-person load (V3 vs V4), Thursday-by-Thursday table, five finance comparisons stated without figures (including the hybrid: guests run their own Thursdays, Vishen keeps one lab lead), and what V4 gives up; Authors tab lab section and author-curriculum map carry the V4 column; Format tab totals updated. Route /expert-authority-v4; V4 card added to the switcher on V1, V2, V3, compare and index. No compensation figures anywhere; the guard passes.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v4.html",
-        "server.js",
-        "index.html",
-        "expert-authority.html",
-        "expert-authority-v2.html",
-        "expert-authority-v3.html",
-        "expert-authority-compare.html"
-      ]
-    },
-    {
-      "id": "ea-v4-full-workshops-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 4 · Programme tab",
-      "finding": "Gareth asked for Version 4 to carry the same depth as Version 3: every week colour-coded and every Thursday written out as the author's own workshop, not Version 3's lab with a new face on it.",
-      "decision": "Every Thursday in Version 4 is now a full author-led workshop brief: title, lede, a timed run of show inside 'Read the full workshop brief', the win, and a V4 note naming the Version 3 lead and what travels (templates, rubrics and camera guides ship as recorded resources). Vishen's ten Thursdays are written to his own mechanics (RAS test, Crown the Belief, quiz funnel, story bank, script stack, long-form doctrine); Marisa's Thursday is state work then camera (RTHA L5, UL L16, UL L17); John's are his conversion map and his offer; Ajit's are the emails and the call; Priestley's is the pricing clinic with Marisa's upper-limit number opened beside the anchor. W6 (Jimmy both days) is unchanged. The optional Saturday and W11 carry honest notes as the two floors without a natural author.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v4.html#tab-programme"
-      ]
-    },
-    {
-      "id": "ea-v4-availability-adapted-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 4 · delivery model",
-      "finding": "Gareth reported author availability for Version 4's Thursday workshops: Regan Hillyer, Daniel Priestley and Marisa Peer are not available (teach only); John Lee, Jimmy Naraine and Ajit Nawalkha are open to more. He asked how V4 adapts so Jimmy covers other authors' workshops and John and Ajit take their own.",
-      "decision": "Version 4 adapted: Vishen, Jimmy, John and Ajit run their own Thursdays; Jimmy covers W2 (Marisa's week, the second film, his filming and presence lane, Marisa's UL L15 audio as opener), W11 (Regan's week, the LinkedIn and answer-engine build with Sabrina's lesson as pre-watch, flagged as outside his craft) and the optional Saturday shoot floor, and keeps his V3 W8 story bank; Ajit takes the W14 pricing clinic under Priestley's Tuesday because pricing is his verified lane and he co-led it in V3, with Jimmy named as alternate. Loads: Vishen 16 sessions (about 24 live hours, from 9 and 13), Jimmy 8 (14.5 h), John 4, Ajit 5, Marisa 1, Priestley 2, Regan 1, lab leads 0. Option B recorded on the page: Jimmy as standing build lead on Vishen's five ordinary Thursdays (W1, W3, W4, W7, W12), Vishen at 11 and Jimmy at 13. Case tab, load table with hours, Thursday map, finance questions (no figures) and the gives-up list all updated; the load table now stacks above the Thursday map.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v4.html"
-      ]
-    },
-    {
-      "id": "ea-v5-final-curriculum-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 5 · final curriculum",
-      "finding": "Curriculum meeting 17 Sep (Vishen, Gareth, Jaideep, Marisha). Vishen: the curriculum is his 18 weeks; assign the authors already in progress and keep the data cues; no mindset (Visibility Wound and I Am Enough out), no story week, no 'blog titles', no Regan fireside; Cialdini, market awareness and copywriting must be in. His assignments: W1-4 Vishen; W5-6 John Lee; W7 Vishen; W8 Vishen with Marisha as guest, or Daniel; W9-10 Vishen; W11 Ajit (one-to-one products, renamed from high-ticket sales); W12 Vishen; W13 Jimmy (two weeks: course design, then the Udemy ecosystem); W14 Ajit (certification and community); W15 Vishen; W16 Vishen and/or Daniel; W17-18 Vishen. The product ladder is Vishen's own (Nora had misattributed it to Priestley). Labs: Vykintas leads all workshops, Jimmy his own; John, Daniel and Jimmy may run their own with Vykintas alongside; Kash, Sabrina, Alessio and Safwaan out. Marisa and Regan are summit case studies only. Daniel: two classes, lane 'premium positioning'; the in-meeting agent briefing proposed a signature-offer class and a demand-before-you-sell class. Sales: Mastery on stage; the Expert Guild as ascension, application only, $10,000 alone or $7,500 with the Mastery, a Wednesday session from Estonia. Bonuses: Skill Pack at $499 as the fast-action bonus and later downsell; accelerator becomes 'Build, Sell and Monetise Your First Online Course', seven days with Jimmy, around $899. 'Don't do a bonus call with Vishen as a fast-action bonus.' Trailer must lead with Vishen. Gareth's nuance: Marisa Peer's contract for one Mastery class is signed, so V5 must suggest one place for her and hand Vishen the fit.",
-      "decision": "expert-authority-v5.html built as a single clean page: no version switcher, no tabs, one hero line, five colour-coded sections (Foundation W1-4, Content and platform W5-6, Conversion and traffic W7-10, Products and revenue W11-15, Scale and legacy W16-18) plus a gold kickoff row. Each week: Tuesday lesson in Vishen's spoken title with a one-line description and lead, Thursday workshop with what gets built and its lead (Vykintas by default), one muted data cue where one exists. Suggestions marked in gold: Daniel Priestley at W8 (demand before you sell) and W9 (premium positioning alongside Vishen); Jimmy's second week at W14 with certification and community folded into W15; Marisa Peer with Vishen at W15 as the certification case study. Open items in ink: the kickoff call, 18 weeks against the four-month promise and the 7 October weekday, Daniel's placement, W16 Vishen and/or Daniel. Footer carries the Skill Pack, the accelerator and the Expert Guild pricing. Versions 1 to 4 keep their switchers with a V5 card added; V5 itself links to nothing.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v5.html",
-        "server.js",
-        "index.html"
-      ]
-    },
-    {
-      "id": "ea-v5-aligned-to-vishen-published-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 5 · final curriculum",
-      "finding": "After the 17 Sep meeting Vishen published his own 18-week curriculum on BlinkLife (page 3b2c43b1…, 11:47 UTC; read through the public pages API because the page renders client-side). It supersedes both his 7 Sep documents (Version 2) and the titles he read aloud in the meeting. Five pillars: Message & Positioning (W1-4), Platform & Content (W5-7), Funnel & Conversion (W8-12), Scale & Products (W13-15), Legacy & Systems (W16-18). Teachers: Vishen 12 weeks; Daniel Priestley W3 (Signature Offer, live workshop 120 min, two hot seats) and W8 (Oversubscribed); Jimmy W5 (course design); John Lee W6-7; Ajit W14 (extended session: one-to-one, coaching, consulting, certification, community). No labs, no Marisha guest, no kickoff call, no bonuses on his page; the footer still carries the free summit registration line.",
-      "decision": "Version 5 rebuilt to reproduce his page exactly: titles, descriptions, 'You'll learn' bullets (collapsed), teachers and formats, in his pillar colours. Two additions marked as the team's: the Thursday workshop lead (Vykintas by default; Jimmy W5; John with Vykintas W6-7; Ajit with Vykintas W14) with what gets built taken from his own bullets, and one gold suggestion at Week 2 placing Marisa Peer with Vishen as the worked example of a signature method (RTT), alternative Week 13. Everything else from the earlier V5 draft (kickoff row, data cues, Priestley at 8 and 16, footer on bonuses and the Guild) removed from the page. The guard's allow-list now carries three of Vishen's own lesson phrases (offer packaging, premium pricing, speaking charges) that are curriculum content.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v5.html"
-      ]
-    },
-    {
-      "id": "ea-v5-vykintas-marisha-kickoff-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 5",
-      "finding": "Gareth's rulings on the three gaps between the meeting and Vishen's published page: Vykintas joins every workshop including Jimmy's Week 5, as the consistent thread of the curriculum; Marisha Lakhiani (Head of Growth, Vishen's cousin) is added as guest on Week 9 paid advertising, per Vishen's ask in the meeting; the kickoff call is added; the Expert Guild is ignored on the curriculum page; the 'Register now, it's free' summit footer from Vishen's page is not carried over.",
-      "decision": "Applied to Version 5. Marisha's headshot taken from the Authors table picture in the Author Relations base and saved as authors/marisha-lakhiani.png.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v5.html",
-        "authors/marisha-lakhiani.png"
-      ]
-    },
-    {
-      "id": "ea-v5-wed-fri-cadence-sep17",
-      "date": "2026-09-17",
-      "area": "Expert & Authority Mastery · Version 5 · schedule",
-      "finding": "Gareth ruled the cadence: kickoff of the Mastery on Wednesday 7 October 2026, Wednesday lesson and Friday workshop instead of Tuesday and Thursday. Run straight through, Week 18 lands on Wednesday 3 February and Friday 5 February 2027. Two holiday collisions: Week 12's workshop falls on Friday 25 December and Week 13's on Friday 1 January.",
-      "decision": "Version 5 now prints the date on every lesson and workshop from 7 October; hero states Wednesday 7 October to Friday 5 February. The holiday weeks are shown as they fall and flagged to Gareth for a break decision rather than moved on the page.",
-      "status": "applied",
-      "applied_to": [
-        "expert-authority-v5.html"
-      ]
-    }
-  ],
-  "verified_corrections_to_live_pages": [
-    {
-      "page": "ai-founders",
-      "claim": "a perfect score for a hands-on build session (10.0 lab)",
-      "actual": "Implementation Labs run 8.14–9.46, avg ≈9.2. 'Build the App You Always Wished Existed' lab = 9.18 (n=83). The 9.87 belongs to the 'Tying Everything Together' capstone TEACH (n=99)."
-    },
-    {
-      "page": "ai-founders",
-      "claim": "Find, Understand & Win Your Best Customers 9.69",
-      "actual": "9.68, n=110 — confirmed within rounding"
-    },
-    {
-      "page": "ai-founders",
-      "claim": "Build Your AI OS Pt1/Pt2 9.64/9.54",
-      "actual": "9.63 (n=79) / 9.54 (n=82) — confirmed"
-    },
-    {
-      "page": "expert-authority",
-      "claim": "AIM labs 9.0–10.0 incl. a perfect 10 (legacy text)",
-      "actual": "corrected to 8.14–9.46, avg ≈9.2"
-    }
-  ],
-  "sim_2026_verified_samples": {
-    "paul_mckenna_instant_confidence": {
-      "rating": 9.61,
-      "n": 79,
-      "attendance": "56%"
-    },
-    "lisa_nichols_power_of_story": {
-      "rating": 9.74,
-      "n": 75,
-      "attendance": "58%"
-    },
-    "lisa_nichols_story_workshop": {
-      "rating": 9.39,
-      "n": 64,
-      "attendance": "54%"
-    }
-  },
-  "three_programme_boundary": {
-    "speaking_influence": "The talk. Stagecraft, story delivery, confidence, holding a room. Ends where monetisation begins.",
-    "expert_authority": "The business of being known. Niche, product ladder, masterclass, traffic, the close. Assumes you can speak; teaches you how to be found and paid.",
-    "ai_founders": "The machine. Five pillars rebuilt as AI systems for someone who already has something to sell. Assumes demand exists; teaches you how to serve it without drowning.",
-    "router": "Can't hold a room → SIM. Can hold a room but nobody's buying → E&A. People are buying and it's eating you alive → AIF.",
-    "evidence": "SIM detractors explicitly rejected business-building content inside a speaking programme (L7). The boundary is what students are telling us they want."
+ "_meta": {
+  "purpose": "Curriculum-design learnings mined from our own cohort data. Both Mastery proposals (Expert & Authority, AI for Founders) read from this file so the same mistake is never designed in twice.",
+  "read_at": "2026-08-18",
+  "sources": {
+   "SIM": "appKlfvxdXofNlFfk — Speaking & Influence Mastery: 84 lesson records across 2025 (492 enrolled) and 2026 (456 enrolled), plus 148 detractor feedback submissions (rating ≤6)",
+   "AIM": "appHS19yXObg8sHZv — AI Summit & Mastery: 176 lesson records, 2023–2026 cohorts",
+   "comparison_page": "S&I 2025-vs-2026 comparison rollup, 18 Aug 2026"
   }
+ },
+ "data_hygiene": [
+  "AIM records from 2023–24 cohorts use a 5-POINT scale (e.g. 'Build Applications with Glide' 5.00/5 = perfect, not 5/10). Never rank across cohorts without checking the scale. The 'bottom of base' is mostly scale confusion, not bad sessions.",
+  "SIM 2025 per-lesson ratings live in the comparison rollup, not the base's Avg Rating lookup — the base carries 2025 attendance only.",
+  "Single-vote rows (n=1–3) appear throughout every base and must be excluded before any ranking.",
+  {
+   "id": "ea-curriculum-airtable-source-of-truth-sep23",
+   "date": "2026-09-23",
+   "programme": "Expert & Authority Mastery",
+   "title": "Curriculum page now reads Airtable as the single source of truth; drafts v1 to v5 retired",
+   "finding": "Gareth ruled on 23 September that the programme is in execution, not creation: the Airtable Lessons table (base appnHZYcirCg1VqUP, view 2026 | Lessons) is the only curriculum. /expert-authority is rendered from it on every request via lib/curriculum.js (live with AIRTABLE_TOKEN, ten-minute cache, snapshot fallback in data/curriculum.json). Versions 2 to 5 and the comparison page were deleted and their routes redirect. The Airtable schedule runs Tuesday lessons and Friday workshops from 6 October 2026 to graduation on 19 February 2027, with a bonus AI Skill Pack call on 25 September; statuses are mostly Proposed and no Marisa Peer session exists in the table.",
+   "action": "Edit the curriculum in Airtable, never in HTML. Set AIRTABLE_TOKEN on Cloud Run so the page goes live rather than serving the snapshot. Run scripts/sync-curriculum.js to refresh the snapshot and covers."
+  }
+ ],
+ "learnings": [
+  {
+   "id": "L1",
+   "name": "A multi-day intensive on the mainline cadence breaks retention permanently",
+   "evidence": "SIM 2025: show-up averaged ~57% across sessions 1–9. The One Talk Workshop ran as three consecutive mainline sessions: 39% → 31% → 34%. Attendance NEVER recovered — the post-OTW half of the programme ran 45% declining to 33%, a permanent ~14-point break in the curve.",
+   "rule": "A multi-day intensive must not consume mainline slots, and should not be assumed to draw on a weekend either. Put the keystone content on the normal weekly cadence; keep any extra day single, optional, with a mainline fallback, and measure it.",
+   "verified_fix": "SIM 2026 ran the same 3-day OTW as a Fri–Sun Bonus (Aug 7–9). The next mainline sessions held at 56% and 58%, so the weekend protected the cadence. But the base holds no attendance and no ratings for the weekend itself (the rating fields on the 2026 rows are 2025 values copied across). Proven for cadence protection; unproven for the workshop's own uptake. Corrected 7 Sep 2026."
+  },
+  {
+   "id": "L2",
+   "name": "Off-cadence add-on sessions die regardless of teacher quality",
+   "evidence": "SIM 2025: Paul McKenna — the base's strongest guest asset (9.61–9.62) — drew 23% (112/492) for an off-rhythm Monday add-on, the worst attendance in the base. Dr. Shadé Zahrai's off-cadence session: 26%.",
+   "rule": "Never schedule content outside the established weekly rhythm. If it matters, it gets a mainline slot; if it doesn't fit, it becomes a recorded bonus."
+  },
+  {
+   "id": "L3",
+   "name": "Teacher substitution destroys a session",
+   "evidence": "SIM 2025: the Strategic Storytelling workshop swapped Eric Edmeades for a substitute host. It drew 24 detractor submissions — the most of any session in the base. Verbatim: 'Not organized, changed speaker, very disjointed, disappointed.'",
+   "rule": "Announce the named teacher only when confirmed, and never swap after announcement. A cancelled session damages less than a substituted one."
+  },
+  {
+   "id": "L4",
+   "name": "Breakout rooms are the #1 detractor theme",
+   "evidence": "20 of 148 SIM detractor comments mention breakout rooms — the largest single theme, ahead of tech issues (7) and length (5).",
+   "rule": "Breakouts only with a tight artefact-producing brief, a time-box, and an opt-out. Never as filler."
+  },
+  {
+   "id": "L5",
+   "name": "A long single-lead programme hits a repetition cliff around month two",
+   "evidence": "SIM 2025 ran ~46 sessions with one lead teacher. Verbatim detractor: 'Lost interest since 2nd month… it's been pretty much the same topic. Now it feels more like a chit chat session than a real Mastery.'",
+   "rule": "Rotate named authors on the teach slot and make each week ship a distinct artefact, so no two weeks feel interchangeable. 17–18 weeks, not 20+."
+  },
+  {
+   "id": "L6",
+   "name": "Q&A-only and low-content sessions are punished",
+   "evidence": "SIM 2025 detractors: 'I was disappointed that this was only Q&A — would have loved more content' (Professional Speaking week). AIM unstructured community calls: 5.89.",
+   "rule": "Every live touchpoint has a job and a deliverable. Q&A attaches to content; it is never the content."
+  },
+  {
+   "id": "L7",
+   "name": "Scope drift into a neighbouring programme's territory generates refund requests",
+   "evidence": "SIM 2025 detractor on the product-creation week: 'I'm only interested in speaking, not creating a course or teaching or creating a business.' Another student asked about refund timing when early weeks felt like business prep. SIM's back half (Getting Booked, Business Models for Speakers, Productizing Your Message) is Expert & Authority territory taught to a speaking audience.",
+   "rule": "Each programme teaches its own promise and cross-refers for the rest. The three-programme boundary (SIM = the talk, E&A = the business of being known, AIF = the machine) is a retention mechanism, not just marketing."
+  },
+  {
+   "id": "L8",
+   "name": "Abstract kickoffs fail; kickoffs are structurally weak even when competent",
+   "evidence": "AIM 'Kick Off & Define Your Vision in the Age of AI' (Mindvalley Team): 6.04, n=116, in front of 661. Even Vishen's own 2025 AIM kickoff only hit 8.47. Kickoff type average across AIM: 7.26 — the weakest session type.",
+   "rule": "Open with a build that produces a personal win in session one. Keep the kickoff short on vision and long on doing."
+  },
+  {
+   "id": "L9",
+   "name": "The paired Teach → Workshop cadence holds a room — but the workshop needs its own owner",
+   "evidence": "SIM 2026 (paired cadence): last-3-session attendance 56.4% vs 41.5% in 2025. But SIM 2026 workshops rate 9.25 vs 9.55 for lessons — every workshop below every teach bar the opener. AIM's dedicated-owner labs average 9.2 with a 9.46 ceiling.",
+   "rule": "Keep the paired cadence. Give the workshop slot a named owner whose only job is implementation, and require a shipped artefact per session."
+  },
+  {
+   "id": "L10",
+   "name": "Capstone integration sessions are the highest-rated thing we run",
+   "evidence": "AIM 'Tying Everything Together' (Vykintas): 9.87 n=99 — the top-rated session in the base, plus 9.66 for its Q&A and 9.46 for its lab. SIM 2026's highest is also an integrative session (Story, 9.74).",
+   "rule": "Design an explicit integration moment where students assemble everything into one working thing. Do not leave integration implicit."
+  },
+  {
+   "id": "L11",
+   "name": "Claims drift when documents cite documents",
+   "evidence": "The AI Founders proposal cites 'a perfect-10 Implementation Lab'. The base shows labs from 8.14 to 9.46 — no 10 exists (the 9.87 was the capstone teach). The author deck's 'Chris Do 9.83, highest in SMM' is 9.78 and ranks 6th. Natalie Ellis 9.25 is 9.16.",
+   "rule": "Every figure in a proposal is re-derived from the base and carries its sample size. data/authors.json is the only citation source."
+  },
+  {
+   "id": "mvu26-critic-path",
+   "source": "MVU 2026 stage talk Day 2 (Vishen)",
+   "finding": "The Critic Path: become the niche's trusted reviewer before its teacher. Remote-viewing blog: 70% opt-in on a coming-soon pop-up, biggest list in the niche in 6 months, $970K in 18 months via 50% revenue-share webinars.",
+   "status": "Vishen's own account, not independently verified",
+   "applied_to": "E&A W3 + doctrine table"
+  },
+  {
+   "id": "mvu26-three-stories",
+   "source": "MVU 2026 stage talks Days 8-9 (Vishen)",
+   "finding": "Three Founder Stories: vision ('imagine a world where…', 10 years ahead, mission not product), plan (backward staircase yr 1/3/6/10, what+why never how), values (wound→fury→change ×3 → manifesto). Partner-scoring exercise: describe, score 1-10, rewrite, rescore.",
+   "status": "framework from stage; Nora Cavani Forbes story as proof point",
+   "applied_to": "E&A W4 teach+lab, W8 story bank"
+  },
+  {
+   "id": "mvu26-aov",
+   "source": "MVU 2026 stage talk Day 2 (Vishen)",
+   "finding": "AOV mechanics: order bumps ($9-17 zero-cost tools), upsell 1, downsell, upsell 2; price-test 29/39/49; webinar needed above ~$500, under $99 sells off a single ad/reel; commenters ~3x more likely to buy.",
+   "status": "Vishen's operating rules, self-reported",
+   "applied_to": "E&A W14 lab"
+  },
+  {
+   "id": "mvu26-30day",
+   "source": "MVU 2026 stage talk Day 2 (Vishen)",
+   "finding": "30-day rule: days 1-7 over-deliver + drive consumption; days 8-14 engagement, no selling; days 14-28 free monthly summit sells high ticket; solopreneur recoups ad spend in 30 days (Mindvalley as publisher: 9 months).",
+   "status": "Vishen's operating rules, self-reported",
+   "applied_to": "E&A W14 teach + doctrine table"
+  },
+  {
+   "id": "mvu26-witness",
+   "source": "MVU 2026 stage talks Days 1+10 (Vishen)",
+   "finding": "Change is a witness problem, not a willpower problem (expectancy effect). Identity sabbatical exercise; accountability by witnessing (Friday text; commitments kept for others per Gretchen Rubin); 'masters never change their mind'.",
+   "status": "framework from stage",
+   "applied_to": "E&A W1 + Show Up track doctrine"
+  },
+  {
+   "id": "mvu26-imposter",
+   "source": "MVU 2026 stage talk Day 2 — Mentimeter, 196 respondents",
+   "finding": "Imposter syndrome was the #2 most-voted audience question on becoming an expert/authority.",
+   "status": "live audience poll, n=196",
+   "applied_to": "E&A W2 demand evidence"
+  },
+  {
+   "id": "mvu26-faceless",
+   "source": "MVU 2026 stage talk Day 2 (Vishen)",
+   "finding": "Faceless Instagram posts (B-roll + caption) earning $40-50K/month via ManyChat comment-to-DM into the S&I webinar funnel selling a $5K programme.",
+   "status": "Vishen's own account of his funnel",
+   "applied_to": "E&A W2/W10 no-face formats"
+  },
+  {
+   "id": "mvu26-42ads",
+   "source": "MVU 2026 stage talk Day 2 (Vishen)",
+   "finding": "2022 ad test: 42 ads produced, 4 worked (~10%); those four pulled ~quarter-billion dollars over three years. Doctrine: the most important skill is operational efficiency in testing.",
+   "status": "Vishen's own figures, not verified",
+   "applied_to": "E&A intensive testing doctrine"
+  },
+  {
+   "id": "mvu26-priestley-nps",
+   "source": "MVU 2026 stage talk Day 1 (Vishen)",
+   "finding": "Daniel Priestley's 8-hour MVU accelerator scored NPS 90 — 'higher NPS than the iPhone when it was first released'.",
+   "status": "stated from stage; corroborates the separately reported 84-NPS AIM lab data",
+   "applied_to": "AIF Priestley case"
+  },
+  {
+   "id": "mvu26-masterclass-total",
+   "source": "Accelerator + MVU Day 2 stage talk (Vishen)",
+   "finding": "Masterclass sales total: 'half a billion' on the accelerator stage vs 'between 400 million to half a billion' on the Day 2 stage. Carry the range $400-500M; both are self-reported.",
+   "status": "self-reported, two versions days apart",
+   "applied_to": "both proposals — range used, legal flag refreshed"
+  },
+  {
+   "id": "mvu26-costdrop",
+   "source": "MVU 2026 stage talk Day 9 (Vishen)",
+   "finding": "Build cost for software down 97% since February 2026 ($100K → $3K); build speed up ~50x. Basis of the 'why now' for founder-built products.",
+   "status": "Vishen's internal figures",
+   "applied_to": "AIF W12 / why-now"
+  },
+  {
+   "id": "jaideep-onepager-adopted",
+   "source": "Jaideep's Academy one-pager (shareable-page.vercel.app/mastery-one-pager.html, Aug 24 2026)",
+   "finding": "Portfolio positioning system adopted: one-verb promises (E&A 'Be chosen.', AIF 'Run on AI.'), signature diagnostic sentences ('I'm great at what I do, but nobody knows me.' / 'My business can't run a single day without me.'), and neighbour boundary lines (Speaking vs Authority: room asks for you; Social vs Authority: chosen by the right ones; AI Mastery vs AIF: transforms you vs your business).",
+   "status": "adopted",
+   "applied_to": [
+    "data/boundary.json",
+    "index.html",
+    "expert-authority.html (via boundary build)",
+    "ai-founders.html (via boundary build)"
+   ]
+  },
+  {
+   "id": "jaideep-pricing-adopted",
+   "source": "Jaideep's Academy one-pager; Jaideep owns the Mastery business",
+   "finding": "AIF priced $5,999 Install / $7,999 Install + Certify (Certified AI Consultant credential + first-client sprint, month 5). Tier structure adopted per Gareth; credential curriculum, certification bar and faculty owner still unspecified. E&A price anchor $4,999 vs $5,999 flagged open by Jaideep; page carries the stage's $4,999 until he rules.",
+   "status": "adopted — Certify tier scope pending spec",
+   "applied_to": [
+    "ai-founders.html",
+    "index.html",
+    "expert-authority.html (price-anchor callout)"
+   ]
+  },
+  {
+   "id": "jaideep-onepager-contested",
+   "source": "Jaideep's Academy one-pager vs E&A proposal + MVU 2026 transcripts",
+   "finding": "Contested and NOT adopted: (1) off-camera/copy-led E&A — contradicts Visibility Wound W1, McKenna confidence-on-camera W2, Kash's camera labs, the shot masterclass; faceless IG is one optional path, not the product; (2) the 60-min masterclass + intensive omitted entirely from his 4-month plan; (3) community demoted to monthly calls — contradicts the weekly witnessing pods doctrine he himself quotes; (4) core author bench absent (McKenna, Do, Nichols, Ellis, Christian, Lee, Ajit) and Priestley moved into E&A, blurring the AIF boundary; (5) AIF six functions vs the deck's five pillars; (6) unsourced figures: '110 of the world's top experts', '$50k/mo' vs verified $40-50K range, NPS +84 cited without source or n. Guild kept out of scope per Gareth (separate, undefined product).",
+   "status": "contested — reconciliation note sent to Jaideep",
+   "applied_to": [
+    "reconciliation note artifact"
+   ]
+  },
+  {
+   "id": "faculty-status-reset-aug24",
+   "source": "Gareth, 24 Aug 2026",
+   "finding": "All guest authors on BOTH programmes are 'In consideration' until Gareth confirms otherwise — no Confirmed status for Lisa Nichols, Paul McKenna, Kwame Christian, John Lee (E&A) or Noelle Russell, Marie Forleo, Shawn Kanungo (AIF). Vishen (and AIF co-owners + internal Vykintas) remain the confirmed spine. Alessio Pieroni is lab lead ONLY, not an author — his W7 teach moved to Vishen (Alessio keeps the W7 lab). E&A lab-lead bench is now FIVE, all in consideration: Alessio, Kash, Jimmy Naraine, Sabrina Stocker, Safwaan Mohammed (no more 'alternate' framing). Marisa Peer ADDED as named alternative to Paul McKenna on the W2 confidence lane (diversification — Paul appears across many programmes); Paul not removed; one of them teaches W2, decided before contracts; Marisa's cohort ratings still need pulling. Alex Dogliotti moved to lab/implementation (W14+W15 labs with Vykintas), not co-teach.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "ai-founders.html",
+    "data/boundary.json",
+    "index.html"
+   ]
+  },
+  {
+   "id": "maria-wendt-option-aug24",
+   "source": "Gareth, 24 Aug 2026; Authors table app4ulN4GnBRvcfAL/tbl1vRMe41Jh468ey (photo attgD11NAA0jccsf0)",
+   "finding": "Maria Wendt added as an E&A author OPTION, in consideration, lane to be assigned (closest fit: audience/traffic, W10-11, adjacent to Natalie Ellis/Kash). No sessions found in SMM or E&A bases — no cohort rating; pilot against the 9.3 bar before contract. Headshot pulled from Authors table and stored as authors/maria-wendt.jpg (Airtable URLs expire).",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "data/boundary.json",
+    "index.html",
+    "authors/maria-wendt.jpg"
+   ]
+  },
+  {
+   "id": "jaideep-final-roster-aug25",
+   "source": "Jaideep's final-roster note (screenshot, 25 Aug 2026) + Gareth's instruction: keep the in-consideration bench, remove the cut names, add the new ones",
+   "finding": "CUT from E&A faculty: Marisa Peer (option removed same day it was added) and Lisa Nichols (out per Gareth's call, relayed by Jaideep) — their stories stay as case-study material (W1 quote, W4 first-stage story); W8 story week moves to Vishen (11 live sessions, 12 bookends). KEPT per Gareth: Paul McKenna, Chris Do, Kwame, John Lee, Natalie, Ajit, all lab leads. ADDED as options: E&A — Daniel Priestley (demand & oversubscription; FLAG: breaks the zero-overlap rule, he co-owns AIF — bounded guest week only, rule to be rewritten deliberately); Maria Wendt lane updated to simple offers/leverage marketing, step-ladder module, roster claim '$20M on $20 products' UNVERIFIED. AIF — Nick Sonnenberg (operations; overlaps Vykintas W11), Cassie Kozyrkov (data & decisions; no photo in Authors table), Domenic Ashburn (marketing/creative; promoted from reserve, verified 9.47+ floor across six sessions), Sara Davison & Tyler Fisk (build-lab support pair). Roster names NOT adopted: 'Jimmy Confirmed' (stays in consideration per Gareth's standing rule); Regan Hillyer, Jeffrey Allen, Jim Kwik were never on our pages. Headshots pulled from Authors table for Nick, Domenic, Sara, Tyler; Cassie has none.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "ai-founders.html",
+    "data/boundary.json",
+    "index.html",
+    "authors/*.jpg"
+   ]
+  },
+  {
+   "id": "guild-tier-aug25",
+   "source": "MVU 2026 transcripts (Day 1 Tallinn guild doctrine; accelerator launch pitch; Day 2 early $5K version; Day 9 teaser) + Gareth's guild brief",
+   "finding": "Guild tier built: /expert-authority-guild ('Stay chosen.') and /ai-founders-guild ('Stay ahead.'). $10,000/yr VALIDATED verbatim from the accelerator stage ('this is 10,000 a year, and that's just starting… may go up to 20,000'); $9,999 stated in the same pitch; Day 2's $5,000 framing is the earlier draft, superseded — resolves the parked Mastermind price conflict. E&A Guild floor: $100K from expert business (verbatim). AIF Guild floor: OPEN — proposed OS-in-production + revenue floor TBD. Six-pillar architecture (Floor, Pulse, Commons, Proximity/Guild Launches, Pods & Witnessing, Moot); evergreen monthly intake; kick-and-refund; AI tools add-on ~$49.99/mo (stage). Naming 'Guild' over stage's 'Mastermind' pending Vishen+Jaideep sign-off. Co-investment language withheld pending legal. E&A page's Mastermind references renamed to Guild ($9,999 -> $10,000 per the stage's own '10K a year'); AIF continuity rung absorbed into the Guild.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-guild.html",
+    "ai-founders-guild.html",
+    "index.html",
+    "server.js",
+    "expert-authority.html",
+    "ai-founders.html"
+   ]
+  },
+  {
+   "id": "tomkirby-playbook-aug27",
+   "source": "Tom Kirby, 'The Mastery Playbook 2027 — Academy build' (p.mval.me, 27 Aug 2026), cross-checked against the Mastery Performance Dashboard; uploaded by Gareth 28 Aug",
+   "finding": "ADOPTED into both Mastery format specs: two-week deliberate onboarding arc (summit -> early-value call -> Finerminds journey -> day-14 handoff); materials-within-24h compliance; guaranteed personal review (feedback lottery retired); effort-based satisfaction guarantee (in design, pairs with certification by shipped assets/running systems). ADOPTED into both Guild pages: top-10-by-contribution auto-invite at graduation (waives application, never floor/price); 'renewal is the only metric'. SOURCED AT LAST: AI Mastery 2026 = +84 NPS (dashboard-pulled) AND 23.8% refunds / 40.7% deposits from reactive onboarding — high NPS does not protect a launch. Coach-host evidence now citable: Vyk integration sessions 9.14 vs 8.94 lessons, ~61/96 NPS mentions, +43 NPS jump; cross-mastery NPS: SMM +109 recovery, Manifesting +76, Spiritual +86. HELD/REJECTED: the ~4-day lesson-to-integration cadence standard conflicts with our S&I paired Tue->Thu retention data — flagged on both pages for a data conversation before the dashboard cadence-integrity check ships, not silently adopted; the one-coach-host doctrine vs our two-anchor E&A lab design raised as an explicit launch-gate decision (candidates Alessio/Kash/Sabrina), not a silent restructure. FLAGS: Tom's guild pilot (~50 members, this quarter, no price/floor) must reconcile with the $10K/floor spec — one owner; his 'AI for Entrepreneurs' naming drifts from AI for Founders; he references an 'E&A 2026 certification cohort' that exists in no plan we hold.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "ai-founders.html",
+    "expert-authority-guild.html",
+    "ai-founders-guild.html"
+   ]
+  },
+  {
+   "id": "ea-speaker-table-pull-aug31",
+   "source": "Live E&A speaker table appnHZYcirCg1VqUP/tblShRX4kUaq1Ur1P, pulled 31 Aug 2026",
+   "finding": "Summit (Sep 2026, promo) has 20 rows: Confirmed = Vishen only; Outreach done = Alessio Pieroni, Natalie Ellis; In consideration = Chris Do (added 30 Aug — resolves the 'not on the list' action), John Lee, Kwame, Jimmy, Sabrina, Kash, Maria Wendt (added 31 Aug), Marisa Peer (STILL live despite Jaideep's cut — discrepancy), Keith Ferrazzi, Nir Eyal, Simone Vincenzi, Jason Goldberg, Regan Hillyer; NOT APPROVED = Paul McKenna (!), Lisa Nichols, Safwaan Mohammed (!), Vykintas. Mastery table (Oct 2026, the programme) = one unstatused Vishen row + one empty row; Vishen's Accelerator row = 'Contract to be signed'. Actions surfaced on-page: W2 occupant ruling (Paul not approved vs Marisa in consideration), Safwaan lab seat ruling, Ajit has no E&A row, six Summit-only promo names are not Mastery authors, Kash spelling on table is 'Rupareliaa' vs our 'Rupalia'. Page statuses updated: Chris Do -> In consideration; Natalie + Alessio -> Outreach done; Paul -> Not approved (Summit) flag; Safwaan flagged; evidence stat now shows the 20-row breakdown.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html"
+   ]
+  },
+  {
+   "id": "ea-author-allocation-sep1",
+   "source": "Gareth's session allocation + naming ruling (2026-09-01)",
+   "finding": "Naming ruled: the curriculum stays Expert & Authority Mastery; the summit is the Expert to Authority Summit. Teach allocation locked: Vishen 8 weeks + intensive; Marisa Peer W2 (incl. summit); John Lee W10+W16; Regan Hillyer W11 (one class only); Ben Greenfield W12 (tentative); Ajit Nawalkha W13-W15. Labs: Alessio 7 days + build floor, Kash 6 days + shoot floor, Sabrina 3 days. Open: Jimmy's seat (summit-only vs W5-W6 labs back), Regan second session, Alessio's row, Ben's 'maybe'. Commercial terms live with Author Relations and never in this repo. Chris Do/Paul/Kwame/Natalie/Maria/Priestley/Safwaan moved to considered-not-allocated with evidence preserved.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "index.html",
+    "data/boundary.json"
+   ]
+  },
+  {
+   "id": "ea-transcript-alignment-sep1",
+   "source": "Quest-transcript mining (Course Pro, Uncompromised Life, RTHA, The 7-Figure Creator, The Longevity Blueprint, The Art of Manifesting, Overflow; ~2.1MB) + Sabrina's 1BFS keynote & SMM 2026 briefing + the 1 Sep author-alignment meeting (2026-09-01)",
+   "finding": "Faculty aligned to the curriculum, not vice versa. Jimmy upgraded to author (6 lessons): Course Pro is a near-1:1 blueprint for Module 2 and Vishen already plays the doctrine role inside it; his term is 'idea dump' (not brain dump), the 3-7x3-7 and 80% numbers are our scaffold, the pajama draft's costume is the mechanism and the footage is deleted unwatched. Marisa's W2 corrected: enough-ness not 'confidence', one session begins the shift + 21-day repetition protocol, 'being seen' is our synthesis; ladder case study cited as observed structure only. John Lee: W10 fully covered by his named IP (TLC, 3C, EDUCATE, market-in-public-sell-in-private); seeding/offer stack/minute-17/guarantee appear NOWHERE in his quest, so W16 became 'Monetise the Platform' and the close doctrine returned to Vishen's intensive; his AI-persona segment scripted as honest tension ('if it's not live, don't tell them it's live'). Regan = proof point, one W11 fireside (post-intensive slump is where inspiration earns its keep) + her summit fireside replays free in W1 under the 3-year presenter licence; zero audience-mechanics content in ~940KB of her transcripts. Ben = fireside about becoming the authority in longevity, pending Vishen (one wild card, banners if bought). Vishen: 6 teach weeks + intensive = largest share, 20 bookends, close doctrine, main stage. Commercial terms held by Author Relations.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "index.html",
+    "data/boundary.json"
+   ]
+  },
+  {
+   "id": "ea-ben-removed-sep2",
+   "source": "Gareth's ruling, 2 Sep 2026",
+   "finding": "Ben Greenfield removed from the E&A curriculum. W12 restored to Vishen live (his long-form doctrine: event sales up 70%, comedy/writing/stagecraft over prompts). Rationale: the one wild card retired: uncertain return, no teachable content-strategy method in his vault (mining verdict), Marijana against, and removing him leaves Regan as the single fireside, inside the one-fireside value rule. Pre-endorsed use of the freed seat: a seventh Jimmy lesson or his summit slot. Vishen now 7 teach weeks + intensive = 8 live, 18 bookends.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "index.html",
+    "data/boundary.json"
+   ]
+  },
+  {
+   "id": "ea-summit-airtable-sep7",
+   "source": "Airtable appnHZYcirCg1VqUP / Summit Agenda (tblJTtf6jll2UyRbW), view 2026 | Summit, read 7 Sep 2026; Speaker Engagements statuses same date",
+   "finding": "Team run-of-show for the Expert to Authority Summit (18-20 Sep 2026): 33 rows, 11 keynotes, 2 firesides, 2 offer sessions + FINAL CLOSE, 17 host segments, 2 VIP Q&As; Vishen on every offer moment; guests Marisa, Kash, Jimmy, Regan, John, Ajit plus Dawn/Nora/Ronan success stories; Jason Goldberg hosts. Eight data flags (Regan fireside dated Day 1 but Day field Day 2; Jimmy keynote at 04:00; '[speaker]' placeholder Day 3; empty Status column; no briefs for Sales Pitch/REPITCH; truncated masterclass brief; Regan brief sequencing; four names still In consideration).",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html#tab-summit"
+   ]
+  },
+  {
+   "id": "ais-summit-ratings-sep7",
+   "source": "AI Summit & Mastery base appHS19yXObg8sHZv / Summit Agenda tblOPKBItHXRd6LXc, 103 rows 2023-2026, read 7 Sep 2026",
+   "finding": "AI Summit 2026: best sessions Noelle Russell Building Your AI Workforce 4.60 (n=105), Daniel Priestley 4.51 (n=99), Eliza demo 4.51; worst Day 3 System demo 3.92, Day 3 Q&A 3.94, Shawn Kanungo 4.12 (n=93). Laser Coaching 4.39 (n=85), VIP Q&As 4.46/4.44. Votes per session fell 337 -> 99 -> 93 across the three days (2025: 3,900 -> 2,040 -> 2,050). 2023 hard close 3.78 vs 2025 integration close 4.53. Rules: open with a build; strongest content on Day 2 as demos; coaching and VIP access out-rate keynotes; close by assembling; no standalone Q&A; plant the offer on Day 1.",
+   "status": "applied",
+   "applied_to": [
+    "ai-founders.html#tab-summit"
+   ]
+  },
+  {
+   "id": "aif-summit-proposal-sep7",
+   "source": "Curriculum Team proposal, 7 Sep 2026; speaker table rows for 'AI for Founders Summit | Oct 2026' (14 rows) and an empty 35-row Summit Agenda in app7lhR1V9Fts0mNc",
+   "finding": "Proposed AI for Founders Summit run-of-show (Oct 2026, Mastery Nov 2026): Day 1 Vishen W1 frame + Daniel five pillars + Vykintas live company-brain build + founders fireside + soft open + VIP Q&A; Day 2 Noelle workforce + Marie customer intelligence + Vishen pipeline demo + Mastery Reveal + hot seats (Vishen+Daniel) + VIP Q&A; Day 3 Daniel/Alex 4-day founder week + Shawn 30-min finance cockpit demo + REPITCH + Domenic heart close + FINAL CLOSE + buyers' welcome. Same sales spine as Expert to Authority. Flags: Marie Forleo and Domenic Ashburn have no summit rows; Shawn below bar but In Negotiation; Daniel/Vykintas only Outreach done; founder stories unnamed; dates undated.",
+   "status": "proposed",
+   "applied_to": [
+    "ai-founders.html#tab-summit"
+   ]
+  },
+  {
+   "id": "ea-quiz-registrants-sep7",
+   "source": "appnHZYcirCg1VqUP/tblxGaIBEs265rYAd Expert to Authority Quiz 2026, 40 rows (36 with revenue), read 7 Sep 2026",
+   "finding": "Summit registrants: 19/36 pre-revenue, 12/36 under $25K (86% under $25K), 4 at $25-100K, 1 at $100-500K, none above. Breakdown: 18 'nobody knows I exist', 9 'can't put what I do into words' (75%), 4 plateaued, 3 one-offer, 2 followers-don't-buy. Success: 11 'THE name', 10 fully booked premium, 7 product line, 5 first clients, 3 peers. New type question: 11/14 The Expert. 20/35 two-plus years at it. Open text: visibility, articulation, self-belief, overwhelm, referrals-only.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html#tab-v2"
+   ],
+   "rule": "Weight the curriculum to the Expert path; decline scale-lever weeks (ads, app, team, multi-platform) for this room; re-read the quiz before each cohort."
+  },
+  {
+   "id": "ea-v2-vishen-inputs-sep7",
+   "source": "Vishen's Blinklife 18-week page + summit note vs team V1; Gareth's brief 7 Sep 2026",
+   "finding": "Version 2 built as an extra tab. Adopted: Authority Statement (W1), Named Signature Method (W3 renamed), marketplace validation (W5), Signature Offer language (W14), 90-day plan capstone (W17), summit arc (workbook, graduation reveal, hot seats, objection handling, hard close). Adapted: four paths as routing (Scaler -> Stagnating Expert), five pillars with Team & Scale replaced by Show Up & Stay Chosen, Schwartz as one exercise, Get Booked lab thread (W16). Declined: Cialdini week, platform dance, paid ads, app, lean team, summits week, 18 weeks, unverified figures; casting of Marisa on virality, Priestley, Shade Zahrai (cost), Roxie Nafousi (subject). Maria Wendt open question (4.91 n=33; Not Approved 31 Aug, re-added 7 Sep).",
+   "status": "proposed",
+   "applied_to": [
+    "expert-authority.html#tab-v2",
+    "index.html"
+   ]
+  },
+  {
+   "id": "ea-w9-mainline-sep7",
+   "source": "S&I base appKlfvxdXofNlFfk: Lessons (OTW 2025 Day 1–3 attendance 190/154/168 of 492; ratings 9.02/9.57/9.81; 2026 Bonus rows unmeasured), Workshop Live Feedback (21 in-person forms, NPS ≈ +5), 2026 Tuesday workshops 220–282 of 456 at 9.11–9.59; Gareth's ruling 7 Sep 2026",
+   "finding": "E&A Week 9 moved from a three-day weekend intensive to the Tue/Thu mainline (Vishen doctrine Tuesday, Alessio script build Thursday) with one optional Saturday shoot floor and a Week 10 fallback. Vishen's live load: 8 teach weeks, no weekend. The in-person 2025 complaints were specific: 400+ non-students admitted, Day 1 repeated month one, promised coaching absent, an hour cut.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority.html",
+    "data/boundary.json"
+   ]
+  },
+  {
+   "id": "ea-v2-priestley-conditional-sep7",
+   "date": "2026-09-07",
+   "area": "E&A Version 2 · Daniel Priestley",
+   "finding": "Vishen asked for Priestley. Speaker table: In consideration (added 7 Sep); Marta and Marijana are reaching out per Gareth's ruling; commercial terms with Author Relations. Ratings: 9.55 avg across 12 EM sessions; 4.51 best keynote AI Summit 2026 Day 2.",
+   "decision": "Version 2 carries him as two conditional seats, both marked 'if confirmed': Day 3 keynote 'The Key Person of Influence Scorecard' at 5:00pm London (45 min; REPITCH and hot seats each cut 15 min to fit; day ends 9:15pm with him, 8:55pm without) and Week 4 co-teach of the KPI scorecard with Vishen (Vishen live weeks 8 to 7). Reconciliation row moved from Declined (summit casting) to its own Adapted row: 7 adopted / 10 adapted / 9 declined. Boundary by lane: KPI here, AI machine in AIF.",
+   "source": "Airtable appnHZYcirCg1VqUP Speaker Engagements; AI Summit 2026 agenda ratings; EM lesson ratings"
+  },
+  {
+   "id": "ea-three-versions-sep8",
+   "date": "2026-09-08",
+   "area": "E&A · versions",
+   "finding": "Gareth reframed the lineup: V1 = what the team presented; V2 = what Vishen presented; V3 = the combined build (previously called V2). Vishen's two BlinkLife documents were re-fetched on 8 Sep and are unchanged since 6–7 Sep. Reading them whole surfaced: his summit note's 'gap' week numbers do not match his curriculum page's weeks (method W2 vs Story; talk W4 vs Schwartz; ladder W6 vs Reels; content system W9 vs Funnel); Jimmy's Udemy figure is 500k+ in the note and 1M+ on the page; Regan is spelt two different wrong ways; 16 of 18 weeks name no teacher; his summit durations sum to 5h00–5h15 / 3h45 / 3h30 against his stated 4–5 / 4–5 / ~4 hours, and to ~10 hours of Vishen stage time; 10 of his 15 cited figures are in no base we hold (84 NPS verifies; 100k registrations and laser-coaching conversion partly).",
+   "decision": "Three self-contained pages plus a Compare page (/expert-authority, /expert-authority-v2, /expert-authority-v3, /expert-authority-compare) with a shared version bar. Compare carries a 13-row at-a-glance table, an 8-criterion scorecard (V1 6/1/1, V2 2/3/3, V3 7/1/0), week-by-week (18 rows), summit and authors side by side, and the recommendation: build V3; V1 only if Vishen withdraws his inputs; V2 only if the quiz re-read shows Founders/Scalers overtaking Experts.",
+   "source": "BlinkLife pages API (pages/public/vishen/expert-authority-summit; smart-notes/public/vishen/5a034b25…); Expert to Authority speaker table 8 Sep; team pages"
+  },
+  {
+   "id": "ea-audit-sep8",
+   "date": "2026-09-08",
+   "area": "E&A · full audit before sharing with Vishen",
+   "finding": "Sources re-read 8 Sep. (1) Quiz grew from 36 to 626 registrants (6–8 Sep): 76% under $25K (53% nothing yet), 10% at $100K+, 66% unseen or unclear, 69% The Expert, 35% ten-plus years; top success answer is now 'a product line that sells without trading hours' (27%), then fully booked (25%), THE name (21%). Direction unchanged from n=36. (2) Author Relations' records for the new names re-read; terms stay there, not here. (3) Speaker table, Summit Agenda (33 rows) and both BlinkLife documents unchanged. (4) Compare said 27 inputs; the reconciliation table has 26 (7+10+9). (5) One unclosed <p> in V1/V3 Evidence.",
+   "decision": "All figures corrected on V1, V2, V3 and Compare. Framing rewritten for a shared reader (Vishen included): no 'sent back', 'hold the line', 'push back', 'pandering'; declines described as routed to the programme built for that stage; scorecard criterion renamed 'Carries Vishen's inputs'. Compare gained 'The problem we are solving together' (customer, promise, business) and 'Retention and the money' (six levers with evidence per version; illustration at 200/300/400 seats: moving refunds from AIM 2026's observed 23.8% to a 10% target is worth $138K–$276K). Pipeline documented in pipeline.md; promote_v3 retired.",
+   "source": "Quiz tblxGaIBEs265rYAd (626 rows, aggregates only); Speaker Engagements; Summit Agenda; BlinkLife pages API; AIM 2026 dashboard figures already in learnings"
+  },
+  {
+   "id": "ea-accelerator-brief-sep8",
+   "date": "2026-09-08",
+   "area": "E&A · 09 The Accelerator (pre-recorded programme) editor's brief",
+   "finding": "Vishen's six-hour MVU Tallinn accelerator transcript (3,603 lines, 56,630 words; Vishen with Jimmy Naraine, Alessio Pieroni, Kash Rupareliaa, Sabrina Stocker, Safwaan Mohammed) cuts cleanly into a seven-day learning journey of 45 titled videos (plus one separate offer asset), 41,864 words kept (74%), about 4h 39m at 150 wpm: Day 1 Start on the Way (4 videos), Day 2 Be Seen (6), Day 3 Your First Course (7, Jimmy), Day 4 Sell Without Selling (6, Alessio), Day 5 Your Edge and Your Ladder (7), Day 6 Turn On the Tap (7, traffic trio), Day 7 The Masterclass and What Only You Can Do (8). Everything removed is listed with a reason: live-room logistics, clock times, the pre-launch BlinkLife demo, the Guild/mastermind pitch and offer copy, Q&A that does not travel. Every line from 12 onward is accounted for as kept, cut inside a video, or globally cut; six boundary lines are split between neighbouring videos with the split text recorded.",
+   "decision": "Shipped as tab 09 on Versions 1 and 3 (editor's brief: titles, line ranges, verbatim in/out cues, internal cuts, on-screen text, notes, day exercise) plus a full verbatim edit-script page at /accelerator-edit-script (line-numbered text, cuts collapsed in place, joins and trims marked, strong language highlighted). Text is never retyped; the transcript file is the source of truth and line numbers stand in for timecodes because the transcript has none. Seven release-blocking decisions are flagged for the producer, not made: unverified stage figures (half a billion, $100M, $40M, 1.1M followers, $21M, 30% bots), profanity policy, third-party assets, on-camera consent for participants, name spellings, live-only stragglers, and offer copy kept only in the separate 'Your Next Step' asset.",
+   "source": "scratchpad accelerator-transcript.txt (user upload 8 Sep), accelerator_journey.py, build_accelerator.py"
+  },
+  {
+   "id": "ea-compensation-house-rule-sep8",
+   "date": "2026-09-08",
+   "area": "House rule · author compensation",
+   "finding": "Gareth's ruling 8 Sep: author compensation figures are team-only and never appear in the proposal pages, the comparison, the data files or the builders. The repo is public and the Cloud Run pages are unauthenticated.",
+   "decision": "Every compensation figure, rate and budget line removed from V1, V2, V3, Compare, AI for Founders, both Guild pages, the brief and learnings.json; contract tables now show seat and status only. scrub_fees.py runs last in the pipeline and verifies zero matches. Commercial terms are referred to as held by Author Relations. Note: earlier git history still contains the removed figures.",
+   "source": "Gareth, 8 Sep 2026"
+  },
+  {
+   "id": "ea-summit-agenda-approved-sep9",
+   "date": "2026-09-09",
+   "area": "E&A · Expert to Authority Summit, approved agenda v3",
+   "finding": "Approved agenda v3 (8 Sep, refines Vishen's draft per Jaideep's rules): three days of exactly 4:00 mainstage, one pillar chapter a day (Day 1 The Foundation: Message & Identity; Day 2 The Machine: Platform & Reach + Funnel & Revenue; Day 3 The Business: Offer & Product + Team & Scale). Sales on Days 2 and 3 only, always second-to-last; no ask on Day 1; VIP hour after mainstage on Days 2 and 3 only; every session tags a week on Vishen's published 18-week map. Sixteen sessions. Speakers: Marisa Peer (Day 1 identity keynote, re-briefed from viral methodologies), Jimmy Naraine (Day 2 Udemy Empire, named as the Week 13 teacher), Daniel Priestley (Day 2 closer, The Weekly Cadence), Ronan Diego + Dawn Hoang (Day 2 proof fireside), Regan Hillyer (Day 3 Zero to Hero, confirm by 12 Sep, Dawn understudy), Ajit Nawalkha (Day 3 Hot Seat, coaching only, never the pitch), Jason Goldberg hosting inside session times. Out: Shadé Zahrai (replaced by Marisa), Kash (removed everywhere). John Lee has no summit session. Source discrepancy: Regan 0:30 in the agenda table vs 0:35 in the slate; 0:30 is what sums Day 3 to 4:00.",
+   "decision": "Version 3's Summit tab replaced with the approved agenda exactly (rules, structure, three day tables with offsets, speaker slate, ten changes, open items); V3 cross-references updated (Authors verdicts, Format contracts, Positioning reconciliation: Jimmy's Udemy casting moves from declined to adapted, so the tally is 7 adopted, 11 adapted, 8 declined). Compare's summit column now extracts the approved agenda. Version 1 untouched as the team's record; Version 2 untouched as Vishen's draft. Open for the team: mapping the agenda's 18-week tags onto V3's 17 weeks (the source's own 'one canonical map' item).",
+   "source": "https://shareable-page.vercel.app/expert-summit-agenda-v3.html (fetched 9 Sep 2026), shared by Gareth"
+  },
+  {
+   "id": "ea-priestley-two-classes-sep11",
+   "date": "2026-09-11",
+   "area": "Expert & Authority Mastery · faculty",
+   "finding": "Vishen asked for two named Daniel Priestley classes in the Mastery: the product ladder and the cadence. Mining the Mindvalley catalogue put his product-ladder material in Entrepreneurship Mastery 2025, where From Idea to Impact: The Strategy Behind Every Successful Product rates 9.49 across 107 students, his largest sample with us, and teaches Product DNA (Problem, Promise, Proof) and the Product Ecosystem. Three adjacent EM sessions support the same week: High Value Offers & Price Anchoring 9.74 (n=68), Monetization Frameworks 9.61 (n=84), Oversubscription Strategies 9.26 (n=38). A targeted search for cadence, rhythm, scorecard, ladder and ascension across that table returned nothing, so there is no existing cadence training of his to lift; the nearest evidence is Designing Your Next 12 Months: From Momentum to Market Leadership at 9.87 (n=46), the highest-rated of his thirteen EM sessions, plus an unscheduled Scorecard Thinking: What You Measure, You Multiply.",
+   "decision": "Week 14 teach goes to Priestley (the product ladder), with Ajit moving to the Week 14 build day alongside Alessio and keeping W13 and W15. Week 17 splits into Tuesday and Thursday: Priestley teaches The Predictable Weekly Cadence on Tuesday, Vishen keeps the identity tier and graduation on Thursday. The conditional Week 4 Key Person of Influence co-teach is retired and the scorecard travels to Week 17, so Vishen's live weeks stay at 8 and Priestley holds exactly the two classes asked for. Live touchpoints go from 35 to 36. Nora Cavani is the named proof point for the ladder week, pending written consent and substantiation of the revenue figure.",
+   "source": "Vishen's instruction via Gareth, 11 Sep 2026 · Entrepreneurship Mastery 2025 base appJVtywkn9mTFbLs table tblV7Z54v3bPdKfgC · E&A Speaker Engagements and Summit Agenda tables, base appnHZYcirCg1VqUP, read 11 Sep 2026"
+  },
+  {
+   "id": "ea-author-status-audit-sep11",
+   "date": "2026-09-11",
+   "area": "Expert & Authority · Author Relations",
+   "finding": "Thirty rows carry the Expert to Authority calendar on the live Speaker Engagements table and every one of them belongs to the summit. Confirmed: Vishen Lakhiani, Marisa Peer, Jimmy Naraine, Regan Hillyer, Ajit Nawalkha, Daniel Priestley. Confirmed but unsigned: Jason Goldberg. In Negotiation: John Lee, Ronan Diego. In consideration: Alessio Pieroni, Sabrina Stocker, Akash (Kash) Rupareliaa, Dawn Hoang, Nora Cavani. Not Approved: thirteen names including Chris Do and Paul McKenna. No row carries Rejected or Can't make it, so no author has declined. The Expert & Authority Mastery programme has only two rows and neither carries a status, so no Mastery teaching seat is tracked at all.",
+   "decision": "The Authors tab now carries the 11 September audit in place of the 31 August table, with a five-item chase list for Author Relations led by Priestley's two untracked Mastery classes. Six status pills on the page were stale and are corrected: Marisa, Jimmy, Regan, Ajit and Priestley to Confirmed, Jason to Confirmed with the agreement outstanding; Shadé Zahrai and Roxie Nafousi are corrected to Not Approved.",
+   "source": "Speaker Engagements table tblShRX4kUaq1Ur1P, base appnHZYcirCg1VqUP, read 11 Sep 2026"
+  },
+  {
+   "id": "ea-summit-agenda-drift-sep11",
+   "date": "2026-09-11",
+   "area": "Expert to Authority Summit · agenda",
+   "finding": "The live Summit Agenda table (39 rows, read 11 Sep) no longer matches the agenda approved on 8 September. Daniel Priestley has moved from Day 2 closer to Day 3 opener: The Predictable Weekly Cadence, 45 minutes, 15:10 New York on 20 September, Confirmed. Day titles are now The Brand, The Products and Scaling the Business. Vishen keeps The Product Step Ladder as the Day 2 opener at 40 minutes. John Lee is back with a Day 1 session marked in progress; Ajit has moved to Day 2; Marisa's session is now How Marisa Peer Built a $20M Coaching Empire. The Authority Talk, the Hot Seat and the named Mastery Reveal have no rows. Day 1 runs 4:10 against the 4:00 hard cap. Three rows are unscheduled and the Ronan and Dawn fireside has host rows either side but no session row.",
+   "decision": "The approved agenda table in Version 3 is left exactly as approved, and the drift is surfaced beneath it as a dated delta rather than silently merged. Which version is canonical is for Vishen and Jaideep to settle.",
+   "source": "Summit Agenda table tblJTtf6jll2UyRbW, base appnHZYcirCg1VqUP, read 11 Sep 2026 vs the approved agenda v3 of 8 Sep"
+  },
+  {
+   "id": "ea-summit-agenda-confirmed-sep11",
+   "date": "2026-09-11",
+   "area": "Expert to Authority Summit · agenda",
+   "finding": "Vishen sent the confirmed summit agenda: nineteen numbered sessions plus Marisa Peer's live interview, across three days titled The Foundation, The Machine and The Close, with rewritten attendee-facing descriptions. Six guests carry named sessions: John Lee (Day 1), Ajit Nawalkha twice, Jimmy Naraine, Marisa Peer, Daniel Priestley and Regan Hillyer. Sessions with no name attached are Vishen's, per Gareth. Joining it to the live Summit Agenda table leaves six sessions sitting on a different day than the table, two sessions with no table row at all (Ajit's certification story and the Q&A), and no day reaching a four-hour mainstage on the durations the table holds.",
+   "decision": "The confirmed agenda replaces the 8 September approved run-of-show inside the SUMMIT3 markers, so the page carries one agenda rather than three. Descriptions are transcribed verbatim. Durations and statuses are joined from the table by title and left blank where no row matches, never guessed. A summit-to-Mastery map was added session by session, and six open items were raised rather than resolved: the Day 3 ordering (Connecting All the Dots sits at 15 with four sessions after it, and the day ends on the offer, which Jaideep's rules forbade), the six day mismatches, the two missing rows, the unverifiable day timing, Ajit now carrying two sessions rather than the one he agreed to, and the Reagan Hillier spelling, which the table and her own brand give as Regan Hillyer.",
+   "source": "Vishen's confirmed agenda via Gareth, 11 Sep 2026 · Summit Agenda table tblJTtf6jll2UyRbW, base appnHZYcirCg1VqUP, read 11 Sep 2026"
+  },
+  {
+   "id": "ea-summit-airtable-canonical-sep11",
+   "date": "2026-09-11",
+   "area": "Expert to Authority Summit · agenda",
+   "finding": "Gareth ruled the Summit Agenda Airtable (base appnHZYcirCg1VqUP, table tblJTtf6jll2UyRbW) the source of truth for the summit, superseding both the 8 September approved agenda and the 11 September confirmed-agenda document. Read the same day: 38 rows, 35 scheduled and 3 with no start time. Daniel Priestley opens Day 3 at 15:10 New York with The Predictable Weekly Cadence, 45 minutes, Confirmed, which settles the Day 2 versus Day 3 question. Marisa Peer is Day 1 at 15:55, a 30-minute live interview whose brief explicitly rules out identity or mindset content. Ajit Nawalkha carries one session, not two: How to Create High End Coaching Solutions, Day 2 at 19:00, 25 minutes, typed Laser Coaching, with no brief written. John Lee is Day 1 at 18:20, 40 minutes, In progress. Regan Hillyer is a Day 3 fireside with Vishen, 30 minutes, In progress. Jason Goldberg hosts all three days across seventeen link rows. Seven session briefs name a Mastery week and all use Vishen's 18-week numbering, so only Week 1 lands where this 17-week build puts it; the Product Step Ladder is the widest gap at Week 6 on the table versus Week 14 in the curriculum. Clock problems: Day 1 runs 4:10 with no VIP hour; Day 2 has a 25-minute hole at 17:55 and a 5-minute collision between Ajit and the VIP Q&A; Day 3 has a 5-minute collision between Priestley and the host row that thanks him.",
+   "decision": "The Summit tab of Version 3 is rebuilt entirely from the table, transcribed verbatim, with blanks shown as blanks and the clock anomalies surfaced rather than fixed. All earlier agendas are removed from the tab so there is one run of show and one place to change it. A session-by-session summit-to-Mastery map translates the table's 18-week references onto this 17-week build. Seven open items are raised for Vishen and Jaideep, led by the week-numbering mismatch and by Day 3 running its longest session as the offer. Cross-references on the Authors, Evidence and Positioning tabs are re-pointed at the table.",
+   "source": "Summit Agenda table tblJTtf6jll2UyRbW, base appnHZYcirCg1VqUP, read 11 Sep 2026"
+  },
+  {
+   "id": "ea-programme-tab-order-sep11",
+   "date": "2026-09-11",
+   "area": "Expert & Authority Mastery · page structure",
+   "finding": "The Programme tab opened with seven sections of justification before the curriculum itself: the organising idea, the weekly rhythm, the seven pieces of doctrine, the Mindvalley standards check, the three honest risks and the five pillars. Vishen reads this page to see the curriculum, not the case for it.",
+   "decision": "The seventeen-week curriculum now opens the Programme tab. Every justification section moves below it behind a dark divider that says so plainly, so the reasoning is one scroll away for anyone who wants to argue with a decision and invisible to anyone who just wants the weeks.",
+   "source": "Gareth's instruction, 11 Sep 2026"
+  },
+  {
+   "id": "ea-quiz-7739-read-sep15",
+   "date": "2026-09-15",
+   "area": "Expert & Authority · the room",
+   "finding": "Full read of the Expert to Authority Quiz table: 7,739 responses, 6 to 15 September. 69% The Expert, 14% Founder, 10% Creator, 7% Established Expert. 50% have never sold from their expertise, 24% under $25K, 12% (842 people) at $100K+. 35% have 10+ years' tenure and a third of those have never sold. 48% choose 'nobody knows I exist', 21% 'can't put what I do into words'. Product line is the top success answer in every revenue band (33%); fully booked peaks at 36% in the under-$25K band; peers is 12% above $1M. Pain moves with revenue: invisibility 61% at zero, 'follow but don't buy' peaks 26% under $25K, plateau reaches 46% above $1M. Open question (5,582 answers): 40% ask for a system/the how, 35% selling and pricing, 27% visibility, 20% clarity, only 6% name fear. 428 wrote 'I'm good at what I do, but'. Browser-translated option strings split counts across 40+ variants; 447 answered the retired Q1; 368 six-figure earners still self-select as The Expert.",
+   "decision": "Nine recommendations published as an artefact for the curriculum team, none changing the spine: Blueprint as weekly tracker (W1–17), a pricing clinic (W14–15), leverage named and audited (W14/16/17), one-sentence exercise in W1, thirty scheduled posts as the W10 artefact, an Established Expert pod thread with the Guild bridge at W12, keep the first rung early, signpost book and stage at W16 without teaching them, and no added mindset week. Data hygiene: lock quiz option values at ingest, map the retired Q1, treat Q3 revenue as the primary routing fork.",
+   "source": "Quiz table tblxGaIBEs265rYAd, base appnHZYcirCg1VqUP, all 7,739 records read 15 Sep 2026 · reports/quiz-insights-2026-09-15.html · https://claude.ai/artifact/YbXAATbVEaTDGga2HKQX88"
+  },
+  {
+   "id": "ea-quiz-into-v3-sep16",
+   "date": "2026-09-16",
+   "area": "Expert & Authority Mastery · curriculum",
+   "finding": "Gareth approved eight of the nine quiz recommendations on 16 September and held the ninth (no added mindset week) with a question: what are we treating, given he wants mindset work with Marisa.",
+   "decision": "Applied to Version 3: the Authority Blueprint becomes the thirteen-piece weekly tracker handed out in Week 1 and marked every Tuesday; Week 1 ends with a rough one-sentence answer to what you do and for whom; the first rung is held at weeks 5 to 8 with the reason stated; Week 10's artefact becomes thirty scheduled posts rather than a hook bank; Established Experts are podded by revenue with Week 3 briefed to the plateau and the Guild invitation moved to Week 12 for the $100K+ pod; Week 14's build day becomes a named pricing clinic where every price is said and defended out loud; Week 15 ends with one real ask for real money on tape; Week 16's Get Booked thread signposts the book and the stage to Speaking & Influence; Week 17 names leverage as the outcome and closes on a ten-minute leverage audit. The Case tab's quiz evidence is refreshed from the 626 sample to the full 7,739. The mindset item is unchanged pending Gareth's answer.",
+   "source": "Gareth, 16 Sep 2026 · The Room, Measured, https://claude.ai/artifact/YbXAATbVEaTDGga2HKQX88"
+  },
+  {
+   "id": "ea-day-zero-bonus-call-sep16",
+   "date": "2026-09-16",
+   "area": "Expert & Authority Mastery · onboarding",
+   "finding": "Jaideep's plan adds a Vishen bonus call on Wednesday 23 September between the summit (18 to 20 Sep) and the Mastery kickoff (Tuesday 7 Oct), for two stated reasons: fast-action buying, and engaging students inside the two-week sales period so the refund rate is lower. Gareth's framing: the gap between paying and starting is where buyers ask whether it was a scam; the call positions the gap as anticipation. The format spec had already adopted an early-value call in the first week after the summit from the Tom Kirby playbook; AI Mastery 2026 ran 23.8% refunds against +84 NPS.",
+   "decision": "Built into Version 3 as Day Zero, a gold module above Week 1 on the Programme tab, with a 75-minute run of show: the room read back from the quiz (10), the Be Seen / Architecture / Show Up compass with a live self-diagnosis from each person's quiz answer (15), the Blueprint walked week by week with the faculty named (15), the Before Picture taken live and submitted through the onboarding survey (10), the fourteen-day plan (5), the ask second to last (5), a compass close (5), Q&A (15). Nothing brings a Mastery week forward. The Summit tab gains an after-the-summit strip with the three dates. Open item: the fast-action bonus is still undefined.",
+   "source": "Jaideep Chagger's flow diagram via Gareth, 16 Sep 2026 · learnings tomkirby-playbook-aug27"
+  },
+  {
+   "id": "ea-marisa-w2-live-brief-sep16",
+   "date": "2026-09-16",
+   "area": "Expert & Authority Mastery · Week 2 · Marisa Peer",
+   "finding": "Gareth ruled that anything presented as Marisa Peer's must be hers, and anything assembled must stand on her captured teaching. Both quests were read in full: Uncompromised Life (17 lessons) and RTHA (35 lessons). Her real material: the 'I am enough' practice and homework (UL L14/15), 21 days per subject (RTHA L7), the criticism scripts and three rules (UL L16, RTHA L9), the Financial Upper Limit exercise with tripling (RTHA L25), the four beliefs of abundant people (RTHA L11), the Rules of the Mind (RTHA L5), 'you cannot be rejected unless you allow people to reject you' (RTHA L8). Two phrases earlier attributed to her ('no is a delay to the next yes', 'if I ask for more someone else has less') are in neither transcript. Marisa's summit slot is a 30-minute live interview with Vishen whose brief rules out mindset content; Gareth confirmed the Mastery keeps the taught session because the summit is the fireside. He also framed the three layers: free 3-day summit that gives and gathers leads; a bonus call to cut refunds between purchase and cohort start; a 17-week Mastery with two lessons a week, one teach and one integration lab. Date check: 7 October 2026 is a Wednesday, and the planning diagram calls it Tuesday.",
+   "decision": "Week 2 rebuilt in V3 as a 90-minute live Zoom teach with a timed run of show citing her lessons, a ten-minute being-paid segment that seeds Week 14, a 21-day homework landing on Module 2, seven bonus audios from her quests on a release calendar, guardrails and asks for her team. Day Zero renamed Lesson 0, flagged BONUS with the date, added to the module map and legend, and a summit → bonus → Mastery strip put at the top of the Programme tab. 'Seventeen days before kickoff' corrected to fourteen. The kickoff weekday is flagged on the page, not resolved. Full brief at briefs/MARISA-PEER-W2-LIVE-CALL.md.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v3.html#tab-programme",
+    "briefs/MARISA-PEER-W2-LIVE-CALL.md"
+   ]
+  },
+  {
+   "id": "ea-programme-reader-mode-sep16",
+   "date": "2026-09-16",
+   "area": "Expert & Authority Mastery · V3 · Programme tab UX",
+   "finding": "Gareth asked that the Programme tab open with every week expanded so Vishen only scrolls, keep the colour coding, keep per-module collapse, and hide everything that is context rather than curriculum.",
+   "decision": "All six curriculum modules (Lesson 0 to Module 4) carry the open class by default; module headers still fold each one. A reader-mode switch in the tools row defaults to 'Curriculum only', which hides the in-module callouts, the version notes and the whole reasoning block below the divider; 'Show the reasoning' restores them. The intro paragraph is one line and its former text moved into the hidden reasoning block. Lesson 0's full brief is collapsed like every other brief.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v3.html#tab-programme"
+   ]
+  },
+  {
+   "id": "ea-v4-one-voice-per-week-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 4 · delivery model",
+   "finding": "Jaideep asked for a Version 4 in which the curriculum stays as Version 3 but the author who teaches Tuesday also runs the Thursday build day, removing the lab-lead seats, so the team can price the two models. Mapping every V3 Thursday to its Tuesday voice: live voices fall from 10 to 7; lab-lead seats from 3 to 0 (16 contracted build days released); Vishen's live sessions rise from 9 to 19 of 36 (ten Thursdays plus the optional Saturday); five guest weeks become two-call weeks (Marisa W2, John W10 and W16, Ajit W13, Priestley W14), each a new ask of a confirmed author; W6 and W15 were already author-led. Two labs have no natural V4 owner: W11 (Sabrina's LinkedIn layer under Regan's fireside, so the interviewer Vishen runs it) and the optional Saturday shoot floor. V4 gives up the fixed-faces continuity argument that V3 used against the S&I workshop dip, and the specialist craft of Kash, Alessio and Sabrina.",
+   "decision": "expert-authority-v4.html generated from V3 by build_v4.py: every Thursday slot re-owned with a black V4 note naming the V3 lead and what moves; a Version 4 section at the top of the Case tab with per-person load (V3 vs V4), Thursday-by-Thursday table, five finance comparisons stated without figures (including the hybrid: guests run their own Thursdays, Vishen keeps one lab lead), and what V4 gives up; Authors tab lab section and author-curriculum map carry the V4 column; Format tab totals updated. Route /expert-authority-v4; V4 card added to the switcher on V1, V2, V3, compare and index. No compensation figures anywhere; the guard passes.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v4.html",
+    "server.js",
+    "index.html",
+    "expert-authority.html",
+    "expert-authority-v2.html",
+    "expert-authority-v3.html",
+    "expert-authority-compare.html"
+   ]
+  },
+  {
+   "id": "ea-v4-full-workshops-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 4 · Programme tab",
+   "finding": "Gareth asked for Version 4 to carry the same depth as Version 3: every week colour-coded and every Thursday written out as the author's own workshop, not Version 3's lab with a new face on it.",
+   "decision": "Every Thursday in Version 4 is now a full author-led workshop brief: title, lede, a timed run of show inside 'Read the full workshop brief', the win, and a V4 note naming the Version 3 lead and what travels (templates, rubrics and camera guides ship as recorded resources). Vishen's ten Thursdays are written to his own mechanics (RAS test, Crown the Belief, quiz funnel, story bank, script stack, long-form doctrine); Marisa's Thursday is state work then camera (RTHA L5, UL L16, UL L17); John's are his conversion map and his offer; Ajit's are the emails and the call; Priestley's is the pricing clinic with Marisa's upper-limit number opened beside the anchor. W6 (Jimmy both days) is unchanged. The optional Saturday and W11 carry honest notes as the two floors without a natural author.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v4.html#tab-programme"
+   ]
+  },
+  {
+   "id": "ea-v4-availability-adapted-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 4 · delivery model",
+   "finding": "Gareth reported author availability for Version 4's Thursday workshops: Regan Hillyer, Daniel Priestley and Marisa Peer are not available (teach only); John Lee, Jimmy Naraine and Ajit Nawalkha are open to more. He asked how V4 adapts so Jimmy covers other authors' workshops and John and Ajit take their own.",
+   "decision": "Version 4 adapted: Vishen, Jimmy, John and Ajit run their own Thursdays; Jimmy covers W2 (Marisa's week, the second film, his filming and presence lane, Marisa's UL L15 audio as opener), W11 (Regan's week, the LinkedIn and answer-engine build with Sabrina's lesson as pre-watch, flagged as outside his craft) and the optional Saturday shoot floor, and keeps his V3 W8 story bank; Ajit takes the W14 pricing clinic under Priestley's Tuesday because pricing is his verified lane and he co-led it in V3, with Jimmy named as alternate. Loads: Vishen 16 sessions (about 24 live hours, from 9 and 13), Jimmy 8 (14.5 h), John 4, Ajit 5, Marisa 1, Priestley 2, Regan 1, lab leads 0. Option B recorded on the page: Jimmy as standing build lead on Vishen's five ordinary Thursdays (W1, W3, W4, W7, W12), Vishen at 11 and Jimmy at 13. Case tab, load table with hours, Thursday map, finance questions (no figures) and the gives-up list all updated; the load table now stacks above the Thursday map.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v4.html"
+   ]
+  },
+  {
+   "id": "ea-v5-final-curriculum-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 5 · final curriculum",
+   "finding": "Curriculum meeting 17 Sep (Vishen, Gareth, Jaideep, Marisha). Vishen: the curriculum is his 18 weeks; assign the authors already in progress and keep the data cues; no mindset (Visibility Wound and I Am Enough out), no story week, no 'blog titles', no Regan fireside; Cialdini, market awareness and copywriting must be in. His assignments: W1-4 Vishen; W5-6 John Lee; W7 Vishen; W8 Vishen with Marisha as guest, or Daniel; W9-10 Vishen; W11 Ajit (one-to-one products, renamed from high-ticket sales); W12 Vishen; W13 Jimmy (two weeks: course design, then the Udemy ecosystem); W14 Ajit (certification and community); W15 Vishen; W16 Vishen and/or Daniel; W17-18 Vishen. The product ladder is Vishen's own (Nora had misattributed it to Priestley). Labs: Vykintas leads all workshops, Jimmy his own; John, Daniel and Jimmy may run their own with Vykintas alongside; Kash, Sabrina, Alessio and Safwaan out. Marisa and Regan are summit case studies only. Daniel: two classes, lane 'premium positioning'; the in-meeting agent briefing proposed a signature-offer class and a demand-before-you-sell class. Sales: Mastery on stage; the Expert Guild as ascension, application only, $10,000 alone or $7,500 with the Mastery, a Wednesday session from Estonia. Bonuses: Skill Pack at $499 as the fast-action bonus and later downsell; accelerator becomes 'Build, Sell and Monetise Your First Online Course', seven days with Jimmy, around $899. 'Don't do a bonus call with Vishen as a fast-action bonus.' Trailer must lead with Vishen. Gareth's nuance: Marisa Peer's contract for one Mastery class is signed, so V5 must suggest one place for her and hand Vishen the fit.",
+   "decision": "expert-authority-v5.html built as a single clean page: no version switcher, no tabs, one hero line, five colour-coded sections (Foundation W1-4, Content and platform W5-6, Conversion and traffic W7-10, Products and revenue W11-15, Scale and legacy W16-18) plus a gold kickoff row. Each week: Tuesday lesson in Vishen's spoken title with a one-line description and lead, Thursday workshop with what gets built and its lead (Vykintas by default), one muted data cue where one exists. Suggestions marked in gold: Daniel Priestley at W8 (demand before you sell) and W9 (premium positioning alongside Vishen); Jimmy's second week at W14 with certification and community folded into W15; Marisa Peer with Vishen at W15 as the certification case study. Open items in ink: the kickoff call, 18 weeks against the four-month promise and the 7 October weekday, Daniel's placement, W16 Vishen and/or Daniel. Footer carries the Skill Pack, the accelerator and the Expert Guild pricing. Versions 1 to 4 keep their switchers with a V5 card added; V5 itself links to nothing.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v5.html",
+    "server.js",
+    "index.html"
+   ]
+  },
+  {
+   "id": "ea-v5-aligned-to-vishen-published-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 5 · final curriculum",
+   "finding": "After the 17 Sep meeting Vishen published his own 18-week curriculum on BlinkLife (page 3b2c43b1…, 11:47 UTC; read through the public pages API because the page renders client-side). It supersedes both his 7 Sep documents (Version 2) and the titles he read aloud in the meeting. Five pillars: Message & Positioning (W1-4), Platform & Content (W5-7), Funnel & Conversion (W8-12), Scale & Products (W13-15), Legacy & Systems (W16-18). Teachers: Vishen 12 weeks; Daniel Priestley W3 (Signature Offer, live workshop 120 min, two hot seats) and W8 (Oversubscribed); Jimmy W5 (course design); John Lee W6-7; Ajit W14 (extended session: one-to-one, coaching, consulting, certification, community). No labs, no Marisha guest, no kickoff call, no bonuses on his page; the footer still carries the free summit registration line.",
+   "decision": "Version 5 rebuilt to reproduce his page exactly: titles, descriptions, 'You'll learn' bullets (collapsed), teachers and formats, in his pillar colours. Two additions marked as the team's: the Thursday workshop lead (Vykintas by default; Jimmy W5; John with Vykintas W6-7; Ajit with Vykintas W14) with what gets built taken from his own bullets, and one gold suggestion at Week 2 placing Marisa Peer with Vishen as the worked example of a signature method (RTT), alternative Week 13. Everything else from the earlier V5 draft (kickoff row, data cues, Priestley at 8 and 16, footer on bonuses and the Guild) removed from the page. The guard's allow-list now carries three of Vishen's own lesson phrases (offer packaging, premium pricing, speaking charges) that are curriculum content.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v5.html"
+   ]
+  },
+  {
+   "id": "ea-v5-vykintas-marisha-kickoff-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 5",
+   "finding": "Gareth's rulings on the three gaps between the meeting and Vishen's published page: Vykintas joins every workshop including Jimmy's Week 5, as the consistent thread of the curriculum; Marisha Lakhiani (Head of Growth, Vishen's cousin) is added as guest on Week 9 paid advertising, per Vishen's ask in the meeting; the kickoff call is added; the Expert Guild is ignored on the curriculum page; the 'Register now, it's free' summit footer from Vishen's page is not carried over.",
+   "decision": "Applied to Version 5. Marisha's headshot taken from the Authors table picture in the Author Relations base and saved as authors/marisha-lakhiani.png.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v5.html",
+    "authors/marisha-lakhiani.png"
+   ]
+  },
+  {
+   "id": "ea-v5-wed-fri-cadence-sep17",
+   "date": "2026-09-17",
+   "area": "Expert & Authority Mastery · Version 5 · schedule",
+   "finding": "Gareth ruled the cadence: kickoff of the Mastery on Wednesday 7 October 2026, Wednesday lesson and Friday workshop instead of Tuesday and Thursday. Run straight through, Week 18 lands on Wednesday 3 February and Friday 5 February 2027. Two holiday collisions: Week 12's workshop falls on Friday 25 December and Week 13's on Friday 1 January.",
+   "decision": "Version 5 now prints the date on every lesson and workshop from 7 October; hero states Wednesday 7 October to Friday 5 February. The holiday weeks are shown as they fall and flagged to Gareth for a break decision rather than moved on the page.",
+   "status": "applied",
+   "applied_to": [
+    "expert-authority-v5.html"
+   ]
+  }
+ ],
+ "verified_corrections_to_live_pages": [
+  {
+   "page": "ai-founders",
+   "claim": "a perfect score for a hands-on build session (10.0 lab)",
+   "actual": "Implementation Labs run 8.14–9.46, avg ≈9.2. 'Build the App You Always Wished Existed' lab = 9.18 (n=83). The 9.87 belongs to the 'Tying Everything Together' capstone TEACH (n=99)."
+  },
+  {
+   "page": "ai-founders",
+   "claim": "Find, Understand & Win Your Best Customers 9.69",
+   "actual": "9.68, n=110 — confirmed within rounding"
+  },
+  {
+   "page": "ai-founders",
+   "claim": "Build Your AI OS Pt1/Pt2 9.64/9.54",
+   "actual": "9.63 (n=79) / 9.54 (n=82) — confirmed"
+  },
+  {
+   "page": "expert-authority",
+   "claim": "AIM labs 9.0–10.0 incl. a perfect 10 (legacy text)",
+   "actual": "corrected to 8.14–9.46, avg ≈9.2"
+  }
+ ],
+ "sim_2026_verified_samples": {
+  "paul_mckenna_instant_confidence": {
+   "rating": 9.61,
+   "n": 79,
+   "attendance": "56%"
+  },
+  "lisa_nichols_power_of_story": {
+   "rating": 9.74,
+   "n": 75,
+   "attendance": "58%"
+  },
+  "lisa_nichols_story_workshop": {
+   "rating": 9.39,
+   "n": 64,
+   "attendance": "54%"
+  }
+ },
+ "three_programme_boundary": {
+  "speaking_influence": "The talk. Stagecraft, story delivery, confidence, holding a room. Ends where monetisation begins.",
+  "expert_authority": "The business of being known. Niche, product ladder, masterclass, traffic, the close. Assumes you can speak; teaches you how to be found and paid.",
+  "ai_founders": "The machine. Five pillars rebuilt as AI systems for someone who already has something to sell. Assumes demand exists; teaches you how to serve it without drowning.",
+  "router": "Can't hold a room → SIM. Can hold a room but nobody's buying → E&A. People are buying and it's eating you alive → AIF.",
+  "evidence": "SIM detractors explicitly rejected business-building content inside a speaking programme (L7). The boundary is what students are telling us they want."
+ }
 }

@@ -1,0 +1,762 @@
+{
+ "source": {
+  "base": "appnHZYcirCg1VqUP",
+  "table": "tblxZy7RMJ2naoHhS",
+  "view": "viwzNbQ73gtCPFIl0",
+  "url": "https://airtable.com/appnHZYcirCg1VqUP/tblxZy7RMJ2naoHhS/viwzNbQ73gtCPFIl0",
+  "label": "Expert to Authority · Lessons · 2026 | Lessons"
+ },
+ "mode": "snapshot",
+ "synced_at": "2026-09-23T10:16:14+00:00",
+ "modules": [
+  {
+   "name": "Pillar 1: Message & Positioning",
+   "short": "Message & Positioning",
+   "order": 1
+  },
+  {
+   "name": "Pillar 2: Platform & Content",
+   "short": "Platform & Content",
+   "order": 2
+  },
+  {
+   "name": "Pillar 3: Funnel & Conversion",
+   "short": "Funnel & Conversion",
+   "order": 3
+  },
+  {
+   "name": "Pillar 4: Scale & Products",
+   "short": "Scale & Products",
+   "order": 4
+  },
+  {
+   "name": "Pillar 5: Legacy & Systems",
+   "short": "Legacy & Systems",
+   "order": 5
+  }
+ ],
+ "sessions": [
+  {
+   "id": "recqV7rAUANUTXhcA",
+   "slot": "0 (2026)",
+   "title": "Build Your AI Intelligence Session and Skill Pack",
+   "type": "Bonus",
+   "status": "Confirmed",
+   "start": "2026-09-25T16:00:00.000Z",
+   "duration_min": 120,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": null,
+   "description": "Every lesson in Expert & Authority Mastery has been converted into its own installable Claude skill, roughly one skill per class, so you can put what Vishen teaches to work inside Claude itself instead of just taking notes on it. This live call is where Vishen shows you exactly how: installing the skills, prompting them properly, and using them to get real results fast, before the program has even started.\n\nYou'll leave with:\n- The full Skill Pack installed and ready to use in Claude\n- A clear demonstration of how to prompt and get results from each skill\n- A head start on applying the curriculum before Week 1 begins",
+   "cover": "covers/build-your-ai-intelligence-session-and-skill-pack.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=0%20%282026%29"
+  },
+  {
+   "id": "rec9HBTxIAPQEE7YS",
+   "slot": "1 (2026)",
+   "title": "Why Most Experts Stay Invisible",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-10-06T16:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "The gap between expertise and authority isn't talent — it's positioning. This week Vishen breaks down why brilliant people stay unknown, what separates the experts who get paid from those who get ignored, and how to identify the category you were born to own. You'll map your current authority level, pinpoint your unfair advantage, and write the one-sentence statement that makes you the only logical choice in your space.\n\n**You'll Learn**\n- The Authority Gap: why credentials don't equal influence\n- The 3 stages of expert evolution — and where you are now\n- Niche Vision: how to own a category instead of just occupying one\n- How to identify your unfair advantage\n- Writing your one-sentence authority statement\n- Your Authority Audit: a diagnostic for your current positioning",
+   "cover": "covers/why-most-experts-stay-invisible.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=1%20%282026%29"
+  },
+  {
+   "id": "recPCkiSI5TYOYuIi",
+   "slot": "2 (2026)",
+   "title": "Workshop | Why Most Experts Stay Invisible",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-10-09T16:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "The lesson gave you the lens. This session is where you put your own authority under it. Vykintas leads this working session so you don't leave with a framework in your notes, you leave with it applied to you. You'll run your own positioning through the Authority Audit, stress-test your unfair advantage against the room, and draft your one-sentence authority statement live, sharpening it as feedback comes in.\n\nYou'll leave with:\n\\- Your completed Authority Audit\n\\- Your unfair advantage named in one sentence\n\\- Your one-sentence authority statement, written and tested on the room",
+   "cover": "covers/workshop-why-most-experts-stay-invisible.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=2%20%282026%29"
+  },
+  {
+   "id": "recIG8bSlVGXMkhQt",
+   "slot": "3 (2026)",
+   "title": "Your Signature Method",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-10-13T16:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "Authority isn't built on opinions — it's built on systems. This week you'll develop your proprietary framework: the named, structured methodology that makes your approach teachable, repeatable, and impossible to copy. Your signature method becomes the spine of every product, talk, and piece of content you ever create. You'll also learn how to define the precise audience your method was built for — because the right message to the wrong person is still a miss.\n**You'll Learn**\n- What makes a methodology \"signature\" vs. generic\n- The 4-step framework extraction process\n- How to name your method for maximum memorability\n- Building your method into a visual one-pager\n- Identifying the exact audience your method serves best\n- Why selling to the wrong audience kills even great offers",
+   "cover": "covers/your-signature-method.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=3%20%282026%29"
+  },
+  {
+   "id": "rec8lrGun0nu7wYx2",
+   "slot": "4 (2026)",
+   "title": "Workshop | Your Signature Method",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-10-16T16:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "The lesson gave you the 4-step process for extracting your methodology. In this session, Vykintas walks you through it on your own expertise, not a hypothetical. You'll pull your signature method out of your head and onto paper, test names against the room until one sticks, and build it into the visual one-pager you'll use in every future talk, product, and piece of content. You'll also sanity-check the exact audience your method is built for.\n\nYou'll leave with:\n\\- Your method extracted using the 4-step process\n\\- A name for your method, tested live\n\\- Your method built into a visual one-pager\n\\- The audience your method is built for, defined",
+   "cover": "covers/workshop-your-signature-method.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=4%20%282026%29"
+  },
+  {
+   "id": "recuyRDvCYV89EWbp",
+   "slot": "5 (2026)",
+   "title": "Turn Your Expertise Into a High-Value Signature Offer",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-10-20T16:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "Knowing your method is one thing. Packaging it into an offer people will pay premium prices for is another. Daniel Priestley — author of _Oversubscribed_ and one of the world's leading experts on high-value positioning — shows you exactly how to turn your expertise into a signature offer that commands the price it deserves. This is a live workshop with hot seats: you'll leave with a real Signature Offer Brief, not just a framework.\n**You'll Learn**\n- The anatomy of a high-value signature offer\n- How to price for transformation, not time\n- The Offer Clarity framework: from vague idea to compelling package\n- Live hot seat: refine your offer with Daniel in real time\n- Output: your completed Signature Offer Brief",
+   "cover": "covers/turn-your-expertise-into-a-high-value-signature-offer.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=5%20%282026%29"
+  },
+  {
+   "id": "recPI9cYH5JoXk7V4",
+   "slot": "6 (2026)",
+   "title": "Workshop | Turn Your Expertise Into a High-Value Signature Offer",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-10-23T16:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "The lesson with Daniel was already a live workshop, with two Signature Offer Briefs built in real time through hot seats. This session is where everyone else gets the same treatment. Vykintas takes you through the Offer Clarity framework against your own expertise until your Signature Offer Brief is finished to the same standard as the two built live in the lesson.\n\nYou'll leave with:\n\\- Your completed Signature Offer Brief, built to hot-seat standard\n\\- Your offer priced for transformation, not time",
+   "cover": "covers/workshop-turn-your-expertise-into-a-high-value-signature-offer.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=6%20%282026%29"
+  },
+  {
+   "id": "reciGZGuMbxdUEATH",
+   "slot": "7 (2026)",
+   "title": "Persuasion Vision: Copywriting, Cialdini & the Right Audience",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-10-27T16:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "The best offer in the world dies with bad copy. This week Vishen teaches the persuasion principles that separate forgettable content from copy that converts — drawing on Cialdini's influence science, the psychology of desire, and the art of speaking directly to the person most likely to say yes. You'll rewrite your core message from the ground up and learn why most experts are selling to the wrong audience entirely.\n**You'll Learn**\n- Cialdini's 7 principles of influence — applied to your offer\n- The Persuasion Vision framework: writing copy that feels inevitable\n- How to identify and speak directly to your ideal buyer\n- The 5 emotional triggers that move people from interest to action\n- Rewriting your core message for maximum resonance",
+   "cover": "covers/persuasion-vision-copywriting-cialdini-the-right-audience.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=7%20%282026%29"
+  },
+  {
+   "id": "reca9t8smPlNu90QI",
+   "slot": "8 (2026)",
+   "title": "Workshop | Persuasion Vision: Copywriting, Cialdini & the Right Audience",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-10-30T16:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 1: Message & Positioning",
+   "description": "Vishen gave you the persuasion principles in the lesson. In this session, Vykintas has you rewrite your actual core message against them, line by line, until Cialdini's 7 principles and the 5 emotional triggers are built into your own words instead of someone else's example. You'll read the rewritten version aloud to the room, standing in for your ideal buyer, and adjust it in real time based on what lands.\n\nYou'll leave with:\n\\- Your core message rewritten using the 7 principles and 5 triggers\n\\- That message read aloud and tested on your ideal buyer",
+   "cover": "covers/workshop-persuasion-vision-copywriting-cialdini-the-right-audience.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=8%20%282026%29"
+  },
+  {
+   "id": "recqK89y4wxMH4Zkr",
+   "slot": "9 (2026)",
+   "title": "Course Design: Build the Course That Defines Your Legacy",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-11-03T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Jimmy Naraine",
+     "image": "authors/jimmy-naraine.jpg"
+    }
+   ],
+   "module": "Pillar 2: Platform & Content",
+   "description": "A great course isn't a collection of videos — it's a transformation engine. Jimmy Naraine, one of Udemy's top instructors with over 500,000 students worldwide, shows you how to architect a course that gets results, earns rave reviews, and sells itself through student outcomes. You'll learn how to sequence content for maximum retention, design learning experiences that create real change, and build the course that becomes the cornerstone of your authority.\n**You'll Learn**\n- The transformation arc: how to structure a course around outcomes, not topics\n- Jimmy's proven lesson design formula for maximum engagement\n- How to sequence content so students actually finish — and rave about it\n- The difference between a course and a curriculum (and why it matters)\n- Building your course outline from scratch in one session\n- How great course design drives organic word-of-mouth sales",
+   "cover": "covers/course-design-build-the-course-that-defines-your-legacy.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=9%20%282026%29"
+  },
+  {
+   "id": "recEEFsUqbegFa7sK",
+   "slot": "10 (2026)",
+   "title": "Workshop | Course Design: Build the Course That Defines Your Legacy",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-11-06T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Jimmy Naraine",
+     "image": "authors/jimmy-naraine.jpg"
+    }
+   ],
+   "module": "Pillar 2: Platform & Content",
+   "description": "Jimmy's lesson showed you what makes a course a transformation engine instead of a pile of videos. In this session, he stays in the room alongside Vykintas to help you build your own course outline from scratch, live. You'll sequence your content using his retention-first structure, module by module, checking each one against the question that actually matters: will a student finish this?\n\nYou'll leave with:\n\\- Your course outline built from scratch, in sequence\n\\- Each module checked against Jimmy's completion-first structure",
+   "cover": "covers/workshop-course-design-build-the-course-that-defines-your-legacy.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=10%20%282026%29"
+  },
+  {
+   "id": "receMvLuLExeQbKKm",
+   "slot": "11 (2026)",
+   "title": "Content Machine: Build a Publishing System That Never Runs Dry",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-11-10T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "John Lee",
+     "image": "authors/john-lee.jpg"
+    }
+   ],
+   "module": "Pillar 2: Platform & Content",
+   "description": "Consistency is the unfair advantage most experts never develop. John Lee — one of the world's most prolific content creators — shows you how to build a content machine that produces authority-building material week after week without burning out. You'll design a personal publishing system, learn to repurpose one idea into ten formats, and create the content calendar that keeps you visible while you sleep.\n**You'll Learn**\n- The Content Machine framework: from idea to published in under an hour\n- How to repurpose one core idea across 10 formats and platforms\n- Building your 90-day content calendar in one session\n- The authority content types that build trust fastest\n- Batching and scheduling: how to stay consistent without living online\n- John's personal system for generating ideas that never run dry",
+   "cover": "covers/content-machine-build-a-publishing-system-that-never-runs-dry.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=11%20%282026%29"
+  },
+  {
+   "id": "rectXqUEAaBmAF8Lw",
+   "slot": "12 (2026)",
+   "title": "Workshop | Content Machine: Build a Publishing System That Never Runs Dry",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-11-13T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "John Lee",
+     "image": "authors/john-lee.jpg"
+    }
+   ],
+   "module": "Pillar 2: Platform & Content",
+   "description": "John's lesson handed you the system. In this session, he's back in the room with Vykintas to help you actually run it: building your 90-day content calendar live, week by week, so you leave with dates and topics filled in rather than a template for later. You'll also take one real idea of yours and repurpose it into ten formats on the spot.\n\nYou'll leave with:\n\\- Your 90-day content calendar, built and filled in\n\\- One idea repurposed into ten formats, done live",
+   "cover": "covers/workshop-content-machine-build-a-publishing-system-that-never-runs-dry.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=12%20%282026%29"
+  },
+  {
+   "id": "recoUQVpsg16Xl27A",
+   "slot": "13 (2026)",
+   "title": "Platforms, Reels & Algorithmic Growth",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-11-17T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "John Lee",
+     "image": "authors/john-lee.jpg"
+    }
+   ],
+   "module": "Pillar 2: Platform & Content",
+   "description": "Knowing what to say is only half the battle — knowing where to say it and how to make the algorithm work for you is what separates experts with 500 followers from those with 500,000. John Lee breaks down the platform-by-platform playbook for 2025 and beyond: which platforms reward your content type, how to engineer virality through Reels and short-form video, and how to build an audience that compounds over time.\n**You'll Learn**\n- Platform selection: where your audience actually lives\n- The Reels formula: hooks, pacing, and calls-to-action that convert\n- How algorithms decide who gets reach — and how to play the game\n- Cross-platform distribution without doubling your workload\n- The compounding effect: how consistent posting builds exponential reach\n- John's personal growth playbook: from zero to authority in 12 months",
+   "cover": "covers/platforms-reels-algorithmic-growth.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=13%20%282026%29"
+  },
+  {
+   "id": "receRXAT3y8JESXzH",
+   "slot": "14 (2026)",
+   "title": "Workshop | Platforms, Reels & Algorithmic Growth",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-11-20T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "John Lee",
+     "image": "authors/john-lee.jpg"
+    }
+   ],
+   "module": "Pillar 2: Platform & Content",
+   "description": "The lesson mapped the platform-by-platform playbook. In this session, John and Vykintas help you choose the one platform your audience actually lives on and commit to it, rather than trying to be everywhere at once. You'll script your first Reels using John's hook-pacing-CTA formula, and set up the cross-platform distribution so one piece of content reaches every channel.\n\nYou'll leave with:\n\\- Your platform chosen and committed to\n\\- Your first Reels scripted to the formula\n\\- Cross-platform distribution set up",
+   "cover": "covers/workshop-platforms-reels-algorithmic-growth.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=14%20%282026%29"
+  },
+  {
+   "id": "recZBdj89Mtvhbi81",
+   "slot": "15 (2026)",
+   "title": "Oversubscribed: Build Demand Before You Sell",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-11-24T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "The most dangerous place to be is launching to silence. Daniel Priestley returns to teach the system behind his bestselling book _Oversubscribed_ — how to build so much demand for your offer that people are waiting to buy before you even open the doors. This isn't hype. It's a methodical, repeatable approach to demand generation that works for coaches, consultants, course creators, and thought leaders at every level.\n**You'll Learn**\n- The Oversubscribed framework: supply, demand, and perceived scarcity\n- How to build a waitlist that converts at 3x the rate of cold traffic\n- The Campaign Driven Enterprise: launching in rhythmic cycles, not one-off pushes\n- How to signal exclusivity without being inaccessible\n- Daniel's 7-step demand generation sequence\n- Building your pre-launch campaign from scratch",
+   "cover": "covers/oversubscribed-build-demand-before-you-sell.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=15%20%282026%29"
+  },
+  {
+   "id": "recWF64dVpIm4DhyJ",
+   "slot": "16 (2026)",
+   "title": "Workshop | Oversubscribed: Build Demand Before You Sell",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-12-01T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "Daniel's lesson taught the system behind building demand before you sell. In this session, Vykintas has you build it: your own pre-launch campaign, from a standing start. You'll construct your waitlist mechanics and work through Daniel's 7-step demand generation sequence stage by stage, applied to your actual offer.\n\nYou'll leave with:\n\\- Your pre-launch campaign built from scratch\n\\- Your waitlist mechanics set up\n\\- Daniel's 7-step demand sequence applied to your offer",
+   "cover": "covers/workshop-oversubscribed-build-demand-before-you-sell.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=16%20%282026%29"
+  },
+  {
+   "id": "rec98NiGd6YhnPpB1",
+   "slot": "17 (2026)",
+   "title": "Paid Advertising: Scale What's Already Working",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-12-04T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "Organic reach builds authority. Paid advertising builds speed. This week Vishen breaks down the paid advertising playbook that has generated millions in revenue for Mindvalley — from Meta and YouTube to retargeting sequences and lookalike audiences. You'll learn how to identify what's worth scaling, how to read your numbers, and how to build an ad strategy that amplifies your best content without wasting a dollar.\n**You'll Learn**\n- The paid advertising mindset: when to spend and when to wait\n- Meta and YouTube ad structures that work for expert businesses\n- How to read your key metrics: CPL, ROAS, and what they actually mean\n- Retargeting sequences: converting warm audiences who didn't buy yet\n- Lookalike audiences: finding more of your best customers at scale\n- Vishen's personal ad framework from Mindvalley's growth playbook",
+   "cover": "covers/paid-advertising-scale-what-s-already-working.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=17%20%282026%29"
+  },
+  {
+   "id": "rec3Or6VOJPcPHn01",
+   "slot": "18 (2026)",
+   "title": "Workshop | Paid Advertising: Scale What's Already Working",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-12-08T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "Vishen and Marisha covered the playbook in the lesson. In this session, Vykintas keeps it small and specific on purpose: you'll choose one piece of your best-performing content, set up a single bounded ad test around it, and write down the CPL and ROAS targets you're testing against before you spend a dollar. The goal is one real test you can run this week, not a full ad strategy.\n\nYou'll leave with:\n\\- One bounded ad test, set up and ready to run\n\\- Your CPL and ROAS targets, written down",
+   "cover": "covers/workshop-paid-advertising-scale-what-s-already-working.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=18%20%282026%29"
+  },
+  {
+   "id": "recpQyQidV14A9HAV",
+   "slot": "19 (2026)",
+   "title": "Funnel Design: From Stranger to Superfan",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-12-11T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "A funnel isn't a sales trick — it's a relationship architecture. This week Vishen maps the complete journey from first touch to loyal buyer: how to design a funnel that educates, builds trust, and converts without feeling manipulative. You'll build your own funnel blueprint, understand the role of every touchpoint, and learn how to plug the leaks where most experts lose 80% of their potential revenue.\n**You'll Learn**\n- The 5-stage funnel: Awareness → Interest → Decision → Action → Loyalty\n- How to design a lead magnet that attracts your ideal buyer (not everyone)\n- The trust-building sequence: what to say between opt-in and offer\n- Where most funnels leak — and how to fix each stage\n- Mapping your complete funnel blueprint in one session\n- How to turn one-time buyers into repeat customers automatically",
+   "cover": "covers/funnel-design-from-stranger-to-superfan.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=19%20%282026%29"
+  },
+  {
+   "id": "recAQPkmvvJ95SP9p",
+   "slot": "20 (2026)",
+   "title": "Workshop | Funnel Design: From Stranger to Superfan",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-12-15T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "The lesson mapped the five-stage journey from stranger to superfan. In this session, Vykintas has you map your own: your complete funnel blueprint, stage by stage, built against your actual offer rather than a generic example. As you go, you'll flag exactly where your current funnel leaks.\n\nYou'll leave with:\n\\- Your complete funnel blueprint, mapped across all five stages\n\\- The leaks in your current funnel, marked and prioritized",
+   "cover": "covers/workshop-funnel-design-from-stranger-to-superfan.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=20%20%282026%29"
+  },
+  {
+   "id": "rec9w2V4sAYYEa4uB",
+   "slot": "21 (2026)",
+   "title": "Webinar & VSL Playbook: Convert Audiences Into Buyers",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-12-18T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "The webinar is still the highest-converting sales format in the expert economy — when it's done right. This week Vishen breaks down the anatomy of a webinar that sells without feeling like a pitch fest, and the Video Sales Letter (VSL) structure that converts cold traffic around the clock. You'll script your own webinar outline and VSL framework, ready to deploy in your next launch.\n**You'll Learn**\n- The Perfect Webinar structure: teach, inspire, and close with integrity\n- How to open a webinar so powerfully that people stay until the offer\n- The 5-part VSL formula that converts cold traffic 24/7\n- Handling objections before they're raised — inside the content itself\n- The close: how to make an offer that feels like a gift, not a pitch\n- Scripting your webinar outline and VSL framework live",
+   "cover": "covers/webinar-vsl-playbook-convert-audiences-into-buyers.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=21%20%282026%29"
+  },
+  {
+   "id": "recS0i4rh8LRz8TUS",
+   "slot": "22  (2026)",
+   "title": "Workshop | Webinar & VSL Playbook: Convert Audiences Into Buyers",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2026-12-22T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "Vishen broke down the anatomy of a webinar and VSL that convert without feeling like a pitch. In this session, Vykintas has you script your own version of both, live: your webinar outline structured beat by beat, and your VSL framework built around your actual offer, ready to plug into your next launch.\n\nYou'll leave with:\n\\- Your webinar outline, scripted beat by beat\n\\- Your VSL framework, built and ready for your next launch",
+   "cover": "covers/workshop-webinar-vsl-playbook-convert-audiences-into-buyers.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=22%20%20%282026%29"
+  },
+  {
+   "id": "reckc8GrNv94HevLG",
+   "slot": "23 (2026)",
+   "title": "Email Marketing: Your Most Valuable Asset",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2026-12-29T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "Social media platforms come and go. Your email list is the one asset you own outright — and it's still the highest-ROI channel in digital marketing. This week Vishen teaches the email strategy that has driven hundreds of millions in revenue at Mindvalley: how to grow a list of buyers (not just subscribers), write emails people actually open, and build sequences that sell while you sleep.\n**You'll Learn**\n- List building: how to grow a list of buyers, not just freebie-seekers\n- The email types that build relationship vs. the ones that sell\n- Subject line formulas that get 40%+ open rates\n- The 7-email welcome sequence that turns strangers into fans\n- Automated email sequences: revenue while you sleep\n- Vishen's personal email playbook from Mindvalley's 3M+ subscriber list",
+   "cover": "covers/email-marketing-your-most-valuable-asset.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=23%20%282026%29"
+  },
+  {
+   "id": "rectqXaMCTxcvwQVu",
+   "slot": "24 (2026)",
+   "title": "Workshop | Email Marketing: Your Most Valuable Asset",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-01-05T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 3: Funnel & Conversion",
+   "description": "The lesson covered the email strategy behind hundreds of millions in Mindvalley revenue. In this session, Vykintas has you build the version that matters most right now: your 7-email welcome sequence, written email by email, using the grow-a-list-of-buyers approach from the lesson. You'll leave the session with the sequence not just written, but loaded and ready to fire.\n\nYou'll leave with:\n\\- Your 7-email welcome sequence, fully written\n\\- The sequence loaded and ready to send",
+   "cover": "covers/workshop-email-marketing-your-most-valuable-asset.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=24%20%282026%29"
+  },
+  {
+   "id": "rec75MCiowSbxZKaE",
+   "slot": "25 (2026)",
+   "title": "Membership, Continuity & Superfans: Build Revenue That Renews Itself",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2027-01-08T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 4: Scale & Products",
+   "description": "Recurring revenue is the difference between a business and a job. A well-designed membership means you wake up every month with revenue already in the bank before you've done a single thing. This week you'll design your membership model — the pricing, the content cadence, the community layer, and the retention strategies that keep members paying month after month. You'll also learn how to turn customers into superfans: the people who buy everything you release, refer everyone they know, and become the heartbeat of your brand.\n**You'll Learn**\n- The 4 membership models — and how to choose the right one for your business\n- Pricing for continuity: monthly vs. annual vs. lifetime structures\n- The content cadence that keeps members engaged without burning you out\n- Community design: how to build the layer that makes people stay\n- Retention strategies: the first 30, 60, and 90 days that determine lifetime value\n- Customer care and nurturing: how to turn a buyer into a superfan\n- The Superfan Loop: why your best customers are your best marketers",
+   "cover": "covers/membership-continuity-superfans-build-revenue-that-renews-itself.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=25%20%282026%29"
+  },
+  {
+   "id": "rec6SB3JYwaqurAAh",
+   "slot": "26 (2026)",
+   "title": "Workshop | Membership, Continuity & Superfans: Build Revenue That Renews Itself",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-01-12T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 4: Scale & Products",
+   "description": "Vishen's lesson laid out what makes recurring revenue actually recur. In this session, Vykintas helps you choose your own membership model and set a real price on it, rather than leaving that decision for later. You'll then draft your 30, 60 and 90-day retention plan, mapping the specific touchpoints that keep members paying past the first month.\n\nYou'll leave with:\n\\- Your membership model chosen and priced\n\\- Your 30, 60 and 90-day retention plan, drafted",
+   "cover": "covers/workshop-membership-continuity-superfans-build-revenue-that-renews-its.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=26%20%282026%29"
+  },
+  {
+   "id": "recvWWYtjH6dChwq0",
+   "slot": "27 (2026)",
+   "title": "High-Ticket Mastery: One-on-One, Coaching, Consulting & Certification",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2027-01-15T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Ajit Nawalkha",
+     "image": "authors/ajit-nawalkha.jpg"
+    }
+   ],
+   "module": "Pillar 4: Scale & Products",
+   "description": "The highest-margin products in any expert business are the ones where you work closely with people — coaching, consulting, masterminds, and certification programs. Ajit Nawalkha, co-founder of Evercoach and one of the world's leading authorities on coaching business models, brings together everything you need to build, price, sell, and deliver high-ticket offers that command premium fees and create life-changing results. This is the complete high-end playbook in a single session.\n**You'll Learn**\n- The one-on-one model: structuring coaching and consulting for premium pricing\n- High-ticket sales psychology: how to enroll clients without feeling pushy\n- The enrollment conversation framework that closes at 60%+\n- Certification programs: how to license your methodology and create a movement\n- Community monetization: turning your audience into a high-value ecosystem\n- Designing your high-end offer suite from entry point to top tier\n- Ajit's personal framework for building a coaching empire that scales",
+   "cover": "covers/high-ticket-mastery-one-on-one-coaching-consulting-certification.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=27%20%282026%29"
+  },
+  {
+   "id": "rec7hh2c5VvU4tVMk",
+   "slot": "28 (2026)",
+   "title": "Workshop | High-Ticket Mastery: One-on-One, Coaching, Consulting & Certification",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-01-19T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Ajit Nawalkha",
+     "image": "authors/ajit-nawalkha.jpg"
+    }
+   ],
+   "module": "Pillar 4: Scale & Products",
+   "description": "Ajit's lesson covered the complete high-ticket playbook: coaching, consulting, masterminds, certification. In this session, he's back in the room with Vykintas to help you design your own high-end offer suite, from entry point through to top tier, priced and structured against your own business. You'll then pair up and practise the enrolment conversation out loud.\n\nYou'll leave with:\n\\- Your high-end offer suite, designed from entry point to top tier\n\\- Your enrolment conversation, practised live in pairs",
+   "cover": "covers/workshop-high-ticket-mastery-one-on-one-coaching-consulting-certificat.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=28%20%282026%29"
+  },
+  {
+   "id": "recdn316lgAd2Jbyi",
+   "slot": "29 (2026)",
+   "title": "Speaking & Stages: Turn Every Room Into a Revenue Engine",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2027-01-22T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 4: Scale & Products",
+   "description": "The stage — physical or virtual — is still the fastest path to authority at scale. One great talk can generate more leads, revenue, and credibility than months of content creation. This week Vishen teaches the speaking playbook he's used to command stages from TED to A-Fest: how to craft a signature talk, get booked on the right stages, and design live events that become the cornerstone of your brand and your business.\n**You'll Learn**\n- The signature talk structure: how to open, teach, and close for maximum impact\n- How to get booked on stages — even before you're famous\n- Speaking fees: when to charge, when to speak for free, and how to negotiate\n- Designing live events that create transformation and generate revenue\n- Virtual stages: how to command the same authority on Zoom as in a ballroom\n- Vishen's personal talk architecture from 20+ years on global stages",
+   "cover": "covers/speaking-stages-turn-every-room-into-a-revenue-engine.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=29%20%282026%29"
+  },
+  {
+   "id": "recKwm0gF6g6vQVbE",
+   "slot": "30 (2026)",
+   "title": "Workshop | Speaking & Stages: Turn Every Room Into a Revenue Engine",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-01-26T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 4: Scale & Products",
+   "description": "The lesson gave you the speaking playbook Vishen has used from TED to A-Fest. In this session, Vykintas has you structure your own signature talk against it: your open, your teaching core, and your close, built for the story only you can tell. Before the session ends, you'll identify one real stage and take the first step toward approaching it.\n\nYou'll leave with:\n\\- Your signature talk structured: open, teach, close\n\\- One stage identified and a first approach made",
+   "cover": "covers/workshop-speaking-stages-turn-every-room-into-a-revenue-engine.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=30%20%282026%29"
+  },
+  {
+   "id": "recObb1O4pomStpv9",
+   "slot": "31 (2026)",
+   "title": "Team, Systems & Delegation: Build a Business That Runs Without You",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2027-01-29T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "The expert who does everything stays small. The expert who builds systems and delegates strategically builds an empire. This week Vishen breaks down the operational architecture behind Mindvalley — the team structures, the SOPs, the hiring frameworks, and the delegation principles that let a business scale without the founder becoming the bottleneck. You'll design your own org chart and identify the first three hires that will multiply your output.\n**You'll Learn**\n- The 3 roles every expert business needs first (and in what order to hire them)\n- How to document your processes so anyone can run them\n- Delegation frameworks: what to keep, what to hand off, and how\n- Building a team culture that attracts A-players\n- The tools and systems stack for a lean, high-output expert business\n- Vishen's personal org chart evolution from 1 to 1,000+ at Mindvalley",
+   "cover": "covers/team-systems-delegation-build-a-business-that-runs-without-you.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=31%20%282026%29"
+  },
+  {
+   "id": "recLXClPMH0UnCyDX",
+   "slot": "32 (2026)",
+   "title": "Workshop | Team, Systems & Delegation: Build a Business That Runs Without You",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-02-02T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "Vishen's lesson broke down the operational architecture behind Mindvalley's scale. In this session, Vykintas has you design your own version of it: your org chart, built for where your business actually is right now. You'll then name your first three hires in the order you'd bring them on.\n\nYou'll leave with:\n\\- Your org chart, designed for your business\n\\- Your first three hires, named and sequenced",
+   "cover": "covers/workshop-team-systems-delegation-build-a-business-that-runs-without-yo.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=32%20%282026%29"
+  },
+  {
+   "id": "recO7494Xe6sFeLsT",
+   "slot": "33 (2026)",
+   "title": "Partnerships & Collaboration: Grow 10x Faster by Playing Together",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2027-02-05T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "The fastest way to grow isn't to outwork the competition — it's to collaborate with people who already have your audience. This week Vishen reveals the partnership playbook behind Mindvalley's most explosive growth periods: how to identify the right collaborators, structure deals that benefit both parties, and build a network of allies who actively send you their best customers.\n**You'll Learn**\n- The 4 types of partnerships — and which one fits your stage of growth\n- How to approach potential partners without desperation or awkwardness\n- Joint venture structures: revenue shares, list swaps, and co-creation deals\n- How to become the partner everyone wants to work with\n- Building your collaboration pipeline: 10 strategic relationships in 90 days\n- Vishen's personal partnership playbook from Mindvalley's growth years",
+   "cover": "covers/partnerships-collaboration-grow-10x-faster-by-playing-together.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=33%20%282026%29"
+  },
+  {
+   "id": "rec7qEgmIj85vMmft",
+   "slot": "34 (2026)",
+   "title": "Workshop | Partnerships & Collaboration: Grow 10x Faster by Playing Together",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-02-09T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "The lesson reveals the partnership playbook behind Mindvalley's most explosive growth. In this session, Vykintas turns it into action: you'll list ten real people or brands who already have the audience you want to reach, and work through what a mutually beneficial deal with each could look like. Then, before the session ends, you send the first approach.\n\nYou'll leave with:\n\\- Ten strategic relationships listed\n\\- Your first outreach approach, sent",
+   "cover": "covers/workshop-partnerships-collaboration-grow-10x-faster-by-playing-togethe.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=34%20%282026%29"
+  },
+  {
+   "id": "recCvnoAuIQNd7EeP",
+   "slot": "35 (2026)",
+   "title": "Legacy: Build Something That Outlasts You",
+   "type": "Lesson",
+   "status": "Proposed",
+   "start": "2027-02-12T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "The final week isn't about tactics — it's about meaning. Vishen closes the curriculum with the question every serious expert must eventually answer: what do you want to be remembered for? You'll design your legacy vision, identify the movement you're building (not just the business), and create the long-game plan that turns your expertise into a contribution that outlasts any single product, launch, or platform.\n**You'll Learn**\n- The difference between building a business and building a movement\n- How to define your legacy vision in one clear, compelling statement\n- The long-game strategy: decisions that compound over decades, not quarters\n- How to structure your business so it can outlast you\n- Vishen's personal legacy framework and the vision behind Mindvalley\n- Your final output: a one-page Legacy Blueprint",
+   "cover": "covers/legacy-build-something-that-outlasts-you.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=35%20%282026%29"
+  },
+  {
+   "id": "recG2MttgnRiKowoN",
+   "slot": "36 (2026)",
+   "title": "Workshop | Legacy: Build Something That Outlasts You",
+   "type": "Workshop",
+   "status": "Proposed",
+   "start": "2027-02-16T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "Vishen closes the curriculum by asking what you want to be remembered for. In this session, Vykintas helps you answer it: distilling everything from the past 18 weeks into a single page. You'll define the movement behind your business, not just the business itself, and leave with your Legacy Blueprint complete.\n\nYou'll leave with:\n\\- Your one-page Legacy Blueprint, completed\n\\- Your legacy vision and the movement behind it, defined",
+   "cover": "covers/workshop-legacy-build-something-that-outlasts-you.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=36%20%282026%29"
+  },
+  {
+   "id": "recBfxImjfIJnw4bz",
+   "slot": "37 (2026)",
+   "title": "Graduation",
+   "type": "Graduation",
+   "status": "Proposed",
+   "start": "2027-02-19T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Pillar 5: Legacy & Systems",
+   "description": "This is where we close the program together. We'll look back across all 18 weeks, from your first authority statement to your Legacy Blueprint, and celebrate how far you've come. Expect a few surprises, some shared wins from the room, and a proper send-off before you carry everything you've built out into the world.\nYou'll leave with:\n- A recap of your journey across the full program\n- A moment to celebrate your progress with the group\n- A clear sense of what comes next",
+   "cover": "covers/graduation.jpg",
+   "feedback_url": "https://airtable.com/appKlfvxdXofNlFfk/shrYweKBrwhn3no4E?hide_Slot=true&prefill_Slot=37%20%282026%29"
+  }
+ ]
+}
