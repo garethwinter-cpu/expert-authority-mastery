@@ -588,6 +588,18 @@
    "applied_to": [
     "expert-authority-v5.html"
    ]
+  },
+  {
+   "id": "aif-deep-links-and-open-modules-sep25",
+   "date": "2026-09-25",
+   "area": "AI for Founders Mastery · page UX",
+   "finding": "Gareth asked for the same usability fixes made on Expert & Authority: send people straight to a tab or week instead of the homepage, and open every module by default with per-module collapse kept.",
+   "decision": "Tabs are deep-linkable by hash (#programme, #summit, #authors, #next, #evidence, #format, #artefact, with aliases curriculum/weeks/authors/positioning) and by path (/ai-founders/programme redirects to the hash). Weeks carry ids programme-w1 to programme-w18 and modules programme-m1 to m4 plus programme-intensive, so /ai-founders#programme-w5 lands on week 5. All five modules open on load; the module header still folds each one. Clicking a tab updates the URL so the address bar is always shareable.",
+   "status": "applied",
+   "applied_to": [
+    "ai-founders.html",
+    "server.js"
+   ]
   }
  ],
  "verified_corrections_to_live_pages": [

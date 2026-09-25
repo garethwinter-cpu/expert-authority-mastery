@@ -1,6 +1,6 @@
 {
   "name": "mastery-proposals",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Mindvalley Mastery curriculum, rendered from Airtable, one design system",
   "main": "server.js",
   "scripts": {

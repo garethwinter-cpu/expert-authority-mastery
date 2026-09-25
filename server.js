@@ -33,6 +33,8 @@ app.get('/', page('index.html'));
   .forEach((r) => app.get(r, (req, res) => res.redirect(301, '/expert-authority')));
 app.get('/accelerator-edit-script', page('expert-authority-accelerator-script.html'));
 app.get('/ai-founders', page('ai-founders.html'));
+// deep links as paths: /ai-founders/programme, /ai-founders/authors, /ai-founders/programme-w5
+app.get('/ai-founders/:tab', (req, res) => res.redirect(302, '/ai-founders#' + encodeURIComponent(req.params.tab)));
 app.get('/positioning', page('positioning.html'));
 app.get('/expert-authority-guild', page('expert-authority-guild.html'));
 app.get('/ai-founders-guild', page('ai-founders-guild.html'));
