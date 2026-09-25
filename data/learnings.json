@@ -615,6 +615,18 @@
     "server.js",
     "index.html"
    ]
+  },
+  {
+   "id": "aif-six-speaker-reallocation-sep26",
+   "date": "2026-09-26",
+   "area": "AI for Founders Mastery · faculty",
+   "finding": "Team WhatsApp, 26 September. Jaideep: Vishen leads the summit, Vykintas leads the Mastery and all labs, Vishen only a couple of big sessions, 18 classes across 6 speakers at about 3 each; Daniel Priestley should not be the lead here and is being looked at for Social Media; Natalie Ellis not a fit. Marijana: Noelle keen, highest-rated EM class, could lead more. Marta: female speakers needed; Callan Faulkner proposed. Jaideep: Callan runs a competing $19M programme, worth a shot, otherwise an AI coach or consultant at scale; minimum one more woman.",
+   "decision": "Draft reallocated: Vishen Weeks 1, 13, 18; Vykintas Weeks 2, 4, 9, 11 and co-closes 18; Noelle 3, 10, 15; Maria Wendt 5, 6, 8; Callan Faulkner 7, 12, 14 (to confirm, substitute AI coach if she declines); Shawn 16, 17. Kickoff and graduation are Vishen with Vykintas. Office hours led by Vykintas, Vishen on the first and last. Daniel and Natalie removed from the AI Founders draft. Gareth's 25 September keep-Priestley ruling is superseded by the team's position and flagged for him.",
+   "status": "applied",
+   "applied_to": [
+    "data/ai-founders-curriculum.json",
+    "ai-founders.html"
+   ]
   }
  ],
  "verified_corrections_to_live_pages": [

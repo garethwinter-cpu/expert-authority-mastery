@@ -5,9 +5,9 @@
   "url": "/ai-founders-proposal"
  },
  "mode": "draft",
- "synced_at": "2026-09-25T09:46:58Z",
+ "synced_at": "2026-09-25T14:33:15Z",
  "aligned": false,
- "cadence": "Tuesday lesson · Thursday lab · 9am Pacific",
+ "cadence": "Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery",
  "modules": [
   {
    "name": "Phase 1: The Foundation",
@@ -37,33 +37,33 @@
   {
    "name": "Vishen Lakhiani",
    "ea": 14,
-   "aif": 15,
-   "weeks_on_both": 4,
+   "aif": 7,
+   "weeks_on_both": 2,
    "first_overlap": "2026-11-30",
    "last_overlap": "2027-02-15",
-   "peak_per_week": 3,
-   "weeks_3plus": 2
+   "peak_per_week": 2,
+   "weeks_3plus": 0
   },
   {
    "name": "Vykintas Glodenis",
    "ea": 14,
-   "aif": 25,
+   "aif": 30,
    "weeks_on_both": 9,
    "first_overlap": "2026-11-30",
    "last_overlap": "2027-02-15",
-   "peak_per_week": 3,
+   "peak_per_week": 4,
    "weeks_3plus": 4
   }
  ],
  "notes": [
-  "Priestley stays as co-owner (Gareth, 25 September). The 24 September author deck removed him; this page keeps him until the team rules otherwise.",
-  "Roster per the 24 September author deck: Natalie Ellis and Callan Faulkner co-teach Week 7, Maria Wendt takes Week 5, Callan takes Week 15. Marie Forleo is out. Noelle Russell keeps Weeks 3 and 10.",
-  "Proven names open the programme to protect the refund window: Vishen and Daniel in Week 1, Vishen in Week 2, Noelle in Week 3. New names arrive from Week 5, after the summit has given a second data point on each.",
+  "Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; six speakers at about three classes each; Daniel Priestley is not the lead here and is being looked at for Social Media instead; Natalie Ellis is not a fit; Noelle Russell is in; at least one more woman on the roster.",
+  "Allocation of the 18 lessons: Vishen 3 (Weeks 1, 13, 18), Vykintas 4 as curriculum lead (Weeks 2, 4, 9, 11) plus co-closing Week 18, Noelle Russell 3 (Weeks 3, 10, 15), Maria Wendt 3 (Weeks 5, 6, 8), Callan Faulkner 3 (Weeks 7, 12, 14), Shawn Kanungo 2 (Weeks 16, 17). Three of the six are women.",
+  "Callan Faulkner runs a competing programme and may decline. If she does, her three weeks go to an AI coach or AI consultant with a track record at scale, to be found by Author Relations. The weeks are written so a substitute can take them without redesign.",
+  "Proven names open the programme to protect the refund window: Vishen in Week 1, Vykintas in Week 2, Noelle in Week 3. New names arrive from Week 5, after the summit has given a second data point on each.",
   "The three-day weekend intensive is folded into the Tuesday and Thursday mainline, as was done for Expert & Authority. Week 9 is the switch-on review.",
   "Cadence: Tuesday lesson, Thursday lab, 9am Pacific, from Tuesday 10 November 2026 to Thursday 25 March 2027, with a break from 21 December to 3 January. The Week 3 lab falls on US Thanksgiving, 26 November, and should move.",
-  "Expert & Authority conventions carried across: a dated Skill Pack bonus before Week 1, a kickoff call, four monthly office-hours calls on their own Zoom webinar, an alumni reunion six weeks after graduation.",
-  "Summit learnings applied: written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; Callan Faulkner takes a free trial session before her paid slot; Shawn never closes and never follows Vykintas in the same event; Natalie follows a technical session, not a strategy one.",
-  "Week 16 is Vishen per the deck, with Shawn Kanungo as the alternative owner. To align with Vishen."
+  "Expert & Authority conventions carried across: a dated Skill Pack bonus before Week 1, a kickoff call, four monthly office-hours calls on their own Zoom webinar led by Vykintas with Vishen on the first and last, an alumni reunion six weeks after graduation.",
+  "Summit learnings applied: written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; Callan takes a free trial session before her paid slot; Shawn never closes and never follows Vykintas in the same event."
  ],
  "sessions": [
   {
@@ -93,12 +93,12 @@
      "image": "authors/vishen-lakhiani.jpg"
     },
     {
-     "name": "Daniel Priestley",
-     "image": "authors/daniel-priestley.jpg"
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
     }
    ],
    "module": null,
-   "description": "One live call between the summit and Week 1. Vishen and Daniel read the room back to itself from the onboarding survey, walk the 18 weeks with the teacher on each, and take the one measurement graduation is judged against: how many hours a week your business needs you today. You leave with the calendar in your hands and a number written down."
+   "description": "One live call between the summit and Week 1. Vishen and Vykintas read the room back to itself from the onboarding survey, walk the 18 weeks with the teacher on each, and take the one measurement graduation is judged against: how many hours a week your business needs you today. You leave with the calendar in your hands and a number written down."
   },
   {
    "id": "aif-w01-lesson",
@@ -108,16 +108,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Daniel Priestley",
-     "image": "authors/daniel-priestley.jpg"
-    },
-    {
      "name": "Vishen Lakhiani",
      "image": "authors/vishen-lakhiani.jpg"
     }
    ],
    "module": "Phase 1: The Foundation",
-   "description": "The age-of-intelligence reset, co-opened by both owners: Daniel on why every business must be reinvented, Vishen on Founder-Based AI as the method. The five pillars named; the promise made. Opens with a build, not a visioning session; the 6.04 kickoff is the counter-example we design against.",
+   "description": "The age-of-intelligence reset, opened by Vishen: why every business must be reinvented and Founder-Based AI as the method. The five pillars named, the promise made, and Vykintas introduced as the person who will build it with you every Thursday. Opens with a build, not a visioning session.",
    "week": 1
   },
   {
@@ -145,12 +141,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
     }
    ],
    "module": "Phase 1: The Foundation",
-   "description": "From the Quest's personal SEED to the company SEED: mission, data, docs, meetings. Record-everything as an organisation, not a habit: the brain every pillar runs on.",
+   "description": "From the Quest’s personal SEED to the company SEED: mission, data, docs, meetings. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar runs on, then builds it in the lab two days later.",
    "week": 2
   },
   {
@@ -211,12 +207,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
     }
    ],
    "module": "Phase 1: The Foundation",
-   "description": "Skills as company assets. The authoring craft the Quest skipped: anatomy of a great skill, testing, versioning, sharing. Your expertise made executable.",
+   "description": "Skills as company assets. The authoring craft the Quest skipped: anatomy of a great skill, testing, versioning, sharing. Your expertise made executable, taught by the person who built the Skill Pack.",
    "week": 4
   },
   {
@@ -238,7 +234,7 @@
   },
   {
    "id": "aif-qa-1",
-   "title": "Office hours 1: open Q&A with Vishen and Vykintas",
+   "title": "Office hours 1: open Q&A with Vykintas and Vishen",
    "type": "Q&A Call",
    "start": "2026-12-04T17:00:00.000Z",
    "duration_min": 60,
@@ -296,12 +292,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Daniel Priestley",
-     "image": "authors/daniel-priestley.jpg"
+     "name": "Maria Wendt",
+     "image": "authors/maria-wendt.jpg"
     }
    ],
    "module": "Phase 2: The Growth System",
-   "description": "How his seven companies capture demand with AI at the centre: capacity, signals, assessments as tooling. One campaign session, taught through execution; the full campaign playbook stays in his intensive.",
+   "description": "How demand is captured with AI at the centre: capacity, signals, assessments and lead magnets as tooling, and the automation stack that turns attention into a list. Maria’s second week: the demand side of the machine she runs at scale.",
    "week": 6
   },
   {
@@ -323,27 +319,23 @@
   },
   {
    "id": "aif-w07-lesson",
-   "title": "The Million Dollar Funnel, Run on AI",
+   "title": "The AI-Architected Launch",
    "type": "Lesson",
    "start": "2027-01-05T17:00:00.000Z",
    "duration_min": 90,
    "speakers": [
-    {
-     "name": "Natalie Ellis",
-     "image": "authors/natalie-ellis.jpg"
-    },
     {
      "name": "Callan Faulkner",
      "image": null
     }
    ],
    "module": "Phase 2: The Growth System",
-   "description": "The $19.5M launch told from both sides: Natalie on the community and funnel, Callan on the AI architecture behind it. The Million Dollar Social Sales Funnel with AI woven through the framework from the start, not added to the title. The single strongest proof point in the programme, placed in cohort one on purpose.",
+   "description": "The architecture behind a $19.5M launch, told by the person who built the AI side of it: the systems, the agents and the hand-offs that let a small team run a very large campaign. AI as the mechanism of the launch, not a tool bolted on. Callan’s first of three weeks, subject to her agreeing to teach.",
    "week": 7
   },
   {
    "id": "aif-w07-lab",
-   "title": "The Funnel and Content Engine, Live",
+   "title": "The Content Engine",
    "type": "Workshop",
    "start": "2027-01-07T17:00:00.000Z",
    "duration_min": 90,
@@ -366,12 +358,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Maria Wendt",
+     "image": "authors/maria-wendt.jpg"
     }
    ],
    "module": "Phase 2: The Growth System",
-   "description": "The sales pillar: qualification, nurture, proposals, follow-up — where automation lifts conversion and where it kills trust. Human-in-the-loop at every closing moment. His Webinars to Sell rated 9.58 (n=57).",
+   "description": "The sales pillar: qualification, nurture, proposals, follow-up. Where automation lifts conversion and where it kills trust, with a human in the loop at every closing moment. Maria closes the Growth System with the follow-up machine that made her low-ticket model work at volume.",
    "week": 8
   },
   {
@@ -393,15 +385,11 @@
   },
   {
    "id": "aif-qa-2",
-   "title": "Office hours 2: open Q&A with Vishen and Vykintas",
+   "title": "Office hours 2: open Q&A with Vykintas",
    "type": "Q&A Call",
    "start": "2027-01-15T17:00:00.000Z",
    "duration_min": 60,
    "speakers": [
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
-    },
     {
      "name": "Vykintas Glodenis",
      "image": "authors/vykintas-glodenis.jpg"
@@ -418,16 +406,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Daniel Priestley",
-     "image": "authors/daniel-priestley.jpg"
-    },
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
     }
    ],
    "module": "Phase 3: The Delivery Engine",
-   "description": "The first mainline week after the intensive: reading the live signal data, tuning the machine, and the doctrine of iteration. What to touch, what to leave alone, what the numbers are telling you.",
+   "description": "The first week after the Growth System switches on: reading the live signal data, tuning the machine, and the doctrine of iteration. What to touch, what to leave alone, what the numbers are telling you. Vykintas reviews every founder’s running system before Phase 3 begins.",
    "week": 9
   },
   {
@@ -521,12 +505,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Callan Faulkner",
+     "image": null
     }
    ],
    "module": "Phase 3: The Delivery Engine",
-   "description": "From vibe-coding to a real product: scope with user stories, build, ship, and put AI inside your offer, not just behind it. His strongest AI-practical session: 9.49, n=115.",
+   "description": "From vibe-coding to a real product: scope with user stories, build, ship, and put AI inside your offer, not just behind it. Callan teaches product-building the way she builds AI systems for clients, then Vykintas takes the cohort through a prototype in front of users.",
    "week": 12
   },
   {
@@ -548,15 +532,11 @@
   },
   {
    "id": "aif-qa-3",
-   "title": "Office hours 3: open Q&A with Vishen and Vykintas",
+   "title": "Office hours 3: open Q&A with Vykintas",
    "type": "Q&A Call",
    "start": "2027-02-12T17:00:00.000Z",
    "duration_min": 60,
    "speakers": [
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
-    },
     {
      "name": "Vykintas Glodenis",
      "image": "authors/vykintas-glodenis.jpg"
@@ -606,12 +586,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Daniel Priestley",
-     "image": "authors/daniel-priestley.jpg"
+     "name": "Callan Faulkner",
+     "image": null
     }
    ],
    "module": "Phase 4: People & Performance",
-   "description": "Daniel's modern org chart actually taught: AI systems at the centre, four human roles around it (influence, growth, delight, performance). Rule of 40 and revenue-per-FTE as founder instruments.",
+   "description": "The Uncommon Method: how Callan runs 150 AI employees alongside a 30-person human team with nobody let go. The modern org chart with AI systems at the centre and four human roles around it. Role by role, which work moves to an agent and which stays human.",
    "week": 14
   },
   {
@@ -637,18 +617,18 @@
   },
   {
    "id": "aif-w15-lesson",
-   "title": "Build Your AI Workforce Without Losing Your Humans",
+   "title": "Bring Your Humans With You",
    "type": "Lesson",
    "start": "2027-03-02T17:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Callan Faulkner",
-     "image": null
+     "name": "Noelle Russell",
+     "image": "authors/noelle-russell.jpg"
     }
    ],
    "module": "Phase 4: People & Performance",
-   "description": "The Uncommon Method: how Callan runs 150 AI employees alongside a 30-person human team with nobody let go. Role-by-role, which work moves to an agent, which stays human, and how to bring the team with you. Adoption, fear-to-empowerment and role redesign taught by someone who has done it inside her own company.",
+   "description": "Adoption and change management, the promise every AI course makes and skips: training, fear-to-empowerment, role redesign, measuring adoption. Noelle's enterprise playbook.",
    "week": 15
   },
   {
@@ -680,12 +660,12 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Shawn Kanungo",
+     "image": "authors/shawn-kanungo.jpg"
     }
    ],
    "module": "Phase 4: People & Performance",
-   "description": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly founder brief. The pillar every other programme skips, taught by Vishen as the emotional arc of the numbers: what they let you decide. Shawn Kanungo is the alternative owner of this week if Vishen prefers to hand it over.",
+   "description": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly founder brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational.",
    "week": 16
   },
   {
@@ -707,7 +687,7 @@
   },
   {
    "id": "aif-qa-4",
-   "title": "Office hours 4: open Q&A with Vishen and Vykintas",
+   "title": "Office hours 4: open Q&A with Vykintas and Vishen",
    "type": "Q&A Call",
    "start": "2027-03-12T17:00:00.000Z",
    "duration_min": 60,
@@ -765,16 +745,16 @@
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Daniel Priestley",
-     "image": "authors/daniel-priestley.jpg"
-    },
-    {
      "name": "Vishen Lakhiani",
      "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
     }
    ],
    "module": "Phase 4: People & Performance",
-   "description": "The co-owners close together, with Daniel's highest-rated EM session (9.87, n=46) as the ceremony: from momentum to market leadership. Certification, success sharing, cohort showcase. The second explicit integration moment, per learning L10.",
+   "description": "Vishen and Vykintas close together: from momentum to market leadership, certification, success sharing and the cohort showcase. Vishen’s third and final big session.",
    "week": 18
   },
   {

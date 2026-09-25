@@ -53,7 +53,7 @@ details{margin-top:8px} summary{cursor:pointer;font-size:12.5px;font-weight:700;
 <div class="top"><div class="wrap"><div class="wm">Mindvalley <span>×</span> Vishen Lakhiani</div><div class="meta" id="meta"></div></div></div>
 <header class="hero"><div class="wrap">
   <h1>AI for Founders Mastery</h1>
-  <p id="intro">Run on AI. Eighteen weeks in which founders rebuild the five pillars of their business as AI systems that run while they lead. Tuesday is the lesson. Thursday is the lab where it gets built. This is the draft for alignment with Vishen: dated, with the teachers assigned, before it moves into Airtable.</p>
+  <p id="intro">Run on AI. Eighteen weeks in which founders rebuild the five pillars of their business as AI systems that run while they lead. Vishen leads the summit and opens, anchors and closes the Mastery. Vykintas leads the Mastery: the curriculum, every Thursday lab and the office hours. Six speakers carry the eighteen lessons. This is the draft for alignment with Vishen: dated, with the teachers assigned, before it moves into Airtable.</p>
   <div class="banner" id="banner"></div>
   <div class="facts" id="facts"></div>
   <div class="legend" id="legend"></div>
@@ -138,7 +138,7 @@ details{margin-top:8px} summary{cursor:pointer;font-size:12.5px;font-weight:700;
   ].join('');
   document.getElementById('legend').innerHTML = '<span style="--c:var(--gold)">Kickoff, bonus, office hours</span>' + D.modules.map(function(m,i){ return '<span style="--c:'+COLORS[i%COLORS.length]+'">'+esc(m.short)+'</span>'; }).join('');
   document.getElementById('tz').innerHTML = 'Times are shown in <b>Pacific</b> and <b>UK</b>' + (local && local!==PT && local!==UK ? ', and in your time zone (<b>'+esc(local.replace(/_/g,' '))+'</b>)' : '') + '. ' + esc(D.cadence || '') + '. Lessons and labs run about 90 minutes.';
-  var bn = document.getElementById('banner'); if (bn) bn.innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Not yet aligned with Vishen. Daniel Priestley kept as co-owner for now. Nothing here is confirmed with a teacher until the team says so; the page moves to Airtable once aligned.</span>';
+  var bn = document.getElementById('banner'); if (bn) bn.innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Not yet aligned with Vishen. Reallocated on 26 September to the team\u2019s model: Vykintas leads the Mastery, Vishen takes the three big sessions, six speakers, Daniel Priestley and Natalie Ellis out. Nothing here is confirmed with a teacher until the team says so; the page moves to Airtable once aligned.</span>';
   var ld = document.getElementById('load'); if (ld && D.load) { ld.innerHTML = '<h2>Two people carry this calendar</h2><p>Vishen and Vykintas teach on Expert &amp; Authority (6 October to 19 February) and on this programme at the same time. Their diaries decide whether these dates hold.</p><table><tr><th>Person</th><th>Expert &amp; Authority</th><th>AI for Founders</th><th>Weeks on both</th><th>Busiest week</th></tr>' + D.load.map(function(l){ return '<tr><td><strong>'+esc(l.name)+'</strong></td><td>'+l.ea+' live sessions</td><td>'+l.aif+' live sessions</td><td>'+l.weeks_on_both+' weeks, '+esc(new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short'}).format(new Date(l.first_overlap)))+' to '+esc(new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short'}).format(new Date(l.last_overlap)))+'</td><td><b>'+l.peak_per_week+' sessions</b> in a week, '+l.weeks_3plus+' such weeks</td></tr>'; }).join('') + '</table>'; }
   var nl = document.getElementById('notes-list'); if (nl && D.notes) nl.innerHTML = D.notes.map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
 
@@ -160,7 +160,7 @@ details{margin-top:8px} summary{cursor:pointer;font-size:12.5px;font-weight:700;
   var synced = new Date(D.synced_at);
   var syncedTxt = new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:UK}).format(synced) + ' UK';
   document.getElementById('meta').innerHTML = (D.mode==='live' ? 'Live from Airtable · synced ' : D.mode==='draft' ? 'Draft for alignment · ' : 'Airtable snapshot · ') + esc(syncedTxt) + ' · built by Gareth Winter';
-  document.getElementById('foot').innerHTML = '<p><strong>Where this lives:</strong> ' + esc(D.source.label) + '. The full proposal, with the case, the evidence and the summit plan, is at <a href="'+esc(D.source.url)+'">' + esc(D.source.url) + '</a>.</p><p>Curriculum by the Mindvalley Mastery team with Vishen Lakhiani and Daniel Priestley. Built by Gareth Winter.</p>';
+  document.getElementById('foot').innerHTML = '<p><strong>Where this lives:</strong> ' + esc(D.source.label) + '. The full proposal, with the case, the evidence and the summit plan, is at <a href="'+esc(D.source.url)+'">' + esc(D.source.url) + '</a>.</p><p>Curriculum by the Mindvalley Mastery team with Vishen Lakhiani and Vykintas Glodenis. Built by Gareth Winter.</p>';
 })();
 </script>
 </body>
