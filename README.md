@@ -12,7 +12,9 @@ compensation structure. Keep this repository private.
 | `/expert-authority` | Expert & Authority Mastery curriculum, rendered from Airtable on every request (`lib/curriculum.js`) |
 | `/api/curriculum` | The same curriculum as JSON |
 | `/covers/*` | Lesson cover images synced from Airtable |
-| `/ai-founders` | AI for Founders Mastery (18 weeks, Vishen × Daniel Priestley) |
+| `/ai-founders` | AI for Founders Mastery: the dated draft curriculum rendered from `data/ai-founders-curriculum.json` (held in the repo until aligned with Vishen, then seeded into Airtable) |
+| `/ai-founders-proposal` | The August proposal: case, summit plan, evidence, faculty. Deep links: `#programme`, `#authors`, `#programme-w5` |
+| `/api/ai-founders` | The draft curriculum as JSON |
 | `/positioning` | One Pathway, Two Masteries — the canonical boundary |
 | `/health` | Health check (Google's frontend reserves `/healthz` on Cloud Run) |
 

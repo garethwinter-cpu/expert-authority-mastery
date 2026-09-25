@@ -32,9 +32,19 @@ app.get('/', page('index.html'));
 ['/expert-authority-v2', '/expert-authority-v3', '/expert-authority-v4', '/expert-authority-v5', '/expert-authority-compare']
   .forEach((r) => app.get(r, (req, res) => res.redirect(301, '/expert-authority')));
 app.get('/accelerator-edit-script', page('expert-authority-accelerator-script.html'));
-app.get('/ai-founders', page('ai-founders.html'));
-// deep links as paths: /ai-founders/programme, /ai-founders/authors, /ai-founders/programme-w5
-app.get('/ai-founders/:tab', (req, res) => res.redirect(302, '/ai-founders#' + encodeURIComponent(req.params.tab)));
+// AI for Founders: the dated draft curriculum, held in data/ai-founders-curriculum.json until aligned with Vishen
+const AIF_TEMPLATE = path.resolve(ROOT, 'ai-founders.html');
+const AIF_DATA = path.resolve(ROOT, 'data', 'ai-founders-curriculum.json');
+app.get('/ai-founders', (req, res) => {
+  const data = JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'));
+  const html = fs.readFileSync(AIF_TEMPLATE, 'utf8').replace('__CURRICULUM_JSON__', safeJson(data));
+  res.set('Cache-Control', 'no-cache').type('html').send(html);
+});
+app.get('/api/ai-founders', (req, res) => res.set('Cache-Control', 'no-cache').json(JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'))));
+// the August proposal (case, summit plan, evidence) stays readable at its own route
+app.get('/ai-founders-proposal', page('ai-founders-proposal.html'));
+app.get('/ai-founders-proposal/:tab', (req, res) => res.redirect(302, '/ai-founders-proposal#' + encodeURIComponent(req.params.tab)));
+app.get('/ai-founders/:tab', (req, res) => res.redirect(301, '/ai-founders-proposal#' + encodeURIComponent(req.params.tab)));
 app.get('/positioning', page('positioning.html'));
 app.get('/expert-authority-guild', page('expert-authority-guild.html'));
 app.get('/ai-founders-guild', page('ai-founders-guild.html'));

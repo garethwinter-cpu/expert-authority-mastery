@@ -600,6 +600,21 @@
     "ai-founders.html",
     "server.js"
    ]
+  },
+  {
+   "id": "aif-dated-draft-curriculum-sep25",
+   "date": "2026-09-25",
+   "area": "AI for Founders Mastery · curriculum",
+   "finding": "After the AI Founders audit Gareth ruled: keep Daniel Priestley as co-owner for now; do not use Airtable yet because the curriculum still needs alignment with Vishen; hold everything in HTML as the conversation starter; carry the Expert & Authority conventions across (kickoff call, Skill Pack bonus, office-hours Q&A calls, dated weeks, one clean page); apply the summit learnings; proven names in weeks 1 to 3; make Vishen's and Vykintas's diary load visible.",
+   "decision": "/ai-founders now renders a dated 18-week draft from data/ai-founders-curriculum.json in the same schema and template as the E&A Airtable page (Tuesday lesson, Thursday lab, 9am Pacific, 10 November 2026 to 25 March 2027, break 21 December to 3 January). Roster per the 24 September author deck with Priestley retained: Maria Wendt W5, Natalie Ellis and Callan Faulkner co-teach W7, Callan W15, Vishen W16 with Shawn as alternative, Shawn W17; Marie Forleo out. The weekend intensive is folded into the mainline as on E&A. Added: Skill Pack bonus 5 Nov, kickoff 9 Nov, four Friday office-hours calls, alumni reunion 6 May. A diary-load panel counts both programmes for Vishen and Vykintas. The August proposal moved to /ai-founders-proposal with its deep links intact.",
+   "status": "applied",
+   "applied_to": [
+    "ai-founders.html",
+    "data/ai-founders-curriculum.json",
+    "ai-founders-proposal.html",
+    "server.js",
+    "index.html"
+   ]
   }
  ],
  "verified_corrections_to_live_pages": [

@@ -1,0 +1,817 @@
+{
+ "programme": "AI for Founders Mastery",
+ "source": {
+  "label": "Draft curriculum held in this page until aligned with Vishen, then seeded into Airtable",
+  "url": "/ai-founders-proposal"
+ },
+ "mode": "draft",
+ "synced_at": "2026-09-25T09:46:58Z",
+ "aligned": false,
+ "cadence": "Tuesday lesson · Thursday lab · 9am Pacific",
+ "modules": [
+  {
+   "name": "Phase 1: The Foundation",
+   "short": "The Foundation",
+   "order": 1
+  },
+  {
+   "name": "Phase 2: The Growth System",
+   "short": "The Growth System",
+   "order": 2
+  },
+  {
+   "name": "Phase 3: The Delivery Engine",
+   "short": "The Delivery Engine",
+   "order": 3
+  },
+  {
+   "name": "Phase 4: People & Performance",
+   "short": "People & Performance",
+   "order": 4
+  }
+ ],
+ "labels": {
+  "Workshop": "Lab"
+ },
+ "load": [
+  {
+   "name": "Vishen Lakhiani",
+   "ea": 14,
+   "aif": 15,
+   "weeks_on_both": 4,
+   "first_overlap": "2026-11-30",
+   "last_overlap": "2027-02-15",
+   "peak_per_week": 3,
+   "weeks_3plus": 2
+  },
+  {
+   "name": "Vykintas Glodenis",
+   "ea": 14,
+   "aif": 25,
+   "weeks_on_both": 9,
+   "first_overlap": "2026-11-30",
+   "last_overlap": "2027-02-15",
+   "peak_per_week": 3,
+   "weeks_3plus": 4
+  }
+ ],
+ "notes": [
+  "Priestley stays as co-owner (Gareth, 25 September). The 24 September author deck removed him; this page keeps him until the team rules otherwise.",
+  "Roster per the 24 September author deck: Natalie Ellis and Callan Faulkner co-teach Week 7, Maria Wendt takes Week 5, Callan takes Week 15. Marie Forleo is out. Noelle Russell keeps Weeks 3 and 10.",
+  "Proven names open the programme to protect the refund window: Vishen and Daniel in Week 1, Vishen in Week 2, Noelle in Week 3. New names arrive from Week 5, after the summit has given a second data point on each.",
+  "The three-day weekend intensive is folded into the Tuesday and Thursday mainline, as was done for Expert & Authority. Week 9 is the switch-on review.",
+  "Cadence: Tuesday lesson, Thursday lab, 9am Pacific, from Tuesday 10 November 2026 to Thursday 25 March 2027, with a break from 21 December to 3 January. The Week 3 lab falls on US Thanksgiving, 26 November, and should move.",
+  "Expert & Authority conventions carried across: a dated Skill Pack bonus before Week 1, a kickoff call, four monthly office-hours calls on their own Zoom webinar, an alumni reunion six weeks after graduation.",
+  "Summit learnings applied: written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; Callan Faulkner takes a free trial session before her paid slot; Shawn never closes and never follows Vykintas in the same event; Natalie follows a technical session, not a strategy one.",
+  "Week 16 is Vishen per the deck, with Shawn Kanungo as the alternative owner. To align with Vishen."
+ ],
+ "sessions": [
+  {
+   "id": "aif-bonus-skillpack",
+   "title": "Founder OS Starter Kit and Skill Pack install",
+   "type": "Bonus",
+   "start": "2026-11-05T17:00:00.000Z",
+   "duration_min": 120,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "Before Week 1, every founder installs the Founder OS Starter Kit and the Skill Pack: one Claude skill per lesson, the project templates, connector guides and prompts the labs run on. Vykintas walks the install live so that on the first Thursday nobody is stuck on setup. This is the fix for the setup friction that ate labs in two earlier cohorts.\n\nYou’ll leave with:\n- The Starter Kit and Skill Pack installed and tested\n- Your first governed project created\n- A head start on Week 1 before it begins"
+  },
+  {
+   "id": "aif-kickoff",
+   "title": "The Room, the Blueprint and Your Before Picture",
+   "type": "Kick Off",
+   "start": "2026-11-09T17:00:00.000Z",
+   "duration_min": 75,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    }
+   ],
+   "module": null,
+   "description": "One live call between the summit and Week 1. Vishen and Daniel read the room back to itself from the onboarding survey, walk the 18 weeks with the teacher on each, and take the one measurement graduation is judged against: how many hours a week your business needs you today. You leave with the calendar in your hands and a number written down."
+  },
+  {
+   "id": "aif-w01-lesson",
+   "title": "Your Business Is Already Dead (Good News)",
+   "type": "Lesson",
+   "start": "2026-11-10T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    },
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "The age-of-intelligence reset, co-opened by both owners: Daniel on why every business must be reinvented, Vishen on Founder-Based AI as the method. The five pillars named; the promise made. Opens with a build, not a visioning session; the 6.04 kickoff is the counter-example we design against.",
+   "week": 1
+  },
+  {
+   "id": "aif-w01-lab",
+   "title": "Stand Up Your Company Brain",
+   "type": "Workshop",
+   "start": "2026-11-12T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "Starter-kit install; the context layer — offers, voice, customers, numbers, proof stories — live in a governed project.\n\n**The win:** an AI that answers like your co-founder, by Thursday night",
+   "week": 1,
+   "pair": "aif-w01-lesson"
+  },
+  {
+   "id": "aif-w02-lesson",
+   "title": "The Company Brain",
+   "type": "Lesson",
+   "start": "2026-11-17T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "From the Quest's personal SEED to the company SEED: mission, data, docs, meetings. Record-everything as an organisation, not a habit: the brain every pillar runs on.",
+   "week": 2
+  },
+  {
+   "id": "aif-w02-lab",
+   "title": "Feed the Brain",
+   "type": "Workshop",
+   "start": "2026-11-19T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "Document and meeting pipelines wired in; the brain interrogated against your real numbers; blind-spot report generated.\n\n**The win:** your AI spots a problem you had missed",
+   "week": 2,
+   "pair": "aif-w02-lesson"
+  },
+  {
+   "id": "aif-w03-lesson",
+   "title": "The AI Stack & Governance",
+   "type": "Lesson",
+   "start": "2026-11-24T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Noelle Russell",
+     "image": "authors/noelle-russell.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "The \"AI cake\" finally taught, not named: model and tool selection, permissions, security, data hygiene, client confidentiality: enterprise discipline sized for a 3-person company. Taught by the 9.97 session-holder (n=38).",
+   "week": 3
+  },
+  {
+   "id": "aif-w03-lab",
+   "title": "Configure Your Stack",
+   "type": "Workshop",
+   "start": "2026-11-26T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "Connectors, permission scopes, an AI policy for your business; what never goes into the model and why.\n\n**The win:** a stack you would happily show a lawyer",
+   "week": 3,
+   "pair": "aif-w03-lesson"
+  },
+  {
+   "id": "aif-w04-lesson",
+   "title": "Your IP, Voice & Skill Library",
+   "type": "Lesson",
+   "start": "2026-12-01T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "Skills as company assets. The authoring craft the Quest skipped: anatomy of a great skill, testing, versioning, sharing. Your expertise made executable.",
+   "week": 4
+  },
+  {
+   "id": "aif-w04-lab",
+   "title": "Ship Three Skills",
+   "type": "Workshop",
+   "start": "2026-12-03T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 1: The Foundation",
+   "description": "Voice skill, offer skill, reporting skill: built, tested head-to-head, saved to a shared library.\n\n**The win:** content and documents in your voice, on demand",
+   "week": 4,
+   "pair": "aif-w04-lesson"
+  },
+  {
+   "id": "aif-qa-1",
+   "title": "Office hours 1: open Q&A with Vishen and Vykintas",
+   "type": "Q&A Call",
+   "start": "2026-12-04T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
+  },
+  {
+   "id": "aif-w05-lesson",
+   "title": "Know Exactly Who It’s For, Then Never Let Them Go Cold",
+   "type": "Lesson",
+   "start": "2026-12-08T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Maria Wendt",
+     "image": "authors/maria-wendt.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "Customer intelligence and automated nurture from the founder who built $21M on low-ticket products and shows her real numbers. The ICP found in your own data, then a nurture machine (ManyChat, Claude, automated sequences) that follows up while you sleep. Radical transparency: real conversion rates, not inflated claims.",
+   "week": 5
+  },
+  {
+   "id": "aif-w05-lab",
+   "title": "The Customer Intelligence System",
+   "type": "Workshop",
+   "start": "2026-12-10T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "AI research engine mining reviews, communities and past clients; a living avatar every downstream system reads.\n\n**The win:** you can say precisely who it's for, and who it isn't",
+   "week": 5,
+   "pair": "aif-w05-lesson"
+  },
+  {
+   "id": "aif-w06-lesson",
+   "title": "Signals Before Sales: The AI-Run Demand Engine",
+   "type": "Lesson",
+   "start": "2026-12-15T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "How his seven companies capture demand with AI at the centre: capacity, signals, assessments as tooling. One campaign session, taught through execution; the full campaign playbook stays in his intensive.",
+   "week": 6
+  },
+  {
+   "id": "aif-w06-lab",
+   "title": "Your Lead-Capture Asset, Live",
+   "type": "Workshop",
+   "start": "2026-12-17T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "Assessment/scorecard built and shipped in-session; a signal dashboard counting real interest by Thursday night.\n\n**The win:** a lead machine with your name on it, on the internet",
+   "week": 6,
+   "pair": "aif-w06-lesson"
+  },
+  {
+   "id": "aif-w07-lesson",
+   "title": "The Million Dollar Funnel, Run on AI",
+   "type": "Lesson",
+   "start": "2027-01-05T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Natalie Ellis",
+     "image": "authors/natalie-ellis.jpg"
+    },
+    {
+     "name": "Callan Faulkner",
+     "image": null
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "The $19.5M launch told from both sides: Natalie on the community and funnel, Callan on the AI architecture behind it. The Million Dollar Social Sales Funnel with AI woven through the framework from the start, not added to the title. The single strongest proof point in the programme, placed in cohort one on purpose.",
+   "week": 7
+  },
+  {
+   "id": "aif-w07-lab",
+   "title": "The Funnel and Content Engine, Live",
+   "type": "Workshop",
+   "start": "2027-01-07T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "IP vault + ideas engine + drafting skills chained: a week of on-voice content from one founder-hour, anti-slop gate built in.\n\n**The win:** a week of content from one founder-hour",
+   "week": 7,
+   "pair": "aif-w07-lesson"
+  },
+  {
+   "id": "aif-w08-lesson",
+   "title": "The Pipeline That Follows Up Itself",
+   "type": "Lesson",
+   "start": "2027-01-12T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "The sales pillar: qualification, nurture, proposals, follow-up — where automation lifts conversion and where it kills trust. Human-in-the-loop at every closing moment. His Webinars to Sell rated 9.58 (n=57).",
+   "week": 8
+  },
+  {
+   "id": "aif-w08-lab",
+   "title": "The Sales Engine",
+   "type": "Workshop",
+   "start": "2027-01-14T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 2: The Growth System",
+   "description": "CRM agents, follow-up sequences, proposal generation, pipeline cockpit, armed for the weekend intensive.\n\n**The win:** no lead goes cold in your business again",
+   "week": 8,
+   "pair": "aif-w08-lesson"
+  },
+  {
+   "id": "aif-qa-2",
+   "title": "Office hours 2: open Q&A with Vishen and Vykintas",
+   "type": "Q&A Call",
+   "start": "2027-01-15T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
+  },
+  {
+   "id": "aif-w09-lesson",
+   "title": "The Switch-On Review",
+   "type": "Lesson",
+   "start": "2027-01-19T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    },
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "The first mainline week after the intensive: reading the live signal data, tuning the machine, and the doctrine of iteration. What to touch, what to leave alone, what the numbers are telling you.",
+   "week": 9
+  },
+  {
+   "id": "aif-w09-lab",
+   "title": "Tune the Engine",
+   "type": "Workshop",
+   "start": "2027-01-21T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "Every founder's live pipeline reviewed against benchmarks; one improvement shipped.\n\n**The win:** your machine is measurably better than Friday's version",
+   "week": 9,
+   "pair": "aif-w09-lesson"
+  },
+  {
+   "id": "aif-w10-lesson",
+   "title": "Delivery Agents & the Customer Experience",
+   "type": "Lesson",
+   "start": "2027-01-26T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Noelle Russell",
+     "image": "authors/noelle-russell.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "One agent, one job, from her 9.97-rated playbook: onboarding, fulfilment support, service workflows with escalation gates where trust lives.",
+   "week": 10
+  },
+  {
+   "id": "aif-w10-lab",
+   "title": "First Delivery Agent in Production",
+   "type": "Workshop",
+   "start": "2027-01-28T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "A real customer journey automated end-to-end with human checkpoints; experience score instrumented.\n\n**The win:** delivery that scales without headcount",
+   "week": 10,
+   "pair": "aif-w10-lesson"
+  },
+  {
+   "id": "aif-w11-lesson",
+   "title": "The Operations Brain",
+   "type": "Lesson",
+   "start": "2027-02-02T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "SOPs become agents. Meetings become ops data. The orchestration depth the Quest skipped: scheduled runs, multi-step automations, tool-to-tool workflows. His capstone family (9.87 / 9.66 / 9.46) is the best-rated cluster in the AIM base.",
+   "week": 11
+  },
+  {
+   "id": "aif-w11-lab",
+   "title": "Two Ops Automations, Live",
+   "type": "Workshop",
+   "start": "2027-02-04T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "A reporting automation and an admin automation running on schedule before Friday.\n\n**The win:** Monday starts with a report, not a scramble",
+   "week": 11,
+   "pair": "aif-w11-lesson"
+  },
+  {
+   "id": "aif-w12-lesson",
+   "title": "Build the Product You Always Needed",
+   "type": "Lesson",
+   "start": "2027-02-09T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "From vibe-coding to a real product: scope with user stories, build, ship, and put AI inside your offer, not just behind it. His strongest AI-practical session: 9.49, n=115.",
+   "week": 12
+  },
+  {
+   "id": "aif-w12-lab",
+   "title": "Prototype in Front of Users",
+   "type": "Workshop",
+   "start": "2027-02-11T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "Working product built in-session and placed in front of ten real users this week.\n\n**The win:** a product demo that didn't exist on Monday",
+   "week": 12,
+   "pair": "aif-w12-lesson"
+  },
+  {
+   "id": "aif-qa-3",
+   "title": "Office hours 3: open Q&A with Vishen and Vykintas",
+   "type": "Q&A Call",
+   "start": "2027-02-12T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
+  },
+  {
+   "id": "aif-w13-lesson",
+   "title": "The 4-Day Founder Week",
+   "type": "Lesson",
+   "start": "2027-02-16T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "The founder's own system, the Quest's promise made operational: decisions, energy, priorities, the weekly rhythm of an orchestrator. \"Managing time, energy & focus\" ranked 6th of 13 wanted skills; for solopreneurs it is a core promise, not a bonus.",
+   "week": 13
+  },
+  {
+   "id": "aif-w13-lab",
+   "title": "The Founder Cockpit",
+   "type": "Workshop",
+   "start": "2027-02-18T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 3: The Delivery Engine",
+   "description": "One dashboard: pipeline, delivery health, weekly AI founder brief, priorities agent.\n\n**The win:** a business you can read in five minutes",
+   "week": 13,
+   "pair": "aif-w13-lesson"
+  },
+  {
+   "id": "aif-w14-lesson",
+   "title": "The AI-Centred Company",
+   "type": "Lesson",
+   "start": "2027-02-23T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Daniel's modern org chart actually taught: AI systems at the centre, four human roles around it (influence, growth, delight, performance). Rule of 40 and revenue-per-FTE as founder instruments.",
+   "week": 14
+  },
+  {
+   "id": "aif-w14-lab",
+   "title": "Your Org, Redesigned",
+   "type": "Workshop",
+   "start": "2027-02-25T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    },
+    {
+     "name": "Alex Dogliotti",
+     "image": "authors/alex-dogliotti.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Role–agent pairing map for your business; the accountability chart with AI load-bearing. Alex, Mindvalley's own COO/CHRO and author of Replaced by AI, works the floor with the org design as lived at scale, not just drawn.\n\n**The win:** you know exactly what to hire (human or agent) next",
+   "week": 14,
+   "pair": "aif-w14-lesson"
+  },
+  {
+   "id": "aif-w15-lesson",
+   "title": "Build Your AI Workforce Without Losing Your Humans",
+   "type": "Lesson",
+   "start": "2027-03-02T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Callan Faulkner",
+     "image": null
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "The Uncommon Method: how Callan runs 150 AI employees alongside a 30-person human team with nobody let go. Role-by-role, which work moves to an agent, which stays human, and how to bring the team with you. Adoption, fear-to-empowerment and role redesign taught by someone who has done it inside her own company.",
+   "week": 15
+  },
+  {
+   "id": "aif-w15-lab",
+   "title": "The Team Rollout Kit",
+   "type": "Workshop",
+   "start": "2027-03-04T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    },
+    {
+     "name": "Alex Dogliotti",
+     "image": "authors/alex-dogliotti.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Training plan, shared skill library access, adoption scorecard, deployed to your real team (or your first future hire), with Alex's live operational authority from transforming Mindvalley's own people systems on the floor.\n\n**The win:** your team asks for more AI, not less",
+   "week": 15,
+   "pair": "aif-w15-lesson"
+  },
+  {
+   "id": "aif-w16-lesson",
+   "title": "The Finance Cockpit",
+   "type": "Lesson",
+   "start": "2027-03-09T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly founder brief. The pillar every other programme skips, taught by Vishen as the emotional arc of the numbers: what they let you decide. Shawn Kanungo is the alternative owner of this week if Vishen prefers to hand it over.",
+   "week": 16
+  },
+  {
+   "id": "aif-w16-lab",
+   "title": "The Money Dashboard",
+   "type": "Workshop",
+   "start": "2027-03-11T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Live finance cockpit: cash, margin, forecast, scenario models, with a 12-month financial plan loaded.\n\n**The win:** you stop flying blind on money",
+   "week": 16,
+   "pair": "aif-w16-lesson"
+  },
+  {
+   "id": "aif-qa-4",
+   "title": "Office hours 4: open Q&A with Vishen and Vykintas",
+   "type": "Q&A Call",
+   "start": "2027-03-12T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
+  },
+  {
+   "id": "aif-w17-lesson",
+   "title": "The Bold Founder",
+   "type": "Lesson",
+   "start": "2027-03-16T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Shawn Kanungo",
+     "image": "authors/shawn-kanungo.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Future-proofing you: disruption as a practice, taste and humanity as the moat, the reinvention habit that keeps the machine yours.",
+   "week": 17
+  },
+  {
+   "id": "aif-w17-lab",
+   "title": "The 12-Month Growth Calendar",
+   "type": "Workshop",
+   "start": "2027-03-18T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Next year loaded into the OS: repeatable weeks, quarterly spotlights, the annual big move, campaigns pre-armed.\n\n**The win:** you know what your business is doing next August",
+   "week": 17,
+   "pair": "aif-w17-lesson"
+  },
+  {
+   "id": "aif-w18-lesson",
+   "title": "Graduation: Designing Your Next 12 Months",
+   "type": "Graduation",
+   "start": "2027-03-23T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Daniel Priestley",
+     "image": "authors/daniel-priestley.jpg"
+    },
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "The co-owners close together, with Daniel's highest-rated EM session (9.87, n=46) as the ceremony: from momentum to market leadership. Certification, success sharing, cohort showcase. The second explicit integration moment, per learning L10.",
+   "week": 18
+  },
+  {
+   "id": "aif-w18-lab",
+   "title": "Certification showcase and cohort demo day",
+   "type": "Workshop",
+   "start": "2027-03-25T17:00:00.000Z",
+   "duration_min": 90,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": "Phase 4: People & Performance",
+   "description": "Every founder demonstrates one running system per pillar. Certification is awarded on systems in production, not videos watched. The cohort showcase closes the programme.",
+   "week": 18,
+   "pair": "aif-w18-lesson"
+  },
+  {
+   "id": "aif-alumni",
+   "title": "Alumni reunion and OS upgrade call",
+   "type": "Community",
+   "start": "2027-05-06T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "Six weeks after graduation: what broke, what compounded, and the quarterly upgrade to the Founder Operating System."
+  }
+ ]
+}
