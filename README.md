@@ -4,6 +4,11 @@ Mindvalley Mastery curriculum proposals — one repo, one data source, one
 design system. **Internal**: contains cohort ratings, pricing and faculty
 compensation structure. Keep this repository private.
 
+## Status
+
+Held decisions and the hand-off for the next session live in `STATUS.md`. Read it first.
+Run `python3 scripts/check-no-fees.py` before every push.
+
 ## Routes
 
 | Route | Page |

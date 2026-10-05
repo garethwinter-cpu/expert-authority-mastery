@@ -1,0 +1,401 @@
+[
+ {
+  "label": "WEEK 1",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Daniel + Vishen",
+    "title": "Your Business Is Already Dead (Good News)",
+    "text": "The age-of-intelligence reset, co-opened by both owners: Daniel on why every business must be reinvented, Vishen on Founder-Based AI as the method. The five pillars named; the promise made. Opens with a build, not a visioning session; the 6.04 kickoff is the counter-example we design against.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Stand Up Your Company Brain",
+    "text": "Starter-kit install; the context layer — offers, voice, customers, numbers, proof stories — live in a governed project.",
+    "win": "Win: an AI that answers like your co-founder, by Thursday night"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 2",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Vishen",
+    "title": "The Company Brain",
+    "text": "From the Quest's personal SEED to the company SEED: mission, data, docs, meetings. Record-everything as an organisation, not a habit: the brain every pillar runs on.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Feed the Brain",
+    "text": "Document and meeting pipelines wired in; the brain interrogated against your real numbers; blind-spot report generated.",
+    "win": "Win: your AI spots a problem you had missed"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 3",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Noelle Russell",
+    "title": "The AI Stack & Governance",
+    "text": "The \"AI cake\" finally taught, not named: model and tool selection, permissions, security, data hygiene, client confidentiality: enterprise discipline sized for a 3-person company. Taught by the 9.97 session-holder (n=38).",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Configure Your Stack",
+    "text": "Connectors, permission scopes, an AI policy for your business; what never goes into the model and why.",
+    "win": "Win: a stack you would happily show a lawyer"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 4",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Vishen",
+    "title": "Your IP, Voice & Skill Library",
+    "text": "Skills as company assets. The authoring craft the Quest skipped: anatomy of a great skill, testing, versioning, sharing. Your expertise made executable.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Ship Three Skills",
+    "text": "Voice skill, offer skill, reporting skill: built, tested head-to-head, saved to a shared library.",
+    "win": "Win: content and documents in your voice, on demand"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 5",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Marie Forleo",
+    "title": "Know Exactly Who It's For",
+    "text": "Customer intelligence: the ICP found in your own data, message-market fit, never running out of ideas; marketing's thinking layer before its machinery. Her idea-generation session rated 9.61 (n=23) in SMM.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "The Customer Intelligence System",
+    "text": "AI research engine mining reviews, communities and past clients; a living avatar every downstream system reads.",
+    "win": "Win: you can say precisely who it's for, and who it isn't"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 6",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Daniel",
+    "title": "Signals Before Sales: The AI-Run Demand Engine",
+    "text": "How his seven companies capture demand with AI at the centre: capacity, signals, assessments as tooling. One campaign session, taught through execution; the full campaign playbook stays in his intensive.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Your Lead-Capture Asset, Live",
+    "text": "Assessment/scorecard built and shipped in-session; a signal dashboard counting real interest by Thursday night.",
+    "win": "Win: a lead machine with your name on it, on the internet"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 7",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Marie Forleo",
+    "title": "The Brand-Voice Content Engine",
+    "text": "Marketing without the slop: the voice skill from W4 running a weekly pipeline; brand-building, not platform tactics. The voice itself is Expert & Authority's territory; this week automates its distribution.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "The Content Engine",
+    "text": "IP vault + ideas engine + drafting skills chained: a week of on-voice content from one founder-hour, anti-slop gate built in.",
+    "win": "Win: a week of content from one founder-hour"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 8",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Vishen",
+    "title": "The Pipeline That Follows Up Itself",
+    "text": "The sales pillar: qualification, nurture, proposals, follow-up — where automation lifts conversion and where it kills trust. Human-in-the-loop at every closing moment. His Webinars to Sell rated 9.58 (n=57).",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "The Sales Engine",
+    "text": "CRM agents, follow-up sequences, proposal generation, pipeline cockpit, armed for the weekend intensive.",
+    "win": "Win: no lead goes cold in your business again"
+   }
+  ]
+ },
+ {
+  "label": "DAY 1",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Strategy floor · Daniel live, Vishen opens",
+    "title": "The Machine, End to End",
+    "text": "Demand strategy meets the systems built in weeks 1–8. Daniel's flagship day, one of five protected anchor days.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Afternoon",
+    "title": "Your Growth Map",
+    "text": "Each founder maps their demand-to-close flow and identifies the one bottleneck the weekend must clear.",
+    "win": "Win: you know exactly what to switch on"
+   }
+  ]
+ },
+ {
+  "label": "DAY 2",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Build floor · Vykintas + lab coaches",
+    "title": "Connect Every System",
+    "text": "Brain → intelligence → lead capture → content engine → pipeline, wired into one flow on the starter kit. Two speeds, coaches on the floor.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Afternoon",
+    "title": "Dry Run",
+    "text": "Test traffic through the whole machine; every hand-off verified.",
+    "win": "Win: the machine works end to end"
+   }
+  ]
+ },
+ {
+  "label": "DAY 3",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Switch-on floor",
+    "title": "Campaigns Fired, Live",
+    "text": "Campaigns launched in-session, signals flowing, pipeline live, cohort showcase. Founders enter Module 3 with real customers in motion.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Close",
+    "title": "Showcase",
+    "text": "Every founder demos one live system to the room.",
+    "win": "Win: real demand, flowing, before Monday"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 9",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Daniel + Vishen",
+    "title": "The Switch-On Review",
+    "text": "The first mainline week after the intensive: reading the live signal data, tuning the machine, and the doctrine of iteration. What to touch, what to leave alone, what the numbers are telling you.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Tune the Engine",
+    "text": "Every founder's live pipeline reviewed against benchmarks; one improvement shipped.",
+    "win": "Win: your machine is measurably better than Friday's version"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 10",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Noelle Russell",
+    "title": "Delivery Agents & the Customer Experience",
+    "text": "One agent, one job, from her 9.97-rated playbook: onboarding, fulfilment support, service workflows with escalation gates where trust lives.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "First Delivery Agent in Production",
+    "text": "A real customer journey automated end-to-end with human checkpoints; experience score instrumented.",
+    "win": "Win: delivery that scales without headcount"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 11",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Vykintas",
+    "title": "The Operations Brain",
+    "text": "SOPs become agents. Meetings become ops data. The orchestration depth the Quest skipped: scheduled runs, multi-step automations, tool-to-tool workflows. His capstone family (9.87 / 9.66 / 9.46) is the best-rated cluster in the AIM base.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Two Ops Automations, Live",
+    "text": "A reporting automation and an admin automation running on schedule before Friday.",
+    "win": "Win: Monday starts with a report, not a scramble"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 12",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Vishen",
+    "title": "Build the Product You Always Needed",
+    "text": "From vibe-coding to a real product: scope with user stories, build, ship, and put AI inside your offer, not just behind it. His strongest AI-practical session: 9.49, n=115.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "Prototype in Front of Users",
+    "text": "Working product built in-session and placed in front of ten real users this week.",
+    "win": "Win: a product demo that didn't exist on Monday"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 13",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Vishen",
+    "title": "The 4-Day Founder Week",
+    "text": "The founder's own system, the Quest's promise made operational: decisions, energy, priorities, the weekly rhythm of an orchestrator. \"Managing time, energy & focus\" ranked 6th of 13 wanted skills; for solopreneurs it is a core promise, not a bonus.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "The Founder Cockpit",
+    "text": "One dashboard: pipeline, delivery health, weekly AI founder brief, priorities agent.",
+    "win": "Win: a business you can read in five minutes"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 14",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Daniel Priestley",
+    "title": "The AI-Centred Company",
+    "text": "Daniel's modern org chart actually taught: AI systems at the centre, four human roles around it (influence, growth, delight, performance). Rule of 40 and revenue-per-FTE as founder instruments.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas + Alex Dogliotti",
+    "title": "Your Org, Redesigned",
+    "text": "Role–agent pairing map for your business; the accountability chart with AI load-bearing. Alex, Mindvalley's own COO/CHRO and author of Replaced by AI, works the floor with the org design as lived at scale, not just drawn.",
+    "win": "Win: you know exactly what to hire (human or agent) next"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 15",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Noelle Russell",
+    "title": "Bring Your Humans With You",
+    "text": "Adoption and change management, the promise every AI course makes and skips: training, fear-to-empowerment, role redesign, measuring adoption. Noelle's enterprise playbook.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas + Alex Dogliotti",
+    "title": "The Team Rollout Kit",
+    "text": "Training plan, shared skill library access, adoption scorecard, deployed to your real team (or your first future hire), with Alex's live operational authority from transforming Mindvalley's own people systems on the floor.",
+    "win": "Win: your team asks for more AI, not less"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 16",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Shawn Kanungo",
+    "title": "The Finance Cockpit",
+    "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts. The pillar every other programme skips. Shawn is a CPA with a Deloitte background, which is why the deck recommends him here rather than only on disruption. His AI Summit debut scored 8.24 (n=93): the one author here below 9, flagged honestly; the CPA credential is the bet.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "The Money Dashboard",
+    "text": "Live finance cockpit: cash, margin, forecast, scenario models, with a 12-month financial plan loaded.",
+    "win": "Win: you stop flying blind on money"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 17",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Shawn Kanungo",
+    "title": "The Bold Founder",
+    "text": "Future-proofing you: disruption as a practice, taste and humanity as the moat, the reinvention habit that keeps the machine yours.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "Lab · Vykintas",
+    "title": "The 12-Month Growth Calendar",
+    "text": "Next year loaded into the OS: repeatable weeks, quarterly spotlights, the annual big move, campaigns pre-armed.",
+    "win": "Win: you know what your business is doing next August"
+   }
+  ]
+ },
+ {
+  "label": "WEEK 18",
+  "calls": [
+   {
+    "lab": false,
+    "who": "Teach · Daniel + Vishen",
+    "title": "Graduation: Designing Your Next 12 Months",
+    "text": "The co-owners close together, with Daniel's highest-rated EM session (9.87, n=46) as the ceremony: from momentum to market leadership. Certification, success sharing, cohort showcase. The second explicit integration moment, per learning L10.",
+    "win": ""
+   },
+   {
+    "lab": true,
+    "who": "+6 weeks · Alumni",
+    "title": "Reunion & OS Upgrade Call",
+    "text": "The S&I continuity mechanic: reunion, wins audit, quarterly OS-upgrade calls as the bridge to the next cohort.",
+    "win": "Win: the machine keeps compounding after the course ends"
+   }
+  ]
+ }
+]
