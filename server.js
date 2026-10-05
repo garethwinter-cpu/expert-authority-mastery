@@ -41,10 +41,14 @@ app.get('/ai-founders', (req, res) => {
   res.set('Cache-Control', 'no-cache').type('html').send(html);
 });
 app.get('/api/ai-founders', (req, res) => res.set('Cache-Control', 'no-cache').json(JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'))));
-// the August proposal (case, summit plan, evidence) stays readable at its own route
-app.get('/ai-founders-proposal', page('ai-founders-proposal.html'));
-app.get('/ai-founders-proposal/:tab', (req, res) => res.redirect(302, '/ai-founders-proposal#' + encodeURIComponent(req.params.tab)));
-app.get('/ai-founders/:tab', (req, res) => res.redirect(301, '/ai-founders-proposal#' + encodeURIComponent(req.params.tab)));
+// AI for Founders lives under /ai-founders/* so it reads as its own product next to Expert & Authority
+app.get('/ai-founders/proposal', page('ai-founders-proposal.html'));
+app.get('/ai-founders/guild', page('ai-founders-guild.html'));
+app.get('/ai-founders-proposal', (req, res) => res.redirect(301, '/ai-founders/proposal'));
+app.get('/ai-founders-guild', (req, res) => res.redirect(301, '/ai-founders/guild'));
+app.get('/ai-founders-proposal/:tab', (req, res) => res.redirect(301, '/ai-founders/proposal#' + encodeURIComponent(req.params.tab)));
+// deep links shared from the August page, when the proposal lived at /ai-founders
+['programme', 'programme-w5', 'authors'].forEach((t) => app.get('/ai-founders/' + t, (req, res) => res.redirect(301, '/ai-founders/proposal#' + t)));
 app.get('/positioning', page('positioning.html'));
 app.get('/expert-authority-guild', page('expert-authority-guild.html'));
 app.get('/ai-founders-guild', page('ai-founders-guild.html'));
