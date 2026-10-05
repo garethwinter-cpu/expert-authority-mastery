@@ -2,6 +2,7 @@
 """Build eam-repo/data/ai-founders-curriculum.json: the AI for Founders draft curriculum (held in HTML until Vishen aligns).
 Same schema as the E&A curriculum.json so it can be seeded into Airtable unchanged."""
 import json, datetime as dt, pathlib, re
+from zoneinfo import ZoneInfo
 HERE=pathlib.Path(__file__).resolve().parent; R=HERE.parents[1]; raw=json.load(open(HERE/'aif_weeks_raw.json'))
 weeks={int(re.sub(r'\D','',r['label'])):r for r in raw if r['label'].startswith('WEEK')}
 IMG={'Vishen':'vishen-lakhiani','Daniel':'daniel-priestley','Vykintas':'vykintas-glodenis','Noelle Russell':'noelle-russell','Shawn Kanungo':'shawn-kanungo','Alex Dogliotti':'alex-dogliotti','Natalie Ellis':'natalie-ellis','Callan Faulkner':'callan-faulkner','Maria Wendt':'maria-wendt'}
@@ -11,7 +12,7 @@ def spk(name):
     return {'name':FULL.get(key,key),'image':('authors/'+f+'.jpg') if (R/'authors'/(f+'.jpg')).exists() else None}
 def who(s):
     s=re.sub(r'^(Teach|Lab)\s*·\s*','',s); return [spk(x) for x in re.split(r'\s*\+\s*',s)]
-PT=dt.timezone(dt.timedelta(hours=-8))  # PST from 1 Nov
+PT=ZoneInfo('America/Los_Angeles')  # PST from 1 Nov, PDT again from 14 Mar 2027 (W18, the alumni call)
 def at(d,h=9,m=0): return dt.datetime(d.year,d.month,d.day,h,m,tzinfo=PT).astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 MODS=['Phase 1: The Foundation','Phase 2: The Growth System','Phase 3: The Delivery Engine','Phase 4: People & Performance']
 def mod(w): return MODS[0] if w<=4 else MODS[1] if w<=8 else MODS[2] if w<=13 else MODS[3]
@@ -55,35 +56,86 @@ for w in range(1,19):
     else:
         add(id=f'aif-w{w:02d}-lab',title='Certification showcase and cohort demo day',type='Workshop',start=at(d+dt.timedelta(days=2)),duration_min=90,speakers=[spk('Vykintas')],module=mod(w),description='Every founder demonstrates one running system per pillar. Certification is awarded on systems in production, not videos watched. The cohort showcase closes the programme.',week=w,pair=lid)
 # Q&A calls: Vishen with Vykintas, own Zoom webinar, Fridays
-for i,d in enumerate([dt.date(2026,12,4),dt.date(2027,1,15),dt.date(2027,2,12),dt.date(2027,3,12)],1):
+# Fridays Vykintas is not already in an E&A workshop at 9am PT (12 Feb was; moved 5 Oct)
+for i,d in enumerate([dt.date(2026,12,4),dt.date(2027,1,15),dt.date(2027,2,26),dt.date(2027,3,19)],1):
     add(id=f'aif-qa-{i}',title=f'Office hours {i}: open Q&A with Vykintas'+(' and Vishen' if i in (1,4) else ''),type='Q&A Call',start=at(d),duration_min=60,speakers=([spk('Vishen')] if i in (1,4) else [])+[spk('Vykintas')],module=None,
         description='A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month.')
 add(id='aif-alumni',title='Alumni reunion and OS upgrade call',type='Community',start=at(dt.date(2027,5,6)),duration_min=60,speakers=[spk('Vishen'),spk('Vykintas')],module=None,description='Six weeks after graduation: what broke, what compounded, and the quarterly upgrade to the Founder Operating System.')
 sessions.sort(key=lambda s:s['start'])
-# diary load, computed against the E&A Airtable snapshot
+# diary load. The E&A snapshot (data/curriculum.json, 23 Sep) is stale: it still skips Thanksgiving and lands lessons on
+# Fridays from December. E&A's rule, confirmed against live Airtable on 5 Oct 2026: slot 1 is Tue 6 Oct, odd slots are Tuesday
+# lessons, even slots the Friday workshop of the same week, 9am Pacific, no Thanksgiving break, no sessions on 22 and 29 Dec.
+# Dates come from that rule; titles, types and speakers from the snapshot; EA_OVERLAY carries what the snapshot has not caught
+# up with. Each overlay row applies only while the snapshot still shows the pre-change state, so a refreshed snapshot no-ops it.
 ea=json.load(open(R/'data'/'curriculum.json'))
-def load_for(name):
-    rows=[]
+EA_START=dt.date(2026,10,6); EA_SKIP={dt.date(2026,12,22),dt.date(2026,12,29)}
+def ea_slot_date(n):
+    tue=EA_START; week=1
+    while week<(n+1)//2:
+        tue+=dt.timedelta(days=7)
+        if tue in EA_SKIP: continue
+        week+=1
+    return tue if n%2 else tue+dt.timedelta(days=3)
+EA_OVERLAY=[
+ # in Airtable since the snapshot: Marisha Lakhiani runs the Paid Advertising and Funnel Design workshops
+ {'slot':18,'if_speaker':'Vykintas Glodenis','speaker':'Marisha Lakhiani'},
+ {'slot':20,'if_speaker':'Vykintas Glodenis','speaker':'Marisha Lakhiani'},
+ # held decisions of 5 Oct (STATUS.md), not yet in Airtable: the John Lee three-way rotation ...
+ {'slot':13,'if_speaker':'John Lee','to_slot':25},{'slot':14,'if_speaker':'John Lee','to_slot':26},
+ {'slot':29,'if_speaker':'Vishen Lakhiani','to_slot':13},{'slot':30,'if_speaker':'Vykintas Glodenis','to_slot':14},
+ {'slot':25,'if_speaker':'Vishen Lakhiani','to_slot':29},{'slot':26,'if_speaker':'Vykintas Glodenis','to_slot':30},
+ # ... and Regan Hillyer teaching Membership, Continuity & Superfans in Vishen's place
+ {'title':'Membership, Continuity & Superfans','type':'Lesson','if_speaker':'Vishen Lakhiani','speaker':'Regan Hillyer'},
+]
+def ea_sessions():
+    out=[]
     for s in ea['sessions']:
-        if any(p['name']==name for p in s['speakers']) and s.get('start'): rows.append(('E&A',s['start'][:10],s['type']))
-    for s in sessions:
-        if any(p['name']==name for p in s['speakers']): rows.append(('AIF',s['start'][:10],s['type']))
+        m=re.match(r'\s*(\d+)',str(s.get('slot') or '')); slot=int(m.group(1)) if m else None
+        names=[p['name'] for p in s['speakers']]
+        for o in EA_OVERLAY:
+            if 'slot' in o and o['slot']!=slot: continue
+            if 'title' in o and not s['title'].startswith(o['title']): continue
+            if 'type' in o and o['type']!=s['type']: continue
+            if o['if_speaker'] not in names: continue
+            if 'speaker' in o: names=[o['speaker'] if n==o['if_speaker'] else n for n in names]
+            if 'to_slot' in o: slot=o['to_slot']
+        start=s['start']
+        if slot: start=at(ea_slot_date(slot))              # slot 0 (the bonus) keeps its own date
+        elif s.get('start'): start=s['start']               # a refreshed snapshot carries no slot; trust its dates
+        if start: out.append({'start':start,'type':s['type'],'title':s['title'],'speakers':names})
+    return out
+EA=ea_sessions()
+def load_for(name):
+    rows=[('E&A',s['start'],s['type'],s['title']) for s in EA if name in s['speakers']]
+    rows+=[('AIF',s['start'],s['type'],s['title']) for s in sessions if any(p['name']==name for p in s['speakers'])]
     weeks={}
-    for prog,day,typ in rows:
-        wk=dt.date.fromisoformat(day); wk=wk-dt.timedelta(days=wk.weekday()); weeks.setdefault(wk,[]).append(prog)
+    for prog,start,typ,title in rows:
+        wk=dt.date.fromisoformat(start[:10]); wk=wk-dt.timedelta(days=wk.weekday()); weeks.setdefault(wk,[]).append(prog)
     heavy=sorted([ (k,v) for k,v in weeks.items() if len(v)>=3 ])
     both=sorted([k for k,v in weeks.items() if 'E&A' in v and 'AIF' in v])
+    # the number that matters: the same hour on both programmes
+    clashes=[{'start':a[1],'ea':a[3],'aif':b[3]} for a in rows if a[0]=='E&A' for b in rows if b[0]=='AIF' and a[1]==b[1]]
     return {'name':name,'ea':sum(1 for r in rows if r[0]=='E&A'),'aif':sum(1 for r in rows if r[0]=='AIF'),
             'weeks_on_both':len(both),'first_overlap':both[0].isoformat() if both else None,'last_overlap':both[-1].isoformat() if both else None,
-            'peak_per_week':max(len(v) for v in weeks.values()),'weeks_3plus':len(heavy)}
+            'peak_per_week':max(len(v) for v in weeks.values()),'weeks_3plus':len(heavy),'clashes':sorted(clashes,key=lambda c:c['start'])}
 load=[load_for('Vishen Lakhiani'),load_for('Vykintas Glodenis')]
+ea_dated=sorted(s['start'][:10] for s in EA if s['type']!='Bonus')
+ea_range={'first':ea_dated[0],'last':ea_dated[-1]}
+# how many E&A Fridays Vykintas already holds inside the AIF run: the case against a Friday lab
+aif_first,aif_last=min(s['start'][:10] for s in sessions if s.get('week')),max(s['start'][:10] for s in sessions if s.get('week'))
+vyk_fridays=sorted(s['start'][:10] for s in EA if 'Vykintas Glodenis' in s['speakers'] and dt.date.fromisoformat(s['start'][:10]).weekday()==4 and aif_first<=s['start'][:10]<=aif_last)
+load_basis=('Computed against the Expert & Authority calendar as read from Airtable on 5 October 2026 (Tuesday lessons, Friday workshops, 9am Pacific, '
+            'no Thanksgiving break, graduation Tuesday 23 February), with the two decisions held on 5 October applied on top because they are not yet in Airtable: '
+            'the John Lee rotation (Platforms to 12 and 15 January, Speaking to 17 and 20 November, Membership to 26 and 29 January) and Regan Hillyer teaching Membership in place of Vishen.')
 notes=[
  'Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; six speakers at about three classes each; Daniel Priestley is not the lead here and is being looked at for Social Media instead; Natalie Ellis is not a fit; Noelle Russell is in; at least one more woman on the roster.',
  'Allocation of the 18 lessons: Vishen 3 (Weeks 1, 13, 18), Vykintas 4 as curriculum lead (Weeks 2, 4, 9, 11) plus co-closing Week 18, Noelle Russell 3 (Weeks 3, 10, 15), Maria Wendt 3 (Weeks 5, 6, 8), Callan Faulkner 3 (Weeks 7, 12, 14), Shawn Kanungo 2 (Weeks 16, 17). Three of the six are women.',
  'Callan Faulkner runs a competing programme and may decline. If she does, her three weeks go to an AI coach or AI consultant with a track record at scale, to be found by Author Relations. The weeks are written so a substitute can take them without redesign.',
  'Proven names open the programme to protect the refund window: Vishen in Week 1, Vykintas in Week 2, Noelle in Week 3. New names arrive from Week 5, after the summit has given a second data point on each.',
  'The three-day weekend intensive is folded into the Tuesday and Thursday mainline, as was done for Expert & Authority. Week 9 is the switch-on review.',
- 'Cadence: Tuesday lesson, Thursday lab, 9am Pacific, from Tuesday 10 November 2026 to Thursday 25 March 2027, with a break from 21 December to 3 January. The Week 3 lab falls on US Thanksgiving, 26 November, and should move.',
+ 'Cadence, decided 5 October: Tuesday lesson, Thursday lab, 9am Pacific, from Tuesday 10 November 2026 to Thursday 25 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds '+str(len(vyk_fridays))+' of Expert & Authority\u2019s Friday workshops at 9am Pacific inside this run ('+', '.join(dt.date.fromisoformat(d).strftime('%-d %b') for d in vyk_fridays)+'), so a Friday lab would put him in two rooms at once on each of those dates. Thursday also keeps two clear days between a lesson and the lab that builds it.',
+ 'Thanksgiving, decided 5 October: the Week 3 lab stays on Thursday 26 November. Expert & Authority looked at its 2025 cohort data, saw no attendance drop over Thanksgiving week, and kept its Friday 27 November workshop; the same reasoning applies here. The lab is Vykintas-led and recorded, and the Week 3 lesson (Noelle Russell) is on the Tuesday before. Caveat: the 2025 evidence covers the week, not Thanksgiving Day itself, so the live number on the day is the test for the next cohort.',
+ 'Office hours moved on 5 October: the third call is Friday 26 February (not 12 February, when Vykintas runs Expert & Authority\u2019s Partnerships workshop at the same hour) and the fourth Friday 19 March, the Friday before graduation week.',
  'Expert & Authority conventions carried across: a dated Skill Pack bonus before Week 1, a kickoff call, four monthly office-hours calls on their own Zoom webinar led by Vykintas with Vishen on the first and last, an alumni reunion six weeks after graduation.',
  'Summit learnings applied: written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; Callan takes a free trial session before her paid slot; Shawn never closes and never follows Vykintas in the same event.',
 ]
@@ -91,7 +143,7 @@ out={'programme':'AI for Founders Mastery','source':{'label':'Draft curriculum h
      'mode':'draft','synced_at':dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),
      'aligned':False,'cadence':'Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery',
      'modules':[{'name':m,'short':m.split(': ',1)[1],'order':i+1} for i,m in enumerate(MODS)],
-     'labels':{'Workshop':'Lab'},'load':load,'notes':notes,'sessions':sessions}
+     'labels':{'Workshop':'Lab'},'load':load,'load_basis':load_basis,'ea_range':ea_range,'notes':notes,'sessions':sessions}
 (R/'data'/'ai-founders-curriculum.json').write_text(json.dumps(out,indent=1,ensure_ascii=False))
-print('sessions',len(sessions)); print(json.dumps(load,indent=1))
+print('sessions',len(sessions)); print(json.dumps(load,indent=1)); print('E&A range',ea_range,'| Vykintas E&A Fridays in run:',vyk_fridays)
 for s in sessions: print(s['start'][:10],s['type'],'|',s['title'][:50],'|',', '.join(p['name'] for p in s['speakers']))

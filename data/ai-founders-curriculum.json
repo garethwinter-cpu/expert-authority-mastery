@@ -5,7 +5,7 @@
   "url": "/ai-founders-proposal"
  },
  "mode": "draft",
- "synced_at": "2026-09-25T14:33:15Z",
+ "synced_at": "2026-10-05T16:30:10Z",
  "aligned": false,
  "cadence": "Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery",
  "modules": [
@@ -36,32 +36,47 @@
  "load": [
   {
    "name": "Vishen Lakhiani",
-   "ea": 14,
+   "ea": 13,
    "aif": 7,
    "weeks_on_both": 2,
    "first_overlap": "2026-11-30",
    "last_overlap": "2027-02-15",
    "peak_per_week": 2,
-   "weeks_3plus": 0
+   "weeks_3plus": 0,
+   "clashes": [
+    {
+     "start": "2027-02-16T17:00:00.000Z",
+     "ea": "Legacy: Build Something That Outlasts You",
+     "aif": "The 4-Day Founder Week"
+    }
+   ]
   },
   {
    "name": "Vykintas Glodenis",
-   "ea": 14,
+   "ea": 12,
    "aif": 30,
-   "weeks_on_both": 9,
-   "first_overlap": "2026-11-30",
+   "weeks_on_both": 8,
+   "first_overlap": "2026-11-16",
    "last_overlap": "2027-02-15",
-   "peak_per_week": 4,
-   "weeks_3plus": 4
+   "peak_per_week": 3,
+   "weeks_3plus": 3,
+   "clashes": []
   }
  ],
+ "load_basis": "Computed against the Expert & Authority calendar as read from Airtable on 5 October 2026 (Tuesday lessons, Friday workshops, 9am Pacific, no Thanksgiving break, graduation Tuesday 23 February), with the two decisions held on 5 October applied on top because they are not yet in Airtable: the John Lee rotation (Platforms to 12 and 15 January, Speaking to 17 and 20 November, Membership to 26 and 29 January) and Regan Hillyer teaching Membership in place of Vishen.",
+ "ea_range": {
+  "first": "2026-10-06",
+  "last": "2027-02-23"
+ },
  "notes": [
   "Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; six speakers at about three classes each; Daniel Priestley is not the lead here and is being looked at for Social Media instead; Natalie Ellis is not a fit; Noelle Russell is in; at least one more woman on the roster.",
   "Allocation of the 18 lessons: Vishen 3 (Weeks 1, 13, 18), Vykintas 4 as curriculum lead (Weeks 2, 4, 9, 11) plus co-closing Week 18, Noelle Russell 3 (Weeks 3, 10, 15), Maria Wendt 3 (Weeks 5, 6, 8), Callan Faulkner 3 (Weeks 7, 12, 14), Shawn Kanungo 2 (Weeks 16, 17). Three of the six are women.",
   "Callan Faulkner runs a competing programme and may decline. If she does, her three weeks go to an AI coach or AI consultant with a track record at scale, to be found by Author Relations. The weeks are written so a substitute can take them without redesign.",
   "Proven names open the programme to protect the refund window: Vishen in Week 1, Vykintas in Week 2, Noelle in Week 3. New names arrive from Week 5, after the summit has given a second data point on each.",
   "The three-day weekend intensive is folded into the Tuesday and Thursday mainline, as was done for Expert & Authority. Week 9 is the switch-on review.",
-  "Cadence: Tuesday lesson, Thursday lab, 9am Pacific, from Tuesday 10 November 2026 to Thursday 25 March 2027, with a break from 21 December to 3 January. The Week 3 lab falls on US Thanksgiving, 26 November, and should move.",
+  "Cadence, decided 5 October: Tuesday lesson, Thursday lab, 9am Pacific, from Tuesday 10 November 2026 to Thursday 25 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds 8 of Expert & Authority’s Friday workshops at 9am Pacific inside this run (20 Nov, 27 Nov, 18 Dec, 8 Jan, 29 Jan, 5 Feb, 12 Feb, 19 Feb), so a Friday lab would put him in two rooms at once on each of those dates. Thursday also keeps two clear days between a lesson and the lab that builds it.",
+  "Thanksgiving, decided 5 October: the Week 3 lab stays on Thursday 26 November. Expert & Authority looked at its 2025 cohort data, saw no attendance drop over Thanksgiving week, and kept its Friday 27 November workshop; the same reasoning applies here. The lab is Vykintas-led and recorded, and the Week 3 lesson (Noelle Russell) is on the Tuesday before. Caveat: the 2025 evidence covers the week, not Thanksgiving Day itself, so the live number on the day is the test for the next cohort.",
+  "Office hours moved on 5 October: the third call is Friday 26 February (not 12 February, when Vykintas runs Expert & Authority’s Partnerships workshop at the same hour) and the fourth Friday 19 March, the Friday before graduation week.",
   "Expert & Authority conventions carried across: a dated Skill Pack bonus before Week 1, a kickoff call, four monthly office-hours calls on their own Zoom webinar led by Vykintas with Vishen on the first and last, an alumni reunion six weeks after graduation.",
   "Summit learnings applied: written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; Callan takes a free trial session before her paid slot; Shawn never closes and never follows Vykintas in the same event."
  ],
@@ -531,21 +546,6 @@
    "pair": "aif-w12-lesson"
   },
   {
-   "id": "aif-qa-3",
-   "title": "Office hours 3: open Q&A with Vykintas",
-   "type": "Q&A Call",
-   "start": "2027-02-12T17:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
-  },
-  {
    "id": "aif-w13-lesson",
    "title": "The 4-Day Founder Week",
    "type": "Lesson",
@@ -614,6 +614,21 @@
    "description": "Role–agent pairing map for your business; the accountability chart with AI load-bearing. Alex, Mindvalley's own COO/CHRO and author of Replaced by AI, works the floor with the org design as lived at scale, not just drawn.\n\n**The win:** you know exactly what to hire (human or agent) next",
    "week": 14,
    "pair": "aif-w14-lesson"
+  },
+  {
+   "id": "aif-qa-3",
+   "title": "Office hours 3: open Q&A with Vykintas",
+   "type": "Q&A Call",
+   "start": "2027-02-26T17:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
   },
   {
    "id": "aif-w15-lesson",
@@ -686,29 +701,10 @@
    "pair": "aif-w16-lesson"
   },
   {
-   "id": "aif-qa-4",
-   "title": "Office hours 4: open Q&A with Vykintas and Vishen",
-   "type": "Q&A Call",
-   "start": "2027-03-12T17:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
-    },
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
-  },
-  {
    "id": "aif-w17-lesson",
    "title": "The Bold Founder",
    "type": "Lesson",
-   "start": "2027-03-16T17:00:00.000Z",
+   "start": "2027-03-16T16:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -724,7 +720,7 @@
    "id": "aif-w17-lab",
    "title": "The 12-Month Growth Calendar",
    "type": "Workshop",
-   "start": "2027-03-18T17:00:00.000Z",
+   "start": "2027-03-18T16:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -738,10 +734,29 @@
    "pair": "aif-w17-lesson"
   },
   {
+   "id": "aif-qa-4",
+   "title": "Office hours 4: open Q&A with Vykintas and Vishen",
+   "type": "Q&A Call",
+   "start": "2027-03-19T16:00:00.000Z",
+   "duration_min": 60,
+   "speakers": [
+    {
+     "name": "Vishen Lakhiani",
+     "image": "authors/vishen-lakhiani.jpg"
+    },
+    {
+     "name": "Vykintas Glodenis",
+     "image": "authors/vykintas-glodenis.jpg"
+    }
+   ],
+   "module": null,
+   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. The summit data showed the dedicated Q&A held 94 percent of the room and was where sign-ups and the hardest questions clustered, so the Mastery gets one a month."
+  },
+  {
    "id": "aif-w18-lesson",
    "title": "Graduation: Designing Your Next 12 Months",
    "type": "Graduation",
-   "start": "2027-03-23T17:00:00.000Z",
+   "start": "2027-03-23T16:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -761,7 +776,7 @@
    "id": "aif-w18-lab",
    "title": "Certification showcase and cohort demo day",
    "type": "Workshop",
-   "start": "2027-03-25T17:00:00.000Z",
+   "start": "2027-03-25T16:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -778,7 +793,7 @@
    "id": "aif-alumni",
    "title": "Alumni reunion and OS upgrade call",
    "type": "Community",
-   "start": "2027-05-06T17:00:00.000Z",
+   "start": "2027-05-06T16:00:00.000Z",
    "duration_min": 60,
    "speakers": [
     {
