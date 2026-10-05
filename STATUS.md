@@ -62,12 +62,18 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
 - Draft page `/ai-founders`, rendered from `data/ai-founders-curriculum.json` (mode draft, not aligned). Rebuild with
   `python3 scripts/aif/build_aif.py`. All copy lives in `scripts/aif/aif_modules.json` (eight modules, the calls, the
   teacher map); the E&A calendar for the load panel is in the script's `EA_OVERLAY` (see "The load panel" below).
-- Routes now live under one namespace: `/ai-founders` (curriculum), `/ai-founders/proposal` (the August proposal, deep
-  links `#programme`, `#programme-w5`, `#authors` intact), `/ai-founders/guild`, `/api/ai-founders`. The old flat routes
-  301 to these. Same repo, same Cloud Run service: the anti-drift architecture (shared authors, boundary, learnings,
-  design system) is the reason not to split. A separate hostname later is a Kessel domain mapping, not a code change.
-  The old `garethwinter-cpu/ai-founder-mastery` repo (last pushed 20 Aug) should be archived with a pointer here; it could
-  not be opened this session.
+- Routes live under one namespace. `/ai-founders` is the **front door** (`ai-founders-home.html`: calendar, the eight
+  modules with their teachers, who it is for, the promise, the boundary against AI Mastery, the people, links to every
+  AIF page). `/ai-founders/curriculum` is the dated draft. `/ai-founders/proposal` is the August proposal (deep links
+  `#programme`, `#programme-w5`, `#authors` intact), `/ai-founders/guild` the Guild, `/api/ai-founders` the JSON. Both
+  pages render the same JSON on every request, so they cannot disagree. The old flat routes 301. Same repo, same
+  Cloud Run service: the anti-drift architecture (shared authors, boundary, learnings, design system) is the reason not
+  to split. A separate hostname later is a Kessel domain mapping, not a code change. The old
+  `garethwinter-cpu/ai-founder-mastery` repo (last pushed 20 Aug) should be archived with a pointer here; it could not be
+  opened this session.
+- The hub (`/`) chapter for AI for Founders was updated to the rebuild (16 weeks, eight modules, Vishen with Vykintas,
+  the placed roster, Priestley off). Its pricing lozenge still reads the August figure and the brief proposes a
+  different one; left for Vishen to lock, not changed here.
 - Do not seed the AIF Airtable base (`app7lhR1V9Fts0mNc`) until Vishen has aligned. Reading it is fine: the quiz, summit
   agenda and speaker tables were read on 5 Oct. Seeding later is a copy of the JSON, same schema as E&A.
 - Sources absorbed 5 Oct: Jaideep's launch brief (claude.ai artifact, ten tabs), Vykintas's curriculum proposal

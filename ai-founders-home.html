@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Founders Mastery</title>
+<meta name="description" content="AI for Founders Mastery: run on AI. Eight modules, sixteen weeks, one business pillar each. The front door to the curriculum, the proposal and the Guild.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/wellness.css">
+<style>
+:root{--brand:#3D63F5;--brand-bright:#5B7CFF;--brand-content:#1832B4;--brand-dark:#0F1F7A;--brand-light:#EEF2FF;--brand-border:#D6DEFF;--dusk:linear-gradient(135deg,#0F1F7A 0%,#1832B4 55%,#3D63F5 100%)}
+.hero::after{background:radial-gradient(circle,rgba(157,180,255,.35),transparent 66%)}
+.hero .answer{color:#D6DEFF} .qf .l{color:#B8C7FF} .hero .overline{color:#B8C7FF}
+.sub{position:sticky;top:60px;z-index:50;border-bottom:1px solid var(--border);background:rgba(255,255,255,.95);backdrop-filter:blur(10px)} .sub .wrap{display:flex;gap:4px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px} .sub a{font-size:13px;font-weight:600;color:var(--text-muted);padding:6px 12px;border-radius:128px} .sub a.on{background:var(--brand-light);color:var(--brand-content)} .sub a:hover{color:var(--brand-content)}
+main{padding:56px 0 20px}
+.dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.date{border:1px solid var(--border);border-radius:16px;padding:18px 20px;background:#fff;box-shadow:var(--shadow-light)} .date .d{font-weight:700;font-size:16px;color:var(--ink)} .date .w{font-size:13.5px;color:var(--text-muted);margin-top:4px;line-height:1.45} .date.hi{background:var(--brand-light);border-color:var(--brand-border)} .date.hi .d{color:var(--brand-content)}
+.mods{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.mod{border:1px solid var(--border);border-radius:16px;padding:22px 24px;background:#fff;box-shadow:var(--shadow-light);display:flex;flex-direction:column;gap:12px}
+.mod .top{display:flex;align-items:center;gap:14px} .mod .mnum{flex:0 0 42px;height:42px;font-size:16px;border-radius:12px} .mod h3{font-size:18px} .mod .wk{font-size:12.5px;color:var(--text-subtle);font-weight:600}
+.mod .pic{display:grid;gap:8px;font-size:14px;color:var(--text-muted)} .mod .pic b{display:inline-block;min-width:118px;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-subtle);font-weight:700}
+.mod .teach{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:4px;padding-top:12px;border-top:1px dashed var(--border)} .who{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:600;color:var(--ink)} .who img,.who i{width:30px;height:30px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #fff;box-shadow:var(--shadow-light);display:inline-flex;align-items:center;justify-content:center;background:var(--brand);color:#fff;font-style:normal;font-size:11px;font-weight:700} .who span{color:var(--text-subtle);font-weight:500}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.q{font-size:17px;font-weight:600;color:var(--ink);line-height:1.45} .q+.body-md{margin-top:10px}
+ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{padding-left:22px;position:relative;font-size:15px;color:var(--text-muted);line-height:1.5} ul.clean li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;border-radius:3px;background:var(--brand)} ul.clean.no li::before{background:var(--grey-300)}
+.people{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px} .person{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--border);border-radius:16px;padding:14px 16px;background:#fff} .person img,.person i{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:center 20%;flex:0 0 48px;display:inline-flex;align-items:center;justify-content:center;background:var(--brand);color:#fff;font-style:normal;font-weight:700} .person .n{font-weight:700;font-size:15px} .person .r{font-size:13px;color:var(--text-muted);margin-top:2px;line-height:1.4}
+.links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .link{display:block;border:1px solid var(--border);border-radius:16px;padding:20px 22px;background:#fff;box-shadow:var(--shadow-light);color:var(--ink)} .link:hover{border-color:var(--brand-border);box-shadow:var(--shadow-medium)} .link .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-content);font-weight:700} .link h3{font-size:17px;margin:6px 0 4px} .link p{font-size:13.5px;color:var(--text-muted)}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px} .btn{display:inline-flex;align-items:center;border-radius:128px;padding:12px 22px;font-weight:700;font-size:15px} .btn.p{background:#fff;color:var(--brand-content)} .btn.g{border:1px solid rgba(255,255,255,.45);color:#fff}
+.tbl .you{font-weight:600;color:var(--ink)}
+@media(max-width:860px){.mods,.two,.links{grid-template-columns:1fr}.hero .quickfacts{grid-template-columns:repeat(2,1fr)}.tbl{min-width:0}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><div class="wordmark">Mindvalley <span>×</span> AI for Founders</div><div class="meta" id="meta"></div></div></div>
+<nav class="sub"><div class="wrap"><a class="on" href="/ai-founders">Home</a><a href="/ai-founders/curriculum">Curriculum</a><a href="/ai-founders/proposal">Proposal</a><a href="/ai-founders/guild">Guild</a><a href="/positioning">Positioning</a><a href="/">All proposals</a></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="badges"><span class="badge dark">Exponential Entrepreneur pathway</span><span class="badge dark">Mastery</span><span class="badge dark" id="statusbadge">Draft for alignment</span></div>
+  <div class="overline">Run on AI</div>
+  <h1>AI for Founders Mastery</h1>
+  <p class="answer"><strong>AI Mastery goes deep into AI. AI for Founders goes deep into the business.</strong> Sixteen weeks in which a founder rebuilds the business one function at a time, strategy to finance, each with a ready-made system installed and running. AI is the means, not the subject. You leave as the orchestrator of a company that does more with a leaner team.</p>
+  <div class="cta-row"><a class="btn p" href="/ai-founders/curriculum">Open the dated curriculum</a><a class="btn g" href="/ai-founders/proposal">Read the proposal</a></div>
+  <div class="quickfacts" id="facts"></div>
+</div></header>
+
+<main class="wrap">
+  <section>
+    <div class="section-head"><div class="overline">The calendar</div><h2>From the summit to graduation</h2><p class="body-lg">The summit sells it, Get AI-Ready levels the room, and the programme opens on a Monday with Vishen. Every date below comes from the curriculum data, so this page and the curriculum can never disagree.</p></div>
+    <div class="dates" id="dates"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">The curriculum</div><h2>Eight modules, one business pillar each</h2><p class="body-lg" id="pattern"></p></div>
+    <div class="mods" id="mods"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">Who it is for</div><h2>Two founders in the room</h2><p class="body-lg">From the AI for Founders quiz and the AI Mastery buyer surveys. Both have something real to sell. Both have growth capped by their own hours. They feel it differently, and the two tracks in every lab are built on that difference.</p></div>
+    <div class="two">
+      <div class="card tint"><div class="kicker">The solo founder</div><p class="q">"Your clients book you, not your business."</p><p class="body-md">Coaches, consultants, practitioners and creators who are the business. Six in ten quiz takers. Content and social media eat a quarter of their week, then marketing, then leads and follow-up. They start with marketing, and the voice work in Module 3 is where the week changes first.</p></div>
+      <div class="card"><div class="kicker">The founder with a team of up to ten</div><p class="q">"Decisions and complaints always go through me, and that wears me down."</p><p class="body-md">Consulting and professional services lead. One in five quiz takers, and they buy at nearly twice the solo rate. Email, admin and approvals eat their week. They start with operations, and the company brain in Module 2 is the first thing the team stops asking them for.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">The promise</div><h2>What we promise, and what we do not</h2><p class="body-lg" id="promiseline"></p></div>
+    <div class="two">
+      <div class="card"><div class="kicker">We can promise</div><ul class="clean" id="can"></ul></div>
+      <div class="card"><div class="kicker">We do not promise</div><ul class="clean no" id="cannot"></ul></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">The boundary</div><h2>Neither is the advanced one</h2><p class="body-lg">AI Mastery makes you a builder. AI for Founders makes you an orchestrator. Either order works: Mastery first and you extend the Founders systems yourself; Founders first and Mastery teaches you to build what is not in the packs. Never "Mastery 2", and never the beginner product. The line against Expert &amp; Authority, the other Mastery in this pathway, is on the <a href="/positioning">positioning page</a>: that one fixes demand, this one fixes capacity.</p></div>
+    <div class="tbl-scroll"><table class="tbl" id="diff"></table></div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">The people</div><h2>Vishen opens, anchors and closes. Vykintas builds it with you.</h2><p class="body-lg">One guest teacher per pillar, each placed where they are most authentic against that module's problem. Status is the summit speaker record; nobody is confirmed for the Mastery until the team says so. The full map, with alternates and the reasons, is on the <a href="/ai-founders/curriculum#roster">curriculum page</a>.</p></div>
+    <div class="people" id="people"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">Where everything lives</div><h2>One front door, four rooms</h2></div>
+    <div class="links">
+      <a class="link" href="/ai-founders/curriculum"><div class="k">Draft for alignment</div><h3>The dated curriculum</h3><p>Every lesson and lab with its date, teacher and win. The diary check against Expert &amp; Authority. The teacher map.</p></a>
+      <a class="link" href="/ai-founders/proposal"><div class="k">August 2026</div><h3>The proposal</h3><p>The case, the summit plan, the evidence and the author record. Deep links to the programme and the authors still work.</p></a>
+      <a class="link" href="/ai-founders/guild"><div class="k">Above the Mastery</div><h3>The Guild</h3><p>Evergreen and application-only, for founders with a Founder OS in production: quarterly upgrade sprints and the shared-systems commons.</p></a>
+      <a class="link" href="/positioning"><div class="k">The pathway</div><h3>One pathway, two Masteries</h3><p>The canonical boundary against Expert &amp; Authority: the one-question router, the comparison, the overlap rules.</p></a>
+      <a class="link" href="/expert-authority"><div class="k">The sibling</div><h3>Expert &amp; Authority Mastery</h3><p>Builds the name. Runs Tuesday and Friday from 6 October. Shares Vishen and Vykintas with this programme.</p></a>
+      <a class="link" href="/api/ai-founders"><div class="k">Data</div><h3>The curriculum as JSON</h3><p>The same data this page renders, in the schema the Airtable base will take once Vishen has aligned.</p></a>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap"><div id="foot"></div><div>Built by Gareth Winter</div></div></footer>
+
+<script id="curriculum" type="application/json">__CURRICULUM_JSON__</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('curriculum').textContent);
+  var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+  var PT = 'America/Los_Angeles', UK = 'Europe/London';
+  var fmt = function(iso, opts){ return new Intl.DateTimeFormat('en-GB', Object.assign({timeZone: /T/.test(iso) ? PT : 'UTC'}, opts)).format(new Date(iso)); };
+  var day = function(iso){ return fmt(iso, {weekday:'short', day:'numeric', month:'short'}); };
+  var longDay = function(iso){ return fmt(iso, {weekday:'long', day:'numeric', month:'long'}); };
+  var S = D.sessions.slice().sort(function(a,b){ return a.start < b.start ? -1 : 1; });
+  var byType = function(t){ return S.filter(function(s){ return s.type === t; }); };
+  var lessons = S.filter(function(s){ return s.type==='Lesson' || s.type==='Graduation'; });
+  var hours = S.reduce(function(a,s){ return a + (s.duration_min||0); }, 0)/60;
+  var teachers = {}; S.forEach(function(s){ s.speakers.forEach(function(p){ teachers[p.name] = p; }); });
+  var face = function(p, cls){ return p.image ? '<img src="/'+esc(p.image)+'" alt="" loading="lazy">' : '<i>'+esc(p.name.split(' ').map(function(x){return x[0];}).join('').slice(0,2))+'</i>'; };
+
+  document.getElementById('meta').textContent = (D.mode==='draft' ? 'Draft for alignment · ' : '') + fmt(D.synced_at, {day:'numeric', month:'short', year:'numeric'});
+  document.getElementById('facts').innerHTML = [
+    ['<b>'+D.modules.length+'</b>', 'modules, one business pillar each'],
+    ['<b>'+lessons.length+'</b>', 'weeks, a lesson and a lab in each'],
+    ['<b>'+S.filter(function(s){return s.start;}).length+'</b>', 'live sessions, about '+Math.round(hours)+' hours'],
+    ['<b>'+Object.keys(teachers).length+'</b>', 'teachers, Vishen and Vykintas among them']
+  ].map(function(f){ return '<div class="qf"><div class="n">'+f[0]+'</div><div class="l">'+esc(f[1])+'</div></div>'; }).join('');
+
+  // calendar
+  var ready = byType('Bonus'), opening = byType('Kick Off')[0], grad = byType('Graduation')[0], alumni = byType('Community')[0], qa = byType('Q&A Call');
+  var firstWeek = lessons.filter(function(s){ return s.type==='Lesson'; })[0], lastLab = byType('Workshop').slice(-1)[0];
+  var dates = [];
+  if (D.summit) dates.push(['hi', esc(D.summit.dates), '<strong>'+esc(D.summit.name)+'</strong> ('+esc(D.summit.note)+'). '+esc(D.summit.role)+' '+esc(D.summit.line)]);
+  if (ready.length) dates.push(['', ready.map(function(s){ return day(s.start); }).join(' and '), 'Get AI-Ready, two live calls in the sales window, with the setup videos and building-block lessons. The shared floor, so no lesson ever teaches setup.']);
+  if (opening) dates.push(['hi', longDay(opening.start), '<strong>The opening.</strong> '+esc(opening.title)+', with '+esc(opening.speakers.map(function(p){return p.name;}).join(' and '))+'. The programme starts here.']);
+  if (firstWeek && lastLab) dates.push(['', day(firstWeek.start)+' to '+day(lastLab.start), 'Sixteen weeks. Lessons Tuesday, labs Thursday, 9am Pacific.'+(D['break'] ? ' Break from '+fmt(D['break'][0],{day:'numeric',month:'short'})+' to '+fmt(D['break'][1],{day:'numeric',month:'short'})+'.' : '')]);
+  if (qa.length) dates.push(['', qa.map(function(s){ return fmt(s.start,{day:'numeric',month:'short'}); }).join(', '), 'Office hours, one a month on their own Zoom webinar, led by Vykintas with Vishen on the first and last.']);
+  if (grad) dates.push(['hi', longDay(grad.start), '<strong>Graduation.</strong> The load map measured again, certification on systems in production, the cohort showcase two days later.']);
+  if (alumni) dates.push(['', day(alumni.start), 'Alumni reunion and the first Founder OS upgrade call, six weeks after graduation.']);
+  document.getElementById('dates').innerHTML = dates.map(function(d){ return '<div class="date '+d[0]+'"><div class="d">'+d[1]+'</div><div class="w">'+d[2]+'</div></div>'; }).join('');
+
+  // modules
+  document.getElementById('pattern').innerHTML = 'Every module runs the same way: the problem founders name in that pillar; the management idea, how an AI-first founder thinks about it, taught by the guest on Tuesday; the system, a ready-made skill pack or workflow, installed and adapted to each founder’s business in Thursday’s lab; and what changes, something observable. Marketing, sales and operations carry the most weight because that is where this audience feels the pain.';
+  document.getElementById('mods').innerHTML = D.modules.map(function(m){
+    var ls = lessons.filter(function(s){ return s.module === m.name; });
+    var teach = ls.map(function(s){ return s.speakers.map(function(p){ return '<span class="who">'+face(p)+esc(p.name)+' <span>W'+s.week+'</span></span>'; }).join(''); }).join('');
+    return '<div class="mod"><div class="top"><div class="mnum">'+m.order+'</div><div><h3>'+esc(m.name.replace(/^Module \d+: /,''))+'</h3><div class="wk">Weeks '+m.weeks.join(' and ')+'</div></div></div>'
+      + '<div class="pic"><div><b>The problem</b>'+esc(m.problem)+'</div><div><b>What gets installed</b>'+esc(m.installed)+'</div><div><b>What changes</b>'+esc(m.changes)+'</div></div>'
+      + '<div class="teach">'+teach+'</div></div>';
+  }).join('');
+
+  // promise
+  if (D.promise) {
+    document.getElementById('promiseline').textContent = D.promise.line || '';
+    document.getElementById('can').innerHTML = (D.promise.can||[]).map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('');
+    document.getElementById('cannot').innerHTML = (D.promise.cannot||[]).map(function(x){ return '<li>'+esc(x)+'</li>'; }).join('');
+  }
+  // difference
+  if (D.difference) document.getElementById('diff').innerHTML = '<thead><tr><th></th><th>AI Mastery</th><th>AI for Founders</th></tr></thead><tbody>' + D.difference.map(function(r){ return '<tr><td class="you">'+esc(r[0])+'</td><td>'+esc(r[1])+'</td><td>'+esc(r[2])+'</td></tr>'; }).join('') + '</tbody>';
+  // people
+  var placed = (D.roster && D.roster.placed) || [];
+  document.getElementById('people').innerHTML = placed.map(function(r){ var p = teachers[r.name] || {name:r.name}; return '<div class="person">'+face(p)+'<div><div class="n">'+esc(r.name)+'</div><div class="r">'+esc(r.where)+'</div></div></div>'; }).join('');
+  document.getElementById('foot').innerHTML = esc(D.source.label) + '. Built on ' + esc(D.basis || '') + ' Curriculum by the Mindvalley Mastery team on Vykintas Glodenis’s proposal, with Vishen Lakhiani.';
+})();
+</script>
+</body>
+</html>

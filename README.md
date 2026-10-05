@@ -17,7 +17,8 @@ Run `python3 scripts/check-no-fees.py` before every push.
 | `/expert-authority` | Expert & Authority Mastery curriculum, rendered from Airtable on every request (`lib/curriculum.js`) |
 | `/api/curriculum` | The same curriculum as JSON |
 | `/covers/*` | Lesson cover images synced from Airtable |
-| `/ai-founders` | AI for Founders Mastery: the dated draft curriculum (eight modules, sixteen weeks) rendered from `data/ai-founders-curriculum.json`, built by `scripts/aif/build_aif.py` from `scripts/aif/aif_modules.json` (held in the repo until aligned with Vishen, then seeded into Airtable) |
+| `/ai-founders` | AI for Founders: the front door (`ai-founders-home.html`). Calendar, the eight modules, who it is for, the promise, the boundary, the people, links to every AIF page. Rendered from the same JSON as the curriculum |
+| `/ai-founders/curriculum` | The dated draft curriculum (eight modules, sixteen weeks) rendered from `data/ai-founders-curriculum.json`, built by `scripts/aif/build_aif.py` from `scripts/aif/aif_modules.json` (held in the repo until aligned with Vishen, then seeded into Airtable) |
 | `/ai-founders/proposal` | The August proposal: case, summit plan, evidence, faculty. Deep links: `#programme`, `#authors`, `#programme-w5`. `/ai-founders-proposal` redirects here |
 | `/ai-founders/guild` | The AI for Founders Guild proposal (`/ai-founders-guild` redirects here) |
 | `/api/ai-founders` | The draft curriculum as JSON |

@@ -32,14 +32,16 @@ app.get('/', page('index.html'));
 ['/expert-authority-v2', '/expert-authority-v3', '/expert-authority-v4', '/expert-authority-v5', '/expert-authority-compare']
   .forEach((r) => app.get(r, (req, res) => res.redirect(301, '/expert-authority')));
 app.get('/accelerator-edit-script', page('expert-authority-accelerator-script.html'));
-// AI for Founders: the dated draft curriculum, held in data/ai-founders-curriculum.json until aligned with Vishen
-const AIF_TEMPLATE = path.resolve(ROOT, 'ai-founders.html');
+// AI for Founders: /ai-founders is the front door, /ai-founders/curriculum the dated draft. Both render
+// data/ai-founders-curriculum.json, held in the repo until aligned with Vishen, so they can never disagree.
 const AIF_DATA = path.resolve(ROOT, 'data', 'ai-founders-curriculum.json');
-app.get('/ai-founders', (req, res) => {
+const aifPage = (file) => (req, res) => {
   const data = JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'));
-  const html = fs.readFileSync(AIF_TEMPLATE, 'utf8').replace('__CURRICULUM_JSON__', safeJson(data));
+  const html = fs.readFileSync(path.resolve(ROOT, file), 'utf8').replace('__CURRICULUM_JSON__', safeJson(data));
   res.set('Cache-Control', 'no-cache').type('html').send(html);
-});
+};
+app.get('/ai-founders', aifPage('ai-founders-home.html'));
+app.get('/ai-founders/curriculum', aifPage('ai-founders.html'));
 app.get('/api/ai-founders', (req, res) => res.set('Cache-Control', 'no-cache').json(JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'))));
 // AI for Founders lives under /ai-founders/* so it reads as its own product next to Expert & Authority
 app.get('/ai-founders/proposal', page('ai-founders-proposal.html'));
