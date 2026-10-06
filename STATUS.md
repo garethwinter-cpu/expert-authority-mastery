@@ -142,6 +142,27 @@ snapshot still shows the old state, so refreshing the snapshot makes it a no-op.
 `slot` as null (`lib/curriculum.js`), so a refreshed snapshot falls back to its own dates; restore slot resolution there
 before the next refresh.
 
+### Storyboarding call, 6 Oct (Vishen, Jaideep, Ramya, Marijana, Ishaan, Chee Ling, Wendy, Gareth)
+
+- **Summit name is AI for Founders Summit.** Vishen rejected "Run on AI: The Founders Summit" outright. The data and
+  front door now carry the confirmed name; "Run on AI" survives only as the programme's promise line.
+- **Co-creation is the launch mechanic.** Vishen wants total openness: publish a rough curriculum covering both the summit
+  and the Mastery, invite the community to a feedback survey (what is missing, where to go deeper, which teachers), then
+  publish version two with their input. Modelled on the 2015 Silva "co-create with us" launch. Gareth: the front door
+  and curriculum are that rough draft; a feedback form is the next build.
+- **Survey template.** Vishen asked Gareth for a reusable audience-survey model that serves curriculum design as well as
+  marketing: where they are, how they want to grow, what they want changed, biggest needs, and what they do not know
+  they should know. Jaideep: a second, deeper quiz runs at summit registration, as E&A did.
+- **Email, Monday 12 Oct.** Vishen asked Gareth to help Ramya write a community email: thank the Expert & Authority
+  community (Mastery sold out), announce the AI for Founders Summit, say a survey is coming, and start positioning Gareth
+  as the curriculum and content designer the community recognises (photo of Vishen, Gareth, Jaideep). Draft in the
+  session notes of 6 Oct.
+- **Leads.** The 36 quiz takers at $1M+ get a nurturing call, not a sales push (Vishen, with Tom). The Guild launches
+  alongside.
+- **Speakers.** Confirmed for the summit as of the call: Vishen, Vykintas, Noelle. Marijana aims for 14 Oct for the rest;
+  social promotion starts 16 or 17 Oct; Vishen's eight UGC videos need a diary slot around his Austin travel.
+- **Curriculum finalisation** is wanted this week (Jaideep).
+
 ### Still open against E&A
 
 - **Vishen on Fridays.** E&A's rule is that Vishen does not teach Fridays; AIF office hours 1 (Fri 4 Dec) and 4 (Fri 12
