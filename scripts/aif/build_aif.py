@@ -34,9 +34,9 @@ GAR=('Get AI-Ready: the shared floor before Week 1. Three layers, so no live les
      'each with one thing set up in your own account; then the programme. The readiness checklist nudges, it does not gate: a paid plan, one project '
      'with instructions, one skill installed, one app connected. It also gives us the starting-level data the AI Mastery 2026 survey was missing.')
 add(id='aif-ready-1',title='Get AI-Ready, call 1: your account, your first project, your first skill',type='Bonus',start=at(dt.date(2026,11,5)),duration_min=90,speakers=[spk('Vykintas')],module=None,
-    description=GAR+'\n\nCall 1, the first week after the summit, for early buyers: the building blocks walked live, questions answered, the checklist started. Recorded for late buyers.')
+    description='Call 1, the first week after the summit, for early buyers: the building blocks walked live, questions answered, the checklist started. Recorded for late buyers.\n\n'+GAR)
 add(id='aif-ready-2',title='Get AI-Ready, call 2: checklist, connectors and the questions from call 1',type='Bonus',start=at(dt.date(2026,11,12)),duration_min=90,speakers=[spk('Vykintas')],module=None,
-    description=GAR+'\n\nCall 2, the week before the start, for late buyers who watched the recording of call 1 and for anyone still stuck on setup. Nobody arrives at Week 1 wondering what a connector is.')
+    description='Call 2, the week before the start, for late buyers who watched the recording of call 1 and for anyone still stuck on setup. Nobody arrives at Week 1 wondering what a connector is.\n\n'+GAR)
 add(id='aif-opening',title='Why Your Business Still Runs on You',type='Kick Off',start=at(dt.date(2026,11,16)),duration_min=90,speakers=[spk('Vishen'),spk('Vykintas')],module=None,
     description='The programme opens on Monday 16 November with Vishen. You built the business to be free; somewhere along the way it took the freedom. Vishen opens his own load map live: the years Mindvalley ran through him, and what AI runs there today. Then the ceiling every founder in the room shares: your business cannot grow faster than your calendar. Vykintas walks the sixteen weeks, the teacher on each, and the one measurement graduation is judged against: how many hours a week your business needs you today. You leave with the calendar in your hands and a number written down.')
 for m in SRC['modules']:

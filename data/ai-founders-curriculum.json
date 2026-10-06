@@ -76,7 +76,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-05T17:00:32Z",
+ "synced_at": "2026-10-06T09:13:11Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery",
  "basis": "Vykintas Glodenis, AI for Founders Curriculum Proposal (5 Oct 2026); Jaideep's launch brief (5 Oct 2026); the AI for Founders quiz (812 answers, 2 to 5 Oct 2026).",
@@ -361,7 +361,7 @@
     }
    ],
    "module": null,
-   "description": "Get AI-Ready: the shared floor before Week 1. Three layers, so no live lesson ever has to teach setup: optional pre-recorded base setup for founders starting from zero (signing up, which plan, starting a chat, adding files, voice, and a short guide for people coming from ChatGPT); required building blocks for everyone (prompt and context, skills, projects and instructions, connectors, scheduled tasks, cloud versus local), each with one thing set up in your own account; then the programme. The readiness checklist nudges, it does not gate: a paid plan, one project with instructions, one skill installed, one app connected. It also gives us the starting-level data the AI Mastery 2026 survey was missing.\n\nCall 1, the first week after the summit, for early buyers: the building blocks walked live, questions answered, the checklist started. Recorded for late buyers."
+   "description": "Call 1, the first week after the summit, for early buyers: the building blocks walked live, questions answered, the checklist started. Recorded for late buyers.\n\nGet AI-Ready: the shared floor before Week 1. Three layers, so no live lesson ever has to teach setup: optional pre-recorded base setup for founders starting from zero (signing up, which plan, starting a chat, adding files, voice, and a short guide for people coming from ChatGPT); required building blocks for everyone (prompt and context, skills, projects and instructions, connectors, scheduled tasks, cloud versus local), each with one thing set up in your own account; then the programme. The readiness checklist nudges, it does not gate: a paid plan, one project with instructions, one skill installed, one app connected. It also gives us the starting-level data the AI Mastery 2026 survey was missing."
   },
   {
    "id": "aif-ready-2",
@@ -376,7 +376,7 @@
     }
    ],
    "module": null,
-   "description": "Get AI-Ready: the shared floor before Week 1. Three layers, so no live lesson ever has to teach setup: optional pre-recorded base setup for founders starting from zero (signing up, which plan, starting a chat, adding files, voice, and a short guide for people coming from ChatGPT); required building blocks for everyone (prompt and context, skills, projects and instructions, connectors, scheduled tasks, cloud versus local), each with one thing set up in your own account; then the programme. The readiness checklist nudges, it does not gate: a paid plan, one project with instructions, one skill installed, one app connected. It also gives us the starting-level data the AI Mastery 2026 survey was missing.\n\nCall 2, the week before the start, for late buyers who watched the recording of call 1 and for anyone still stuck on setup. Nobody arrives at Week 1 wondering what a connector is."
+   "description": "Call 2, the week before the start, for late buyers who watched the recording of call 1 and for anyone still stuck on setup. Nobody arrives at Week 1 wondering what a connector is.\n\nGet AI-Ready: the shared floor before Week 1. Three layers, so no live lesson ever has to teach setup: optional pre-recorded base setup for founders starting from zero (signing up, which plan, starting a chat, adding files, voice, and a short guide for people coming from ChatGPT); required building blocks for everyone (prompt and context, skills, projects and instructions, connectors, scheduled tasks, cloud versus local), each with one thing set up in your own account; then the programme. The readiness checklist nudges, it does not gate: a paid plan, one project with instructions, one skill installed, one app connected. It also gives us the starting-level data the AI Mastery 2026 survey was missing."
   },
   {
    "id": "aif-opening",
