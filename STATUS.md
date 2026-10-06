@@ -4,6 +4,7 @@ Internal working file. Not served by any route. Read this first in any new sessi
 House rules: no fees or compensation on any page or data file (run `python3 scripts/check-no-fees.py`
 before every push); push to `main` (auto-deploys) and to `claude/expert-authority-mastery-proposal-3en6ld`;
 bump `package.json` on every ship.
+Live site: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Google sign-in). Cloud Run redeploys from `main` in a few minutes.
 
 ## Expert & Authority Mastery: held decisions (5 Oct 2026)
 

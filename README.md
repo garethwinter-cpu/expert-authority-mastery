@@ -86,3 +86,6 @@ cites `data/authors.json`, and gets a route in `server.js`.
 Node.js buildpack, no Dockerfile. `npm start` binds `process.env.PORT`;
 `/health` responds 200. Deployed via Kessel from this
 repo's `main`, same as the speaking-influence and ai-founder services.
+
+Live URL: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Google sign-in required). AI for Founders
+is at `/ai-founders`, the dated curriculum at `/ai-founders/curriculum`, Expert & Authority at `/expert-authority`.
