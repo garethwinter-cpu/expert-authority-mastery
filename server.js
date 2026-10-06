@@ -40,6 +40,9 @@ const aifPage = (file) => (req, res) => {
   const html = fs.readFileSync(path.resolve(ROOT, file), 'utf8').replace('__CURRICULUM_JSON__', safeJson(data));
   res.set('Cache-Control', 'no-cache').type('html').send(html);
 };
+// AI for Founders icon: blue square, "Ai"
+['favicon-aif.svg', 'favicon-aif-32.png', 'favicon-aif-512.png', 'apple-touch-icon-aif.png']
+  .forEach((f) => app.get('/' + f, (req, res) => res.set('Cache-Control', 'public, max-age=86400').sendFile(path.resolve(ROOT, f))));
 app.get('/ai-founders', aifPage('ai-founders-home.html'));
 app.get('/ai-founders/curriculum', aifPage('ai-founders.html'));
 app.get('/api/ai-founders', (req, res) => res.set('Cache-Control', 'no-cache').json(JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'))));
