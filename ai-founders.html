@@ -135,12 +135,13 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
   var live = S.filter(function(s){ return s.start; });
   var hours = S.reduce(function(a,s){ return a + (s.duration_min||0); }, 0)/60;
   var teachers = {}; S.forEach(function(s){ s.speakers.forEach(function(p){ teachers[p.name]=1; }); });
-  var firstLesson = lessons[0], lastLab = S.filter(function(s){ return s.type==='Workshop'; }).slice(-1)[0];
+  var opening = S.filter(function(s){ return s.type==='Kick Off'; })[0], firstLesson = lessons[0], lastLab = S.filter(function(s){ return s.type==='Workshop'; }).slice(-1)[0];
+  var startAt = opening || firstLesson; // the programme starts at the opening; Get AI-Ready sits before it, in the sales window
   document.getElementById('facts').innerHTML = [
     '<span class="fact"><b>'+D.modules.length+'</b> modules</span>',
     '<span class="fact"><b>'+lessons.length+'</b> weeks</span>',
     '<span class="fact"><b>'+live.length+'</b> live sessions · <b>'+Math.round(hours)+'</b> hours</span>',
-    '<span class="fact"><b>'+esc(longDay(firstLesson.start))+'</b> to <b>'+esc(longDay(lastLab.start))+'</b></span>',
+    '<span class="fact"><b>'+esc(longDay(startAt.start))+'</b> to <b>'+esc(longDay(lastLab.start))+'</b></span>',
     '<span class="fact"><b>'+Object.keys(teachers).length+'</b> teachers</span>'
   ].join('');
   document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Not yet aligned with Vishen. Built on Vykintas’s eight-module proposal and the launch brief of 5 October. Guests are placed where they are most authentic; nothing is confirmed with a teacher until the team says so.</span>';
@@ -149,8 +150,6 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
 
   // sections: before, modules, after
   var pre = S.filter(function(s){ return s.type==='Bonus' || s.type==='Kick Off'; });
-  var qa = S.filter(function(s){ return s.type==='Q&A Call'; });
-  var post = S.filter(function(s){ return s.type==='Community'; });
   var sideCard = function(s, label){ return '<div class="side"><span class="chip"><b>'+esc(label)+'</b>'+esc(when(s))+'</span><h3>'+esc(s.title)+'</h3><div class="who">'+faces(s.speakers)+esc(names(s.speakers))+'</div><p>'+esc(firstSentences(s.description, 2))+'</p>'+(s.description && s.description.length > 220 ? '<details class="more"><summary>Read the full brief</summary><div class="full">'+md(s.description)+'</div></details>' : '')+'</div>'; };
   var nav = [], html = '';
   var blockHead = function(id, c, num, kicker, title, range, arc){ return '<section class="block" id="'+id+'" style="--c:'+c[0]+';--t:'+c[1]+'"><div class="bhead"><div class="bnum'+(String(num).length>2?' small':'')+'">'+num+'</div><div><div class="bk">'+esc(kicker)+'</div><h2>'+esc(title)+'</h2>'+(range?'<div class="range">'+esc(range)+'</div>':'')+'</div>'+(arc||'')+'</div>'; };
@@ -184,11 +183,6 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
     });
     html += '</div></section>';
   });
-  if (qa.length || post.length) {
-    nav.push({id:'after', label:'Alongside and after', num:'+', c:SIDE});
-    html += blockHead('after', SIDE, '+', 'Alongside the weeks, and after', 'Office hours every month, and the reunion after', '');
-    html += '<div class="row">' + qa.map(function(s){ return sideCard(s, 'Office hours'); }).join('') + post.map(function(s){ return sideCard(s, 'Alumni'); }).join('') + '</div></section>';
-  }
   document.getElementById('main').innerHTML = html;
   document.getElementById('mnav-list').innerHTML = nav.map(function(n){ return '<a href="#'+n.id+'" data-id="'+n.id+'" style="--c:'+n.c[0]+'"><i>'+esc(n.num)+'</i>'+esc(n.label)+'</a>'; }).join('');
 

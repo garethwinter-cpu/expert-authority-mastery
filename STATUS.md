@@ -127,8 +127,8 @@ Still open on the curriculum:
 2. **The Thanksgiving lab stays, Thu 26 Nov** (now Week 2). Same logic as E&A: 2025 data showed no attendance drop over
    Thanksgiving week, so E&A kept Fri 27 Nov (live Airtable: slot 16, Vykintas). Caveat on the page: the evidence covers
    the week, not the day.
-3. **Load panel recomputed** against the E&A calendar as it stands plus the held decisions. After the rebuild: Vishen 13
-   E&A + 6 AIF live sessions, Vykintas 12 + 27, Vykintas peaks at 4 in a week (2 such weeks). **No same-hour double
+3. **Load panel recomputed** against the E&A calendar as it stands plus the held decisions. After the rebuild and the 7 Oct
+   removals: Vishen 13 E&A + 3 AIF live sessions, Vykintas 12 + 22, Vykintas peaks at 4 in a week (1 such week). **No same-hour double
    bookings** for either: the Monday opening keeps Vishen clear of his E&A Speaking lesson on Tue 17 Nov (post-rotation),
    his other AIF dates (2 and 16 Mar) fall after E&A ends.
 
