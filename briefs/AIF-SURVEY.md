@@ -110,12 +110,9 @@ _Open text · optional · Build together_
 **17. Would you like to be part of the founding circle that shapes version two?**  
 _Multiple choice · required · Build together_
 - Review version two before it is published
-- Test one system in my own business and report back
-- Share my founder load map, anonymised, as an example
-- Be quoted, first name and business type, in the curriculum
 - Join a 45-minute group call with the curriculum team
 - Not this time, just keep me posted
-*Why we ask: The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others.*
+*Why we ask: The commitment question, with two real offers: see version two first, or spend 45 minutes with the people writing it. Everyone who ticks either has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others.*
 
 **18. Anything else you want the people building this to know?**  
 _Open text · optional · Build together_
@@ -150,7 +147,7 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 - Closed questions do two jobs only: segment (1, 2, 4) and give one quantitative read on the outline (7, 8). Everything else is written in their words.
 - No leading wording, no agree/disagree statements, one idea per question. The four-point scale has no midpoint.
 - Branching: question 1 sets the wording of question 7. The outline is shown inline before question 8 so nobody leaves the form.
-- Incentive is recognition, not a prize: early sight of version two, a named place in the thank-you section, the founding circle.
+- Incentive is recognition, not a prize: early sight of version two, and a 45-minute group call with the curriculum team. Nothing is tested on anyone and nobody is quoted.
 - Send on a Tuesday, remind on Friday, close the following Tuesday. One reminder, to non-openers and partial completions only.
 - Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then.
 - No question about the time slot: it is set at 7am Pacific for team capacity, and asking would imply a choice people do not have. The invitation says live when you can, recording when you cannot.
