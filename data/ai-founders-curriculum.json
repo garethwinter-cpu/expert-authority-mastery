@@ -87,7 +87,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T08:37:20Z",
+ "synced_at": "2026-10-07T09:04:46Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
  "slot": {
@@ -101,18 +101,55 @@
  },
  "survey": {
   "title": "Help us build AI for Founders",
-  "intro": "Eight minutes. Twenty questions and a consent line; five are optional. We are drafting a sixteen-week programme for founders whose business still runs through them, and before we decide who teaches what, we want to know whether we are teaching the right things. Your answers go to the people writing the curriculum, not to a dashboard. Version two is published with the changes marked, so you can see what moved because of you.",
-  "length": "About 8 minutes · 20 questions · 5 optional",
+  "intro": "About ten minutes, and most of it is writing, not ticking. We are drafting a sixteen-week programme for founders whose business still runs through them, and before we decide who teaches what, we want to know whether we are teaching the right things. So this asks about your week before it asks about our outline, and it asks you to answer in your own words. Your answers go to the people writing the curriculum, not to a dashboard. Version two is published with the changes marked, so you can see what moved because of you.",
+  "length": "About 10 minutes · 20 questions · 12 open · answer the ones that speak to you",
+  "method": "The survey runs on Compassionate Curiosity, Kwame Christian's three-step frame for conversations where someone wants something: acknowledge and validate the feeling, get curious with compassion, then solve the problem together. Part one lets people name what the week feels like before we ask anything about us. Parts two to four ask open questions in a warm register, for stories and specifics rather than opinions. Part five turns the conversation into joint problem solving: what would need to be true in March, who should be in the room, and how far they want to go with us. People value what they help build, so the last part is the point, not an afterthought.",
+  "brief_map": [
+   {
+    "ask": "Where they are.",
+    "how": "Part one: who they are, what they sell, how many hours the business needs them, and a week told in their own words (questions 1 to 4)."
+   },
+   {
+    "ask": "How they want to grow.",
+    "how": "Question 15, what would need to be true in March for sixteen weeks to have been worth it, and question 9, where the outline is exactly their problem and where it is not."
+   },
+   {
+    "ask": "What they want changed.",
+    "how": "Questions 9 to 12 on the outline: what is exactly right, what is missing, where to go deeper, what to skip. Every answer is logged and the recurring ones become the version two change log."
+   },
+   {
+    "ask": "Biggest needs.",
+    "how": "Question 3 (the week), question 7 (what still goes through them and which to lift first) and the module need grid at question 8."
+   },
+   {
+    "ask": "What they do not know they should know.",
+    "how": "Asked directly at question 16, and surfaced indirectly by questions 5 and 6, where the story of the last attempt shows the gap they cannot name."
+   },
+   {
+    "ask": "Which teachers.",
+    "how": "Questions 13 and 14, open: who they have learned most from, inside Mindvalley or outside, what it is about how that person teaches, and who they would want in the room. No list of names, so nothing is promised and names we have not thought of can appear."
+   },
+   {
+    "ask": "Serves marketing as well as curriculum.",
+    "how": "Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 18 builds the founding circle list."
+   },
+   {
+    "ask": "A reusable model.",
+    "how": "The five parts are programme-agnostic: your week, what you have tried, the outline, who you learn from, building it together. Swap the module list and the outline link and it runs for any Mastery. Jaideep's deeper quiz at summit registration stays separate; this one runs before, to the warm community."
+   }
+  ],
   "sections": [
    {
     "id": "you",
-    "title": "Your business",
-    "lead": "Four quick ones so we can read the rest of your answers in context.",
+    "title": "Part 1 · Your week",
+    "step": "Acknowledge",
+    "lead": "Before anything about us: where you are, and what it is like. Three quick ones, then one that takes a minute.",
     "questions": [
      {
       "n": 1,
       "text": "Which describes you best right now?",
       "type": "Single choice",
+      "step": "Acknowledge",
       "required": true,
       "options": [
        "Solo founder: coach, consultant, practitioner or creator. The business is me.",
@@ -121,13 +158,14 @@
        "Planning to start a business in the next year",
        "I lead inside someone else's company"
       ],
-      "why": "The one split that changes everything downstream. Solo founders and founders with a team feel the same problem differently, and every lab runs in two tracks because of it. This answer sets the wording of question 6.",
+      "why": "The one split that changes everything downstream. Solo founders and founders with a team feel the same problem differently, and every lab runs in two tracks because of it. Sets the wording of question 7.",
       "branch": true
      },
      {
       "n": 2,
       "text": "What does your business mainly sell?",
       "type": "Single choice",
+      "step": "Acknowledge",
       "required": true,
       "options": [
        "Coaching or consulting",
@@ -141,46 +179,17 @@
      },
      {
       "n": 3,
-      "text": "Roughly, what is your annual revenue?",
-      "type": "Single choice",
-      "required": false,
-      "options": [
-       "Under $100K",
-       "$100K to $500K",
-       "$500K to $2M",
-       "Over $2M",
-       "Prefer not to say"
-      ],
-      "why": "Optional and framed as rough on purpose. In the quiz, the founders above $100K asked about data safety more than anything else; we need to know whether that holds, and at which level the finance module starts to matter."
+      "text": "Tell us about a recent week when everything came back to you. What happened, and how did you feel by Friday?",
+      "type": "Open text",
+      "step": "Acknowledge",
+      "required": true,
+      "why": "The first real question names the feeling before we ask for anything. People cannot think about a curriculum while the frustration is unspoken; asked this way, the frustration becomes the data. The phrases here become the opening of the summit and the sales page."
      },
      {
       "n": 4,
-      "text": "Which AI tools do you already use at least once a week?",
-      "type": "Multiple choice",
-      "required": true,
-      "options": [
-       "ChatGPT",
-       "Claude",
-       "Gemini",
-       "Microsoft Copilot",
-       "An automation tool (Zapier, Make, n8n)",
-       "AI built into my CRM, inbox or website tools",
-       "None yet",
-       "Something else (tell us)"
-      ],
-      "why": "Sets the floor for Get AI-Ready. If most of the room is already on one tool, the setup videos change; if many answer none yet, the onboarding layer gets longer."
-     }
-    ]
-   },
-   {
-    "id": "hours",
-    "title": "Where your hours go",
-    "lead": "This is the part we learn most from. The programme is measured on one number: how many hours a week the business needs you.",
-    "questions": [
-     {
-      "n": 5,
       "text": "In a normal week, how many hours does your business need you personally to keep running?",
       "type": "Single choice",
+      "step": "Acknowledge",
       "required": true,
       "options": [
        "Under 20",
@@ -189,12 +198,37 @@
        "More than 60",
        "I honestly do not know"
       ],
-      "why": "The before picture. The whole programme is measured against the founder load map, and this is the first, rough reading of it across the community."
+      "why": "The before picture. The whole programme is measured against the founder load map, and this is the first rough reading of it across the community."
+     }
+    ]
+   },
+   {
+    "id": "tried",
+    "title": "Part 2 · What you have tried",
+    "step": "Get curious",
+    "lead": "No judgement here. We learn more from what went wrong than from what went right.",
+    "questions": [
+     {
+      "n": 5,
+      "text": "Walk us through the last time you tried to hand something to AI, or to a person. What did you hope would happen, and what actually happened?",
+      "type": "Open text",
+      "step": "Get curious",
+      "required": true,
+      "why": "A story, not an opinion. The gap between hoped and happened is the knowledge gap or the application gap, in their words. This is where we learn whether the problem is knowing what to do or getting it to stick."
      },
      {
       "n": 6,
-      "text": "Which of these still have to go through you? Tick everything that applies.",
-      "type": "Multiple choice",
+      "text": "What has stopped you going further with AI in your business? Say it the way you would say it to a friend.",
+      "type": "Open text",
+      "step": "Get curious",
+      "required": true,
+      "why": "The blocker, uncoded. Asking for the friend version lowers the guard and gets the real reason (trust, time, fear of sounding like a robot, a bad first try) rather than the respectable one."
+     },
+     {
+      "n": 7,
+      "text": "Which of these still have to go through you? Tick everything that applies, then tell us the one you would most like off your desk first.",
+      "type": "Multiple choice, then one pick",
+      "step": "Get curious",
       "required": true,
       "options": [
        "Content and social media",
@@ -206,54 +240,21 @@
        "The numbers and cash decisions",
        "Deciding what to build or sell next"
       ],
-      "why": "The eight options are the eight modules, in plain words and in no particular order. The tick pattern tells us which pillars carry the most weight for which founder type. For solo founders the wording drops hiring and managing to delegating to contractors or AI."
-     },
-     {
-      "n": 7,
-      "text": "If we could take just one of those off your desk in the first month, which would it be?",
-      "type": "Single choice, from your answers to question 6",
-      "required": true,
-      "options": [
-       "(The items ticked in question 6)"
-      ],
-      "why": "Forces a priority. This is the single number that tests the module order: the draft starts with strategy, then the company brain, then marketing. If the community says sales or admin, we hear it here."
-     },
-     {
-      "n": 8,
-      "text": "Think of the last task you did this week that you knew AI, or someone else, should be doing. What was it, and what stopped you handing it over?",
-      "type": "Open text",
-      "required": true,
-      "why": "The richest question in the survey, asked while energy is high. A story, not an opinion. The second half separates knowledge gaps from application gaps, and the words people use become lesson language."
-     },
-     {
-      "n": 9,
-      "text": "What has stopped you going further with AI so far? Pick up to three.",
-      "type": "Multiple choice, maximum three",
-      "required": true,
-      "options": [
-       "I do not know what to start with",
-       "I tried, and the results sounded generic or wrong",
-       "I worry about data and client confidentiality",
-       "No time to set anything up",
-       "The tools do not connect to the software I use",
-       "My team will not adopt it",
-       "I do not trust it to run without me watching",
-       "Cost",
-       "Nothing has stopped me, I am already well along"
-      ],
-      "why": "Maps every blocker to a module: starting point to Strategy, generic output to the Company Brain, data to Module 2's governance lesson, connectors to the Get AI-Ready floor, adoption to Team, trust to the human-checkpoint design in every lab. The counts tell us where to spend lab time."
+      "why": "The eight options are the eight modules in plain words and in no particular order. The tick pattern weights the pillars by founder type; the one pick tests the module order. For solo founders the hiring line reads delegating to contractors or AI."
      }
     ]
    },
    {
     "id": "outline",
-    "title": "The outline",
-    "lead": "Read the draft outline (the link is on this page) and tell us what you think. There are no wrong answers and nothing is fixed.",
+    "title": "Part 3 · The outline",
+    "step": "Get curious",
+    "lead": "Read the draft outline (shown here and linked) and tell us what you think. Nothing in it is fixed.",
     "questions": [
      {
-      "n": 10,
+      "n": 8,
       "text": "For each of the eight modules, how much do you need it?",
       "type": "Grid, one answer per row",
+      "step": "Get curious",
       "required": true,
       "rows": [
        "Strategy: find the bottleneck",
@@ -271,72 +272,93 @@
        "Need it",
        "Need it urgently"
       ],
-      "why": "A four-point need scale with no midpoint, so everyone leans one way. The share answering need it or need it urgently becomes each module's need index, by founder type."
+      "why": "The one quantitative read on the outline. A four-point scale with no midpoint, so everyone leans one way. The share answering need it or urgently becomes each module's need index, by founder type."
+     },
+     {
+      "n": 9,
+      "text": "Reading the outline, where did you think: that is exactly my problem? And where did you think: that is not how it is for me?",
+      "type": "Open text",
+      "step": "Get curious",
+      "required": true,
+      "why": "Two-sided on purpose. The first half gives marketing the hooks in the audience's words; the second half tells the curriculum where a lesson is framed for someone else."
+     },
+     {
+      "n": 10,
+      "text": "What problem in your business is nowhere in this outline?",
+      "type": "Open text",
+      "step": "Get curious",
+      "required": true,
+      "why": "The gap question, asked as a problem rather than a topic. Every answer is logged; the recurring ones become the change log in version two."
      },
      {
       "n": 11,
-      "text": "Which two modules would you want first?",
-      "type": "Pick two",
-      "required": true,
-      "options": [
-       "(The eight modules)"
-      ],
-      "why": "Order, not weight. Read together with question 7 it tells us whether the draft sequence matches how founders would choose to start."
+      "text": "Where would you want us to go deeper, and what would deeper look like for you?",
+      "type": "Open text",
+      "step": "Get curious",
+      "required": false,
+      "why": "Depth, with a definition. Deeper means different things: more time, more hand-holding, a template, a live build on their business. The second half tells us which."
      },
      {
       "n": 12,
-      "text": "What problem in your business do you not see anywhere in this outline?",
+      "text": "What would you skip, and why?",
       "type": "Open text",
-      "required": true,
-      "why": "The gap question, asked as a problem rather than a topic. Every answer is logged; the ones that recur become the change log in version two."
-     },
-     {
-      "n": 13,
-      "text": "Where should we go deeper? Name a lesson or a lab and what you would want more of.",
-      "type": "Open text",
+      "step": "Get curious",
       "required": false,
-      "why": "Depth. Tells us where a ninety-minute lab is not enough and where a module might deserve a third week."
-     },
-     {
-      "n": 14,
-      "text": "What would you skip or shorten?",
-      "type": "Open text",
-      "required": false,
-      "why": "Permission to cut. Sixteen weeks is long; the community will tell us what they would not miss."
-     },
-     {
-      "n": 15,
-      "text": "Which lesson title made you think, that is me?",
-      "type": "Single choice, from the sixteen lesson titles",
-      "required": false,
-      "options": [
-       "(The sixteen lesson titles in the outline)"
-      ],
-      "why": "The marketing question hidden in the curriculum question. The titles that pull are the hooks for the summit and the sales page."
+      "why": "Permission to cut. Sixteen weeks is long; the why separates already handled from do not believe it works."
      }
     ]
    },
    {
-    "id": "format",
-    "title": "How you would take part",
-    "lead": "Three questions on format, so the live sessions fit real lives.",
+    "id": "teachers",
+    "title": "Part 4 · Who you learn from",
+    "step": "Get curious",
+    "lead": "Two questions about people. No names are promised; we want to understand what works for you.",
     "questions": [
      {
-      "n": 16,
-      "text": "Every lab builds a system in your own business. Which works best for you?",
-      "type": "Single choice",
+      "n": 13,
+      "text": "Who have you learned the most from about running a business, with AI or without, inside Mindvalley or outside? What is it about how they teach that works for you?",
+      "type": "Open text",
+      "step": "Get curious",
       "required": true,
-      "options": [
-       "Build live, in my own account, during the call",
-       "Watch the build, then do it myself afterwards with the recording",
-       "Both, depending on the week"
-      ],
-      "why": "Decides how much of each lab is guided build versus demonstration, and whether the labs need a follow-along kit."
+      "why": "Vishen's which teachers question, asked open. Names tell marketing which voices this audience already trusts; the second half tells the curriculum what teaching style to brief every guest on. Open, not a list, so nobody is promised and names we have not thought of can surface."
+     },
+     {
+      "n": 14,
+      "text": "Is there anyone you would want in the room for this programme? Tell us who, and why them.",
+      "type": "Open text",
+      "step": "Get curious",
+      "required": false,
+      "why": "A wish list, framed as a question rather than a vote. The why matters more than the name: it tells us what the person represents (proof, warmth, a method) so we can look for it in whoever we confirm."
+     }
+    ]
+   },
+   {
+    "id": "build",
+    "title": "Part 5 · Building it together",
+    "step": "Build together",
+    "lead": "Now the part that makes this a conversation rather than a form.",
+    "questions": [
+     {
+      "n": 15,
+      "text": "If we built this together, what would need to be true in March for you to say the sixteen weeks were worth it?",
+      "type": "Open text",
+      "step": "Build together",
+      "required": true,
+      "why": "The promise, in their words and their timeframe. We promise hours back, every lead answered and a business designed around AI; this tells us whether that is what they are buying, and the phrases become the sales page."
+     },
+     {
+      "n": 16,
+      "text": "What do you suspect you do not know yet, that a founder running on AI should know?",
+      "type": "Open text",
+      "step": "Build together",
+      "required": false,
+      "why": "Vishen's what they do not know they should know, asked directly. Answers here are the unprogrammed worries, the ones the quiz could not reach because nobody can tick a box for a thing they cannot name."
      },
      {
       "n": 17,
-      "text": "How will you most likely take part, and which live times could you make? Tick every time that works.",
+      "text": "How will you most likely take part, and which live times could you make?",
       "type": "Single choice plus multiple choice",
+      "step": "Build together",
       "required": true,
       "options": [
        "Live every week",
@@ -347,26 +369,13 @@
        "Times: a US evening",
        "Times: none of these"
       ],
-      "why": "Availability, not a promise. Attendance data from five Masteries says the hour does not move turnout; this tells us what the community can actually make and gives the final decision a second source."
+      "why": "Availability, not a promise. The slot is set at 7am Pacific for team capacity; attendance data from five Masteries says the hour does not move turnout. This tells us how many will be live and how many will watch back, which shapes the labs."
      },
      {
       "n": 18,
-      "text": "A year from now, this programme worked for you if...",
-      "type": "Open text",
-      "required": true,
-      "why": "The promise, in their words. We promise hours back, every lead answered and a business designed around AI; this tells us whether that is what they are buying, and the phrases become the sales page."
-     }
-    ]
-   },
-   {
-    "id": "circle",
-    "title": "Skin in the game",
-    "lead": "Version two is built with the people who answer. Here is how far you want to go.",
-    "questions": [
-     {
-      "n": 19,
       "text": "Would you like to be part of the founding circle that shapes version two?",
       "type": "Multiple choice",
+      "step": "Build together",
       "required": true,
       "options": [
        "Review version two before it is published",
@@ -376,26 +385,21 @@
        "Join a 45-minute group call with the curriculum team",
        "Not this time, just keep me posted"
       ],
-      "why": "The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle, the people most likely to enrol and most likely to tell others."
+      "why": "The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others."
+     },
+     {
+      "n": 19,
+      "text": "Anything else you want the people building this to know?",
+      "type": "Open text",
+      "step": "Build together",
+      "required": false,
+      "why": "The door left open. The most useful answer in a survey is often to the question nobody asked."
      },
      {
       "n": 20,
-      "text": "Anything else you want the people building this to know?",
-      "type": "Open text",
-      "required": false,
-      "why": "The door left open. Often the most useful answer in a survey is to the question nobody asked."
-     }
-    ]
-   },
-   {
-    "id": "contact",
-    "title": "Keeping in touch",
-    "lead": "Pre-filled from the email link, so this is one click.",
-    "questions": [
-     {
-      "n": "21",
       "text": "May we follow up with you on your answers?",
       "type": "Yes or no, with email pre-filled",
+      "step": "Build together",
       "required": true,
       "options": [
        "Yes",
@@ -406,25 +410,26 @@
     ]
    }
   ],
-  "thanks": "Thank you. Your answers go straight to the people writing the curriculum. Version two of the outline is published on [date], with every change marked, so you can see what moved because of you. If you asked to join the founding circle you will hear from us within a week. The AI for Founders Summit runs 30 October to 1 November; your seat is saved at [link].",
+  "thanks": "Thank you. Your answers go straight to the people writing the curriculum, and they are read in full. Version two of the outline is published on [date], with every change marked, so you can see what moved because of you. If you asked to join the founding circle you will hear from us within a week. The AI for Founders Summit runs 30 October to 1 November; your seat is saved at [link].",
   "design_notes": [
-   "Length: about eight minutes. Twenty questions plus the consent line; five are optional (revenue, and four of the open questions). Everything optional is marked so.",
-   "Order: easy facts first (1 to 4), then the big open question (8) while energy is high, the outline grid in the middle, commitment at the end. The contact question is last and pre-filled.",
-   "One idea per question. No double-barrelled questions, no leading wording, no agree/disagree statements. Scales have four points and no midpoint, so everyone leans one way.",
-   "Open questions ask for a story or a specific, never an opinion: the last task you did this week, name a lesson, a year from now. Specifics are quotable; opinions are not.",
-   "Branching: question 1 sets the wording of question 6 (solo founders see delegating to contractors or AI in place of hiring and managing). Question 7 lists only what was ticked in 6.",
-   "The outline is linked from the survey and shown inline before question 10, so nobody has to leave the form to answer.",
-   "Incentive is recognition, not a prize: early sight of version two, a named place in the thank-you section, the founding circle. Warm leads respond to being taken seriously.",
-   "Send on a Tuesday, remind on Friday, close the following Tuesday. One reminder only, to non-openers and partial completions.",
+   "Length: about ten minutes. Twenty questions, twelve of them open; ten required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.",
+   "Order follows Compassionate Curiosity: acknowledge (part 1), get curious (parts 2 to 4), build together (part 5). The feeling is asked for before any opinion about us; the commitment comes last, once they have already invested.",
+   "Open questions ask for a story or a specific, never a rating in words: a recent week, the last time you tried, what would deeper look like, what would need to be true in March. Specifics are quotable; opinions are not.",
+   "Closed questions do two jobs only: segment (1, 2, 4) and give one quantitative read on the outline (7, 8). Everything else is written in their words.",
+   "No leading wording, no agree/disagree statements, one idea per question. The four-point scale has no midpoint.",
+   "Branching: question 1 sets the wording of question 7. The outline is shown inline before question 8 so nobody leaves the form.",
+   "Incentive is recognition, not a prize: early sight of version two, a named place in the thank-you section, the founding circle.",
+   "Send on a Tuesday, remind on Friday, close the following Tuesday. One reminder, to non-openers and partial completions only.",
    "Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then."
   ],
   "analysis": [
-   "Segment every answer by founder type (question 1) and revenue band (question 3). The draft already runs two tracks; this tells us whether two is enough.",
-   "Module need index: the share answering need it or need it urgently on question 10, by segment. Read against questions 7 and 11 to test the module order.",
-   "Blocker map: question 9 counts against the module each blocker maps to. Where a blocker is common and its module is late in the programme, we move the fix earlier or into Get AI-Ready.",
-   "Language mining: questions 8, 12 and 18 are read in full, not summarised. Recurring phrases become lesson language and sales-page copy; recurring problems become the version two change log.",
-   "Format: questions 16 and 17 set lab design and give the time-slot decision a second source alongside the attendance data.",
-   "Founding circle: everyone who ticks an active option in question 19 goes on a list with their answers attached. They see version two first.",
+   "Segment every answer by founder type (question 1) and what they sell (question 2). The draft already runs two tracks; this tells us whether two is enough.",
+   "Open answers are read in full, not summarised. Questions 3, 5, 6, 9, 15 and 16 are coded by hand into recurring themes; the phrases themselves go into a language bank for lesson copy and the sales page.",
+   "Module need index: the share answering need it or need it urgently on question 8, by segment, read against question 7 to test the module order.",
+   "Gaps and depth: questions 10 to 12 become the version two change log, with a rough count beside each change.",
+   "Teachers: questions 13 and 14 produce two lists, names and teaching qualities. The qualities brief every guest; the names go to the summit and Mastery roster conversation, not to the page.",
+   "Format: question 17 sets lab design and tells us the live-to-recording split to plan for.",
+   "Founding circle: everyone who ticks an active option in question 18 goes on a list with their answers attached. They see version two first.",
    "Version two is published with a change log that credits the survey: what moved, and roughly how many people asked for it."
   ],
   "url": null,
@@ -433,44 +438,20 @@
  "emails": [
   {
    "id": "email-1",
-   "label": "Email 1 · Monday 12 October · from Vishen",
+   "label": "The community email Vishen asked for · Monday 12 October · from Vishen",
    "to": "Expert & Authority community first (summit registrants and Mastery students), then the Members list once Vishen has approved his lines",
-   "purpose": "Thank the community, announce the AI for Founders Summit, say the survey is coming, introduce the person reading the answers. Co-creation, not marketing.",
-   "subjects": [
-    "You built Expert & Authority with us. Here's what's next.",
-    "A thank-you, and a new summit",
-    "The founder's problem nobody teaches",
-    "Help us build AI for Founders",
-    "We're opening the curriculum before we finish it"
+   "communicates": [
+    "Thank the Expert & Authority community: the Mastery sold out, and their survey answers shaped it.",
+    "Announce the AI for Founders Summit, 30 October to 1 November, free, three days, about the business rather than about AI.",
+    "Name the founder's problem: everything still runs through you.",
+    "Say a survey is coming this week and that the curriculum will be published openly before it is finished, the way the 2015 programme was co-created.",
+    "Introduce Gareth Winter, Head of Content and Creative Director, as the person reading the answers and publishing version two.",
+    "One ask: save a seat at the summit, and watch for the survey."
    ],
-   "preview": "Expert & Authority sold out. Thank you. Now I want your help with the next one.",
-   "cta": "Save my seat at the AI for Founders Summit",
-   "body": "Hi [Name],\n\nExpert & Authority Mastery sold out.\n\nI want to say thank you before anything else. You came to the summit, you asked hard questions in the Q&A, you told us what you were building and what was in the way. The programme that's running right now was shaped by that. The curriculum came out of your survey answers before a single lesson was written. That's the only way I know how to build.\n\nSo here's what's next.\n\nOn 30 October to 1 November we're running a new, free, three-day event: the **AI for Founders Summit**.\n\nIt's not about learning AI. We already have a programme for that. This one is about the business. Specifically, the founder's problem nobody teaches: everything still runs through you. Every lead, every proposal, every client question, every decision waits for your hours. You built the business to be free and somewhere along the way it took the freedom. [Vishen: your own Mindvalley example here, two sentences, the one from the story interview.]\n\nOver three days we'll show you what to automate first in your business, then build it live, step by step. The company brain. The lead that never goes cold. Content in your own voice.\n\nHere's where you come in.\n\nBack in 2015 we built a programme with our community instead of for it. We shared the rough outline, asked what was missing, and published the version they'd shaped. It was the best launch we'd ever done, and the programme was better for it.\n\nI want to do that again. This week you'll get a short survey from us: where your business is, what eats your week, what you'd want a programme like this to fix first. Then we'll publish the curriculum for the summit and the Mastery, openly, before it's finished, and ask you what's missing.\n\n[Photo: Vishen and Gareth, MVU or the KL office. Working, not posed. Group shot with Jaideep if one exists.]\n\nThe person reading your answers is Gareth Winter, our Head of Content and Creative Director. Gareth designs our curricula. He'll take what you tell us and publish version two of the programme with your input in it, so you can see exactly what changed because of you.\n\nSave your seat here, and watch for the survey.\n\n**[Save my seat at the AI for Founders Summit]**\n\nVishen\n\nP.S. from Gareth: I read every answer, not a summary of them. The questions you asked in the Expert & Authority survey are already in this curriculum. Tell me what's missing, and you'll see it in the next version. Gareth",
+   "body": "Hi [Name],\n\nExpert & Authority Mastery sold out.\n\nI want to say thank you before anything else. You came to the summit, you asked hard questions in the Q&A, you told us what you were building and what was in the way. The programme that's running right now was shaped by that. The curriculum came out of your survey answers before a single lesson was written. That's the only way I know how to build.\n\nSo here's what's next.\n\nOn 30 October to 1 November we're running a new, free, three-day event: the AI for Founders Summit.\n\nIt's not about learning AI. We already have a programme for that. This one is about the business. Specifically, the founder's problem nobody teaches: everything still runs through you. Every lead, every proposal, every client question, every decision waits for your hours. You built the business to be free and somewhere along the way it took the freedom. [Vishen: your own Mindvalley example here, two sentences, the one from the story interview.]\n\nOver three days we'll show you what to automate first in your business, then build it live, step by step. The company brain. The lead that never goes cold. Content in your own voice.\n\nHere's where you come in.\n\nBack in 2015 we built a programme with our community instead of for it. We shared the rough outline, asked what was missing, and published the version they'd shaped. It was the best launch we'd ever done, and the programme was better for it.\n\nI want to do that again. This week you'll get a short survey from us: where your business is, what eats your week, what you'd want a programme like this to fix first. Then we'll publish the curriculum for the summit and the Mastery, openly, before it's finished, and ask you what's missing.\n\n[Photo: Vishen and Gareth, MVU or the KL office. Working, not posed. Group shot with Jaideep if one exists.]\n\nThe person reading your answers is Gareth Winter, our Head of Content and Creative Director. Gareth designs our curricula. He'll take what you tell us and publish version two of the programme with your input in it, so you can see exactly what changed because of you.\n\nSave your seat here, and watch for the survey.\n\n[Link: save my seat at the AI for Founders Summit]\n\nVishen\n\nP.S. from Gareth: I read every answer, not a summary of them. The questions you asked in the Expert & Authority survey are already in this curriculum. Tell me what's missing, and you'll see it in the next version. Gareth",
    "notes": [
-    "About 380 words, inside the event-invite band. One primary call to action.",
-    "Optional question handoff after everything still runs through you: How many of this week's decisions could only you have made?",
-    "Role credit for consistent use everywhere: Gareth Winter, Head of Content and Creative Director, designs Mindvalley's curricula.",
-    "Register: no exclamation marks, no formal connectives, no triple repetition, one coined idea (co-create) used three times, the enemy is the inherited setup of the business and never the reader.",
-    "Images: Gareth is attaching options separately for marketing to choose from."
-   ]
-  },
-  {
-   "id": "email-2",
-   "label": "Email 2 · later the same week · from Gareth",
-   "to": "Everyone who received email 1, two to three days later. Carries the outline link and the survey link.",
-   "purpose": "Deliver the survey Vishen promised, with the outline alongside it, and make the ask feel like partnership rather than market research.",
-   "subjects": [
-    "The AI for Founders curriculum, before it's finished",
-    "Eight modules. Tell us what's missing.",
-    "Vishen said a survey was coming. Here it is."
-   ],
-   "preview": "Eight modules, sixteen weeks, nothing fixed yet. Eight minutes of your time shapes version two.",
-   "cta": "Take the survey",
-   "body": "Hi [Name],\n\nVishen said a survey was coming. Here it is, and here is what it is for.\n\nWe have drafted the AI for Founders Mastery: eight modules, one for each part of a business that still runs through its founder. Strategy, the company brain, marketing, sales, operations, team, finance, and what to build next. Each has a lesson and a lab. You can read the outline here: [outline link].\n\nIt is a draft on purpose. Before we decide who teaches each lesson, we want to know whether we are teaching the right things. So the survey asks about your business first: where your hours go, what you have tried with AI, what stopped you, and what would make sixteen weeks worth it. Then it asks you to go through the outline and tell us what is missing, where to go deeper, and what to skip. About eight minutes.\n\nI read every answer. On [date] we publish version two with the changes marked, so you can see what moved because of you.\n\n**[Take the survey]**\n\nGareth Winter\nHead of Content and Creative Director, Mindvalley\n\nP.S. The last question asks whether you would review version two before anyone else sees it, or test one of the systems in your own business. That is the founding circle. It is small, and it is open now.",
-   "notes": [
-    "About 230 words. Two links, one button. The outline link goes to the Curriculum Outline page; the survey link carries the recipient's email so the contact question is pre-filled.",
-    "Reminder on Friday to non-openers and partial completions only: subject Still open: the AI for Founders survey, body three lines, same button.",
-    "Signed by Gareth because email 1 introduced him as the person reading the answers; the reply address should be one a person reads."
+    "Copy only, for Ramya to craft. Placeholders in brackets need a name, a link, the photo, or Vishen's own line.",
+    "Register: no exclamation marks, no formal connectives, one coined idea (co-create) used three times; the enemy is the inherited setup of the business, never the reader. Role credit for consistent use: Gareth Winter, Head of Content and Creative Director, designs Mindvalley's curricula."
    ]
   }
  ],
@@ -809,6 +790,7 @@
    ],
    "module": "Module 1: Strategy: find the bottleneck",
    "description": "Where do your hours actually go? The load map is the instrument the whole programme is measured against: every lead, proposal, client question and decision that waits for you, logged for one week. Vykintas teaches how to read it, how to rank each workflow by what AI would give back, and the test for what stays human. This is also the before picture: how many hours a week your business needs you today.",
+   "brief": "Where your hours actually go. One week of every lead, proposal, client question and decision that waits for you, logged and ranked by what AI would give back, with a test for what should stay human. The before picture the whole programme is measured against.",
    "week": 1
   },
   {
@@ -842,6 +824,7 @@
    ],
    "module": "Module 1: Strategy: find the bottleneck",
    "description": "Nate was a spreadsheet analyst with no coding background; within a year he ran an AI agency serving brands like Topgolf and BarkBox. Most founders try to automate everything at once and stall. He teaches how AI-native founders think instead: start with the few workflows that quietly drain a small team every week, hand those over, and only then widen. The management idea for the whole programme: AI first, then people for what only people do.",
+   "brief": "Why founders who try to automate everything at once stall, and how AI-native founders think instead: hand over the few workflows that quietly drain a small team every week, then widen. AI first, then people for what only people do.",
    "week": 2
   },
   {
@@ -876,6 +859,7 @@
    ],
    "module": "Module 2: Company brain",
    "description": "From a personal AI memory to the company's: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar after this one runs on, then builds it with you two days later.",
+   "brief": "From a personal AI memory to the company’s: mission, offers, customers, voice, numbers, processes and the decisions already made, in one governed place every tool and every team member reads.",
    "week": 3
   },
   {
@@ -909,6 +893,7 @@
    ],
    "module": "Module 2: Company brain",
    "description": "Data safety was the question the $100K+ founders in the quiz asked most. Noelle brings enterprise AI governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The management idea is simple: a brain the team uses has to be a brain you would show a lawyer.",
+   "brief": "Data safety for a small company: which models and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. A brain the team uses has to be one you would show a lawyer.",
    "week": 4
   },
   {
@@ -942,6 +927,7 @@
    ],
    "module": "Module 3: Marketing",
    "description": "Sabrina sold her first AI company, then grew to more than three million followers in 24 months with no funding, no ads and no team. She teaches how one person now matches the output of a twenty-person marketing team with agents, what she still does herself, and what she never hands over. Content is the solo founder's biggest time-eater in the quiz, and this is the week it stops being one.",
+   "brief": "How one person now matches the output of a large marketing team with agents, what still gets done by hand, and what never gets handed over. The week content stops eating the founder’s time.",
    "week": 5
   },
   {
@@ -975,6 +961,7 @@
    ],
    "module": "Module 3: Marketing",
    "description": "Content that nobody captures is a hobby. Ruben built EasyGen and grew a founder audience on LinkedIn with AI doing the drafting; he teaches the distribution layer: which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell. Marketing's second half: not more content, a list that grows while you work.",
+   "brief": "Content nobody captures is a hobby. Which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell.",
    "week": 6
   },
   {
@@ -1008,6 +995,7 @@
    ],
    "module": "Module 4: Sales",
    "description": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Liam builds these systems inside real small businesses every week: research the lead, qualify it, reply in the founder's voice, book the call. He teaches where automation lifts conversion and the exact moments where it kills trust and a human has to step in.",
+   "brief": "Answering a lead within the hour changes whether it converts. Research, qualification, a reply in your voice and a booked call, with the exact moments where automation would kill trust and a human steps in.",
    "week": 7
   },
   {
@@ -1041,6 +1029,7 @@
    ],
    "module": "Module 4: Sales",
    "description": "Finding the next client is the job most founders still do alone. Nick builds outbound and lead systems for a living: AI finds the right prospects, writes to them one by one, and books the calls, so the pipeline keeps filling while the founder delivers. The management idea: sales as a system the founder reviews, not a task the founder performs.",
+   "brief": "Finding the next client is the job most founders still do alone. AI finds the right prospects, writes to them one by one and books the calls, so the pipeline fills while you deliver. Sales as a system you review, not a task you perform.",
    "week": 8
   },
   {
@@ -1074,6 +1063,7 @@
    ],
    "module": "Module 5: Operations and delivery",
    "description": "One agent, one job. Noelle walks through one founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The management idea: clients should get the good version of your business whether or not you are in the room.",
+   "brief": "One agent, one job. A founder’s delivery running on AI end to end: onboarding, fulfilment support and service workflows, each with the human checkpoint kept where trust lives. Clients get the good version of your business whether or not you are in the room.",
    "week": 9
   },
   {
@@ -1107,6 +1097,7 @@
    ],
    "module": "Module 5: Operations and delivery",
    "description": "SOPs become skills. Meetings become operations data. Nate teaches the orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first; this is where it is.",
+   "brief": "Standard procedures become skills, meetings become operations data. The orchestration layer founders skip: scheduled runs, multi-step automations, and the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step.",
    "week": 10
   },
   {
@@ -1140,6 +1131,7 @@
    ],
    "module": "Module 6: Team: people and AI",
    "description": "Callan runs 150 AI employees alongside a thirty-person human team, with nobody let go. She teaches the question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI?",
+   "brief": "Once the systems exist, who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real question: me, a contractor, or AI?",
    "week": 11
   },
   {
@@ -1173,6 +1165,7 @@
    ],
    "module": "Module 6: Team: people and AI",
    "description": "Mindvalley's COO and CHRO, and author of Replaced by AI, on the org chart after AI: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size.",
+   "brief": "The org chart after AI, from inside a company that has done it: where agents sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI, not less.",
    "week": 12
   },
   {
@@ -1210,6 +1203,7 @@
    ],
    "module": "Module 7: Finance and the founder's cockpit",
    "description": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational. The management idea: decide from numbers that arrive on Monday, not from the accountant's summary in April.",
+   "brief": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts and a weekly brief. Decide from numbers that arrive on Monday, not from the accountant’s summary in April.",
    "week": 13
   },
   {
@@ -1243,6 +1237,7 @@
    ],
    "module": "Module 7: Finance and the founder's cockpit",
    "description": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on.",
+   "brief": "The week of a founder whose systems run: the weekly brief, decision memos instead of meetings, and how priorities, energy and focus are managed when you lead rather than do.",
    "week": 14
   },
   {
@@ -1276,6 +1271,7 @@
    ],
    "module": "Module 8: Product and scale",
    "description": "Matt built Founder OS on exactly this question: what to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves.",
+   "brief": "What to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research through the brain, an operating rhythm that replaces heroics, and a company designed around the systems rather than around you.",
    "week": 15
   },
   {
@@ -1313,6 +1309,7 @@
    ],
    "module": "Module 8: Product and scale",
    "description": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business.",
+   "brief": "The load map from Week 1 measured again: the hours the business needs you now against then. The next twelve months designed, and certification on your Founder Operating System running in your business.",
    "week": 16,
    "note": "2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March."
   },

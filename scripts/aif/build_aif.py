@@ -43,7 +43,7 @@ for m in SRC['modules']:
     for c in m['calls']:
         w=c['week']; d=starts[w]
         if c['type'] in ('lesson','graduation'):
-            add(id=f'aif-w{w:02d}-lesson',title=c['title'],type='Lesson' if c['type']=='lesson' else 'Graduation',start=at(d),duration_min=90,speakers=who(c['who']),module=mod(w),description=c['text'],week=w)
+            add(id=f'aif-w{w:02d}-lesson',title=c['title'],type='Lesson' if c['type']=='lesson' else 'Graduation',start=at(d),duration_min=90,speakers=who(c['who']),module=mod(w),description=c['text'],brief=c.get('brief'),week=w)
         else:
             text=c['text']+(('\n\n**The win:** '+c['win']) if c.get('win') else '')
             add(id=f'aif-w{w:02d}-lab',title=c['title'],type='Workshop',start=at(d+dt.timedelta(days=2)),duration_min=90,speakers=who(c['who']),module=mod(w),description=text,week=w,pair=f'aif-w{w:02d}-lesson')
@@ -169,11 +169,11 @@ sm=['# AI for Founders: the co-creation survey','',survey['intro'],'']
 for sec in survey['sections']:
     sm.append(f"## {sec['title']}"); sm.append(sec.get('lead','')); sm.append('')
     for q in sec['questions']:
-        sm.append(f"**{q['n']}. {q['text']}**  "); sm.append(f"_{q['type']}{' · required' if q.get('required') else ' · optional'}_")
+        sm.append(f"**{q['n']}. {q['text']}**  "); sm.append(f"_{q['type']}{' · required' if q.get('required') else ' · optional'}{(' · '+q['step']) if q.get('step') else ''}_")
         for o in q.get('options',[]): sm.append(f"- {o}")
         if q.get('rows'): sm.append('Rows: '+'; '.join(q['rows']))
         if q.get('scale'): sm.append('Scale: '+' / '.join(q['scale']))
         sm.append(f"*Why we ask: {q['why']}*"); sm.append('')
-sm+=['## Thank-you page','',survey['thanks'],'','## Design notes','']+[f"- {n}" for n in survey['design_notes']]+['','## What we do with the answers','']+[f"- {n}" for n in survey['analysis']]
+sm+=['## How this answers the 6 October brief','']+[f"- **{b['ask']}** {b['how']}" for b in survey.get('brief_map',[])]+['','## Thank-you page','',survey['thanks'],'','## Design notes','']+[f"- {n}" for n in survey['design_notes']]+['','## What we do with the answers','']+[f"- {n}" for n in survey['analysis']]
 (R/'briefs'/'AIF-SURVEY.md').write_text('\n'.join(sm))
 print('survey written')

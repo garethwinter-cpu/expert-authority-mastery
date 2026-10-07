@@ -43,10 +43,10 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
 <header class="hero"><div class="wrap">
   <div class="over">For marketing · three things to take to the community</div>
   <h1>The co-creation pack</h1>
-  <p>The curriculum outline the community will read, the survey that asks them to shape it, and the two emails that carry both. One sequence: the community sees the draft before it is finished, puts something in, and sees version two with their changes marked.</p>
+  <p>The curriculum outline the community will read, the survey that asks them to shape it, and the copy for the email that opens the conversation. One sequence: the community sees the draft before it is finished, puts something in, and sees version two with their changes marked.</p>
   <div class="steps">
     <div class="step"><b>1 · Mon 12 Oct</b><span>Email 1 from Vishen: thank-you, the summit, a survey is coming.</span></div>
-    <div class="step"><b>2 · Same week</b><span>Email 2 from Gareth: the outline and the survey, open for about a week.</span></div>
+    <div class="step"><b>2 · Same week</b><span>The outline and the survey go to the community, open for about a week.</span></div>
     <div class="step"><b>3 · By Mon 26 Oct</b><span>Version two of the outline published, change log credited to the survey.</span></div>
     <div class="step"><b>4 · 30 Oct to 1 Nov</b><span>AI for Founders Summit. The programme opens Monday 16 November.</span></div>
   </div>
@@ -54,7 +54,7 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
 <nav class="tabs"><div class="wrap" role="tablist">
   <button class="tab on" role="tab" data-doc="outline" id="tab-outline">1 · Curriculum outline</button>
   <button class="tab" role="tab" data-doc="survey" id="tab-survey">2 · The survey</button>
-  <button class="tab" role="tab" data-doc="email" id="tab-email">3 · The emails</button>
+  <button class="tab" role="tab" data-doc="email" id="tab-email">3 · The email</button>
 </div></nav>
 
 <main class="wrap">
@@ -66,14 +66,15 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
 
   <section class="doc" id="doc-survey" hidden>
     <div><div class="kicker">What the community answers</div><h2 class="h2" id="survey-title"></h2><p class="lede" id="survey-intro"></p><p class="note" style="margin-top:10px" id="survey-length"></p></div>
-    <div class="card tint"><div class="kicker">Why it is built this way</div><p class="note" style="font-size:15px;color:var(--text)">They are warm. They came to the summit, took the quiz or sat in Expert &amp; Authority. The survey treats them as partners: it asks about their business before it asks about ours, asks for stories rather than opinions, shows them the outline inside the form, and ends by asking how far they want to go. People value what they help build, so the last section is the point, not an afterthought. Under every question is the line marketing will want: why we ask, and what it decides in the curriculum.</p></div>
+    <div class="card tint"><div class="kicker">Why it is built this way</div><p class="note" style="font-size:15px;color:var(--text)" id="survey-method"></p></div>
+    <div class="card"><div class="kicker">How this answers Vishen's brief of 6 October</div><p class="note" style="margin-bottom:10px">He asked for a survey that finds out where people are, how they want to grow, what they want changed, their biggest needs, what they do not know they should know, and which teachers; a model reusable across programmes that serves marketing as well as curriculum.</p><ul id="brief-map" style="margin:0;padding:0;list-style:none;display:grid;gap:8px"></ul></div>
     <div id="survey-sections" style="display:grid;gap:30px"></div>
     <div class="card"><div class="kicker">Thank-you page</div><p id="survey-thanks" style="font-size:15.5px"></p></div>
     <div class="two"><div class="card"><div class="kicker">Design notes</div><ul id="survey-design"></ul></div><div class="card"><div class="kicker">What we do with the answers</div><ul id="survey-analysis"></ul></div></div>
   </section>
 
   <section class="doc" id="doc-email" hidden>
-    <div><div class="kicker">What carries both to the community</div><h2 class="h2">Two emails, one sequence</h2><p class="lede">Email 1 is Vishen's: the thank-you, the summit, the promise of a survey, and the first time the community meets the person reading their answers. Email 2 is Gareth's: the outline and the survey, a few days later. Placeholders in <span class="ph" style="color:var(--brand);background:var(--brand-light);border-radius:6px;padding:0 5px">[brackets]</span> need a name, a link or Vishen's own line. Hero images: Gareth is attaching options separately.</p></div>
+    <div><div class="kicker">What opens the conversation</div><h2 class="h2">The email Vishen asked for</h2><p class="lede">Copy only, for Ramya to craft into the email. This is the flavour of what it needs to say, in Vishen's voice, not a finished send. Placeholders in <span class="ph" style="color:var(--brand);background:var(--brand-light);border-radius:6px;padding:0 5px">[brackets]</span> need a name, a link, the photo or Vishen's own line. Images: Gareth is attaching options separately.</p></div>
     <div id="emails" style="display:grid;gap:30px"></div>
   </section>
 </main>
@@ -113,31 +114,26 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
   document.getElementById('survey-title').textContent = S.title || 'The survey';
   document.getElementById('survey-intro').textContent = S.intro || '';
   document.getElementById('survey-length').textContent = S.length || '';
+  document.getElementById('survey-method').textContent = S.method || '';
+  document.getElementById('brief-map').innerHTML = (S.brief_map||[]).map(function(b){ return '<li style="font-size:14.5px;line-height:1.5"><strong>'+esc(b.ask)+'</strong> '+esc(b.how)+'</li>'; }).join('');
   document.getElementById('survey-sections').innerHTML = S.sections.map(function(sec, i){
-    return '<div class="sec"><div class="sec-head"><span class="n">Section '+(i+1)+'</span><h3 class="h3">'+esc(sec.title)+'</h3></div>'+(sec.lead?'<p class="note">'+esc(sec.lead)+'</p>':'')
+    return '<div class="sec"><div class="sec-head"><h3 class="h3">'+esc(sec.title)+'</h3>'+(sec.step?'<span class="pill">'+esc(sec.step)+'</span>':'')+'</div>'+(sec.lead?'<p class="note">'+esc(sec.lead)+'</p>':'')
       + sec.questions.map(function(q){
           var opts = (q.options||[]).map(function(o){ return '<li>'+esc(o)+'</li>'; }).join('');
           var grid = q.rows ? '<div class="grid"><b>Rows:</b> '+esc(q.rows.join(' · '))+'<br><b>Scale:</b> '+esc((q.scale||[]).join(' / '))+'</div>' : '';
-          return '<div class="q"><div class="qt"><span class="qn">'+esc(q.n)+'</span><h4>'+esc(q.text)+'</h4></div><div class="tags"><span class="pill grey">'+esc(q.type)+'</span><span class="pill '+(q.required?'':'grey')+'">'+(q.required?'Required':'Optional')+'</span>'+(q.branch?'<span class="pill grey">Sets branching</span>':'')+'</div>'+(opts?'<ul>'+opts+'</ul>':'')+grid+'<div class="why"><b>Why we ask</b>'+esc(q.why)+'</div></div>';
+          return '<div class="q"><div class="qt"><span class="qn">'+esc(q.n)+'</span><h4>'+esc(q.text)+'</h4></div><div class="tags"><span class="pill grey">'+esc(q.type)+'</span><span class="pill '+(q.required?'':'grey')+'">'+(q.required?'Required':'Optional')+'</span>'+(q.step?'<span class="pill grey">'+esc(q.step)+'</span>':'')+(q.branch?'<span class="pill grey">Sets branching</span>':'')+'</div>'+(opts?'<ul>'+opts+'</ul>':'')+grid+'<div class="why"><b>Why we ask</b>'+esc(q.why)+'</div></div>';
         }).join('') + '</div>';
   }).join('');
   document.getElementById('survey-thanks').innerHTML = inline(S.thanks||'');
   document.getElementById('survey-design').innerHTML = (S.design_notes||[]).map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
   document.getElementById('survey-analysis').innerHTML = (S.analysis||[]).map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
 
-  // 3. emails
+  // 3. the email, as copy
   var E = D.emails || [];
-  document.getElementById('emails').innerHTML = E.map(function(e, i){
-    var paras = (e.body||'').split(/\n\n+/).map(function(p){ var t=p.trim(); if (/^\*\*\[.+\]\*\*$/.test(t)) return '<p><span class="btn">'+esc(t.replace(/^\*\*\[|\]\*\*$/g,''))+'</span></p>'; return '<p>'+inline(t).replace(/\n/g,'<br>')+'</p>'; }).join('');
-    return '<article class="mail" id="'+esc(e.id)+'"><div class="head"><div class="kicker">'+esc(e.label)+'</div><div class="row"><b>To</b><span>'+esc(e.to)+'</span></div><div class="row"><b>Purpose</b><span>'+esc(e.purpose)+'</span></div><div class="row"><b>Subject</b><div class="subs">'+e.subjects.map(function(s,j){ return '<div><span>'+(j+1)+'</span>'+esc(s)+'</div>'; }).join('')+'</div></div><div class="row"><b>Preview</b><span>'+esc(e.preview)+'</span></div></div><div class="body">'+paras+'</div><div class="foot"><div class="note">'+(e.notes||[]).map(esc).join(' · ')+'</div><button class="copy" data-copy="'+i+'" id="copy-'+i+'">Copy email text</button></div></article>';
+  document.getElementById('emails').innerHTML = E.map(function(e){
+    var paras = (e.body||'').split(/\n\n+/).map(function(p){ return '<p>'+inline(p.trim()).replace(/\n/g,'<br>')+'</p>'; }).join('');
+    return '<article class="mail" id="'+esc(e.id)+'"><div class="head"><div class="kicker">'+esc(e.label)+'</div><div class="row"><b>To</b><span>'+esc(e.to)+'</span></div><div class="row"><b>It needs to say</b><ul style="margin:0;padding-left:18px;display:grid;gap:3px">'+(e.communicates||[]).map(function(c){ return '<li>'+esc(c)+'</li>'; }).join('')+'</ul></div></div><div class="body">'+paras+'</div><div class="foot"><div class="note">'+(e.notes||[]).map(esc).join(' ')+'</div></div></article>';
   }).join('');
-  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function(b){
-    b.addEventListener('click', function(){
-      var e = E[+b.getAttribute('data-copy')]; var txt = 'Subject: '+e.subjects[0]+'\nPreview: '+e.preview+'\n\n'+e.body.replace(/\*\*/g,'');
-      var done = function(ok){ b.textContent = ok ? 'Copied' : 'Select and copy the text above'; setTimeout(function(){ b.textContent='Copy email text'; }, 2200); };
-      try { navigator.clipboard.writeText(txt).then(function(){ done(true); }, function(){ done(false); }); } catch(err){ done(false); }
-    });
-  });
 })();
 </script>
 <!-- BODY-END -->
