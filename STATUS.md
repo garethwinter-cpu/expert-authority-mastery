@@ -83,7 +83,7 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
 
 ### The curriculum as rebuilt 5 Oct
 
-Vykintas's eight modules, two weeks each, lesson Tuesday and lab Thursday at 9am PT (Gareth, 5 Oct: two sessions a week,
+Vykintas's eight modules, two weeks each, lesson Tuesday and lab Thursday at 7am PT, 3pm London (hour set by Janja 7 Oct; Gareth, 5 Oct: two sessions a week,
 same as E&A). Opening Monday 16 November with Vishen (the brief's start date). Weeks run Tue 17 Nov to Thu 18 Mar, break
 21 Dec to 3 Jan. Get AI-Ready calls Thu 5 Nov and Thu 12 Nov in the sales window. 35 live sessions. Office hours and
 the alumni reunion were removed on 7 Oct (Gareth): Vishen's diary cannot carry extra calls, and post-graduation
@@ -161,12 +161,13 @@ before the next refresh.
   targeted the retired E&A proposal and the old `/ai-founders` page, and would have failed); the August proposal
   carries a superseded banner; `CURRICULUM-BRIEF.md` and `data/authors.json` no longer describe Priestley as co-owner;
   the orphan `live.html` (an unserved old copy of the hub) deleted.
-- **Time slot, evidence (7 Oct)**: `briefs/AIF-TIME-SLOT-EVIDENCE.md` pulls attendance from the five Mastery bases.
-  The hour does not move live turnout inside 7am to 10am Pacific (Entrepreneurship Mastery moved 5pm to 3pm London
-  mid-cohort with no step); week of programme and Friday do. Audience is about 60 percent North American, about
-  7 percent UK, in every Mastery. Decision: hold 9am Pacific, Tue and Thu; publish London as the derived time.
-  Reply to Janja and Jaideep drafted in the brief. Pages now show 9am Pacific with London derived; the Week 16
-  sessions carry a 4pm London flag.
+- **Time slot, set 7 Oct: 7am Pacific, 3pm London** (2pm London in the final week, 16 and 18 March). Janja set it for team
+  capacity and schedule. `briefs/AIF-TIME-SLOT-EVIDENCE.md` holds the attendance pull from five Mastery bases: the hour
+  does not move live turnout between 7am and 10am Pacific, so the change costs nothing; the earlier 9am preference was
+  about the North American majority's comfort, not attendance. Build, pages, slot object and Week 16 flags updated.
+- **Summit speaker record, 7 Oct** (summit, not Mastery): Confirmed Vishen, Noelle Russell, Vykintas, Jason Goldberg.
+  Outreach done Sabrina Ramonov, Callan Faulkner, Liam Ottley. In consideration Nick Saraev, Nate Herk. Not approved
+  Natalie Ellis. Can't make it Daniel Priestley, Shawn Kanungo. Roster statuses in `aif_modules.json` updated to match.
 - **Thanksgiving, checked against the day (7 Oct)**: AI Mastery 2025 showed no dip the day before or after; the one
   session on Thanksgiving Day itself (Entrepreneurship Mastery) kept about 70 percent of its room and its recording was
   the month's most watched Thursday. The Thu 26 Nov lab stays, flagged on both pages; Wed 25 Nov is the alternative.

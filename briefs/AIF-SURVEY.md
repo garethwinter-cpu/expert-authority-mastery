@@ -137,8 +137,8 @@ _Single choice plus multiple choice · required_
 - Live every week
 - Live when I can, recordings otherwise
 - Mostly recordings
-- Times: 9am Pacific (noon New York, 5pm London)
 - Times: 7am Pacific (10am New York, 3pm London)
+- Times: 9am Pacific (noon New York, 5pm London)
 - Times: a US evening
 - Times: none of these
 *Why we ask: Availability, not a promise. Attendance data from five Masteries says the hour does not move turnout; this tells us what the community can actually make and gives the final decision a second source.*

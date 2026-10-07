@@ -1,5 +1,12 @@
 # AI for Founders: the time slot, with the numbers · 7 October 2026
 
+> **Decision, 7 October, 09:34:** Janja set the slot at **7am Pacific (3pm London; 2pm London in the final week)** for team
+> capacity and schedule. The analysis below was written for the 9am recommendation and is kept as the evidence base. Its
+> central finding stands and supports the decision: the hour does not move live attendance inside 7am to 10am Pacific, so
+> 7am costs nothing. Manifesting and Speaking & Influence Mastery already run at 3pm London with the highest live rates in
+> the set. The 9am preference was about the North American majority's comfort, and was never a hill to die on. The
+> messages in the last section are superseded.
+
 **Question (Gareth, 7 Oct):** do past Masteries give us data to back the 9am Pacific slot, or does Janja's 3pm London
 look better? **Short answer: keep 9am Pacific.** Nothing in five Masteries' attendance records shows the hour, inside the
 7am to 10am Pacific window, moving live turnout. What moves it is the week of the programme (weeks 1 and 2 draw two to

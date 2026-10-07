@@ -405,7 +405,7 @@
    },
    {
     "name": "Sabrina Ramonov",
-    "status": "In consideration",
+    "status": "Outreach done",
     "where": "Week 5 (marketing: the one-person marketing team)",
     "why": "Runs her business solo with agents and publishes at volume. Content is the solo founder's biggest time-eater; she is the most authentic voice for it, and balances a male-heavy roster."
    },
@@ -417,7 +417,7 @@
    },
    {
     "name": "Liam Ottley",
-    "status": "In consideration",
+    "status": "Outreach done",
     "where": "Week 7 (sales: the lead that never goes cold)",
     "why": "Builds lead research, qualification and follow-up systems inside real small businesses every week. His summit session title is the Module 4 problem statement."
    },
@@ -471,7 +471,8 @@
    {
     "name": "Natalie Ellis",
     "for": "Week 15",
-    "why": "Built Bossbabe's community and continuity offers. The 26 Sep team direction said not a fit; if that changes, offers and continuity in Module 8 is her authentic seat."
+    "why": "Built Bossbabe's community and continuity offers. The 26 Sep team direction said not a fit; if that changes, offers and continuity in Module 8 is her authentic seat.",
+    "status": "Not approved for the summit"
    }
   ],
   "not_placed": [
@@ -481,7 +482,8 @@
    },
    {
     "name": "Daniel Priestley",
-    "why": "Can't make it, and the brief rules out being on both Expert & Authority and AI for Founders."
+    "why": "Can't make it, and the brief rules out being on both Expert & Authority and AI for Founders.",
+    "status": "Can't make the summit"
    },
    {
     "name": "Chris Do",
@@ -493,7 +495,8 @@
    },
    {
     "name": "Jason Goldberg",
-    "why": "Summit host only."
+    "why": "Summit host only.",
+    "status": "Confirmed for the summit"
    }
   ]
  }

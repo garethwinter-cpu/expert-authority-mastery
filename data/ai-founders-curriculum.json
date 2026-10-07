@@ -87,16 +87,17 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T08:26:42Z",
+ "synced_at": "2026-10-07T08:37:20Z",
  "aligned": false,
- "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific, 5pm London (4pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
+ "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
  "slot": {
-  "pt": "9am Pacific",
-  "london": "5pm London",
-  "london_final": "4pm London on 16 and 18 March 2027",
-  "line": "9am Pacific, 5pm London (4pm London in the final week, 16 and 18 March, after US clocks change on 14 March)",
+  "pt": "7am Pacific",
+  "london": "3pm London",
+  "london_final": "2pm London on 16 and 18 March 2027",
+  "line": "7am Pacific, 3pm London (2pm London in the final week, 16 and 18 March, after US clocks change on 14 March)",
   "anchor": "Pacific is the anchor; London is the derived time",
-  "decided": "2026-10-07"
+  "decided": "2026-10-07",
+  "decided_by": "Janja, for team capacity and schedule"
  },
  "survey": {
   "title": "Help us build AI for Founders",
@@ -341,8 +342,8 @@
        "Live every week",
        "Live when I can, recordings otherwise",
        "Mostly recordings",
-       "Times: 9am Pacific (noon New York, 5pm London)",
        "Times: 7am Pacific (10am New York, 3pm London)",
+       "Times: 9am Pacific (noon New York, 5pm London)",
        "Times: a US evening",
        "Times: none of these"
       ],
@@ -638,7 +639,7 @@
    },
    {
     "name": "Sabrina Ramonov",
-    "status": "In consideration",
+    "status": "Outreach done",
     "where": "Week 5 (marketing: the one-person marketing team)",
     "why": "Runs her business solo with agents and publishes at volume. Content is the solo founder's biggest time-eater; she is the most authentic voice for it, and balances a male-heavy roster."
    },
@@ -650,7 +651,7 @@
    },
    {
     "name": "Liam Ottley",
-    "status": "In consideration",
+    "status": "Outreach done",
     "where": "Week 7 (sales: the lead that never goes cold)",
     "why": "Builds lead research, qualification and follow-up systems inside real small businesses every week. His summit session title is the Module 4 problem statement."
    },
@@ -704,7 +705,8 @@
    {
     "name": "Natalie Ellis",
     "for": "Week 15",
-    "why": "Built Bossbabe's community and continuity offers. The 26 Sep team direction said not a fit; if that changes, offers and continuity in Module 8 is her authentic seat."
+    "why": "Built Bossbabe's community and continuity offers. The 26 Sep team direction said not a fit; if that changes, offers and continuity in Module 8 is her authentic seat.",
+    "status": "Not approved for the summit"
    }
   ],
   "not_placed": [
@@ -714,7 +716,8 @@
    },
    {
     "name": "Daniel Priestley",
-    "why": "Can't make it, and the brief rules out being on both Expert & Authority and AI for Founders."
+    "why": "Can't make it, and the brief rules out being on both Expert & Authority and AI for Founders.",
+    "status": "Can't make the summit"
    },
    {
     "name": "Chris Do",
@@ -726,18 +729,18 @@
    },
    {
     "name": "Jason Goldberg",
-    "why": "Summit host only."
+    "why": "Summit host only.",
+    "status": "Confirmed for the summit"
    }
   ]
  },
  "notes": [
   "Rebuilt on 5 October from three sources: Vykintas Glodenis’s curriculum proposal (eight modules, one business pillar each, the problem / management idea / installed system / observable change pattern, and the Get AI-Ready onboarding layer), Jaideep’s launch brief (16 weeks from Monday 16 November, two sessions per module, the summit on 30 October to 1 November), and the AI for Founders quiz (812 answers: operations, marketing and sales are where the pain is; solo founders start with marketing, founders with teams with operations; data safety and sounding like me are the unprogrammed worries).",
   "Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; roughly one guest teacher per pillar; at least one more woman on the roster. Every guest here is placed where they are most authentic, from the names in consideration on 5 October, and none is confirmed for the Mastery until the team says so.",
-  "Cadence, decided 5 October: Tuesday lesson, Thursday lab, 9am Pacific (5pm London; 4pm London in the final week), Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds 8 of Expert & Authority’s Friday workshops at 9am Pacific inside this run (20 Nov, 27 Nov, 18 Dec, 8 Jan, 29 Jan, 5 Feb, 12 Feb, 19 Feb), so a Friday lab would put him in two rooms at once on each of those dates.",
+  "Cadence, decided 5 October, hour set 7 October: Tuesday lesson, Thursday lab, 7am Pacific (3pm London; 2pm London in the final week), Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds 8 of Expert & Authority’s Friday workshops at 9am Pacific inside this run (20 Nov, 27 Nov, 18 Dec, 8 Jan, 29 Jan, 5 Feb, 12 Feb, 19 Feb), so a Friday lab would put him in two rooms on the same morning on each of those dates.",
   "The opening is Monday 16 November, the start date in the brief, with Vishen. It also keeps him clear of his Expert & Authority lesson at the same hour on Tuesday 17 November once the John Lee rotation is applied.",
   "Thanksgiving, decided 5 October and checked against the day on 7 October: the Week 2 lab stays on Thursday 26 November, Thanksgiving Day in the US. Expert & Authority’s 2025 reading was that the week holds, and it kept its Friday 27 November workshop. The 2025 Mastery records confirm the week and sharpen the day: AI Mastery’s sessions the day before (422 against 454 and 447 the Wednesdays either side) and the day after (307 against 274 and 313) showed no dip; the one session that ran on Thanksgiving Day itself, Entrepreneurship Mastery’s Thursday lesson, kept 214 of a usual 300, about 70 percent, and its recording was watched more that week than any other Thursday’s that month. So the lab runs, Vykintas-led and recorded, and the Tuesday 1 December lesson picks up anyone who missed it. Wednesday 25 November is the alternative if the team prefers not to run on the day; the day before showed no dip.",
-  "Time slot, confirmed 7 October: 9am Pacific, which is 5pm London for every week but the last and 4pm London on 16 and 18 March 2027 (US clocks change on 14 March, UK clocks on 28 March); students are told the Pacific time and London is shown as the derived time, the convention AI Mastery 2025 and 2026 and Social Media Mastery 2026 followed. Attendance across five Mastery bases shows no hour effect between 7am and 10am Pacific (Entrepreneurship Mastery moved from 5pm to 3pm London mid-cohort and attendance did not move), while about 60 percent of every Mastery’s students are in North America against about 7 percent in the UK. Evidence in briefs/AIF-TIME-SLOT-EVIDENCE.md.",
-  "What we promise, in Vykintas’s words: the founder moves from doing to orchestrating; a leaner team gets more done; hours back every week; every lead answered and followed up; new hires productive in days; a business designed for AI. What we do not promise: fully autonomous systems with no human trigger or review (that depth is outside this programme), integration with every founder’s own software beyond existing connectors, or hours measured by time tracking. The founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running.",
+  "Time slot, set 7 October: 7am Pacific, which is 3pm London for every week but the last and 2pm London on 16 and 18 March 2027 (US clocks change on 14 March, UK clocks on 28 March). Janja set the hour for team capacity and schedule; the data supports it. Attendance across five Mastery bases shows no hour effect between 7am and 10am Pacific (Entrepreneurship Mastery moved from 5pm to 3pm London mid-cohort and attendance did not move), Manifesting and Speaking & Influence Mastery run at 3pm London with the highest live rates in the set, and the final hour-by-hour preference was for 9am because about 60 percent of students are in North America; that was never a hill to die on. Students are told the Pacific time; London is the derived time. Evidence in briefs/AIF-TIME-SLOT-EVIDENCE.md.",
   "What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps. Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.",
   "Outside the modules there are only three sessions, all before Week 1: Get AI-Ready calls 1 and 2, which are Vykintas’s and in his proposal as written (the content of each call is a first pass), and the Monday opening with Vishen, the kickoff from the earlier draft moved to the start date in the brief. Office hours and an alumni reunion were in the earlier draft and were removed on 7 October: Vishen’s diary cannot carry extra calls, and what happens after graduation is a separate conversation, not part of the Mastery. Expert & Authority’s own Airtable holds only lessons, workshops, one bonus and the graduation.",
   "Summit learnings applied: a live build directly before every offer; every session leaves something built; written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; untested builders get a paid webinar or Highlights slot before the summit; Shawn never follows Vykintas in the same event."
@@ -747,7 +750,7 @@
    "id": "aif-ready-1",
    "title": "Get AI-Ready, call 1: your account, your first project, your first skill",
    "type": "Bonus",
-   "start": "2026-11-05T17:00:00.000Z",
+   "start": "2026-11-05T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -762,7 +765,7 @@
    "id": "aif-ready-2",
    "title": "Get AI-Ready, call 2: checklist, connectors and the questions from call 1",
    "type": "Bonus",
-   "start": "2026-11-12T17:00:00.000Z",
+   "start": "2026-11-12T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -777,7 +780,7 @@
    "id": "aif-opening",
    "title": "Why Your Business Still Runs on You",
    "type": "Kick Off",
-   "start": "2026-11-16T17:00:00.000Z",
+   "start": "2026-11-16T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -796,7 +799,7 @@
    "id": "aif-w01-lesson",
    "title": "Your Founder Load Map",
    "type": "Lesson",
-   "start": "2026-11-17T17:00:00.000Z",
+   "start": "2026-11-17T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -812,7 +815,7 @@
    "id": "aif-w01-lab",
    "title": "Map the Week, Rank the Leverage",
    "type": "Workshop",
-   "start": "2026-11-19T17:00:00.000Z",
+   "start": "2026-11-19T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -829,7 +832,7 @@
    "id": "aif-w02-lesson",
    "title": "What to Hand to AI First",
    "type": "Lesson",
-   "start": "2026-11-24T17:00:00.000Z",
+   "start": "2026-11-24T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -845,7 +848,7 @@
    "id": "aif-w02-lab",
    "title": "Your 90-Day Roadmap",
    "type": "Workshop",
-   "start": "2026-11-26T17:00:00.000Z",
+   "start": "2026-11-26T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -863,7 +866,7 @@
    "id": "aif-w03-lesson",
    "title": "The Company Brain",
    "type": "Lesson",
-   "start": "2026-12-01T17:00:00.000Z",
+   "start": "2026-12-01T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -879,7 +882,7 @@
    "id": "aif-w03-lab",
    "title": "Stand Up Your Company Brain",
    "type": "Workshop",
-   "start": "2026-12-03T17:00:00.000Z",
+   "start": "2026-12-03T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -896,7 +899,7 @@
    "id": "aif-w04-lesson",
    "title": "What Goes In, and What Never Does",
    "type": "Lesson",
-   "start": "2026-12-08T17:00:00.000Z",
+   "start": "2026-12-08T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -912,7 +915,7 @@
    "id": "aif-w04-lab",
    "title": "Feed the Brain, Safely",
    "type": "Workshop",
-   "start": "2026-12-10T17:00:00.000Z",
+   "start": "2026-12-10T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -929,7 +932,7 @@
    "id": "aif-w05-lesson",
    "title": "The One-Person Marketing Team",
    "type": "Lesson",
-   "start": "2026-12-15T17:00:00.000Z",
+   "start": "2026-12-15T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -945,7 +948,7 @@
    "id": "aif-w05-lab",
    "title": "Your Voice, Made Executable",
    "type": "Workshop",
-   "start": "2026-12-17T17:00:00.000Z",
+   "start": "2026-12-17T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -962,7 +965,7 @@
    "id": "aif-w06-lesson",
    "title": "From Content to a List",
    "type": "Lesson",
-   "start": "2027-01-05T17:00:00.000Z",
+   "start": "2027-01-05T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -978,7 +981,7 @@
    "id": "aif-w06-lab",
    "title": "Your Lead-Capture Asset, Live",
    "type": "Workshop",
-   "start": "2027-01-07T17:00:00.000Z",
+   "start": "2027-01-07T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -995,7 +998,7 @@
    "id": "aif-w07-lesson",
    "title": "The Lead That Never Goes Cold",
    "type": "Lesson",
-   "start": "2027-01-12T17:00:00.000Z",
+   "start": "2027-01-12T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1011,7 +1014,7 @@
    "id": "aif-w07-lab",
    "title": "The Follow-Up Engine",
    "type": "Workshop",
-   "start": "2027-01-14T17:00:00.000Z",
+   "start": "2027-01-14T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1028,7 +1031,7 @@
    "id": "aif-w08-lesson",
    "title": "Outbound on Autopilot",
    "type": "Lesson",
-   "start": "2027-01-19T17:00:00.000Z",
+   "start": "2027-01-19T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1044,7 +1047,7 @@
    "id": "aif-w08-lab",
    "title": "Proposals, Call Prep and the Pipeline Cockpit",
    "type": "Workshop",
-   "start": "2027-01-21T17:00:00.000Z",
+   "start": "2027-01-21T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1061,7 +1064,7 @@
    "id": "aif-w09-lesson",
    "title": "Delivery Agents and the Customer Experience",
    "type": "Lesson",
-   "start": "2027-01-26T17:00:00.000Z",
+   "start": "2027-01-26T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1077,7 +1080,7 @@
    "id": "aif-w09-lab",
    "title": "Client Onboarding, Automated",
    "type": "Workshop",
-   "start": "2027-01-28T17:00:00.000Z",
+   "start": "2027-01-28T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1094,7 +1097,7 @@
    "id": "aif-w10-lesson",
    "title": "The Operations Brain",
    "type": "Lesson",
-   "start": "2027-02-02T17:00:00.000Z",
+   "start": "2027-02-02T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1110,7 +1113,7 @@
    "id": "aif-w10-lab",
    "title": "Two Ops Automations, Live",
    "type": "Workshop",
-   "start": "2027-02-04T17:00:00.000Z",
+   "start": "2027-02-04T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1127,7 +1130,7 @@
    "id": "aif-w11-lesson",
    "title": "Hiring Your First AI Employees",
    "type": "Lesson",
-   "start": "2027-02-09T17:00:00.000Z",
+   "start": "2027-02-09T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1143,7 +1146,7 @@
    "id": "aif-w11-lab",
    "title": "Your First AI Team Member",
    "type": "Workshop",
-   "start": "2027-02-11T17:00:00.000Z",
+   "start": "2027-02-11T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1160,7 +1163,7 @@
    "id": "aif-w12-lesson",
    "title": "How Mindvalley's Team Works With Agents",
    "type": "Lesson",
-   "start": "2027-02-16T17:00:00.000Z",
+   "start": "2027-02-16T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1176,7 +1179,7 @@
    "id": "aif-w12-lab",
    "title": "The Hiring and Onboarding Kit",
    "type": "Workshop",
-   "start": "2027-02-18T17:00:00.000Z",
+   "start": "2027-02-18T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1197,7 +1200,7 @@
    "id": "aif-w13-lesson",
    "title": "The Finance Cockpit",
    "type": "Lesson",
-   "start": "2027-02-23T17:00:00.000Z",
+   "start": "2027-02-23T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1213,7 +1216,7 @@
    "id": "aif-w13-lab",
    "title": "The Money Dashboard",
    "type": "Workshop",
-   "start": "2027-02-25T17:00:00.000Z",
+   "start": "2027-02-25T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1230,7 +1233,7 @@
    "id": "aif-w14-lesson",
    "title": "The Orchestrator's Week",
    "type": "Lesson",
-   "start": "2027-03-02T17:00:00.000Z",
+   "start": "2027-03-02T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1246,7 +1249,7 @@
    "id": "aif-w14-lab",
    "title": "The Founder Cockpit",
    "type": "Workshop",
-   "start": "2027-03-04T17:00:00.000Z",
+   "start": "2027-03-04T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1263,7 +1266,7 @@
    "id": "aif-w15-lesson",
    "title": "The Founder Operating Rhythm",
    "type": "Lesson",
-   "start": "2027-03-09T17:00:00.000Z",
+   "start": "2027-03-09T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1279,7 +1282,7 @@
    "id": "aif-w15-lab",
    "title": "Your Next Offer, Researched and Priced",
    "type": "Workshop",
-   "start": "2027-03-11T17:00:00.000Z",
+   "start": "2027-03-11T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1296,7 +1299,7 @@
    "id": "aif-w16-lesson",
    "title": "A Company Designed Around AI: Your Next 12 Months",
    "type": "Graduation",
-   "start": "2027-03-16T16:00:00.000Z",
+   "start": "2027-03-16T14:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1311,13 +1314,13 @@
    "module": "Module 8: Product and scale",
    "description": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business.",
    "week": 16,
-   "note": "4pm London this week, not 5pm: US clocks changed on 14 March, UK clocks change on 28 March."
+   "note": "2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March."
   },
   {
    "id": "aif-w16-lab",
    "title": "Certification Showcase and Demo Day",
    "type": "Workshop",
-   "start": "2027-03-18T16:00:00.000Z",
+   "start": "2027-03-18T14:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
@@ -1329,7 +1332,7 @@
    "description": "Every founder demonstrates one running system per pillar. Certification is awarded on a Founder Operating System in production, not videos watched. The cohort showcase closes the programme.\n\n**The win:** Your Founder Operating System, running, on show",
    "week": 16,
    "pair": "aif-w16-lesson",
-   "note": "4pm London this week, not 5pm: US clocks changed on 14 March, UK clocks change on 28 March."
+   "note": "2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March."
   }
  ]
 }
