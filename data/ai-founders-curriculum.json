@@ -76,7 +76,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T06:46:33Z",
+ "synced_at": "2026-10-07T07:01:33Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery",
  "basis": "Vykintas Glodenis, AI for Founders Curriculum Proposal (5 Oct 2026); Jaideep's launch brief (5 Oct 2026); the AI for Founders quiz (812 answers, 2 to 5 Oct 2026).",
@@ -191,10 +191,10 @@
   {
    "name": "Vishen Lakhiani",
    "ea": 13,
-   "aif": 6,
-   "weeks_on_both": 2,
+   "aif": 3,
+   "weeks_on_both": 1,
    "first_overlap": "2026-11-16",
-   "last_overlap": "2026-11-30",
+   "last_overlap": "2026-11-16",
    "peak_per_week": 2,
    "weeks_3plus": 0,
    "clashes": []
@@ -202,12 +202,12 @@
   {
    "name": "Vykintas Glodenis",
    "ea": 12,
-   "aif": 27,
+   "aif": 22,
    "weeks_on_both": 8,
    "first_overlap": "2026-11-16",
    "last_overlap": "2027-02-15",
    "peak_per_week": 4,
-   "weeks_3plus": 2,
+   "weeks_3plus": 1,
    "clashes": []
   }
  ],
@@ -221,13 +221,13 @@
    {
     "name": "Vishen Lakhiani",
     "status": "Confirmed",
-    "where": "Opening (Mon 16 Nov), Week 14 lesson, Week 16 graduation, office hours 1 and 4",
+    "where": "Opening (Mon 16 Nov), Week 14 lesson, Week 16 graduation",
     "why": "Face of the programme and the model for it. Three big sessions, as the team directed on 26 Sep. The opening moved to the Monday the brief names as the start date, which also keeps him clear of his Expert & Authority lesson on Tue 17 Nov."
    },
    {
     "name": "Vykintas Glodenis",
     "status": "Confirmed",
-    "where": "Every lab, Weeks 1 and 3 lessons, both Get AI-Ready calls, office hours, co-closes Week 16",
+    "where": "Every lab, Weeks 1 and 3 lessons, both Get AI-Ready calls, co-closes Week 16",
     "why": "Leads the curriculum and installs every system. The load map and the company brain are his to teach because everything after them runs on his Skill Pack."
    },
    {
@@ -344,7 +344,7 @@
   "Thanksgiving, decided 5 October: the Week 2 lab stays on Thursday 26 November. Expert & Authority looked at its 2025 cohort data, saw no attendance drop over Thanksgiving week, and kept its Friday 27 November workshop; the same reasoning applies here. The lab is Vykintas-led and recorded. Caveat: the 2025 evidence covers the week, not Thanksgiving Day itself, so the live number on the day is the test for the next cohort.",
   "What we promise, in Vykintas’s words: the founder moves from doing to orchestrating; a leaner team gets more done; hours back every week; every lead answered and followed up; new hires productive in days; a business designed for AI. What we do not promise: fully autonomous systems with no human trigger or review (that depth belongs in the Guild), integration with every founder’s own software beyond existing connectors, or hours measured by time tracking. The founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running.",
   "What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps. Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.",
-  "Outside the modules, three things are not in Vykintas’s proposal and are carried from the 25 September draft as proposals for him and Vishen to keep or cut: the four monthly office-hours calls (a dedicated Zoom webinar led by Vykintas, Vishen on the first and last; the VIP Q&As at the Expert & Authority summit rated 4.46 and 4.44, among its best-held sessions), the alumni reunion six weeks after graduation (the continuity mechanic from Speaking & Influence), and the Monday opening with Vishen (the kickoff call in the earlier draft, moved to the start date in the brief). Get AI-Ready, the two calls before Week 1, is Vykintas’s and is in his proposal as written; the content of each call is a first pass. Expert & Authority’s own Airtable holds only lessons, workshops, one bonus and the graduation.",
+  "Outside the modules there are only three sessions, all before Week 1: Get AI-Ready calls 1 and 2, which are Vykintas’s and in his proposal as written (the content of each call is a first pass), and the Monday opening with Vishen, the kickoff from the earlier draft moved to the start date in the brief. Office hours and an alumni reunion were in the earlier draft and were removed on 7 October: Vishen’s diary cannot carry extra calls, and continuity after graduation is the Guild’s job, not the Mastery’s. Expert & Authority’s own Airtable holds only lessons, workshops, one bonus and the graduation.",
   "Summit learnings applied: a live build directly before every offer; every session leaves something built; written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; untested builders get a paid webinar or Highlights slot before the summit; Shawn never follows Vykintas in the same event."
  ],
  "sessions": [
@@ -497,25 +497,6 @@
    "pair": "aif-w03-lesson"
   },
   {
-   "id": "aif-qa-1",
-   "title": "Office hours 1: open Q&A with Vykintas and Vishen",
-   "type": "Q&A Call",
-   "start": "2026-12-04T17:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
-    },
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. Proposed, not yet in Vykintas’s plan: the Expert & Authority summit’s VIP Q&As were among its best-rated sessions, which is the case for one a month here."
-  },
-  {
    "id": "aif-w04-lesson",
    "title": "What Goes In, and What Never Does",
    "type": "Lesson",
@@ -646,21 +627,6 @@
    "description": "Lead research and qualification skills installed; follow-up sequences running from your CRM or inbox; every new lead answered within the hour with a human checkpoint before anything is promised.\n\n**The win:** No lead goes cold in your business again",
    "week": 7,
    "pair": "aif-w07-lesson"
-  },
-  {
-   "id": "aif-qa-2",
-   "title": "Office hours 2: open Q&A with Vykintas",
-   "type": "Q&A Call",
-   "start": "2027-01-15T17:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. Proposed, not yet in Vykintas’s plan: the Expert & Authority summit’s VIP Q&As were among its best-rated sessions, which is the case for one a month here."
   },
   {
    "id": "aif-w08-lesson",
@@ -865,21 +831,6 @@
    "pair": "aif-w13-lesson"
   },
   {
-   "id": "aif-qa-3",
-   "title": "Office hours 3: open Q&A with Vykintas",
-   "type": "Q&A Call",
-   "start": "2027-02-26T17:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. Proposed, not yet in Vykintas’s plan: the Expert & Authority summit’s VIP Q&As were among its best-rated sessions, which is the case for one a month here."
-  },
-  {
    "id": "aif-w14-lesson",
    "title": "The Orchestrator's Week",
    "type": "Lesson",
@@ -946,25 +897,6 @@
    "pair": "aif-w15-lesson"
   },
   {
-   "id": "aif-qa-4",
-   "title": "Office hours 4: open Q&A with Vykintas and Vishen",
-   "type": "Q&A Call",
-   "start": "2027-03-12T17:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
-    },
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "A dedicated Zoom webinar, not folded into a lesson. Bring the system you are stuck on. Proposed, not yet in Vykintas’s plan: the Expert & Authority summit’s VIP Q&As were among its best-rated sessions, which is the case for one a month here."
-  },
-  {
    "id": "aif-w16-lesson",
    "title": "A Company Designed Around AI: Your Next 12 Months",
    "type": "Graduation",
@@ -1000,25 +932,6 @@
    "description": "Every founder demonstrates one running system per pillar. Certification is awarded on systems in production, not videos watched. The cohort showcase closes the programme.\n\n**The win:** A machine you can show, running",
    "week": 16,
    "pair": "aif-w16-lesson"
-  },
-  {
-   "id": "aif-alumni",
-   "title": "Alumni reunion and OS upgrade call",
-   "type": "Community",
-   "start": "2027-04-29T16:00:00.000Z",
-   "duration_min": 60,
-   "speakers": [
-    {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
-    },
-    {
-     "name": "Vykintas Glodenis",
-     "image": "authors/vykintas-glodenis.jpg"
-    }
-   ],
-   "module": null,
-   "description": "Six weeks after graduation: what broke, what compounded, and the first quarterly upgrade to the Founder Operating System. Proposed, carried from the earlier draft as the continuity mechanic Speaking & Influence used; not yet in Vykintas’s plan."
   }
  ]
 }

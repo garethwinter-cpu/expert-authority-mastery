@@ -120,16 +120,14 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   ].map(function(f){ return '<div class="qf"><div class="n">'+f[0]+'</div><div class="l">'+esc(f[1])+'</div></div>'; }).join('');
 
   // calendar
-  var ready = byType('Bonus'), opening = byType('Kick Off')[0], grad = byType('Graduation')[0], alumni = byType('Community')[0], qa = byType('Q&A Call');
+  var ready = byType('Bonus'), opening = byType('Kick Off')[0], grad = byType('Graduation')[0];
   var firstWeek = lessons.filter(function(s){ return s.type==='Lesson'; })[0], lastLab = byType('Workshop').slice(-1)[0];
   var dates = [];
   if (D.summit) dates.push(['hi', esc(D.summit.dates), '<strong>'+esc(D.summit.name)+'</strong> ('+esc(D.summit.note)+'). '+esc(D.summit.role)+' '+esc(D.summit.line)]);
   if (ready.length) dates.push(['', ready.map(function(s){ return day(s.start); }).join(' and '), 'Get AI-Ready, two live calls in the sales window, with the setup videos and building-block lessons. The shared floor, so no lesson ever teaches setup.']);
   if (opening) dates.push(['hi', longDay(opening.start), '<strong>The opening.</strong> '+esc(opening.title)+', with '+esc(opening.speakers.map(function(p){return p.name;}).join(' and '))+'. The programme starts here.']);
   if (firstWeek && lastLab) dates.push(['', day(firstWeek.start)+' to '+day(lastLab.start), 'Sixteen weeks. Lessons Tuesday, labs Thursday, 9am Pacific.'+(D['break'] ? ' Break from '+fmt(D['break'][0],{day:'numeric',month:'short'})+' to '+fmt(D['break'][1],{day:'numeric',month:'short'})+'.' : '')]);
-  if (qa.length) dates.push(['', qa.map(function(s){ return fmt(s.start,{day:'numeric',month:'short'}); }).join(', '), 'Office hours, one a month on their own Zoom webinar, led by Vykintas with Vishen on the first and last.']);
   if (grad) dates.push(['hi', longDay(grad.start), '<strong>Graduation.</strong> The load map measured again, certification on systems in production, the cohort showcase two days later.']);
-  if (alumni) dates.push(['', day(alumni.start), 'Alumni reunion and the first Founder OS upgrade call, six weeks after graduation.']);
   document.getElementById('dates').innerHTML = dates.map(function(d){ return '<div class="date '+d[0]+'"><div class="d">'+d[1]+'</div><div class="w">'+d[2]+'</div></div>'; }).join('');
 
   // modules

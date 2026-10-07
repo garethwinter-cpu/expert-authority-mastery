@@ -85,8 +85,9 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
 
 Vykintas's eight modules, two weeks each, lesson Tuesday and lab Thursday at 9am PT (Gareth, 5 Oct: two sessions a week,
 same as E&A). Opening Monday 16 November with Vishen (the brief's start date). Weeks run Tue 17 Nov to Thu 18 Mar, break
-21 Dec to 3 Jan. Get AI-Ready calls Thu 5 Nov and Thu 12 Nov in the sales window. Office hours Fri 4 Dec, 15 Jan, 26 Feb,
-12 Mar. Alumni Thu 29 Apr. 40 live sessions, 59 hours.
+21 Dec to 3 Jan. Get AI-Ready calls Thu 5 Nov and Thu 12 Nov in the sales window. 35 live sessions. Office hours and
+the alumni reunion were removed on 7 Oct (Gareth): Vishen's diary cannot carry extra calls, and post-graduation
+continuity is the Guild's job.
 
 | Module | Weeks | Lessons |
 |---|---|---|
@@ -129,7 +130,7 @@ Still open on the curriculum:
 3. **Load panel recomputed** against the E&A calendar as it stands plus the held decisions. After the rebuild: Vishen 13
    E&A + 6 AIF live sessions, Vykintas 12 + 27, Vykintas peaks at 4 in a week (2 such weeks). **No same-hour double
    bookings** for either: the Monday opening keeps Vishen clear of his E&A Speaking lesson on Tue 17 Nov (post-rotation),
-   his other AIF dates (2 and 16 Mar) fall after E&A ends, and office hours avoid Vykintas's E&A Fridays.
+   his other AIF dates (2 and 16 Mar) fall after E&A ends.
 
 ### The load panel: how it is computed
 
@@ -165,7 +166,5 @@ before the next refresh.
 
 ### Still open against E&A
 
-- **Vishen on Fridays.** E&A's rule is that Vishen does not teach Fridays; AIF office hours 1 (Fri 4 Dec) and 4 (Fri 12
-  Mar) have him on. Confirm whether the rule is a diary constraint or an E&A convention.
 - The onboarding survey (`ONBOARDING-SURVEY.md`, F2) still says "Tuesday teach, Thursday build day" for E&A, which now
   runs Tuesday / Friday.

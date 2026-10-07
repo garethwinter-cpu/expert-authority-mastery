@@ -1,116 +1,484 @@
 {
  "programme": "AI for Founders Mastery",
  "basis": "Vykintas Glodenis, AI for Founders Curriculum Proposal (5 Oct 2026); Jaideep's launch brief (5 Oct 2026); the AI for Founders quiz (812 answers, 2 to 5 Oct 2026).",
- "pattern": ["The problem founders name in that pillar", "The management idea: how an AI-first founder thinks about it, taught in the lesson", "The system: a ready-made skill pack or workflow for that pillar, installed and adapted to each founder's business in the lab", "What changes: something observable, what the founder stops doing and what now runs"],
+ "pattern": [
+  "The problem founders name in that pillar",
+  "The management idea: how an AI-first founder thinks about it, taught in the lesson",
+  "The system: a ready-made skill pack or workflow for that pillar, installed and adapted to each founder's business in the lab",
+  "What changes: something observable, what the founder stops doing and what now runs"
+ ],
  "modules": [
-  {"n": 1, "name": "Strategy: find the bottleneck", "short": "Strategy", "weeks": [1, 2],
+  {
+   "n": 1,
+   "name": "Strategy: find the bottleneck",
+   "short": "Strategy",
+   "weeks": [
+    1,
+    2
+   ],
    "problem": "Everything goes through me.",
    "installed": "Founder load map; an audit that ranks where AI pays off; a 90-day roadmap.",
    "changes": "The founder knows the three workflows to fix first, and which to keep human.",
    "calls": [
-    {"week": 1, "type": "lesson", "who": "Vykintas", "title": "Your Founder Load Map", "text": "Where do your hours actually go? The load map is the instrument the whole programme is measured against: every lead, proposal, client question and decision that waits for you, logged for one week. Vykintas teaches how to read it, how to rank each workflow by what AI would give back, and the test for what stays human. This is also the before picture: how many hours a week your business needs you today."},
-    {"week": 1, "type": "lab", "who": "Vykintas", "title": "Map the Week, Rank the Leverage", "text": "Load map filled in on your real week, in the two tracks the quiz showed: solo founders start with content and leads, founders with a team start with the approvals and admin that reach them. Three workflows named, one chosen.", "win": "You know what to automate first, and it is written down"},
-    {"week": 2, "type": "lesson", "who": "Nate Herk", "title": "What to Hand to AI First", "text": "Nate was a spreadsheet analyst with no coding background; within a year he ran an AI agency serving brands like Topgolf and BarkBox. Most founders try to automate everything at once and stall. He teaches how AI-native founders think instead: start with the few workflows that quietly drain a small team every week, hand those over, and only then widen. The management idea for the whole programme: AI first, then people for what only people do."},
-    {"week": 2, "type": "lab", "who": "Vykintas", "title": "Your 90-Day Roadmap", "text": "The roadmap built against your load map: which pillar first, which system each month, what success looks like at module 8. The first workflow from the map handed over before the lab ends. The lab falls on US Thanksgiving and runs as scheduled; it is recorded.", "win": "A dated plan, and one job already off your desk"}
-   ]},
-  {"n": 2, "name": "Company brain", "short": "Company brain", "weeks": [3, 4],
+    {
+     "week": 1,
+     "type": "lesson",
+     "who": "Vykintas",
+     "title": "Your Founder Load Map",
+     "text": "Where do your hours actually go? The load map is the instrument the whole programme is measured against: every lead, proposal, client question and decision that waits for you, logged for one week. Vykintas teaches how to read it, how to rank each workflow by what AI would give back, and the test for what stays human. This is also the before picture: how many hours a week your business needs you today."
+    },
+    {
+     "week": 1,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Map the Week, Rank the Leverage",
+     "text": "Load map filled in on your real week, in the two tracks the quiz showed: solo founders start with content and leads, founders with a team start with the approvals and admin that reach them. Three workflows named, one chosen.",
+     "win": "You know what to automate first, and it is written down"
+    },
+    {
+     "week": 2,
+     "type": "lesson",
+     "who": "Nate Herk",
+     "title": "What to Hand to AI First",
+     "text": "Nate was a spreadsheet analyst with no coding background; within a year he ran an AI agency serving brands like Topgolf and BarkBox. Most founders try to automate everything at once and stall. He teaches how AI-native founders think instead: start with the few workflows that quietly drain a small team every week, hand those over, and only then widen. The management idea for the whole programme: AI first, then people for what only people do."
+    },
+    {
+     "week": 2,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Your 90-Day Roadmap",
+     "text": "The roadmap built against your load map: which pillar first, which system each month, what success looks like at module 8. The first workflow from the map handed over before the lab ends. The lab falls on US Thanksgiving and runs as scheduled; it is recorded.",
+     "win": "A dated plan, and one job already off your desk"
+    }
+   ]
+  },
+  {
+   "n": 2,
+   "name": "Company brain",
+   "short": "Company brain",
+   "weeks": [
+    3,
+    4
+   ],
    "problem": "AI gives generic answers; the team keeps asking the founder.",
    "installed": "Shared context, offers, customers, voice, processes and decisions, in one place the whole team uses.",
    "changes": "Every later system, and every team member, works from one source.",
    "calls": [
-    {"week": 3, "type": "lesson", "who": "Vykintas", "title": "The Company Brain", "text": "From a personal AI memory to the company's: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar after this one runs on, then builds it with you two days later."},
-    {"week": 3, "type": "lab", "who": "Vykintas", "title": "Stand Up Your Company Brain", "text": "Offers, voice, customers, numbers and proof stories loaded into a governed project. Interrogated against your real numbers until it answers like someone who works there.", "win": "An AI that answers like your co-founder, by Thursday night"},
-    {"week": 4, "type": "lesson", "who": "Noelle Russell", "title": "What Goes In, and What Never Does", "text": "Data safety was the question the $100K+ founders in the quiz asked most. Noelle brings enterprise AI governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The management idea is simple: a brain the team uses has to be a brain you would show a lawyer."},
-    {"week": 4, "type": "lab", "who": "Vykintas", "title": "Feed the Brain, Safely", "text": "Document and meeting pipelines wired in so the brain stays current without you. An AI policy for your business written and adopted. A blind-spot report generated from your own data.", "win": "A brain your whole team uses, and your AI spots a problem you had missed"}
-   ]},
-  {"n": 3, "name": "Marketing", "short": "Marketing", "weeks": [5, 6],
+    {
+     "week": 3,
+     "type": "lesson",
+     "who": "Vykintas",
+     "title": "The Company Brain",
+     "text": "From a personal AI memory to the company's: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar after this one runs on, then builds it with you two days later."
+    },
+    {
+     "week": 3,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Stand Up Your Company Brain",
+     "text": "Offers, voice, customers, numbers and proof stories loaded into a governed project. Interrogated against your real numbers until it answers like someone who works there.",
+     "win": "An AI that answers like your co-founder, by Thursday night"
+    },
+    {
+     "week": 4,
+     "type": "lesson",
+     "who": "Noelle Russell",
+     "title": "What Goes In, and What Never Does",
+     "text": "Data safety was the question the $100K+ founders in the quiz asked most. Noelle brings enterprise AI governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The management idea is simple: a brain the team uses has to be a brain you would show a lawyer."
+    },
+    {
+     "week": 4,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Feed the Brain, Safely",
+     "text": "Document and meeting pipelines wired in so the brain stays current without you. An AI policy for your business written and adopted. A blind-spot report generated from your own data.",
+     "win": "A brain your whole team uses, and your AI spots a problem you had missed"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Marketing",
+   "short": "Marketing",
+   "weeks": [
+    5,
+    6
+   ],
    "problem": "Content depends on the founder's time.",
    "installed": "Voice-trained content skills: one idea into a week of posts, emails and pages.",
    "changes": "Consistent output without the founder writing each piece.",
    "calls": [
-    {"week": 5, "type": "lesson", "who": "Sabrina Ramonov", "title": "The One-Person Marketing Team", "text": "Sabrina sold her first AI company, then grew to more than three million followers in 24 months with no funding, no ads and no team. She teaches how one person now matches the output of a twenty-person marketing team with agents, what she still does herself, and what she never hands over. Content is the solo founder's biggest time-eater in the quiz, and this is the week it stops being one."},
-    {"week": 5, "type": "lab", "who": "Vykintas", "title": "Your Voice, Made Executable", "text": "A voice skill trained on your own words, not a template. One idea turned into a week of posts, emails and a page, with an anti-slop gate so nothing ships that sounds like AI. The answer to the quiz's most repeated worry: sounding like me.", "win": "Content that sounds like you, on demand"},
-    {"week": 6, "type": "lesson", "who": "Ruben Hassid", "title": "From Content to a List", "text": "Content that nobody captures is a hobby. Ruben built EasyGen and grew a founder audience on LinkedIn with AI doing the drafting; he teaches the distribution layer: which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell. Marketing's second half: not more content, a list that grows while you work."},
-    {"week": 6, "type": "lab", "who": "Vykintas", "title": "Your Lead-Capture Asset, Live", "text": "An assessment or scorecard built and shipped in-session, wired to the brain, with a signal dashboard counting real interest by the end of the lab.", "win": "A lead machine with your name on it, on the internet"}
-   ]},
-  {"n": 4, "name": "Sales", "short": "Sales", "weeks": [7, 8],
+    {
+     "week": 5,
+     "type": "lesson",
+     "who": "Sabrina Ramonov",
+     "title": "The One-Person Marketing Team",
+     "text": "Sabrina sold her first AI company, then grew to more than three million followers in 24 months with no funding, no ads and no team. She teaches how one person now matches the output of a twenty-person marketing team with agents, what she still does herself, and what she never hands over. Content is the solo founder's biggest time-eater in the quiz, and this is the week it stops being one."
+    },
+    {
+     "week": 5,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Your Voice, Made Executable",
+     "text": "A voice skill trained on your own words, not a template. One idea turned into a week of posts, emails and a page, with an anti-slop gate so nothing ships that sounds like AI. The answer to the quiz's most repeated worry: sounding like me.",
+     "win": "Content that sounds like you, on demand"
+    },
+    {
+     "week": 6,
+     "type": "lesson",
+     "who": "Ruben Hassid",
+     "title": "From Content to a List",
+     "text": "Content that nobody captures is a hobby. Ruben built EasyGen and grew a founder audience on LinkedIn with AI doing the drafting; he teaches the distribution layer: which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell. Marketing's second half: not more content, a list that grows while you work."
+    },
+    {
+     "week": 6,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Your Lead-Capture Asset, Live",
+     "text": "An assessment or scorecard built and shipped in-session, wired to the brain, with a signal dashboard counting real interest by the end of the lab.",
+     "win": "A lead machine with your name on it, on the internet"
+    }
+   ]
+  },
+  {
+   "n": 4,
+   "name": "Sales",
+   "short": "Sales",
+   "weeks": [
+    7,
+    8
+   ],
    "problem": "Leads go cold, follow-ups slip.",
    "installed": "Lead research, qualification, follow-up and proposal skills; call prep and debrief.",
    "changes": "Every lead answered and followed up; the founder takes only the calls that need them.",
    "calls": [
-    {"week": 7, "type": "lesson", "who": "Liam Ottley", "title": "The Lead That Never Goes Cold", "text": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Liam builds these systems inside real small businesses every week: research the lead, qualify it, reply in the founder's voice, book the call. He teaches where automation lifts conversion and the exact moments where it kills trust and a human has to step in."},
-    {"week": 7, "type": "lab", "who": "Vykintas", "title": "The Follow-Up Engine", "text": "Lead research and qualification skills installed; follow-up sequences running from your CRM or inbox; every new lead answered within the hour with a human checkpoint before anything is promised.", "win": "No lead goes cold in your business again"},
-    {"week": 8, "type": "lesson", "who": "Nick Saraev", "title": "Outbound on Autopilot", "text": "Finding the next client is the job most founders still do alone. Nick builds outbound and lead systems for a living: AI finds the right prospects, writes to them one by one, and books the calls, so the pipeline keeps filling while the founder delivers. The management idea: sales as a system the founder reviews, not a task the founder performs."},
-    {"week": 8, "type": "lab", "who": "Vykintas", "title": "Proposals, Call Prep and the Pipeline Cockpit", "text": "Proposal generation from the brain; call prep and debrief skills; a pipeline view that shows which conversations need you this week and which the system is already handling.", "win": "You take only the calls that need you"}
-   ]},
-  {"n": 5, "name": "Operations and delivery", "short": "Operations", "weeks": [9, 10],
+    {
+     "week": 7,
+     "type": "lesson",
+     "who": "Liam Ottley",
+     "title": "The Lead That Never Goes Cold",
+     "text": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Liam builds these systems inside real small businesses every week: research the lead, qualify it, reply in the founder's voice, book the call. He teaches where automation lifts conversion and the exact moments where it kills trust and a human has to step in."
+    },
+    {
+     "week": 7,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "The Follow-Up Engine",
+     "text": "Lead research and qualification skills installed; follow-up sequences running from your CRM or inbox; every new lead answered within the hour with a human checkpoint before anything is promised.",
+     "win": "No lead goes cold in your business again"
+    },
+    {
+     "week": 8,
+     "type": "lesson",
+     "who": "Nick Saraev",
+     "title": "Outbound on Autopilot",
+     "text": "Finding the next client is the job most founders still do alone. Nick builds outbound and lead systems for a living: AI finds the right prospects, writes to them one by one, and books the calls, so the pipeline keeps filling while the founder delivers. The management idea: sales as a system the founder reviews, not a task the founder performs."
+    },
+    {
+     "week": 8,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Proposals, Call Prep and the Pipeline Cockpit",
+     "text": "Proposal generation from the brain; call prep and debrief skills; a pipeline view that shows which conversations need you this week and which the system is already handling.",
+     "win": "You take only the calls that need you"
+    }
+   ]
+  },
+  {
+   "n": 5,
+   "name": "Operations and delivery",
+   "short": "Operations",
+   "weeks": [
+    9,
+    10
+   ],
    "problem": "Client work and questions land on the founder.",
    "installed": "Client onboarding flow; processes turned into skills; first-line support drafts; scheduled check-ins.",
    "changes": "Routine client work runs from the system; the founder reviews rather than does.",
    "calls": [
-    {"week": 9, "type": "lesson", "who": "Noelle Russell", "title": "Delivery Agents and the Customer Experience", "text": "One agent, one job. Noelle walks through one founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The management idea: clients should get the good version of your business whether or not you are in the room."},
-    {"week": 9, "type": "lab", "who": "Vykintas", "title": "Client Onboarding, Automated", "text": "Your onboarding flow built end to end: welcome, intake, first-line support drafts, scheduled check-ins, escalation to you only where it should. Experience score instrumented.", "win": "Delivery that scales without headcount"},
-    {"week": 10, "type": "lesson", "who": "Nate Herk", "title": "The Operations Brain", "text": "SOPs become skills. Meetings become operations data. Nate teaches the orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first; this is where it is."},
-    {"week": 10, "type": "lab", "who": "Vykintas", "title": "Two Ops Automations, Live", "text": "A reporting automation and an admin automation running on schedule before the lab ends, each with a checkpoint that lands in your inbox, not a task that lands on your desk.", "win": "Monday starts with a report, not a scramble"}
-   ]},
-  {"n": 6, "name": "Team: people and AI", "short": "Team", "weeks": [11, 12],
+    {
+     "week": 9,
+     "type": "lesson",
+     "who": "Noelle Russell",
+     "title": "Delivery Agents and the Customer Experience",
+     "text": "One agent, one job. Noelle walks through one founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The management idea: clients should get the good version of your business whether or not you are in the room."
+    },
+    {
+     "week": 9,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Client Onboarding, Automated",
+     "text": "Your onboarding flow built end to end: welcome, intake, first-line support drafts, scheduled check-ins, escalation to you only where it should. Experience score instrumented.",
+     "win": "Delivery that scales without headcount"
+    },
+    {
+     "week": 10,
+     "type": "lesson",
+     "who": "Nate Herk",
+     "title": "The Operations Brain",
+     "text": "SOPs become skills. Meetings become operations data. Nate teaches the orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first; this is where it is."
+    },
+    {
+     "week": 10,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Two Ops Automations, Live",
+     "text": "A reporting automation and an admin automation running on schedule before the lab ends, each with a checkpoint that lands in your inbox, not a task that lands on your desk.",
+     "win": "Monday starts with a report, not a scramble"
+    }
+   ]
+  },
+  {
+   "n": 6,
+   "name": "Team: people and AI",
+   "short": "Team",
+   "weeks": [
+    11,
+    12
+   ],
    "problem": "Hiring is slow, delegation fails.",
    "installed": "AI team members per role; hiring, onboarding and training kits; delegation briefs.",
    "changes": "Solo: contractors plus AI instead of a first hire. Team: new people productive in days.",
    "calls": [
-    {"week": 11, "type": "lesson", "who": "Callan Faulkner", "title": "Hiring Your First AI Employees", "text": "Callan runs 150 AI employees alongside a thirty-person human team, with nobody let go. She teaches the question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI?"},
-    {"week": 11, "type": "lab", "who": "Vykintas", "title": "Your First AI Team Member", "text": "A role-to-agent pairing map for your business. One AI team member put into production with a delegation brief, a job description and a review rhythm, the way you would onboard a person.", "win": "A job you no longer do, with a name on it"},
-    {"week": 12, "type": "lesson", "who": "Alex Dogliotti", "title": "How Mindvalley's Team Works With Agents", "text": "Mindvalley's COO and CHRO, and author of Replaced by AI, on the org chart after AI: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size."},
-    {"week": 12, "type": "lab", "who": "Vykintas + Alex Dogliotti", "title": "The Hiring and Onboarding Kit", "text": "Hiring, onboarding and training kits generated from the brain; an adoption scorecard; delegation briefs for your real team or your first future hire. Alex works the floor on the people questions.", "win": "A new person productive in days, not months"}
-   ]},
-  {"n": 7, "name": "Finance and the founder's cockpit", "short": "Finance", "weeks": [13, 14],
+    {
+     "week": 11,
+     "type": "lesson",
+     "who": "Callan Faulkner",
+     "title": "Hiring Your First AI Employees",
+     "text": "Callan runs 150 AI employees alongside a thirty-person human team, with nobody let go. She teaches the question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI?"
+    },
+    {
+     "week": 11,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Your First AI Team Member",
+     "text": "A role-to-agent pairing map for your business. One AI team member put into production with a delegation brief, a job description and a review rhythm, the way you would onboard a person.",
+     "win": "A job you no longer do, with a name on it"
+    },
+    {
+     "week": 12,
+     "type": "lesson",
+     "who": "Alex Dogliotti",
+     "title": "How Mindvalley's Team Works With Agents",
+     "text": "Mindvalley's COO and CHRO, and author of Replaced by AI, on the org chart after AI: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size."
+    },
+    {
+     "week": 12,
+     "type": "lab",
+     "who": "Vykintas + Alex Dogliotti",
+     "title": "The Hiring and Onboarding Kit",
+     "text": "Hiring, onboarding and training kits generated from the brain; an adoption scorecard; delegation briefs for your real team or your first future hire. Alex works the floor on the people questions.",
+     "win": "A new person productive in days, not months"
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "name": "Finance and the founder's cockpit",
+   "short": "Finance",
+   "weeks": [
+    13,
+    14
+   ],
    "problem": "The numbers arrive too late to act on.",
    "installed": "Weekly business dashboard; expense and invoice triage; decision memos.",
    "changes": "One weekly view the founder decides from.",
    "calls": [
-    {"week": 13, "type": "lesson", "who": "Shawn Kanungo", "title": "The Finance Cockpit", "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational. The management idea: decide from numbers that arrive on Monday, not from the accountant's summary in April."},
-    {"week": 13, "type": "lab", "who": "Vykintas", "title": "The Money Dashboard", "text": "Cash, margin and forecast on one page, fed by the brain. Expense and invoice triage running on schedule. Scenario models for the next two decisions you are putting off.", "win": "You stop flying blind on money"},
-    {"week": 14, "type": "lesson", "who": "Vishen", "title": "The Orchestrator's Week", "text": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on."},
-    {"week": 14, "type": "lab", "who": "Vykintas", "title": "The Founder Cockpit", "text": "One dashboard: pipeline, delivery health, money, the weekly AI founder brief and a priorities agent. Everything built since Week 3, read in one place.", "win": "A business you can read in five minutes"}
-   ]},
-  {"n": 8, "name": "Product and scale", "short": "Product and scale", "weeks": [15, 16],
+    {
+     "week": 13,
+     "type": "lesson",
+     "who": "Shawn Kanungo",
+     "title": "The Finance Cockpit",
+     "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational. The management idea: decide from numbers that arrive on Monday, not from the accountant's summary in April."
+    },
+    {
+     "week": 13,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "The Money Dashboard",
+     "text": "Cash, margin and forecast on one page, fed by the brain. Expense and invoice triage running on schedule. Scenario models for the next two decisions you are putting off.",
+     "win": "You stop flying blind on money"
+    },
+    {
+     "week": 14,
+     "type": "lesson",
+     "who": "Vishen",
+     "title": "The Orchestrator's Week",
+     "text": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on."
+    },
+    {
+     "week": 14,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "The Founder Cockpit",
+     "text": "One dashboard: pipeline, delivery health, money, the weekly AI founder brief and a priorities agent. Everything built since Week 3, read in one place.",
+     "win": "A business you can read in five minutes"
+    }
+   ]
+  },
+  {
+   "n": 8,
+   "name": "Product and scale",
+   "short": "Product and scale",
+   "weeks": [
+    15,
+    16
+   ],
    "problem": "What to build or sell next.",
    "installed": "Offer and pricing research; the weekly operating rhythm; an AI-first org chart.",
    "changes": "A company designed around AI, not AI bolted onto the old one.",
    "calls": [
-    {"week": 15, "type": "lesson", "who": "Matt Gray", "title": "The Founder Operating Rhythm", "text": "Matt built Founder OS on exactly this question: what to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves."},
-    {"week": 15, "type": "lab", "who": "Vykintas", "title": "Your Next Offer, Researched and Priced", "text": "Offer and pricing research run against your customers and market; your weekly operating rhythm loaded into the cockpit; your AI-first org chart drawn: which work sits with people, which with agents, and what you hire next.", "win": "You know what you are selling next, and who or what delivers it"},
-    {"week": 16, "type": "graduation", "who": "Vishen + Vykintas", "title": "A Company Designed Around AI: Your Next 12 Months", "text": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, certification on systems in production, and the bridge to the Guild for founders who have extended what they installed."},
-    {"week": 16, "type": "lab", "who": "Vykintas", "title": "Certification Showcase and Demo Day", "text": "Every founder demonstrates one running system per pillar. Certification is awarded on systems in production, not videos watched. The cohort showcase closes the programme.", "win": "A machine you can show, running"}
-   ]}
+    {
+     "week": 15,
+     "type": "lesson",
+     "who": "Matt Gray",
+     "title": "The Founder Operating Rhythm",
+     "text": "Matt built Founder OS on exactly this question: what to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves."
+    },
+    {
+     "week": 15,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Your Next Offer, Researched and Priced",
+     "text": "Offer and pricing research run against your customers and market; your weekly operating rhythm loaded into the cockpit; your AI-first org chart drawn: which work sits with people, which with agents, and what you hire next.",
+     "win": "You know what you are selling next, and who or what delivers it"
+    },
+    {
+     "week": 16,
+     "type": "graduation",
+     "who": "Vishen + Vykintas",
+     "title": "A Company Designed Around AI: Your Next 12 Months",
+     "text": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, certification on systems in production, and the bridge to the Guild for founders who have extended what they installed."
+    },
+    {
+     "week": 16,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Certification Showcase and Demo Day",
+     "text": "Every founder demonstrates one running system per pillar. Certification is awarded on systems in production, not videos watched. The cohort showcase closes the programme.",
+     "win": "A machine you can show, running"
+    }
+   ]
+  }
  ],
  "roster": {
   "placed": [
-   {"name": "Vishen Lakhiani", "status": "Confirmed", "where": "Opening (Mon 16 Nov), Week 14 lesson, Week 16 graduation, office hours 1 and 4", "why": "Face of the programme and the model for it. Three big sessions, as the team directed on 26 Sep. The opening moved to the Monday the brief names as the start date, which also keeps him clear of his Expert & Authority lesson on Tue 17 Nov."},
-   {"name": "Vykintas Glodenis", "status": "Confirmed", "where": "Every lab, Weeks 1 and 3 lessons, both Get AI-Ready calls, office hours, co-closes Week 16", "why": "Leads the curriculum and installs every system. The load map and the company brain are his to teach because everything after them runs on his Skill Pack."},
-   {"name": "Noelle Russell", "status": "Confirmed", "where": "Week 4 (company brain: governance and data safety), Week 9 (delivery agents)", "why": "Enterprise AI governance sized for a small company answers the $100K+ group's most-asked question; her end-to-end delivery walkthrough is the summit's pre-offer build, carried into the Mastery."},
-   {"name": "Nate Herk", "status": "In consideration", "where": "Week 2 (what to hand to AI first), Week 10 (the operations brain)", "why": "His summit session is literally the Module 1 management idea, and he builds business automations step by step: the nearest replacement for the builder role Domenic used to carry."},
-   {"name": "Sabrina Ramonov", "status": "In consideration", "where": "Week 5 (marketing: the one-person marketing team)", "why": "Runs her business solo with agents and publishes at volume. Content is the solo founder's biggest time-eater; she is the most authentic voice for it, and balances a male-heavy roster."},
-   {"name": "Ruben Hassid", "status": "In consideration", "where": "Week 6 (marketing: from content to a list)", "why": "Built EasyGen and a founder audience on LinkedIn with AI drafting. Marketing's distribution half, so Sabrina's week is not asked to carry both."},
-   {"name": "Liam Ottley", "status": "In consideration", "where": "Week 7 (sales: the lead that never goes cold)", "why": "Builds lead research, qualification and follow-up systems inside real small businesses every week. His summit session title is the Module 4 problem statement."},
-   {"name": "Nick Saraev", "status": "In consideration", "where": "Week 8 (sales: outbound on autopilot)", "why": "Builds outbound and lead systems for a living; the pipeline-filling half of sales that the follow-up engine does not cover."},
-   {"name": "Callan Faulkner", "status": "Outreach done", "where": "Week 11 (team: hiring your first AI employees)", "why": "150 AI employees beside a 30-person team is the Module 6 case study. Her summit session is the same title. She runs a competing programme and may decline; the week is written so a substitute can take it."},
-   {"name": "Alex Dogliotti", "status": "In consideration", "where": "Week 12 lesson and lab (team: how Mindvalley's team works with agents)", "why": "Mindvalley's COO and CHRO and author of Replaced by AI. Internal proof on adoption and org design, in a lab seat rather than a headline, which is where his ratings say he belongs."},
-   {"name": "Shawn Kanungo", "status": "Can't make the summit", "where": "Week 13 (finance cockpit)", "why": "A CPA with a Deloitte background teaching founder finance is the only credible occupant of the pillar every other programme skips. His summit status is Can't make it; the Mastery date is a separate ask."},
-   {"name": "Matt Gray", "status": "In consideration", "where": "Week 15 (product and scale: the founder operating rhythm)", "why": "Founder OS is his product and his audience: what to build or sell next and the repeatable week. The most literal match on the list to the graduating artefact."}
+   {
+    "name": "Vishen Lakhiani",
+    "status": "Confirmed",
+    "where": "Opening (Mon 16 Nov), Week 14 lesson, Week 16 graduation",
+    "why": "Face of the programme and the model for it. Three big sessions, as the team directed on 26 Sep. The opening moved to the Monday the brief names as the start date, which also keeps him clear of his Expert & Authority lesson on Tue 17 Nov."
+   },
+   {
+    "name": "Vykintas Glodenis",
+    "status": "Confirmed",
+    "where": "Every lab, Weeks 1 and 3 lessons, both Get AI-Ready calls, co-closes Week 16",
+    "why": "Leads the curriculum and installs every system. The load map and the company brain are his to teach because everything after them runs on his Skill Pack."
+   },
+   {
+    "name": "Noelle Russell",
+    "status": "Confirmed",
+    "where": "Week 4 (company brain: governance and data safety), Week 9 (delivery agents)",
+    "why": "Enterprise AI governance sized for a small company answers the $100K+ group's most-asked question; her end-to-end delivery walkthrough is the summit's pre-offer build, carried into the Mastery."
+   },
+   {
+    "name": "Nate Herk",
+    "status": "In consideration",
+    "where": "Week 2 (what to hand to AI first), Week 10 (the operations brain)",
+    "why": "His summit session is literally the Module 1 management idea, and he builds business automations step by step: the nearest replacement for the builder role Domenic used to carry."
+   },
+   {
+    "name": "Sabrina Ramonov",
+    "status": "In consideration",
+    "where": "Week 5 (marketing: the one-person marketing team)",
+    "why": "Runs her business solo with agents and publishes at volume. Content is the solo founder's biggest time-eater; she is the most authentic voice for it, and balances a male-heavy roster."
+   },
+   {
+    "name": "Ruben Hassid",
+    "status": "In consideration",
+    "where": "Week 6 (marketing: from content to a list)",
+    "why": "Built EasyGen and a founder audience on LinkedIn with AI drafting. Marketing's distribution half, so Sabrina's week is not asked to carry both."
+   },
+   {
+    "name": "Liam Ottley",
+    "status": "In consideration",
+    "where": "Week 7 (sales: the lead that never goes cold)",
+    "why": "Builds lead research, qualification and follow-up systems inside real small businesses every week. His summit session title is the Module 4 problem statement."
+   },
+   {
+    "name": "Nick Saraev",
+    "status": "In consideration",
+    "where": "Week 8 (sales: outbound on autopilot)",
+    "why": "Builds outbound and lead systems for a living; the pipeline-filling half of sales that the follow-up engine does not cover."
+   },
+   {
+    "name": "Callan Faulkner",
+    "status": "Outreach done",
+    "where": "Week 11 (team: hiring your first AI employees)",
+    "why": "150 AI employees beside a 30-person team is the Module 6 case study. Her summit session is the same title. She runs a competing programme and may decline; the week is written so a substitute can take it."
+   },
+   {
+    "name": "Alex Dogliotti",
+    "status": "In consideration",
+    "where": "Week 12 lesson and lab (team: how Mindvalley's team works with agents)",
+    "why": "Mindvalley's COO and CHRO and author of Replaced by AI. Internal proof on adoption and org design, in a lab seat rather than a headline, which is where his ratings say he belongs."
+   },
+   {
+    "name": "Shawn Kanungo",
+    "status": "Can't make the summit",
+    "where": "Week 13 (finance cockpit)",
+    "why": "A CPA with a Deloitte background teaching founder finance is the only credible occupant of the pillar every other programme skips. His summit status is Can't make it; the Mastery date is a separate ask."
+   },
+   {
+    "name": "Matt Gray",
+    "status": "In consideration",
+    "where": "Week 15 (product and scale: the founder operating rhythm)",
+    "why": "Founder OS is his product and his audience: what to build or sell next and the repeatable week. The most literal match on the list to the graduating artefact."
+   }
   ],
   "alternates": [
-   {"name": "Oren John", "for": "Week 6", "why": "Brand strategist and creative director; the brand half of marketing if Ruben's distribution angle is judged too LinkedIn-specific."},
-   {"name": "Maria Wendt", "for": "Week 8", "why": "In the 26 Sep allocation; low-ticket nurture at volume with real numbers. Alternate for the follow-up and nurture half of sales."},
-   {"name": "Dave Katague", "for": "Week 10", "why": "Airtable lists him as an AI systems designer, educator and marketing strategist. Nothing else verified in our sources; placed as an operations alternate only on that title."},
-   {"name": "Natalie Ellis", "for": "Week 15", "why": "Built Bossbabe's community and continuity offers. The 26 Sep team direction said not a fit; if that changes, offers and continuity in Module 8 is her authentic seat."}
+   {
+    "name": "Oren John",
+    "for": "Week 6",
+    "why": "Brand strategist and creative director; the brand half of marketing if Ruben's distribution angle is judged too LinkedIn-specific."
+   },
+   {
+    "name": "Maria Wendt",
+    "for": "Week 8",
+    "why": "In the 26 Sep allocation; low-ticket nurture at volume with real numbers. Alternate for the follow-up and nurture half of sales."
+   },
+   {
+    "name": "Dave Katague",
+    "for": "Week 10",
+    "why": "Airtable lists him as an AI systems designer, educator and marketing strategist. Nothing else verified in our sources; placed as an operations alternate only on that title."
+   },
+   {
+    "name": "Natalie Ellis",
+    "for": "Week 15",
+    "why": "Built Bossbabe's community and continuity offers. The 26 Sep team direction said not a fit; if that changes, offers and continuity in Module 8 is her authentic seat."
+   }
   ],
   "not_placed": [
-   {"name": "Dan Martell", "why": "Not Approved in Airtable. Would have been the Module 1 keynote; Nate Herk carries the idea instead."},
-   {"name": "Daniel Priestley", "why": "Can't make it, and the brief rules out being on both Expert & Authority and AI for Founders."},
-   {"name": "Chris Do", "why": "Not Approved; not recommended on a past working experience."},
-   {"name": "John Lee, Ajit Nawalkha, Iman Oubou, Elena Verna", "why": "Not Approved for the summit and no pillar where they are the most authentic teacher."},
-   {"name": "Jason Goldberg", "why": "Summit host only."}
+   {
+    "name": "Dan Martell",
+    "why": "Not Approved in Airtable. Would have been the Module 1 keynote; Nate Herk carries the idea instead."
+   },
+   {
+    "name": "Daniel Priestley",
+    "why": "Can't make it, and the brief rules out being on both Expert & Authority and AI for Founders."
+   },
+   {
+    "name": "Chris Do",
+    "why": "Not Approved; not recommended on a past working experience."
+   },
+   {
+    "name": "John Lee, Ajit Nawalkha, Iman Oubou, Elena Verna",
+    "why": "Not Approved for the summit and no pillar where they are the most authentic teacher."
+   },
+   {
+    "name": "Jason Goldberg",
+    "why": "Summit host only."
+   }
   ]
  }
 }
