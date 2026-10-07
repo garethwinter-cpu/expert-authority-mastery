@@ -144,7 +144,7 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 
 ## Design notes
 
-- Length: about ten minutes. Nineteen questions, twelve of them open; nine required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.
+- Length: about ten minutes. Nineteen questions, twelve of them open; fourteen required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.
 - Order follows Compassionate Curiosity: acknowledge (part 1), get curious (parts 2 to 4), build together (part 5). The feeling is asked for before any opinion about us; the commitment comes last, once they have already invested.
 - Open questions ask for a story or a specific, never a rating in words: a recent week, the last time you tried, what would deeper look like, what would need to be true in March. Specifics are quotable; opinions are not.
 - Closed questions do two jobs only: segment (1, 2, 4) and give one quantitative read on the outline (7, 8). Everything else is written in their words.
