@@ -161,8 +161,12 @@ before the next refresh.
   targeted the retired E&A proposal and the old `/ai-founders` page, and would have failed); the August proposal
   carries a superseded banner; `CURRICULUM-BRIEF.md` and `data/authors.json` no longer describe Priestley as co-owner;
   the orphan `live.html` (an unserved old copy of the hub) deleted.
-- **Still open**: Janja's 3pm London against our 9am Pacific (see Thanksgiving reply, 6 Oct); the Guild page itself
-  still says 18 weeks, five pillars and Priestley.
+- **Time slot, evidence (7 Oct)**: `briefs/AIF-TIME-SLOT-EVIDENCE.md` pulls attendance from the five Mastery bases.
+  The hour does not move live turnout inside 7am to 10am Pacific (Entrepreneurship Mastery moved 5pm to 3pm London
+  mid-cohort with no step); week of programme and Friday do. Audience is about 60 percent North American, about
+  7 percent UK, in every Mastery. Decision: hold 9am Pacific, Tue and Thu; publish London as the derived time.
+  Reply to Janja drafted in the brief.
+- **Still open**: the Guild page itself still says 18 weeks, five pillars and Priestley.
 
 ### Storyboarding call, 6 Oct (Vishen, Jaideep, Ramya, Marijana, Ishaan, Chee Ling, Wendy, Gareth)
 
