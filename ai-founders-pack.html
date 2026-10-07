@@ -68,6 +68,7 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
     <div><div class="kicker">What the community answers</div><h2 class="h2" id="survey-title"></h2><p class="lede" id="survey-intro"></p><p class="note" style="margin-top:10px" id="survey-length"></p></div>
     <div class="card tint"><div class="kicker">Why it is built this way</div><p class="note" style="font-size:15px;color:var(--text)" id="survey-method"></p></div>
     <div class="card"><div class="kicker">How this answers Vishen's brief of 6 October</div><p class="note" style="margin-bottom:10px">He asked for a survey that finds out where people are, how they want to grow, what they want changed, their biggest needs, what they do not know they should know, and which teachers; a model reusable across programmes that serves marketing as well as curriculum.</p><ul id="brief-map" style="margin:0;padding:0;list-style:none;display:grid;gap:8px"></ul></div>
+    <div class="card tint"><div class="kicker">What the quiz already told us, and how it shaped this</div><ul id="quiz-insights" style="margin:0;padding:0;list-style:none;display:grid;gap:8px"></ul></div>
     <div id="survey-sections" style="display:grid;gap:30px"></div>
     <div class="card"><div class="kicker">Thank-you page</div><p id="survey-thanks" style="font-size:15.5px"></p></div>
     <div class="two"><div class="card"><div class="kicker">Design notes</div><ul id="survey-design"></ul></div><div class="card"><div class="kicker">What we do with the answers</div><ul id="survey-analysis"></ul></div></div>
@@ -115,13 +116,14 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
   document.getElementById('survey-intro').textContent = S.intro || '';
   document.getElementById('survey-length').textContent = S.length || '';
   document.getElementById('survey-method').textContent = S.method || '';
+  document.getElementById('quiz-insights').innerHTML = (S.quiz_insights||[]).map(function(x){ return '<li style="font-size:14.5px;line-height:1.5">'+esc(x)+'</li>'; }).join('');
   document.getElementById('brief-map').innerHTML = (S.brief_map||[]).map(function(b){ return '<li style="font-size:14.5px;line-height:1.5"><strong>'+esc(b.ask)+'</strong> '+esc(b.how)+'</li>'; }).join('');
   document.getElementById('survey-sections').innerHTML = S.sections.map(function(sec, i){
     return '<div class="sec"><div class="sec-head"><h3 class="h3">'+esc(sec.title)+'</h3>'+(sec.step?'<span class="pill">'+esc(sec.step)+'</span>':'')+'</div>'+(sec.lead?'<p class="note">'+esc(sec.lead)+'</p>':'')
       + sec.questions.map(function(q){
           var opts = (q.options||[]).map(function(o){ return '<li>'+esc(o)+'</li>'; }).join('');
           var grid = q.rows ? '<div class="grid"><b>Rows:</b> '+esc(q.rows.join(' · '))+'<br><b>Scale:</b> '+esc((q.scale||[]).join(' / '))+'</div>' : '';
-          return '<div class="q"><div class="qt"><span class="qn">'+esc(q.n)+'</span><h4>'+esc(q.text)+'</h4></div><div class="tags"><span class="pill grey">'+esc(q.type)+'</span><span class="pill '+(q.required?'':'grey')+'">'+(q.required?'Required':'Optional')+'</span>'+(q.step?'<span class="pill grey">'+esc(q.step)+'</span>':'')+(q.branch?'<span class="pill grey">Sets branching</span>':'')+'</div>'+(opts?'<ul>'+opts+'</ul>':'')+grid+'<div class="why"><b>Why we ask</b>'+esc(q.why)+'</div></div>';
+          return '<div class="q"><div class="qt"><span class="qn">'+esc(q.n)+'</span><h4>'+esc(q.text)+'</h4></div><div class="tags"><span class="pill grey">'+esc(q.type)+'</span><span class="pill '+(q.required?'':'grey')+'">'+(q.required?'Required':'Optional')+'</span>'+(q.step?'<span class="pill grey">'+esc(q.step)+'</span>':'')+(q.branch?'<span class="pill grey">Sets branching</span>':'')+'</div>'+(opts?'<ul>'+opts+'</ul>':'')+grid+(q.variants?'<div class="grid">'+Object.keys(q.variants).map(function(k){ return '<b>'+esc(k==='team'?'Team version':k==='planning'?'Pre-business version':k)+':</b> '+esc(q.variants[k]); }).join('<br>')+'</div>':'')+'<div class="why"><b>Why we ask</b>'+esc(q.why)+'</div></div>';
         }).join('') + '</div>';
   }).join('');
   document.getElementById('survey-thanks').innerHTML = inline(S.thanks||'');

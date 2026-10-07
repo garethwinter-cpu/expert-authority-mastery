@@ -173,7 +173,8 @@ for sec in survey['sections']:
         for o in q.get('options',[]): sm.append(f"- {o}")
         if q.get('rows'): sm.append('Rows: '+'; '.join(q['rows']))
         if q.get('scale'): sm.append('Scale: '+' / '.join(q['scale']))
+        for k,v in (q.get('variants') or {}).items(): sm.append(f'- {k} version: {v}')
         sm.append(f"*Why we ask: {q['why']}*"); sm.append('')
-sm+=['## How this answers the 6 October brief','']+[f"- **{b['ask']}** {b['how']}" for b in survey.get('brief_map',[])]+['','## Thank-you page','',survey['thanks'],'','## Design notes','']+[f"- {n}" for n in survey['design_notes']]+['','## What we do with the answers','']+[f"- {n}" for n in survey['analysis']]
+sm+=['## What the quiz already told us','']+[f'- {x}' for x in survey.get('quiz_insights',[])]+['','## How this answers the 6 October brief','']+[f"- **{b['ask']}** {b['how']}" for b in survey.get('brief_map',[])]+['','## Thank-you page','',survey['thanks'],'','## Design notes','']+[f"- {n}" for n in survey['design_notes']]+['','## What we do with the answers','']+[f"- {n}" for n in survey['analysis']]
 (R/'briefs'/'AIF-SURVEY.md').write_text('\n'.join(sm))
 print('survey written')
