@@ -165,7 +165,12 @@ before the next refresh.
   The hour does not move live turnout inside 7am to 10am Pacific (Entrepreneurship Mastery moved 5pm to 3pm London
   mid-cohort with no step); week of programme and Friday do. Audience is about 60 percent North American, about
   7 percent UK, in every Mastery. Decision: hold 9am Pacific, Tue and Thu; publish London as the derived time.
-  Reply to Janja drafted in the brief.
+  Reply to Janja and Jaideep drafted in the brief. Pages now show 9am Pacific with London derived; the Week 16
+  sessions carry a 4pm London flag.
+- **Thanksgiving, checked against the day (7 Oct)**: AI Mastery 2025 showed no dip the day before or after; the one
+  session on Thanksgiving Day itself (Entrepreneurship Mastery) kept about 70 percent of its room and its recording was
+  the month's most watched Thursday. The Thu 26 Nov lab stays, flagged on both pages; Wed 25 Nov is the alternative.
+  WhatsApp summary in the brief.
 - **Still open**: the Guild page itself still says 18 weeks, five pillars and Priestley.
 
 ### Storyboarding call, 6 Oct (Vishen, Jaideep, Ramya, Marijana, Ishaan, Chee Ling, Wendy, Gareth)

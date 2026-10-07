@@ -65,8 +65,25 @@ and then flatten. Moving to 3pm London bought nothing, and cost nothing, for att
 | Speaking & Influence 2025 | 286 | 176 |
 
 Weeks 1 and 2 are the big room. For AI for Founders that means the Kick Off (Mon 16 Nov) and the Strategy module
-(17 to 26 Nov), which is where Vishen already is. Keep it that way, and expect the Thanksgiving week (23 to 27 Nov)
-to be the first visible dip whatever the hour.
+(17 to 26 Nov), which is where Vishen already is. Keep it that way.
+
+**Thanksgiving, checked against the actual days (2025: Thursday 27 November).** The week holds; the day itself dips.
+
+| Cohort | Session | Live | Neighbouring sessions |
+|---|---|---|---|
+| Entrepreneurship 2025 (Tue/Thu, 9am PT) | Thu 27 Nov, Thanksgiving Day | 214 | Thu 20 Nov 318 · Tue 25 Nov 301 · Thu 4 Dec 273 |
+| Entrepreneurship 2025, coaches track (Fri, 7am PT) | Fri 28 Nov | 128 | Fri 21 Nov 156 · Fri 5 Dec 142 |
+| AI Mastery 2025 (Wed/Fri, 9am PT) | Wed 26 Nov | 422 | Wed 19 Nov 454 · Wed 3 Dec 447 |
+| AI Mastery 2025 (Wed/Fri, 9am PT) | Fri 28 Nov | 307 | Fri 21 Nov 274 · Fri 5 Dec 313 |
+
+The one session that ran on Thanksgiving Day itself kept about 70 percent of its normal room, and its week-1 recording
+views (70) were the highest of any Thursday in that stretch, so the missing third watched back. The day before and the
+day after showed no meaningful dip. This sharpens the 5 October reasoning, which rested on Expert & Authority's
+week-level reading: the week is fine, the day costs roughly a quarter to a third of the live room, and the recording
+recovers it. Our Week 2 lab falls on Thursday 26 November 2026, Thanksgiving Day. It stays, as a Vykintas lab,
+recorded, with the Week 3 lesson on Tuesday 1 December picking up anyone who missed it. The data-favoured alternative,
+if the team wants it, is Wednesday 25 November: the day before showed no dip, and it costs one break in the
+Tuesday/Thursday rhythm.
 
 **The day.** Where the same cohort ran on two or three days at the same hour, Friday was the weak one:
 
@@ -143,3 +160,27 @@ UK. So we are holding 9am Pacific, which is 5pm London for all but the final wee
 - AI Mastery 2024 and Manifesting 2026 have no enrolment figure in the base, so their live rates are not shown.
 - The location data comes from onboarding surveys, which a third to a half of students complete; the shape is
   consistent across five bases but it is a sample.
+
+---
+
+## Messages
+
+**To Janja and Jaideep (Slack or WhatsApp), the slot we are holding:**
+
+> Quick one on the AI for Founders time slot. We are holding **9am Pacific, Tuesdays and Thursdays** for all 16 weeks,
+> which is **5pm London** (4pm London in the final week only, 16 and 18 March, because US clocks change on 14 March
+> and UK clocks on the 28th). We checked attendance across AI, Manifesting, Social Media, Speaking and Entrepreneurship
+> Mastery before settling it. Two things decided it. When Entrepreneurship Mastery moved from 5pm to 3pm London in
+> January, attendance did not move, so the hour is not what fills the room. And about 60 percent of every Mastery's
+> students are in North America against about 7 percent in the UK, so 9am Pacific keeps the majority in working hours
+> and still lands Europe before dinner. The two AI Mastery cohorts that ran at 9am Pacific held 29 to 38 percent live
+> attendance, in line with or above the others. The curriculum page shows both times on every session.
+
+**Thanksgiving, one WhatsApp message:**
+
+> On Thanksgiving: the Week 2 lab stays on Thursday 26 November, with Vykintas, recorded. We checked last year's
+> numbers. Entrepreneurship Mastery ran a session on Thanksgiving Day 2025 and kept about 70 percent of its usual room,
+> and the recording was watched more than any other Thursday that month. AI Mastery's sessions the day before and the
+> day after showed no dip at all. So the week is fine, the day loses a few people who watch back, and the Tuesday 1
+> December lesson picks everyone up. If we would rather not run on the day itself, Wednesday 25 November is the clean
+> alternative and the data says it costs nothing.

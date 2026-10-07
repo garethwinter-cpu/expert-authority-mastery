@@ -87,9 +87,17 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T07:25:46Z",
+ "synced_at": "2026-10-07T08:04:42Z",
  "aligned": false,
- "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery",
+ "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific, 5pm London (4pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
+ "slot": {
+  "pt": "9am Pacific",
+  "london": "5pm London",
+  "london_final": "4pm London on 16 and 18 March 2027",
+  "line": "9am Pacific, 5pm London (4pm London in the final week, 16 and 18 March, after US clocks change on 14 March)",
+  "anchor": "Pacific is the anchor; London is the derived time",
+  "decided": "2026-10-07"
+ },
  "basis": "Vykintas Glodenis, AI for Founders Curriculum Proposal (5 Oct 2026); Jaideep's launch brief (5 Oct 2026); the AI for Founders quiz (812 answers, 2 to 5 Oct 2026).",
  "pattern": [
   "The problem founders name in that pillar",
@@ -350,9 +358,10 @@
  "notes": [
   "Rebuilt on 5 October from three sources: Vykintas Glodenis’s curriculum proposal (eight modules, one business pillar each, the problem / management idea / installed system / observable change pattern, and the Get AI-Ready onboarding layer), Jaideep’s launch brief (16 weeks from Monday 16 November, two sessions per module, the summit on 30 October to 1 November), and the AI for Founders quiz (812 answers: operations, marketing and sales are where the pain is; solo founders start with marketing, founders with teams with operations; data safety and sounding like me are the unprogrammed worries).",
   "Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; roughly one guest teacher per pillar; at least one more woman on the roster. Every guest here is placed where they are most authentic, from the names in consideration on 5 October, and none is confirmed for the Mastery until the team says so.",
-  "Cadence, decided 5 October: Tuesday lesson, Thursday lab, 9am Pacific, Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds 8 of Expert & Authority’s Friday workshops at 9am Pacific inside this run (20 Nov, 27 Nov, 18 Dec, 8 Jan, 29 Jan, 5 Feb, 12 Feb, 19 Feb), so a Friday lab would put him in two rooms at once on each of those dates.",
+  "Cadence, decided 5 October: Tuesday lesson, Thursday lab, 9am Pacific (5pm London; 4pm London in the final week), Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds 8 of Expert & Authority’s Friday workshops at 9am Pacific inside this run (20 Nov, 27 Nov, 18 Dec, 8 Jan, 29 Jan, 5 Feb, 12 Feb, 19 Feb), so a Friday lab would put him in two rooms at once on each of those dates.",
   "The opening is Monday 16 November, the start date in the brief, with Vishen. It also keeps him clear of his Expert & Authority lesson at the same hour on Tuesday 17 November once the John Lee rotation is applied.",
-  "Thanksgiving, decided 5 October: the Week 2 lab stays on Thursday 26 November. Expert & Authority looked at its 2025 cohort data, saw no attendance drop over Thanksgiving week, and kept its Friday 27 November workshop; the same reasoning applies here. The lab is Vykintas-led and recorded. Caveat: the 2025 evidence covers the week, not Thanksgiving Day itself, so the live number on the day is the test for the next cohort.",
+  "Thanksgiving, decided 5 October and checked against the day on 7 October: the Week 2 lab stays on Thursday 26 November, Thanksgiving Day in the US. Expert & Authority’s 2025 reading was that the week holds, and it kept its Friday 27 November workshop. The 2025 Mastery records confirm the week and sharpen the day: AI Mastery’s sessions the day before (422 against 454 and 447 the Wednesdays either side) and the day after (307 against 274 and 313) showed no dip; the one session that ran on Thanksgiving Day itself, Entrepreneurship Mastery’s Thursday lesson, kept 214 of a usual 300, about 70 percent, and its recording was watched more that week than any other Thursday’s that month. So the lab runs, Vykintas-led and recorded, and the Tuesday 1 December lesson picks up anyone who missed it. Wednesday 25 November is the alternative if the team prefers not to run on the day; the day before showed no dip.",
+  "Time slot, confirmed 7 October: 9am Pacific, which is 5pm London for every week but the last and 4pm London on 16 and 18 March 2027 (US clocks change on 14 March, UK clocks on 28 March); students are told the Pacific time and London is shown as the derived time, the convention AI Mastery 2025 and 2026 and Social Media Mastery 2026 followed. Attendance across five Mastery bases shows no hour effect between 7am and 10am Pacific (Entrepreneurship Mastery moved from 5pm to 3pm London mid-cohort and attendance did not move), while about 60 percent of every Mastery’s students are in North America against about 7 percent in the UK. Evidence in briefs/AIF-TIME-SLOT-EVIDENCE.md.",
   "What we promise, in Vykintas’s words: the founder moves from doing to orchestrating; a leaner team gets more done; hours back every week; every lead answered and followed up; new hires productive in days; a business designed for AI. What we do not promise: fully autonomous systems with no human trigger or review (that depth is outside this programme), integration with every founder’s own software beyond existing connectors, or hours measured by time tracking. The founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running.",
   "What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps. Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.",
   "Outside the modules there are only three sessions, all before Week 1: Get AI-Ready calls 1 and 2, which are Vykintas’s and in his proposal as written (the content of each call is a first pass), and the Monday opening with Vishen, the kickoff from the earlier draft moved to the start date in the brief. Office hours and an alumni reunion were in the earlier draft and were removed on 7 October: Vishen’s diary cannot carry extra calls, and what happens after graduation is a separate conversation, not part of the Mastery. Expert & Authority’s own Airtable holds only lessons, workshops, one bonus and the graduation.",
@@ -472,7 +481,8 @@
    "module": "Module 1: Strategy: find the bottleneck",
    "description": "The roadmap built against your load map: which pillar first, which system each month, what success looks like at module 8. The first workflow from the map handed over before the lab ends. The lab falls on US Thanksgiving and runs as scheduled; it is recorded.\n\n**The win:** A dated plan, and one job already off your desk",
    "week": 2,
-   "pair": "aif-w02-lesson"
+   "pair": "aif-w02-lesson",
+   "note": "Thanksgiving Day in the US. The lab runs as scheduled and is recorded; the Week 3 lesson on Tuesday 1 December picks up anyone who misses it."
   },
   {
    "id": "aif-w03-lesson",
@@ -925,7 +935,8 @@
    ],
    "module": "Module 8: Product and scale",
    "description": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business.",
-   "week": 16
+   "week": 16,
+   "note": "4pm London this week, not 5pm: US clocks changed on 14 March, UK clocks change on 28 March."
   },
   {
    "id": "aif-w16-lab",
@@ -942,7 +953,8 @@
    "module": "Module 8: Product and scale",
    "description": "Every founder demonstrates one running system per pillar. Certification is awarded on a Founder Operating System in production, not videos watched. The cohort showcase closes the programme.\n\n**The win:** Your Founder Operating System, running, on show",
    "week": 16,
-   "pair": "aif-w16-lesson"
+   "pair": "aif-w16-lesson",
+   "note": "4pm London this week, not 5pm: US clocks changed on 14 March, UK clocks change on 28 March."
   }
  ]
 }
