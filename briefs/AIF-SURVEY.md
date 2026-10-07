@@ -107,18 +107,7 @@ _Open text · required · Build together_
 _Open text · optional · Build together_
 *Why we ask: Vishen's what they do not know they should know, asked directly. Answers here are the unprogrammed worries, the ones the quiz could not reach because nobody can tick a box for a thing they cannot name.*
 
-**17. How will you most likely take part, and which live times could you make?**  
-_Single choice plus multiple choice · required · Build together_
-- Live every week
-- Live when I can, recordings otherwise
-- Mostly recordings
-- Times: 7am Pacific (10am New York, 3pm London)
-- Times: 9am Pacific (noon New York, 5pm London)
-- Times: a US evening
-- Times: none of these
-*Why we ask: Availability, not a promise. The slot is set at 7am Pacific for team capacity; attendance data from five Masteries says the hour does not move turnout. This tells us how many will be live and how many will watch back, which shapes the labs.*
-
-**18. Would you like to be part of the founding circle that shapes version two?**  
+**17. Would you like to be part of the founding circle that shapes version two?**  
 _Multiple choice · required · Build together_
 - Review version two before it is published
 - Test one system in my own business and report back
@@ -128,11 +117,11 @@ _Multiple choice · required · Build together_
 - Not this time, just keep me posted
 *Why we ask: The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others.*
 
-**19. Anything else you want the people building this to know?**  
+**18. Anything else you want the people building this to know?**  
 _Open text · optional · Build together_
 *Why we ask: The door left open. The most useful answer in a survey is often to the question nobody asked.*
 
-**20. May we follow up with you on your answers?**  
+**19. May we follow up with you on your answers?**  
 _Yes or no, with email pre-filled · required · Build together_
 - Yes
 - No, use my answers but do not contact me about them
@@ -146,7 +135,7 @@ _Yes or no, with email pre-filled · required · Build together_
 - **Biggest needs.** Question 3 (the week), question 7 (what still goes through them and which to lift first) and the module need grid at question 8.
 - **What they do not know they should know.** Asked directly at question 16, and surfaced indirectly by questions 5 and 6, where the story of the last attempt shows the gap they cannot name.
 - **Which teachers.** Questions 13 and 14, open: who they have learned most from, inside Mindvalley or outside, what it is about how that person teaches, and who they would want in the room. No list of names, so nothing is promised and names we have not thought of can appear.
-- **Serves marketing as well as curriculum.** Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 18 builds the founding circle list.
+- **Serves marketing as well as curriculum.** Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 17 builds the founding circle list.
 - **A reusable model.** The five parts are programme-agnostic: your week, what you have tried, the outline, who you learn from, building it together. Swap the module list and the outline link and it runs for any Mastery. Jaideep's deeper quiz at summit registration stays separate; this one runs before, to the warm community.
 
 ## Thank-you page
@@ -155,7 +144,7 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 
 ## Design notes
 
-- Length: about ten minutes. Twenty questions, twelve of them open; ten required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.
+- Length: about ten minutes. Nineteen questions, twelve of them open; nine required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.
 - Order follows Compassionate Curiosity: acknowledge (part 1), get curious (parts 2 to 4), build together (part 5). The feeling is asked for before any opinion about us; the commitment comes last, once they have already invested.
 - Open questions ask for a story or a specific, never a rating in words: a recent week, the last time you tried, what would deeper look like, what would need to be true in March. Specifics are quotable; opinions are not.
 - Closed questions do two jobs only: segment (1, 2, 4) and give one quantitative read on the outline (7, 8). Everything else is written in their words.
@@ -164,6 +153,7 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 - Incentive is recognition, not a prize: early sight of version two, a named place in the thank-you section, the founding circle.
 - Send on a Tuesday, remind on Friday, close the following Tuesday. One reminder, to non-openers and partial completions only.
 - Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then.
+- No question about the time slot: it is set at 7am Pacific for team capacity, and asking would imply a choice people do not have. The invitation says live when you can, recording when you cannot.
 
 ## What we do with the answers
 
@@ -172,6 +162,6 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 - Module need index: the share answering need it or need it urgently on question 8, by segment, read against question 7 to test the module order.
 - Gaps and depth: questions 10 to 12 become the version two change log, with a rough count beside each change.
 - Teachers: questions 13 and 14 produce two lists, names and teaching qualities. The qualities brief every guest; the names go to the summit and Mastery roster conversation, not to the page.
-- Format: question 17 sets lab design and tells us the live-to-recording split to plan for.
-- Founding circle: everyone who ticks an active option in question 18 goes on a list with their answers attached. They see version two first.
+- Format: the slot is set at 7am Pacific for team capacity; people are encouraged to be live and to watch the recording when they cannot. No question asks about it, because they have no control over it.
+- Founding circle: everyone who ticks an active option in question 17 goes on a list with their answers attached. They see version two first.
 - Version two is published with a change log that credits the survey: what moved, and roughly how many people asked for it.

@@ -1,87 +1,300 @@
 {
  "title": "Help us build AI for Founders",
  "intro": "About ten minutes, and most of it is writing, not ticking. We are drafting a sixteen-week programme for founders whose business still runs through them, and before we decide who teaches what, we want to know whether we are teaching the right things. So this asks about your week before it asks about our outline, and it asks you to answer in your own words. Your answers go to the people writing the curriculum, not to a dashboard. Version two is published with the changes marked, so you can see what moved because of you.",
- "length": "About 10 minutes · 20 questions · 12 open · answer the ones that speak to you",
+ "length": "About 10 minutes · 19 questions · 12 open · answer the ones that speak to you",
  "method": "The survey runs on Compassionate Curiosity, Kwame Christian's three-step frame for conversations where someone wants something: acknowledge and validate the feeling, get curious with compassion, then solve the problem together. Part one lets people name what the week feels like before we ask anything about us. Parts two to four ask open questions in a warm register, for stories and specifics rather than opinions. Part five turns the conversation into joint problem solving: what would need to be true in March, who should be in the room, and how far they want to go with us. People value what they help build, so the last part is the point, not an afterthought.",
  "brief_map": [
-  {"ask": "Where they are.", "how": "Part one: who they are, what they sell, how many hours the business needs them, and a week told in their own words (questions 1 to 4)."},
-  {"ask": "How they want to grow.", "how": "Question 15, what would need to be true in March for sixteen weeks to have been worth it, and question 9, where the outline is exactly their problem and where it is not."},
-  {"ask": "What they want changed.", "how": "Questions 9 to 12 on the outline: what is exactly right, what is missing, where to go deeper, what to skip. Every answer is logged and the recurring ones become the version two change log."},
-  {"ask": "Biggest needs.", "how": "Question 3 (the week), question 7 (what still goes through them and which to lift first) and the module need grid at question 8."},
-  {"ask": "What they do not know they should know.", "how": "Asked directly at question 16, and surfaced indirectly by questions 5 and 6, where the story of the last attempt shows the gap they cannot name."},
-  {"ask": "Which teachers.", "how": "Questions 13 and 14, open: who they have learned most from, inside Mindvalley or outside, what it is about how that person teaches, and who they would want in the room. No list of names, so nothing is promised and names we have not thought of can appear."},
-  {"ask": "Serves marketing as well as curriculum.", "how": "Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 18 builds the founding circle list."},
-  {"ask": "A reusable model.", "how": "The five parts are programme-agnostic: your week, what you have tried, the outline, who you learn from, building it together. Swap the module list and the outline link and it runs for any Mastery. Jaideep's deeper quiz at summit registration stays separate; this one runs before, to the warm community."}
+  {
+   "ask": "Where they are.",
+   "how": "Part one: who they are, what they sell, how many hours the business needs them, and a week told in their own words (questions 1 to 4)."
+  },
+  {
+   "ask": "How they want to grow.",
+   "how": "Question 15, what would need to be true in March for sixteen weeks to have been worth it, and question 9, where the outline is exactly their problem and where it is not."
+  },
+  {
+   "ask": "What they want changed.",
+   "how": "Questions 9 to 12 on the outline: what is exactly right, what is missing, where to go deeper, what to skip. Every answer is logged and the recurring ones become the version two change log."
+  },
+  {
+   "ask": "Biggest needs.",
+   "how": "Question 3 (the week), question 7 (what still goes through them and which to lift first) and the module need grid at question 8."
+  },
+  {
+   "ask": "What they do not know they should know.",
+   "how": "Asked directly at question 16, and surfaced indirectly by questions 5 and 6, where the story of the last attempt shows the gap they cannot name."
+  },
+  {
+   "ask": "Which teachers.",
+   "how": "Questions 13 and 14, open: who they have learned most from, inside Mindvalley or outside, what it is about how that person teaches, and who they would want in the room. No list of names, so nothing is promised and names we have not thought of can appear."
+  },
+  {
+   "ask": "Serves marketing as well as curriculum.",
+   "how": "Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 17 builds the founding circle list."
+  },
+  {
+   "ask": "A reusable model.",
+   "how": "The five parts are programme-agnostic: your week, what you have tried, the outline, who you learn from, building it together. Swap the module list and the outline link and it runs for any Mastery. Jaideep's deeper quiz at summit registration stays separate; this one runs before, to the warm community."
+  }
  ],
  "sections": [
-  {"id": "you", "title": "Part 1 · Your week", "step": "Acknowledge", "lead": "Before anything about us: where you are, and what it is like. Three quick ones, then one that takes a minute.",
+  {
+   "id": "you",
+   "title": "Part 1 · Your week",
+   "step": "Acknowledge",
+   "lead": "Before anything about us: where you are, and what it is like. Three quick ones, then one that takes a minute.",
    "questions": [
-    {"n": 1, "text": "Which describes you best right now?", "type": "Single choice", "step": "Acknowledge", "required": true,
-     "options": ["Solo founder: coach, consultant, practitioner or creator. The business is me.", "Founder with a team of up to ten", "Founder with a team of more than ten", "Planning to start a business in the next year", "I lead inside someone else's company"],
-     "why": "The one split that changes everything downstream. Solo founders and founders with a team feel the same problem differently, and every lab runs in two tracks because of it. Sets the wording of question 7.", "branch": true},
-    {"n": 2, "text": "What does your business mainly sell?", "type": "Single choice", "step": "Acknowledge", "required": true,
-     "options": ["Coaching or consulting", "Courses, programmes or digital products", "Agency or done-for-you services", "Software or a product", "Physical products or retail", "Something else (tell us)"],
-     "why": "Decides which examples and skill packs we build first. A coach's company brain and an agency's company brain hold different things."},
-    {"n": 3, "text": "Tell us about a recent week when everything came back to you. What happened, and how did you feel by Friday?", "type": "Open text", "step": "Acknowledge", "required": true,
-     "why": "The first real question names the feeling before we ask for anything. People cannot think about a curriculum while the frustration is unspoken; asked this way, the frustration becomes the data. The phrases here become the opening of the summit and the sales page."},
-    {"n": 4, "text": "In a normal week, how many hours does your business need you personally to keep running?", "type": "Single choice", "step": "Acknowledge", "required": true,
-     "options": ["Under 20", "20 to 40", "40 to 60", "More than 60", "I honestly do not know"],
-     "why": "The before picture. The whole programme is measured against the founder load map, and this is the first rough reading of it across the community."}
-   ]},
-  {"id": "tried", "title": "Part 2 · What you have tried", "step": "Get curious", "lead": "No judgement here. We learn more from what went wrong than from what went right.",
+    {
+     "n": 1,
+     "text": "Which describes you best right now?",
+     "type": "Single choice",
+     "step": "Acknowledge",
+     "required": true,
+     "options": [
+      "Solo founder: coach, consultant, practitioner or creator. The business is me.",
+      "Founder with a team of up to ten",
+      "Founder with a team of more than ten",
+      "Planning to start a business in the next year",
+      "I lead inside someone else's company"
+     ],
+     "why": "The one split that changes everything downstream. Solo founders and founders with a team feel the same problem differently, and every lab runs in two tracks because of it. Sets the wording of question 7.",
+     "branch": true
+    },
+    {
+     "n": 2,
+     "text": "What does your business mainly sell?",
+     "type": "Single choice",
+     "step": "Acknowledge",
+     "required": true,
+     "options": [
+      "Coaching or consulting",
+      "Courses, programmes or digital products",
+      "Agency or done-for-you services",
+      "Software or a product",
+      "Physical products or retail",
+      "Something else (tell us)"
+     ],
+     "why": "Decides which examples and skill packs we build first. A coach's company brain and an agency's company brain hold different things."
+    },
+    {
+     "n": 3,
+     "text": "Tell us about a recent week when everything came back to you. What happened, and how did you feel by Friday?",
+     "type": "Open text",
+     "step": "Acknowledge",
+     "required": true,
+     "why": "The first real question names the feeling before we ask for anything. People cannot think about a curriculum while the frustration is unspoken; asked this way, the frustration becomes the data. The phrases here become the opening of the summit and the sales page."
+    },
+    {
+     "n": 4,
+     "text": "In a normal week, how many hours does your business need you personally to keep running?",
+     "type": "Single choice",
+     "step": "Acknowledge",
+     "required": true,
+     "options": [
+      "Under 20",
+      "20 to 40",
+      "40 to 60",
+      "More than 60",
+      "I honestly do not know"
+     ],
+     "why": "The before picture. The whole programme is measured against the founder load map, and this is the first rough reading of it across the community."
+    }
+   ]
+  },
+  {
+   "id": "tried",
+   "title": "Part 2 · What you have tried",
+   "step": "Get curious",
+   "lead": "No judgement here. We learn more from what went wrong than from what went right.",
    "questions": [
-    {"n": 5, "text": "Walk us through the last time you tried to hand something to AI, or to a person. What did you hope would happen, and what actually happened?", "type": "Open text", "step": "Get curious", "required": true,
-     "why": "A story, not an opinion. The gap between hoped and happened is the knowledge gap or the application gap, in their words. This is where we learn whether the problem is knowing what to do or getting it to stick."},
-    {"n": 6, "text": "What has stopped you going further with AI in your business? Say it the way you would say it to a friend.", "type": "Open text", "step": "Get curious", "required": true,
-     "why": "The blocker, uncoded. Asking for the friend version lowers the guard and gets the real reason (trust, time, fear of sounding like a robot, a bad first try) rather than the respectable one."},
-    {"n": 7, "text": "Which of these still have to go through you? Tick everything that applies, then tell us the one you would most like off your desk first.", "type": "Multiple choice, then one pick", "step": "Get curious", "required": true,
-     "options": ["Content and social media", "Finding leads and following them up", "Sales calls and proposals", "Client delivery and client questions", "Admin: inbox, invoices, scheduling", "Hiring, managing and delegating", "The numbers and cash decisions", "Deciding what to build or sell next"],
-     "why": "The eight options are the eight modules in plain words and in no particular order. The tick pattern weights the pillars by founder type; the one pick tests the module order. For solo founders the hiring line reads delegating to contractors or AI."}
-   ]},
-  {"id": "outline", "title": "Part 3 · The outline", "step": "Get curious", "lead": "Read the draft outline (shown here and linked) and tell us what you think. Nothing in it is fixed.",
+    {
+     "n": 5,
+     "text": "Walk us through the last time you tried to hand something to AI, or to a person. What did you hope would happen, and what actually happened?",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": true,
+     "why": "A story, not an opinion. The gap between hoped and happened is the knowledge gap or the application gap, in their words. This is where we learn whether the problem is knowing what to do or getting it to stick."
+    },
+    {
+     "n": 6,
+     "text": "What has stopped you going further with AI in your business? Say it the way you would say it to a friend.",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": true,
+     "why": "The blocker, uncoded. Asking for the friend version lowers the guard and gets the real reason (trust, time, fear of sounding like a robot, a bad first try) rather than the respectable one."
+    },
+    {
+     "n": 7,
+     "text": "Which of these still have to go through you? Tick everything that applies, then tell us the one you would most like off your desk first.",
+     "type": "Multiple choice, then one pick",
+     "step": "Get curious",
+     "required": true,
+     "options": [
+      "Content and social media",
+      "Finding leads and following them up",
+      "Sales calls and proposals",
+      "Client delivery and client questions",
+      "Admin: inbox, invoices, scheduling",
+      "Hiring, managing and delegating",
+      "The numbers and cash decisions",
+      "Deciding what to build or sell next"
+     ],
+     "why": "The eight options are the eight modules in plain words and in no particular order. The tick pattern weights the pillars by founder type; the one pick tests the module order. For solo founders the hiring line reads delegating to contractors or AI."
+    }
+   ]
+  },
+  {
+   "id": "outline",
+   "title": "Part 3 · The outline",
+   "step": "Get curious",
+   "lead": "Read the draft outline (shown here and linked) and tell us what you think. Nothing in it is fixed.",
    "questions": [
-    {"n": 8, "text": "For each of the eight modules, how much do you need it?", "type": "Grid, one answer per row", "step": "Get curious", "required": true,
-     "rows": ["Strategy: find the bottleneck", "Company brain", "Marketing", "Sales", "Operations and delivery", "Team: people and AI", "Finance and the founder's cockpit", "Product and scale"],
-     "scale": ["Already handled", "Nice to have", "Need it", "Need it urgently"],
-     "why": "The one quantitative read on the outline. A four-point scale with no midpoint, so everyone leans one way. The share answering need it or urgently becomes each module's need index, by founder type."},
-    {"n": 9, "text": "Reading the outline, where did you think: that is exactly my problem? And where did you think: that is not how it is for me?", "type": "Open text", "step": "Get curious", "required": true,
-     "why": "Two-sided on purpose. The first half gives marketing the hooks in the audience's words; the second half tells the curriculum where a lesson is framed for someone else."},
-    {"n": 10, "text": "What problem in your business is nowhere in this outline?", "type": "Open text", "step": "Get curious", "required": true,
-     "why": "The gap question, asked as a problem rather than a topic. Every answer is logged; the recurring ones become the change log in version two."},
-    {"n": 11, "text": "Where would you want us to go deeper, and what would deeper look like for you?", "type": "Open text", "step": "Get curious", "required": false,
-     "why": "Depth, with a definition. Deeper means different things: more time, more hand-holding, a template, a live build on their business. The second half tells us which."},
-    {"n": 12, "text": "What would you skip, and why?", "type": "Open text", "step": "Get curious", "required": false,
-     "why": "Permission to cut. Sixteen weeks is long; the why separates already handled from do not believe it works."}
-   ]},
-  {"id": "teachers", "title": "Part 4 · Who you learn from", "step": "Get curious", "lead": "Two questions about people. No names are promised; we want to understand what works for you.",
+    {
+     "n": 8,
+     "text": "For each of the eight modules, how much do you need it?",
+     "type": "Grid, one answer per row",
+     "step": "Get curious",
+     "required": true,
+     "rows": [
+      "Strategy: find the bottleneck",
+      "Company brain",
+      "Marketing",
+      "Sales",
+      "Operations and delivery",
+      "Team: people and AI",
+      "Finance and the founder's cockpit",
+      "Product and scale"
+     ],
+     "scale": [
+      "Already handled",
+      "Nice to have",
+      "Need it",
+      "Need it urgently"
+     ],
+     "why": "The one quantitative read on the outline. A four-point scale with no midpoint, so everyone leans one way. The share answering need it or urgently becomes each module's need index, by founder type."
+    },
+    {
+     "n": 9,
+     "text": "Reading the outline, where did you think: that is exactly my problem? And where did you think: that is not how it is for me?",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": true,
+     "why": "Two-sided on purpose. The first half gives marketing the hooks in the audience's words; the second half tells the curriculum where a lesson is framed for someone else."
+    },
+    {
+     "n": 10,
+     "text": "What problem in your business is nowhere in this outline?",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": true,
+     "why": "The gap question, asked as a problem rather than a topic. Every answer is logged; the recurring ones become the change log in version two."
+    },
+    {
+     "n": 11,
+     "text": "Where would you want us to go deeper, and what would deeper look like for you?",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": false,
+     "why": "Depth, with a definition. Deeper means different things: more time, more hand-holding, a template, a live build on their business. The second half tells us which."
+    },
+    {
+     "n": 12,
+     "text": "What would you skip, and why?",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": false,
+     "why": "Permission to cut. Sixteen weeks is long; the why separates already handled from do not believe it works."
+    }
+   ]
+  },
+  {
+   "id": "teachers",
+   "title": "Part 4 · Who you learn from",
+   "step": "Get curious",
+   "lead": "Two questions about people. No names are promised; we want to understand what works for you.",
    "questions": [
-    {"n": 13, "text": "Who have you learned the most from about running a business, with AI or without, inside Mindvalley or outside? What is it about how they teach that works for you?", "type": "Open text", "step": "Get curious", "required": true,
-     "why": "Vishen's which teachers question, asked open. Names tell marketing which voices this audience already trusts; the second half tells the curriculum what teaching style to brief every guest on. Open, not a list, so nobody is promised and names we have not thought of can surface."},
-    {"n": 14, "text": "Is there anyone you would want in the room for this programme? Tell us who, and why them.", "type": "Open text", "step": "Get curious", "required": false,
-     "why": "A wish list, framed as a question rather than a vote. The why matters more than the name: it tells us what the person represents (proof, warmth, a method) so we can look for it in whoever we confirm."}
-   ]},
-  {"id": "build", "title": "Part 5 · Building it together", "step": "Build together", "lead": "Now the part that makes this a conversation rather than a form.",
+    {
+     "n": 13,
+     "text": "Who have you learned the most from about running a business, with AI or without, inside Mindvalley or outside? What is it about how they teach that works for you?",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": true,
+     "why": "Vishen's which teachers question, asked open. Names tell marketing which voices this audience already trusts; the second half tells the curriculum what teaching style to brief every guest on. Open, not a list, so nobody is promised and names we have not thought of can surface."
+    },
+    {
+     "n": 14,
+     "text": "Is there anyone you would want in the room for this programme? Tell us who, and why them.",
+     "type": "Open text",
+     "step": "Get curious",
+     "required": false,
+     "why": "A wish list, framed as a question rather than a vote. The why matters more than the name: it tells us what the person represents (proof, warmth, a method) so we can look for it in whoever we confirm."
+    }
+   ]
+  },
+  {
+   "id": "build",
+   "title": "Part 5 · Building it together",
+   "step": "Build together",
+   "lead": "Now the part that makes this a conversation rather than a form.",
    "questions": [
-    {"n": 15, "text": "If we built this together, what would need to be true in March for you to say the sixteen weeks were worth it?", "type": "Open text", "step": "Build together", "required": true,
-     "why": "The promise, in their words and their timeframe. We promise hours back, every lead answered and a business designed around AI; this tells us whether that is what they are buying, and the phrases become the sales page."},
-    {"n": 16, "text": "What do you suspect you do not know yet, that a founder running on AI should know?", "type": "Open text", "step": "Build together", "required": false,
-     "why": "Vishen's what they do not know they should know, asked directly. Answers here are the unprogrammed worries, the ones the quiz could not reach because nobody can tick a box for a thing they cannot name."},
-    {"n": 17, "text": "How will you most likely take part, and which live times could you make?", "type": "Single choice plus multiple choice", "step": "Build together", "required": true,
-     "options": ["Live every week", "Live when I can, recordings otherwise", "Mostly recordings", "Times: 7am Pacific (10am New York, 3pm London)", "Times: 9am Pacific (noon New York, 5pm London)", "Times: a US evening", "Times: none of these"],
-     "why": "Availability, not a promise. The slot is set at 7am Pacific for team capacity; attendance data from five Masteries says the hour does not move turnout. This tells us how many will be live and how many will watch back, which shapes the labs."},
-    {"n": 18, "text": "Would you like to be part of the founding circle that shapes version two?", "type": "Multiple choice", "step": "Build together", "required": true,
-     "options": ["Review version two before it is published", "Test one system in my own business and report back", "Share my founder load map, anonymised, as an example", "Be quoted, first name and business type, in the curriculum", "Join a 45-minute group call with the curriculum team", "Not this time, just keep me posted"],
-     "why": "The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others."},
-    {"n": 19, "text": "Anything else you want the people building this to know?", "type": "Open text", "step": "Build together", "required": false,
-     "why": "The door left open. The most useful answer in a survey is often to the question nobody asked."},
-    {"n": 20, "text": "May we follow up with you on your answers?", "type": "Yes or no, with email pre-filled", "step": "Build together", "required": true,
-     "options": ["Yes", "No, use my answers but do not contact me about them"],
-     "why": "Consent, and the join to the quiz and summit records. Pre-filling the email from the campaign link removes the one field that costs completions."}
-   ]}
+    {
+     "n": 15,
+     "text": "If we built this together, what would need to be true in March for you to say the sixteen weeks were worth it?",
+     "type": "Open text",
+     "step": "Build together",
+     "required": true,
+     "why": "The promise, in their words and their timeframe. We promise hours back, every lead answered and a business designed around AI; this tells us whether that is what they are buying, and the phrases become the sales page."
+    },
+    {
+     "n": 16,
+     "text": "What do you suspect you do not know yet, that a founder running on AI should know?",
+     "type": "Open text",
+     "step": "Build together",
+     "required": false,
+     "why": "Vishen's what they do not know they should know, asked directly. Answers here are the unprogrammed worries, the ones the quiz could not reach because nobody can tick a box for a thing they cannot name."
+    },
+    {
+     "n": 17,
+     "text": "Would you like to be part of the founding circle that shapes version two?",
+     "type": "Multiple choice",
+     "step": "Build together",
+     "required": true,
+     "options": [
+      "Review version two before it is published",
+      "Test one system in my own business and report back",
+      "Share my founder load map, anonymised, as an example",
+      "Be quoted, first name and business type, in the curriculum",
+      "Join a 45-minute group call with the curriculum team",
+      "Not this time, just keep me posted"
+     ],
+     "why": "The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others."
+    },
+    {
+     "n": 18,
+     "text": "Anything else you want the people building this to know?",
+     "type": "Open text",
+     "step": "Build together",
+     "required": false,
+     "why": "The door left open. The most useful answer in a survey is often to the question nobody asked."
+    },
+    {
+     "n": 19,
+     "text": "May we follow up with you on your answers?",
+     "type": "Yes or no, with email pre-filled",
+     "step": "Build together",
+     "required": true,
+     "options": [
+      "Yes",
+      "No, use my answers but do not contact me about them"
+     ],
+     "why": "Consent, and the join to the quiz and summit records. Pre-filling the email from the campaign link removes the one field that costs completions."
+    }
+   ]
+  }
  ],
  "thanks": "Thank you. Your answers go straight to the people writing the curriculum, and they are read in full. Version two of the outline is published on [date], with every change marked, so you can see what moved because of you. If you asked to join the founding circle you will hear from us within a week. The AI for Founders Summit runs 30 October to 1 November; your seat is saved at [link].",
  "design_notes": [
-  "Length: about ten minutes. Twenty questions, twelve of them open; ten required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.",
+  "Length: about ten minutes. Nineteen questions, twelve of them open; nine required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.",
   "Order follows Compassionate Curiosity: acknowledge (part 1), get curious (parts 2 to 4), build together (part 5). The feeling is asked for before any opinion about us; the commitment comes last, once they have already invested.",
   "Open questions ask for a story or a specific, never a rating in words: a recent week, the last time you tried, what would deeper look like, what would need to be true in March. Specifics are quotable; opinions are not.",
   "Closed questions do two jobs only: segment (1, 2, 4) and give one quantitative read on the outline (7, 8). Everything else is written in their words.",
@@ -89,7 +302,8 @@
   "Branching: question 1 sets the wording of question 7. The outline is shown inline before question 8 so nobody leaves the form.",
   "Incentive is recognition, not a prize: early sight of version two, a named place in the thank-you section, the founding circle.",
   "Send on a Tuesday, remind on Friday, close the following Tuesday. One reminder, to non-openers and partial completions only.",
-  "Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then."
+  "Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then.",
+  "No question about the time slot: it is set at 7am Pacific for team capacity, and asking would imply a choice people do not have. The invitation says live when you can, recording when you cannot."
  ],
  "analysis": [
   "Segment every answer by founder type (question 1) and what they sell (question 2). The draft already runs two tracks; this tells us whether two is enough.",
@@ -97,8 +311,8 @@
   "Module need index: the share answering need it or need it urgently on question 8, by segment, read against question 7 to test the module order.",
   "Gaps and depth: questions 10 to 12 become the version two change log, with a rough count beside each change.",
   "Teachers: questions 13 and 14 produce two lists, names and teaching qualities. The qualities brief every guest; the names go to the summit and Mastery roster conversation, not to the page.",
-  "Format: question 17 sets lab design and tells us the live-to-recording split to plan for.",
-  "Founding circle: everyone who ticks an active option in question 18 goes on a list with their answers attached. They see version two first.",
+  "Format: the slot is set at 7am Pacific for team capacity; people are encouraged to be live and to watch the recording when they cannot. No question asks about it, because they have no control over it.",
+  "Founding circle: everyone who ticks an active option in question 17 goes on a list with their answers attached. They see version two first.",
   "Version two is published with a change log that credits the survey: what moved, and roughly how many people asked for it."
  ]
 }

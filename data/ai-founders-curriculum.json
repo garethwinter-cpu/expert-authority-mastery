@@ -87,7 +87,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T09:04:46Z",
+ "synced_at": "2026-10-07T09:08:54Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
  "slot": {
@@ -102,7 +102,7 @@
  "survey": {
   "title": "Help us build AI for Founders",
   "intro": "About ten minutes, and most of it is writing, not ticking. We are drafting a sixteen-week programme for founders whose business still runs through them, and before we decide who teaches what, we want to know whether we are teaching the right things. So this asks about your week before it asks about our outline, and it asks you to answer in your own words. Your answers go to the people writing the curriculum, not to a dashboard. Version two is published with the changes marked, so you can see what moved because of you.",
-  "length": "About 10 minutes · 20 questions · 12 open · answer the ones that speak to you",
+  "length": "About 10 minutes · 19 questions · 12 open · answer the ones that speak to you",
   "method": "The survey runs on Compassionate Curiosity, Kwame Christian's three-step frame for conversations where someone wants something: acknowledge and validate the feeling, get curious with compassion, then solve the problem together. Part one lets people name what the week feels like before we ask anything about us. Parts two to four ask open questions in a warm register, for stories and specifics rather than opinions. Part five turns the conversation into joint problem solving: what would need to be true in March, who should be in the room, and how far they want to go with us. People value what they help build, so the last part is the point, not an afterthought.",
   "brief_map": [
    {
@@ -131,7 +131,7 @@
    },
    {
     "ask": "Serves marketing as well as curriculum.",
-    "how": "Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 18 builds the founding circle list."
+    "how": "Question 9 and question 15 give the language for the summit and the sales page in the audience's own words; question 13 tells marketing which voices this audience already trusts; question 17 builds the founding circle list."
    },
    {
     "ask": "A reusable model.",
@@ -356,23 +356,6 @@
      },
      {
       "n": 17,
-      "text": "How will you most likely take part, and which live times could you make?",
-      "type": "Single choice plus multiple choice",
-      "step": "Build together",
-      "required": true,
-      "options": [
-       "Live every week",
-       "Live when I can, recordings otherwise",
-       "Mostly recordings",
-       "Times: 7am Pacific (10am New York, 3pm London)",
-       "Times: 9am Pacific (noon New York, 5pm London)",
-       "Times: a US evening",
-       "Times: none of these"
-      ],
-      "why": "Availability, not a promise. The slot is set at 7am Pacific for team capacity; attendance data from five Masteries says the hour does not move turnout. This tells us how many will be live and how many will watch back, which shapes the labs."
-     },
-     {
-      "n": 18,
       "text": "Would you like to be part of the founding circle that shapes version two?",
       "type": "Multiple choice",
       "step": "Build together",
@@ -388,7 +371,7 @@
       "why": "The commitment question. Everyone who ticks anything but the last option has put something in, and the list becomes the founding circle: the people most likely to enrol and most likely to tell others."
      },
      {
-      "n": 19,
+      "n": 18,
       "text": "Anything else you want the people building this to know?",
       "type": "Open text",
       "step": "Build together",
@@ -396,7 +379,7 @@
       "why": "The door left open. The most useful answer in a survey is often to the question nobody asked."
      },
      {
-      "n": 20,
+      "n": 19,
       "text": "May we follow up with you on your answers?",
       "type": "Yes or no, with email pre-filled",
       "step": "Build together",
@@ -412,7 +395,7 @@
   ],
   "thanks": "Thank you. Your answers go straight to the people writing the curriculum, and they are read in full. Version two of the outline is published on [date], with every change marked, so you can see what moved because of you. If you asked to join the founding circle you will hear from us within a week. The AI for Founders Summit runs 30 October to 1 November; your seat is saved at [link].",
   "design_notes": [
-   "Length: about ten minutes. Twenty questions, twelve of them open; ten required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.",
+   "Length: about ten minutes. Nineteen questions, twelve of them open; nine required. The intro says answer the ones that speak to you, so a half-finished survey still gives us parts one and two.",
    "Order follows Compassionate Curiosity: acknowledge (part 1), get curious (parts 2 to 4), build together (part 5). The feeling is asked for before any opinion about us; the commitment comes last, once they have already invested.",
    "Open questions ask for a story or a specific, never a rating in words: a recent week, the last time you tried, what would deeper look like, what would need to be true in March. Specifics are quotable; opinions are not.",
    "Closed questions do two jobs only: segment (1, 2, 4) and give one quantitative read on the outline (7, 8). Everything else is written in their words.",
@@ -420,7 +403,8 @@
    "Branching: question 1 sets the wording of question 7. The outline is shown inline before question 8 so nobody leaves the form.",
    "Incentive is recognition, not a prize: early sight of version two, a named place in the thank-you section, the founding circle.",
    "Send on a Tuesday, remind on Friday, close the following Tuesday. One reminder, to non-openers and partial completions only.",
-   "Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then."
+   "Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then.",
+   "No question about the time slot: it is set at 7am Pacific for team capacity, and asking would imply a choice people do not have. The invitation says live when you can, recording when you cannot."
   ],
   "analysis": [
    "Segment every answer by founder type (question 1) and what they sell (question 2). The draft already runs two tracks; this tells us whether two is enough.",
@@ -428,8 +412,8 @@
    "Module need index: the share answering need it or need it urgently on question 8, by segment, read against question 7 to test the module order.",
    "Gaps and depth: questions 10 to 12 become the version two change log, with a rough count beside each change.",
    "Teachers: questions 13 and 14 produce two lists, names and teaching qualities. The qualities brief every guest; the names go to the summit and Mastery roster conversation, not to the page.",
-   "Format: question 17 sets lab design and tells us the live-to-recording split to plan for.",
-   "Founding circle: everyone who ticks an active option in question 18 goes on a list with their answers attached. They see version two first.",
+   "Format: the slot is set at 7am Pacific for team capacity; people are encouraged to be live and to watch the recording when they cannot. No question asks about it, because they have no control over it.",
+   "Founding circle: everyone who ticks an active option in question 17 goes on a list with their answers attached. They see version two first.",
    "Version two is published with a change log that credits the survey: what moved, and roughly how many people asked for it."
   ],
   "url": null,
