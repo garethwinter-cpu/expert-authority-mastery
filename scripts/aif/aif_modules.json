@@ -25,7 +25,8 @@
      "type": "lesson",
      "who": "Vykintas",
      "title": "Your Founder Load Map",
-     "text": "Where do your hours actually go? The load map is the instrument the whole programme is measured against: every lead, proposal, client question and decision that waits for you, logged for one week. Vykintas teaches how to read it, how to rank each workflow by what AI would give back, and the test for what stays human. This is also the before picture: how many hours a week your business needs you today."
+     "text": "Where do your hours actually go? The load map is the instrument the whole programme is measured against: every lead, proposal, client question and decision that waits for you, logged for one week. Vykintas teaches how to read it, how to rank each workflow by what AI would give back, and the test for what stays human. This is also the before picture: how many hours a week your business needs you today.",
+     "brief": "Where your hours actually go. One week of every lead, proposal, client question and decision that waits for you, logged and ranked by what AI would give back, with a test for what should stay human. The before picture the whole programme is measured against."
     },
     {
      "week": 1,
@@ -40,7 +41,8 @@
      "type": "lesson",
      "who": "Nate Herk",
      "title": "What to Hand to AI First",
-     "text": "Nate was a spreadsheet analyst with no coding background; within a year he ran an AI agency serving brands like Topgolf and BarkBox. Most founders try to automate everything at once and stall. He teaches how AI-native founders think instead: start with the few workflows that quietly drain a small team every week, hand those over, and only then widen. The management idea for the whole programme: AI first, then people for what only people do."
+     "text": "Nate was a spreadsheet analyst with no coding background; within a year he ran an AI agency serving brands like Topgolf and BarkBox. Most founders try to automate everything at once and stall. He teaches how AI-native founders think instead: start with the few workflows that quietly drain a small team every week, hand those over, and only then widen. The management idea for the whole programme: AI first, then people for what only people do.",
+     "brief": "Why founders who try to automate everything at once stall, and how AI-native founders think instead: hand over the few workflows that quietly drain a small team every week, then widen. AI first, then people for what only people do."
     },
     {
      "week": 2,
@@ -69,7 +71,8 @@
      "type": "lesson",
      "who": "Vykintas",
      "title": "The Company Brain",
-     "text": "From a personal AI memory to the company's: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar after this one runs on, then builds it with you two days later."
+     "text": "From a personal AI memory to the company's: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar after this one runs on, then builds it with you two days later.",
+     "brief": "From a personal AI memory to the company’s: mission, offers, customers, voice, numbers, processes and the decisions already made, in one governed place every tool and every team member reads."
     },
     {
      "week": 3,
@@ -84,7 +87,8 @@
      "type": "lesson",
      "who": "Noelle Russell",
      "title": "What Goes In, and What Never Does",
-     "text": "Data safety was the question the $100K+ founders in the quiz asked most. Noelle brings enterprise AI governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The management idea is simple: a brain the team uses has to be a brain you would show a lawyer."
+     "text": "Data safety was the question the $100K+ founders in the quiz asked most. Noelle brings enterprise AI governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The management idea is simple: a brain the team uses has to be a brain you would show a lawyer.",
+     "brief": "Data safety for a small company: which models and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. A brain the team uses has to be one you would show a lawyer."
     },
     {
      "week": 4,
@@ -113,7 +117,8 @@
      "type": "lesson",
      "who": "Sabrina Ramonov",
      "title": "The One-Person Marketing Team",
-     "text": "Sabrina sold her first AI company, then grew to more than three million followers in 24 months with no funding, no ads and no team. She teaches how one person now matches the output of a twenty-person marketing team with agents, what she still does herself, and what she never hands over. Content is the solo founder's biggest time-eater in the quiz, and this is the week it stops being one."
+     "text": "Sabrina sold her first AI company, then grew to more than three million followers in 24 months with no funding, no ads and no team. She teaches how one person now matches the output of a twenty-person marketing team with agents, what she still does herself, and what she never hands over. Content is the solo founder's biggest time-eater in the quiz, and this is the week it stops being one.",
+     "brief": "How one person now matches the output of a large marketing team with agents, what still gets done by hand, and what never gets handed over. The week content stops eating the founder’s time."
     },
     {
      "week": 5,
@@ -128,7 +133,8 @@
      "type": "lesson",
      "who": "Ruben Hassid",
      "title": "From Content to a List",
-     "text": "Content that nobody captures is a hobby. Ruben built EasyGen and grew a founder audience on LinkedIn with AI doing the drafting; he teaches the distribution layer: which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell. Marketing's second half: not more content, a list that grows while you work."
+     "text": "Content that nobody captures is a hobby. Ruben built EasyGen and grew a founder audience on LinkedIn with AI doing the drafting; he teaches the distribution layer: which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell. Marketing's second half: not more content, a list that grows while you work.",
+     "brief": "Content nobody captures is a hobby. Which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell."
     },
     {
      "week": 6,
@@ -157,7 +163,8 @@
      "type": "lesson",
      "who": "Liam Ottley",
      "title": "The Lead That Never Goes Cold",
-     "text": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Liam builds these systems inside real small businesses every week: research the lead, qualify it, reply in the founder's voice, book the call. He teaches where automation lifts conversion and the exact moments where it kills trust and a human has to step in."
+     "text": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Liam builds these systems inside real small businesses every week: research the lead, qualify it, reply in the founder's voice, book the call. He teaches where automation lifts conversion and the exact moments where it kills trust and a human has to step in.",
+     "brief": "Answering a lead within the hour changes whether it converts. Research, qualification, a reply in your voice and a booked call, with the exact moments where automation would kill trust and a human steps in."
     },
     {
      "week": 7,
@@ -172,7 +179,8 @@
      "type": "lesson",
      "who": "Nick Saraev",
      "title": "Outbound on Autopilot",
-     "text": "Finding the next client is the job most founders still do alone. Nick builds outbound and lead systems for a living: AI finds the right prospects, writes to them one by one, and books the calls, so the pipeline keeps filling while the founder delivers. The management idea: sales as a system the founder reviews, not a task the founder performs."
+     "text": "Finding the next client is the job most founders still do alone. Nick builds outbound and lead systems for a living: AI finds the right prospects, writes to them one by one, and books the calls, so the pipeline keeps filling while the founder delivers. The management idea: sales as a system the founder reviews, not a task the founder performs.",
+     "brief": "Finding the next client is the job most founders still do alone. AI finds the right prospects, writes to them one by one and books the calls, so the pipeline fills while you deliver. Sales as a system you review, not a task you perform."
     },
     {
      "week": 8,
@@ -201,7 +209,8 @@
      "type": "lesson",
      "who": "Noelle Russell",
      "title": "Delivery Agents and the Customer Experience",
-     "text": "One agent, one job. Noelle walks through one founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The management idea: clients should get the good version of your business whether or not you are in the room."
+     "text": "One agent, one job. Noelle walks through one founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The management idea: clients should get the good version of your business whether or not you are in the room.",
+     "brief": "One agent, one job. A founder’s delivery running on AI end to end: onboarding, fulfilment support and service workflows, each with the human checkpoint kept where trust lives. Clients get the good version of your business whether or not you are in the room."
     },
     {
      "week": 9,
@@ -216,7 +225,8 @@
      "type": "lesson",
      "who": "Nate Herk",
      "title": "The Operations Brain",
-     "text": "SOPs become skills. Meetings become operations data. Nate teaches the orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first; this is where it is."
+     "text": "SOPs become skills. Meetings become operations data. Nate teaches the orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first; this is where it is.",
+     "brief": "Standard procedures become skills, meetings become operations data. The orchestration layer founders skip: scheduled runs, multi-step automations, and the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step."
     },
     {
      "week": 10,
@@ -245,7 +255,8 @@
      "type": "lesson",
      "who": "Callan Faulkner",
      "title": "Hiring Your First AI Employees",
-     "text": "Callan runs 150 AI employees alongside a thirty-person human team, with nobody let go. She teaches the question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI?"
+     "text": "Callan runs 150 AI employees alongside a thirty-person human team, with nobody let go. She teaches the question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI?",
+     "brief": "Once the systems exist, who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real question: me, a contractor, or AI?"
     },
     {
      "week": 11,
@@ -260,7 +271,8 @@
      "type": "lesson",
      "who": "Alex Dogliotti",
      "title": "How Mindvalley's Team Works With Agents",
-     "text": "Mindvalley's COO and CHRO, and author of Replaced by AI, on the org chart after AI: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size."
+     "text": "Mindvalley's COO and CHRO, and author of Replaced by AI, on the org chart after AI: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size.",
+     "brief": "The org chart after AI, from inside a company that has done it: where agents sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI, not less."
     },
     {
      "week": 12,
@@ -289,7 +301,8 @@
      "type": "lesson",
      "who": "Shawn Kanungo",
      "title": "The Finance Cockpit",
-     "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational. The management idea: decide from numbers that arrive on Monday, not from the accountant's summary in April."
+     "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational. The management idea: decide from numbers that arrive on Monday, not from the accountant's summary in April.",
+     "brief": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts and a weekly brief. Decide from numbers that arrive on Monday, not from the accountant’s summary in April."
     },
     {
      "week": 13,
@@ -304,7 +317,8 @@
      "type": "lesson",
      "who": "Vishen",
      "title": "The Orchestrator's Week",
-     "text": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on."
+     "text": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on.",
+     "brief": "The week of a founder whose systems run: the weekly brief, decision memos instead of meetings, and how priorities, energy and focus are managed when you lead rather than do."
     },
     {
      "week": 14,
@@ -333,7 +347,8 @@
      "type": "lesson",
      "who": "Matt Gray",
      "title": "The Founder Operating Rhythm",
-     "text": "Matt built Founder OS on exactly this question: what to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves."
+     "text": "Matt built Founder OS on exactly this question: what to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves.",
+     "brief": "What to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research through the brain, an operating rhythm that replaces heroics, and a company designed around the systems rather than around you."
     },
     {
      "week": 15,
@@ -348,7 +363,8 @@
      "type": "graduation",
      "who": "Vishen + Vykintas",
      "title": "A Company Designed Around AI: Your Next 12 Months",
-     "text": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business."
+     "text": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business.",
+     "brief": "The load map from Week 1 measured again: the hours the business needs you now against then. The next twelve months designed, and certification on your Founder Operating System running in your business."
     },
     {
      "week": 16,

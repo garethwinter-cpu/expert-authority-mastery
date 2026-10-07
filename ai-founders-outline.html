@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI for Founders: Curriculum Outline</title>
+<link rel="icon" type="image/svg+xml" href="/favicon-aif.svg"><link rel="alternate icon" type="image/png" sizes="32x32" href="/favicon-aif-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-aif.png">
+<meta name="description" content="AI for Founders Mastery, the curriculum outline: eight modules, the lesson and the lab in each, and one line on what every lesson teaches. The draft we are asking the community to shape.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/wellness.css">
+<style>
+:root{--brand:#3D63F5;--brand-bright:#5B7CFF;--brand-content:#1832B4;--brand-dark:#0F1F7A;--brand-light:#EEF2FF;--brand-border:#D6DEFF;--dusk:linear-gradient(135deg,#0F1F7A 0%,#1832B4 55%,#3D63F5 100%)}
+.hero::after{background:radial-gradient(circle,rgba(157,180,255,.35),transparent 66%)}
+.hero .answer{color:#D6DEFF} .hero .overline{color:#B8C7FF}
+.sub{position:sticky;top:60px;z-index:50;border-bottom:1px solid var(--border);background:rgba(255,255,255,.95);backdrop-filter:blur(10px)} .sub .wrap{display:flex;gap:4px;flex-wrap:wrap;padding-top:6px;padding-bottom:6px} .sub a{font-size:13px;font-weight:600;color:var(--text-muted);padding:6px 12px;border-radius:128px} .sub a.on{background:var(--brand-light);color:var(--brand-content)} .sub a:hover{color:var(--brand-content)}
+main{padding:48px 0 20px;max-width:860px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px} .btn{display:inline-flex;align-items:center;border-radius:128px;padding:12px 22px;font-weight:700;font-size:15px} .btn.p{background:#fff;color:var(--brand-content)} .btn.g{border:1px solid rgba(255,255,255,.45);color:#fff}
+.lede{font-size:17px;line-height:1.6;color:var(--text-muted);margin-bottom:36px}
+.mod{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:28px 0;border-top:1px solid var(--border)} .mod:last-of-type{border-bottom:1px solid var(--border)}
+.mnum{width:48px;height:48px;border-radius:14px;background:var(--brand-light);color:var(--brand-content);font-weight:700;font-size:18px;display:flex;align-items:center;justify-content:center}
+.mod h2{font-size:22px;line-height:1.25;margin:0} .mod .prob{font-size:15px;color:var(--text-subtle);font-style:italic;margin:4px 0 14px}
+.pair{display:grid;gap:14px} .item{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start}
+.item .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--brand-content);background:var(--brand-light);border-radius:128px;padding:4px 10px;justify-self:start;margin-top:2px} .item.lab .k{background:var(--brand-content);color:#fff}
+.item h3{font-size:16.5px;line-height:1.35;margin:0;color:var(--ink)} .item p{font-size:15px;line-height:1.55;color:var(--text-muted);margin-top:4px}
+.ask{margin-top:40px;border-radius:16px;background:var(--brand-light);border:1px solid var(--brand-border);padding:26px 28px} .ask h2{font-size:20px;margin-bottom:10px} .ask ol{margin:10px 0 0 20px;display:grid;gap:8px;font-size:15.5px;color:var(--ink)} .ask .note{margin-top:16px;font-size:14px;color:var(--text-muted)}
+.ask .btn.p{background:var(--brand-content);color:#fff;margin-top:16px}
+@media(max-width:640px){.mod{grid-template-columns:1fr}.mnum{width:40px;height:40px;font-size:15px}.item{grid-template-columns:1fr}.item .k{margin-bottom:-6px}}
+</style>
+</head>
+<body>
+<div class="topbar"><div class="wrap"><div class="wordmark">Mindvalley <span>×</span> AI for Founders</div><div class="meta" id="meta"></div></div></div>
+<nav class="sub"><div class="wrap"><a href="/ai-founders">Home</a><a href="/ai-founders/curriculum">Curriculum</a><a class="on" href="/ai-founders/outline">Curriculum Outline</a><a href="/ai-founders/proposal">Proposal</a><a href="/positioning">Positioning</a><a href="/">All proposals</a></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="badges"><span class="badge dark">Mastery</span><span class="badge dark">Draft, open for your feedback</span></div>
+  <div class="overline">Run on AI</div>
+  <h1>The curriculum outline</h1>
+  <p class="answer"><strong>Sixteen weeks, eight modules, one pillar of the business each.</strong> Every module has a lesson, the idea, and a lab, where the system is installed in your own business. This is the draft before it is finished. Read it as a partner: tell us what is missing, where to go deeper, and what you would skip.</p>
+  <div class="cta-row"><a class="btn p" href="#ask">Tell us what to change</a></div>
+</div></header>
+
+<main class="wrap">
+  <p class="lede" id="lede"></p>
+  <div id="mods"></div>
+  <section class="ask" id="ask">
+    <h2>Three questions for you</h2>
+    <ol><li>What is missing that you expected to see?</li><li>Where should we go deeper?</li><li>What would you skip?</li></ol>
+    <div id="survey"></div>
+  </section>
+</main>
+<footer><div class="wrap"><div>AI for Founders Mastery, a Mindvalley programme. Who teaches each lesson, and when, is decided after this round of feedback.</div><div>Built by Gareth Winter</div></div></footer>
+
+<script id="curriculum" type="application/json">__CURRICULUM_JSON__</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('curriculum').textContent);
+  var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+  var byId = {}; D.sessions.forEach(function(s){ byId[s.id] = s; });
+  var pad = function(w){ return String(w).padStart(2,'0'); };
+  document.getElementById('meta').textContent = 'Draft for feedback · ' + new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}).format(new Date(D.synced_at));
+  var lessons = D.sessions.filter(function(s){ return s.type==='Lesson' || s.type==='Graduation'; }).length;
+  document.getElementById('lede').textContent = D.modules.length + ' modules, ' + lessons + ' weeks. Each week pairs a lesson with a lab. The lesson gives you the idea; the lab leaves a system running in your business by the end of the call. Teachers and dates are not on this page on purpose: we want your view on what we teach before we settle who teaches it.';
+  document.getElementById('mods').innerHTML = D.modules.map(function(m){
+    var items = (m.weeks||[]).map(function(w){
+      var L = byId['aif-w'+pad(w)+'-lesson'], B = byId['aif-w'+pad(w)+'-lab'], out = '';
+      if (L) out += '<div class="item"><span class="k">'+(L.type==='Graduation'?'Graduation':'Lesson')+'</span><div><h3>'+esc(L.title)+'</h3>'+(L.brief ? '<p>'+esc(L.brief)+'</p>' : '')+'</div></div>';
+      if (B) out += '<div class="item lab"><span class="k">Lab</span><div><h3>'+esc(B.title)+'</h3></div></div>';
+      return out;
+    }).join('');
+    return '<section class="mod"><div class="mnum">'+m.order+'</div><div><h2>'+esc(m.name.replace(/^Module \d+: /,''))+'</h2><p class="prob">'+esc(m.problem)+'</p><div class="pair">'+items+'</div></div></section>';
+  }).join('');
+  var sv = D.survey || {};
+  document.getElementById('survey').innerHTML = sv.url ? '<a class="btn p" href="'+esc(sv.url)+'">Open the survey</a>' : '<p class="note">'+esc(sv.note || 'Survey link to follow')+'.</p>';
+})();
+</script>
+</body>
+</html>

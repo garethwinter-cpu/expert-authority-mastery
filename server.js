@@ -48,6 +48,8 @@ const aifPage = (file) => (req, res) => {
   .forEach((f) => app.get('/' + f, (req, res) => res.set('Cache-Control', 'public, max-age=86400').sendFile(path.resolve(ROOT, f))));
 app.get('/ai-founders', aifPage('ai-founders-home.html'));
 app.get('/ai-founders/curriculum', aifPage('ai-founders.html'));
+app.get('/ai-founders/outline', aifPage('ai-founders-outline.html'));
+app.get('/ai-founders/pack', aifPage('ai-founders-pack.html'));
 app.get('/api/ai-founders', (req, res) => res.set('Cache-Control', 'no-cache').json(JSON.parse(fs.readFileSync(AIF_DATA, 'utf8'))));
 // AI for Founders lives under /ai-founders/* so it reads as its own product next to Expert & Authority
 app.get('/ai-founders/proposal', page('ai-founders-proposal.html'));

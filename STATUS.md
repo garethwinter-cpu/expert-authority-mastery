@@ -171,6 +171,13 @@ before the next refresh.
   session on Thanksgiving Day itself (Entrepreneurship Mastery) kept about 70 percent of its room and its recording was
   the month's most watched Thursday. The Thu 26 Nov lab stays, flagged on both pages; Wed 25 Nov is the alternative.
   WhatsApp summary in the brief.
+- **Curriculum Outline (7 Oct)**: new tab `/ai-founders/outline` for the co-creation survey invite: module, lesson, lab and
+  a one-line teacher-free brief per lesson (`brief` field in `aif_modules.json`), no dates, no times, no names. The build
+  also writes `briefs/AIF-CURRICULUM-OUTLINE.md` for pasting into the email. Survey link is a placeholder until the form exists.
+- **Co-creation pack (7 Oct)**: `/ai-founders/pack` and a published artefact for marketing: the outline, a 20-question survey
+  (`scripts/aif/aif_survey.json`, with why-we-ask lines, design notes and the analysis plan) and the two emails
+  (`scripts/aif/aif_emails.json`: Vishen's 12 Oct email, then Gareth's survey email). Dates in the pack's sequence strip
+  (12 Oct, v2 by 26 Oct) are proposed. Survey tooling and the responses table wait on Vishen's alignment.
 - **Still open**: the Guild page itself still says 18 weeks, five pillars and Priestley.
 
 ### Storyboarding call, 6 Oct (Vishen, Jaideep, Ramya, Marijana, Ishaan, Chee Ling, Wendy, Gareth)

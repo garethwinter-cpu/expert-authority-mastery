@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<!-- PACK-START -->
+<title>AI for Founders Co-creation Pack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: one column of reading width, a sticky tab bar, three documents in one page. Mindvalley Wellness, AI for Founders blue. */
+:root{--bg:#FFFFFF;--ground:#F6F7FA;--ink:#0F131A;--text:#2A2F38;--muted:#595E67;--subtle:#7C818A;--border:#E3E6EC;--brand:#1832B4;--brand-bright:#3D63F5;--brand-light:#EEF2FF;--brand-border:#D6DEFF;--dark:#0F131A;--dusk:linear-gradient(135deg,#0F1F7A 0%,#1832B4 55%,#3D63F5 100%);--shadow-light:0 1px 2px rgba(0,0,0,.05);--shadow-medium:0 6px 20px rgba(0,0,0,.10);--font:"Google Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color-scheme:light}
+*{box-sizing:border-box} html,body{margin:0} body{background:var(--bg);color:var(--text);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline} h1,h2,h3,h4{margin:0;color:var(--ink);text-wrap:balance;line-height:1.2} p{margin:0}
+.wrap{max-width:900px;margin:0 auto;padding-inline:20px}
+.top{background:var(--dark);color:#fff;padding-block:14px} .top .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap} .wordmark{font-weight:700;font-size:15px;letter-spacing:.01em} .wordmark span{color:var(--brand-bright);margin:0 6px} .top .meta{font-size:12.5px;color:#B8C7FF}
+.hero{background:var(--dusk);color:#fff;padding-block:48px 40px} .hero .over{font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:#B8C7FF;margin-bottom:12px} .hero h1{color:#fff;font-size:clamp(30px,5vw,44px);font-weight:700} .hero p{color:#D6DEFF;font-size:17px;max-width:62ch;margin-top:14px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:28px} .step{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);border-radius:12px;padding:12px 14px} .step b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#B8C7FF;margin-bottom:4px} .step span{font-size:13.5px;color:#fff;line-height:1.4;display:block}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)} .tabs .wrap{display:flex;gap:6px;padding-block:8px;overflow-x:auto} .tab{flex:0 0 auto;border:0;background:transparent;font:inherit;font-size:14px;font-weight:600;color:var(--muted);padding:8px 16px;border-radius:128px;cursor:pointer} .tab.on{background:var(--brand-light);color:var(--brand)} .tab:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+main{padding-block:40px 60px} .doc[hidden]{display:none} .doc{display:grid;gap:34px}
+.lede{font-size:17px;color:var(--muted);max-width:68ch} .kicker{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--brand);margin-bottom:8px} .h2{font-size:26px} .h3{font-size:19px}
+.note{font-size:14px;color:var(--muted)} .pill{display:inline-flex;align-items:center;border-radius:128px;padding:3px 10px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;background:var(--brand-light);color:var(--brand)} .pill.dark{background:var(--brand);color:#fff} .pill.grey{background:var(--ground);color:var(--muted)}
+.card{border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow-light);padding:22px 24px} .tint{background:var(--brand-light);border-color:var(--brand-border)}
+/* outline */
+.mod{display:grid;grid-template-columns:56px 1fr;gap:16px;padding-block:24px;border-top:1px solid var(--border)} .mod:last-of-type{border-bottom:1px solid var(--border)} .mnum{width:44px;height:44px;border-radius:12px;background:var(--brand-light);color:var(--brand);font-weight:700;font-size:17px;display:flex;align-items:center;justify-content:center} .mod h3{font-size:20px} .prob{font-size:14.5px;color:var(--subtle);font-style:italic;margin:4px 0 12px}
+.items{display:grid;gap:12px} .item{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;min-width:0} .item h4{font-size:16px;line-height:1.35} .item p{font-size:14.5px;color:var(--muted);margin-top:3px}
+.ask ol{margin:10px 0 0 20px;padding:0;display:grid;gap:6px;font-size:15px;color:var(--ink)}
+/* survey */
+.sec{display:grid;gap:14px} .sec-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap} .sec-head .n{font-size:12px;font-weight:700;color:var(--subtle);letter-spacing:.08em;text-transform:uppercase}
+.q{border:1px solid var(--border);border-radius:16px;padding:18px 20px;display:grid;gap:10px;background:#fff} .q .qt{display:flex;gap:12px;align-items:flex-start} .q .qn{flex:0 0 30px;height:30px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;font-variant-numeric:tabular-nums} .q h4{font-size:16.5px;line-height:1.4;color:var(--ink)} .q .tags{display:flex;gap:6px;flex-wrap:wrap} .q ul{margin:0;padding:0;list-style:none;display:grid;gap:4px} .q li{font-size:14.5px;color:var(--text);padding-left:22px;position:relative} .q li::before{content:"";position:absolute;left:4px;top:9px;width:9px;height:9px;border-radius:50%;border:2px solid var(--brand-border)} .q .grid{font-size:14px;color:var(--muted)} .q .why{font-size:13.5px;color:var(--muted);border-top:1px dashed var(--border);padding-top:10px} .q .why b{color:var(--brand);font-weight:700;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-right:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px} .two ul{margin:10px 0 0 0;padding:0;list-style:none;display:grid;gap:8px} .two li{font-size:14.5px;color:var(--text);padding-left:20px;position:relative;line-height:1.5} .two li::before{content:"";position:absolute;left:0;top:9px;width:9px;height:9px;border-radius:3px;background:var(--brand)}
+/* email */
+.mail{border:1px solid var(--border);border-radius:16px;overflow:hidden;background:#fff;box-shadow:var(--shadow-light)} .mail .head{background:var(--ground);padding:16px 22px;display:grid;gap:6px;border-bottom:1px solid var(--border)} .mail .head .row{display:flex;gap:10px;font-size:13.5px;color:var(--muted);flex-wrap:wrap} .mail .head .row b{color:var(--ink);min-width:70px} .mail .body{padding:26px 28px;display:grid;gap:14px;font-size:16px;line-height:1.6;color:var(--text);max-width:68ch} .mail .body .ph{color:var(--brand);background:var(--brand-light);border-radius:6px;padding:0 5px} .mail .body .btn{display:inline-flex;border-radius:128px;background:var(--brand);color:#fff;font-weight:700;padding:11px 20px;font-size:15px} .mail .foot{padding:14px 22px;border-top:1px solid var(--border);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center}
+.copy{border:1px solid var(--border);background:#fff;font:inherit;font-size:13px;font-weight:600;color:var(--brand);border-radius:128px;padding:7px 14px;cursor:pointer} .copy:hover{border-color:var(--brand-border)} .subs{display:grid;gap:4px;font-size:14.5px;color:var(--text)} .subs span{color:var(--subtle);margin-right:6px;font-variant-numeric:tabular-nums}
+footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;color:var(--subtle)} footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media(max-width:700px){.steps{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.mod{grid-template-columns:1fr}.item{grid-template-columns:1fr}.item .pill{justify-self:start}.mail .body{padding:20px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+<!-- PACK-END -->
+</head>
+<body>
+<!-- BODY-START -->
+<div class="top"><div class="wrap"><div class="wordmark">Mindvalley <span>×</span> AI for Founders</div><div class="meta" id="meta"></div></div></div>
+<header class="hero"><div class="wrap">
+  <div class="over">For marketing · three things to take to the community</div>
+  <h1>The co-creation pack</h1>
+  <p>The curriculum outline the community will read, the survey that asks them to shape it, and the two emails that carry both. One sequence: the community sees the draft before it is finished, puts something in, and sees version two with their changes marked.</p>
+  <div class="steps">
+    <div class="step"><b>1 · Mon 12 Oct</b><span>Email 1 from Vishen: thank-you, the summit, a survey is coming.</span></div>
+    <div class="step"><b>2 · Same week</b><span>Email 2 from Gareth: the outline and the survey, open for about a week.</span></div>
+    <div class="step"><b>3 · By Mon 26 Oct</b><span>Version two of the outline published, change log credited to the survey.</span></div>
+    <div class="step"><b>4 · 30 Oct to 1 Nov</b><span>AI for Founders Summit. The programme opens Monday 16 November.</span></div>
+  </div>
+</div></header>
+<nav class="tabs"><div class="wrap" role="tablist">
+  <button class="tab on" role="tab" data-doc="outline" id="tab-outline">1 · Curriculum outline</button>
+  <button class="tab" role="tab" data-doc="survey" id="tab-survey">2 · The survey</button>
+  <button class="tab" role="tab" data-doc="email" id="tab-email">3 · The emails</button>
+</div></nav>
+
+<main class="wrap">
+  <section class="doc" id="doc-outline">
+    <div><div class="kicker">What the community reads</div><h2 class="h2">The curriculum outline</h2><p class="lede" id="outline-lede"></p></div>
+    <div id="mods"></div>
+    <div class="card tint ask"><h3 class="h3">Three questions for you</h3><ol><li>What is missing that you expected to see?</li><li>Where should we go deeper?</li><li>What would you skip?</li></ol><p class="note" style="margin-top:12px">Teachers and dates are left off this page on purpose: we want their view on what we teach before we settle who teaches it. Live at <a href="https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app/ai-founders/outline">/ai-founders/outline</a> (Google sign-in).</p></div>
+  </section>
+
+  <section class="doc" id="doc-survey" hidden>
+    <div><div class="kicker">What the community answers</div><h2 class="h2" id="survey-title"></h2><p class="lede" id="survey-intro"></p><p class="note" style="margin-top:10px" id="survey-length"></p></div>
+    <div class="card tint"><div class="kicker">Why it is built this way</div><p class="note" style="font-size:15px;color:var(--text)">They are warm. They came to the summit, took the quiz or sat in Expert &amp; Authority. The survey treats them as partners: it asks about their business before it asks about ours, asks for stories rather than opinions, shows them the outline inside the form, and ends by asking how far they want to go. People value what they help build, so the last section is the point, not an afterthought. Under every question is the line marketing will want: why we ask, and what it decides in the curriculum.</p></div>
+    <div id="survey-sections" style="display:grid;gap:30px"></div>
+    <div class="card"><div class="kicker">Thank-you page</div><p id="survey-thanks" style="font-size:15.5px"></p></div>
+    <div class="two"><div class="card"><div class="kicker">Design notes</div><ul id="survey-design"></ul></div><div class="card"><div class="kicker">What we do with the answers</div><ul id="survey-analysis"></ul></div></div>
+  </section>
+
+  <section class="doc" id="doc-email" hidden>
+    <div><div class="kicker">What carries both to the community</div><h2 class="h2">Two emails, one sequence</h2><p class="lede">Email 1 is Vishen's: the thank-you, the summit, the promise of a survey, and the first time the community meets the person reading their answers. Email 2 is Gareth's: the outline and the survey, a few days later. Placeholders in <span class="ph" style="color:var(--brand);background:var(--brand-light);border-radius:6px;padding:0 5px">[brackets]</span> need a name, a link or Vishen's own line. Hero images: Gareth is attaching options separately.</p></div>
+    <div id="emails" style="display:grid;gap:30px"></div>
+  </section>
+</main>
+<footer><div class="wrap"><div>AI for Founders Mastery · draft for the marketing team · nothing here is confirmed with a teacher until the team says so</div><div>Built by Gareth Winter</div></div></footer>
+
+<script id="curriculum" type="application/json">__CURRICULUM_JSON__</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById('curriculum').textContent);
+  var esc = function(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); };
+  var inline = function(s){ return esc(s).replace(/\*\*(.+?)\*\*/g,'<strong>$1</strong>').replace(/\[([^\]]+)\]/g,'<span class="ph">[$1]</span>'); };
+  document.getElementById('meta').textContent = 'Draft · ' + new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}).format(new Date(D.synced_at)) + ' · built by Gareth Winter';
+
+  // tabs with a plain hash deep link
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tab'));
+  var show = function(id){ tabs.forEach(function(t){ t.classList.toggle('on', t.getAttribute('data-doc')===id); t.setAttribute('aria-selected', t.getAttribute('data-doc')===id); }); ['outline','survey','email'].forEach(function(d){ document.getElementById('doc-'+d).hidden = d!==id; }); };
+  tabs.forEach(function(t){ t.addEventListener('click', function(){ var id=t.getAttribute('data-doc'); show(id); try{ history.replaceState(null,'','#'+id); }catch(e){} window.scrollTo({top:0}); }); });
+  var h = (location.hash||'').replace('#',''); show(['outline','survey','email'].indexOf(h)>=0 ? h : 'outline');
+
+  // 1. outline
+  var byId = {}; D.sessions.forEach(function(s){ byId[s.id]=s; });
+  var pad = function(w){ return String(w).padStart(2,'0'); };
+  var lessons = D.sessions.filter(function(s){ return s.type==='Lesson' || s.type==='Graduation'; }).length;
+  document.getElementById('outline-lede').textContent = D.modules.length + ' modules, ' + lessons + ' weeks, one pillar of the business each. Each week pairs a lesson with a lab: the lesson gives the idea, the lab leaves a system running in your business by the end of the call. This is the draft before it is finished.';
+  document.getElementById('mods').innerHTML = D.modules.map(function(m){
+    var items = (m.weeks||[]).map(function(w){
+      var L = byId['aif-w'+pad(w)+'-lesson'], B = byId['aif-w'+pad(w)+'-lab'], out='';
+      if (L) out += '<div class="item"><span class="pill">'+(L.type==='Graduation'?'Graduation':'Lesson')+'</span><div><h4>'+esc(L.title)+'</h4>'+(L.brief?'<p>'+esc(L.brief)+'</p>':'')+'</div></div>';
+      if (B) out += '<div class="item"><span class="pill dark">Lab</span><div><h4>'+esc(B.title)+'</h4></div></div>';
+      return out;
+    }).join('');
+    return '<section class="mod"><div class="mnum">'+m.order+'</div><div><h3>'+esc(m.name.replace(/^Module \d+: /,''))+'</h3><p class="prob">'+esc(m.problem)+'</p><div class="items">'+items+'</div></div></section>';
+  }).join('');
+
+  // 2. survey
+  var S = D.survey || {sections:[]};
+  document.getElementById('survey-title').textContent = S.title || 'The survey';
+  document.getElementById('survey-intro').textContent = S.intro || '';
+  document.getElementById('survey-length').textContent = S.length || '';
+  document.getElementById('survey-sections').innerHTML = S.sections.map(function(sec, i){
+    return '<div class="sec"><div class="sec-head"><span class="n">Section '+(i+1)+'</span><h3 class="h3">'+esc(sec.title)+'</h3></div>'+(sec.lead?'<p class="note">'+esc(sec.lead)+'</p>':'')
+      + sec.questions.map(function(q){
+          var opts = (q.options||[]).map(function(o){ return '<li>'+esc(o)+'</li>'; }).join('');
+          var grid = q.rows ? '<div class="grid"><b>Rows:</b> '+esc(q.rows.join(' · '))+'<br><b>Scale:</b> '+esc((q.scale||[]).join(' / '))+'</div>' : '';
+          return '<div class="q"><div class="qt"><span class="qn">'+esc(q.n)+'</span><h4>'+esc(q.text)+'</h4></div><div class="tags"><span class="pill grey">'+esc(q.type)+'</span><span class="pill '+(q.required?'':'grey')+'">'+(q.required?'Required':'Optional')+'</span>'+(q.branch?'<span class="pill grey">Sets branching</span>':'')+'</div>'+(opts?'<ul>'+opts+'</ul>':'')+grid+'<div class="why"><b>Why we ask</b>'+esc(q.why)+'</div></div>';
+        }).join('') + '</div>';
+  }).join('');
+  document.getElementById('survey-thanks').innerHTML = inline(S.thanks||'');
+  document.getElementById('survey-design').innerHTML = (S.design_notes||[]).map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
+  document.getElementById('survey-analysis').innerHTML = (S.analysis||[]).map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
+
+  // 3. emails
+  var E = D.emails || [];
+  document.getElementById('emails').innerHTML = E.map(function(e, i){
+    var paras = (e.body||'').split(/\n\n+/).map(function(p){ var t=p.trim(); if (/^\*\*\[.+\]\*\*$/.test(t)) return '<p><span class="btn">'+esc(t.replace(/^\*\*\[|\]\*\*$/g,''))+'</span></p>'; return '<p>'+inline(t).replace(/\n/g,'<br>')+'</p>'; }).join('');
+    return '<article class="mail" id="'+esc(e.id)+'"><div class="head"><div class="kicker">'+esc(e.label)+'</div><div class="row"><b>To</b><span>'+esc(e.to)+'</span></div><div class="row"><b>Purpose</b><span>'+esc(e.purpose)+'</span></div><div class="row"><b>Subject</b><div class="subs">'+e.subjects.map(function(s,j){ return '<div><span>'+(j+1)+'</span>'+esc(s)+'</div>'; }).join('')+'</div></div><div class="row"><b>Preview</b><span>'+esc(e.preview)+'</span></div></div><div class="body">'+paras+'</div><div class="foot"><div class="note">'+(e.notes||[]).map(esc).join(' · ')+'</div><button class="copy" data-copy="'+i+'" id="copy-'+i+'">Copy email text</button></div></article>';
+  }).join('');
+  Array.prototype.forEach.call(document.querySelectorAll('.copy'), function(b){
+    b.addEventListener('click', function(){
+      var e = E[+b.getAttribute('data-copy')]; var txt = 'Subject: '+e.subjects[0]+'\nPreview: '+e.preview+'\n\n'+e.body.replace(/\*\*/g,'');
+      var done = function(ok){ b.textContent = ok ? 'Copied' : 'Select and copy the text above'; setTimeout(function(){ b.textContent='Copy email text'; }, 2200); };
+      try { navigator.clipboard.writeText(txt).then(function(){ done(true); }, function(){ done(false); }); } catch(err){ done(false); }
+    });
+  });
+})();
+</script>
+<!-- BODY-END -->
+</body>
+</html>

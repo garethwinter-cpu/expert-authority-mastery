@@ -138,11 +138,42 @@ for s in sessions:
 slot={'pt':'9am Pacific','london':'5pm London','london_final':'4pm London on 16 and 18 March 2027',
       'line':'9am Pacific, 5pm London (4pm London in the final week, 16 and 18 March, after US clocks change on 14 March)',
       'anchor':'Pacific is the anchor; London is the derived time','decided':'2026-10-07'}
+survey=json.load(open(R/'scripts'/'aif'/'aif_survey.json',encoding='utf-8'))
+survey.setdefault('url',None); survey.setdefault('note','Survey link to follow')
+emails=json.load(open(R/'scripts'/'aif'/'aif_emails.json',encoding='utf-8'))
 out={'programme':'AI for Founders Mastery','artefact':artefact,'source':{'label':'Draft curriculum held in this page until aligned with Vishen, then seeded into Airtable','url':'/ai-founders/proposal'},'promise':promise,'summit':summit,'difference':difference,'start':'2026-11-16','end':'2027-03-18','break':['2026-12-21','2027-01-03'],
      'mode':'draft','synced_at':dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),
-     'aligned':False,'cadence':'Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific, 5pm London (4pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery','slot':slot,
+     'aligned':False,'cadence':'Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific, 5pm London (4pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery','slot':slot,'survey':survey,'emails':emails,
      'basis':SRC['basis'],'pattern':SRC['pattern'],
      'modules':modules,'labels':{'Workshop':'Lab'},'load':load,'load_basis':load_basis,'ea_range':ea_range,'roster':SRC['roster'],'notes':notes,'sessions':sessions}
 (R/'data'/'ai-founders-curriculum.json').write_text(json.dumps(out,indent=1,ensure_ascii=False))
 print('sessions',len(sessions)); print(json.dumps(load,indent=1)); print('E&A range',ea_range,'| Vykintas E&A Fridays in run:',vyk_fridays)
 for s in sessions: print(s['start'][:10],s['type'],'|',s['title'][:52],'|',', '.join(p['name'] for p in s['speakers']))
+
+# The outline for the survey invitation: module, lesson, lab, one line on the lesson. No teachers, no dates, no times.
+byid={s['id']:s for s in sessions}
+md=['# AI for Founders Mastery: the curriculum outline','',
+    'Sixteen weeks, eight modules, one pillar of the business each. Every module has a lesson, the idea, and a lab, where the system is installed in your own business. This is the draft before it is finished. Read it as a partner: what is missing, where should we go deeper, what would you skip?','']
+for mod in modules:
+    mname=re.sub(r'^Module \\d+: ','',mod['name'])
+    md.append(f"## {mod['order']}. {mname}"); md.append(f"*{mod['problem']}*"); md.append('')
+    for w in mod['weeks']:
+        L=byid.get(f'aif-w{w:02d}-lesson'); Bb=byid.get(f'aif-w{w:02d}-lab')
+        if L: md.append(f"**Lesson: {L['title']}**  "); md.append(L.get('brief') or '')
+        if Bb: md.append(f"**Lab: {Bb['title']}**"); md.append('')
+md+=['## Three questions for you','','1. What is missing that you expected to see?','2. Where should we go deeper?','3. What would you skip?','','*Survey link to follow.*','']
+(R/'briefs'/'AIF-CURRICULUM-OUTLINE.md').write_text('\n'.join(md))
+print('outline written', len(md),'lines')
+
+sm=['# AI for Founders: the co-creation survey','',survey['intro'],'']
+for sec in survey['sections']:
+    sm.append(f"## {sec['title']}"); sm.append(sec.get('lead','')); sm.append('')
+    for q in sec['questions']:
+        sm.append(f"**{q['n']}. {q['text']}**  "); sm.append(f"_{q['type']}{' · required' if q.get('required') else ' · optional'}_")
+        for o in q.get('options',[]): sm.append(f"- {o}")
+        if q.get('rows'): sm.append('Rows: '+'; '.join(q['rows']))
+        if q.get('scale'): sm.append('Scale: '+' / '.join(q['scale']))
+        sm.append(f"*Why we ask: {q['why']}*"); sm.append('')
+sm+=['## Thank-you page','',survey['thanks'],'','## Design notes','']+[f"- {n}" for n in survey['design_notes']]+['','## What we do with the answers','']+[f"- {n}" for n in survey['analysis']]
+(R/'briefs'/'AIF-SURVEY.md').write_text('\n'.join(sm))
+print('survey written')
