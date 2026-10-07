@@ -11,7 +11,7 @@ _Single choice · required · Acknowledge_
 - Founder with a team of up to ten
 - Founder with a team of more than ten
 - Planning to start a business in the next year
-*Why we ask: The quiz asked this too, but we ask again rather than pre-fill: it costs one tap, it may have changed, and it sets the wording of questions 3 and 8 and lets us read the pre-business quarter of the audience separately.*
+*Why we ask: The quiz asked this too, but we ask again: it costs one tap, it may have changed, and it sets the wording of questions 3 and 8 and lets us read the pre-business quarter of the audience separately.*
 
 **2. What does your business mainly sell, or will it?**  
 _Single choice · required · Acknowledge_
