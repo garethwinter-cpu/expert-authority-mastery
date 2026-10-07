@@ -5,13 +5,13 @@ About eight minutes, and most of it is writing, not ticking. In the quiz you tol
 ## Part 1 · Your week
 Three quick ones, then one that takes a minute.
 
-**1. Which describes you best right now? (We have pre-filled this from your quiz answer. Change it if it has changed.)**  
-_Single choice, pre-filled · required · Acknowledge_
+**1. Which describes you best right now?**  
+_Single choice · required · Acknowledge_
 - Solo founder: coach, consultant, practitioner or creator. The business is me.
 - Founder with a team of up to ten
 - Founder with a team of more than ten
 - Planning to start a business in the next year
-*Why we ask: Known from the quiz, so it costs one glance. It sets the wording of questions 3 and 8 and lets us read the pre-business quarter of the audience separately.*
+*Why we ask: The quiz asked this too, but we ask again rather than pre-fill: it costs one tap, it may have changed, and it sets the wording of questions 3 and 8 and lets us read the pre-business quarter of the audience separately.*
 
 **2. What does your business mainly sell, or will it?**  
 _Single choice · required · Acknowledge_
@@ -116,15 +116,15 @@ _Multiple choice · required · Build together_
 *Why we ask: The commitment question, with two real offers. Everyone who ticks either has put something in, and the list becomes the founding circle.*
 
 **18. May we follow up with you on your answers?**  
-_Yes or no, email pre-filled · required · Build together_
+_Yes or no · required · Build together_
 - Yes
 - No, use my answers but do not contact me about them
-*Why we ask: Consent, and the join to the quiz record by email, so every answer here sits next to that person's quiz answers.*
+*Why we ask: Consent, and where the email matches a quiz row, the join to that person's quiz answers.*
 
 ## What the quiz already told us
 
 - 907 people took the AI for Founders quiz; 747 wrote an answer to the open question. The second survey does not repeat what it settled.
-- Who they are is known: 62 percent solo founder or creator, 15 percent planning to start, 15 percent small team. Question 1 is pre-filled from the quiz and only confirmed.
+- Who they are is known at the population level: 62 percent solo founder or creator, 15 percent planning to start, 15 percent small team. Question 1 asks again (one tap, nothing pre-filled) so the branching works for everyone, including people who never took the quiz.
 - What they most want to transform is known: operations and automation 33 percent, marketing 26 percent, sales 21 percent; finance 5 percent, team and hiring 1 percent. Module 6 is the one most at risk of a nice to have, so the team segment gets its own open question.
 - The biggest result they want is the business running beyond me (30 percent), ahead of more leads (27 percent). That is the promise line in their words; question 15 tests it.
 - The most repeated open answer, 23 times word for word, was what should I automate first. Module 1 is built for it; question 10 asks whether they recognise their question in it.
@@ -135,14 +135,14 @@ _Yes or no, email pre-filled · required · Build together_
 
 ## How this answers the 6 October brief
 
-- **Where they are.** Part one, with question 1 pre-filled from the quiz: who they are, what they sell, hours the business needs them, and a recent week in their own words (1 to 4).
+- **Where they are.** Part one: who they are, what they sell, hours the business needs them, and a recent week in their own words (1 to 4).
 - **How they want to grow.** Question 15, what would need to be true in March, and the first half of question 10, their own version of what should I automate first.
 - **What they want changed.** Questions 10 to 12 on the outline: exactly my problem or not how it is for me, what is nowhere in it, more of and skip. Recurring answers become the version two change log.
 - **Biggest needs.** Question 3 (the week), question 8 (what still goes through them and which to lift first) and the module grid at question 9, read against the quiz's own weights.
 - **What they do not know they should know.** Asked directly at question 16, and surfaced by questions 5, 6 and 7, where the story of the last attempt and the tools that do not connect show the gap they cannot name.
 - **Which teachers.** Question 13, open: who they have learned most from, inside Mindvalley or outside, what works about how that person teaches, and who they would want in the room. No list, so nothing is promised.
 - **Serves marketing as well as curriculum.** Questions 3, 10 and 15 are the language bank for the summit and sales page; question 13 says which voices this audience trusts; question 17 builds the founding circle.
-- **A reusable model.** Five parts, programme-agnostic: your week, what you have tried, the outline, people and lines, building it together. Swap the module list and the outline and it runs for any Mastery, with question 1 pre-filled from whatever quiz came before.
+- **A reusable model.** Five parts, programme-agnostic: your week, what you have tried, the outline, people and lines, building it together. Swap the module list and the outline and it runs for any Mastery.
 
 ## Thank-you page
 
@@ -151,18 +151,18 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 ## Design notes
 
 - Length: about eight minutes. Eighteen questions, eleven open, four optional (7, 12, 14, 16). The intro says most of it is writing, so people arrive expecting to type.
-- Nothing the quiz settled is asked again. Role is pre-filled and confirmed; revenue and biggest result are not asked; the quiz record is joined by email at question 18.
+- Nothing the quiz settled at population level is asked again except role, which is one tap and drives the branching. Revenue and biggest result are not asked; the quiz record is joined by email at question 18 where one exists.
 - Order follows Compassionate Curiosity: acknowledge (part 1), get curious (parts 2 to 4), build together (part 5). The feeling comes before any opinion about us; the commitment comes last.
 - Branching: question 1 sets the wording of question 3 (team, pre-business) and question 8 (solo). The outline is shown inline before question 9 so nobody leaves the form.
 - Open questions ask for a story or a specific, never a rating in words. Closed questions do two jobs only: segment (1, 2, 4) and one quantitative read on the outline (8, 9).
 - Incentive is recognition, not a prize: early sight of version two, and a 45-minute group call with the curriculum team. Nothing is tested on anyone and nobody is quoted.
 - No question about the time slot: it is set at 7am Pacific for team capacity. The invitation says live when you can, recording when you cannot.
 - Send on a Tuesday, remind on Friday to non-openers and partial completions only, close the following Tuesday.
-- Mobile first, progress shown, email pre-filled from the campaign link. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then.
+- Mobile first, progress shown. Typeform or an Airtable form; responses land in the AI for Founders base once Vishen has aligned, in a sheet until then.
 
 ## What we do with the answers
 
-- Join every response to its quiz row by email, so segment, revenue and the quiz's biggest result travel with the new answers without being asked again.
+- Where an email matches a quiz row, join the two so revenue and the quiz's biggest result travel with the new answers without being asked again.
 - Open answers are read in full, not summarised. Questions 3, 5, 6, 10 and 15 are coded by hand into recurring themes; the phrases go into a language bank for lesson copy and the sales page. Hostile or off-topic answers (the quiz had a few) are routed, not counted.
 - Module need index: the share answering need it or need it urgently on question 9, by founder type, read against question 8 and the quiz's own weights (operations 33, marketing 26, sales 21 percent).
 - Gaps: questions 10 to 12 become the version two change log, with a rough count beside each change.
