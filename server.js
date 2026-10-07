@@ -8,6 +8,9 @@ const ROOT = __dirname;
 // static assets (shared/wellness.css); html served by explicit routes below
 app.use('/shared', express.static(path.resolve(ROOT, 'shared')));
 app.use('/authors', express.static(path.resolve(ROOT, 'authors'), { maxAge: '7d' }));
+// pages served under /ai-founders/* (the August proposal, the Guild) reference authors/ and covers/ relatively
+app.use('/ai-founders/authors', express.static(path.resolve(ROOT, 'authors'), { maxAge: '7d' }));
+app.use('/ai-founders/covers', express.static(path.resolve(ROOT, 'covers'), { maxAge: '1d' }));
 
 const page = (file) => (req, res) => res.sendFile(path.resolve(ROOT, file));
 

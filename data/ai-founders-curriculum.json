@@ -1,5 +1,16 @@
 {
  "programme": "AI for Founders Mastery",
+ "artefact": {
+  "name": "The Founder Operating System",
+  "short": "Founder OS",
+  "parts": [
+   "Company brain",
+   "Marketing and sales engines",
+   "Delivery and operations agents",
+   "The founder’s cockpit"
+  ],
+  "line": "What a founder leaves with: the systems built week by week, running as one, in their own business."
+ },
  "source": {
   "label": "Draft curriculum held in this page until aligned with Vishen, then seeded into Airtable",
   "url": "/ai-founders/proposal"
@@ -14,7 +25,7 @@
    "A business designed for AI"
   ],
   "cannot": [
-   "Fully autonomous systems that run with no human trigger or review: AI does the work, the founder or team approves; fully autonomous builds belong in the Guild",
+   "Fully autonomous systems that run with no human trigger or review: AI does the work, the founder or team approves; fully autonomous builds are outside this programme",
    "Integration with every founder’s own software beyond what existing connectors cover: we do not teach specific CRMs or SaaS tools",
    "Hours measured by time tracking: the founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running"
   ],
@@ -76,7 +87,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T07:01:33Z",
+ "synced_at": "2026-10-07T07:25:46Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 9am Pacific · Vishen leads the summit, Vykintas leads the Mastery",
  "basis": "Vykintas Glodenis, AI for Founders Curriculum Proposal (5 Oct 2026); Jaideep's launch brief (5 Oct 2026); the AI for Founders quiz (812 answers, 2 to 5 Oct 2026).",
@@ -342,9 +353,9 @@
   "Cadence, decided 5 October: Tuesday lesson, Thursday lab, 9am Pacific, Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds 8 of Expert & Authority’s Friday workshops at 9am Pacific inside this run (20 Nov, 27 Nov, 18 Dec, 8 Jan, 29 Jan, 5 Feb, 12 Feb, 19 Feb), so a Friday lab would put him in two rooms at once on each of those dates.",
   "The opening is Monday 16 November, the start date in the brief, with Vishen. It also keeps him clear of his Expert & Authority lesson at the same hour on Tuesday 17 November once the John Lee rotation is applied.",
   "Thanksgiving, decided 5 October: the Week 2 lab stays on Thursday 26 November. Expert & Authority looked at its 2025 cohort data, saw no attendance drop over Thanksgiving week, and kept its Friday 27 November workshop; the same reasoning applies here. The lab is Vykintas-led and recorded. Caveat: the 2025 evidence covers the week, not Thanksgiving Day itself, so the live number on the day is the test for the next cohort.",
-  "What we promise, in Vykintas’s words: the founder moves from doing to orchestrating; a leaner team gets more done; hours back every week; every lead answered and followed up; new hires productive in days; a business designed for AI. What we do not promise: fully autonomous systems with no human trigger or review (that depth belongs in the Guild), integration with every founder’s own software beyond existing connectors, or hours measured by time tracking. The founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running.",
+  "What we promise, in Vykintas’s words: the founder moves from doing to orchestrating; a leaner team gets more done; hours back every week; every lead answered and followed up; new hires productive in days; a business designed for AI. What we do not promise: fully autonomous systems with no human trigger or review (that depth is outside this programme), integration with every founder’s own software beyond existing connectors, or hours measured by time tracking. The founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running.",
   "What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps. Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.",
-  "Outside the modules there are only three sessions, all before Week 1: Get AI-Ready calls 1 and 2, which are Vykintas’s and in his proposal as written (the content of each call is a first pass), and the Monday opening with Vishen, the kickoff from the earlier draft moved to the start date in the brief. Office hours and an alumni reunion were in the earlier draft and were removed on 7 October: Vishen’s diary cannot carry extra calls, and continuity after graduation is the Guild’s job, not the Mastery’s. Expert & Authority’s own Airtable holds only lessons, workshops, one bonus and the graduation.",
+  "Outside the modules there are only three sessions, all before Week 1: Get AI-Ready calls 1 and 2, which are Vykintas’s and in his proposal as written (the content of each call is a first pass), and the Monday opening with Vishen, the kickoff from the earlier draft moved to the start date in the brief. Office hours and an alumni reunion were in the earlier draft and were removed on 7 October: Vishen’s diary cannot carry extra calls, and what happens after graduation is a separate conversation, not part of the Mastery. Expert & Authority’s own Airtable holds only lessons, workshops, one bonus and the graduation.",
   "Summit learnings applied: a live build directly before every offer; every session leaves something built; written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; untested builders get a paid webinar or Highlights slot before the summit; Shawn never follows Vykintas in the same event."
  ],
  "sessions": [
@@ -913,7 +924,7 @@
     }
    ],
    "module": "Module 8: Product and scale",
-   "description": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, certification on systems in production, and the bridge to the Guild for founders who have extended what they installed.",
+   "description": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business.",
    "week": 16
   },
   {
@@ -929,7 +940,7 @@
     }
    ],
    "module": "Module 8: Product and scale",
-   "description": "Every founder demonstrates one running system per pillar. Certification is awarded on systems in production, not videos watched. The cohort showcase closes the programme.\n\n**The win:** A machine you can show, running",
+   "description": "Every founder demonstrates one running system per pillar. Certification is awarded on a Founder Operating System in production, not videos watched. The cohort showcase closes the programme.\n\n**The win:** Your Founder Operating System, running, on show",
    "week": 16,
    "pair": "aif-w16-lesson"
   }

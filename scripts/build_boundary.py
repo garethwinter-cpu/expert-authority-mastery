@@ -2,8 +2,8 @@
 """Render the E&A / AI-for-Founders boundary from data/boundary.json.
 
 One source, three outputs:
-  - injected into expert-authority.html   (perspective: ea)
-  - injected into ai-founders.html        (perspective: aif)
+  - injected into ai-founders-proposal.html (perspective: aif). The E&A proposal was retired on 23 Sep 2026 and
+    expert-authority.html now renders from Airtable, so it carries no boundary markers.
   - positioning.html generated whole      (perspective: neutral)
 
 Injection targets the markers <!-- boundary:auto --> ... <!-- /boundary:auto -->.
@@ -98,7 +98,6 @@ def standalone():
     print('generated    -> positioning.html')
 
 if __name__ == '__main__':
-    inject(os.path.join(ROOT, 'expert-authority.html'), 'ea')
-    inject(os.path.join(ROOT, 'ai-founders.html'), 'aif')
+    inject(os.path.join(ROOT, 'ai-founders-proposal.html'), 'aif')
     standalone()
     print('ok')

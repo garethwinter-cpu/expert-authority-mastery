@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI for Founders Mastery</title>
 <link rel="icon" type="image/svg+xml" href="/favicon-aif.svg"><link rel="alternate icon" type="image/png" sizes="32x32" href="/favicon-aif-32.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-aif.png">
-<meta name="description" content="AI for Founders Mastery: run on AI. Eight modules, sixteen weeks, one business pillar each. The front door to the curriculum, the proposal and the Guild.">
+<meta name="description" content="AI for Founders Mastery: run on AI. Eight modules, sixteen weeks, one business pillar each. The front door to the curriculum, the proposal and the positioning.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/shared/wellness.css">
@@ -33,13 +33,13 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
 </head>
 <body>
 <div class="topbar"><div class="wrap"><div class="wordmark">Mindvalley <span>×</span> AI for Founders</div><div class="meta" id="meta"></div></div></div>
-<nav class="sub"><div class="wrap"><a class="on" href="/ai-founders">Home</a><a href="/ai-founders/curriculum">Curriculum</a><a href="/ai-founders/proposal">Proposal</a><a href="/ai-founders/guild">Guild</a><a href="/positioning">Positioning</a><a href="/">All proposals</a></div></nav>
+<nav class="sub"><div class="wrap"><a class="on" href="/ai-founders">Home</a><a href="/ai-founders/curriculum">Curriculum</a><a href="/ai-founders/proposal">Proposal</a><a href="/positioning">Positioning</a><a href="/">All proposals</a></div></nav>
 
 <header class="hero"><div class="wrap">
   <div class="badges"><span class="badge dark">Exponential Entrepreneur pathway</span><span class="badge dark">Mastery</span><span class="badge dark" id="statusbadge">Draft for alignment</span></div>
   <div class="overline">Run on AI</div>
   <h1>AI for Founders Mastery</h1>
-  <p class="answer"><strong>AI Mastery goes deep into AI. AI for Founders goes deep into the business.</strong> Sixteen weeks in which a founder rebuilds the business one function at a time, strategy to finance, each with a ready-made system installed and running. AI is the means, not the subject. You leave as the orchestrator of a company that does more with a leaner team.</p>
+  <p class="answer"><strong>AI Mastery goes deep into AI. AI for Founders goes deep into the business.</strong> Sixteen weeks in which a founder rebuilds the business one function at a time, strategy to finance, each with a ready-made system installed and running. AI is the means, not the subject. You leave as the orchestrator of a company that does more with a leaner team, with your <strong>Founder Operating System</strong> installed and running: the company brain, the marketing and sales engines, the delivery and operations agents, and the founder’s cockpit.</p>
   <div class="cta-row"><a class="btn p" href="/ai-founders/curriculum">Open the dated curriculum</a><a class="btn g" href="/ai-founders/proposal">Read the proposal</a></div>
   <div class="quickfacts" id="facts"></div>
 </div></header>
@@ -82,11 +82,10 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   </section>
 
   <section>
-    <div class="section-head"><div class="overline">Where everything lives</div><h2>One front door, four rooms</h2></div>
+    <div class="section-head"><div class="overline">Where everything lives</div><h2>One front door, five rooms</h2></div>
     <div class="links">
       <a class="link" href="/ai-founders/curriculum"><div class="k">Draft for alignment</div><h3>The dated curriculum</h3><p>Every lesson and lab with its date, teacher and win. The diary check against Expert &amp; Authority. The teacher map.</p></a>
       <a class="link" href="/ai-founders/proposal"><div class="k">August 2026</div><h3>The proposal</h3><p>The case, the summit plan, the evidence and the author record. Deep links to the programme and the authors still work.</p></a>
-      <a class="link" href="/ai-founders/guild"><div class="k">Above the Mastery</div><h3>The Guild</h3><p>Evergreen and application-only, for founders with a Founder OS in production: quarterly upgrade sprints and the shared-systems commons.</p></a>
       <a class="link" href="/positioning"><div class="k">The pathway</div><h3>One pathway, two Masteries</h3><p>The canonical boundary against Expert &amp; Authority: the one-question router, the comparison, the overlap rules.</p></a>
       <a class="link" href="/expert-authority"><div class="k">The sibling</div><h3>Expert &amp; Authority Mastery</h3><p>Builds the name. Runs Tuesday and Friday from 6 October. Shares Vishen and Vykintas with this programme.</p></a>
       <a class="link" href="/api/ai-founders"><div class="k">Data</div><h3>The curriculum as JSON</h3><p>The same data this page renders, in the schema the Airtable base will take once Vishen has aligned.</p></a>
@@ -127,7 +126,7 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   if (ready.length) dates.push(['', ready.map(function(s){ return day(s.start); }).join(' and '), 'Get AI-Ready, two live calls in the sales window, with the setup videos and building-block lessons. The shared floor, so no lesson ever teaches setup.']);
   if (opening) dates.push(['hi', longDay(opening.start), '<strong>The opening.</strong> '+esc(opening.title)+', with '+esc(opening.speakers.map(function(p){return p.name;}).join(' and '))+'. The programme starts here.']);
   if (firstWeek && lastLab) dates.push(['', day(firstWeek.start)+' to '+day(lastLab.start), 'Sixteen weeks. Lessons Tuesday, labs Thursday, 9am Pacific.'+(D['break'] ? ' Break from '+fmt(D['break'][0],{day:'numeric',month:'short'})+' to '+fmt(D['break'][1],{day:'numeric',month:'short'})+'.' : '')]);
-  if (grad) dates.push(['hi', longDay(grad.start), '<strong>Graduation.</strong> The load map measured again, certification on systems in production, the cohort showcase two days later.']);
+  if (grad) dates.push(['hi', longDay(grad.start), '<strong>Graduation.</strong> The load map measured again, certification on your Founder Operating System in production, the cohort showcase two days later.']);
   document.getElementById('dates').innerHTML = dates.map(function(d){ return '<div class="date '+d[0]+'"><div class="d">'+d[1]+'</div><div class="w">'+d[2]+'</div></div>'; }).join('');
 
   // modules

@@ -115,9 +115,8 @@ Still open on the curriculum:
 - The promise line. The brief keeps "Your business scales beyond you" for the offer; Vykintas rules out "runs without
   you" and "fully automated". The page uses Vykintas's list of what we can and cannot promise (notes). The summit agenda's
   Day 3 "founder-free week" sits on the wrong side of that line; flag to Jaideep.
-- Daniel Priestley: the brief says he cannot be on both E&A and AIF, Airtable says Can't make it. He is out of this draft
-  and out of the proposal's co-owner framing; `/ai-founders/proposal` still carries the August "Vishen × Daniel
-  Priestley" header and should be revised once Vishen aligns.
+- Daniel Priestley: out of this draft. `/ai-founders/proposal` keeps its August header as history, under a banner that
+  says the curriculum it describes was superseded on 5 Oct.
 
 ### Decided 5 Oct (the three items held over from the last session)
 
@@ -142,6 +141,28 @@ applies what the snapshot has not caught up with: Marisha on slots 18 and 20 (al
 snapshot still shows the old state, so refreshing the snapshot makes it a no-op. `sync-curriculum.js` currently writes
 `slot` as null (`lib/curriculum.js`), so a refreshed snapshot falls back to its own dates; restore slot resolution there
 before the next refresh.
+
+### Decisions, 7 Oct (Gareth)
+
+- **Office hours and the alumni reunion removed** from the Mastery (Vishen's diary; what follows graduation is a separate
+  conversation).
+- **The Guild is not mentioned on the Mastery pages** for now: no nav link, no card, no "belongs in the Guild" wording.
+  The Guild page and its route are untouched, as is the Guild panel on the hub; both are another project, to be rebuilt
+  in once there is clarity.
+- **Price follows the launch brief**: the hub lozenge reads $6,999, proposed, for Vishen to lock.
+- **"Run on AI" stays as the promise line** (not the summit name).
+- **The artefact is named: the Founder Operating System** (company brain, marketing and sales engines, delivery and
+  operations agents, the founder's cockpit). Used on the front door, the curriculum, the boundary and the brief. Change
+  it later if the team does; use it consistently until then.
+- **Start date clarified**: the programme starts at Vishen's opening on Monday 16 November; the curriculum hero now says
+  so. Get AI-Ready (5 and 12 Nov) sits before it, in the sales window.
+- **Consistency sweep**: `data/boundary.json` AIF card rewritten to the current programme and re-rendered into the
+  proposal and positioning pages; `scripts/build_boundary.py` re-pointed at `ai-founders-proposal.html` (it still
+  targeted the retired E&A proposal and the old `/ai-founders` page, and would have failed); the August proposal
+  carries a superseded banner; `CURRICULUM-BRIEF.md` and `data/authors.json` no longer describe Priestley as co-owner;
+  the orphan `live.html` (an unserved old copy of the hub) deleted.
+- **Still open**: Janja's 3pm London against our 9am Pacific (see Thanksgiving reply, 6 Oct); the Guild page itself
+  still says 18 weeks, five pillars and Priestley.
 
 ### Storyboarding call, 6 Oct (Vishen, Jaideep, Ramya, Marijana, Ishaan, Chee Ling, Wendy, Gareth)
 

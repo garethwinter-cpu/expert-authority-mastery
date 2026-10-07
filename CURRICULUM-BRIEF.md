@@ -93,11 +93,14 @@ proposal. Assume the same until proven otherwise.
 ## 3. Programme-specific deltas
 
 ### AI for Founders Mastery
-- Co-owned: Vishen Lakhiani + Daniel Priestley. Priestley holds protected anchor
-  days; the AI Summit talk is the strategic spine.
-- The organising unit is the **five pillars** — marketing, sales, operations,
-  people, finance — each rebuilt as a running AI system.
-- Artefact: the **Founder Operating System**. Systems in production.
+- Vishen opens, anchors and closes; Vykintas Glodenis leads the curriculum and
+  every lab (his proposal of 5 October 2026). Daniel Priestley is not on the
+  programme.
+- The organising unit is **eight modules, one business pillar each**: strategy,
+  company brain, marketing, sales, operations and delivery, team, finance and the
+  cockpit, product and scale. Two weeks per module, Tuesday lesson and Thursday lab.
+- Artefact: the **Founder Operating System**. Systems in production, measured by
+  the founder load map at Module 1 and again at Module 8.
 - It fixes **capacity**. Do not let it teach demand creation or personal brand —
   that is Expert & Authority's half.
 - **Correct the author scores against the deck.** The current page carries Chris
