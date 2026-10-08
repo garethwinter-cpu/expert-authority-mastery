@@ -6,41 +6,46 @@ before every push); push to `main` (auto-deploys) and to `claude/expert-authorit
 bump `package.json` on every ship.
 Live site: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Google sign-in). Cloud Run redeploys from `main` in a few minutes.
 
-## Expert & Authority Mastery: held decisions (5 Oct 2026)
+## Expert & Authority Mastery: held decisions (updated 8 Oct 2026)
 
 Proposed by Gareth to the team, Marta and Marijana. **Not yet applied to Airtable.** Apply only when
 Gareth confirms the dates. Airtable is the source of truth: base `appnHZYcirCg1VqUP`, Lessons table.
 Cadence rule: lessons on Tuesdays, workshops on Fridays, 9am PT. Vishen does not teach Fridays.
 
-### 1. John Lee: three-way rotation
+### 1. John Lee: both his weeks in January (confirmed by his team, 8 Oct)
 
-John cannot do his November dates. Pre-recording is not done for Mastery. He can do Tue 12 Jan
-and Fri 15 Jan (Marta corrected the dates on 5 Oct: not 5 and 8 Jan).
+John's team confirmed Tue 5 Jan, Fri 8 Jan, Tue 12 Jan and Fri 15 Jan (Marta, 8 Oct). He teaches
+both lessons and runs both workshops himself, live. This replaces the 5 Oct three-way rotation.
 
 Edits, all in the Slot column of the Lessons table:
 
 | Row | Slot now | Change to | New date |
 |---|---|---|---|
+| Content Machine (John Lee) | 11 (2026) | 23 (2026) | Tue 5 Jan |
+| Workshop, Content Machine (John Lee) | 12 (2026) | 24 (2026) | Fri 8 Jan |
 | Platforms, Reels & Algorithmic Growth (John Lee) | 13 (2026) | 25 (2026) | Tue 12 Jan |
 | Workshop, Platforms (John Lee) | 14 (2026) | 26 (2026) | Fri 15 Jan |
-| Speaking & Stages (Vishen) | 29 (2026) | 13 (2026) | Tue 17 Nov |
-| Workshop, Speaking (Vykintas) | 30 (2026) | 14 (2026) | Fri 20 Nov |
+| Speaking & Stages (Vishen) | 29 (2026) | 11 (2026) | Tue 10 Nov |
+| Workshop, Speaking (Vykintas) | 30 (2026) | 12 (2026) | Fri 13 Nov |
+| Email Marketing (Vishen) | 23 (2026) | 13 (2026) | Tue 17 Nov |
+| Workshop, Email (Vykintas) | 24 (2026) | 14 (2026) | Fri 20 Nov |
 | Membership, Continuity & Superfans | 25 (2026) | 29 (2026) | Tue 26 Jan |
 | Workshop, Membership (Vykintas) | 26 (2026) | 30 (2026) | Fri 29 Jan |
 
-Then set Module on both Speaking rows to Pillar 2, and check that slots 13, 14, 25, 26, 29 and 30
-each hold exactly one lesson.
+Then: John's four rows Checking to Confirmed; Module on the Speaking and Email rows (lesson and
+workshop) to Pillar 2; check slots 11 to 14, 23 to 26, 29 and 30 each hold exactly one lesson.
+Vykintas moves from Fri 8 and 15 Jan to Fri 13 and 20 Nov: confirm with him.
 
-Still open: John's second lesson, Content Machine (Tue 10 Nov / Fri 13 Nov). Marta's message with
-his further dates was cut off. If he has any Tuesday, swap that week the same way and Vykintas runs
-the Friday. If not, Vishen teaches it and John teaches one lesson.
+Why this order: Speaking (a platform) and Email (the audience you own) join Pillar 2 in November;
+Email on 17 Nov builds the list that Daniel's Oversubscribed waitlist lesson needs on 24 Nov.
+Watch: Vishen teaches no lessons in January (John, John, Ajit, Regan); his next is Tue 2 Feb.
 
 ### 2. Regan Hillyer: her own lesson, Tue 26 Jan
 
 Regan teaches **Membership, Continuity & Superfans: Build Revenue That Renews Itself** on her own
 (not a fireside). Vishen's title and outline stay exactly as written; the description never names
 Vishen, so the only Airtable change is the Speaker field. 90 minutes. Workshop stays with Vykintas
-(Fri 29 Jan). The date assumes the John Lee rotation above; without it the lesson is Tue 12 Jan.
+(Fri 29 Jan). The date depends on the John Lee edits above, which free Tue 26 Jan for this lesson.
 
 To apply: add Regan Hillyer to the Speakers (Lessons) table (name, Zoom email, photo), replace Vishen
 with Regan on the Membership lesson, keep status Proposed until she confirms, and fill the slot and
