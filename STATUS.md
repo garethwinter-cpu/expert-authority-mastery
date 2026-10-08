@@ -8,11 +8,11 @@ Live site: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Goog
 
 ## Expert & Authority Mastery: held decisions (updated 8 Oct 2026)
 
-Proposed by Gareth to the team, Marta and Marijana. **Not yet applied to Airtable.** Apply only when
-Gareth confirms the dates. Airtable is the source of truth: base `appnHZYcirCg1VqUP`, Lessons table.
+Proposed by Gareth to the team, Marta and Marijana. Item 1 is applied. Item 2 (Regan) is **not yet applied**; apply only when
+Gareth confirms her date. Airtable is the source of truth: base `appnHZYcirCg1VqUP`, Lessons table.
 Cadence rule: lessons on Tuesdays, workshops on Fridays, 9am PT. Vishen does not teach Fridays.
 
-### 1. John Lee: both his weeks in January (confirmed by his team, 8 Oct)
+### 1. John Lee: both his weeks in January (confirmed by his team, 8 Oct) — APPLIED in Airtable 8 Oct
 
 John's team confirmed Tue 5 Jan, Fri 8 Jan, Tue 12 Jan and Fri 15 Jan (Marta, 8 Oct). He teaches
 both lessons and runs both workshops himself, live. This replaces the 5 Oct three-way rotation.
@@ -32,7 +32,9 @@ Edits, all in the Slot column of the Lessons table:
 | Membership, Continuity & Superfans | 25 (2026) | 29 (2026) | Tue 26 Jan |
 | Workshop, Membership (Vykintas) | 26 (2026) | 30 (2026) | Fri 29 Jan |
 
-Then: John's four rows Checking to Confirmed; Module on the Speaking and Email rows (lesson and
+Applied and audited 8 Oct (all 36 slots: one lesson each, Tuesdays lessons, Fridays workshops, Vishen Tuesdays only,
+every workshop follows its own lesson, nothing 21 Dec to 3 Jan). Rollback values: `data/airtable-backups/2026-10-08-john-lee-swap.json`.
+Also done: John's four rows Checking to Confirmed; Module on the Speaking and Email rows (lesson and
 workshop) to Pillar 2; check slots 11 to 14, 23 to 26, 29 and 30 each hold exactly one lesson.
 Vykintas moves from Fri 8 and 15 Jan to Fri 13 and 20 Nov: confirm with him.
 

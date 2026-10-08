@@ -1,0 +1,13 @@
+{"note":"E&A Lessons table state before the John Lee January swap, 8 Oct 2026. Restore by setting Slot (fldAzzdqGhpSwhlod), Module (fldia4QzQEVchB0Ri) and Status (fldfU6HIfezgeQLng) back to these values.",
+ "rows":[
+  {"id":"receMvLuLExeQbKKm","title":"Content Machine","slot":"recACz6kOK0uD9yu5","slot_name":"11 (2026)","module":"recppga2KxOLgm3lb","status":"Checking"},
+  {"id":"rectXqUEAaBmAF8Lw","title":"Workshop | Content Machine","slot":"recL8smUhULjF3Ts3","slot_name":"12 (2026)","module":"recppga2KxOLgm3lb","status":"Checking"},
+  {"id":"recoUQVpsg16Xl27A","title":"Platforms, Reels & Algorithmic Growth","slot":"recqjGupDoMWQryw3","slot_name":"13 (2026)","module":"recppga2KxOLgm3lb","status":"Checking"},
+  {"id":"receRXAT3y8JESXzH","title":"Workshop | Platforms","slot":"recfAhpylBVRg21t8","slot_name":"14 (2026)","module":"recppga2KxOLgm3lb","status":"Checking"},
+  {"id":"reckc8GrNv94HevLG","title":"Email Marketing","slot":"recfwPbYYTABln5DX","slot_name":"23 (2026)","module":"recfC9waU5SIcV96d","status":"Proposed"},
+  {"id":"rectqXaMCTxcvwQVu","title":"Workshop | Email Marketing","slot":"recEYJsnnwBVNxhki","slot_name":"24 (2026)","module":"recfC9waU5SIcV96d","status":"Confirmed"},
+  {"id":"rec75MCiowSbxZKaE","title":"Membership, Continuity & Superfans","slot":"recxKqpeLcTbO9zs2","slot_name":"25 (2026)","module":"recKVu2rbzrLsOAZr","status":"Proposed"},
+  {"id":"rec6SB3JYwaqurAAh","title":"Workshop | Membership","slot":"rech75yvo1PU0ffFG","slot_name":"26 (2026)","module":"recKVu2rbzrLsOAZr","status":"Confirmed"},
+  {"id":"recdn316lgAd2Jbyi","title":"Speaking & Stages","slot":"recxI2lYABNkoLfya","slot_name":"29 (2026)","module":"recKVu2rbzrLsOAZr","status":"Proposed"},
+  {"id":"recKwm0gF6g6vQVbE","title":"Workshop | Speaking & Stages","slot":"rec61sJ8uexsPd1EJ","slot_name":"30 (2026)","module":"recKVu2rbzrLsOAZr","status":"Confirmed"}
+ ]}
