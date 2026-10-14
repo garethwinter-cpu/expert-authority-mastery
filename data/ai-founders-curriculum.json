@@ -36,7 +36,548 @@
   "note": "name confirmed by Vishen, 6 Oct, over the brief’s “Run on AI” recommendation",
   "dates": "Friday 30 October to Sunday 1 November 2026",
   "line": "Find out what to automate first in your business, then build it live, step by step.",
-  "role": "The launch event. Free, three days, the offer opens here."
+  "role": "The launch event. Free, three days, the offer opens here.",
+  "agenda": {
+   "source": "AI for Founders Airtable base app7lhR1V9Fts0mNc, Summit Agenda table tblJTtf6jll2UyRbW, read 14 October 2026. Airtable is the source of truth; this is a snapshot.",
+   "read": "2026-10-14",
+   "days": [
+    {
+     "n": 1,
+     "title": "More Time, Not More Tools",
+     "date": "2026-10-30"
+    },
+    {
+     "n": 2,
+     "title": "More Clients, Not More Hours",
+     "date": "2026-10-31"
+    },
+    {
+     "n": 3,
+     "title": "Scale Without Headcount",
+     "date": "2026-11-01"
+    }
+   ],
+   "sessions": [
+    {
+     "day": 1,
+     "start": "2026-10-30T15:00:00Z",
+     "dur": 600,
+     "title": "Opening by Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T15:10:00Z",
+     "dur": 1800,
+     "title": "Your Calendar Is Your Ceiling",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M1"
+     ],
+     "status": "Confirmed",
+     "desc": "You built the business to be free. Somewhere along the way it took the freedom. Vishen opens his own load map live, the years Mindvalley ran through him and what AI runs there today, then names the ceiling every founder shares: your business can't grow faster than your calendar."
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T15:40:00Z",
+     "dur": 1800,
+     "title": "Find Your 3 Biggest Time Drains",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M1"
+     ],
+     "status": "Confirmed",
+     "desc": "Where do your hours actually go? Map your week live, rank where AI pays off, and leave with the three workflows to fix first, and the ones that should stay human."
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T16:10:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T16:15:00Z",
+     "dur": 2400,
+     "title": "What to Automate First",
+     "who": [
+      "Nate Herk"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M1"
+     ],
+     "status": "In progress",
+     "desc": "Most founders try to automate everything at once and stall. Nate takes the three drains from the last session and shows how AI-native founders pick the first ones to hand over, and what those first automations look like running."
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T16:55:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T17:00:00Z",
+     "dur": 1800,
+     "title": "Your Voice, Made Executable",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M3"
+     ],
+     "status": "Confirmed",
+     "desc": "A voice skill trained on your own words, not a template. One idea turned into a week of posts, emails and a page, with an anti-slop gate so nothing ships that sounds like AI."
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T17:30:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T17:35:00Z",
+     "dur": 2400,
+     "title": "How to Build an AI-Powered Sales Engine",
+     "who": [
+      "Joe Stolte"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M3",
+      "M4"
+     ],
+     "status": "In progress",
+     "desc": "What becomes possible when AI is integrated across the whole sales and marketing engine: prioritising the right leads, faster follow-up, smarter nurturing, and reactivating opportunities that would otherwise be lost."
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T18:15:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T18:20:00Z",
+     "dur": 1800,
+     "title": "From Idea to Launch in a Day",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M3"
+     ],
+     "status": "Confirmed",
+     "desc": "A Mindvalley launch used to take a team weeks. Live from the studio, Vishen takes one idea and shows AI turning it into a full campaign in a single day: what still needs a human, what AI drafts and tests, and how a founder with no marketing team can launch at the same speed."
+    },
+    {
+     "day": 1,
+     "start": "2026-10-30T18:50:00Z",
+     "dur": 600,
+     "title": "Closing by Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T15:00:00Z",
+     "dur": 600,
+     "title": "Opening by Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T15:10:00Z",
+     "dur": 1800,
+     "title": "Find Where Your Clients Slip Away",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M3",
+      "M4"
+     ],
+     "status": "Confirmed",
+     "desc": "You don't have a lead problem. You have a leak problem. Attention, lead, follow-up, sale: this session maps the journey end to end with real funnels and real numbers from two decades at Mindvalley, so you know exactly where AI should go first."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T15:40:00Z",
+     "dur": 1800,
+     "title": "Turn Client Wins Into Sales",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M3",
+      "M4"
+     ],
+     "status": "Confirmed",
+     "desc": "Use AI to collect and place client stories on every page and email."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T16:05:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed",
+     "flag": "Starts five minutes before the previous session ends."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T16:10:00Z",
+     "dur": 1800,
+     "title": "Answer Every Lead Within an Hour",
+     "who": [
+      "Vykintas Glodenis"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M4"
+     ],
+     "status": "In progress",
+     "desc": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Step by step: AI researches, qualifies, replies and books, within minutes, day or night.",
+     "flag": "Speaker field says Vykintas; the description still names Liam."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T16:50:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T16:55:00Z",
+     "dur": 1800,
+     "title": "Sell Without a Single Sales Call",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M4"
+     ],
+     "status": "Confirmed",
+     "desc": "Mindvalley has sold more than $500 million in programmes without a sales team on the phone. Vishen shows how AI now writes, tests and improves a masterclass, a page and an email sequence, and rebuilds one founder's sales page live to find where buyers drop."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T17:25:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T17:30:00Z",
+     "dur": 2100,
+     "title": "AI for Founders: Your Business, Rebuilt in 16 Weeks",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Offer",
+     "status": "Confirmed",
+     "desc": "You've seen what is possible. This session shows how it gets installed in your business, one function at a time, each with a ready-made system and labs to install it."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T18:05:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T18:10:00Z",
+     "dur": 2700,
+     "title": "One Real Business, Running on AI",
+     "who": [
+      "Noelle Russell"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M5"
+     ],
+     "status": "Confirmed",
+     "desc": "One founder's business running on AI from end to end: content, leads, follow-up, client delivery, each handed to AI and each with the human checkpoint kept."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T18:50:00Z",
+     "dur": 600,
+     "title": "Closing of Day 2 by Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed",
+     "flag": "Starts five minutes before Noelle's session ends."
+    },
+    {
+     "day": 2,
+     "start": "2026-10-31T19:00:00Z",
+     "dur": 0,
+     "title": "VIP Q&A",
+     "who": [
+      "Vishen Lakhiani",
+      "Vykintas Glodenis"
+     ],
+     "type": "Q&A",
+     "audience": "VIP",
+     "status": "Confirmed",
+     "desc": "Selected founders bring a real bottleneck into a live hot seat; Vishen and Vykintas unpack it and point to the system that fixes it."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T16:00:00Z",
+     "dur": 600,
+     "title": "Opening by Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T16:10:00Z",
+     "dur": 1200,
+     "title": "Plan Your First Week Off",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M5"
+     ],
+     "status": "Confirmed",
+     "desc": "What your business needs to run for five days without you: what breaks first, what AI can hold, and what only a human can cover."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T16:40:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T16:45:00Z",
+     "dur": 2400,
+     "title": "From AI Tools to AI Business Systems",
+     "who": [
+      "Callan Faulkner"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M5"
+     ],
+     "status": "In progress",
+     "desc": "Most founders use AI to complete individual tasks faster. What becomes possible when AI moves beyond isolated tools and starts transforming how the whole business operates. Callan or a senior member of her team."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T17:25:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T17:30:00Z",
+     "dur": 1500,
+     "title": "How Mindvalley Runs Lean With AI",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M4"
+     ],
+     "status": "In progress",
+     "desc": "Where agents sit beside people at Mindvalley, what one person does today that took three before, and how the team learned to work with AI. The summit ends on teaching, not the pitch."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T18:00:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T18:05:00Z",
+     "dur": 1500,
+     "title": "The AI-Powered CEO: What You Should and Shouldn't Be Doing Anymore",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M7"
+     ],
+     "status": "Confirmed",
+     "desc": "AI is changing the value of a founder's time. What you should stop doing, what AI can take over, and where your time and attention create the greatest impact as a leader."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T18:40:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T18:45:00Z",
+     "dur": 3600,
+     "title": "The Orchestrator's Week",
+     "who": [
+      "Vishen Lakhiani"
+     ],
+     "type": "Offer",
+     "status": "Confirmed",
+     "desc": "What the new way of working looks like. Two doors: the solo founder who is the business, and the founder whose team still waits on them. What each gets inside AI for Founders, and the same dated deadline."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T19:45:00Z",
+     "dur": 300,
+     "title": "Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed"
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T19:50:00Z",
+     "dur": 1800,
+     "title": "Your Business on Autopilot: What Can AI Run Without You?",
+     "who": [
+      "Sara Davison",
+      "Tyler Fisk"
+     ],
+     "type": "Keynote",
+     "method": [
+      "M6",
+      "M8"
+     ],
+     "status": "Confirmed",
+     "desc": "How AI automation takes recurring work off your plate, from research and follow-ups to reporting, customer workflows and everyday operations, so more of the business keeps moving when you are not there."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T20:20:00Z",
+     "dur": 0,
+     "title": "VIP Q&A",
+     "who": [
+      "Vishen Lakhiani",
+      "Vykintas Glodenis"
+     ],
+     "type": "Q&A",
+     "audience": "VIP",
+     "status": "Confirmed",
+     "desc": "Selected founders bring a real bottleneck into a live hot seat; Vishen and Vykintas unpack it and point to the system that fixes it."
+    },
+    {
+     "day": 3,
+     "start": "2026-11-01T08:10:00Z",
+     "dur": 600,
+     "title": "Closing of Day 3 by Host",
+     "who": [
+      "Jason Goldberg"
+     ],
+     "type": "Host",
+     "status": "Confirmed",
+     "flag": "Start time in Airtable is 08:10 UTC, before the day begins; it should sit after the last session.",
+     "sort": "2026-11-01T20:30:00Z",
+     "badtime": true
+    }
+   ],
+   "flags": [
+    "Closing of Day 3 is timed at 08:10 UTC in Airtable, before the day opens.",
+    "Two host segments on Day 2 start before the session in front of them ends (16:05 and 18:50 UTC).",
+    "Answer Every Lead Within an Hour has Vykintas in the speaker field and Liam in the description.",
+    "Four keynotes are still In progress: Nate Herk, Joe Stolte, Callan Faulkner, and Vishen's How Mindvalley Runs Lean With AI."
+   ]
+  }
  },
  "difference": [
   [
@@ -87,7 +628,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-07T09:19:40Z",
+ "synced_at": "2026-10-14T07:04:24Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
  "slot": {

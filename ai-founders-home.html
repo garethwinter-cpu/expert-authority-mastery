@@ -16,6 +16,7 @@
 main{padding:56px 0 20px}
 .dates{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
 .date{border:1px solid var(--border);border-radius:16px;padding:18px 20px;background:#fff;box-shadow:var(--shadow-light)} .date .d{font-weight:700;font-size:16px;color:var(--ink)} .date .w{font-size:13.5px;color:var(--text-muted);margin-top:4px;line-height:1.45} .date.hi{background:var(--brand-light);border-color:var(--brand-border)} .date.hi .d{color:var(--brand-content)}
+.agenda{display:grid;grid-template-columns:repeat(3,1fr);gap:16px} .aday{border:1px solid var(--border);border-radius:16px;background:#fff;box-shadow:var(--shadow-light);overflow:hidden} .aday .dh{background:var(--brand-light);padding:14px 16px;border-bottom:1px solid var(--brand-border)} .aday .dh b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-content)} .aday .dh span{font-size:15px;font-weight:700;color:var(--ink)} .aday ol{list-style:none;margin:0;padding:6px 0} .aday li{display:grid;grid-template-columns:52px 1fr;gap:10px;padding:9px 16px;border-top:1px solid var(--border);font-size:13.5px;align-items:start} .aday li:first-child{border-top:0} .aday li.host{color:var(--text-subtle);font-size:12.5px;padding:5px 16px} .aday .t{font-variant-numeric:tabular-nums;color:var(--text-subtle);font-size:12.5px;padding-top:2px} .aday .s b{display:block;color:var(--ink);font-weight:600;line-height:1.35} .aday .s span{display:block;color:var(--text-muted);font-size:12.5px;margin-top:2px} .aday .pill{display:inline-block;border-radius:128px;padding:1px 8px;font-size:10px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;margin:4px 4px 0 0;background:var(--brand-light);color:var(--brand-content)} .aday .pill.prog{background:#FBF3DE;color:#946A00} .aday .pill.offer{background:var(--brand-content);color:#fff} .aday .pill.vip{background:#FDEBF3;color:#DF1A6F} .aday .pill.flag{background:#FFF4E9;color:#C9541F}
 .mods{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
 .mod{border:1px solid var(--border);border-radius:16px;padding:22px 24px;background:#fff;box-shadow:var(--shadow-light);display:flex;flex-direction:column;gap:12px}
 .mod .top{display:flex;align-items:center;gap:14px} .mod .mnum{flex:0 0 42px;height:42px;font-size:16px;border-radius:12px} .mod h3{font-size:18px} .mod .wk{font-size:12.5px;color:var(--text-subtle);font-weight:600}
@@ -28,7 +29,7 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
 .links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .link{display:block;border:1px solid var(--border);border-radius:16px;padding:20px 22px;background:#fff;box-shadow:var(--shadow-light);color:var(--ink)} .link:hover{border-color:var(--brand-border);box-shadow:var(--shadow-medium)} .link .k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-content);font-weight:700} .link h3{font-size:17px;margin:6px 0 4px} .link p{font-size:13.5px;color:var(--text-muted)}
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px} .btn{display:inline-flex;align-items:center;border-radius:128px;padding:12px 22px;font-weight:700;font-size:15px} .btn.p{background:#fff;color:var(--brand-content)} .btn.g{border:1px solid rgba(255,255,255,.45);color:#fff}
 .tbl .you{font-weight:600;color:var(--ink)}
-@media(max-width:860px){.mods,.two,.links{grid-template-columns:1fr}.hero .quickfacts{grid-template-columns:repeat(2,1fr)}.tbl{min-width:0}}
+@media(max-width:860px){.mods,.two,.links,.agenda{grid-template-columns:1fr}.hero .quickfacts{grid-template-columns:repeat(2,1fr)}.tbl{min-width:0}}
 </style>
 </head>
 <body>
@@ -48,6 +49,12 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   <section>
     <div class="section-head"><div class="overline">The calendar</div><h2>From the summit to graduation</h2><p class="body-lg">The summit sells it, Get AI-Ready levels the room, and the programme opens on a Monday with Vishen. Every date below comes from the curriculum data, so this page and the curriculum can never disagree.</p></div>
     <div class="dates" id="dates"></div>
+  </section>
+
+  <section>
+    <div class="section-head"><div class="overline">The summit, day by day</div><h2>Three days, 8am Pacific</h2><p class="body-lg" id="agenda-lede"></p></div>
+    <div class="agenda" id="agenda"></div>
+    <p class="note" id="agenda-flags" style="margin-top:14px;font-size:13px;color:var(--text-subtle)"></p>
   </section>
 
   <section>
@@ -132,6 +139,25 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   if (tg) dates.push(['', longDay(tg.start), '<strong>Thanksgiving Day (US).</strong> '+esc(tg.note.replace(/^Thanksgiving Day in the US\.\s*/,''))]);
   if (grad) dates.push(['hi', longDay(grad.start), '<strong>Graduation.</strong> The load map measured again, certification on your Founder Operating System in production, the cohort showcase two days later.']);
   document.getElementById('dates').innerHTML = dates.map(function(d){ return '<div class="date '+d[0]+'"><div class="d">'+d[1]+'</div><div class="w">'+d[2]+'</div></div>'; }).join('');
+
+  // summit agenda, from the Airtable snapshot in the data
+  var A = D.summit && D.summit.agenda; if (A) {
+    var tz = function(iso, z, o){ return new Intl.DateTimeFormat('en-GB', Object.assign({timeZone: z}, o)).format(new Date(iso)); };
+    var hm = function(iso, z){ return tz(iso, z, {hour:'numeric', minute:'2-digit', hour12:true}).replace(' ', '').toLowerCase(); };
+    var MOD = {M1:'Strategy',M2:'Company brain',M3:'Marketing',M4:'Sales',M5:'Operations',M6:'Team',M7:'Finance',M8:'Product and scale'};
+    document.getElementById('agenda-lede').textContent = 'Times in Pacific, with London in brackets. Day titles and sessions come from the Summit Agenda table in the AI for Founders Airtable base, read ' + tz(A.read + 'T12:00:00Z', 'Europe/London', {day:'numeric', month:'long'}) + '. Airtable stays the source of truth; this page is a snapshot. Each keynote is tagged to the Mastery module it sells.';
+    document.getElementById('agenda').innerHTML = A.days.map(function(d){
+      var rows = A.sessions.filter(function(s){ return s.day === d.n; }).sort(function(a,b){ return (a.sort||a.start) < (b.sort||b.start) ? -1 : 1; });
+      var dateLabel = tz(d.date + 'T12:00:00Z', 'UTC', {weekday:'long', day:'numeric', month:'long'});
+      return '<div class="aday"><div class="dh"><b>Day '+d.n+' · '+esc(dateLabel)+'</b><span>'+esc(d.title)+'</span></div><ol>' + rows.map(function(s){
+        var host = s.type === 'Host';
+        var pills = host ? '' : ((s.type==='Offer')?'<span class="pill offer">Offer</span>':'') + ((s.audience==='VIP')?'<span class="pill vip">VIP</span>':'') + (s.method||[]).map(function(m){ return '<span class="pill">'+esc(MOD[m]||m)+'</span>'; }).join('') + (s.status==='In progress'?'<span class="pill prog">In progress</span>':'') + (s.flag?'<span class="pill flag">Check</span>':'');
+        var who = (s.who||[]).join(' and ');
+        return '<li class="'+(host?'host':'')+'"><span class="t">'+(s.badtime?'time<br>to fix':hm(s.start,'America/Los_Angeles')+'<br>('+hm(s.start,'Europe/London')+')')+'</span><span class="s">'+(host?esc(s.title)+(s.dur?' · '+Math.round(s.dur/60)+' min':''):'<b>'+esc(s.title)+'</b><span>'+esc(who)+(s.dur?' · '+Math.round(s.dur/60)+' min':'')+'</span>'+pills)+'</span></li>';
+      }).join('') + '</ol></div>';
+    }).join('');
+    document.getElementById('agenda-flags').textContent = (A.flags && A.flags.length) ? 'To fix in Airtable: ' + A.flags.join(' ') : '';
+  }
 
   // modules
   document.getElementById('pattern').innerHTML = 'Every module runs the same way: the problem founders name in that pillar; the management idea, how an AI-first founder thinks about it, taught by the guest on Tuesday; the system, a ready-made skill pack or workflow, installed and adapted to each founder’s business in Thursday’s lab; and what changes, something observable. Marketing, sales and operations carry the most weight because that is where this audience feels the pain.';

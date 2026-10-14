@@ -179,6 +179,12 @@ before the next refresh.
   (`scripts/aif/aif_survey.json`, with why-we-ask lines, design notes and the analysis plan) and the two emails
   (`scripts/aif/aif_emails.json`: Vishen's 12 Oct email, then Gareth's survey email). Dates in the pack's sequence strip
   (12 Oct, v2 by 26 Oct) are proposed. Survey tooling and the responses table wait on Vishen's alignment.
+- **Summit agenda on the front door (14 Oct)**: `/ai-founders` now shows the three summit days from a snapshot of the
+  Airtable Summit Agenda table (`scripts/aif/summit_agenda.json`, read 14 Oct; Airtable stays the source of truth). The
+  agenda changed since 7 Oct: new Vishen sessions (Your Voice Made Executable, From Idea to Launch in a Day, Sell Without a
+  Single Sales Call, The AI-Powered CEO), Joe Stolte and Sara Davison with Tyler Fisk added, Sabrina and Nick gone, Callan's
+  session retitled, The Orchestrator's Week is now the Day 3 offer. Four data flags listed on the page. Jaideep's curriculum
+  review artefact (14 Oct) is a static Claude page, not linked to Airtable or this repo; feedback given in chat, nothing actioned.
 - **Still open**: the Guild page itself still says 18 weeks, five pillars and Priestley.
 
 ### Storyboarding call, 6 Oct (Vishen, Jaideep, Ramya, Marijana, Ishaan, Chee Ling, Wendy, Gareth)
