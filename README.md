@@ -17,10 +17,10 @@ Run `python3 scripts/check-no-fees.py` before every push.
 | `/expert-authority` | Expert & Authority Mastery curriculum, rendered from Airtable on every request (`lib/curriculum.js`) |
 | `/api/curriculum` | The same curriculum as JSON |
 | `/covers/*` | Lesson cover images synced from Airtable |
-| `/ai-founders` | AI for Founders: the front door (`ai-founders-home.html`). Calendar, the eight modules, who it is for, the promise, the boundary, the people, links to every AIF page. Rendered from the same JSON as the curriculum |
-| `/ai-founders/curriculum` | The dated draft curriculum (eight modules, sixteen weeks) rendered from `data/ai-founders-curriculum.json`, built by `scripts/aif/build_aif.py` from `scripts/aif/aif_modules.json` (held in the repo until aligned with Vishen, then seeded into Airtable) |
+| `/ai-founders` | AI for Founders: the front door (`ai-founders-home.html`). Calendar, the founder operating system diagram, the eight modules, who it is for, the promise, the boundary, the people, links to every AIF page. Rendered from the same JSON as the curriculum |
+| `/ai-founders/curriculum` | The dated draft curriculum (seventeen lessons and a graduation in eight modules, each lesson with its AI team; teachers hidden until mapped) rendered from `data/ai-founders-curriculum.json`, built by `scripts/aif/build_aif.py` from `scripts/aif/aif_modules.json` (held in the repo until aligned with Vishen, then seeded into Airtable) |
 | `/ai-founders/outline` | 301 to `/ai-founders/curriculum`: there is one curriculum page, teacher-free until authors are mapped |
-| `/ai-founders/pack` | The co-creation pack for marketing (`ai-founders-pack.html`): outline, survey and the two emails, tabbed. Survey lives in `scripts/aif/aif_survey.json`, emails in `scripts/aif/aif_emails.json`; both ride in the curriculum JSON. Also published as a Claude artefact for sharing |
+| `/ai-founders/pack` | The co-creation pack for marketing (`ai-founders-pack.html`): outline, survey and the email, tabbed. Survey lives in `scripts/aif/aif_survey.json`, emails in `scripts/aif/aif_emails.json`; both ride in the curriculum JSON. Also published as a Claude artefact for sharing |
 | `/ai-founders/proposal` | The August proposal: case, summit plan, evidence, faculty. Deep links: `#programme`, `#authors`, `#programme-w5`. `/ai-founders-proposal` redirects here |
 | `/ai-founders/guild` | The AI for Founders Guild proposal (`/ai-founders-guild` redirects here) |
 | `/api/ai-founders` | The draft curriculum as JSON |

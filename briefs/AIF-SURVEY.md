@@ -1,6 +1,6 @@
 # AI for Founders: the co-creation survey
 
-About eight minutes, and most of it is writing, not ticking. In the quiz you told us what you want fixed: the business running beyond you, more leads, more done without hiring, and the question we heard most, what should I automate first. We have drafted the fix: sixteen weeks, eight modules. Before we decide who teaches what, we want to know whether we got it right. Your answers go to the people writing the curriculum, not to a dashboard. Version two is published with the changes marked, so you can see what moved because of you.
+About eight minutes, and most of it is writing, not ticking. In the quiz you told us what you want fixed: the business running beyond you, more leads, more done without hiring, and the question we heard most, what should I automate first. We have drafted the fix: seventeen lessons and a graduation, in eight modules. Before we decide who teaches what, we want to know whether we got it right. Your answers go to the people writing the curriculum, not to a dashboard. Version two is published with the changes marked, so you can see what moved because of you.
 
 ## Part 1 · Your week
 Three quick ones, then one that takes a minute.
@@ -27,7 +27,7 @@ _Single choice · required · Acknowledge_
 _Open text · required · Acknowledge_
 - team version: Tell us about a recent week when everything came back to you. What happened, and what do you wish your team could have handled without you?
 - planning version: What is stopping you starting, and what would you need to see to begin?
-*Why we ask: The first real question names the feeling before we ask for anything. For founders with a team the second half asks what the team could carry, because the quiz barely mentioned team and Module 6 needs the evidence. Pre-business founders get their own version.*
+*Why we ask: The first real question names the feeling before we ask for anything. For founders with a team the second half asks what the team could carry, because the quiz barely mentioned team and the owner pages in week 17 need the evidence. Pre-business founders get their own version.*
 
 **4. In a normal week, how many hours does your business need you personally to keep running?**  
 _Single choice · required · Acknowledge_
@@ -36,7 +36,7 @@ _Single choice · required · Acknowledge_
 - 40 to 60
 - More than 60
 - I honestly do not know
-*Why we ask: The before picture. The programme is measured against the founder load map, and this is its first rough reading across the community.*
+*Why we ask: The before picture. The programme is measured against the hours log in week 0, counted again at graduation, and this is its first rough reading across the community.*
 
 ## Part 2 · What you have tried
 No judgement here. Half the people who took the quiz have barely started, and that is exactly who this is for.
@@ -55,28 +55,28 @@ _Open text, one line · optional · Get curious_
 
 **8. Which of these still have to go through you? Tick everything that applies, then tell us the one you would most like off your desk first.**  
 _Multiple choice, then one pick · required · Get curious_
-- Content and social media
-- Finding leads and following them up
-- Sales calls and proposals
-- Client delivery and client questions
-- Admin: inbox, invoices, scheduling
-- Hiring, managing and delegating
-- The numbers and cash decisions
-- Deciding what to build or sell next
-*Why we ask: The eight options are the eight modules in plain words. The quiz gave us the weight by area at a coarser grain; the one pick here is the priority test for the module order. Solo founders see delegating to contractors or AI in place of hiring.*
+- Our website and what we sell
+- The inbox and admin
+- Turning visitors into leads
+- Knowledge that only lives in my head
+- Getting found: content, search and ads
+- Invoices and bookkeeping
+- Sales calls, proposals and follow-up
+- The numbers, and stepping back
+*Why we ask: The eight options are the eight modules in plain words. The quiz gave us the weight by area at a coarser grain; the one pick here is the priority test for the module order. Solo founders read the same list.*
 
 ## Part 3 · The outline
 Read the draft outline, shown here. Nothing in it is fixed.
 
 **9. For each of the eight modules, how much do you need it?**  
 _Grid, one answer per row · required · Get curious_
-Rows: Strategy: find the bottleneck; Company brain; Marketing; Sales; Operations and delivery; Team: people and AI; Finance and the founder's cockpit; Product and scale
+Rows: Storefront: website, offer and copy; Operations: a sorted inbox, and what to automate first; Brand and funnel; Company brain; Traffic: AI search, content and ads; Finance: bookkeeping off your desk; Sales: leads and closing; Cockpit and handover: the dashboard, owners, a week you only decide
 Scale: Already handled / Nice to have / Need it / Need it urgently
 *Why we ask: The one quantitative read on the outline. Four points, no midpoint. The share answering need it or urgently becomes each module's need index, by founder type.*
 
-**10. Module 1 is built to answer the question we heard most in the quiz: what should I automate first? Is that your question, or is yours different? Write it the way you would ask it. Then tell us where else in the outline you thought: that is exactly my problem, or, that is not how it is for me.**  
+**10. Week 4 is built to answer the question we heard most in the quiz: what should I automate first? Is that your question, or is yours different? Write it the way you would ask it. Then tell us where else in the outline you thought: that is exactly my problem, or, that is not how it is for me.**  
 _Open text · required · Get curious_
-*Why we ask: Tests the opening module against the audience's own words, then reads the rest of the outline the same way. The first half gives marketing the hook; the second tells the curriculum where a lesson is framed for someone else.*
+*Why we ask: Tests the week 4 audit against the audience's own words, then reads the rest of the outline the same way. The first half gives marketing the hook; the second tells the curriculum where a lesson is framed for someone else.*
 
 **11. What problem in your business is nowhere in this outline?**  
 _Open text · required · Get curious_
@@ -84,7 +84,7 @@ _Open text · required · Get curious_
 
 **12. What would you want more of, and what would you skip?**  
 _Open text · optional · Get curious_
-*Why we ask: Depth and cuts in one optional question. Sixteen weeks is long; this tells us where to spend and where to save.*
+*Why we ask: Depth and cuts in one optional question. Seventeen weeks is long; this tells us where to spend and where to save.*
 
 ## Part 4 · People, and lines
 Two questions. No names are promised.
@@ -95,12 +95,12 @@ _Open text · required · Get curious_
 
 **14. What is the line you would never let AI cross in your business, and why?**  
 _Open text · optional · Get curious_
-*Why we ask: Data safety and authenticity were the two worries raised unprompted in the quiz. Asked as a line rather than a tick, it tells us where the human checkpoint has to sit in every lab, and gives Module 2 its governance examples.*
+*Why we ask: Data safety and authenticity were the two worries raised unprompted in the quiz. Asked as a line rather than a tick, it tells us where the human checkpoint has to sit in every lab, and gives the privacy segment in every lab its examples.*
 
 ## Part 5 · Building it together
 The part that makes this a conversation rather than a form.
 
-**15. If we built this together, what would need to be true in March for you to say the sixteen weeks were worth it?**  
+**15. If we built this together, what would need to be true in March for you to say the programme was worth it?**  
 _Open text · required · Build together_
 *Why we ask: The promise in their words and timeframe. The quiz said the business running beyond me; this tells us what that looks like on a Tuesday in March, and the phrases become the sales page.*
 
@@ -125,9 +125,9 @@ _Yes or no · required · Build together_
 
 - 907 people took the AI for Founders quiz; 747 wrote an answer to the open question. The second survey does not repeat what it settled.
 - Who they are is known at the population level: 62 percent solo founder or creator, 15 percent planning to start, 15 percent small team. Question 1 asks again, one tap, so the branching works for everyone, including people who never took the quiz.
-- What they most want to transform is known: operations and automation 33 percent, marketing 26 percent, sales 21 percent; finance 5 percent, team and hiring 1 percent. Module 6 is the one most at risk of a nice to have, so the team segment gets its own open question.
+- What they most want to transform is known: operations and automation 33 percent, marketing 26 percent, sales 21 percent; finance 5 percent, team and hiring 1 percent. Team building is no longer a module, so the team segment gets its own open question.
 - The biggest result they want is the business running beyond me (30 percent), ahead of more leads (27 percent). That is the promise line in their words; question 15 tests it.
-- The most repeated open answer, 23 times word for word, was what should I automate first. Module 1 is built for it; question 10 asks whether they recognise their question in it.
+- The most repeated open answer, 23 times word for word, was what should I automate first. The week 4 audit is built for it; question 10 asks whether they recognise their question in it.
 - Integration was the loudest open theme (33 percent of answers): tools that do not connect, how to bring AI in safely and in order. The quiz never asked which tools; question 7 does.
 - Data safety (7 percent) and authenticity (5 percent, AI makes things polished and uniform) are the two worries people raised unprompted. Question 14 asks for the line they would never let AI cross.
 - Half the room has barely started: 19 percent not at all, 33 percent writing and ideas only. The story of the last attempt (question 5) matters more than any rating.
@@ -167,7 +167,7 @@ Thank you. Your answers go straight to the people writing the curriculum, and th
 - Module need index: the share answering need it or need it urgently on question 9, by founder type, read against question 8 and the quiz's own weights (operations 33, marketing 26, sales 21 percent).
 - Gaps: questions 10 to 12 become the version two change log, with a rough count beside each change.
 - Connectors: question 7 produces the tool list for Get AI-Ready and flags the labs that will hit an integration wall.
-- Lines: question 14 sets where the human checkpoint sits in each lab and supplies Module 2's governance examples.
+- Lines: question 14 sets where the human checkpoint sits in each lab and supplies the examples for the privacy segment in every lab.
 - Teachers: question 13 yields names and teaching qualities. The qualities brief every guest; the names go to the roster conversation.
 - Founding circle: everyone who ticks an active option in question 17 goes on a list with their answers attached and sees version two first.
 - Version two is published with a change log that credits the survey: what moved, and roughly how many people asked for it.

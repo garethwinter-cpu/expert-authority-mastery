@@ -1,95 +1,135 @@
 # AI for Founders Mastery: the curriculum outline
 
-Sixteen weeks, eight modules, one pillar of the business each. Every module has a lesson, the idea, and a lab, where the system is installed in your own business. This is the draft before it is finished. Read it as a partner: what is missing, where should we go deeper, what would you skip?
+Seventeen lessons and a graduation, eight modules, one department of the business at a time. Every lesson has a lab, where the system is installed in your own business. This is the draft before it is finished. Read it as a partner: what is missing, where should we go deeper, what would you skip?
 
-## 1. Module 1: Your front door
-*Nobody can find me, or buy from me, without me explaining it.*
+## 1. Module 1: Storefront
+*My business is hard to find, hard to understand and hard to buy from.*
 
-**Lesson: Feed AI Your Business. Watch It Build Your Website.**  
-The finished thing first: a founder's site built live from a two-minute voice note. Then the one idea the whole programme runs on: AI is only as good as what you feed it, so you feed it your business once, in a Founder Context Pack, and it finds your offer, writes your page in your voice, and builds the site. Two skills are installed on the way, copywriting and website building, and you keep both for every page you ever need again. Both impressive and fundamental: this is context engineering, learned by doing.
+**Lesson: A Website That Beats Your Competitors'**  
+The finished thing first. A site built live in the opening minutes, then the idea every week after runs on: AI is only as good as what you feed it. Your business goes into one folder, and an AI web team builds a site that beats your three closest competitors, with a working lead form. No site yet? The template from onboarding and ten minutes of you talking are enough.
+
+*Your AI team: Head of Web, Web Designer, Web Developer, Webmaster*
 **Lab: Your Site, Live by Thursday**
 
-**Lesson: Your Brand Voice, Then Your Funnel**  
-A site nobody captures from is a brochure. First the brand voice pack: how everything you send sounds and looks, written once from your own words, and later the first thing that goes into your company brain. Then the funnel built on last week's two skills: a landing page with your proof, a quiz, a calculator or a booking link, the lead magnet that earns an email, and the welcome sequence that does the first five conversations for you. The first system in your business that works while you sleep.
-**Lab: Your Funnel, Live by Thursday**
+**Lesson: Who Buys, What to Sell, What to Charge**  
+A step back after the wow, because every later page, email and ad aims at a buyer and an offer. Your customers researched from your own reviews and call notes, ten competitors researched live, and an offer ladder with prices. Your company's products and services, priced; this is not a personal signature offer.
 
-## 2. Module 2: Marketing engine
-*Nobody is finding me, and content eats my time.*
+*Your AI team: Head of Product Marketing, Customer Researcher, Competitor Analyst, Offer & Pricing Strategist*
+**Lab: Your Offer Book, and Prices on the Page**
 
-**Lesson: Write It Once. Get Found Everywhere.**  
-How people find you now: AI engines answer their questions, and the answers come from articles on your website. The content engine in three moves. Answer: articles that answer what your buyers ask, written by AI from your Context Pack, so search and AI find you. Amplify: each article cut into carousels, posts, reels and a newsletter in seconds. Ask: every piece pointing at the funnel. The week content stops eating the founder's time.
-**Lab: A Month of Content, Scheduled**
+**Lesson: Copy That Turns Visitors Into Buyers**  
+Copy is what sells, and every later page, email and post reuses it. Your site audited, rewritten from the offer book, and audited again, so you can see the score move. Then the voice file: how your company sounds, written once, and the first thing in what becomes your company brain.
 
-**Lesson: From Content to Demand**  
-Content nobody captures is a hobby. Two ways to send people to your funnel, organic and paid: which platform is your front door, how the content engine fills it, and one ad built from an article and attached to a sale, run through AI connected to your ad account. Then the signals that tell you demand is real before you sell.
-**Lab: Your Channels, Wired to the Funnel**
+*Your AI team: Head of Copywriting, Conversion Copywriter, Case Study Writer, Conversion Auditor*
+**Lab: Rewrite, Re-score, Publish**
 
-## 3. Module 3: Sales
-*Leads go cold, follow-ups slip.*
+## 2. Module 2: Operations: the first system that runs itself
+*Every message and every decision still comes back to me.*
 
-**Lesson: The Lead That Never Goes Cold**  
-Answering a lead within the hour changes whether it converts. Research, qualification, a reply in your voice and a booked call, with the exact moments where automation would kill trust and a human steps in.
-**Lab: The Follow-Up Engine**
+**Lesson: Wake Up to a Sorted Inbox**  
+Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 4. An AI assistant sorts your inbox each morning and drafts replies in your voice from your offer book and copy, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?
 
-**Lesson: Outbound on Autopilot, and Choosing Your Channel**  
-Finding the next client is the job most founders still do alone. AI finds the right prospects, writes to them one by one and books the calls, so the pipeline fills while you deliver. Then the choice every business has to make: outbound, partners, referrals or ads.
-**Lab: Proposals, Call Prep and the Pipeline Cockpit**
+*Your AI team: Chief Operating Officer, Executive Assistant, Operations Analyst, Continuous Improvement Manager*
+**Lab: Your First Morning Run**
+
+## 3. Module 3: Brand and funnel
+*People visit and leave, and I never hear from them again.*
+
+**Lesson: A Professional Brand Without a Design Agency**  
+Trust is visual before it is verbal. A brand kit made from what you already have, an image library built with the one exception tool, ChatGPT, and the site restyled so it looks like one company. Keep your logo: AI logos are weak, and a clean text logo beats a bad one.
+
+*Your AI team: Creative Director, Brand Designer, Art Director, Brand Guardian*
+**Lab: Your Brand Kit, Applied**
+
+**Lesson: Design a Funnel That Turns Visitors Into Leads**  
+A site without a path loses its visitors. Your funnel chosen for how you sell: a booked call for services, a purchase for products, a trial for software. Then the lead magnet that earns an email and the nurture emails that do the first conversations for you, written from your offer book, copy and voice file.
+
+*Your AI team: Head of Growth, Funnel Strategist, Lead Magnet Creator, Email Marketer*
+**Lab: Your Magnet and Emails, Written**
+
+**Lesson: Launch Your Funnel and Collect Leads**  
+A design earns nothing until it is live. The landing page built and published in one sentence, the email platform wired, and a test lead sent all the way through: the page, the magnet, the emails. The quiz version for anyone who wants the stretch.
+
+*Your AI team: Head of Growth, Automation Specialist, Quiz Developer, Funnel Tester*
+**Lab: Funnel Clinic: One Test Lead, End to End**
 
 ## 4. Module 4: Company brain
-*Six weeks of assets in six places; AI gives generic answers; the team keeps asking the founder.*
+*Everything I built lives in a different folder, and I keep explaining my business again.*
 
-**Lesson: The Company Brain: Everything You Built, in One Place**  
-From a starter pack to the company's memory: mission, offers, customers, voice, numbers, processes and the decisions already made, in one governed place every tool and every team member reads. By now you have felt why.
-**Lab: Stand Up Your Company Brain**
+**Lesson: Build a Company Brain That Knows Your Business**  
+Seven weeks in, the pain is real: the offer book is in one folder, the copy in another, the brand kit in a third, and every team needs them all. The company brain puts everything in one place, and an AI chief of staff answers from it. Your inbox assistant moves in and gets better that morning.
 
-**Lesson: What Goes In, and What Never Does**  
-Data safety for a small company: which models and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. A brain the team uses has to be one you would show a lawyer.
-**Lab: Feed the Brain, Safely**
+*Your AI team: Chief of Staff, Chief Information Officer, Chief Operating Officer*
+**Lab: Move In, and Ask It Anything**
 
-## 5. Module 5: Operations and delivery
-*Client work and questions land on the founder.*
+## 5. Module 5: Traffic
+*Nobody is finding me, content eats my time, and I do not know which posts or ads bring customers.*
 
-**Lesson: Delivery Agents and the Customer Experience**  
-One agent, one job. A founder's delivery running on AI end to end: onboarding, fulfilment support and service workflows, each with the human checkpoint kept where trust lives. Clients get the good version of your business whether or not you are in the room.
-**Lab: Client Onboarding, Automated**
+**Lesson: Get Recommended by ChatGPT and Google**  
+When people ask an AI who to hire, it answers from pages like the ones you are about to publish. Your buyers' questions mapped from the brain, an answer hub built on your site, and the first articles written and published: free traffic from AI and search into the funnel.
 
-**Lesson: The Operations Brain: What to Automate Next**  
-Standard procedures become skills, meetings become operations data. The orchestration layer founders skip: scheduled runs, multi-step automations, and the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step.
-**Lab: Two Ops Automations, Live**
+*Your AI team: Head of SEO, Search Strategist, SEO Writer, Search Analyst*
+**Lab: Your Answer Hub, Live**
 
-## 6. Module 6: Team: people and AI
-*Hiring is slow, delegation fails.*
+**Lesson: One Idea, a Month of Content**  
+Steady visibility without a content team, and without showing your face. One answer article becomes thirty days of posts, carousels and a newsletter, written in your voice from the brain. Production only: growing a following is a different Mastery.
 
-**Lesson: Hiring Your First AI Employees**  
-Once the systems exist, who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real question: me, a contractor, or AI?
-**Lab: Your First AI Team Member**
+*Your AI team: Head of Content, Content Strategist, Content Repurposer, Graphic Designer*
+**Lab: A Month, Scheduled**
 
-**Lesson: How Mindvalley's Team Works With Agents**  
-The org chart after AI, from inside a company that has done it: where agents sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI, not less.
-**Lab: The Hiring and Onboarding Kit**
+**Lesson: Content That Brings Customers, Week After Week**  
+A list is the one channel you own. The weekly newsletter, next week's content drafted every week, and the post stats read so you know which content brings customers, not just likes.
 
-## 7. Module 7: Finance and the founder's cockpit
-*The numbers arrive too late to act on.*
+*Your AI team: Head of Content, Newsletter Editor, Social Media Scheduler, Content Analyst*
+**Lab: Your Weekly Content Run**
 
-**Lesson: The Finance Cockpit**  
-Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts and a weekly brief. Decide from numbers that arrive on Monday, not from the accountant's summary in April.
-**Lab: The Money Dashboard**
+**Lesson: Run Meta Ads Without an Agency**  
+Organic is free and slow; paid is fast and costs money. Both matter, so this week is paid: an ad spy that studies your competitors' ads, creatives made with your brand kit, a campaign plan, and a small test campaign live with a weekly report. How much to spend stays your decision.
 
-**Lesson: The Orchestrator's Week**  
-The week of a founder whose systems run: the weekly brief, decision memos instead of meetings, and how priorities, energy and focus are managed when you lead rather than do.
-**Lab: The Founder Cockpit**
+*Your AI team: Media Buyer, Meta Ad Spy, Ad Creative Designer, Meta Ads Analyst*
+**Lab: Tracking and Launch Clinic**
 
-## 8. Module 8: Product and scale
-*What to build or sell next, and whether the business can run a week on its systems.*
+## 6. Module 6: Finance
+*Invoices, receipts and chasing payment eat hours, and I never see the numbers until it is too late.*
 
-**Lesson: The Founder Operating Rhythm, and Your Next Offer**  
-What to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research through the brain, an operating rhythm that replaces heroics, and a company designed around the systems rather than around you.
-**Lab: The Week You Only Decide**
+**Lesson: Bookkeeping Off Your Desk**  
+Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your automate-first list.
 
-**Lesson: A Company Designed Around AI: Your Next 12 Months**  
-The load map from the opening measured again: the hours the business needs you now against then. The next twelve months designed, and your Founder Operating System running in your business.
-**Lab: Demo Day**
+*Your AI team: Chief Operating Officer, Bookkeeper, Accounts Receivable, Automation Engineer*
+**Lab: Invoices In, Overdue Chased**
 
+## 7. Module 7: Sales
+*Leads arrive from everywhere, I chase the wrong ones, and deals die after the first conversation.*
+
+**Lesson: Never Chase a Bad Lead**  
+By now leads arrive from four places: the site, the funnel, content and ads. Your pipeline lives in the brain, every lead is scored and researched, and every one gets a reply the same day, drafted for you. Outreach drafted too, for the leads worth chasing.
+
+*Your AI team: Head of Sales, Sales Development Rep, Lead Qualifier, Prospect Researcher*
+**Lab: Score Your Own Leads**
+
+**Lesson: Close More, Chase Less**  
+Deals are lost after the first conversation. Call prep before, a call review after, a proposal written from the brain, and follow-ups that go out until there is an answer.
+
+*Your AI team: Head of Sales, Sales Call Coach, Proposal Writer, Follow-up Manager*
+**Lab: Your Proposal and Follow-Up Kit**
+
+## 8. Module 8: Cockpit and handover
+*I cannot see the whole business, and I cannot step back because nobody owns anything but me.*
+
+**Lesson: Run Your Company From One Screen**  
+Every team you built has been saving its numbers since onboarding. This week they become one dashboard, and every Monday a briefing arrives with three things to do. Steering by numbers is what the business running beyond you looks like.
+
+*Your AI team: Head of Performance, Data Engineer, Dashboard Designer, CEO Briefing*
+**Lab: Your Dashboard and Monday Brief**
+
+**Lesson: Owners, Then the Week You Only Decide**  
+The promise is a business running beyond you, so this week tests it. Every department gets an owner page: what runs, when, who checks it, what to do when it breaks. Then five working days in which the founder only decides, reading the Monday briefing and the owner pages, and doing none of the work.
+
+*Your AI team: Chief of Staff, Chief Operating Officer, Head of Performance*
+**Lab: Owner Pages, and the Test Week Begins**
+
+**Graduation: Graduation and Demo Day**  
+The hours your business needs from you, counted again against the log you kept in onboarding. Then Demo Day: one running system per department shown live, and the next twelve months planned with the AI team you now have.
 ## Three questions for you
 
 1. What is missing that you expected to see?

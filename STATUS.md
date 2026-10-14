@@ -65,6 +65,37 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
   workshops); refresh with `scripts/sync-curriculum.js`. Note that script writes `slot` as null; see the AIF load-panel note below.
 - `AIRTABLE_TOKEN` is not set on Cloud Run yet, so the live page serves the snapshot.
 
+## AI for Founders Mastery: the curriculum rebuilt on Vykintas's draft v4 and Jaideep's deck (14 Oct, 1.3.24)
+
+- **Decisions (Gareth, 14 Oct, on Jaideep's decision deck):** seventeen lessons plus a graduation, eighteen calls, as
+  agreed in the call; inbox triage in week 4 on condition that weeks 1 to 3 leave it the offer book, the copy and the
+  voice file, and that its lab carries the longest privacy segment; hosting in onboarding with a go-live clinic; the
+  deck's ending (owner pages, a test week, graduation and Demo Day); Meta ads kept in the core so paid and organic are
+  both taught (Marisha). Software building is an elective (deck), format undecided.
+- **Shape:** 1 Storefront (weeks 1 to 3: website, offer and pricing, copy plus voice file), 2 Operations (week 4 sorted
+  inbox), 3 Brand and funnel (5 to 7), 4 Company brain (8), 5 Traffic (9 to 12: AI search, a month of content, weekly
+  content, Meta ads), 6 Finance (13 bookkeeping agent), 7 Sales (14 and 15), 8 Cockpit and handover (16 dashboard, 17
+  owners and the week you only decide, 18 graduation). Every lesson carries Vykintas's AI team (`team`: dept, head,
+  members, scheduled flags). Week 0 onboarding is optional, under two hours, with the hours log; the week 1 lab is the
+  safety net for hosting, the tracking pack and the hours log.
+- **Calendar:** Tue 17 Nov 2026 to graduation Tue 30 Mar 2027, 7am Pacific. London is 2pm from 16 to 25 March (weeks 16
+  and 17, notes on each session) and 3pm again at graduation. The Monday 16 Nov opening is folded into week 1 (Vishen
+  opens for about twenty minutes); Vishen has two Mastery sessions, week 1 and graduation. Thanksgiving is the week 2 lab.
+- **Pages:** one curriculum page (AI team box on every lesson, week 0 block, how every week runs, the stack, electives,
+  "What changed on 14 October"); front door diagram redrawn for the new departments; pack outline lists each lesson's AI
+  team, and the pack's changelog card is marked "for the team, not for the community". Survey questions 8 to 10 and the
+  intro now name the new modules and week 4. Hub chapter, positioning row and boundary data say 17 lessons + graduation.
+- **Bug fixed in the diary check:** the E&A snapshot refreshed from Airtable on 14 Oct already carries the John Lee
+  rotation and Marisha's workshops; the build was re-applying the rotation (Vishen's Membership lesson moved to 17 Nov,
+  Vykintas counted twice on 20 Nov) and was placing E&A sessions at 7am instead of 9am Pacific since the 7 Oct slot
+  change. Now it trusts the snapshot's times and keeps only the Regan Hillyer overlay. Result: no clashes.
+- **Open, needs Airtable or a person:** the summit's Day 2 offer session is still titled "Your Business, Rebuilt in 16
+  Weeks" in the AIF base (flagged on the front door; not edited, base is read-only until Vishen aligns); the elective's
+  format; Vishen's twenty minutes on 17 Nov sit two hours before his E&A Email Marketing lesson; teachers for the 15
+  unassigned lessons, five or six at most; whether the community survey goes out before or after this version.
+- Audit scripts used: data audit (counts, Tuesday/Thursday pairing, 7am PT, break, London-hour notes, decisions, wording)
+  and a render audit (six pages at 1280 and 390 px, script errors, overflow, diagram labels, links, redirect, API).
+
 ## AI for Founders Mastery: version two of the curriculum (14 Oct, local build, awaiting Gareth's review before push)
 
 - **What changed.** The order now follows a customer's journey: 1 Front door (weeks 1–2: website live on Thursday of

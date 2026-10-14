@@ -34,6 +34,7 @@ main{padding-block:40px 60px} .doc[hidden]{display:none} .doc{display:grid;gap:3
 footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;color:var(--subtle)} footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media(max-width:700px){.steps{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.mod{grid-template-columns:1fr}.item{grid-template-columns:1fr}.item .pill{justify-self:start}.mail .body{padding:20px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+.item p.team{font-size:13.5px;color:var(--text-subtle,#595E67);margin-top:6px} .item p.team b{color:var(--brand-content,#1832B4)}
 </style>
 <!-- PACK-END -->
 </head>
@@ -48,7 +49,7 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
     <div class="step"><b>1 · Mon 12 Oct</b><span>Email 1 from Vishen: thank-you, the summit, a survey is coming.</span></div>
     <div class="step"><b>2 · Same week</b><span>The outline and the survey go to the community, open for about a week.</span></div>
     <div class="step"><b>3 · By Mon 26 Oct</b><span>Version two of the outline published, change log credited to the survey.</span></div>
-    <div class="step"><b>4 · 30 Oct to 1 Nov</b><span>AI for Founders Summit. The programme opens Monday 16 November.</span></div>
+    <div class="step"><b>4 · 30 Oct to 1 Nov</b><span>AI for Founders Summit. The programme starts Tuesday 17 November.</span></div>
   </div>
 </div></header>
 <nav class="tabs"><div class="wrap" role="tablist">
@@ -61,7 +62,7 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
   <section class="doc" id="doc-outline">
     <div><div class="kicker">What the community reads</div><h2 class="h2">The curriculum outline</h2><p class="lede" id="outline-lede"></p></div>
     <div id="mods"></div>
-    <div class="card ask"><h3 class="h3">What changed in version two, 14 October</h3><ol id="changelog-list"></ol></div>
+    <div class="card ask"><h3 class="h3" id="changelog-title">What changed on 14 October</h3><p class="note" style="margin:4px 0 10px">For the team, not for the community: it names internal sources.</p><ol id="changelog-list"></ol></div>
     <div class="card tint ask"><h3 class="h3">Three questions for you</h3><ol><li>What is missing that you expected to see?</li><li>Where should we go deeper?</li><li>What would you skip?</li></ol><p class="note" style="margin-top:12px">Teachers and dates are left off this page on purpose: we want their view on what we teach before we settle who teaches it. Live at <a href="https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app/ai-founders/curriculum">/ai-founders/curriculum</a> (Google sign-in).</p></div>
   </section>
 
@@ -100,17 +101,19 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
   var byId = {}; D.sessions.forEach(function(s){ byId[s.id]=s; });
   var pad = function(w){ return String(w).padStart(2,'0'); };
   var lessons = D.sessions.filter(function(s){ return s.type==='Lesson' || s.type==='Graduation'; }).length;
-  document.getElementById('outline-lede').textContent = D.modules.length + ' modules, ' + lessons + ' weeks, one pillar of the business each. Each week pairs a lesson with a lab: the lesson gives the idea, the lab leaves a system running in your business by the end of the call. This is the draft before it is finished.';
+  var nLessons = D.sessions.filter(function(s){ return s.type==='Lesson'; }).length;
+  document.getElementById('outline-lede').textContent = nLessons + ' lessons and a graduation, in ' + D.modules.length + ' modules: one department of the business at a time, in the order a business needs its parts. Each lesson pairs with a lab: the lesson shows the whole workflow, the lab puts it live in your business by the end of the call, and each one installs the AI team that keeps it running. This is the draft before it is finished.';
   document.getElementById('mods').innerHTML = D.modules.map(function(m){
     var items = (m.weeks||[]).map(function(w){
       var L = byId['aif-w'+pad(w)+'-lesson'], B = byId['aif-w'+pad(w)+'-lab'], out='';
-      if (L) out += '<div class="item"><span class="pill">'+(L.type==='Graduation'?'Graduation':'Lesson')+'</span><div><h4>'+esc(L.title)+'</h4>'+(L.brief?'<p>'+esc(L.brief)+'</p>':'')+'</div></div>';
+      if (L) out += '<div class="item"><span class="pill">'+(L.type==='Graduation'?'Graduation':'Lesson')+'</span><div><h4>'+esc(L.title)+'</h4>'+(L.brief?'<p>'+esc(L.brief)+'</p>':'')+(L.team?'<p class="team"><b>Your AI team:</b> '+esc([L.team.head].concat(L.team.members.map(function(m){ return m.name; })).join(', '))+'</p>':'')+'</div></div>';
       if (B) out += '<div class="item"><span class="pill dark">Lab</span><div><h4>'+esc(B.title)+'</h4></div></div>';
       return out;
     }).join('');
     return '<section class="mod"><div class="mnum">'+m.order+'</div><div><h3>'+esc(m.name.replace(/^Module \d+: /,''))+'</h3><p class="prob">'+esc(m.problem)+'</p><div class="items">'+items+'</div></div></section>';
   }).join('');
 
+  if (D.changelog_title) document.getElementById('changelog-title').textContent = D.changelog_title;
   var cl = document.getElementById('changelog-list'); if (cl && D.changelog) cl.innerHTML = D.changelog.map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
   // 2. survey
   var S = D.survey || {sections:[]};

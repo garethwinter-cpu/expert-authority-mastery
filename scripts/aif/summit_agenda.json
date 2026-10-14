@@ -294,7 +294,8 @@
    ],
    "type": "Offer",
    "status": "Confirmed",
-   "desc": "You've seen what is possible. This session shows how it gets installed in your business, one function at a time, each with a ready-made system and labs to install it."
+   "desc": "You've seen what is possible. This session shows how it gets installed in your business, one function at a time, each with a ready-made system and labs to install it.",
+   "flag": true
   },
   {
    "day": 2,
@@ -536,6 +537,7 @@
   "Closing of Day 3 is timed at 08:10 UTC in Airtable, before the day opens.",
   "Two host segments on Day 2 start before the session in front of them ends (16:05 and 18:50 UTC).",
   "Answer Every Lead Within an Hour has Vykintas in the speaker field and Liam in the description.",
-  "Four keynotes are still In progress: Nate Herk, Joe Stolte, Callan Faulkner, and Vishen's How Mindvalley Runs Lean With AI."
+  "Four keynotes are still In progress: Nate Herk, Joe Stolte, Callan Faulkner, and Vishen's How Mindvalley Runs Lean With AI.",
+  "The Day 2 offer session is titled “AI for Founders: Your Business, Rebuilt in 16 Weeks”; the programme is now seventeen lessons and a graduation, so the title needs changing in Airtable."
  ]
 }

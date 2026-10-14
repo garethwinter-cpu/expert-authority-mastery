@@ -2,9 +2,9 @@
 """Build data/ai-founders-curriculum.json: the AI for Founders draft curriculum, held in this repo until Vishen aligns.
 Same schema as the E&A curriculum.json so it can be seeded into Airtable unchanged.
 
-Source of the copy: scripts/aif/aif_modules.json (eight modules, two weeks each, lesson + lab every week), built on
-Vykintas's curriculum proposal and Jaideep's launch brief of 5 Oct 2026. Calendar: programme starts Mon 16 Nov 2026
-(the brief's date) with Vishen's opening; lessons Tuesday, labs Thursday, 7am Pacific (3pm London); no sessions 22 and 29 Dec."""
+Source of the copy: scripts/aif/aif_modules.json (eight modules, seventeen lessons and a graduation, lesson + lab every week),
+built on Vykintas's post-call draft and Jaideep's decision deck of 14 Oct 2026. Calendar: week 1 is Tue 17 Nov 2026; lessons
+Tuesday, labs Thursday, 7am Pacific (3pm London, 2pm London 16 to 25 March); no sessions 22 and 29 Dec; graduation Tue 30 Mar 2027."""
 import json, datetime as dt, pathlib, re
 from zoneinfo import ZoneInfo
 HERE=pathlib.Path(__file__).resolve().parent; R=HERE.parents[1]
@@ -18,9 +18,10 @@ def who(s): return [] if s.strip().upper()=='TBD' else [spk(x) for x in re.split
 PT=ZoneInfo('America/Los_Angeles')
 def at(d,h=7,m=0): return dt.datetime(d.year,d.month,d.day,h,m,tzinfo=PT).astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
-# week -> Tuesday. 16 weeks from Tue 17 Nov 2026, break 21 Dec to 3 Jan
+# week -> Tuesday. 17 lesson weeks and a graduation week from Tue 17 Nov 2026, break 21 Dec to 3 Jan
+WEEKS=max(c['week'] for m in SRC['modules'] for c in m['calls'])
 starts={}; d=dt.date(2026,11,17); w=1
-while w<=16:
+while w<=WEEKS:
     if d in (dt.date(2026,12,22),dt.date(2026,12,29)): d+=dt.timedelta(days=7); continue
     starts[w]=d; d+=dt.timedelta(days=7); w+=1
 modules=[{'name':f"Module {m['n']}: {m['name']}",'short':m['short'],'order':m['n'],'problem':m['problem'],'installed':m['installed'],'changes':m['changes'],'weeks':m['weeks']} for m in SRC['modules']]
@@ -28,20 +29,16 @@ def mod(w): return next(x['name'] for x in modules if w in x['weeks'])
 
 sessions=[]
 def add(**k): sessions.append(k)
-GAR=('Get AI-Ready is optional and pre-recorded: an evergreen sequence under two hours, updated as the tools change (your account and plan, one project with instructions, '
-     'one skill installed, one app connected, and a short guide for people coming from ChatGPT). The readiness checklist nudges and never gates, and no minute of lesson one is spent on setup. '
-     'It also gives us the starting-level data the AI Mastery 2026 survey was missing.')
-add(id='aif-ready-1',title='Get AI-Ready drop-in 1: your account, your first project, your first skill',type='Bonus',start=at(dt.date(2026,11,5)),duration_min=90,speakers=[spk('Vykintas')],module=None,
-    description='Optional drop-in call, the first week after the summit: questions from the pre-recorded sequence answered live, the checklist started together. Nobody has to attend; the recording is in the sequence.\n\n'+GAR)
-add(id='aif-ready-2',title='Get AI-Ready drop-in 2: the checklist, connectors and your questions',type='Bonus',start=at(dt.date(2026,11,12)),duration_min=90,speakers=[spk('Vykintas')],module=None,
-    description='Optional drop-in call, the week before the start, for late buyers and anyone still stuck on setup. Nobody arrives at week 1 wondering what a connector is, and nobody is gated if they skip it.\n\n'+GAR)
-add(id='aif-opening',title='Why Your Business Still Runs on You',type='Kick Off',start=at(dt.date(2026,11,16)),duration_min=90,speakers=[spk('Vishen'),spk('Vykintas')],module=None,
-    description='The programme opens on Monday 16 November with Vishen. You built the business to be free; somewhere along the way it took the freedom. Vishen opens his own load map live: the years Mindvalley ran through him, and what AI runs there today. Then the ceiling every founder in the room shares: your business cannot grow faster than your calendar. Vykintas walks the sixteen weeks and the one measurement Demo Day is judged against: how many hours a week your business needs you today. He also sets the rule every lab runs on: bending time, three timed builds of twenty minutes, a checkpoint after each. Homework before lesson one: your load map and your before number, so no week is spent on it. You leave with the calendar in your hands, a number written down, and a website due on Thursday.')
+GAR=SRC['onboarding']['text']
+add(id='aif-ready-1',title='Get AI-Ready drop-in 1: setup, your first pack, your hours log',type='Bonus',start=at(dt.date(2026,11,5)),duration_min=90,speakers=[spk('Vykintas')],module=None,
+    description='Optional drop-in call, the first week after the summit: setup questions from the pre-recorded sequence answered live, the first pack installed together, and the 30-minute hours log started. Nobody has to attend; the recording is in the sequence.\n\n'+GAR)
+add(id='aif-ready-2',title='Get AI-Ready drop-in 2: the go-live clinic',type='Bonus',start=at(dt.date(2026,11,12)),duration_min=90,speakers=[spk('Vykintas')],module=None,
+    description='Optional go-live clinic, the week before the start: hosting set up together, step by step, so publishing is one sentence from week 1. For late buyers and anyone stuck. Anyone who misses it goes live in the week 1 lab.\n\n'+GAR)
 for m in SRC['modules']:
     for c in m['calls']:
         w=c['week']; d=starts[w]
         if c['type'] in ('lesson','graduation'):
-            add(id=f'aif-w{w:02d}-lesson',title=c['title'],type='Lesson' if c['type']=='lesson' else 'Graduation',start=at(d),duration_min=90,speakers=who(c['who']),module=mod(w),description=c['text'],brief=c.get('brief'),week=w)
+            add(id=f'aif-w{w:02d}-lesson',title=c['title'],type='Lesson' if c['type']=='lesson' else 'Graduation',start=at(d),duration_min=90,speakers=who(c['who']),module=mod(w),description=c['text'],brief=c.get('brief'),team=c.get('team'),week=w)
         else:
             text=c['text']+(('\n\n**The win:** '+c['win']) if c.get('win') else '')
             add(id=f'aif-w{w:02d}-lab',title=c['title'],type='Workshop',start=at(d+dt.timedelta(days=2)),duration_min=90,speakers=who(c['who']),module=mod(w),description=text,week=w,pair=f'aif-w{w:02d}-lesson')
@@ -62,31 +59,26 @@ def ea_slot_date(n):
         week+=1
     return tue if n%2 else tue+dt.timedelta(days=3)
 EA_OVERLAY=[
- # in Airtable since the snapshot: Marisha Lakhiani runs the Paid Advertising and Funnel Design workshops
- {'slot':18,'if_speaker':'Vykintas Glodenis','speaker':'Marisha Lakhiani'},
- {'slot':20,'if_speaker':'Vykintas Glodenis','speaker':'Marisha Lakhiani'},
- # held decisions of 5 Oct (STATUS.md), not yet in Airtable: the John Lee three-way rotation ...
- {'slot':13,'if_speaker':'John Lee','to_slot':25},{'slot':14,'if_speaker':'John Lee','to_slot':26},
- {'slot':29,'if_speaker':'Vishen Lakhiani','to_slot':13},{'slot':30,'if_speaker':'Vykintas Glodenis','to_slot':14},
- {'slot':25,'if_speaker':'Vishen Lakhiani','to_slot':29},{'slot':26,'if_speaker':'Vykintas Glodenis','to_slot':30},
- # ... and Regan Hillyer teaching Membership, Continuity & Superfans in Vishen's place
+ # The snapshot was refreshed from Airtable on 14 Oct and already carries the John Lee rotation and Marisha Lakhiani's
+ # Paid Advertising and Funnel Design workshops, so those overlay rows were removed: re-applying them moved Vishen's
+ # Membership lesson to 17 Nov and counted Vykintas twice on 20 Nov. One held decision of 5 Oct (STATUS.md) is still not in
+ # Airtable: Regan Hillyer teaching Membership, Continuity & Superfans in Vishen's place.
  {'title':'Membership, Continuity & Superfans','type':'Lesson','if_speaker':'Vishen Lakhiani','speaker':'Regan Hillyer'},
 ]
 def ea_sessions():
     out=[]
     for s in ea['sessions']:
         m=re.match(r'\s*(\d+)',str(s.get('slot') or '')); slot=int(m.group(1)) if m else None
-        names=[p['name'] for p in s['speakers']]
+        names=[p['name'] for p in s['speakers']]; moved=False
         for o in EA_OVERLAY:
             if 'slot' in o and o['slot']!=slot: continue
             if 'title' in o and not s['title'].startswith(o['title']): continue
             if 'type' in o and o['type']!=s['type']: continue
             if o['if_speaker'] not in names: continue
             if 'speaker' in o: names=[o['speaker'] if n==o['if_speaker'] else n for n in names]
-            if 'to_slot' in o: slot=o['to_slot']
-        start=s['start']
-        if slot: start=at(ea_slot_date(slot))              # slot 0 (the bonus) keeps its own date
-        elif s.get('start'): start=s['start']               # a refreshed snapshot carries no slot; trust its dates
+            if 'to_slot' in o: slot=o['to_slot']; moved=True
+        start=s.get('start')                                 # the 14 Oct snapshot is Airtable as it stands: trust its dates and times
+        if moved: start=at(ea_slot_date(slot),9)            # an overlay that moves a session uses E&A's rule: 9am Pacific
         if start: out.append({'start':start,'type':s['type'],'title':s['title'],'speakers':names})
     return out
 EA=ea_sessions()
@@ -108,43 +100,46 @@ ea_range={'first':ea_dated[0],'last':ea_dated[-1]}
 aif_first,aif_last=min(s['start'][:10] for s in sessions if s.get('week')),max(s['start'][:10] for s in sessions if s.get('week'))
 vyk_fridays=sorted(s['start'][:10] for s in EA if 'Vykintas Glodenis' in s['speakers'] and dt.date.fromisoformat(s['start'][:10]).weekday()==4 and aif_first<=s['start'][:10]<=aif_last)
 fmt=lambda iso: dt.date.fromisoformat(iso).strftime('%-d %b')
-load_basis=('Computed against the Expert & Authority calendar as read from Airtable on 5 October 2026 (Tuesday lessons, Friday workshops, 9am Pacific, '
-            'no Thanksgiving break, graduation Tuesday 23 February), with the two decisions held on 5 October applied on top because they are not yet in Airtable: '
-            'the John Lee rotation (Platforms to 12 and 15 January, Speaking to 17 and 20 November, Membership to 26 and 29 January) and Regan Hillyer teaching Membership in place of Vishen.')
+load_basis=('Computed against the Expert & Authority calendar as read from Airtable on 14 October 2026 (Tuesday lessons, Friday workshops, 9am Pacific, '
+            'no Thanksgiving break, graduation Tuesday 23 February; the John Lee rotation and Marisha Lakhiani\u2019s two workshops are in it), with one decision held on 5 October '
+            'applied on top because it is not yet in Airtable: Regan Hillyer teaching Membership on 26 January in place of Vishen.')
 notes=[
- 'Version two, 14 October: the order now follows a customer\u2019s journey through the business (front door, marketing, sales, then the company brain in weeks 7 and 8, operations, team, finance, product), lesson one builds a website live, every lab runs one fixed format with a pre-recorded twin, Get AI-Ready is optional and pre-recorded, and Week 16 is Demo Day. Built from the team call of 14 October (Marisha, Vykintas), Jaideep\u2019s curriculum review, Vykintas\u2019s proposals of 5 and 8 October and the quiz. Guest lessons are unassigned until the team maps authors; the full list of changes is on the outline page.',
+ '14 October, after the team call (Vykintas, Jaideep, Marisha, Gareth), Vykintas\u2019s post-call draft and Jaideep\u2019s decision deck, with Gareth\u2019s decisions on the deck: seventeen lessons and a graduation (eighteen calls, as agreed in the call); inbox triage in week 4 on condition that weeks 1 to 3 leave it the offer book, the copy and the voice file, with the longest privacy segment in its lab; hosting in onboarding with a go-live clinic; owner pages, a test week and graduation as the ending; Meta ads kept in the core so paid and organic are both taught; software building as an elective. Every lesson installs an AI team, a head and three members, as Vykintas proposed. Teachers are mapped once the curriculum is settled, five or six at most.',
  'Rebuilt on 5 October from three sources: Vykintas Glodenis’s curriculum proposal (eight modules, one business pillar each, the problem / management idea / installed system / observable change pattern, and the Get AI-Ready onboarding layer), Jaideep’s launch brief (16 weeks from Monday 16 November, two sessions per module, the summit on 30 October to 1 November), and the AI for Founders quiz (812 answers: operations, marketing and sales are where the pain is; solo founders start with marketing, founders with teams with operations; data safety and sounding like me are the unprogrammed worries).',
  'Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; roughly one guest teacher per pillar; at least one more woman on the roster. Every guest here is placed where they are most authentic, from the names in consideration on 5 October, and none is confirmed for the Mastery until the team says so.',
- 'Cadence, decided 5 October, hour set 7 October: Tuesday lesson, Thursday lab, 7am Pacific (3pm London; 2pm London in the final week), Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds '+str(len(vyk_fridays))+' of Expert & Authority’s Friday workshops at 9am Pacific inside this run ('+', '.join(fmt(d) for d in vyk_fridays)+'), so a Friday lab would put him in two rooms on the same morning on each of those dates.',
- 'The opening is Monday 16 November, the start date in the brief, with Vishen. It also keeps him clear of his Expert & Authority lesson at the same hour on Tuesday 17 November once the John Lee rotation is applied.',
+ 'Cadence, decided 5 October, hour set 7 October: Tuesday lesson, Thursday lab, 7am Pacific (3pm London; 2pm London from 16 to 25 March), Tuesday 17 November 2026 to graduation on Tuesday 30 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds '+str(len(vyk_fridays))+' of Expert & Authority’s Friday workshops at 9am Pacific inside this run ('+', '.join(fmt(d) for d in vyk_fridays)+'), so a Friday lab would put him in two rooms on the same morning on each of those dates.',
+ 'The separate Monday opening on 16 November is folded into week 1, as Jaideep\u2019s deck proposes: Vishen opens the first lesson on Tuesday 17 November for about twenty minutes, then Vykintas builds. That saves Vishen one call; his other Mastery session is graduation. It is a two-programme morning: his Expert & Authority Email Marketing lesson starts at 9am Pacific the same day, so his twenty minutes at 7am leave room, but the diary should hold both.',
  'Thanksgiving, decided 5 October and checked against the day on 7 October: the Week 2 lab stays on Thursday 26 November, Thanksgiving Day in the US. Expert & Authority’s 2025 reading was that the week holds, and it kept its Friday 27 November workshop. The 2025 Mastery records confirm the week and sharpen the day: AI Mastery’s sessions the day before (422 against 454 and 447 the Wednesdays either side) and the day after (307 against 274 and 313) showed no dip; the one session that ran on Thanksgiving Day itself, Entrepreneurship Mastery’s Thursday lesson, kept 214 of a usual 300, about 70 percent, and its recording was watched more that week than any other Thursday’s that month. So the lab runs, Vykintas-led and recorded, and the Tuesday 1 December lesson picks up anyone who missed it. Wednesday 25 November is the alternative if the team prefers not to run on the day; the day before showed no dip.',
- 'Time slot, set 7 October: 7am Pacific, which is 3pm London for every week but the last and 2pm London on 16 and 18 March 2027 (US clocks change on 14 March, UK clocks on 28 March). Janja set the hour for team capacity and schedule; the data supports it. Attendance across five Mastery bases shows no hour effect between 7am and 10am Pacific (Entrepreneurship Mastery moved from 5pm to 3pm London mid-cohort and attendance did not move), Manifesting and Speaking & Influence Mastery run at 3pm London with the highest live rates in the set, and the final hour-by-hour preference was for 9am because about 60 percent of students are in North America; that was never a hill to die on. Students are told the Pacific time; London is the derived time. Evidence in briefs/AIF-TIME-SLOT-EVIDENCE.md.',
- 'What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps. Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.',
- 'Outside the modules there are only three sessions, all before Week 1: Get AI-Ready calls 1 and 2, which are Vykintas\u2019s and in his proposal as written (the content of each call is a first pass), and the Monday opening with Vishen, the kickoff from the earlier draft moved to the start date in the brief. Office hours and an alumni reunion were in the earlier draft and were removed on 7 October: Vishen\u2019s diary cannot carry extra calls, and what happens after graduation is a separate conversation, not part of the Mastery. Expert & Authority\u2019s own Airtable holds only lessons, workshops, one bonus and the graduation.',
+ 'Time slot, set 7 October: 7am Pacific, which is 3pm London except from 16 to 25 March 2027, when it is 2pm (US clocks change on 14 March, UK clocks on 28 March); graduation on 30 March is back at 3pm London. Janja set the hour for team capacity and schedule; the data supports it. Attendance across five Mastery bases shows no hour effect between 7am and 10am Pacific (Entrepreneurship Mastery moved from 5pm to 3pm London mid-cohort and attendance did not move), Manifesting and Speaking & Influence Mastery run at 3pm London with the highest live rates in the set, and the final hour-by-hour preference was for 9am because about 60 percent of students are in North America; that was never a hill to die on. Students are told the Pacific time; London is the derived time. Evidence in briefs/AIF-TIME-SLOT-EVIDENCE.md.',
+ 'What this programme leaves to AI Mastery: how models work, prompting in depth, image and video generation, writing skills from scratch, building apps (the one exception is the software elective, offered outside the core seventeen). Where both touch the same tool the angle differs: the brain in AI Mastery is your personal knowledge; here it is the company’s, shared with the team. Neither is the advanced one.',
+ 'Outside the lessons there are only the two optional Get AI-Ready drop-in calls, on 5 and 12 November, the second being the go-live clinic for hosting. Office hours and an alumni reunion were removed on 7 October, and the Monday opening was folded into week 1 on 14 October. Software building is an elective; its format, recorded or an extra live call, is not yet decided.',
  'Summit learnings applied: a live build directly before every offer; every session leaves something built; written topic lock for every Vishen session two weeks ahead and no previews of unreleased tools; a sound check at every speaker handoff; untested builders get a paid webinar or Highlights slot before the summit; Shawn never follows Vykintas in the same event.',
 ]
-promise={'can':['The founder moves from doing to orchestrating','A leaner team gets more done','Hours back every week','Every lead answered and followed up','New hires productive in days','A business designed for AI'],
-         'cannot':['Fully autonomous systems that run with no human trigger or review: AI does the work, the founder or team approves; fully autonomous builds are outside this programme','Integration with every founder\u2019s own software beyond what existing connectors cover: we do not teach specific CRMs or SaaS tools','Hours measured by time tracking: the founder load map, filled in at Module 1 and again at Module 8, is the measure, plus a showcase of what is running'],
+promise={'can':['The founder moves from doing to orchestrating','A leaner team gets more done','Hours back every week','Every lead answered and followed up','The books off the founder\u2019s desk','A business designed for AI'],
+         'cannot':['Fully autonomous systems that run with no human trigger or review: AI does the work, the founder or team approves; fully autonomous builds are outside this programme','Integration with every founder\u2019s own software beyond what existing connectors cover: we do not teach specific CRMs or SaaS tools','Hours measured by time tracking: the 30-minute hours log in week 0, counted again at graduation, is the measure, plus Demo Day, a showcase of what is running'],
          'line':'Ambitious, in words people will not take literally. \u201cYour business runs without you\u201d sets the expectation that agents do everything; that will not happen, and refunds follow.'}
 agenda=json.load(open(R/'scripts'/'aif'/'summit_agenda.json',encoding='utf-8'))
 summit={'name':'AI for Founders Summit','note':'name confirmed by Vishen, 6 Oct, over the brief\u2019s \u201cRun on AI\u201d recommendation','dates':'Friday 30 October to Sunday 1 November 2026','line':'Find out what to automate first in your business, then build it live, step by step.','role':'The launch event. Free, three days, the offer opens here.','agenda':agenda}
 difference=[['Organised by','AI capability','Business function'],['Each lesson starts from','A capability, for example connectors','A business problem, for example leads going cold'],['You leave with','The ability to build your own solutions','Proven systems installed and running in your business'],['Depth','Deep on applied AI','Deep on the business, lighter on AI'],['Management content','None','Core: how a founder thinks and decides with AI'],['Your role','Builder','Orchestrator'],['The question it answers','What can AI do, and how do I use it?','How should my business run in the age of AI?'],['Buying trigger','I am falling behind on AI','I am the bottleneck in my own business']]
-artefact={'name':'The Founder Operating System','short':'Founder OS','parts':['Company brain','Marketing and sales engines','Delivery and operations agents','The founder\u2019s cockpit'],'line':'What a founder leaves with: the systems built week by week, running as one, in their own business.'}
+artefact={'name':'The Founder Operating System','short':'Founder OS','parts':['Company brain','Storefront, funnel and traffic teams','Sales, operations and finance teams','The founder\u2019s cockpit'],'line':'What a founder leaves with: the systems built week by week, running as one, in their own business.'}
 SESSION_NOTES={'aif-w02-lab':'Thanksgiving Day in the US. The lab runs as scheduled and is recorded; the Week 3 lesson on Tuesday 1 December picks up anyone who misses it.',
                'aif-w16-lesson':'2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March.',
-               'aif-w16-lab':'2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March.'}
+               'aif-w16-lab':'2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March.',
+               'aif-w17-lesson':'2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March.',
+               'aif-w17-lab':'2pm London this week, not 3pm: US clocks changed on 14 March, UK clocks change on 28 March.',
+               'aif-w18-lesson':'3pm London again: UK clocks changed on 28 March.'}
 for s in sessions:
     if s['id'] in SESSION_NOTES: s['note']=SESSION_NOTES[s['id']]
-slot={'pt':'7am Pacific','london':'3pm London','london_final':'2pm London on 16 and 18 March 2027',
-      'line':'7am Pacific, 3pm London (2pm London in the final week, 16 and 18 March, after US clocks change on 14 March)',
+slot={'pt':'7am Pacific','london':'3pm London','london_final':'2pm London from 16 to 25 March 2027',
+      'line':'7am Pacific, 3pm London (2pm London from 16 to 25 March, between the US and UK clock changes)',
       'anchor':'Pacific is the anchor; London is the derived time','decided':'2026-10-07','decided_by':'Janja, for team capacity and schedule'}
 survey=json.load(open(R/'scripts'/'aif'/'aif_survey.json',encoding='utf-8'))
 survey.setdefault('url',None); survey.setdefault('note','Survey link to follow')
 emails=json.load(open(R/'scripts'/'aif'/'aif_emails.json',encoding='utf-8'))
-out={'programme':'AI for Founders Mastery','artefact':artefact,'source':{'label':'Draft curriculum held in this page until aligned with Vishen, then seeded into Airtable','url':'/ai-founders/proposal'},'promise':promise,'summit':summit,'difference':difference,'start':'2026-11-16','end':'2027-03-18','break':['2026-12-21','2027-01-03'],
+out={'programme':'AI for Founders Mastery','artefact':artefact,'source':{'label':'Draft curriculum held in this page until aligned with Vishen, then seeded into Airtable','url':'/ai-founders/proposal'},'promise':promise,'summit':summit,'difference':difference,'start':'2026-11-17','end':'2027-03-30','break':['2026-12-21','2027-01-03'],
      'mode':'draft','synced_at':dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),
-     'aligned':False,'cadence':'Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery','slot':slot,'survey':survey,'emails':emails,
-     'basis':SRC['basis'],'pattern':SRC['pattern'],'lab_format':SRC['lab_format'],'onboarding':SRC['onboarding'],'changelog':SRC['changelog'],
+     'aligned':False,'cadence':'Seventeen lessons and a graduation · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London 16 to 25 March) · graduation Tuesday 30 March 2027','slot':slot,'survey':survey,'emails':emails,
+     'basis':SRC['basis'],'pattern':SRC['pattern'],'lab_format':SRC['lab_format'],'onboarding':SRC['onboarding'],'changelog':SRC['changelog'],'changelog_title':SRC['changelog_title'],'electives':SRC['electives'],'tools':SRC['tools'],
      'modules':modules,'labels':{'Workshop':'Lab'},'load':load,'load_basis':load_basis,'ea_range':ea_range,'roster':SRC['roster'],'notes':notes,'sessions':sessions}
 (R/'data'/'ai-founders-curriculum.json').write_text(json.dumps(out,indent=1,ensure_ascii=False))
 print('sessions',len(sessions)); print(json.dumps(load,indent=1)); print('E&A range',ea_range,'| Vykintas E&A Fridays in run:',vyk_fridays)
@@ -153,13 +148,14 @@ for s in sessions: print(s['start'][:10],s['type'],'|',s['title'][:52],'|',', '.
 # The outline for the survey invitation: module, lesson, lab, one line on the lesson. No teachers, no dates, no times.
 byid={s['id']:s for s in sessions}
 md=['# AI for Founders Mastery: the curriculum outline','',
-    'Sixteen weeks, eight modules, one pillar of the business each. Every module has a lesson, the idea, and a lab, where the system is installed in your own business. This is the draft before it is finished. Read it as a partner: what is missing, where should we go deeper, what would you skip?','']
+    'Seventeen lessons and a graduation, eight modules, one department of the business at a time. Every lesson has a lab, where the system is installed in your own business. This is the draft before it is finished. Read it as a partner: what is missing, where should we go deeper, what would you skip?','']
 for mod in modules:
     mname=re.sub(r'^Module \\d+: ','',mod['name'])
     md.append(f"## {mod['order']}. {mname}"); md.append(f"*{mod['problem']}*"); md.append('')
     for w in mod['weeks']:
         L=byid.get(f'aif-w{w:02d}-lesson'); Bb=byid.get(f'aif-w{w:02d}-lab')
-        if L: md.append(f"**Lesson: {L['title']}**  "); md.append(L.get('brief') or '')
+        if L: md.append(f"**{'Graduation' if L['type']=='Graduation' else 'Lesson'}: {L['title']}**  "); md.append(L.get('brief') or '')
+        if L and L.get('team'): md.append(''); md.append('*Your AI team: '+', '.join([L['team']['head']]+[m['name'] for m in L['team']['members']])+'*')
         if Bb: md.append(f"**Lab: {Bb['title']}**"); md.append('')
 md+=['## Three questions for you','','1. What is missing that you expected to see?','2. Where should we go deeper?','3. What would you skip?','','*Survey link to follow.*','']
 (R/'briefs'/'AIF-CURRICULUM-OUTLINE.md').write_text('\n'.join(md))
