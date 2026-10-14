@@ -1,194 +1,194 @@
 {
  "programme": "AI for Founders Mastery",
- "basis": "Vykintas Glodenis, AI for Founders Curriculum Proposal (5 Oct 2026); Jaideep's launch brief (5 Oct 2026); the AI for Founders quiz (812 answers, 2 to 5 Oct 2026).",
+ "basis": "Version two, 14 October 2026. Built from Vykintas Glodenis's curriculum proposals (5 and 8 Oct), Jaideep's launch brief (5 Oct) and curriculum review (14 Oct), the AI for Founders quiz (907 submissions, 747 open answers), and the team call of 14 Oct with Marisha and Vykintas: start with the thing a customer sees, bring the company brain in once its absence is felt, pair every inspiring lesson with a step-by-step lab, structure the journey around the building blocks of a business, and level the room with an optional pre-recorded onboarding. Authors for guest lessons are mapped later.",
  "pattern": [
   "The problem founders name in that pillar",
-  "The management idea: how an AI-first founder thinks about it, taught in the lesson",
-  "The system: a ready-made skill pack or workflow for that pillar, installed and adapted to each founder's business in the lab",
-  "What changes: something observable, what the founder stops doing and what now runs"
+  "The idea: how an AI-first founder thinks about it, taught in the Tuesday lesson, with the finished thing shown first",
+  "The system: a ready-made skill, template or workflow for that pillar, installed and adapted to each founder's business in the Thursday lab",
+  "What changes: something observable, running by Thursday night, listed on the Automation Hub with its owner"
  ],
  "modules": [
   {
    "n": 1,
-   "name": "Strategy: find the bottleneck",
-   "short": "Strategy",
+   "name": "Your front door",
+   "short": "Front door",
    "weeks": [
     1,
     2
    ],
-   "problem": "Everything goes through me.",
-   "installed": "Founder load map; an audit that ranks where AI pays off; a 90-day roadmap.",
-   "changes": "The founder knows the three workflows to fix first, and which to keep human.",
+   "problem": "Nobody can find me, or buy from me, without me explaining it.",
+   "installed": "Two reusable skills, copywriting and website building; the Founder Context Pack (your starter brain); your offer on one page; a live website in your words with editorial photos; your brand voice pack; a funnel (a landing page with proof, a quiz, calculator or booking link, a lead magnet and a welcome sequence) that runs on its own.",
+   "changes": "The business has a front door and a funnel that capture and welcome people while the founder sleeps, every word in the founder's voice, and the founder has fed AI their business once, the way everything else here gets built.",
    "calls": [
     {
      "week": 1,
      "type": "lesson",
      "who": "Vykintas",
-     "title": "Your Founder Load Map",
-     "text": "Where do your hours actually go? The load map is the instrument the whole programme is measured against: every lead, proposal, client question and decision that waits for you, logged for one week. Vykintas teaches how to read it, how to rank each workflow by what AI would give back, and the test for what stays human. This is also the before picture: how many hours a week your business needs you today.",
-     "brief": "Where your hours actually go. One week of every lead, proposal, client question and decision that waits for you, logged and ranked by what AI would give back, with a test for what should stay human. The before picture the whole programme is measured against."
+     "title": "Feed AI Your Business. Watch It Build Your Website.",
+     "brief": "The finished thing first: a founder's site built live from a two-minute voice note. Then the one idea the whole programme runs on: AI is only as good as what you feed it, so you feed it your business once, in a Founder Context Pack, and it finds your offer, writes your page in your voice, and builds the site. Two skills are installed on the way, copywriting and website building, and you keep both for every page you ever need again. Both impressive and fundamental: this is context engineering, learned by doing.",
+     "text": "The finished thing first. A founder's website built live, in the opening ten minutes, from a two-minute voice note and three documents, before any teaching. Then the one idea every week after this runs on: AI is only as good as what you feed it, and you are about to feed it your whole business.\n\nFour steps, shown and installed, not taught to depth: the Founder Context Pack (who you serve, what you sell, what customers say, your proof, ten minutes of you talking, transcribed), which is the starter brain that week 7 formalises; the Offer Finder, which interrogates the pack and returns three offers so one can be chosen and written as promise, format and price; the copywriting skill, run against the pack through an anti-slop gate so the page sounds like you; and the website-building skill, where the copy goes in and your business appears on a screen. Both skills are yours to keep: whenever you need copy or a page again, they are covered. Two tracks from the first minute: solo and pre-business founders choose their offer, founders with a team sharpen the one they already sell.\n\nHomework before Thursday: send the preview to one real customer and ask one question. The win is the idea in your head on a page you did not have on Monday, and the knowledge that you built it."
     },
     {
      "week": 1,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Map the Week, Rank the Leverage",
-     "text": "Load map filled in on your real week, in the two tracks the quiz showed: solo founders start with content and leads, founders with a team start with the approvals and admin that reach them. Three workflows named, one chosen.",
-     "win": "You know what to automate first, and it is written down"
+     "title": "Your Site, Live by Thursday",
+     "text": "Three timed builds. Twenty minutes: the copy polished with the customer's reaction, the anti-slop pass, the offer's price and format fixed. Twenty minutes: the site generated and hosted, the domain connected; the template picks the host, so this is clicks, not configuration. Twenty minutes: your own photos turned into editorial shots for the site, and email capture with a thank-you page wired and a test signup sent; the things you thought would cost money are now free. Then unsticking in two rooms. The URL goes in the community thread: thirty live sites in one thread is the proof the cohort is real.",
+     "win": "Your business has a front door, and you built it"
     },
     {
      "week": 2,
      "type": "lesson",
-     "who": "Nate Herk",
-     "title": "What to Hand to AI First",
-     "text": "Nate was a spreadsheet analyst with no coding background; within a year he ran an AI agency serving brands like Topgolf and BarkBox. Most founders try to automate everything at once and stall. He teaches how AI-native founders think instead: start with the few workflows that quietly drain a small team every week, hand those over, and only then widen. The management idea for the whole programme: AI first, then people for what only people do.",
-     "brief": "Why founders who try to automate everything at once stall, and how AI-native founders think instead: hand over the few workflows that quietly drain a small team every week, then widen. AI first, then people for what only people do."
+     "who": "Vykintas",
+     "title": "Your Brand Voice, Then Your Funnel",
+     "brief": "A site nobody captures from is a brochure. First the brand voice pack: how everything you send sounds and looks, written once from your own words, and later the first thing that goes into your company brain. Then the funnel built on last week's two skills: a landing page with your proof, a quiz, a calculator or a booking link, the lead magnet that earns an email, and the welcome sequence that does the first five conversations for you. The first system in your business that works while you sleep.",
+     "text": "A website nobody captures from is a brochure. Before the funnel, the voice: a brand voice pack written from your own words (how you sound, what you never say, your story, your visual rules), so every page, email and post from here reads as one person. It is the first thing that goes into the company brain in week 7, and it improves the site you built last week.\n\nThen the funnel, built with the copywriting and website-building skills from week 1: a landing page with your testimonials and proof, a quiz, calculator or book-a-call step matched to what you sell (most founders in the room sell a service, so most funnels end in a booked call), the lead magnet that earns an email (a scorecard, a checklist, a short assessment, generated from the Context Pack), and the five-email welcome sequence that does the first conversations in your voice. Shown first: a founder's funnel taking a booking while they are on stage.\n\nThe idea underneath: every asset is written once, saved as a skill, and reused everywhere. Two tracks: solo founders build the funnel around the offer; founders with a team wire it to the list and tools they already have. Once the funnel exists, traffic has somewhere to go, which is what weeks 3 and 4 are for."
     },
     {
      "week": 2,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Your 90-Day Roadmap",
-     "text": "The roadmap built against your load map: which pillar first, which system each month, what success looks like at module 8. The first workflow from the map handed over before the lab ends. The lab falls on US Thanksgiving and runs as scheduled; it is recorded.",
-     "win": "A dated plan, and one job already off your desk"
+     "title": "Your Funnel, Live by Thursday",
+     "text": "Three timed builds. The brand voice pack written from your words and your photos, and applied to the site. The funnel page generated with the two skills, the quiz or booking step wired to it, and the lead magnet placed behind the signup. The five-email welcome sequence written from the Context Pack, through the anti-slop gate, scheduled, and tested end to end; then the first entry on your Automation Hub: what runs, when, who owns it, where the checkpoint is. The lab falls on US Thanksgiving and runs as scheduled; it is recorded, and the week 3 lesson picks up anyone who misses it.",
+     "win": "A funnel that captures and welcomes people without you"
     }
    ]
   },
   {
    "n": 2,
-   "name": "Company brain",
-   "short": "Company brain",
+   "name": "Marketing engine",
+   "short": "Marketing",
    "weeks": [
     3,
     4
    ],
-   "problem": "AI gives generic answers; the team keeps asking the founder.",
-   "installed": "Shared context, offers, customers, voice, processes and decisions, in one place the whole team uses.",
-   "changes": "Every later system, and every team member, works from one source.",
+   "problem": "Nobody is finding me, and content eats my time.",
+   "installed": "The content engine: short form, long form, lead form. Articles on your website that answer what buyers ask, so AI engines and search find you; one long piece turned into a month of carousels, posts, reels and emails; one ad attached to a sale; your channels pointed at the funnel; a signal dashboard.",
+   "changes": "People find the founder without being told where to look, a month of content in the founder's voice is scheduled, and demand shows on a dashboard before anything is sold.",
    "calls": [
     {
      "week": 3,
      "type": "lesson",
-     "who": "Vykintas",
-     "title": "The Company Brain",
-     "text": "From a personal AI memory to the company's: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. Vykintas teaches the brain every pillar after this one runs on, then builds it with you two days later.",
-     "brief": "From a personal AI memory to the company’s: mission, offers, customers, voice, numbers, processes and the decisions already made, in one governed place every tool and every team member reads."
+     "who": "TBD",
+     "title": "Short Form, Long Form, Lead Form",
+     "brief": "How people find you now: AI engines answer their questions, and the answers come from articles on your website. The content engine in three layers: long form (articles that answer what your buyers ask, written by AI from your Context Pack, so search and AI find you), short form (each article cut into carousels, posts, reels and a newsletter in seconds), lead form (every piece pointing at the funnel). The week content stops eating the founder's time.",
+     "text": "How one person now matches the output of a marketing team, and why it starts with the website you already built. Long form first: articles on your site that answer the questions and objections your buyers actually ask, written by AI from the Context Pack in your brand voice. This is AEO, answer engine optimisation, search for the AI age: when someone asks an AI who to hire, those articles are how it finds you and why it calls you the authority. Short form second: every article is the source for carousels, posts, reels, a newsletter and scripts, cut in seconds, so the narrative is written once and travels everywhere. Lead form third: every piece points at the funnel from week 2.\n\nContent is the solo founder's biggest time-eater in the quiz, and sounding like a robot is the most repeated worry; this is the week both stop. The idea: a system that produces a month, not a founder who produces a post. This is one lesson on producing content, not a social media programme; growing a following is a different Mastery."
     },
     {
      "week": 3,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Stand Up Your Company Brain",
-     "text": "Offers, voice, customers, numbers and proof stories loaded into a governed project. Interrogated against your real numbers until it answers like someone who works there.",
-     "win": "An AI that answers like your co-founder, by Thursday night"
+     "title": "A Month of Content, Scheduled",
+     "text": "Three timed builds. Five articles that answer your buyers' questions, generated from the Context Pack through the anti-slop gate and published on your site. One article turned into carousels, posts, reels and a newsletter, and the ten-second version saved as a skill so every future article does the same. A month scheduled before the lab ends, each piece pointing at the funnel, and the run listed on the Automation Hub.",
+     "win": "People can find you, and a month of content is scheduled"
     },
     {
      "week": 4,
      "type": "lesson",
-     "who": "Noelle Russell",
-     "title": "What Goes In, and What Never Does",
-     "text": "Data safety was the question the $100K+ founders in the quiz asked most. Noelle brings enterprise AI governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The management idea is simple: a brain the team uses has to be a brain you would show a lawyer.",
-     "brief": "Data safety for a small company: which models and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. A brain the team uses has to be one you would show a lawyer."
+     "who": "TBD",
+     "title": "From Content to Demand",
+     "brief": "Content nobody captures is a hobby. Two ways to send people to your funnel, organic and paid: which platform is your front door, how the content engine fills it, and one ad built from an article and attached to a sale, run through AI connected to your ad account. Then the signals that tell you demand is real before you sell.",
+     "text": "Content nobody captures is a hobby. The traffic layer, both routes shown: organic, which platform is your front door and how the content engine from week 3 fills it; and paid, one ad built from an article, attached to a sale, and run through AI connected to your ad account, so the ad manager is a conversation, not a dashboard. Most founders in the room will prefer organic because ads cost money; both are shown so the choice is theirs. Then the signals that tell you demand is real before you spend a week building the thing. The idea: marketing's second half is not more content, it is a list that grows while you work, and a dashboard that says whether it is."
     },
     {
      "week": 4,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Feed the Brain, Safely",
-     "text": "Document and meeting pipelines wired in so the brain stays current without you. An AI policy for your business written and adopted. A blind-spot report generated from your own data.",
-     "win": "A brain your whole team uses, and your AI spots a problem you had missed"
+     "title": "Your Channels, Wired to the Funnel",
+     "text": "Each channel's call to action pointed at the funnel; the signup wired to the welcome sequence; one ad built from your best article, with the ad account connected and the spend decision left to you. A signal dashboard counting real interest by source. One assessment or scorecard shipped as a second magnet if the first is not pulling. Everything on the Automation Hub.",
+     "win": "You can see demand before you sell"
     }
    ]
   },
   {
    "n": 3,
-   "name": "Marketing",
-   "short": "Marketing",
+   "name": "Sales",
+   "short": "Sales",
    "weeks": [
     5,
     6
    ],
-   "problem": "Content depends on the founder's time.",
-   "installed": "Voice-trained content skills: one idea into a week of posts, emails and pages.",
-   "changes": "Consistent output without the founder writing each piece.",
+   "problem": "Leads go cold, follow-ups slip.",
+   "installed": "Lead research, qualification and follow-up skills; proposals from your assets; call prep and debrief; a pipeline view; one channel test running.",
+   "changes": "Every lead answered within the hour and followed up; the founder takes only the calls that need them.",
    "calls": [
     {
      "week": 5,
      "type": "lesson",
-     "who": "Sabrina Ramonov",
-     "title": "The One-Person Marketing Team",
-     "text": "Sabrina sold her first AI company, then grew to more than three million followers in 24 months with no funding, no ads and no team. She teaches how one person now matches the output of a twenty-person marketing team with agents, what she still does herself, and what she never hands over. Content is the solo founder's biggest time-eater in the quiz, and this is the week it stops being one.",
-     "brief": "How one person now matches the output of a large marketing team with agents, what still gets done by hand, and what never gets handed over. The week content stops eating the founder’s time."
+     "who": "TBD",
+     "title": "The Lead That Never Goes Cold",
+     "brief": "Answering a lead within the hour changes whether it converts. Research, qualification, a reply in your voice and a booked call, with the exact moments where automation would kill trust and a human steps in.",
+     "text": "Firms that answer a lead within an hour are far more likely to qualify it. The lead desk: research the lead, qualify it, reply in the founder's voice, book the call, and the exact moments where automation lifts conversion and where it kills trust and a human has to step in. The idea: speed is a system, not a founder who checks their inbox."
     },
     {
      "week": 5,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Your Voice, Made Executable",
-     "text": "A voice skill trained on your own words, not a template. One idea turned into a week of posts, emails and a page, with an anti-slop gate so nothing ships that sounds like AI. The answer to the quiz's most repeated worry: sounding like me.",
-     "win": "Content that sounds like you, on demand"
+     "title": "The Follow-Up Engine",
+     "text": "Lead research and qualification skills installed; follow-up sequences running from your inbox or CRM; every new lead answered within the hour, with a human checkpoint before anything is promised. Listed on the Automation Hub.",
+     "win": "No lead goes cold in your business again"
     },
     {
      "week": 6,
      "type": "lesson",
-     "who": "Ruben Hassid",
-     "title": "From Content to a List",
-     "text": "Content that nobody captures is a hobby. Ruben built EasyGen and grew a founder audience on LinkedIn with AI doing the drafting; he teaches the distribution layer: which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell. Marketing's second half: not more content, a list that grows while you work.",
-     "brief": "Content nobody captures is a hobby. Which platform is your front door, how AI turns attention into a list, and the signals that tell you demand is real before you sell."
+     "who": "TBD",
+     "title": "Outbound on Autopilot, and Choosing Your Channel",
+     "brief": "Finding the next client is the job most founders still do alone. AI finds the right prospects, writes to them one by one and books the calls, so the pipeline fills while you deliver. Then the choice every business has to make: outbound, partners, referrals or ads.",
+     "text": "Finding the next client is the job most founders still do alone. Outbound as a system: AI finds the right prospects, writes to each one personally, books the calls, so the pipeline keeps filling while the founder delivers. Then the strategy question underneath: of outbound, partners, referrals and ads, which one channel fills your pipeline, and how to run its first test in a week. The idea: sales as a system the founder reviews, not a task the founder performs."
     },
     {
      "week": 6,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Your Lead-Capture Asset, Live",
-     "text": "An assessment or scorecard built and shipped in-session, wired to the brain, with a signal dashboard counting real interest by the end of the lab.",
-     "win": "A lead machine with your name on it, on the internet"
+     "title": "Proposals, Call Prep and the Pipeline Cockpit",
+     "text": "Proposal generation from your assets; call prep and debrief skills; a pipeline view that shows which conversations need you this week and which the system is handling. One channel chosen and its first test running by the end of the lab.",
+     "win": "You take only the calls that need you"
     }
    ]
   },
   {
    "n": 4,
-   "name": "Sales",
-   "short": "Sales",
+   "name": "Company brain",
+   "short": "Company brain",
    "weeks": [
     7,
     8
    ],
-   "problem": "Leads go cold, follow-ups slip.",
-   "installed": "Lead research, qualification, follow-up and proposal skills; call prep and debrief.",
-   "changes": "Every lead answered and followed up; the founder takes only the calls that need them.",
+   "problem": "Six weeks of assets in six places; AI gives generic answers; the team keeps asking the founder.",
+   "installed": "Everything built so far in one governed place: offers, customers, voice, numbers, processes and decisions; data rules; pipelines that keep it current; the Monday page.",
+   "changes": "Every later system, and every team member, works from one source, and three numbers arrive every Monday.",
    "calls": [
     {
      "week": 7,
      "type": "lesson",
-     "who": "Liam Ottley",
-     "title": "The Lead That Never Goes Cold",
-     "text": "Firms that answer a lead within an hour are about seven times more likely to qualify it. Liam builds these systems inside real small businesses every week: research the lead, qualify it, reply in the founder's voice, book the call. He teaches where automation lifts conversion and the exact moments where it kills trust and a human has to step in.",
-     "brief": "Answering a lead within the hour changes whether it converts. Research, qualification, a reply in your voice and a booked call, with the exact moments where automation would kill trust and a human steps in."
+     "who": "Vykintas",
+     "title": "The Company Brain: Everything You Built, in One Place",
+     "brief": "From a starter pack to the company's memory: mission, offers, customers, voice, numbers, processes and the decisions already made, in one governed place every tool and every team member reads. By now you have felt why.",
+     "text": "By now you have a site, a funnel, a month of content, a lead desk and a channel test, built from answers you typed into six templates. This is the week they become one thing. From the Founder Context Pack to the company's memory: mission, offers, customers, voice, numbers, processes and the decisions you have already made, in one governed place every tool and every team member reads. Record-everything as an organisation, not a habit. The idea: every system you build from here reads the brain, and every system writes back."
     },
     {
      "week": 7,
      "type": "lab",
      "who": "Vykintas",
-     "title": "The Follow-Up Engine",
-     "text": "Lead research and qualification skills installed; follow-up sequences running from your CRM or inbox; every new lead answered within the hour with a human checkpoint before anything is promised.",
-     "win": "No lead goes cold in your business again"
+     "title": "Stand Up Your Company Brain",
+     "text": "Offers, voice, customers, numbers and proof stories loaded into a governed project, and the six weeks of assets pointed at it. Interrogated against your real numbers until it answers like someone who works there.",
+     "win": "An AI that answers like your co-founder, by Thursday night"
     },
     {
      "week": 8,
      "type": "lesson",
-     "who": "Nick Saraev",
-     "title": "Outbound on Autopilot",
-     "text": "Finding the next client is the job most founders still do alone. Nick builds outbound and lead systems for a living: AI finds the right prospects, writes to them one by one, and books the calls, so the pipeline keeps filling while the founder delivers. The management idea: sales as a system the founder reviews, not a task the founder performs.",
-     "brief": "Finding the next client is the job most founders still do alone. AI finds the right prospects, writes to them one by one and books the calls, so the pipeline fills while you deliver. Sales as a system you review, not a task you perform."
+     "who": "TBD",
+     "title": "What Goes In, and What Never Does",
+     "brief": "Data safety for a small company: which models and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. A brain the team uses has to be one you would show a lawyer.",
+     "text": "Data safety was the question the higher-revenue founders in the quiz asked most. Governance sized for a three-person company: which model and tools, who can see what, where client information never goes, and the human checkpoint that keeps trust. The idea is simple: a brain the team uses has to be a brain you would show a lawyer."
     },
     {
      "week": 8,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Proposals, Call Prep and the Pipeline Cockpit",
-     "text": "Proposal generation from the brain; call prep and debrief skills; a pipeline view that shows which conversations need you this week and which the system is already handling.",
-     "win": "You take only the calls that need you"
+     "title": "Feed the Brain, Safely",
+     "text": "Document and meeting pipelines wired in so the brain stays current without you. An AI policy for your business written and adopted. A blind-spot report generated from your own data. And the Monday page, version one: three numbers the brain reports every Monday from here on, so the week 14 dashboard has history.",
+     "win": "A brain your whole team uses, and your first Monday page"
     }
    ]
   },
@@ -201,39 +201,39 @@
     10
    ],
    "problem": "Client work and questions land on the founder.",
-   "installed": "Client onboarding flow; processes turned into skills; first-line support drafts; scheduled check-ins.",
-   "changes": "Routine client work runs from the system; the founder reviews rather than does.",
+   "installed": "Client onboarding flow; processes turned into skills; first-line support drafts; scheduled check-ins; inbox and invoice triage; the Automation Hub page.",
+   "changes": "Routine client work runs from the system; the founder reviews rather than does; Monday starts with a report.",
    "calls": [
     {
      "week": 9,
      "type": "lesson",
-     "who": "Noelle Russell",
+     "who": "TBD",
      "title": "Delivery Agents and the Customer Experience",
-     "text": "One agent, one job. Noelle walks through one founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The management idea: clients should get the good version of your business whether or not you are in the room.",
-     "brief": "One agent, one job. A founder’s delivery running on AI end to end: onboarding, fulfilment support and service workflows, each with the human checkpoint kept where trust lives. Clients get the good version of your business whether or not you are in the room."
+     "brief": "One agent, one job. A founder's delivery running on AI end to end: onboarding, fulfilment support and service workflows, each with the human checkpoint kept where trust lives. Clients get the good version of your business whether or not you are in the room.",
+     "text": "One agent, one job. One founder's delivery running on AI end to end: onboarding, fulfilment support, service workflows, each handed to AI and each with the human checkpoint kept where trust lives. The idea: clients should get the good version of your business whether or not you are in the room."
     },
     {
      "week": 9,
      "type": "lab",
      "who": "Vykintas",
      "title": "Client Onboarding, Automated",
-     "text": "Your onboarding flow built end to end: welcome, intake, first-line support drafts, scheduled check-ins, escalation to you only where it should. Experience score instrumented.",
+     "text": "Your onboarding flow built end to end: welcome, intake, first-line support drafts, scheduled check-ins, escalation to you only where it should. Experience score instrumented. Listed on the Automation Hub.",
      "win": "Delivery that scales without headcount"
     },
     {
      "week": 10,
      "type": "lesson",
-     "who": "Nate Herk",
-     "title": "The Operations Brain",
-     "text": "SOPs become skills. Meetings become operations data. Nate teaches the orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first; this is where it is.",
-     "brief": "Standard procedures become skills, meetings become operations data. The orchestration layer founders skip: scheduled runs, multi-step automations, and the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step."
+     "who": "TBD",
+     "title": "The Operations Brain: What to Automate Next",
+     "brief": "Standard procedures become skills, meetings become operations data. The orchestration layer founders skip: scheduled runs, multi-step automations, and the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step.",
+     "text": "Standard procedures become skills. Meetings become operations data. The orchestration layer founders skip: scheduled runs, multi-step automations, the admin that eats evenings (inbox, invoices, scheduling) handed over with a review step. Operations was the pillar the quiz's team founders wanted fixed first. The idea: what to automate next is a list you can read, not a feeling."
     },
     {
      "week": 10,
      "type": "lab",
      "who": "Vykintas",
      "title": "Two Ops Automations, Live",
-     "text": "A reporting automation and an admin automation running on schedule before the lab ends, each with a checkpoint that lands in your inbox, not a task that lands on your desk.",
+     "text": "Inbox triage and invoice and expense triage running on schedule before the lab ends, each with a checkpoint that lands in your inbox, not a task that lands on your desk. The Automation Hub page completed: every scheduled run in your business in one list, with its owner and its checkpoint.",
      "win": "Monday starts with a report, not a scramble"
     }
    ]
@@ -247,16 +247,16 @@
     12
    ],
    "problem": "Hiring is slow, delegation fails.",
-   "installed": "AI team members per role; hiring, onboarding and training kits; delegation briefs.",
+   "installed": "AI team members per role; hiring, onboarding and training kits; delegation briefs; an adoption scorecard.",
    "changes": "Solo: contractors plus AI instead of a first hire. Team: new people productive in days.",
    "calls": [
     {
      "week": 11,
      "type": "lesson",
-     "who": "Callan Faulkner",
+     "who": "TBD",
      "title": "Hiring Your First AI Employees",
-     "text": "Callan runs 150 AI employees alongside a thirty-person human team, with nobody let go. She teaches the question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI?",
-     "brief": "Once the systems exist, who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real question: me, a contractor, or AI?"
+     "brief": "Once the systems exist, who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real question: me, a contractor, or AI?",
+     "text": "The question every growing founder hits once the systems exist: who runs them? Which roles get an AI teammate first, which stay human, and for the solo founder the real version of the question: me, a contractor, or AI? The idea: see your business as a set of roles, not a pile of tasks."
     },
     {
      "week": 11,
@@ -269,17 +269,17 @@
     {
      "week": 12,
      "type": "lesson",
-     "who": "Alex Dogliotti",
+     "who": "TBD",
      "title": "How Mindvalley's Team Works With Agents",
-     "text": "Mindvalley's COO and CHRO, and author of Replaced by AI, on the org chart after AI: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size.",
-     "brief": "The org chart after AI, from inside a company that has done it: where agents sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI, not less."
+     "brief": "The org chart after AI, from inside a company that has done it: where agents sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI, not less.",
+     "text": "The org chart after AI, from inside Mindvalley: where agents now sit beside people, what one person does today that took three, and how to bring the humans with you so the team asks for more AI rather than less. Adoption and role redesign, from someone who has run it inside a company this size."
     },
     {
      "week": 12,
      "type": "lab",
-     "who": "Vykintas + Alex Dogliotti",
+     "who": "Vykintas",
      "title": "The Hiring and Onboarding Kit",
-     "text": "Hiring, onboarding and training kits generated from the brain; an adoption scorecard; delegation briefs for your real team or your first future hire. Alex works the floor on the people questions.",
+     "text": "Hiring, onboarding and training kits generated from the brain; an adoption scorecard; delegation briefs for your real team or your first future hire.",
      "win": "A new person productive in days, not months"
     }
    ]
@@ -293,16 +293,16 @@
     14
    ],
    "problem": "The numbers arrive too late to act on.",
-   "installed": "Weekly business dashboard; expense and invoice triage; decision memos.",
-   "changes": "One weekly view the founder decides from.",
+   "installed": "The money desk: cash, margin, forecast on one page; expense and invoice triage; decision memos; the company dashboard that recommends.",
+   "changes": "One weekly view the founder decides from, that says what to fix next.",
    "calls": [
     {
      "week": 13,
      "type": "lesson",
-     "who": "Shawn Kanungo",
+     "who": "TBD",
      "title": "The Finance Cockpit",
-     "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by a CPA with a Deloitte background so it is credible rather than aspirational. The management idea: decide from numbers that arrive on Monday, not from the accountant's summary in April.",
-     "brief": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts and a weekly brief. Decide from numbers that arrive on Monday, not from the accountant’s summary in April."
+     "brief": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts and a weekly brief. Decide from numbers that arrive on Monday, not from the accountant's summary in April.",
+     "text": "Founder finance with AI: cashflow visibility, pricing and unit economics, forecasts, the weekly brief. The pillar every other programme skips, taught by someone who has kept real books. The idea: decide from numbers that arrive on Monday, not from the accountant's summary in April."
     },
     {
      "week": 13,
@@ -317,16 +317,16 @@
      "type": "lesson",
      "who": "Vishen",
      "title": "The Orchestrator's Week",
-     "text": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on.",
-     "brief": "The week of a founder whose systems run: the weekly brief, decision memos instead of meetings, and how priorities, energy and focus are managed when you lead rather than do."
+     "brief": "The week of a founder whose systems run: the weekly brief, decision memos instead of meetings, and how priorities, energy and focus are managed when you lead rather than do.",
+     "text": "Vishen's own operating system as a founder: the weekly brief he reads, the decision memos the team sends instead of meetings, how priorities, energy and focus get managed when the systems run and you lead. The week of an orchestrator, taught by the person the programme is modelled on."
     },
     {
      "week": 14,
      "type": "lab",
      "who": "Vykintas",
      "title": "The Founder Cockpit",
-     "text": "One dashboard: pipeline, delivery health, money, the weekly AI founder brief and a priorities agent. Everything built since Week 3, read in one place.",
-     "win": "A business you can read in five minutes"
+     "text": "One dashboard: pipeline, delivery health, money, content, the weekly founder brief, and a recommendations agent that says do this, try this, spend time here. Everything built since week 1, read in one place, writing back to the brain.",
+     "win": "A business you can read in five minutes, that tells you what to fix"
     }
    ]
   },
@@ -338,40 +338,40 @@
     15,
     16
    ],
-   "problem": "What to build or sell next.",
-   "installed": "Offer and pricing research; the weekly operating rhythm; an AI-first org chart.",
-   "changes": "A company designed around AI, not AI bolted onto the old one.",
+   "problem": "What to build or sell next, and whether the business can run a week on its systems.",
+   "installed": "Offer and pricing research; the weekly operating rhythm; an AI-first org chart; the week you only decide; demo day.",
+   "changes": "A company designed around AI, not AI bolted onto the old one, and a founder who decides rather than does.",
    "calls": [
     {
      "week": 15,
      "type": "lesson",
-     "who": "Matt Gray",
-     "title": "The Founder Operating Rhythm",
-     "text": "Matt built Founder OS on exactly this question: what to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves.",
-     "brief": "What to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research through the brain, an operating rhythm that replaces heroics, and a company designed around the systems rather than around you."
+     "who": "TBD",
+     "title": "The Founder Operating Rhythm, and Your Next Offer",
+     "brief": "What to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research through the brain, an operating rhythm that replaces heroics, and a company designed around the systems rather than around you.",
+     "text": "What to build or sell next, and the repeatable week that gets it shipped. Offer and pricing research run through the brain, the weekly operating rhythm that replaces heroics, and how a founder designs the company around the systems rather than around themselves. Then the test the programme is sold on: a week where you only decide."
     },
     {
      "week": 15,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Your Next Offer, Researched and Priced",
-     "text": "Offer and pricing research run against your customers and market; your weekly operating rhythm loaded into the cockpit; your AI-first org chart drawn: which work sits with people, which with agents, and what you hire next.",
-     "win": "You know what you are selling next, and who or what delivers it"
+     "title": "The Week You Only Decide",
+     "text": "Five working days in which the systems run, the owners run them, and you review for twenty minutes on Monday. Delivery and pipeline tracked across the week. Next-offer research run against your customers and market in the Thursday debrief, and your AI-first org chart drawn: which work sits with people, which with agents, and what you hire next.",
+     "win": "Five days where the systems ran and you decided"
     },
     {
      "week": 16,
      "type": "graduation",
      "who": "Vishen + Vykintas",
      "title": "A Company Designed Around AI: Your Next 12 Months",
-     "text": "Vishen and Vykintas close together. The load map from Week 1 measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and certification on your Founder Operating System in production: the company brain, the marketing and sales engines, the delivery and operations agents and the cockpit, running in your business.",
-     "brief": "The load map from Week 1 measured again: the hours the business needs you now against then. The next twelve months designed, and certification on your Founder Operating System running in your business."
+     "brief": "The load map from the opening measured again: the hours the business needs you now against then. The next twelve months designed, and your Founder Operating System running in your business.",
+     "text": "Vishen and Vykintas close together. The load map from the opening measured again: hours the business needs you now against then. From momentum to market leadership, the next twelve months designed, and your Founder Operating System in production: the front door and the engines, the company brain, the delivery and operations agents, the AI team and the cockpit, running in your business."
     },
     {
      "week": 16,
      "type": "lab",
      "who": "Vykintas",
-     "title": "Certification Showcase and Demo Day",
-     "text": "Every founder demonstrates one running system per pillar. Certification is awarded on a Founder Operating System in production, not videos watched. The cohort showcase closes the programme.",
+     "title": "Demo Day",
+     "text": "Every founder demonstrates one running system per module. The cohort showcase closes the programme: the before number, the after number, and the systems on screen.",
      "win": "Your Founder Operating System, running, on show"
     }
    ]
@@ -499,5 +499,38 @@
     "status": "Confirmed for the summit"
    }
   ]
- }
+ },
+ "lab_format": {
+  "title": "Every lab runs the same way",
+  "steps": [
+   "Ten minutes: the finished build shown again, and the three steps named",
+   "Sixty minutes: three timed builds of twenty minutes, each ending with a checkpoint screenshot in the thread (bending time is the rule)",
+   "Twenty minutes: unsticking, in two rooms, solo founders and founders with a team",
+   "Before the lab: a pre-recorded step-by-step twin, chaptered, and the template, so nobody is lost live",
+   "After the lab: one thing running, named on the Automation Hub with its owner and its checkpoint"
+  ]
+ },
+ "onboarding": {
+  "title": "Get AI-Ready, optional and pre-recorded",
+  "text": "An evergreen sequence under two hours, updated as the tools change: your account and plan, one project with instructions, one skill installed, one app connected, and a short guide for people coming from ChatGPT. Optional, with a readiness checklist that nudges and never gates. Two live drop-in calls on 5 and 12 November for questions; nobody has to attend them. No minute of lesson one is spent on setup."
+ },
+ "changelog": [
+  "The order now follows a customer's journey through the business. Week 1 ships a website; the company brain moves to weeks 7 and 8, after six weeks of building have made its absence felt (team call, 14 Oct).",
+  "Lesson one is the wow: feed AI your business, find the offer, install the copy skill, drop the copy in and watch the site appear. The lab hosts it (Vykintas, 14 Oct).",
+  "Week 1 installs two reusable skills, copywriting and website building, so every later page, funnel and email is built with them (Vykintas, 14 Oct).",
+  "Week 2 is brand voice, then funnel: the voice pack improves the site and later seeds the brain; the funnel ends in a quiz, a calculator or a booked call, with the lead magnet and welcome sequence behind it (team call, 14 Oct).",
+  "Week 2 builds the lead magnet and a five-email welcome sequence: the first thing running unattended is in week 2, not week 10 (Jaideep's review).",
+  "Week 3 is short form, long form, lead form: articles on your own website answer what buyers ask so AI engines and search find you, then each article becomes carousels, posts, reels and a newsletter, and a month is scheduled (team call, 14 Oct; quiz: content is the solo founder's biggest time-eater).",
+  "Week 4 shows both routes to traffic, organic and one paid ad attached to a sale, and stops there: producing content is in scope, growing a following belongs to the social media Mastery (Marisha, 14 Oct).",
+  "The Monday page starts in week 8, three numbers the brain reports every Monday, so the week 14 dashboard has history (Jaideep's review).",
+  "Week 10 adds the Automation Hub page: every scheduled run in one list with its owner and checkpoint (Jaideep's review).",
+  "The week 14 dashboard recommends: do this, try this, spend time here (Jaideep's review).",
+  "Week 15 is the week you only decide: systems and owners run, the founder reviews. Reworded from a week without you, to keep the promise honest (Jaideep's review, our promise rule).",
+  "Week 16 is Demo Day, a showcase of one running system per module. The word certification is retired (product decision, 6 Oct).",
+  "The load map moves into the Monday opening as homework, so the before number exists before lesson one and no week is spent on it.",
+  "Every lab runs one fixed format with a pre-recorded twin, so inspiration on Tuesday never leaves a non-technical founder lost on Thursday (team call, 14 Oct).",
+  "Get AI-Ready becomes optional and pre-recorded, continuously updated, with two drop-in calls (team call, 14 Oct).",
+  "Vishen teaches three sessions: the opening, week 14 and the graduation. Guest lessons are unassigned until the team maps authors.",
+  "The builder track (PRD, ship your own software) stays out of the sixteen weeks; app-building belongs to AI Mastery."
+ ]
 }

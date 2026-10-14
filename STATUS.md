@@ -65,6 +65,32 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
   workshops); refresh with `scripts/sync-curriculum.js`. Note that script writes `slot` as null; see the AIF load-panel note below.
 - `AIRTABLE_TOKEN` is not set on Cloud Run yet, so the live page serves the snapshot.
 
+## AI for Founders Mastery: version two of the curriculum (14 Oct, local build, awaiting Gareth's review before push)
+
+- **What changed.** The order now follows a customer's journey: 1 Front door (weeks 1–2: website live on Thursday of
+  week 1; brand voice then funnel in week 2), 2 Marketing engine (3–4: short form, long form, lead form; AEO articles on
+  the founder's own site, each cut into carousels, posts, reels and a newsletter; both routes to traffic, organic and
+  one ad attached to a sale), 3 Sales (5–6), 4 Company brain (7–8, once its absence is felt; Monday page v1 in week 8),
+  5 Operations and delivery (9–10, Automation Hub page), 6 Team: people and AI (11–12), 7 Finance and the founder's
+  cockpit (13–14, dashboard that recommends), 8 Product and scale (15 the week you only decide, 16 Demo Day). The
+  word certification is retired. Every lab runs one fixed format (`lab_format`) with a pre-recorded twin. Get AI-Ready
+  is optional and pre-recorded with two drop-in calls (`onboarding`). The load map is homework from the Monday opening.
+  Week 1 installs two reusable skills, copywriting and website building. The full list is `changelog` in
+  `scripts/aif/aif_modules.json` and renders on the curriculum, outline and pack pages.
+- **Sources.** Team call 14 Oct (Marisha, Vykintas, Gareth: website before sales page; copywriting and website skills;
+  brand voice before funnel; AEO; short form, long form, lead form; show ads and content but stay one lesson on
+  producing content, not a social media programme), Jaideep's curriculum review (14 Oct), Vykintas's proposals (5 and
+  8 Oct), the quiz (907 rows).
+- **Authors.** Guest lessons carry `who: "TBD"` and render as "Teacher to be mapped" (`who()` returns an empty list for
+  TBD). Vykintas teaches weeks 1, 2 and 7 and every lab; Vishen the opening, week 14 and the graduation. Mapping
+  authors is a later step, by Gareth's instruction.
+- **Jaideep's framework diagram** is kept and redrawn as inline SVG on the front door (`#framework`, figure with
+  caption): company brain at the centre, AI workspace and Automation Hub ring, six engines in build order with their
+  weeks, labelled flow arrows, dashed spokes for reads and writes, the founder at the bottom (Monday page down,
+  decisions up). Week numbers on the blocks are the only addition to his structure.
+- Not yet pushed: Gareth asked to see the local build first. Push goes to `main` and the proposal branch; bump to 1.3.20;
+  then rebuild the pack artefact fragment and republish https://claude.ai/artifact/TSVY9rk4uHY7VRXzT9SDMG.
+
 ## AI for Founders Mastery: state after the 5 Oct session (second pass)
 
 - Draft page `/ai-founders`, rendered from `data/ai-founders-curriculum.json` (mode draft, not aligned). Rebuild with

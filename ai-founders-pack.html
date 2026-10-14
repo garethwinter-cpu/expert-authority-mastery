@@ -61,6 +61,7 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
   <section class="doc" id="doc-outline">
     <div><div class="kicker">What the community reads</div><h2 class="h2">The curriculum outline</h2><p class="lede" id="outline-lede"></p></div>
     <div id="mods"></div>
+    <div class="card ask"><h3 class="h3">What changed in version two, 14 October</h3><ol id="changelog-list"></ol></div>
     <div class="card tint ask"><h3 class="h3">Three questions for you</h3><ol><li>What is missing that you expected to see?</li><li>Where should we go deeper?</li><li>What would you skip?</li></ol><p class="note" style="margin-top:12px">Teachers and dates are left off this page on purpose: we want their view on what we teach before we settle who teaches it. Live at <a href="https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app/ai-founders/outline">/ai-founders/outline</a> (Google sign-in).</p></div>
   </section>
 
@@ -110,6 +111,7 @@ footer{border-top:1px solid var(--border);padding-block:22px;font-size:13px;colo
     return '<section class="mod"><div class="mnum">'+m.order+'</div><div><h3>'+esc(m.name.replace(/^Module \d+: /,''))+'</h3><p class="prob">'+esc(m.problem)+'</p><div class="items">'+items+'</div></div></section>';
   }).join('');
 
+  var cl = document.getElementById('changelog-list'); if (cl && D.changelog) cl.innerHTML = D.changelog.map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
   // 2. survey
   var S = D.survey || {sections:[]};
   document.getElementById('survey-title').textContent = S.title || 'The survey';

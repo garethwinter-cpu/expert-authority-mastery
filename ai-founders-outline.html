@@ -42,6 +42,10 @@ main{padding:48px 0 20px;max-width:860px}
 <main class="wrap">
   <p class="lede" id="lede"></p>
   <div id="mods"></div>
+  <section class="ask" id="changed">
+    <h2>What changed in version two</h2>
+    <ol id="changelog-list"></ol>
+  </section>
   <section class="ask" id="ask">
     <h2>Three questions for you</h2>
     <ol><li>What is missing that you expected to see?</li><li>Where should we go deeper?</li><li>What would you skip?</li></ol>
@@ -69,6 +73,7 @@ main{padding:48px 0 20px;max-width:860px}
     }).join('');
     return '<section class="mod"><div class="mnum">'+m.order+'</div><div><h2>'+esc(m.name.replace(/^Module \d+: /,''))+'</h2><p class="prob">'+esc(m.problem)+'</p><div class="pair">'+items+'</div></div></section>';
   }).join('');
+  var cl = document.getElementById('changelog-list'); if (cl && D.changelog) cl.innerHTML = D.changelog.map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
   var sv = D.survey || {};
   document.getElementById('survey').innerHTML = sv.url ? '<a class="btn p" href="'+esc(sv.url)+'">Open the survey</a>' : '<p class="note">'+esc(sv.note || 'Survey link to follow')+'.</p>';
 })();

@@ -14,7 +14,7 @@ FULL={'Vishen':'Vishen Lakhiani','Vykintas':'Vykintas Glodenis'}
 def spk(name):
     key=name.strip(); f=IMG.get(key) or re.sub(r'[^a-z]+','-',FULL.get(key,key).lower()).strip('-')
     return {'name':FULL.get(key,key),'image':('authors/'+f+'.jpg') if (R/'authors'/(f+'.jpg')).exists() else None}
-def who(s): return [spk(x) for x in re.split(r'\s*\+\s*',s)]
+def who(s): return [] if s.strip().upper()=='TBD' else [spk(x) for x in re.split(r'\s*\+\s*',s)]
 PT=ZoneInfo('America/Los_Angeles')
 def at(d,h=7,m=0): return dt.datetime(d.year,d.month,d.day,h,m,tzinfo=PT).astimezone(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%S.000Z')
 
@@ -28,17 +28,15 @@ def mod(w): return next(x['name'] for x in modules if w in x['weeks'])
 
 sessions=[]
 def add(**k): sessions.append(k)
-GAR=('Get AI-Ready: the shared floor before Week 1. Three layers, so no live lesson ever has to teach setup: optional pre-recorded base setup for '
-     'founders starting from zero (signing up, which plan, starting a chat, adding files, voice, and a short guide for people coming from ChatGPT); '
-     'required building blocks for everyone (prompt and context, skills, projects and instructions, connectors, scheduled tasks, cloud versus local), '
-     'each with one thing set up in your own account; then the programme. The readiness checklist nudges, it does not gate: a paid plan, one project '
-     'with instructions, one skill installed, one app connected. It also gives us the starting-level data the AI Mastery 2026 survey was missing.')
-add(id='aif-ready-1',title='Get AI-Ready, call 1: your account, your first project, your first skill',type='Bonus',start=at(dt.date(2026,11,5)),duration_min=90,speakers=[spk('Vykintas')],module=None,
-    description='Call 1, the first week after the summit, for early buyers: the building blocks walked live, questions answered, the checklist started. Recorded for late buyers.\n\n'+GAR)
-add(id='aif-ready-2',title='Get AI-Ready, call 2: checklist, connectors and the questions from call 1',type='Bonus',start=at(dt.date(2026,11,12)),duration_min=90,speakers=[spk('Vykintas')],module=None,
-    description='Call 2, the week before the start, for late buyers who watched the recording of call 1 and for anyone still stuck on setup. Nobody arrives at Week 1 wondering what a connector is.\n\n'+GAR)
+GAR=('Get AI-Ready is optional and pre-recorded: an evergreen sequence under two hours, updated as the tools change (your account and plan, one project with instructions, '
+     'one skill installed, one app connected, and a short guide for people coming from ChatGPT). The readiness checklist nudges and never gates, and no minute of lesson one is spent on setup. '
+     'It also gives us the starting-level data the AI Mastery 2026 survey was missing.')
+add(id='aif-ready-1',title='Get AI-Ready drop-in 1: your account, your first project, your first skill',type='Bonus',start=at(dt.date(2026,11,5)),duration_min=90,speakers=[spk('Vykintas')],module=None,
+    description='Optional drop-in call, the first week after the summit: questions from the pre-recorded sequence answered live, the checklist started together. Nobody has to attend; the recording is in the sequence.\n\n'+GAR)
+add(id='aif-ready-2',title='Get AI-Ready drop-in 2: the checklist, connectors and your questions',type='Bonus',start=at(dt.date(2026,11,12)),duration_min=90,speakers=[spk('Vykintas')],module=None,
+    description='Optional drop-in call, the week before the start, for late buyers and anyone still stuck on setup. Nobody arrives at week 1 wondering what a connector is, and nobody is gated if they skip it.\n\n'+GAR)
 add(id='aif-opening',title='Why Your Business Still Runs on You',type='Kick Off',start=at(dt.date(2026,11,16)),duration_min=90,speakers=[spk('Vishen'),spk('Vykintas')],module=None,
-    description='The programme opens on Monday 16 November with Vishen. You built the business to be free; somewhere along the way it took the freedom. Vishen opens his own load map live: the years Mindvalley ran through him, and what AI runs there today. Then the ceiling every founder in the room shares: your business cannot grow faster than your calendar. Vykintas walks the sixteen weeks, the teacher on each, and the one measurement graduation is judged against: how many hours a week your business needs you today. You leave with the calendar in your hands and a number written down.')
+    description='The programme opens on Monday 16 November with Vishen. You built the business to be free; somewhere along the way it took the freedom. Vishen opens his own load map live: the years Mindvalley ran through him, and what AI runs there today. Then the ceiling every founder in the room shares: your business cannot grow faster than your calendar. Vykintas walks the sixteen weeks and the one measurement Demo Day is judged against: how many hours a week your business needs you today. He also sets the rule every lab runs on: bending time, three timed builds of twenty minutes, a checkpoint after each. Homework before lesson one: your load map and your before number, so no week is spent on it. You leave with the calendar in your hands, a number written down, and a website due on Thursday.')
 for m in SRC['modules']:
     for c in m['calls']:
         w=c['week']; d=starts[w]
@@ -114,6 +112,7 @@ load_basis=('Computed against the Expert & Authority calendar as read from Airta
             'no Thanksgiving break, graduation Tuesday 23 February), with the two decisions held on 5 October applied on top because they are not yet in Airtable: '
             'the John Lee rotation (Platforms to 12 and 15 January, Speaking to 17 and 20 November, Membership to 26 and 29 January) and Regan Hillyer teaching Membership in place of Vishen.')
 notes=[
+ 'Version two, 14 October: the order now follows a customer\u2019s journey through the business (front door, marketing, sales, then the company brain in weeks 7 and 8, operations, team, finance, product), lesson one builds a website live, every lab runs one fixed format with a pre-recorded twin, Get AI-Ready is optional and pre-recorded, and Week 16 is Demo Day. Built from the team call of 14 October (Marisha, Vykintas), Jaideep\u2019s curriculum review, Vykintas\u2019s proposals of 5 and 8 October and the quiz. Guest lessons are unassigned until the team maps authors; the full list of changes is on the outline page.',
  'Rebuilt on 5 October from three sources: Vykintas Glodenis’s curriculum proposal (eight modules, one business pillar each, the problem / management idea / installed system / observable change pattern, and the Get AI-Ready onboarding layer), Jaideep’s launch brief (16 weeks from Monday 16 November, two sessions per module, the summit on 30 October to 1 November), and the AI for Founders quiz (812 answers: operations, marketing and sales are where the pain is; solo founders start with marketing, founders with teams with operations; data safety and sounding like me are the unprogrammed worries).',
  'Team direction, 26 September (Jaideep, Marijana, Marta): Vishen leads the summit and takes only the big Mastery sessions; Vykintas leads the Mastery curriculum and every implementation lab; roughly one guest teacher per pillar; at least one more woman on the roster. Every guest here is placed where they are most authentic, from the names in consideration on 5 October, and none is confirmed for the Mastery until the team says so.',
  'Cadence, decided 5 October, hour set 7 October: Tuesday lesson, Thursday lab, 7am Pacific (3pm London; 2pm London in the final week), Tuesday 17 November 2026 to Thursday 18 March 2027, with a break from 21 December to 3 January. Expert & Authority runs Tuesday and Friday; this programme deliberately does not match it. Vykintas leads every lab here and already holds '+str(len(vyk_fridays))+' of Expert & Authority’s Friday workshops at 9am Pacific inside this run ('+', '.join(fmt(d) for d in vyk_fridays)+'), so a Friday lab would put him in two rooms on the same morning on each of those dates.',
@@ -145,7 +144,7 @@ emails=json.load(open(R/'scripts'/'aif'/'aif_emails.json',encoding='utf-8'))
 out={'programme':'AI for Founders Mastery','artefact':artefact,'source':{'label':'Draft curriculum held in this page until aligned with Vishen, then seeded into Airtable','url':'/ai-founders/proposal'},'promise':promise,'summit':summit,'difference':difference,'start':'2026-11-16','end':'2027-03-18','break':['2026-12-21','2027-01-03'],
      'mode':'draft','synced_at':dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat().replace('+00:00','Z'),
      'aligned':False,'cadence':'Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery','slot':slot,'survey':survey,'emails':emails,
-     'basis':SRC['basis'],'pattern':SRC['pattern'],
+     'basis':SRC['basis'],'pattern':SRC['pattern'],'lab_format':SRC['lab_format'],'onboarding':SRC['onboarding'],'changelog':SRC['changelog'],
      'modules':modules,'labels':{'Workshop':'Lab'},'load':load,'load_basis':load_basis,'ea_range':ea_range,'roster':SRC['roster'],'notes':notes,'sessions':sessions}
 (R/'data'/'ai-founders-curriculum.json').write_text(json.dumps(out,indent=1,ensure_ascii=False))
 print('sessions',len(sessions)); print(json.dumps(load,indent=1)); print('E&A range',ea_range,'| Vykintas E&A Fridays in run:',vyk_fridays)

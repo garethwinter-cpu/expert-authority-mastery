@@ -91,6 +91,9 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
 <main class="wrap" id="main"></main>
 
 <div class="wrap">
+  <details class="notes" id="changelog" open><summary>What changed in version two, 14 October</summary>
+    <ol id="changelog-list"></ol>
+  </details>
   <details class="notes" id="notes"><summary>Working notes: the diary check against Expert &amp; Authority, and what this draft is built on</summary>
     <div class="load" id="load"></div>
     <ol id="notes-list"></ol>
@@ -126,7 +129,7 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
     flushP(); flushL(); return out.join('');
   };
   var faces = function(sp){ return '<span class="faces">' + sp.map(function(p){ return p.image ? '<img src="/'+esc(p.image)+'" alt="" loading="lazy">' : '<i>'+esc(p.name.split(' ').map(function(x){return x[0];}).join('').slice(0,2))+'</i>'; }).join('') + '</span>'; };
-  var names = function(sp){ return sp.map(function(p){ return p.name; }).join(' & '); };
+  var names = function(sp){ return sp.length ? sp.map(function(p){ return p.name; }).join(' & ') : 'Teacher to be mapped'; };
   var firstSentences = function(t, n){ var s = (t||'').split('\n')[0].match(/[^.!?]+[.!?]+(\s|$)/g) || [t||'']; return s.slice(0, n).join('').trim(); };
   var S = D.sessions.slice().sort(function(a,b){ return a.start < b.start ? -1 : 1; });
   var byId = {}; S.forEach(function(s){ byId[s.id] = s; });
@@ -212,6 +215,7 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
     var clash = function(l){ return l.clashes && l.clashes.length ? l.clashes.map(function(c){ return '<b>'+esc(day(c.start))+'</b>: '+esc(c.ea.replace(/^Workshop\s*\|\s*/i,'Workshop: '))+' and '+esc(c.aif); }).join('<br>') : 'None'; };
     ld.innerHTML = '<h4>Two people carry this calendar</h4><p>Vishen and Vykintas teach on Expert &amp; Authority' + range + ' and on this programme at the same time. The last column is the one that matters: the same hour booked on both programmes.</p><table><tr><th>Person</th><th>Expert &amp; Authority</th><th>AI for Founders</th><th>Weeks on both</th><th>Busiest week</th><th>Same hour, both</th></tr>' + D.load.map(function(l){ return '<tr><td><strong>'+esc(l.name)+'</strong></td><td>'+l.ea+' live sessions</td><td>'+l.aif+' live sessions</td><td>'+l.weeks_on_both+' weeks, '+esc(dm(l.first_overlap))+' to '+esc(dm(l.last_overlap))+'</td><td><b>'+l.peak_per_week+'</b> in a week, '+l.weeks_3plus+' such weeks</td><td>'+clash(l)+'</td></tr>'; }).join('') + '</table>' + (D.load_basis ? '<p class="basis">' + esc(D.load_basis) + '</p>' : '');
   }
+  var cl = document.getElementById('changelog-list'); if (cl && D.changelog) cl.innerHTML = D.changelog.map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
   var nl = document.getElementById('notes-list'); if (nl && D.notes) nl.innerHTML = D.notes.map(function(n){ return '<li>'+esc(n)+'</li>'; }).join('');
   document.getElementById('foot').innerHTML = '<p><strong>Where this lives:</strong> ' + esc(D.source.label) + '. The case, the evidence and the summit plan are in the <a href="'+esc(D.source.url)+'">proposal</a>; who teaches what, and why, is on the <a href="/ai-founders">front door</a>.</p><p>Curriculum by the Mindvalley Mastery team on Vykintas Glodenis’s proposal, with Vishen Lakhiani. Built by Gareth Winter.</p>';
 })();
