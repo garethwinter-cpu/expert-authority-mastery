@@ -93,6 +93,10 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
   Weeks" in the AIF base (flagged on the front door; not edited, base is read-only until Vishen aligns); the elective's
   format; Vishen's twenty minutes on 17 Nov sit two hours before his E&A Email Marketing lesson; teachers for the 15
   unassigned lessons, five or six at most; whether the community survey goes out before or after this version.
+- **Static mirror (14 Oct, Gareth: flush it and fill it with this):** `garethwinter-cpu/ai-founder-mastery` now holds only
+  the current curriculum as a static site (index, curriculum, pack, JSON, headshots, favicons, wellness.css); the August
+  proposal is gone from the tree but kept in its history. Refresh it with `scripts/aif/export_static.py <clone>` after
+  every build. Links to the proposal, positioning and E&A point at the live site, which needs Google sign-in.
 - Audit scripts used: data audit (counts, Tuesday/Thursday pairing, 7am PT, break, London-hour notes, decisions, wording)
   and a render audit (six pages at 1280 and 390 px, script errors, overflow, diagram labels, links, redirect, API).
 
