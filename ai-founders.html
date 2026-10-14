@@ -72,14 +72,8 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
 .totop{position:fixed;right:22px;bottom:22px;z-index:70;border-radius:128px;background:var(--ink);color:#fff;font-size:13px;font-weight:700;padding:10px 16px;box-shadow:var(--sh2);opacity:0;pointer-events:none;transition:opacity .2s} .totop.show{opacity:1;pointer-events:auto}
 @media(max-width:860px){.bhead{grid-template-columns:56px 1fr;padding:26px 20px 20px}.bnum{width:56px;height:56px;font-size:24px;border-radius:16px}.arc{grid-template-columns:1fr}.bbody,.row{padding:0 16px 20px}.days{grid-template-columns:1fr}.day+.day{border-left:0;border-top:1px solid var(--grey)}.top .meta{display:none}}
 @media print{.mnav,.sub,.totop{display:none}.block{break-inside:avoid-page}.week{break-inside:avoid}details.more{display:none}}
-.view{display:inline-flex;gap:4px;margin-top:22px;padding:4px;border-radius:128px;background:var(--grey,#F3F4F6);border:1px solid var(--border)} .view button{border:0;background:transparent;font:inherit;font-size:14px;font-weight:600;color:var(--muted);padding:8px 16px;border-radius:128px;cursor:pointer} .view button.on{background:#fff;color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.05)}
-.olede{display:none;margin-top:14px;font-size:16px;line-height:1.6;color:var(--muted);max-width:760px}
-.day .brief{display:none} .oask{display:none}
+.day .brief{display:none} .who{display:none}
 .oask .ask{margin:8px 0 0;border-radius:16px;background:var(--brand-light);border:1px solid var(--border);padding:26px 28px} .oask h2{font-size:20px;margin-bottom:10px} .oask ol{margin:10px 0 0 20px;display:grid;gap:8px;font-size:15.5px;color:var(--text)} .oask .note{margin-top:16px;font-size:14px;color:var(--muted)} .oask .btn{display:inline-block;margin-top:16px;padding:12px 22px;border-radius:128px;background:var(--brand);color:#fff;font-weight:600;text-decoration:none}
-body.outline .chip,body.outline .who,body.outline .flag,body.outline .more,body.outline .range,body.outline .wdates,body.outline .tz,body.outline .facts,body.outline .banner,body.outline #before,body.outline .day .desc,body.outline .lab p,body.outline #notes,body.outline #changelog,body.outline .hero .lede{display:none}
-body.outline .day .brief,body.outline .olede,body.outline .oask{display:block}
-.olabel{display:none;align-self:flex-start;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--c);background:var(--t);border-radius:128px;padding:5px 11px} .day.lab .olabel{background:var(--c);color:#fff}
-body.outline .olabel{display:inline-block}
 </style>
 </head>
 <body>
@@ -88,9 +82,7 @@ body.outline .olabel{display:inline-block}
 
 <header class="hero"><div class="wrap">
   <h1>Sixteen weeks. Eight pillars. One business, rebuilt to run on AI.</h1>
-  <p class="lede">Every module is one pillar of the business. Tuesday, a guest teaches how an AI-first founder thinks about it. Thursday, Vykintas installs the system in your business, live. Each week ends with something you can point to, and by graduation those pieces run as one: your Founder Operating System.</p>
-  <div class="view" role="tablist" aria-label="View"><button class="on" role="tab" data-view="dated" aria-selected="true">Dated, with teachers</button><button role="tab" data-view="outline" aria-selected="false">Outline, for the community</button></div>
-  <p class="olede" id="olede"></p>
+  <p class="lede">Every module is one pillar of the business, in the order a customer meets it. Tuesday, the lesson: the finished thing shown first, then the idea behind it. Thursday, the lab: the system installed in your business, live, in three timed builds. Each week ends with something running, and by Demo Day those pieces run as one: your Founder Operating System. Teachers are mapped once the curriculum is settled.</p>
   <div class="facts" id="facts"></div>
   <div class="banner" id="banner"></div>
   <div class="tz" id="tz"></div>
@@ -157,10 +149,9 @@ body.outline .olabel{display:inline-block}
     '<span class="fact"><b>'+D.modules.length+'</b> modules</span>',
     '<span class="fact"><b>'+lessons.length+'</b> weeks</span>',
     '<span class="fact"><b>'+live.length+'</b> live sessions · <b>'+Math.round(hours)+'</b> hours</span>',
-    '<span class="fact"><b>'+esc(longDay(startAt.start))+'</b> to <b>'+esc(longDay(lastLab.start))+'</b></span>',
-    '<span class="fact"><b>'+Object.keys(teachers).length+'</b> teachers</span>'
+    '<span class="fact"><b>'+esc(longDay(startAt.start))+'</b> to <b>'+esc(longDay(lastLab.start))+'</b></span>'
   ].join('');
-  document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Not yet aligned with Vishen. Built on Vykintas’s eight-module proposal and the launch brief of 5 October. Guests are placed where they are most authentic; nothing is confirmed with a teacher until the team says so.</span>';
+  document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Version two, 14 October. Not yet aligned with Vishen. The curriculum comes first; who teaches each lesson is mapped once it is settled, so no teachers are shown here yet.</span>';
   document.getElementById('tz').innerHTML = 'Times in <b>Pacific</b> and <b>UK</b>' + (local && local!==PT && local!==UK ? ', and your time zone (<b>'+esc(local.replace(/_/g,' '))+'</b>)' : '') + '. ' + esc(D.cadence||'') + '.';
   document.getElementById('meta').textContent = (D.mode==='draft' ? 'Draft for alignment · ' : '') + fmt(D.synced_at, UK, {day:'numeric',month:'short',year:'numeric'}) + ' · built by Gareth Winter';
 
@@ -191,7 +182,7 @@ body.outline .olabel{display:inline-block}
         var win = ''; var desc = s.description || '';
         var mw = desc.match(/\*\*The win:\*\*\s*([^\n]+)/); if (mw){ win = mw[1]; desc = desc.replace(/\n*\*\*The win:\*\*[^\n]+/, '').trim(); }
         var short = firstSentences(desc, 2);
-        return '<div class="day '+cls+'"><span class="chip"><b>'+esc(label)+'</b>'+esc(when(s))+'</span><span class="olabel">'+esc(label.replace(/ · /,' · '))+'</span>'+flag(s)+'<h3>'+esc(s.title)+'</h3><div class="who">'+faces(s.speakers)+esc(names(s.speakers))+'</div><p class="desc">'+esc(short)+'</p>'+(s.brief ? '<p class="brief">'+esc(s.brief)+'</p>' : '')+(desc.length > short.length + 20 ? '<details class="more"><summary>Read the full brief</summary><div class="full">'+md(desc)+'</div></details>' : '')+(win ? '<div class="win"><b>By Thursday night</b>'+esc(win)+'</div>' : '')+'</div>';
+        return '<div class="day '+cls+'"><span class="chip"><b>'+esc(label)+'</b>'+esc(when(s))+'</span>'+flag(s)+'<h3>'+esc(s.title)+'</h3><div class="who">'+faces(s.speakers)+esc(names(s.speakers))+'</div><p class="desc">'+esc(short)+'</p>'+(s.brief ? '<p class="brief">'+esc(s.brief)+'</p>' : '')+(desc.length > short.length + 20 ? '<details class="more"><summary>Read the full brief</summary><div class="full">'+md(desc)+'</div></details>' : '')+(win ? '<div class="win"><b>By Thursday night</b>'+esc(win)+'</div>' : '')+'</div>';
       };
       html += '<article class="week"><div class="wtop"><span class="wtag">Week '+w+'</span><span class="wdates">'+esc(day(L.start))+(B ? ' and '+esc(day(B.start)) : '')+'</span></div><div class="days">'
         + dayCard(L, L.type==='Graduation' ? 'Graduation · Tuesday' : 'Lesson · Tuesday', 'lesson')
@@ -200,12 +191,7 @@ body.outline .olabel{display:inline-block}
     html += '</div></section>';
   });
   document.getElementById('main').innerHTML = html;
-  // view: dated (default) or outline (no teachers, no dates, one line per lesson; the version shared with the survey)
-  document.getElementById('olede').textContent = D.modules.length + ' modules, ' + lessons.length + ' weeks. Each week pairs a lesson with a lab: the lesson gives you the idea, the lab leaves a system running in your business by the end of the call. Teachers and dates are not on this view on purpose: we want your view on what we teach before we settle who teaches it.';
   var sv = D.survey || {}; document.getElementById('survey').innerHTML = sv.url ? '<a class="btn" href="'+esc(sv.url)+'">Open the survey</a>' : '<p class="note">'+esc(sv.note || 'Survey link to follow')+'.</p>';
-  var setView = function(v, push){ v = v==='outline' ? 'outline' : 'dated'; document.body.classList.toggle('outline', v==='outline'); Array.prototype.forEach.call(document.querySelectorAll('.view button'), function(b){ var on = b.getAttribute('data-view')===v; b.classList.toggle('on', on); b.setAttribute('aria-selected', on ? 'true' : 'false'); }); if (push && history.replaceState) { var u = new URL(location.href); if (v==='outline') u.searchParams.set('view','outline'); else u.searchParams.delete('view'); history.replaceState(null, '', u); } };
-  Array.prototype.forEach.call(document.querySelectorAll('.view button'), function(b){ b.addEventListener('click', function(){ setView(b.getAttribute('data-view'), true); }); });
-  setView(new URL(location.href).searchParams.get('view'), false);
   document.getElementById('mnav-list').innerHTML = nav.map(function(n){ return '<a href="#'+n.id+'" data-id="'+n.id+'" style="--c:'+n.c[0]+'"><i>'+esc(n.num)+'</i>'+esc(n.label)+'</a>'; }).join('');
 
   // scroll spy: the block whose top has passed a line a third of the way down the viewport is the current one

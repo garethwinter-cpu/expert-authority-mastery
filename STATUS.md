@@ -88,11 +88,12 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
   caption): company brain at the centre, AI workspace and Automation Hub ring, six engines in build order with their
   weeks, labelled flow arrows, dashed spokes for reads and writes, the founder at the bottom (Monday page down,
   decisions up). Week numbers on the blocks are the only addition to his structure.
-- **Outline merged into the curriculum page (14 Oct, Gareth: no duplication).** `/ai-founders/outline` now 301s to
-  `/ai-founders/curriculum?view=outline`; `ai-founders-outline.html` is deleted. The curriculum page has a view toggle in
-  the hero: dated (teachers, dates, briefs, wins) or outline (teachers and dates switched off, one line per lesson, lab
-  title only, the three questions and the survey link; changelog and working notes hidden). The pack keeps its own
-  outline tab because it is the marketing artefact.
+- **One curriculum page, no outline (14 Oct, Gareth: "just one").** `/ai-founders/outline` 301s to
+  `/ai-founders/curriculum`; `ai-founders-outline.html` is deleted; the dated/outline toggle tried in 1.3.21 is gone.
+  The curriculum page is the single view: dates, briefs, labs and wins, with teachers switched off (`.who` hidden, no
+  teachers count, hero and banner say teachers are mapped once the curriculum is settled). The home page module cards
+  list the week's lesson titles instead of teacher chips. The pack keeps its outline tab because it is the marketing
+  artefact. Authors are mapped later, by Gareth's instruction.
 - **Week 3 renamed (14 Oct, Gareth).** "Short form, long form, lead form" is Daniel Priestley's framework and he is not
   on this programme, so the lesson is now "Write It Once. Get Found Everywhere." with our own three moves: answer
   (articles on your site that answer what buyers ask, AEO), amplify (each article cut into carousels, posts, reels, a

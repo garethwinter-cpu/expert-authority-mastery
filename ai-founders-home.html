@@ -148,11 +148,10 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   </section>
 
   <section>
-    <div class="section-head"><div class="overline">Where everything lives</div><h2>One front door, six rooms</h2></div>
+    <div class="section-head"><div class="overline">Where everything lives</div><h2>One front door, five rooms</h2></div>
     <div class="links">
-      <a class="link" href="/ai-founders/curriculum"><div class="k">Draft for alignment</div><h3>The dated curriculum</h3><p>Every lesson and lab with its date, teacher where mapped, and win. The diary check against Expert &amp; Authority. The teacher map.</p></a>
-      <a class="link" href="/ai-founders/curriculum?view=outline"><div class="k">For the community</div><h3>The outline view</h3><p>The same curriculum with teachers and dates switched off: module, lesson, lab and one line on each lesson. The version we share with the survey.</p></a>
-      <a class="link" href="/ai-founders/pack"><div class="k">For marketing</div><h3>The co-creation pack</h3><p>Outline, survey and the email in one page, tabbed, for the team taking it to the community.</p></a>
+      <a class="link" href="/ai-founders/curriculum"><div class="k">Draft for alignment</div><h3>The curriculum</h3><p>Every lesson and lab with its date, brief and win. Teachers are mapped once the curriculum is settled. The diary check against Expert &amp; Authority sits in the working notes.</p></a>
+            <a class="link" href="/ai-founders/pack"><div class="k">For marketing</div><h3>The co-creation pack</h3><p>Outline, survey and the email in one page, tabbed, for the team taking it to the community.</p></a>
       <a class="link" href="/ai-founders/proposal"><div class="k">August 2026</div><h3>The proposal</h3><p>The case, the summit plan, the evidence and the author record. Deep links to the programme and the authors still work.</p></a>
       <a class="link" href="/positioning"><div class="k">The pathway</div><h3>One pathway, two Masteries</h3><p>The canonical boundary against Expert &amp; Authority: the one-question router, the comparison, the overlap rules.</p></a>
       <a class="link" href="/expert-authority"><div class="k">The sibling</div><h3>Expert &amp; Authority Mastery</h3><p>Builds the name. Runs Tuesday and Friday from 6 October. Shares Vishen and Vykintas with this programme.</p></a>
@@ -222,7 +221,7 @@ ul.clean{list-style:none;display:grid;gap:9px;margin-top:12px} ul.clean li{paddi
   document.getElementById('pattern').innerHTML = (D.pattern && D.pattern.length) ? 'Every module runs the same way, in the order a customer meets the business: ' + D.pattern.map(function(x){ return esc(x.charAt(0).toLowerCase()+x.slice(1)); }).join('; ') + '. Marketing and sales come first because that is where this audience feels the pain; the company brain arrives in weeks 7 and 8, once six weeks of building have made its absence felt.' : '';
   document.getElementById('mods').innerHTML = D.modules.map(function(m){
     var ls = lessons.filter(function(s){ return s.module === m.name; });
-    var teach = ls.map(function(s){ return s.speakers.length ? s.speakers.map(function(p){ return '<span class="who">'+face(p)+esc(p.name)+' <span>W'+s.week+'</span></span>'; }).join('') : '<span class="who"><i>?</i>Teacher to be mapped <span>W'+s.week+'</span></span>'; }).join('');
+    var teach = ls.map(function(s){ return '<span class="who"><span>W'+s.week+'</span>'+esc(s.title)+'</span>'; }).join('');
     return '<div class="mod"><div class="top"><div class="mnum">'+m.order+'</div><div><h3>'+esc(m.name.replace(/^Module \d+: /,''))+'</h3><div class="wk">Weeks '+m.weeks.join(' and ')+'</div></div></div>'
       + '<div class="pic"><div><b>The problem</b>'+esc(m.problem)+'</div><div><b>What gets installed</b>'+esc(m.installed)+'</div><div><b>What changes</b>'+esc(m.changes)+'</div></div>'
       + '<div class="teach">'+teach+'</div></div>';
