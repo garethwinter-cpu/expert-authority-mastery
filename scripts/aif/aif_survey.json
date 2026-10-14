@@ -142,9 +142,9 @@
      "required": true,
      "options": [
       "Our website and what we sell",
+      "Knowledge that only lives in my head",
       "The inbox and admin",
       "Turning visitors into leads",
-      "Knowledge that only lives in my head",
       "Getting found: content, search and ads",
       "Invoices and bookkeeping",
       "Sales calls, proposals and follow-up",
@@ -168,9 +168,9 @@
      "required": true,
      "rows": [
       "Storefront: website, offer and copy",
+      "Company brain",
       "Operations: a sorted inbox, and what to automate first",
       "Brand and funnel",
-      "Company brain",
       "Traffic: AI search, content and ads",
       "Finance: bookkeeping off your desk",
       "Sales: leads and closing",
@@ -186,11 +186,11 @@
     },
     {
      "n": 10,
-     "text": "Week 4 is built to answer the question we heard most in the quiz: what should I automate first? Is that your question, or is yours different? Write it the way you would ask it. Then tell us where else in the outline you thought: that is exactly my problem, or, that is not how it is for me.",
+     "text": "Week 5 is built to answer the question we heard most in the quiz: what should I automate first? Is that your question, or is yours different? Write it the way you would ask it. Then tell us where else in the outline you thought: that is exactly my problem, or, that is not how it is for me.",
      "type": "Open text",
      "step": "Get curious",
      "required": true,
-     "why": "Tests the week 4 audit against the audience's own words, then reads the rest of the outline the same way. The first half gives marketing the hook; the second tells the curriculum where a lesson is framed for someone else."
+     "why": "Tests the week 5 audit against the audience's own words, then reads the rest of the outline the same way. The first half gives marketing the hook; the second tells the curriculum where a lesson is framed for someone else."
     },
     {
      "n": 11,
@@ -312,7 +312,7 @@
   "Who they are is known at the population level: 62 percent solo founder or creator, 15 percent planning to start, 15 percent small team. Question 1 asks again, one tap, so the branching works for everyone, including people who never took the quiz.",
   "What they most want to transform is known: operations and automation 33 percent, marketing 26 percent, sales 21 percent; finance 5 percent, team and hiring 1 percent. Team building is no longer a module, so the team segment gets its own open question.",
   "The biggest result they want is the business running beyond me (30 percent), ahead of more leads (27 percent). That is the promise line in their words; question 15 tests it.",
-  "The most repeated open answer, 23 times word for word, was what should I automate first. The week 4 audit is built for it; question 10 asks whether they recognise their question in it.",
+  "The most repeated open answer, 23 times word for word, was what should I automate first. The week 5 audit is built for it; question 10 asks whether they recognise their question in it.",
   "Integration was the loudest open theme (33 percent of answers): tools that do not connect, how to bring AI in safely and in order. The quiz never asked which tools; question 7 does.",
   "Data safety (7 percent) and authenticity (5 percent, AI makes things polished and uniform) are the two worries people raised unprompted. Question 14 asks for the line they would never let AI cross.",
   "Half the room has barely started: 19 percent not at all, 33 percent writing and ideas only. The story of the last attempt (question 5) matters more than any rating.",

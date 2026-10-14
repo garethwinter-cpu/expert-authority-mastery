@@ -18,7 +18,7 @@
     3
    ],
    "problem": "My business is hard to find, hard to understand and hard to buy from.",
-   "installed": "A website that beats your three closest competitors, live, with a working lead form; your offer book (ideal customer, competitors, offer ladder, prices); conversion copy with a before and after score; a voice file, the first thing in what becomes the company brain. Three AI teams: web, product marketing, copywriting.",
+   "installed": "A website that beats your three closest competitors, live, with a working lead form; your offer book (ideal customer, competitors, offer ladder, prices); conversion copy with a before and after score; a voice file, which goes into the company brain in week 4. Three AI teams: web, product marketing, copywriting.",
    "changes": "A stranger can find the business, understand what it sells and ask to buy, and every page from here on goes live with one sentence.",
    "calls": [
     {
@@ -95,7 +95,7 @@
      "who": "TBD",
      "title": "Copy That Turns Visitors Into Buyers",
      "brief": "Copy is what sells, and every later page, email and post reuses it. Your site audited, rewritten from the offer book, and audited again, so you can see the score move. Then the voice file: how your company sounds, written once, and the first thing in what becomes your company brain.",
-     "text": "The Head of Copywriting runs the workflow: the conversion auditor scores the week 1 site, the conversion copywriter rewrites it from the offer book, the case study writer turns your best customer story into proof, and the auditor scores it again. The before and after number is the lesson's proof.\n\nThen the voice file: how the company sounds, the words it uses and never uses, written from your best pages and your own speech. It is short, it is the company's voice, not a personal brand, and it is the first file in what becomes the company brain in week 8. The inbox team reads it in week 4, the funnel in weeks 6 and 7, the content team in week 10. The lead magnet is promised on the page this week and built in week 6.\n\nThe line with Expert & Authority: that programme finds a person's distinctive voice. This lesson writes conversion copy for a company and keeps it consistent.",
+     "text": "The Head of Copywriting runs the workflow: the conversion auditor scores the week 1 site, the conversion copywriter rewrites it from the offer book, the case study writer turns your best customer story into proof, and the auditor scores it again. The before and after number is the lesson's proof.\n\nThen the voice file: how the company sounds, the words it uses and never uses, written from your best pages and your own speech. It is short, it is the company's voice, not a personal brand, and it goes into the company brain next week. The inbox team reads it there in week 5, the funnel in weeks 7 and 8, the content team in week 10. The lead magnet is promised on the page this week and built in week 7.\n\nThe line with Expert & Authority: that programme finds a person's distinctive voice. This lesson writes conversion copy for a company and keeps it consistent.",
      "team": {
       "dept": "Copywriting",
       "head": "Head of Copywriting",
@@ -127,22 +127,65 @@
   },
   {
    "n": 2,
-   "name": "Operations: the first system that runs itself",
-   "short": "Inbox",
+   "name": "Company brain",
+   "short": "Brain",
    "weeks": [
     4
    ],
-   "problem": "Every message and every decision still comes back to me.",
-   "installed": "An executive assistant that sorts the inbox and drafts replies every morning, on a schedule, and improves from your feedback; a ranked list of what to automate first. The first AI team that works while you sleep.",
-   "changes": "The inbox is sorted and replies are drafted before the founder starts the day, and the founder knows what to automate next.",
+   "problem": "Everything I build lives in a different folder, and I keep explaining my business again.",
+   "installed": "Three weeks of work in one company brain; Claude Code opens there; an AI chief of staff, information officer and operating officer that answer from it; every AI team from here on reads from it and saves back to it.",
+   "changes": "The business has one memory that every AI team reads from and saves to, and the founder stops re-explaining it.",
    "calls": [
     {
      "week": 4,
      "type": "lesson",
      "who": "TBD",
+     "title": "Build a Company Brain That Knows Your Business",
+     "brief": "Three weeks in, the pain is real: the site in one folder, the offer book in another, the copy and voice file in a third, and every new AI team needs them all. The company brain puts everything in one place, an AI chief of staff answers from it, and every lesson from here builds on it, starting with your inbox next week.",
+     "text": "By week 4 the founder has felt the problem the brain solves: three folders, re-attached for every task. It comes early on purpose, late enough for the need to be obvious and early enough that every later lesson builds on it. The lesson shows the pain first, then the template, then the migration, then the C-suite answering questions from it. The chief of staff holds priorities, goals, decisions and briefs; the chief information officer keeps where everything lives clean; the chief operating officer holds processes, projects and the current state.\n\nEvery AI team from here reads from the brain and saves back to it: next week the inbox assistant prioritises and drafts replies from the offer book, the copy and the voice file it holds, and the funnel, content, sales and finance teams are all built on it. Website code stays outside the synced brain. A guide covers sharing it with a team, for founders who have one.",
+     "team": {
+      "dept": "Executive Office",
+      "head": "Chief of Staff",
+      "members": [
+       {
+        "name": "Chief Information Officer",
+        "sched": false
+       },
+       {
+        "name": "Chief Operating Officer",
+        "sched": false
+       }
+      ]
+     }
+    },
+    {
+     "week": 4,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Move In, and Ask It Anything",
+     "text": "Privacy segment first: what never goes into the brain, and why. Then three timed builds. Your website, offer book, copy and voice file moved into the brain template. Claude Code opened there and the chief of staff asked five questions about your business, and the gaps it finds written down. The brain's instructions file written so every AI team from next week starts from it.",
+     "win": "Your company has one brain, and every AI team reads from it"
+    }
+   ]
+  },
+  {
+   "n": 3,
+   "name": "Operations: the first system that runs itself",
+   "short": "Inbox",
+   "weeks": [
+    5
+   ],
+   "problem": "Every message and every decision still comes back to me.",
+   "installed": "An executive assistant that sorts the inbox and drafts replies every morning, on a schedule, and improves from your feedback; a ranked list of what to automate first. The first AI team that works while you sleep, and the first built on the company brain.",
+   "changes": "The inbox is sorted and replies are drafted before the founder starts the day, and the founder knows what to automate next.",
+   "calls": [
+    {
+     "week": 5,
+     "type": "lesson",
+     "who": "TBD",
      "title": "Wake Up to a Sorted Inbox",
-     "brief": "Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 4. An AI assistant sorts your inbox each morning and drafts replies in your voice from your offer book and copy, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?",
-     "text": "Operations is the area founders named first in the quiz, and the inbox is where it lands every morning. This week the first AI team that runs on a schedule arrives: the executive assistant sorts the inbox before you wake and drafts replies; the operations analyst finds the work that eats your week; the continuous improvement manager turns every correction you make into a better instruction for tomorrow.\n\nIt works in week 4 because weeks 1 to 3 left it what it needs: the offer book to answer questions about what you sell and for how much, the copy to answer like your website does, and the voice file to sound like your company. In week 8 it moves into the company brain and gets better again. Drafts are never sent without you, and it starts with read access only. A schedule that runs on your own computer needs it switched on at that hour; the guide covers what to do when it is not.\n\nThe second half is the audit the quiz asked for most: what should I automate first? Your week, ranked by hours and by how safely AI can take it, so the rest of the programme has a list to work from. This lab carries the longest privacy segment of the programme, because this is the week AI first reads something private.",
+     "brief": "Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 5, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?",
+     "text": "Operations is the area founders named first in the quiz, and the inbox is where it lands every morning. This week the first AI team that runs on a schedule arrives: the executive assistant sorts the inbox before you wake and drafts replies; the operations analyst finds the work that eats your week; the continuous improvement manager turns every correction you make into a better instruction for tomorrow.\n\nIt comes straight after the brain because the brain is what gives it the context to prioritise and draft: the offer book to answer questions about what you sell and for how much, the copy to answer like your website does, the voice file to sound like your company, and the chief of staff's priorities to know what matters first. Drafts are never sent without you, and it starts with read access only. A schedule that runs on your own computer needs it switched on at that hour; the guide covers what to do when it is not.\n\nThe second half is the audit the quiz asked for most: what should I automate first? Your week, ranked by hours and by how safely AI can take it, so the rest of the programme has a list to work from. This lab carries the longest privacy segment of the programme, because this is the week AI first reads something private.",
      "team": {
       "dept": "Operations",
       "head": "Chief Operating Officer",
@@ -163,7 +206,7 @@
      }
     },
     {
-     "week": 4,
+     "week": 5,
      "type": "lab",
      "who": "Vykintas",
      "title": "Your First Morning Run",
@@ -173,25 +216,25 @@
    ]
   },
   {
-   "n": 3,
+   "n": 4,
    "name": "Brand and funnel",
    "short": "Funnel",
    "weeks": [
-    5,
     6,
-    7
+    7,
+    8
    ],
    "problem": "People visit and leave, and I never hear from them again.",
    "installed": "A brand kit and image library, the site restyled; a funnel chosen for your business model, mapped, with a lead magnet and nurture emails; the funnel live, with a test lead receiving everything.",
    "changes": "The business looks like one company everywhere, and a stranger can become a lead and be welcomed without the founder.",
    "calls": [
     {
-     "week": 5,
+     "week": 6,
      "type": "lesson",
      "who": "TBD",
      "title": "A Professional Brand Without a Design Agency",
      "brief": "Trust is visual before it is verbal. A brand kit made from what you already have, an image library built with the one exception tool, ChatGPT, and the site restyled so it looks like one company. Keep your logo: AI logos are weak, and a clean text logo beats a bad one.",
-     "text": "The Creative Director runs a brand designer, an art director and a brand guardian. The brand kit is made from what exists: your logo, your best photos, the colours already on the site. The image library is built in ChatGPT, the one tool outside the stack, because Claude does not make photographs: your own photos turned into editorial shots, product images, backgrounds, the things founders assume cost an agency.\n\nThe site is restyled with the kit, and the kit goes into the folder so the funnel, the content and the ads reuse it. The brand guardian checks every later asset against it. The voice file from week 3 sits beside the kit: how the company sounds, and how it looks, in one place.",
+     "text": "The Creative Director runs a brand designer, an art director and a brand guardian. The brand kit is made from what exists: your logo, your best photos, the colours already on the site. The image library is built in ChatGPT, the one tool outside the stack, because Claude does not make photographs: your own photos turned into editorial shots, product images, backgrounds, the things founders assume cost an agency.\n\nThe site is restyled with the kit, and the kit goes into the brain so the funnel, the content and the ads reuse it. The brand guardian checks every later asset against it. The kit goes into the brain beside the voice file from week 3: how the company sounds, and how it looks, in one place.",
      "team": {
       "dept": "Brand & Design",
       "head": "Creative Director",
@@ -212,7 +255,7 @@
      }
     },
     {
-     "week": 5,
+     "week": 6,
      "type": "lab",
      "who": "Vykintas",
      "title": "Your Brand Kit, Applied",
@@ -220,7 +263,7 @@
      "win": "Your business looks like one company everywhere"
     },
     {
-     "week": 6,
+     "week": 7,
      "type": "lesson",
      "who": "TBD",
      "title": "Design a Funnel That Turns Visitors Into Leads",
@@ -246,7 +289,7 @@
      }
     },
     {
-     "week": 6,
+     "week": 7,
      "type": "lab",
      "who": "Vykintas",
      "title": "Your Magnet and Emails, Written",
@@ -254,7 +297,7 @@
      "win": "Your funnel is designed, and the magnet and emails are ready"
     },
     {
-     "week": 7,
+     "week": 8,
      "type": "lesson",
      "who": "TBD",
      "title": "Launch Your Funnel and Collect Leads",
@@ -280,55 +323,12 @@
      }
     },
     {
-     "week": 7,
+     "week": 8,
      "type": "lab",
      "who": "Vykintas",
      "title": "Funnel Clinic: One Test Lead, End to End",
      "text": "Three timed builds. The landing page published. The form wired to the email platform, the tag set, the nurture emails loaded. A test lead sent through: it gets the magnet and the first email, and the screenshot goes in the thread. Anyone stuck on their own email tool is in the adapter room. Privacy segment: the data a form collects, and where it is stored.",
      "win": "A stranger can become a lead and be welcomed without you"
-    }
-   ]
-  },
-  {
-   "n": 4,
-   "name": "Company brain",
-   "short": "Brain",
-   "weeks": [
-    8
-   ],
-   "problem": "Everything I built lives in a different folder, and I keep explaining my business again.",
-   "installed": "Seven weeks of work in one company brain; Claude Code opens there; an AI chief of staff, information officer and operating officer that answer from it; the morning inbox run reading from it.",
-   "changes": "The business has one memory that every AI team reads from and saves to, and the founder stops re-explaining it.",
-   "calls": [
-    {
-     "week": 8,
-     "type": "lesson",
-     "who": "TBD",
-     "title": "Build a Company Brain That Knows Your Business",
-     "brief": "Seven weeks in, the pain is real: the offer book is in one folder, the copy in another, the brand kit in a third, and every team needs them all. The company brain puts everything in one place, and an AI chief of staff answers from it. Your inbox assistant moves in and gets better that morning.",
-     "text": "By week 8 the founder has felt the problem the brain solves: seven folders, re-attached every week. The lesson shows the pain first, then the template, then the migration, then the C-suite answering questions from it. The chief of staff holds priorities, goals, decisions and briefs; the chief information officer keeps where everything lives clean; the chief operating officer holds processes, projects and the current state.\n\nEvery AI team built so far reads from the brain and saves back to it from now on: the inbox run in week 4 reads the offer book and voice file there, and the content and sales teams to come are built on it. Website code stays outside the synced brain. A guide covers sharing it with a team, for founders who have one.",
-     "team": {
-      "dept": "Executive Office",
-      "head": "Chief of Staff",
-      "members": [
-       {
-        "name": "Chief Information Officer",
-        "sched": false
-       },
-       {
-        "name": "Chief Operating Officer",
-        "sched": false
-       }
-      ]
-     }
-    },
-    {
-     "week": 8,
-     "type": "lab",
-     "who": "Vykintas",
-     "title": "Move In, and Ask It Anything",
-     "text": "Privacy segment first: what never goes into the brain, and why. Then three timed builds. Your seven weeks of folders moved into the brain template. Claude Code opened there and the chief of staff asked five questions about your business. The morning inbox run pointed at the brain, and tomorrow's drafts compared with yesterday's.",
-     "win": "Your company has one brain, and every AI team reads from it"
     }
    ]
   },
@@ -454,7 +454,7 @@
      "who": "TBD",
      "title": "Run Meta Ads Without an Agency",
      "brief": "Organic is free and slow; paid is fast and costs money. Both matter, so this week is paid: an ad spy that studies your competitors' ads, creatives made with your brand kit, a campaign plan, and a small test campaign live with a weekly report. How much to spend stays your decision.",
-     "text": "The Media Buyer runs a Meta ad spy that studies what your competitors are running, an ad creative designer who makes creatives from your best content and the brand kit, and a Meta ads analyst who reports every week. The campaign plan aims at the funnel built in weeks 6 and 7.\n\nMeta's account setup is the hardest setup in the programme, so the guide arrives a week early. Not everyone will spend money, and that is fine: the ad spy and the creatives are useful on their own, and the test campaign can run on a very small daily amount.",
+     "text": "The Media Buyer runs a Meta ad spy that studies what your competitors are running, an ad creative designer who makes creatives from your best content and the brand kit, and a Meta ads analyst who reports every week. The campaign plan aims at the funnel built in weeks 7 and 8.\n\nMeta's account setup is the hardest setup in the programme, so the guide arrives a week early. Not everyone will spend money, and that is fine: the ad spy and the creatives are useful on their own, and the test campaign can run on a very small daily amount.",
      "team": {
       "dept": "Paid Advertising",
       "head": "Media Buyer",
@@ -492,7 +492,7 @@
     13
    ],
    "problem": "Invoices, receipts and chasing payment eat hours, and I never see the numbers until it is too late.",
-   "installed": "An AI accounting agent: invoices and receipts collected into a sheet every week, overdue invoices chased; one more item from the week 4 automate-first list automated with the same pattern.",
+   "installed": "An AI accounting agent: invoices and receipts collected into a sheet every week, overdue invoices chased; one more item from the week 5 automate-first list automated with the same pattern.",
    "changes": "The books stop being a weekend job, and the money numbers feed the dashboard.",
    "calls": [
     {
@@ -500,8 +500,8 @@
      "type": "lesson",
      "who": "TBD",
      "title": "Bookkeeping Off Your Desk",
-     "brief": "Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your automate-first list.",
-     "text": "Every business has bills and receipts, even before it has sales, so this automation is the one everyone understands. The Chief Operating Officer runs a bookkeeper and an accounts receivable agent, both on a schedule, and an automation engineer. The bookkeeper reads the inbox and the drive for invoices and receipts, extracts the client, the date and the amount, and fills a sheet; accounts receivable drafts the chase for anything overdue.\n\nThe automation engineer then applies the same pattern to one more item from the week 4 list. Finance drew little interest in the quiz, so the lesson is about time back, and the money data it creates feeds the dashboard in week 16. Excel or Google Sheets on your own computer is the default.",
+     "brief": "Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 5 automate-first list.",
+     "text": "Every business has bills and receipts, even before it has sales, so this automation is the one everyone understands. The Chief Operating Officer runs a bookkeeper and an accounts receivable agent, both on a schedule, and an automation engineer. The bookkeeper reads the inbox and the drive for invoices and receipts, extracts the client, the date and the amount, and fills a sheet; accounts receivable drafts the chase for anything overdue.\n\nThe automation engineer then applies the same pattern to one more item from the week 5 list. Finance drew little interest in the quiz, so the lesson is about time back, and the money data it creates feeds the dashboard in week 16. Excel or Google Sheets on your own computer is the default.",
      "team": {
       "dept": "Finance",
       "head": "Chief Operating Officer",
@@ -889,16 +889,16 @@
  "changelog": [
   "The spine is now Vykintas's post-call draft: seventeen lessons and a graduation, one department of the business per lesson, each with an AI team (a head and three members) that keeps producing what the lesson put live (team call and Vykintas's draft, 14 Oct).",
   "Seventeen lessons plus a graduation, eighteen calls in total, as agreed in the call. The run ends with graduation on Tuesday 30 March 2027 (Gareth, 14 Oct).",
-  "Inbox triage moves to week 4, the first system that runs on a schedule, because operations is the first thing founders asked for. It works that early because weeks 1 to 3 leave it the offer book, the copy and the voice file, and its lab carries the longest privacy segment (Jaideep's deck; Gareth, 14 Oct).",
+  "Inbox triage comes straight after the company brain, in week 5: the brain gives AI the context to prioritise and draft replies. It is still the first system that runs on a schedule, and still before the Christmas break, because operations is the first thing founders asked for; its lab carries the longest privacy segment (Vykintas, 14 Oct, after Jaideep's deck).",
   "Hosting setup moves into onboarding with a go-live clinic on 12 November, so week 1 homework is not where beginners drop. Anyone who skips onboarding goes live in the week 1 lab (Jaideep's deck).",
   "Week 0 adds a 30-minute hours log; graduation counts the hours again. That is the one measure of the business running beyond the founder (Jaideep's deck).",
   "The ending is new: week 16 the dashboard and Monday briefing, week 17 owner pages and five working days in which the founder only decides, then graduation and Demo Day (Jaideep's deck).",
   "Paid and organic are both taught: Meta ads stays in the core as week 12, with the ad spy, creatives and a weekly report (Marisha, in the call; Gareth, 14 Oct).",
   "Software building becomes an elective; it overlaps AI Mastery's building track (Jaideep's deck).",
-  "Brand voice comes before the funnel: the voice file is written in week 3, the brand kit in week 5, the funnel in weeks 6 and 7 (Jaideep, in the call).",
+  "Brand voice comes before the funnel: the voice file is written in week 3, the brand kit in week 6, the funnel in weeks 7 and 8 (Jaideep, in the call).",
   "A privacy segment in every lab replaces any standalone governance lesson (agreed in the call).",
   "Client delivery and team-building modules are out; the call rejected client delivery for lacking a tangible output. The programme is about a company, not a personal brand: no face needed (agreed in the call).",
-  "The company brain arrives in week 8, once seven weeks of folders have made the need obvious (agreed in the call).",
+  "The company brain moves to week 4: late enough that three weeks of folders make the need obvious, early enough that every later lesson builds on it (Vykintas, 14 Oct, who asked for lesson 3 to 5).",
   "Vishen opens week 1 and closes at graduation; the separate Monday opening is folded into week 1. All other teachers are mapped once the curriculum is settled, five or six at most (agreed in the call; Jaideep's deck)."
  ]
 }

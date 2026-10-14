@@ -23,16 +23,25 @@ Copy is what sells, and every later page, email and post reuses it. Your site au
 *Your AI team: Head of Copywriting, Conversion Copywriter, Case Study Writer, Conversion Auditor*
 **Lab: Rewrite, Re-score, Publish**
 
-## 2. Module 2: Operations: the first system that runs itself
+## 2. Module 2: Company brain
+*Everything I build lives in a different folder, and I keep explaining my business again.*
+
+**Lesson: Build a Company Brain That Knows Your Business**  
+Three weeks in, the pain is real: the site in one folder, the offer book in another, the copy and voice file in a third, and every new AI team needs them all. The company brain puts everything in one place, an AI chief of staff answers from it, and every lesson from here builds on it, starting with your inbox next week.
+
+*Your AI team: Chief of Staff, Chief Information Officer, Chief Operating Officer*
+**Lab: Move In, and Ask It Anything**
+
+## 3. Module 3: Operations: the first system that runs itself
 *Every message and every decision still comes back to me.*
 
 **Lesson: Wake Up to a Sorted Inbox**  
-Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 4. An AI assistant sorts your inbox each morning and drafts replies in your voice from your offer book and copy, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?
+Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 5, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?
 
 *Your AI team: Chief Operating Officer, Executive Assistant, Operations Analyst, Continuous Improvement Manager*
 **Lab: Your First Morning Run**
 
-## 3. Module 3: Brand and funnel
+## 4. Module 4: Brand and funnel
 *People visit and leave, and I never hear from them again.*
 
 **Lesson: A Professional Brand Without a Design Agency**  
@@ -52,15 +61,6 @@ A design earns nothing until it is live. The landing page built and published in
 
 *Your AI team: Head of Growth, Automation Specialist, Quiz Developer, Funnel Tester*
 **Lab: Funnel Clinic: One Test Lead, End to End**
-
-## 4. Module 4: Company brain
-*Everything I built lives in a different folder, and I keep explaining my business again.*
-
-**Lesson: Build a Company Brain That Knows Your Business**  
-Seven weeks in, the pain is real: the offer book is in one folder, the copy in another, the brand kit in a third, and every team needs them all. The company brain puts everything in one place, and an AI chief of staff answers from it. Your inbox assistant moves in and gets better that morning.
-
-*Your AI team: Chief of Staff, Chief Information Officer, Chief Operating Officer*
-**Lab: Move In, and Ask It Anything**
 
 ## 5. Module 5: Traffic
 *Nobody is finding me, content eats my time, and I do not know which posts or ads bring customers.*
@@ -93,7 +93,7 @@ Organic is free and slow; paid is fast and costs money. Both matter, so this wee
 *Invoices, receipts and chasing payment eat hours, and I never see the numbers until it is too late.*
 
 **Lesson: Bookkeeping Off Your Desk**  
-Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your automate-first list.
+Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 5 automate-first list.
 
 *Your AI team: Chief Operating Officer, Bookkeeper, Accounts Receivable, Automation Engineer*
 **Lab: Invoices In, Overdue Chased**

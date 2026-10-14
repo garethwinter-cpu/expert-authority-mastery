@@ -67,6 +67,12 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
 
 ## AI for Founders Mastery: the curriculum rebuilt on Vykintas's draft v4 and Jaideep's deck (14 Oct, 1.3.24)
 
+- **Reordered later on 14 Oct (1.3.26), Vykintas on WhatsApp:** the inbox needs the brain's context to prioritise and
+  draft, and week 8 was too late for later lessons to build on the brain; he asked for the brain in lesson 3 to 5. Now:
+  1 Storefront (1 to 3), 2 Company brain (4), 3 Operations, the sorted inbox (5), 4 Brand and funnel (6 to 8), then
+  Traffic 9 to 12, Finance 13, Sales 14 and 15, Cockpit 16 to 18 as before. The inbox still lands before the Christmas
+  break (15 and 17 Dec). Survey questions 8 to 10, the front door diagram and the hub chapter follow the new order.
+  The shape line below describes the first 1.3.24 order.
 - **Decisions (Gareth, 14 Oct, on Jaideep's decision deck):** seventeen lessons plus a graduation, eighteen calls, as
   agreed in the call; inbox triage in week 4 on condition that weeks 1 to 3 leave it the offer book, the copy and the
   voice file, and that its lab carries the longest privacy segment; hosting in onboarding with a go-live clinic; the
