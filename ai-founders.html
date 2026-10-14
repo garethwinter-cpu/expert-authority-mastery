@@ -76,8 +76,10 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
 .olede{display:none;margin-top:14px;font-size:16px;line-height:1.6;color:var(--muted);max-width:760px}
 .day .brief{display:none} .oask{display:none}
 .oask .ask{margin:8px 0 0;border-radius:16px;background:var(--brand-light);border:1px solid var(--border);padding:26px 28px} .oask h2{font-size:20px;margin-bottom:10px} .oask ol{margin:10px 0 0 20px;display:grid;gap:8px;font-size:15.5px;color:var(--text)} .oask .note{margin-top:16px;font-size:14px;color:var(--muted)} .oask .btn{display:inline-block;margin-top:16px;padding:12px 22px;border-radius:128px;background:var(--brand);color:#fff;font-weight:600;text-decoration:none}
-body.outline .chip,body.outline .who,body.outline .flag,body.outline .more,body.outline .win,body.outline .range,body.outline .wdates,body.outline .tz,body.outline .facts,body.outline .banner,body.outline #before,body.outline .day .desc,body.outline .lab p,body.outline #notes,body.outline #changelog,body.outline .hero .lede{display:none}
+body.outline .chip,body.outline .who,body.outline .flag,body.outline .more,body.outline .range,body.outline .wdates,body.outline .tz,body.outline .facts,body.outline .banner,body.outline #before,body.outline .day .desc,body.outline .lab p,body.outline #notes,body.outline #changelog,body.outline .hero .lede{display:none}
 body.outline .day .brief,body.outline .olede,body.outline .oask{display:block}
+.olabel{display:none;align-self:flex-start;font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--c);background:var(--t);border-radius:128px;padding:5px 11px} .day.lab .olabel{background:var(--c);color:#fff}
+body.outline .olabel{display:inline-block}
 </style>
 </head>
 <body>
@@ -189,7 +191,7 @@ body.outline .day .brief,body.outline .olede,body.outline .oask{display:block}
         var win = ''; var desc = s.description || '';
         var mw = desc.match(/\*\*The win:\*\*\s*([^\n]+)/); if (mw){ win = mw[1]; desc = desc.replace(/\n*\*\*The win:\*\*[^\n]+/, '').trim(); }
         var short = firstSentences(desc, 2);
-        return '<div class="day '+cls+'"><span class="chip"><b>'+esc(label)+'</b>'+esc(when(s))+'</span>'+flag(s)+'<h3>'+esc(s.title)+'</h3><div class="who">'+faces(s.speakers)+esc(names(s.speakers))+'</div><p class="desc">'+esc(short)+'</p>'+(s.brief ? '<p class="brief">'+esc(s.brief)+'</p>' : '')+(desc.length > short.length + 20 ? '<details class="more"><summary>Read the full brief</summary><div class="full">'+md(desc)+'</div></details>' : '')+(win ? '<div class="win"><b>By Thursday night</b>'+esc(win)+'</div>' : '')+'</div>';
+        return '<div class="day '+cls+'"><span class="chip"><b>'+esc(label)+'</b>'+esc(when(s))+'</span><span class="olabel">'+esc(label.replace(/ · /,' · '))+'</span>'+flag(s)+'<h3>'+esc(s.title)+'</h3><div class="who">'+faces(s.speakers)+esc(names(s.speakers))+'</div><p class="desc">'+esc(short)+'</p>'+(s.brief ? '<p class="brief">'+esc(s.brief)+'</p>' : '')+(desc.length > short.length + 20 ? '<details class="more"><summary>Read the full brief</summary><div class="full">'+md(desc)+'</div></details>' : '')+(win ? '<div class="win"><b>By Thursday night</b>'+esc(win)+'</div>' : '')+'</div>';
       };
       html += '<article class="week"><div class="wtop"><span class="wtag">Week '+w+'</span><span class="wdates">'+esc(day(L.start))+(B ? ' and '+esc(day(B.start)) : '')+'</span></div><div class="days">'
         + dayCard(L, L.type==='Graduation' ? 'Graduation · Tuesday' : 'Lesson · Tuesday', 'lesson')
