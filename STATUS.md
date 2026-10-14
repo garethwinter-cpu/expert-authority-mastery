@@ -68,7 +68,7 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
 ## AI for Founders Mastery: version two of the curriculum (14 Oct, local build, awaiting Gareth's review before push)
 
 - **What changed.** The order now follows a customer's journey: 1 Front door (weeks 1–2: website live on Thursday of
-  week 1; brand voice then funnel in week 2), 2 Marketing engine (3–4: short form, long form, lead form; AEO articles on
+  week 1; brand voice then funnel in week 2), 2 Marketing engine (3–4: answer, amplify, ask; AEO articles on
   the founder's own site, each cut into carousels, posts, reels and a newsletter; both routes to traffic, organic and
   one ad attached to a sale), 3 Sales (5–6), 4 Company brain (7–8, once its absence is felt; Monday page v1 in week 8),
   5 Operations and delivery (9–10, Automation Hub page), 6 Team: people and AI (11–12), 7 Finance and the founder's
@@ -78,7 +78,7 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
   Week 1 installs two reusable skills, copywriting and website building. The full list is `changelog` in
   `scripts/aif/aif_modules.json` and renders on the curriculum, outline and pack pages.
 - **Sources.** Team call 14 Oct (Marisha, Vykintas, Gareth: website before sales page; copywriting and website skills;
-  brand voice before funnel; AEO; short form, long form, lead form; show ads and content but stay one lesson on
+  brand voice before funnel; AEO; write once and cut into carousels, posts and ads (our own three-move frame, answer, amplify, ask, rather than a borrowed one); show ads and content but stay one lesson on
   producing content, not a social media programme), Jaideep's curriculum review (14 Oct), Vykintas's proposals (5 and
   8 Oct), the quiz (907 rows).
 - **Authors.** Guest lessons carry `who: "TBD"` and render as "Teacher to be mapped" (`who()` returns an empty list for
@@ -88,7 +88,16 @@ Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available
   caption): company brain at the centre, AI workspace and Automation Hub ring, six engines in build order with their
   weeks, labelled flow arrows, dashed spokes for reads and writes, the founder at the bottom (Monday page down,
   decisions up). Week numbers on the blocks are the only addition to his structure.
-- Not yet pushed: Gareth asked to see the local build first. Push goes to `main` and the proposal branch; bump to 1.3.20;
+- **Outline merged into the curriculum page (14 Oct, Gareth: no duplication).** `/ai-founders/outline` now 301s to
+  `/ai-founders/curriculum?view=outline`; `ai-founders-outline.html` is deleted. The curriculum page has a view toggle in
+  the hero: dated (teachers, dates, briefs, wins) or outline (teachers and dates switched off, one line per lesson, lab
+  title only, the three questions and the survey link; changelog and working notes hidden). The pack keeps its own
+  outline tab because it is the marketing artefact.
+- **Week 3 renamed (14 Oct, Gareth).** "Short form, long form, lead form" is Daniel Priestley's framework and he is not
+  on this programme, so the lesson is now "Write It Once. Get Found Everywhere." with our own three moves: answer
+  (articles on your site that answer what buyers ask, AEO), amplify (each article cut into carousels, posts, reels, a
+  newsletter), ask (every piece points at the funnel).
+- Pushed 14 Oct as 1.3.20 (version two) and 1.3.21 (outline merge, week 3 rename). Push goes to `main` and the proposal branch; bump to 1.3.20;
   then rebuild the pack artefact fragment and republish https://claude.ai/artifact/TSVY9rk4uHY7VRXzT9SDMG.
 
 ## AI for Founders Mastery: state after the 5 Oct session (second pass)

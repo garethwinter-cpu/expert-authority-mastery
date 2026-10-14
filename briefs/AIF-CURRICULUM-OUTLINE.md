@@ -16,8 +16,8 @@ A site nobody captures from is a brochure. First the brand voice pack: how every
 ## 2. Module 2: Marketing engine
 *Nobody is finding me, and content eats my time.*
 
-**Lesson: Short Form, Long Form, Lead Form**  
-How people find you now: AI engines answer their questions, and the answers come from articles on your website. The content engine in three layers: long form (articles that answer what your buyers ask, written by AI from your Context Pack, so search and AI find you), short form (each article cut into carousels, posts, reels and a newsletter in seconds), lead form (every piece pointing at the funnel). The week content stops eating the founder's time.
+**Lesson: Write It Once. Get Found Everywhere.**  
+How people find you now: AI engines answer their questions, and the answers come from articles on your website. The content engine in three moves. Answer: articles that answer what your buyers ask, written by AI from your Context Pack, so search and AI find you. Amplify: each article cut into carousels, posts, reels and a newsletter in seconds. Ask: every piece pointing at the funnel. The week content stops eating the founder's time.
 **Lab: A Month of Content, Scheduled**
 
 **Lesson: From Content to Demand**  

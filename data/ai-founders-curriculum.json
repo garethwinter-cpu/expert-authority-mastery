@@ -628,7 +628,7 @@
   "2027-01-03"
  ],
  "mode": "draft",
- "synced_at": "2026-10-14T08:07:28Z",
+ "synced_at": "2026-10-14T08:21:15Z",
  "aligned": false,
  "cadence": "Monday 16 November opening · Tuesday lesson · Thursday lab · 7am Pacific, 3pm London (2pm London in the final week) · Vishen leads the summit, Vykintas leads the Mastery",
  "slot": {
@@ -1010,7 +1010,7 @@
   "Week 1 installs two reusable skills, copywriting and website building, so every later page, funnel and email is built with them (Vykintas, 14 Oct).",
   "Week 2 is brand voice, then funnel: the voice pack improves the site and later seeds the brain; the funnel ends in a quiz, a calculator or a booked call, with the lead magnet and welcome sequence behind it (team call, 14 Oct).",
   "Week 2 builds the lead magnet and a five-email welcome sequence: the first thing running unattended is in week 2, not week 10 (Jaideep's review).",
-  "Week 3 is short form, long form, lead form: articles on your own website answer what buyers ask so AI engines and search find you, then each article becomes carousels, posts, reels and a newsletter, and a month is scheduled (team call, 14 Oct; quiz: content is the solo founder's biggest time-eater).",
+  "Week 3 is answer, amplify, ask: articles on your own website answer what buyers ask so AI engines and search find you, then each article becomes carousels, posts, reels and a newsletter, and a month is scheduled (team call, 14 Oct; quiz: content is the solo founder's biggest time-eater).",
   "Week 4 shows both routes to traffic, organic and one paid ad attached to a sale, and stops there: producing content is in scope, growing a following belongs to the social media Mastery (Marisha, 14 Oct).",
   "The Monday page starts in week 8, three numbers the brain reports every Monday, so the week 14 dashboard has history (Jaideep's review).",
   "Week 10 adds the Automation Hub page: every scheduled run in one list with its owner and checkpoint (Jaideep's review).",
@@ -1041,7 +1041,7 @@
    "short": "Marketing",
    "order": 2,
    "problem": "Nobody is finding me, and content eats my time.",
-   "installed": "The content engine: short form, long form, lead form. Articles on your website that answer what buyers ask, so AI engines and search find you; one long piece turned into a month of carousels, posts, reels and emails; one ad attached to a sale; your channels pointed at the funnel; a signal dashboard.",
+   "installed": "The content engine in three moves, answer, amplify, ask: articles on your website that answer what buyers ask, so AI engines and search find you; one long piece turned into a month of carousels, posts, reels and emails; every piece asking for the next step at the funnel. Plus one ad attached to a sale, your channels pointed at the funnel, and a signal dashboard.",
    "changes": "People find the founder without being told where to look, a month of content in the founder's voice is scheduled, and demand shows on a dashboard before anything is sold.",
    "weeks": [
     3,
@@ -1409,14 +1409,14 @@
   },
   {
    "id": "aif-w03-lesson",
-   "title": "Short Form, Long Form, Lead Form",
+   "title": "Write It Once. Get Found Everywhere.",
    "type": "Lesson",
    "start": "2026-12-01T15:00:00.000Z",
    "duration_min": 90,
    "speakers": [],
    "module": "Module 2: Marketing engine",
-   "description": "How one person now matches the output of a marketing team, and why it starts with the website you already built. Long form first: articles on your site that answer the questions and objections your buyers actually ask, written by AI from the Context Pack in your brand voice. This is AEO, answer engine optimisation, search for the AI age: when someone asks an AI who to hire, those articles are how it finds you and why it calls you the authority. Short form second: every article is the source for carousels, posts, reels, a newsletter and scripts, cut in seconds, so the narrative is written once and travels everywhere. Lead form third: every piece points at the funnel from week 2.\n\nContent is the solo founder's biggest time-eater in the quiz, and sounding like a robot is the most repeated worry; this is the week both stop. The idea: a system that produces a month, not a founder who produces a post. This is one lesson on producing content, not a social media programme; growing a following is a different Mastery.",
-   "brief": "How people find you now: AI engines answer their questions, and the answers come from articles on your website. The content engine in three layers: long form (articles that answer what your buyers ask, written by AI from your Context Pack, so search and AI find you), short form (each article cut into carousels, posts, reels and a newsletter in seconds), lead form (every piece pointing at the funnel). The week content stops eating the founder's time.",
+   "description": "How one person now matches the output of a marketing team, and why it starts with the website you already built. Answer first: articles on your site that answer the questions and objections your buyers actually ask, written by AI from the Context Pack in your brand voice. This is AEO, answer engine optimisation, search for the AI age: when someone asks an AI who to hire, those articles are how it finds you and why it calls you the authority. Amplify second: every article is the source for carousels, posts, reels, a newsletter and scripts, cut in seconds, so the narrative is written once and travels everywhere. Ask third: every piece points at the funnel from week 2.\n\nContent is the solo founder's biggest time-eater in the quiz, and sounding like a robot is the most repeated worry; this is the week both stop. The idea: a system that produces a month, not a founder who produces a post. This is one lesson on producing content, not a social media programme; growing a following is a different Mastery.",
+   "brief": "How people find you now: AI engines answer their questions, and the answers come from articles on your website. The content engine in three moves. Answer: articles that answer what your buyers ask, written by AI from your Context Pack, so search and AI find you. Amplify: each article cut into carousels, posts, reels and a newsletter in seconds. Ask: every piece pointing at the funnel. The week content stops eating the founder's time.",
    "week": 3
   },
   {
