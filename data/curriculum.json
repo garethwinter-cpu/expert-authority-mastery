@@ -7,7 +7,7 @@
   "label": "Expert to Authority · Lessons · 2026 | Lessons"
  },
  "mode": "snapshot",
- "synced_at": "2026-10-14T08:32:08+00:00",
+ "synced_at": "2026-10-21T17:39:57+00:00",
  "modules": [
   {
    "name": "Pillar 1: Message & Positioning",
@@ -117,7 +117,7 @@
    "slot": "4 (2026)",
    "title": "Workshop | Turn Your Expertise Into a High-Value Signature Offer",
    "type": "Workshop",
-   "status": "Confirmed",
+   "status": "Done",
    "start": "2026-10-16T16:00:00.000Z",
    "duration_min": 60,
    "speakers": [
@@ -389,7 +389,7 @@
    "speakers": [
     {
      "name": "Marisha Lakhiani",
-     "image": null
+     "image": "authors/marisha-lakhiani.jpg"
     }
    ],
    "module": "Pillar 3: Funnel & Conversion",
@@ -427,7 +427,7 @@
    "speakers": [
     {
      "name": "Marisha Lakhiani",
-     "image": null
+     "image": "authors/marisha-lakhiani.jpg"
     }
    ],
    "module": "Pillar 3: Funnel & Conversion",
@@ -592,13 +592,13 @@
    "slot": "29 (2026)",
    "title": "Membership, Continuity & Superfans: Build Revenue That Renews Itself",
    "type": "Lesson",
-   "status": "Proposed",
+   "status": "Confirmed",
    "start": "2027-01-26T17:00:00.000Z",
    "duration_min": 90,
    "speakers": [
     {
-     "name": "Vishen Lakhiani",
-     "image": "authors/vishen-lakhiani.jpg"
+     "name": "Regan Hillyer",
+     "image": "authors/regan-hillyer.jpg"
     }
    ],
    "module": "Pillar 4: Scale & Products",
@@ -621,7 +621,7 @@
     }
    ],
    "module": "Pillar 4: Scale & Products",
-   "description": "Vishen's lesson laid out what makes recurring revenue actually recur. In this session, Vykintas helps you choose your own membership model and set a real price on it, rather than leaving that decision for later. You'll then draft your 30, 60 and 90-day retention plan, mapping the specific touchpoints that keep members paying past the first month.\n\nYou'll leave with:\n\\- Your membership model chosen and priced\n\\- Your 30, 60 and 90-day retention plan, drafted",
+   "description": "Regan's lesson laid out what makes recurring revenue actually recur. In this session, Vykintas helps you choose your own membership model and set a real price on it, rather than leaving that decision for later. You'll then draft your 30, 60 and 90-day retention plan, mapping the specific touchpoints that keep members paying past the first month.\n\nYou'll leave with:\n\\- Your membership model chosen and priced\n\\- Your 30, 60 and 90-day retention plan, drafted",
    "cover": "covers/workshop-membership-continuity-superfans-build-revenue-that-renews-its.jpg",
    "feedback_url": "https://airtable.com/appnHZYcirCg1VqUP/shr5usOT8eDnyvbgF?hide_Slot=true&prefill_Slot=30%20%282026%29"
   },

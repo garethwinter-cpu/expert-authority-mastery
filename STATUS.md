@@ -6,10 +6,9 @@ before every push); push to `main` (auto-deploys) and to `claude/expert-authorit
 bump `package.json` on every ship.
 Live site: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Google sign-in). Cloud Run redeploys from `main` in a few minutes.
 
-## Expert & Authority Mastery: held decisions (updated 8 Oct 2026)
+## Expert & Authority Mastery: held decisions (updated 21 Oct 2026)
 
-Proposed by Gareth to the team, Marta and Marijana. Item 1 is applied. Item 2 (Regan) is **not yet applied**; apply only when
-Gareth confirms her date. Airtable is the source of truth: base `appnHZYcirCg1VqUP`, Lessons table.
+Proposed by Gareth to the team, Marta and Marijana. Both items are applied in Airtable (John Lee 8 Oct, Regan 21 Oct). Airtable is the source of truth: base `appnHZYcirCg1VqUP`, Lessons table.
 Cadence rule: lessons on Tuesdays, workshops on Fridays, 9am PT. Vishen does not teach Fridays.
 
 ### 1. John Lee: both his weeks in January (confirmed by his team, 8 Oct) — APPLIED in Airtable 8 Oct
@@ -42,20 +41,20 @@ Why this order: Speaking (a platform) and Email (the audience you own) join Pill
 Email on 17 Nov builds the list that Daniel's Oversubscribed waitlist lesson needs on 24 Nov.
 Watch: Vishen teaches no lessons in January (John, John, Ajit, Regan); his next is Tue 2 Feb.
 
-### 2. Regan Hillyer: her own lesson, Tue 26 Jan
+### 2. Regan Hillyer: her own lesson, Tue 26 Jan — CONFIRMED and APPLIED 21 Oct
 
-Regan teaches **Membership, Continuity & Superfans: Build Revenue That Renews Itself** on her own
-(not a fireside). Vishen's title and outline stay exactly as written; the description never names
-Vishen, so the only Airtable change is the Speaker field. 90 minutes. Workshop stays with Vykintas
-(Fri 29 Jan). The date depends on the John Lee edits above, which free Tue 26 Jan for this lesson.
+Regan's team confirmed on 20 Oct (via Marijana): Tue 26 Jan 2027, 9am Pacific / 5pm London, Zoom, 90 min
+(60 min content + 30 min Q&A). She teaches **Membership, Continuity & Superfans: Build Revenue That Renews Itself**
+on her own (not a fireside). Vishen's title and outline are kept; her team's working title was "Membership,
+Continuity & Super Fans: Build a Community That Stays".
 
-To apply: add Regan Hillyer to the Speakers (Lessons) table (name, Zoom email, photo), replace Vishen
-with Regan on the Membership lesson, keep status Proposed until she confirms, and fill the slot and
-session fields on her Speaker Engagements row (she is already Confirmed there for E&A Oct 2026).
+Applied in the E&A base: Regan Hillyer added to Speakers (Lessons) (`recaRF6roiUewECIP`: Confirmed, Zoom email,
+photo); she replaces Vishen on the Membership lesson, now Confirmed, with the confirmation in Internal Notes; the
+Fri 29 Jan workshop description now reads "Regan's lesson". Page snapshot refreshed and live.
 
-Conditions: her team shares real examples of recurring revenue, community and retention; Vishen
-signs off (he cut her standalone fireside on 17 Sep). Second choice if she has no recurring product:
-Speaking & Stages. Funnel Design (Tue 8 Dec) only if 8 Dec is her sole available date.
+Not done (no edit access): her row in the Author Relations base (Author x Event, `recNpgTpDftiJxZ5Z`) still has
+Speaking Slot Confirmed and Sessions blank. Those fields sync into the E&A Speaker Engagements table, so Marta or
+Marijana set them at source. Her Speakers record has no Mastery Unique link (Zoom panelist link) yet.
 
 ### Other E&A state
 
