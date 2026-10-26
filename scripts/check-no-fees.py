@@ -6,7 +6,7 @@ R = pathlib.Path(__file__).resolve().parents[1]
 FILES = ['expert-authority.html', 'data/curriculum.json', 'index.html', 'ai-founders-proposal.html',
          'data/ai-founders-curriculum.json', 'ai-founders.html', 'ai-founders-home.html', 'briefs/AIF-CURRICULUM-OUTLINE.md', 'ai-founders-pack.html', 'briefs/AIF-SURVEY.md', 'scripts/aif/aif_survey.json', 'scripts/aif/aif_emails.json', 'expert-authority-guild.html',
          'ai-founders-guild.html', 'positioning.html', 'live.html', 'CURRICULUM-BRIEF.md',
-         'data/learnings.json', 'ONBOARDING-SURVEY.md', 'STATUS.md']
+         'data/learnings.json', 'ONBOARDING-SURVEY.md', 'briefs/AIF-ONBOARDING-SURVEY.md', 'STATUS.md']
 WORDS = re.compile(r'compensation:|% of programme revenue|fee table|fee allocation|fee.alignment|\bfees?\b|'
                    r'per.class|/class|hospitality|royalt|speaker.budget|\bpackages?\b|headroom|guest spend', re.I)
 ALLOW = ['roughly one skill per class', 'from vague idea to compelling package',
