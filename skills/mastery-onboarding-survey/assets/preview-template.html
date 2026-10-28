@@ -1,0 +1,176 @@
+<title>__PAGE_TITLE__</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap">
+<style>
+/* Layout: one narrow form column under a dark hero band, sections as quiet cards, answers as pill chips */
+:root{
+  --bg:#ffffff; --surface:#f5f6f9; --card:#ffffff; --line:#e3e6ec;
+  --fg:#141821; --muted:#5d6472; --accent:#7A12D4; --accent-soft:#f1e7fb; --on-accent:#ffffff;
+  --hero:#0F131A; --hero-fg:#ffffff; --hero-muted:#b4bac6; --hero-line:#2c3442;
+  --note:#fff8e6; --note-fg:#5a4500; --note-line:#f0dca0;
+  --shadow:0 1px 3px rgba(0,0,0,0.05);
+  --font:"Google Sans","Segoe UI",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0c0f15; --surface:#0c0f15; --card:#151a23; --line:#262d3a;
+  --fg:#eef0f4; --muted:#9aa2b1; --accent:#b57cf0; --accent-soft:#2a1a3d; --on-accent:#14061f;
+  --hero:#05070b; --hero-fg:#ffffff; --hero-muted:#9aa2b1;
+  --note:#2a2412; --note-fg:#f0dca0; --note-line:#4a3f1c; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c0f15; --surface:#0c0f15; --card:#151a23; --line:#262d3a;
+  --fg:#eef0f4; --muted:#9aa2b1; --accent:#b57cf0; --accent-soft:#2a1a3d; --on-accent:#14061f;
+  --hero:#05070b; --hero-fg:#ffffff; --hero-muted:#9aa2b1;
+  --note:#2a2412; --note-fg:#f0dca0; --note-line:#4a3f1c; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--surface);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.hero{background:var(--hero);color:var(--hero-fg)}
+.hero .wrap{padding-block:40px 32px;display:grid;gap:12px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--hero-muted);font-weight:500}
+h1{font-size:clamp(26px,5vw,34px);line-height:1.15;margin:0;font-weight:700;text-wrap:balance}
+.hero p{margin:0;color:var(--hero-muted);max-width:60ch}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.meta span{border:1px solid var(--hero-line);border-radius:128px;padding:4px 12px;font-size:13px;color:var(--hero-muted)}
+.toolbar{display:flex;justify-content:flex-end;padding-block:16px 0}
+.switch{display:inline-flex;align-items:center;gap:10px;font-size:14px;color:var(--muted);cursor:pointer;user-select:none}
+.switch input{appearance:none;width:36px;height:20px;border-radius:128px;background:var(--line);position:relative;cursor:pointer;margin:0;transition:background .15s}
+.switch input::after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:var(--card);transition:transform .15s;box-shadow:var(--shadow)}
+.switch input:checked{background:var(--accent)}
+.switch input:checked::after{transform:translateX(16px)}
+form{display:grid;gap:20px;padding-block:16px 48px}
+section.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:28px;box-shadow:var(--shadow)}
+.sec-head{display:grid;gap:4px}
+.sec-head h2{margin:0;font-size:20px;font-weight:700}
+.sec-head p{margin:0;color:var(--muted);font-size:14px}
+.q{display:grid;gap:10px;min-width:0}
+.q-label{font-weight:500;font-size:16px;display:flex;gap:10px;align-items:baseline}
+.q-num{color:var(--muted);font-size:13px;font-variant-numeric:tabular-nums;min-width:22px}
+.q-sub{color:var(--muted);font-size:13px;margin:-4px 0 0 32px}
+.req{color:var(--accent);margin-left:2px}
+.opt-tag{color:var(--muted);font-weight:400;font-size:13px;margin-left:6px}
+.body{margin-left:32px;display:grid;gap:10px;min-width:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip span{display:inline-block;border:1px solid var(--line);border-radius:128px;padding:7px 14px;font-size:14px;cursor:pointer;background:var(--card);transition:background .12s,border-color .12s}
+.chip span:hover{border-color:var(--accent)}
+.chip input:checked+span{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.chip input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+input[type=text],input[type=email],input[type=tel],select,textarea{width:100%;font:inherit;font-size:15px;color:var(--fg);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:10px 12px}
+textarea{min-height:88px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.scale{display:grid;grid-template-columns:repeat(10,1fr);gap:6px;max-width:440px}
+.scale .chip span{width:100%;text-align:center;padding:7px 0}
+.scale-ends{display:flex;justify-content:space-between;max-width:440px;font-size:12px;color:var(--muted)}
+.why{display:none;background:var(--note);color:var(--note-fg);border:1px solid var(--note-line);border-radius:8px;padding:8px 12px;font-size:13px}
+body.show-why .why{display:block}
+.follow{display:grid;gap:6px}
+.follow label{font-size:14px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+button{font:inherit;font-weight:500;border:0;border-radius:128px;padding:12px 28px;background:var(--accent);color:var(--on-accent);cursor:pointer}
+button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.status{font-size:14px;color:var(--muted)}
+.thanks{margin-block:16px 48px}
+.next{margin:0;padding-left:20px;display:grid;gap:10px}
+.next strong{font-weight:500}
+@media (max-width:520px){
+  section.card{padding:18px}
+  .body,.q-sub{margin-left:0}
+  .scale{grid-template-columns:repeat(5,1fr)}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow" id="eyebrow"></div>
+    <h1 id="title"></h1>
+    <p id="intro"></p>
+    <div class="meta" id="meta"></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="toolbar">
+    <label class="switch" for="why-toggle"><input type="checkbox" id="why-toggle"> Show why we ask each question</label>
+  </div>
+  <form id="survey" novalidate></form>
+  <section class="card thanks" id="thanks" hidden>
+    <div class="sec-head"><h2 id="thanks-title"></h2><p>Here's what happens next.</p></div>
+    <ol class="next" id="next"></ol>
+    <p class="status" id="thanks-note"></p>
+    <div class="actions"><button type="button" id="back">Back to the survey</button></div>
+  </section>
+</div>
+
+<script>
+const SURVEY = __SURVEY_JSON__;
+const SECTIONS = SURVEY.sections;
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
+document.getElementById('eyebrow').textContent = SURVEY.eyebrow || SURVEY.programme;
+document.getElementById('title').textContent = SURVEY.title || 'Getting to know you';
+document.getElementById('intro').textContent = SURVEY.intro || '';
+document.getElementById('thanks-title').textContent = (SURVEY.thanks && SURVEY.thanks.title) || 'Thank you.';
+document.getElementById('thanks-note').textContent = (SURVEY.thanks && SURVEY.thanks.note) || '';
+document.getElementById('next').innerHTML = ((SURVEY.thanks && SURVEY.thanks.steps) || []).map(s => `<li><strong>${esc(s.when)}</strong> · ${esc(s.what)}</li>`).join('');
+const form = document.getElementById('survey');
+let n = 0, total = 0;
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+for (const s of SECTIONS){
+  const card = el('section','card');
+  const head = el('div','sec-head', `<h2>${s.title}</h2>${s.sub ? `<p>${s.sub}</p>` : ''}`);
+  card.append(head);
+  for (const q of s.qs){
+    n++; total++;
+    const box = el('div','q');
+    const label = el('div','q-label', `<span class="q-num">${n}</span><span id="lbl-${q.id}">${q.q}${q.req ? '<span class="req" aria-hidden="true">*</span>' : '<span class="opt-tag">optional</span>'}</span>`);
+    box.append(label);
+    if (q.sub) box.append(el('div','q-sub', q.sub));
+    const body = el('div','body');
+    if (['text','email','tel'].includes(q.type)){
+      body.innerHTML = `<input type="${q.type}" id="${q.id}" aria-labelledby="lbl-${q.id}" placeholder="${q.ph || ''}">`;
+    } else if (q.type === 'long'){
+      body.innerHTML = `<textarea id="${q.id}" aria-labelledby="lbl-${q.id}" placeholder="${q.ph || ''}"></textarea>`;
+    } else if (q.type === 'select'){
+      body.innerHTML = `<select id="${q.id}" aria-labelledby="lbl-${q.id}"><option value="">Choose a country</option>${q.opts.map(o=>`<option>${o}</option>`).join('')}</select>`;
+    } else if (q.type === 'scale'){
+      const row = el('div','scale chips'); row.setAttribute('role','radiogroup'); row.setAttribute('aria-labelledby',`lbl-${q.id}`);
+      for (let i=1;i<=10;i++) row.append(el('label','chip', `<input type="radio" name="${q.id}" id="${q.id}-${i}" value="${i}"><span>${i}</span>`));
+      body.append(row, el('div','scale-ends', `<span>1 · ${q.lo}</span><span>10 · ${q.hi}</span>`));
+    } else {
+      const multi = q.type === 'many';
+      const row = el('div','chips'); row.setAttribute('role', multi ? 'group' : 'radiogroup'); row.setAttribute('aria-labelledby',`lbl-${q.id}`);
+      q.opts.forEach((o,i) => row.append(el('label','chip', `<input type="${multi?'checkbox':'radio'}" name="${q.id}" id="${q.id}-${i}" value="${o}"><span>${o}</span>`)));
+      body.append(row);
+      if (q.max) row.addEventListener('change', () => {
+        const boxes = [...row.querySelectorAll('input')];
+        const on = boxes.filter(b=>b.checked).length;
+        boxes.forEach(b => { if (!b.checked) b.disabled = on >= q.max; b.nextElementSibling.style.opacity = b.disabled ? .45 : 1; });
+      });
+      if (multi && q.opts.some(o => /^(None|No, this is my first)/.test(o))) row.addEventListener('change', e => {
+        const t = e.target, none = /^(None|No, this is my first)/.test(t.value);
+        if (t.checked) row.querySelectorAll('input').forEach(b => { if (b !== t && (none || /^(None|No, this is my first)/.test(b.value))) b.checked = false; });
+      });
+      if (q.follow){
+        total++;
+        const f = el('div','follow', `<label for="${q.follow.id}">${q.follow.q}</label><input type="text" id="${q.follow.id}" placeholder="${q.follow.ph || ''}">`);
+        f.hidden = true; body.append(f);
+        row.addEventListener('change', () => { f.hidden = !row.querySelector(`input[value="${q.follow.when}"]`).checked; });
+      }
+    }
+    if (q.why) body.append(el('div','why', q.why));
+    box.append(body);
+    card.append(box);
+  }
+  form.append(card);
+}
+const actions = el('div','actions', `<button type="submit">Send my answers</button><span class="status">Preview only. Nothing is sent.</span>`);
+form.append(actions);
+document.getElementById('meta').innerHTML = [`About ${SURVEY.promise_minutes || 3} minutes`, `${n} questions`, ...(SURVEY.badges || [])].map(b => `<span>${esc(b)}</span>`).join('');
+const thanks = document.getElementById('thanks');
+form.addEventListener('submit', e => { e.preventDefault(); form.hidden = true; thanks.hidden = false; thanks.scrollIntoView({block:'start'}); });
+document.getElementById('back').addEventListener('click', () => { thanks.hidden = true; form.hidden = false; });
+const tog = document.getElementById('why-toggle');
+tog.addEventListener('change', () => document.body.classList.toggle('show-why', tog.checked));
+</script>

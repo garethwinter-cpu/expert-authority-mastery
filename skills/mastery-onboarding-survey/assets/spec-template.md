@@ -2,7 +2,9 @@
 
 **Onboarding survey · build spec for the team · [date]**
 
-[One paragraph: built to the Mastery Onboarding Survey DNA; what it follows; that every programme question serves a week; which questions mirror the summit quiz or survey.]
+Written after the survey was approved in preview. See the survey as students will: [link to the preview]
+
+[Two or three sentences: built to the Mastery Onboarding Survey DNA; which questions mirror the summit quiz or survey; the count and time against the promise.]
 
 ## Fix this first
 [Only if the audit found something affecting students now, such as a live form with the wrong questions, a broken link or a required phone. Say what students currently see, why it matters, and the fix. Leave the section out if nothing is urgent.]

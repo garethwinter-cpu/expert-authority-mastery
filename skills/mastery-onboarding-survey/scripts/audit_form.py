@@ -6,7 +6,7 @@ inside a text field also works). Output: a Markdown report of what passes, what 
 completion time.
 
 Usage:
-  python audit_form.py form.json --programme "AI for Founders Mastery" [--promise-minutes 3]
+  python audit_form.py form.json --programme "[Programme name]" [--promise-minutes 3]
 """
 import argparse, json, re, sys
 
@@ -23,7 +23,8 @@ TOPIC_WORDS = {
     "ai": ["ai tool", "ai experience", "artificial intelligence"],
 }
 EMOJI = re.compile("[\U0001F300-\U0001FAFF☀-➿]")
-SECONDS = {"one_tap": 6, "short_text": 20, "long_text": 40}
+# Same rates as build_preview.py: ticking a list takes longer than one tap
+SECONDS = {"one_tap": 6, "multi": 12, "short_text": 25, "long_text": 45}
 
 def load(path):
     raw = open(path, encoding="utf-8").read()
@@ -157,22 +158,23 @@ def main():
             if not e.get("isRequired"): fix.append(f'"{e.get("label")}" is a goals or skills question and should be required.')
 
     # count and time
-    one_tap = short = long_ = conditional = 0
+    one_tap = multi = short = long_ = conditional = 0
     for s, e in elements(form):
         if e.get("visibilityFilters"): conditional += 1; continue
         t = e.get("fieldType", "")
         if t in ("multilineText", "richText"): long_ += 1
         elif t in ("singleLineText", "email", "phoneNumber", "number", "url"): short += 1
+        elif t in ("multipleSelects", "multipleRecordLinks"): multi += 1
         else: one_tap += 1
-    secs = one_tap * SECONDS["one_tap"] + short * SECONDS["short_text"] + long_ * SECONDS["long_text"]
+    secs = one_tap * SECONDS["one_tap"] + multi * SECONDS["multi"] + short * SECONDS["short_text"] + long_ * SECONDS["long_text"]
     open_req = sum(1 for s, e in elements(form) if e.get("fieldType") in ("multilineText", "richText") and e.get("isRequired") and not e.get("visibilityFilters"))
     if open_req > 2: fix.append(f"{open_req} required long-text questions. The DNA prefers lists; keep open text for what can't be categorised.")
     if a.promise_minutes is not None and secs / 60 > a.promise_minutes + 0.5:
-        fix.append(f"Estimated {secs/60:.1f} minutes against a promise of {a.promise_minutes:g}. Pre-fill name and email, or cut programme questions that feed the fewest weeks.")
+        fix.append(f"Estimated {secs/60:.1f} minutes against a promise of {a.promise_minutes:g}. Pre-fill name and email, or cut the questions with the weakest action.")
 
     print(f"# Audit: {title or '(untitled form)'}\n")
     print(f"Source table: {form.get('sourceTableName', form.get('sourceTableId', '?'))} · form page {form.get('pageId', '?')}\n")
-    print(f"**Count:** {one_tap} one-tap, {short} short typed, {long_} long typed, {conditional} conditional. "
+    print(f"**Count:** {one_tap} one-tap, {multi} tick-a-list, {short} short typed, {long_} long typed, {conditional} conditional. "
           f"Estimated {secs/60:.1f} minutes before pre-fill.\n")
     print(f"## To fix ({len(fix)})")
     for f in fix: print(f"- {f}")

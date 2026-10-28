@@ -1,143 +1,191 @@
 ---
 name: mastery-onboarding-survey
-description: Design, rebuild or audit the "Getting to Know You" onboarding survey for any Mindvalley Mastery programme, whatever the subject (AI, business, speaking, social media, manifesting, spiritual, health, money, relationships or a programme that has never run). Built on the Mastery Onboarding Survey DNA and the live Airtable forms. Use whenever someone asks to build, write, draft, update, refresh, clean up, check or review an onboarding survey, intake form, welcome survey, pre-programme questionnaire or Getting to Know You form for a Mastery, Certification or cohort programme, or pastes an Airtable form link for one, even if they never say "DNA". Also use when a Mastery's welcome emails link to a survey that needs checking before launch.
+description: Design, rebuild or audit the "Getting to Know You" onboarding survey for any Mindvalley Mastery, Certification or cohort programme, whatever the subject (AI, business, speaking, social media, manifesting, spiritual, health, money, relationships, or a programme that has never run). Carries the full Mastery Onboarding Survey DNA, every live programme's question set, and a clickable student preview. Use whenever someone asks to build, write, draft, update, refresh, clean up, check or review an onboarding survey, intake form, welcome survey, pre-programme questionnaire or Getting to Know You form, or shares an Airtable form for one, even if they never say "DNA". Also use when a programme's welcome emails link to a survey that needs checking before launch.
 ---
 
 # Mastery onboarding survey
 
-Every Mastery sends one onboarding survey before the programme starts. Hosts and teachers use it to pitch each session at the room, and the business uses it to understand who bought. The company standard is the **Mastery Onboarding Survey DNA** (Google Drive file `1AQV6LlZlJYJ-Q_YEoeDLZpBlEBadDWOf`). This skill turns the DNA, the live forms and the lessons from building them into one repeatable process for any subject.
+Every Mastery sends one onboarding survey before the programme starts. Hosts and teachers use the answers to pitch each session at the room. The business uses them to understand who bought, and graduation uses them as the "before".
 
-The job is usually one of three things. Work out which before starting:
+This skill is self-contained. The company standard (the Mastery Onboarding Survey DNA) and every live programme's questions are inside it, in `references/`. The only things it needs from the person asking are the programme-specific materials in step 1.
 
-1. **Build** a survey for a programme (new or relaunched).
-2. **Audit** a live form, often because a welcome email already links to it.
-3. **Update** a reused form for a new cohort.
+## How the work runs
 
-All three end in the same deliverable: a build spec Operations can follow, in the format in `assets/spec-template.md`.
+1. **Ask for the materials.** One message, then wait.
+2. **Audit the existing form**, if there is one, and flag anything urgent straight away.
+3. **Design the questions** with the action test.
+4. **Show the survey as a student sees it**, as a clickable preview, and refine it together.
+5. **After sign-off, write the build spec** for whoever builds the form.
 
-## Step 1: Gather the inputs before writing a question
+Step 4 always comes before step 5. People judge a survey by reading it as a student would. A build spec full of field types and IDs hides the survey inside the paperwork, and reviewers can't tell whether it is any good.
 
-A survey written without the curriculum produces generic questions nobody uses. Collect these first, using whatever tools are connected (Airtable, Google Drive, the programme's repo or curriculum page):
+## Step 1: Ask for the materials
 
-| Input | Why it matters | Where it usually is |
-|---|---|---|
-| Programme name, cohort dates, host name | The title, the intro line and the live-call question | The onboarding email doc, the curriculum page |
-| The curriculum, week by week | Every programme question must serve a week | Curriculum page, Airtable Lessons or Schedule table |
-| The summit quiz and the post-registration summit survey | Copying their exact options lets each student's answers join on email | The programme's Airtable base, tables named Quiz or Summit Survey |
-| The onboarding email journey | It states the survey's promised length and where the link points | Google Doc named "[Programme] Onboarding" |
-| The existing onboarding form and table | The DNA says reuse, and the live form may be a stale clone | Airtable table "Student Onboarding Survey", form page in the Forms or Interface tab |
-| Last cohort's survey answers, if any | Shows which questions produced usable data | The "Onboarding survey answers" view |
+Programme questions written without the curriculum come out generic, and nobody uses the answers. Before writing anything, send this request, adapted to what the person has already given you:
 
-With Airtable connected, read the live form with `get_form_schema` and the source questions with `get_table_schema`. Never guess option lists: copy them from the source table.
+> To build a survey that fits this programme, please share what you can of the following. Links, pasted text, files, screenshots or exports all work.
+>
+> 1. **The curriculum**, week by week. A curriculum page, doc, HTML file or slide.
+> 2. **Key dates**: programme start, live-call days and times, any setup or welcome sessions, graduation, and the host's name.
+> 3. **The summit quiz or post-registration survey**, if there is one. I'll copy its wording so each student's two sets of answers can be compared.
+> 4. **The current onboarding form**, if the programme has run before or a form already exists. An Airtable form link, or a screenshot of each section.
+> 5. **The onboarding emails**, or just the line that links to the survey. I need the length they promise ("3 minutes").
+>
+> Nice to have: last cohort's survey answers, and anything the teachers have asked to know about students.
 
-If the curriculum isn't written yet, say so and build only the core block plus the standard experience and goals sections. Mark the programme-specific questions as pending.
+Then use what comes back:
+- **Airtable connected:**
+  - read a form with `get_form_schema`
+  - read option lists with `get_table_schema`
+  - never guess an option list you are meant to copy
+- **Google Drive or another connector:** read shared docs with it.
+- **Nothing connected:** work from pasted text, files and screenshots.
+- **Something missing:** carry on. Build the core block and the standard sections from `references/dna.md`. Mark any programme question that depends on the missing material as pending, and say what it is waiting for.
 
-## Step 2: Audit what exists
+## Step 2: Audit the existing form
 
-Run the audit even when building something new, because most programmes are relaunches and their table already exists. Save the `get_form_schema` result to a file and run:
+If an existing form was shared as Airtable schema JSON, save it to a file and run:
 
 ```
-python <skill>/scripts/audit_form.py form.json --programme "AI for Founders Mastery" --promise-minutes 3
+python scripts/audit_form.py form.json --programme "[Programme name]" --promise-minutes 3
 ```
 
-It checks the form against the DNA and against the drift seen on the live forms. That drift includes a clone that still asks another programme's questions, a required phone number, missing age bands, a single-select programme history, "Other" with no follow-up, and generic section titles. Read `references/live-forms.md` for what each live form gets right and wrong. Put the findings at the top of the spec when they affect students now: a welcome email linking to the wrong questions is the most urgent thing in the document.
+If you only have screenshots or pasted questions, check the same things by eye against the "Drift seen across forms" table in `references/live-forms.md`. Typical drift:
+- a clone still asking another programme's questions
+- a required phone number
+- missing age bands
+- single-select programme history, or history with cohort years
+- "Other" with no follow-up box
+- "Group 1" as a section title
+- emoji in options
 
-## Step 3: Build the questions
+Report urgent findings in chat the moment you find them, in two or three lines. A welcome email that links to the wrong questions matters more than anything else you will produce. Keep audit findings out of the student preview.
 
-### The structure
+## Step 3: Design the questions
 
-Every survey has these sections in this order. The first three come from the DNA; the last two come from the specs that worked best.
+### The action test
 
-1. **About you**: the standard core block, unchanged in wording.
-2. **[Topic] experience** or **Where you're starting**: self-rated level, tenure or frequency, current tools, platforms or practices.
-3. **Goals**: the motivation or focus question, a focus-areas question, and the open desired-outcome question.
-4. **Skills** or **Baselines**: what they feel least confident in and what they'd love to master, plus any 1 to 10 ratings you will ask again at graduation.
-5. **Practical**: whether they can join live, consent to share their story, and anything else they want the team to know.
+Each question must lead to something someone does. For every question, write down **who** acts on the answer, **what** they do, and **when**. Answers get used at three moments:
 
-Give every section a real title. "Group 1" and "New Group" are Airtable defaults, not titles.
+1. **Before week 1: getting each student ready.** Setup gaps, missing equipment, who needs a concierge message or a nudge to a welcome session.
+2. **During the programme: what each teacher gets.** The room's level, what it wants and what it fears, real examples to teach with, how to group people.
+3. **At graduation: before and after.** The numbers and artefacts measured again at the end, which become the programme's proof.
 
-### The core block
+If you can't name who, what and when, cut the question. "Interesting to know" is not an action. The answer to the test becomes the question's `why`, and the checker fails any programme question without one.
 
-Copy it exactly from `references/dna.md`, section "Core block". The income brackets, age bands and programme list must match across programmes, or cross-programme analysis breaks. Two rules are easy to get wrong:
+### Structure
 
-- **Phone number and personal income are always optional.** The DNA standardised this to cut friction.
-- **"Have you ever enrolled in any other Mastery or Certification programs?" is multi-select and required.** List programmes without cohort years, plus "No previous programs". Add any programme launched since the list was last updated.
+1. **About you**: the DNA core block, exactly as in `references/dna.md`. Phone and personal income optional. Programme history multi-select, required, without cohort years.
+2. **Your [business / practice / work]**: stage and size, plus the one open "what do you do, and for whom" sentence.
+3. **Where you're starting**: level, setup, what they already have.
+4. **Your goals**: what they want first, what has blocked them, what they would love to have, and one open outcome question.
+5. **Your starting point**: least confident, and the measures you will ask again at graduation.
+6. **Practical**: summit attendance, live calls, story consent, anything else.
 
-### The programme questions
+Give every section a real title and a one-line subtitle telling the student why it is there. Borrow wording from the matching programme in the `dna.md` annex: students already understand it.
 
-Write them from the curriculum, not from imagination. For each candidate question, name the week or decision it feeds. If you can't name one, drop the question.
+### Patterns that work
 
-- **Mirror the summit.** Where the summit quiz or survey already asks something (stage, business size, revenue, level, biggest block), copy its question and options word for word. Identical options let Customer Experience compare buyers with registrants and join two answers per student without a translation table.
-- **Experience level** uses the programme's own words, as in "I'm completely new to spirituality" or "Beginner (just starting or inconsistent)". It is single select and required.
-- **Tools, platforms or practices** is multi-select and required, with an "Other" option followed by a conditional "Please specify" field.
-- **Motivation or focus** is single select by default. Use multi-select when several motivations truly co-exist, as in Spiritual and Manifesting.
-- **Least confident in** and **Love to master** are multi-select and required. Give one option per pillar, week or graduating outcome, so each teacher sees what the room needs from their week. Write "love to master" options as outcomes the student will have, not topic names.
-- **Baselines** are 1 to 10 ratings on the one or two things the programme promises to move, such as speaking confidence or comfort letting AI read private email. Note in the spec that they are re-asked at graduation; that before-and-after is what the programme can report.
-- **The desired-outcome question** is open text and required: "What transformation do you want to walk away with by the end of this program?", or a version tied to graduation.
+- **Mirror the summit.** Where the summit quiz or survey already asks something, copy the question and options word for word, so buyers can be compared with registrants.
+- **Pair "love to have" with "least confident", using the same list.** One option per module, in curriculum order, "pick up to three" on both. Each teacher gets two numbers for their week: how many want it and how many fear it. The "love" answers also show which outcomes to lead with when selling the next cohort. Write "love" options as outcomes ("A funnel that collects leads while I sleep") and "least confident" options as skills ("Building a brand and a funnel").
+- **Replace a long list with the one question that decides something.** If only one tool decides who needs setup help, ask about that tool, not all eight.
+- **Collect one before-and-after artefact**: a website address, a sample post, a talk recording. A saved copy shown beside the graduation version is the strongest proof a programme has.
+- **Use one to three measures you'll ask again at graduation.** 1 to 10 ratings on what the programme promises to change, plus one hard number such as hours a week or offers sold. Tell students in the section subtitle that you'll ask again.
+- **Ask one reflection question.** It makes the survey feel like the programme's first step rather than admin. Keep it closed so it can be counted. Example: "If AI gave you back one day a week, what would you do with it?" The host can open the programme with the room's answers.
+- **Ask whether they attended the summit**, so week 1 builds on it instead of repeating it.
+- **End on a thank-you screen with the next dates**, so students finish knowing what happens next.
 
-### Rules from the DNA, with the reasons
+### Writing for students
 
-- **Dropdowns by default.** Closed answers can be grouped the day the form closes. Use open text only where no list can work, such as follower counts across platforms, a one-sentence description of their business, or the desired outcome. Each open question costs analysis time and completion rate.
-- **Goals, motivations and skills are required; supplementary fields are optional.** The required fields are why the survey exists. The rest only add friction.
-- **Never ask desired income** unless the programme is Manifesting. The gap between current and desired income only means something there.
-- **Don't ask which teachers they want** while the faculty is undecided. The survey must not promise names.
-- **No emoji in options.** Several live forms use them; they split identical answers during analysis and break joins.
+- Write plainly, in the second person: "Which computer will you use for the programme?", not "Device type".
+- No capitals for emphasis ("LEAST"), no emoji, no field jargon.
+- Keep options short and parallel. Put a pick limit as a sub-line: "Pick up to three."
+- Every "Other" or "Something else" gets a follow-up box that only appears when chosen.
+- Keep required long answers to one. Each open answer costs completion and analysis time.
+- Never ask desired income outside Manifesting. Never ask which teachers they want while the faculty is undecided.
 
 ### Respect the promised length
 
-Onboarding emails promise a length, often "three minutes". Count before you finish:
+The checker times the survey at:
 
-- about 6 seconds per one-tap question
-- about 20 seconds per short typed answer
-- about 40 seconds per long typed answer
+| Question type | Seconds |
+|---|---|
+| One tap, or a 1 to 10 rating | 6 |
+| Dropdown | 8 |
+| Ticking a list (people read every option) | 12 |
+| Short typed answer | 25 |
+| Long typed answer | 45 |
+| Pre-filled name and email | 0 |
 
-Pre-filling name and email from the email's merge tags saves the slowest part of the core block. If the count runs over the promise, cut programme questions that feed the fewest weeks. Don't quietly break the promise; state the count in the spec.
+If the required answers run over the promise, cut the questions with the weakest action, or tell the person the emails need a new number. Never quietly break the promise.
 
-## Step 4: Write the spec
+## Step 4: Show it, and refine it together
 
-Use the template in `assets/spec-template.md`. It has seven parts:
+Write the survey as JSON in the shape of `examples/aif-survey.json`: programme, intro, promised minutes, thank-you steps, and sections of questions, each with a `why`. Then run:
 
-1. Anything to fix first
-2. Form set-up
-3. The questions, section by section, in tables
-4. The count
-5. Why these questions and not others
-6. What the answers change before kickoff
-7. The build checklist for Operations
+```
+python scripts/build_preview.py survey.json --out preview.html
+```
 
-The "what the answers change" table is what turns a survey into a tool: for each answer, the action someone takes before week 1.
+It checks the rules above and renders the survey as students will see it. Fix every FAIL; fix each WARN or raise it with the person.
 
-Write in plain British English, one idea per sentence, with no em dashes in headings. Number the questions by section (A1, B2), so teams can refer to them in Slack.
+Show `preview.html` where they can click through it. Publish it as an artifact if you can; otherwise share the HTML file. The page:
+- has clickable answers, working follow-ups and pick limits
+- ends on a thank-you screen
+- has a switch, off by default, that shows each question's `why`, so the team can see the reasoning without cluttering the student view
 
-If the user wants the spec as a Google Doc, create it with Drive `create_file` from HTML, then read it back to check the tables came through.
+If you can't run Python, apply the same checks by hand and write the preview yourself from `assets/preview-template.html`. Replace `__SURVEY_JSON__` with the JSON and `__PAGE_TITLE__` with "[Programme] Onboarding Survey".
 
-## Step 5: The process around the form
+In chat, keep the summary short:
+- the sections and the count
+- the time against the promise
+- what you cut and why
+- the one or two decisions only they can make
 
-Put these in the spec's set-up table and checklist. They come straight from the DNA and are where launches slip.
+Iterate by editing the JSON, rebuilding and re-sharing at the same place. When they ask to compare with another programme's survey, give a short side-by-side table in chat, then say what to borrow.
 
-- **Reuse over rebuild.** For a relaunch, add new fields to the existing table, hide old ones on the form, and never delete a field, because that deletes history. Separate cohorts with a view filtered by submission date, named "Onboarding survey answers".
-- **Title and look.** The title is "[Programme name]: Getting to Know You". Add a one- or two-sentence intro saying the answers shape the sessions, and use the programme's key art as the background.
-- **Timing.** The survey is set up about two weeks before the summit and is live before the first buyer receives the welcome email.
-- **Distribution.** Link it from several points in the onboarding emails, and have the host and concierges share it in the community.
-- **Approval.** Operations sends it on Slack to Customer Experience and Learning Experience for review and sign-off before it goes live.
-- **Reporting.** Customer Experience analyses the answers and compiles a cohort report for the Academy team. Author Relations or Learning Experience forwards it to every teacher before their week.
-- **Response rate.** It has historically been low. Track it against the previous cohort and report it with the analysis.
+## Step 5: After sign-off, the build spec
 
-## Building in Airtable
+Only once the person approves the preview, write the spec for whoever builds the form, from the same JSON, using `assets/spec-template.md`. Keep it short:
+- set-up
+- the question table
+- which options to copy from the summit table
+- what the answers change before kickoff
+- the build checklist
 
-Only build or edit the live form when the user explicitly asks you to. Live forms are linked from emails already sent, and some bases are frozen until a programme is aligned with Vishen. When asked:
+If they want it as a Google Doc and Drive is connected, create it from HTML and read it back to check the tables. Point to the preview at the top so readers can see the survey as students will.
 
+## The process around the form (from the DNA)
+
+Put these in the spec; launches slip here.
+
+- **Reuse over rebuild.** Add fields to the existing table and hide old ones on the form. Never delete a field, because that deletes history. Separate cohorts with a view filtered by submission date, named "Onboarding survey answers".
+- **Title and look.** "[Programme name]: Getting to Know You", a one- or two-sentence intro, and the programme's key art as background.
+- **Timing.** Set up about two weeks before the summit. Live before the first buyer gets the welcome email.
+- **Distribution.** Linked from several onboarding emails, and shared by the host and concierges in the community.
+- **Approval.** Operations sends it on Slack to Customer Experience and Learning Experience for sign-off before it goes live.
+- **Reporting.** Customer Experience compiles the cohort report. Each teacher gets their week's numbers before their week.
+- **Response rate.** Historically low. Track it against the previous cohort.
+
+## Editing a live form
+
+Only build or edit a live form when the person explicitly asks. Live forms are linked from emails already sent, and some bases are on hold until a programme is signed off. When asked:
 - read the schema first
-- add fields; don't delete them
-- copy option lists from their source tables
-- hide inherited fields on the form rather than removing them
-- read the form back with `get_form_schema` and run the audit again
+- add fields rather than delete them
+- copy mirrored options from their source tables
+- hide inherited fields
+- read the form back and audit it again
 
-Otherwise, deliver the spec and say plainly that the live form is unchanged.
+Otherwise, say plainly that the live form is unchanged.
 
-## Reference files
+## What's in this skill
 
-- `references/dna.md`: the DNA condensed, with the exact core block options. Read for every survey.
-- `references/live-forms.md`: the question sets of AI Mastery, Social Media, Manifesting, Entrepreneurship, Speaking & Influence and Spiritual, plus the Expert & Authority and AI for Founders specs, with what each gets right and wrong. Read when writing programme questions, to borrow wording that works.
-- `assets/spec-template.md`: the output format.
-- `scripts/audit_form.py`: checks an Airtable form schema against the DNA.
+| File | What it's for |
+|---|---|
+| `references/dna.md` | The full DNA: rules, process, the exact core block, and every programme's question set in the annex. Read for every survey |
+| `references/live-forms.md` | What each live form does well, where it drifts, and what the most recent surveys added |
+| `examples/aif-survey.json` | A complete approved survey (AI for Founders Mastery). Copy its shape, and treat its `why` lines as the bar to meet |
+| `scripts/build_preview.py` | Rule check, timing, and the student preview |
+| `scripts/audit_form.py` | Checks an existing Airtable form, from its schema JSON, against the DNA |
+| `assets/preview-template.html` | The preview page `build_preview.py` fills |
+| `assets/spec-template.md` | The build spec, for after sign-off |

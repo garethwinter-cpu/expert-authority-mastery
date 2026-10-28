@@ -1,0 +1,454 @@
+{
+ "programme": "AI for Founders Mastery",
+ "eyebrow": "AI for Founders Mastery · November 2026 cohort",
+ "title": "Getting to know you",
+ "intro": "This takes about four minutes. Your answers shape the programme: the businesses we build with live, the help you get before week 1, and what each teacher focuses on.",
+ "promise_minutes": 4,
+ "badges": [
+  "Starts Tuesday 17 November"
+ ],
+ "thanks": {
+  "title": "Thank you. You're all set.",
+  "steps": [
+   {
+    "when": "Thursday 5 November",
+    "what": "Get AI-Ready drop-in: setup, your first pack and your hours log"
+   },
+   {
+    "when": "Thursday 12 November",
+    "what": "Get AI-Ready drop-in: the go-live clinic"
+   },
+   {
+    "when": "Tuesday 17 November",
+    "what": "Week 1 goes live at 7am Los Angeles / 3pm London"
+   }
+  ],
+  "note": "Your answers go to Vishen, Vykintas and each teacher before their week."
+ },
+ "sections": [
+  {
+   "title": "About you",
+   "sub": "The basics, so we know who is in the room.",
+   "qs": [
+    {
+     "id": "name",
+     "type": "text",
+     "q": "Your name",
+     "req": true,
+     "why": "Pre-filled from the welcome email link where possible."
+    },
+    {
+     "id": "email",
+     "type": "email",
+     "q": "Email address",
+     "req": true,
+     "why": "Joins this survey to your enrolment and your summit answers."
+    },
+    {
+     "id": "phone",
+     "type": "tel",
+     "q": "Phone number",
+     "why": "Only for your concierge, if email doesn't reach you."
+    },
+    {
+     "id": "gender",
+     "type": "one",
+     "q": "Gender",
+     "req": true,
+     "opts": [
+      "Female",
+      "Male",
+      "Non-binary",
+      "Prefer not to say"
+     ]
+    },
+    {
+     "id": "age",
+     "type": "one",
+     "q": "Age",
+     "req": true,
+     "opts": [
+      "18–24",
+      "25–34",
+      "35–44",
+      "45–54",
+      "55–64",
+      "65+"
+     ]
+    },
+    {
+     "id": "country",
+     "type": "select",
+     "q": "Where are you based?",
+     "req": true,
+     "opts": [
+      "United States",
+      "United Kingdom",
+      "Canada",
+      "Australia",
+      "Germany",
+      "India",
+      "Malaysia",
+      "Singapore",
+      "United Arab Emirates",
+      "South Africa",
+      "Other country"
+     ],
+     "why": "Sets the time zones for drop-ins and lab rooms. The live form uses the full country list."
+    },
+    {
+     "id": "income",
+     "type": "one",
+     "q": "Your personal annual income",
+     "opts": [
+      "Under $25,000",
+      "$25,000–$49,999",
+      "$50,000–$74,999",
+      "$75,000–$99,999",
+      "$100,000–$149,999",
+      "$150,000–$199,999",
+      "$200,000+",
+      "Prefer not to say"
+     ],
+     "why": "Standard on every Mastery survey, so cohorts can be compared."
+    },
+    {
+     "id": "history",
+     "type": "many",
+     "q": "Have you joined a Mindvalley Mastery or Certification before?",
+     "req": true,
+     "opts": [
+      "No, this is my first",
+      "AI Mastery",
+      "Entrepreneurship Mastery",
+      "Expert & Authority Mastery",
+      "Another Mastery",
+      "A Mindvalley Certification"
+     ],
+     "why": "AI Mastery alumni need less setup help. Expert & Authority students have covered offers, copy and funnels before, so those teachers can go further."
+    }
+   ]
+  },
+  {
+   "title": "Your business",
+   "sub": "So the live builds use businesses like yours.",
+   "qs": [
+    {
+     "id": "stage",
+     "type": "one",
+     "q": "Which of these sounds most like you today?",
+     "req": true,
+     "opts": [
+      "I have a job and I'm exploring a business",
+      "I'm planning a business, not started yet",
+      "I'm a solo founder, it's mostly me",
+      "I run a small team (2–10 people)",
+      "I run a bigger team (11+ people)"
+     ],
+     "why": "Puts you in the solo or the team room in the Thursday labs. Same wording as the summit survey, so we can compare buyers with registrants."
+    },
+    {
+     "id": "revenue",
+     "type": "one",
+     "q": "In the last 12 months, roughly what did your business earn?",
+     "req": true,
+     "opts": [
+      "Nothing yet",
+      "Under $50K",
+      "$50K–$100K",
+      "$100K–$250K",
+      "$250K–$500K",
+      "$500K–$1M",
+      "$1M–$3M",
+      "$3M–$10M",
+      "$10M–$20M",
+      "$20M+",
+      "I'd rather not say"
+     ],
+     "why": "Same wording as the summit survey. Lets teachers pitch their examples at the right scale."
+    },
+    {
+     "id": "sell",
+     "type": "text",
+     "q": "In one sentence: what do you sell, and to whom?",
+     "req": true,
+     "ph": "For example: leadership coaching for first-time managers in tech",
+     "why": "Vykintas picks real businesses from these to build with live in weeks 1 and 2."
+    }
+   ]
+  },
+  {
+   "title": "Where you're starting",
+   "sub": "So you're set up before week 1.",
+   "qs": [
+    {
+     "id": "ai",
+     "type": "one",
+     "q": "Where are you with AI in your business today?",
+     "req": true,
+     "opts": [
+      "I haven't really started",
+      "I use it for writing and ideas",
+      "I use it regularly for specific tasks",
+      "I have some automations running",
+      "It's built into how my business runs"
+     ],
+     "why": "Same wording as the summit survey. Sets how much hand-holding the early labs need."
+    },
+    {
+     "id": "cc",
+     "type": "one",
+     "q": "Have you used Claude Code before?",
+     "req": true,
+     "opts": [
+      "Yes, I use it regularly",
+      "I've tried it",
+      "Not yet",
+      "I haven't heard of it"
+     ],
+     "why": "Everything we build runs on it. Anyone who isn't using it yet gets a personal nudge to the Get AI-Ready drop-ins on 5 and 12 November."
+    },
+    {
+     "id": "computer",
+     "type": "one",
+     "q": "Which computer will you use for the programme?",
+     "req": true,
+     "opts": [
+      "Mac",
+      "Windows",
+      "Chromebook",
+      "Only a tablet or phone",
+      "Not sure"
+     ],
+     "why": "The builds need a Mac or Windows computer. Anyone else hears from a concierge before week 1."
+    },
+    {
+     "id": "have",
+     "type": "many",
+     "q": "Which of these does your business already have?",
+     "req": true,
+     "opts": [
+      "A website",
+      "My own domain name",
+      "An email list",
+      "An email tool (Kit, Mailchimp or similar)",
+      "A free download or lead magnet",
+      "A CRM or sales pipeline",
+      "Bookkeeping software",
+      "A Meta ad account",
+      "People who work with me",
+      "None of these yet"
+     ],
+     "follow": {
+      "when": "A website",
+      "id": "site",
+      "q": "Your website address (optional)",
+      "ph": "yourbusiness.com"
+     },
+     "why": "Tells each teacher what the room starts from: website (week 1), email (weeks 7 and 8), Meta (week 12), books (week 13), CRM (week 14), team (week 17). Website addresses let Vykintas look before week 1, and a saved snapshot gives every student a before and after at graduation."
+    }
+   ]
+  },
+  {
+   "title": "Your goals",
+   "sub": "What you want this programme to change.",
+   "qs": [
+    {
+     "id": "plate",
+     "type": "one",
+     "q": "Which part of your business would you most like off your plate first?",
+     "req": true,
+     "opts": [
+      "Marketing and content",
+      "Sales and follow-up",
+      "Client work and delivery",
+      "Operations and admin",
+      "Team and hiring",
+      "Finance and reporting",
+      "Product and what to build next"
+     ],
+     "why": "Same wording as the summit survey. Vishen's opening speaks to the top answers."
+    },
+    {
+     "id": "block",
+     "type": "one",
+     "q": "What has stopped you automating more so far?",
+     "req": true,
+     "opts": [
+      "I don't know where to start",
+      "I've tried tools but didn't get real results",
+      "I don't have the time to set it up",
+      "I'm worried about data and safety",
+      "My team isn't on board yet",
+      "I'm not sure it's worth the cost",
+      "Something else"
+     ],
+     "follow": {
+      "when": "Something else",
+      "id": "block_other",
+      "q": "Please tell us more"
+     },
+     "why": "Same wording as the summit survey. If many pick data and safety, the week 5 privacy segment runs longer."
+    },
+    {
+     "id": "love",
+     "type": "many",
+     "q": "Which of these would you most love to have running by 30 March?",
+     "sub": "Pick up to three.",
+     "max": 3,
+     "req": true,
+     "opts": [
+      "A website and offer that sell for me",
+      "A company brain all my AI tools read from",
+      "My inbox and admin handled every morning",
+      "A brand and funnel that collect leads while I sleep",
+      "Being found on ChatGPT and Google, with content every week",
+      "Meta ads running without an agency",
+      "My bookkeeping off my desk",
+      "Every lead followed up, and more of them closed",
+      "One screen to run the business, and a week where I only decide"
+     ],
+     "why": "One option per part of the programme, in curriculum order. Shows which modules matter most to the room, and which outcomes to lead with for the next cohort."
+    },
+    {
+     "id": "dayback",
+     "type": "one",
+     "q": "If AI gave you back one day a week, what would you do with it?",
+     "req": true,
+     "opts": [
+      "Time with family and friends",
+      "My health and fitness",
+      "Rest",
+      "Travel",
+      "Learn something new",
+      "Grow the business further",
+      "Start a new project",
+      "Something else"
+     ],
+     "why": "The reason behind the hours. Vishen can open the programme with the room's answers, and graduation stories start here.",
+     "follow": {
+      "when": "Something else",
+      "id": "dayback_other",
+      "q": "What would you do?"
+     }
+    },
+    {
+     "id": "worth",
+     "type": "long",
+     "q": "By graduation on 30 March, what would you like to have built, and what would it change for you?",
+     "req": true,
+     "ph": "In your own words",
+     "why": "Read back to you at graduation, next to what you actually built."
+    }
+   ]
+  },
+  {
+   "title": "Your starting point",
+   "sub": "Four quick measures. We ask them again at graduation so you can see how far you've come.",
+   "qs": [
+    {
+     "id": "weak",
+     "type": "many",
+     "q": "Which of these do you feel least confident about?",
+     "sub": "Pick up to three.",
+     "max": 3,
+     "req": true,
+     "opts": [
+      "Building a website and offer that sell",
+      "Organising what AI knows about my business",
+      "Handing email and admin to AI",
+      "Building a brand and a funnel",
+      "Getting found online and making content",
+      "Running paid ads",
+      "Bookkeeping and the numbers",
+      "Following up and closing sales",
+      "Handing work to my team or to AI"
+     ],
+     "why": "Same order as the goals list above. Each teacher gets both counts for their week: how many want it, and how many fear it."
+    },
+    {
+     "id": "hours",
+     "type": "one",
+     "q": "In a normal week, how many hours do you work on your business?",
+     "req": true,
+     "opts": [
+      "Under 20",
+      "20–40",
+      "40–60",
+      "More than 60",
+      "I honestly don't know"
+     ],
+     "why": "The programme's main measure. The hours log in week 0 makes it precise."
+    },
+    {
+     "id": "confidence",
+     "type": "scale",
+     "q": "How confident are you that you could get AI to do real work in your business, not just answer questions?",
+     "req": true,
+     "lo": "Not at all",
+     "hi": "Completely",
+     "why": "The headline before-and-after number at graduation."
+    },
+    {
+     "id": "comfort",
+     "type": "scale",
+     "q": "How comfortable are you giving AI access to your business email and files?",
+     "req": true,
+     "lo": "Not at all",
+     "hi": "Completely",
+     "why": "Week 5 is the first time AI reads your inbox. A low room average means more time on privacy."
+    }
+   ]
+  },
+  {
+   "title": "Practical",
+   "sub": "",
+   "qs": [
+    {
+     "id": "summit",
+     "type": "one",
+     "q": "Did you attend the AI for Founders Summit (30 October to 1 November)?",
+     "req": true,
+     "opts": [
+      "Yes, all three days live",
+      "Some sessions live",
+      "I'm watching the replays",
+      "No"
+     ],
+     "why": "Tells Vishen and Vykintas what the room has already seen, so week 1 builds on it instead of repeating it."
+    },
+    {
+     "id": "live",
+     "type": "one",
+     "q": "Lessons are live on Tuesdays and labs on Thursdays, 7am Los Angeles / 3pm London. Which can you join?",
+     "req": true,
+     "opts": [
+      "Both, most weeks",
+      "Tuesdays only",
+      "Thursdays only",
+      "Mostly the recordings"
+     ],
+     "why": "Labs work best live. If many can't make Thursdays, we add a second lab time."
+    },
+    {
+     "id": "story",
+     "type": "one",
+     "q": "Would you be happy to share your results as a student story?",
+     "opts": [
+      "Yes",
+      "Maybe, ask me later",
+      "No"
+     ],
+     "why": "For Demo Day and case studies. We always ask again before using anything."
+    },
+    {
+     "id": "else",
+     "type": "long",
+     "q": "Anything else you'd like Vishen and the team to know?",
+     "ph": "Optional",
+     "why": "Ileana reads every answer before week 1 and follows up on anything that needs a reply."
+    }
+   ]
+  }
+ ]
+}
