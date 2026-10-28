@@ -121,16 +121,20 @@ Marijana set them at source. Her Speakers record has no Mastery Unique link (Zoo
   brand voice before funnel; AEO; write once and cut into carousels, posts and ads (our own three-move frame, answer, amplify, ask, rather than a borrowed one); show ads and content but stay one lesson on
   producing content, not a social media programme), Jaideep's curriculum review (14 Oct), Vykintas's proposals (5 and
   8 Oct), the quiz (907 rows).
-- **Authors.** Guest lessons carry `who: "TBD"` and render as "Teacher to be mapped" (`who()` returns an empty list for
-  TBD). Vykintas teaches weeks 1, 2 and 7 and every lab; Vishen the opening, week 14 and the graduation. Mapping
-  authors is a later step, by Gareth's instruction.
+- **Authors (28 Oct, Gareth: put the teacher map into Airtable and align).** From the teacher map of 21 Oct: Vykintas
+  weeks 1, 3, 4, 8, 10, 11, every lab and both drop-ins; Vishen opens week 1 and teaches 2, 6, 7, 9, 15, 16; Noelle 5
+  and 17; Marisha 12; Sara Davison and Tyler Fisk 13; Joe Stolte 14; Vishen and Vykintas co-host graduation. Teachers
+  now show on the curriculum page. AIF Airtable base: 9 Modules created, Lessons 1 to 35 filled (title, teacher, type,
+  status, 90 min, module, description, reason in Internal Notes), two drop-in slots added (0.1 and 0.2), slots 36 and
+  37 (1 and 6 April) labelled spare, not deleted. Open in Airtable: every Schedule slot carries Year 2025 and the
+  "2026 | Schedule" view filters on 2025; the Fast Action Bonus Call (slot 0) has no date.
 - **Jaideep's framework diagram** is kept and redrawn as inline SVG on the front door (`#framework`, figure with
   caption): company brain at the centre, AI workspace and Automation Hub ring, six engines in build order with their
   weeks, labelled flow arrows, dashed spokes for reads and writes, the founder at the bottom (Monday page down,
   decisions up). Week numbers on the blocks are the only addition to his structure.
 - **One curriculum page, no outline (14 Oct, Gareth: "just one").** `/ai-founders/outline` 301s to
   `/ai-founders/curriculum`; `ai-founders-outline.html` is deleted; the dated/outline toggle tried in 1.3.21 is gone.
-  The curriculum page is the single view: dates, briefs, labs and wins, with teachers switched off (`.who` hidden, no
+  The curriculum page is the single view: dates, briefs, labs and wins, with teachers switched off until 28 Oct (now shown) (`.who` hidden, no
   teachers count, hero and banner say teachers are mapped once the curriculum is settled). The home page module cards
   list the week's lesson titles instead of teacher chips. The pack keeps its outline tab because it is the marketing
   artefact. Authors are mapped later, by Gareth's instruction.

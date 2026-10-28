@@ -72,7 +72,7 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
 .totop{position:fixed;right:22px;bottom:22px;z-index:70;border-radius:128px;background:var(--ink);color:#fff;font-size:13px;font-weight:700;padding:10px 16px;box-shadow:var(--sh2);opacity:0;pointer-events:none;transition:opacity .2s} .totop.show{opacity:1;pointer-events:auto}
 @media(max-width:860px){.bhead{grid-template-columns:56px 1fr;padding:26px 20px 20px}.bnum{width:56px;height:56px;font-size:24px;border-radius:16px}.arc{grid-template-columns:1fr}.bbody,.row{padding:0 16px 20px}.days{grid-template-columns:1fr}.day+.day{border-left:0;border-top:1px solid var(--grey)}.top .meta{display:none}}
 @media print{.mnav,.sub,.totop{display:none}.block{break-inside:avoid-page}.week{break-inside:avoid}details.more{display:none}}
-.day .brief{display:none} .who{display:none}
+.day .brief{display:none}
 .oask .ask{margin:8px 0 0;border-radius:16px;background:var(--brand-light);border:1px solid var(--border);padding:26px 28px} .oask h2{font-size:20px;margin-bottom:10px} .oask ol{margin:10px 0 0 20px;display:grid;gap:8px;font-size:15.5px;color:var(--text)} .oask .note{margin-top:16px;font-size:14px;color:var(--muted)} .oask .btn{display:inline-block;margin-top:16px;padding:12px 22px;border-radius:128px;background:var(--brand);color:#fff;font-weight:600;text-decoration:none}
 .team{font-size:13.5px;line-height:1.5;color:var(--muted);background:var(--t);border-radius:10px;padding:9px 12px} .team b{display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--c);margin-bottom:3px} .team .hd{font-weight:700;color:var(--text)} .team .sch{color:var(--c);font-weight:600}
 .arc.one{grid-template-columns:1fr}
@@ -156,7 +156,7 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
     '<span class="fact"><b>'+live.length+'</b> live sessions · <b>'+Math.round(hours)+'</b> hours</span>',
     '<span class="fact"><b>'+esc(longDay(startAt.start))+'</b> to <b>'+esc(longDay(endAt.start))+'</b></span>'
   ].join('');
-  document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Draft, 14 October. Not yet aligned with Vishen. The curriculum comes first; who teaches each lesson is mapped once it is settled, so no teachers are shown here yet.</span>';
+  document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Draft. Not yet aligned with Vishen. Teachers are from the teacher map of 21 October and match the AIF Airtable base: labs, week 1 and graduation confirmed, the other lessons proposed.</span>';
   document.getElementById('tz').innerHTML = 'Times in <b>Pacific</b> and <b>UK</b>' + (local && local!==PT && local!==UK ? ', and your time zone (<b>'+esc(local.replace(/_/g,' '))+'</b>)' : '') + '. ' + esc(D.cadence||'') + '.';
   document.getElementById('meta').textContent = (D.mode==='draft' ? 'Draft for alignment · ' : '') + fmt(D.synced_at, UK, {day:'numeric',month:'short',year:'numeric'}) + ' · built by Gareth Winter';
 
