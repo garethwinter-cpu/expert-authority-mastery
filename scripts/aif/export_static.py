@@ -2,14 +2,16 @@
 """Export the AI for Founders pages as a self-contained static site (for garethwinter-cpu/ai-founder-mastery).
 
 The source of truth stays here: scripts/aif/ -> build_aif.py -> data/ai-founders-curriculum.json, served by server.js.
-This writes index.html (front door), curriculum.html and pack.html with the curriculum JSON inlined, the JSON itself,
+This writes index.html (front door) and pack.html with the curriculum JSON inlined, the JSON itself,
 and the author headshots the data references, so the pages work from any static host or straight from disk.
+curriculum.html is not exported: the static repo builds its own student-facing page from the Airtable snapshot
+(scripts/build_curriculum.py there), so an export never overwrites it.
 Usage: python3 scripts/aif/export_static.py /path/to/ai-founder-mastery"""
 import json, pathlib, re, shutil, sys
 R = pathlib.Path(__file__).resolve().parents[2]
 OUT = pathlib.Path(sys.argv[1]).resolve()
 LIVE = 'https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app'
-PAGES = {'ai-founders-home.html': 'index.html', 'ai-founders.html': 'curriculum.html', 'ai-founders-pack.html': 'pack.html'}
+PAGES = {'ai-founders-home.html': 'index.html', 'ai-founders-pack.html': 'pack.html'}
 LINKS = {'/ai-founders/curriculum': 'curriculum.html', '/ai-founders/pack': 'pack.html', '/ai-founders/outline': 'curriculum.html',
          '/ai-founders/proposal': LIVE + '/ai-founders/proposal', '/ai-founders': 'index.html', '/api/ai-founders': 'data/ai-founders-curriculum.json',
          '/positioning': LIVE + '/positioning', '/expert-authority': LIVE + '/expert-authority', '/': LIVE + '/'}
