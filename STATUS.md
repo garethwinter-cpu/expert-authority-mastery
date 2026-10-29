@@ -10,7 +10,7 @@ Live site: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Goog
 
 - D is committed and in the AIF Airtable base (`app7lhR1V9Fts0mNc`). Order: storefront weeks 1 to 4 (answer hub moved to
   week 4, Ajit), brain 5, inbox 6, brand and funnel 7 to 9, content 10 and 11, Meta ads 12, then finance, sales, cockpit as before.
-  Teachers: Vishen 1 (opens), 2, 7, 8, 16; Vykintas 1, 5, 6, 9, 11, 17 and every lab; Noelle 3 and 15; Ajit 4 and 10; Marisha 12;
+  Teachers: Vishen 1 (opens), 2, 7, 8, 16; Vykintas 1, 3, 5, 9, 11, 17 and every lab; Noelle 6 and 15 (weeks 3 and 6 swapped 29 Oct after Marta and Marijana's feedback; Ajit kept on content); Ajit 4 and 10; Marisha 12;
   Sara and Tyler 13; Joe 14; Vishen and Vykintas host graduation and the fast action bonus call (Wed 4 Nov, 7am PT).
   Get AI-Ready 1 and 2 are pre-recorded.
 - `scripts/aif/aif_modules.json`, `build_aif.py`, the survey, the front door, the pack, positioning and the proposal's led-by
