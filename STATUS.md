@@ -6,6 +6,19 @@ before every push); push to `main` (auto-deploys) and to `claude/expert-authorit
 bump `package.json` on every ship.
 Live site: `https://expert-authority-mastery-1f30-jdtcvngavq-as.a.run.app` (Google sign-in). Cloud Run redeploys from `main` in a few minutes.
 
+## AI for Founders Mastery: teacher allocation D (29 Oct 2026, 1.3.35)
+
+- D is committed and in the AIF Airtable base (`app7lhR1V9Fts0mNc`). Order: storefront weeks 1 to 4 (answer hub moved to
+  week 4, Ajit), brain 5, inbox 6, brand and funnel 7 to 9, content 10 and 11, Meta ads 12, then finance, sales, cockpit as before.
+  Teachers: Vishen 1 (opens), 2, 7, 8, 16; Vykintas 1, 5, 6, 9, 11, 17 and every lab; Noelle 3 and 15; Ajit 4 and 10; Marisha 12;
+  Sara and Tyler 13; Joe 14; Vishen and Vykintas host graduation and the fast action bonus call (Wed 4 Nov, 7am PT).
+  Get AI-Ready 1 and 2 are pre-recorded.
+- `scripts/aif/aif_modules.json`, `build_aif.py`, the survey, the front door, the pack, positioning and the proposal's led-by
+  line all follow D. No Vishen clash with Expert & Authority.
+- The static repo `garethwinter-cpu/ai-founder-mastery` builds its own student-facing `curriculum.html` from an Airtable
+  snapshot (`scripts/build_curriculum.py` there); `export_static.py` ships only the front door, the pack and the data.
+- Open: the Schedule table's Year tag reads 2025; spare slots 36 and 37 after graduation.
+
 ## Expert & Authority Mastery: held decisions (updated 21 Oct 2026)
 
 Proposed by Gareth to the team, Marta and Marijana. Both items are applied in Airtable (John Lee 8 Oct, Regan 21 Oct). Airtable is the source of truth: base `appnHZYcirCg1VqUP`, Lessons table.

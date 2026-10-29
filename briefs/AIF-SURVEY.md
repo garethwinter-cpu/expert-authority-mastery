@@ -55,11 +55,11 @@ _Open text, one line · optional · Get curious_
 
 **8. Which of these still have to go through you? Tick everything that applies, then tell us the one you would most like off your desk first.**  
 _Multiple choice, then one pick · required · Get curious_
-- Our website and what we sell
+- Our website, what we sell, and getting found
 - Knowledge that only lives in my head
 - The inbox and admin
 - Turning visitors into leads
-- Getting found: content, search and ads
+- Content and ads
 - Invoices and bookkeeping
 - Sales calls, proposals and follow-up
 - The numbers, and stepping back
@@ -70,13 +70,13 @@ Read the draft outline, shown here. Nothing in it is fixed.
 
 **9. For each of the eight modules, how much do you need it?**  
 _Grid, one answer per row · required · Get curious_
-Rows: Storefront: website, offer and copy; Company brain; Operations: a sorted inbox, and what to automate first; Brand and funnel; Traffic: AI search, content and ads; Finance: bookkeeping off your desk; Sales: leads and closing; Cockpit and handover: the dashboard, owners, a week you only decide
+Rows: Storefront: website, offer, copy and AI search; Company brain; Operations: a sorted inbox, and what to automate first; Brand and funnel; Traffic: content and ads; Finance: bookkeeping off your desk; Sales: leads and closing; Cockpit and handover: the dashboard, owners, a week you only decide
 Scale: Already handled / Nice to have / Need it / Need it urgently
 *Why we ask: The one quantitative read on the outline. Four points, no midpoint. The share answering need it or urgently becomes each module's need index, by founder type.*
 
-**10. Week 5 is built to answer the question we heard most in the quiz: what should I automate first? Is that your question, or is yours different? Write it the way you would ask it. Then tell us where else in the outline you thought: that is exactly my problem, or, that is not how it is for me.**  
+**10. Week 6 is built to answer the question we heard most in the quiz: what should I automate first? Is that your question, or is yours different? Write it the way you would ask it. Then tell us where else in the outline you thought: that is exactly my problem, or, that is not how it is for me.**  
 _Open text · required · Get curious_
-*Why we ask: Tests the week 5 audit against the audience's own words, then reads the rest of the outline the same way. The first half gives marketing the hook; the second tells the curriculum where a lesson is framed for someone else.*
+*Why we ask: Tests the week 6 audit against the audience's own words, then reads the rest of the outline the same way. The first half gives marketing the hook; the second tells the curriculum where a lesson is framed for someone else.*
 
 **11. What problem in your business is nowhere in this outline?**  
 _Open text · required · Get curious_
@@ -127,7 +127,7 @@ _Yes or no · required · Build together_
 - Who they are is known at the population level: 62 percent solo founder or creator, 15 percent planning to start, 15 percent small team. Question 1 asks again, one tap, so the branching works for everyone, including people who never took the quiz.
 - What they most want to transform is known: operations and automation 33 percent, marketing 26 percent, sales 21 percent; finance 5 percent, team and hiring 1 percent. Team building is no longer a module, so the team segment gets its own open question.
 - The biggest result they want is the business running beyond me (30 percent), ahead of more leads (27 percent). That is the promise line in their words; question 15 tests it.
-- The most repeated open answer, 23 times word for word, was what should I automate first. The week 5 audit is built for it; question 10 asks whether they recognise their question in it.
+- The most repeated open answer, 23 times word for word, was what should I automate first. The week 6 audit is built for it; question 10 asks whether they recognise their question in it.
 - Integration was the loudest open theme (33 percent of answers): tools that do not connect, how to bring AI in safely and in order. The quiz never asked which tools; question 7 does.
 - Data safety (7 percent) and authenticity (5 percent, AI makes things polished and uniform) are the two worries people raised unprompted. Question 14 asks for the line they would never let AI cross.
 - Half the room has barely started: 19 percent not at all, 33 percent writing and ideas only. The story of the last attempt (question 5) matters more than any rating.

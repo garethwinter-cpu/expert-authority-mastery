@@ -23,6 +23,12 @@ Copy is what sells, and every later page, email and post reuses it. Your site au
 *Your AI team: Head of Copywriting, Conversion Copywriter, Case Study Writer, Conversion Auditor*
 **Lab: Rewrite, Re-score, Publish**
 
+**Lesson: Get Recommended by ChatGPT and Google**  
+When people ask an AI who to hire, it answers from pages like the ones you are about to publish. Your buyers' questions mapped from the offer book and your customer research, an answer hub built on your site, and the first articles written and published: free traffic from AI and search into the funnel.
+
+*Your AI team: Head of SEO, Search Strategist, SEO Writer, Search Analyst*
+**Lab: Your Answer Hub, Live**
+
 ## 2. Module 2: Company brain
 *Everything I build lives in a different folder, and I keep explaining my business again.*
 
@@ -36,7 +42,7 @@ Three weeks in, the pain is real: the site in one folder, the offer book in anot
 *Every message and every decision still comes back to me.*
 
 **Lesson: Wake Up to a Sorted Inbox**  
-Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 5, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?
+Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 6, the first week back after the break, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?
 
 *Your AI team: Chief Operating Officer, Executive Assistant, Operations Analyst, Continuous Improvement Manager*
 **Lab: Your First Morning Run**
@@ -63,13 +69,7 @@ A design earns nothing until it is live. The landing page built and published in
 **Lab: Funnel Clinic: One Test Lead, End to End**
 
 ## 5. Module 5: Traffic
-*Nobody is finding me, content eats my time, and I do not know which posts or ads bring customers.*
-
-**Lesson: Get Recommended by ChatGPT and Google**  
-When people ask an AI who to hire, it answers from pages like the ones you are about to publish. Your buyers' questions mapped from the brain, an answer hub built on your site, and the first articles written and published: free traffic from AI and search into the funnel.
-
-*Your AI team: Head of SEO, Search Strategist, SEO Writer, Search Analyst*
-**Lab: Your Answer Hub, Live**
+*Content eats my time, and I do not know which posts or ads bring customers.*
 
 **Lesson: One Idea, a Month of Content**  
 Steady visibility without a content team, and without showing your face. One answer article becomes thirty days of posts, carousels and a newsletter, written in your voice from the brain. Production only: growing a following is a different Mastery.
@@ -93,7 +93,7 @@ Organic is free and slow; paid is fast and costs money. Both matter, so this wee
 *Invoices, receipts and chasing payment eat hours, and I never see the numbers until it is too late.*
 
 **Lesson: Bookkeeping Off Your Desk**  
-Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 5 automate-first list.
+Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 6 automate-first list.
 
 *Your AI team: Chief Operating Officer, Bookkeeper, Accounts Receivable, Automation Engineer*
 **Lab: Invoices In, Overdue Chased**

@@ -27,9 +27,9 @@ def link(path, frag=''):
 for src, dst in PAGES.items():
     h = (R / src).read_text(encoding='utf-8')
     h = h.replace('__CURRICULUM_JSON__', data.replace('</', '<\\/'))
+    h = h.replace('src="/\'+esc(', 'src="\'+esc(')   # headshots built in JS from p.image: ship them relative, not from the live site
     h = re.sub(r'(href|src)="(/[^"#]*)(#[^"]*)?"', lambda m: '%s="%s"' % (m.group(1), link(m.group(2), m.group(3) or '')), h)
     h = h.replace('href="' + LIVE + '/ai-founders/curriculum"', 'href="curriculum.html"')
-    h = h.replace("'<img src=\"/'+esc(p.image)", "'<img src=\"'+esc(p.image)")
     left = re.findall(r'(?:src|href)="/[^"]*"', h)
     if left: sys.exit(f'{dst}: root-relative references left: {left[:5]}')
     (OUT / dst).write_text(h, encoding='utf-8')

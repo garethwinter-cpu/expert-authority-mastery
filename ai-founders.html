@@ -98,7 +98,7 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
 <div class="wrap oask" id="oask"><section class="ask"><h2>Three questions for you</h2><ol><li>What is missing that you expected to see?</li><li>Where should we go deeper?</li><li>What would you skip?</li></ol><div id="survey"></div></section></div>
 
 <div class="wrap">
-  <details class="notes" id="changelog" open><summary id="changelog-title">What changed on 14 October</summary>
+  <details class="notes" id="changelog" open><summary id="changelog-title">What changed on 29 October</summary>
     <ol id="changelog-list"></ol>
   </details>
   <details class="notes" id="notes"><summary>Working notes: the diary check against Expert &amp; Authority, and what this draft is built on</summary>
@@ -156,7 +156,7 @@ details.more{margin-top:2px} details.more summary{cursor:pointer;list-style:none
     '<span class="fact"><b>'+live.length+'</b> live sessions · <b>'+Math.round(hours)+'</b> hours</span>',
     '<span class="fact"><b>'+esc(longDay(startAt.start))+'</b> to <b>'+esc(longDay(endAt.start))+'</b></span>'
   ].join('');
-  document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Draft. Not yet aligned with Vishen. Teachers are from the teacher map of 21 October and match the AIF Airtable base: labs, week 1 and graduation confirmed, the other lessons proposed.</span>';
+  document.getElementById('banner').innerHTML = D.aligned ? '<span class="tag">Aligned</span><span>Aligned with Vishen. This curriculum now lives in Airtable.</span>' : '<span class="tag">Draft</span><span>Draft. Not yet aligned with Vishen. Teachers are from allocation D (29 October) and match the AIF Airtable base: labs, Vykintas\u2019s lessons, week 1 and graduation confirmed; Vishen\u2019s and the guests\u2019 lessons proposed.</span>';
   document.getElementById('tz').innerHTML = 'Times in <b>Pacific</b> and <b>UK</b>' + (local && local!==PT && local!==UK ? ', and your time zone (<b>'+esc(local.replace(/_/g,' '))+'</b>)' : '') + '. ' + esc(D.cadence||'') + '.';
   document.getElementById('meta').textContent = (D.mode==='draft' ? 'Draft for alignment · ' : '') + fmt(D.synced_at, UK, {day:'numeric',month:'short',year:'numeric'}) + ' · built by Gareth Winter';
 

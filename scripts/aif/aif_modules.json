@@ -1,6 +1,6 @@
 {
  "programme": "AI for Founders Mastery",
- "basis": "14 October 2026, after the team call (Vykintas, Jaideep, Marisha, Gareth), Vykintas's post-call curriculum draft (draft v4), Jaideep's decision deck and Gareth's decisions on it: seventeen lessons and a graduation, one department of the business at a time, in the order a business needs its parts. Every lesson puts something live in the founder's business and installs the AI team that keeps producing it. Built on the AI for Founders quiz (978 answers, 2 to 14 October). Teachers are mapped once the curriculum is settled.",
+ "basis": "14 October 2026, after the team call (Vykintas, Jaideep, Marisha, Gareth), Vykintas's post-call curriculum draft (draft v4), Jaideep's decision deck and Gareth's decisions on it: seventeen lessons and a graduation, one department of the business at a time, in the order a business needs its parts. Every lesson puts something live in the founder's business and installs the AI team that keeps producing it. Built on the AI for Founders quiz (978 answers, 2 to 14 October). Teachers from allocation D, agreed with Vykintas on 29 October and entered in Airtable.",
  "pattern": [
   "The problem founders name in that part of the business",
   "The lesson: the finished thing shown first, then the workflow on one example business, while nobody follows along",
@@ -15,11 +15,12 @@
    "weeks": [
     1,
     2,
-    3
+    3,
+    4
    ],
    "problem": "My business is hard to find, hard to understand and hard to buy from.",
-   "installed": "A website that beats your three closest competitors, live, with a working lead form; your offer book (ideal customer, competitors, offer ladder, prices); conversion copy with a before and after score; a voice file, which goes into the company brain in week 4. Three AI teams: web, product marketing, copywriting.",
-   "changes": "A stranger can find the business, understand what it sells and ask to buy, and every page from here on goes live with one sentence.",
+   "installed": "A website that beats your three closest competitors, live, with a working lead form; your offer book (ideal customer, competitors, offer ladder, prices); conversion copy with a before and after score; a voice file, which goes into the company brain in week 5; an answer hub that AI search and Google can find, with Search Console tracking it. Four AI teams: web, product marketing, copywriting, SEO and AI search.",
+   "changes": "A stranger can find the business, on Google and in AI search, understand what it sells and ask to buy, and every page from here on goes live with one sentence.",
    "calls": [
     {
      "week": 1,
@@ -92,10 +93,10 @@
     {
      "week": 3,
      "type": "lesson",
-     "who": "Vykintas",
+     "who": "Noelle Russell",
      "title": "Copy That Turns Visitors Into Buyers",
      "brief": "Copy is what sells, and every later page, email and post reuses it. Your site audited, rewritten from the offer book, and audited again, so you can see the score move. Then the voice file: how your company sounds, written once, and the first thing in what becomes your company brain.",
-     "text": "The Head of Copywriting runs the workflow: the conversion auditor scores the week 1 site, the conversion copywriter rewrites it from the offer book, the case study writer turns your best customer story into proof, and the auditor scores it again. The before and after number is the lesson's proof.\n\nThen the voice file: how the company sounds, the words it uses and never uses, written from your best pages and your own speech. It is short, it is the company's voice, not a personal brand, and it goes into the company brain next week. The inbox team reads it there in week 5, the funnel in weeks 7 and 8, the content team in week 10. The lead magnet is promised on the page this week and built in week 7.\n\nThe line with Expert & Authority: that programme finds a person's distinctive voice. This lesson writes conversion copy for a company and keeps it consistent.",
+     "text": "The Head of Copywriting runs the workflow: the conversion auditor scores the week 1 site, the conversion copywriter rewrites it from the offer book, the case study writer turns your best customer story into proof, and the auditor scores it again. The before and after number is the lesson's proof.\n\nThen the voice file: how the company sounds, the words it uses and never uses, written from your best pages and your own speech. It is short, it is the company's voice, not a personal brand, and it goes into the company brain in week 5. The answer hub writes in it next week, the inbox team reads it in week 6, the funnel in weeks 8 and 9, the content team in week 10. The lead magnet is promised on the page this week and built in week 8.\n\nThe line with Expert & Authority: that programme finds a person's distinctive voice. This lesson writes conversion copy for a company and keeps it consistent.",
      "team": {
       "dept": "Copywriting",
       "head": "Head of Copywriting",
@@ -122,6 +123,40 @@
      "title": "Rewrite, Re-score, Publish",
      "text": "Three timed builds. Your own site audited and its score written down. The site rewritten from your offer book and your best customer story, then published in one sentence. The voice file written from your pages and a short voice note, and the site audited again: the before and after score goes in the thread. Privacy segment: testimonials, permissions, and what a customer story can and cannot say.",
      "win": "Your site converts better, with the score to prove it"
+    },
+    {
+     "week": 4,
+     "type": "lesson",
+     "who": "Ajit Nawalkha",
+     "title": "Get Recommended by ChatGPT and Google",
+     "brief": "When people ask an AI who to hire, it answers from pages like the ones you are about to publish. Your buyers' questions mapped from the offer book and your customer research, an answer hub built on your site, and the first articles written and published: free traffic from AI and search into the funnel.",
+     "text": "Answer engine optimisation is search for the AI age. The Head of SEO runs a search strategist who maps the questions and objections your buyers actually ask, from the offer book and your customer research; an SEO writer who answers them in articles written in your company's voice; and a search analyst who checks, on a schedule, whether you are found.\n\nThe answer hub goes live on your site in one sentence, because publishing was set up in week 1. Results take months and AI citations are hard to measure, so the lesson is honest about both and sets up Google Search Console so there is a number to watch. That is why it comes in week 4: by graduation there are four months of results.",
+     "team": {
+      "dept": "SEO & AI Search",
+      "head": "Head of SEO",
+      "members": [
+       {
+        "name": "Search Strategist",
+        "sched": false
+       },
+       {
+        "name": "SEO Writer",
+        "sched": false
+       },
+       {
+        "name": "Search Analyst",
+        "sched": true
+       }
+      ]
+     }
+    },
+    {
+     "week": 4,
+     "type": "lab",
+     "who": "Vykintas",
+     "title": "Your Answer Hub, Live",
+     "text": "Three timed builds. Your buyers' questions mapped from the offer book and customer research. The answer hub built and the first article published. Google Search Console connected from the guide. Homework: review the next three to five articles before they go live. Privacy segment: what to publish about clients, and what stays private.",
+     "win": "Your business is findable by AI search and Google"
     }
    ]
   },
@@ -130,19 +165,19 @@
    "name": "Company brain",
    "short": "Brain",
    "weeks": [
-    4
+    5
    ],
    "problem": "Everything I build lives in a different folder, and I keep explaining my business again.",
-   "installed": "Three weeks of work in one company brain; Claude Code opens there; an AI chief of staff, information officer and operating officer that answer from it; every AI team from here on reads from it and saves back to it.",
+   "installed": "Four weeks of work in one company brain; Claude Code opens there; an AI chief of staff, information officer and operating officer that answer from it; every AI team from here on reads from it and saves back to it.",
    "changes": "The business has one memory that every AI team reads from and saves to, and the founder stops re-explaining it.",
    "calls": [
     {
-     "week": 4,
+     "week": 5,
      "type": "lesson",
      "who": "Vykintas",
      "title": "Build a Company Brain That Knows Your Business",
      "brief": "Three weeks in, the pain is real: the site in one folder, the offer book in another, the copy and voice file in a third, and every new AI team needs them all. The company brain puts everything in one place, an AI chief of staff answers from it, and every lesson from here builds on it, starting with your inbox next week.",
-     "text": "By week 4 the founder has felt the problem the brain solves: three folders, re-attached for every task. It comes early on purpose, late enough for the need to be obvious and early enough that every later lesson builds on it. The lesson shows the pain first, then the template, then the migration, then the C-suite answering questions from it. The chief of staff holds priorities, goals, decisions and briefs; the chief information officer keeps where everything lives clean; the chief operating officer holds processes, projects and the current state.\n\nEvery AI team from here reads from the brain and saves back to it: next week the inbox assistant prioritises and drafts replies from the offer book, the copy and the voice file it holds, and the funnel, content, sales and finance teams are all built on it. Website code stays outside the synced brain. A guide covers sharing it with a team, for founders who have one.",
+     "text": "By week 5 the founder has felt the problem the brain solves: four folders, re-attached for every task. It comes early on purpose, late enough for the need to be obvious and early enough that every later lesson builds on it. The lesson shows the pain first, then the template, then the migration, then the C-suite answering questions from it. The chief of staff holds priorities, goals, decisions and briefs; the chief information officer keeps where everything lives clean; the chief operating officer holds processes, projects and the current state.\n\nEvery AI team from here reads from the brain and saves back to it: next week the inbox assistant prioritises and drafts replies from the offer book, the copy and the voice file it holds, and the funnel, content, sales and finance teams are all built on it. Website code stays outside the synced brain. A guide covers sharing it with a team, for founders who have one.",
      "team": {
       "dept": "Executive Office",
       "head": "Chief of Staff",
@@ -159,7 +194,7 @@
      }
     },
     {
-     "week": 4,
+     "week": 5,
      "type": "lab",
      "who": "Vykintas",
      "title": "Move In, and Ask It Anything",
@@ -173,18 +208,18 @@
    "name": "Operations: the first system that runs itself",
    "short": "Inbox",
    "weeks": [
-    5
+    6
    ],
    "problem": "Every message and every decision still comes back to me.",
    "installed": "An executive assistant that sorts the inbox and drafts replies every morning, on a schedule, and improves from your feedback; a ranked list of what to automate first. The first AI team that works while you sleep, and the first built on the company brain.",
    "changes": "The inbox is sorted and replies are drafted before the founder starts the day, and the founder knows what to automate next.",
    "calls": [
     {
-     "week": 5,
+     "week": 6,
      "type": "lesson",
-     "who": "Noelle Russell",
+     "who": "Vykintas",
      "title": "Wake Up to a Sorted Inbox",
-     "brief": "Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 5, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?",
+     "brief": "Operations is the first thing founders asked us to fix, so the first system that runs on its own arrives in week 6, the first week back after the break, straight after the brain. An AI assistant sorts your inbox each morning, prioritises it and drafts replies in your company's voice from what the brain knows, and it gets better every time you correct it. Then the audit that answers the question we heard most: what should I automate first?",
      "text": "Operations is the area founders named first in the quiz, and the inbox is where it lands every morning. This week the first AI team that runs on a schedule arrives: the executive assistant sorts the inbox before you wake and drafts replies; the operations analyst finds the work that eats your week; the continuous improvement manager turns every correction you make into a better instruction for tomorrow.\n\nIt comes straight after the brain because the brain is what gives it the context to prioritise and draft: the offer book to answer questions about what you sell and for how much, the copy to answer like your website does, the voice file to sound like your company, and the chief of staff's priorities to know what matters first. Drafts are never sent without you, and it starts with read access only. A schedule that runs on your own computer needs it switched on at that hour; the guide covers what to do when it is not.\n\nThe second half is the audit the quiz asked for most: what should I automate first? Your week, ranked by hours and by how safely AI can take it, so the rest of the programme has a list to work from. This lab carries the longest privacy segment of the programme, because this is the week AI first reads something private.",
      "team": {
       "dept": "Operations",
@@ -206,7 +241,7 @@
      }
     },
     {
-     "week": 5,
+     "week": 6,
      "type": "lab",
      "who": "Vykintas",
      "title": "Your First Morning Run",
@@ -220,16 +255,16 @@
    "name": "Brand and funnel",
    "short": "Funnel",
    "weeks": [
-    6,
     7,
-    8
+    8,
+    9
    ],
    "problem": "People visit and leave, and I never hear from them again.",
    "installed": "A brand kit and image library, the site restyled; a funnel chosen for your business model, mapped, with a lead magnet and nurture emails; the funnel live, with a test lead receiving everything.",
    "changes": "The business looks like one company everywhere, and a stranger can become a lead and be welcomed without the founder.",
    "calls": [
     {
-     "week": 6,
+     "week": 7,
      "type": "lesson",
      "who": "Vishen",
      "title": "A Professional Brand Without a Design Agency",
@@ -255,7 +290,7 @@
      }
     },
     {
-     "week": 6,
+     "week": 7,
      "type": "lab",
      "who": "Vykintas",
      "title": "Your Brand Kit, Applied",
@@ -263,7 +298,7 @@
      "win": "Your business looks like one company everywhere"
     },
     {
-     "week": 7,
+     "week": 8,
      "type": "lesson",
      "who": "Vishen",
      "title": "Design a Funnel That Turns Visitors Into Leads",
@@ -289,7 +324,7 @@
      }
     },
     {
-     "week": 7,
+     "week": 8,
      "type": "lab",
      "who": "Vykintas",
      "title": "Your Magnet and Emails, Written",
@@ -297,7 +332,7 @@
      "win": "Your funnel is designed, and the magnet and emails are ready"
     },
     {
-     "week": 8,
+     "week": 9,
      "type": "lesson",
      "who": "Vykintas",
      "title": "Launch Your Funnel and Collect Leads",
@@ -323,7 +358,7 @@
      }
     },
     {
-     "week": 8,
+     "week": 9,
      "type": "lab",
      "who": "Vykintas",
      "title": "Funnel Clinic: One Test Lead, End to End",
@@ -337,53 +372,18 @@
    "name": "Traffic",
    "short": "Traffic",
    "weeks": [
-    9,
     10,
     11,
     12
    ],
-   "problem": "Nobody is finding me, content eats my time, and I do not know which posts or ads bring customers.",
-   "installed": "An answer hub that AI search and Google can find; a month of posts and carousels from one article, no face needed; a weekly newsletter and content batch with the winners found; a test Meta campaign with a weekly ad report.",
-   "changes": "People arrive at the funnel from AI search, organic content and paid ads, and the founder can see which of them brings customers.",
+   "problem": "Content eats my time, and I do not know which posts or ads bring customers.",
+   "installed": "A month of posts and carousels from one article, no face needed; a weekly newsletter and content batch with the winners found; a test Meta campaign with a weekly ad report.",
+   "changes": "People arrive at the funnel from the answer hub, organic content and paid ads, and the founder can see which of them brings customers.",
    "calls": [
-    {
-     "week": 9,
-     "type": "lesson",
-     "who": "Vishen",
-     "title": "Get Recommended by ChatGPT and Google",
-     "brief": "When people ask an AI who to hire, it answers from pages like the ones you are about to publish. Your buyers' questions mapped from the brain, an answer hub built on your site, and the first articles written and published: free traffic from AI and search into the funnel.",
-     "text": "Answer engine optimisation is search for the AI age. The Head of SEO runs a search strategist who maps the questions and objections your buyers actually ask, from the offer book and the inbox; an SEO writer who answers them in articles written from the brain in your company's voice; and a search analyst who checks, on a schedule, whether you are found.\n\nThe answer hub goes live on your site in one sentence, because publishing was set up in week 1. Results take months and AI citations are hard to measure, so the lesson is honest about both and sets up Google Search Console so there is a number to watch.",
-     "team": {
-      "dept": "SEO & AI Search",
-      "head": "Head of SEO",
-      "members": [
-       {
-        "name": "Search Strategist",
-        "sched": false
-       },
-       {
-        "name": "SEO Writer",
-        "sched": false
-       },
-       {
-        "name": "Search Analyst",
-        "sched": true
-       }
-      ]
-     }
-    },
-    {
-     "week": 9,
-     "type": "lab",
-     "who": "Vykintas",
-     "title": "Your Answer Hub, Live",
-     "text": "Three timed builds. Your buyers' questions mapped from the brain. The answer hub built and the first article published. Google Search Console connected from the guide. Homework: review the next three to five articles before they go live. Privacy segment: what to publish about clients, and what stays private.",
-     "win": "Your business is findable by AI search and Google"
-    },
     {
      "week": 10,
      "type": "lesson",
-     "who": "Vykintas",
+     "who": "Ajit Nawalkha",
      "title": "One Idea, a Month of Content",
      "brief": "Steady visibility without a content team, and without showing your face. One answer article becomes thirty days of posts, carousels and a newsletter, written in your voice from the brain. Production only: growing a following is a different Mastery.",
      "text": "The Head of Content runs a content strategist, a content repurposer and a graphic designer. One article from the answer hub is the source; the repurposer cuts it into posts, carousels and a newsletter in seconds, and the designer turns carousels into images with the brand kit. No face needed, which suits founders who would rather stay behind the business.\n\nThis lesson is production, not a social media strategy. Choosing platforms, growing a following and monetising an audience belong to the social media Mastery; here the job is a month of good content, made once, in the company's voice.",
@@ -454,7 +454,7 @@
      "who": "Marisha Lakhiani",
      "title": "Run Meta Ads Without an Agency",
      "brief": "Organic is free and slow; paid is fast and costs money. Both matter, so this week is paid: an ad spy that studies your competitors' ads, creatives made with your brand kit, a campaign plan, and a small test campaign live with a weekly report. How much to spend stays your decision.",
-     "text": "The Media Buyer runs a Meta ad spy that studies what your competitors are running, an ad creative designer who makes creatives from your best content and the brand kit, and a Meta ads analyst who reports every week. The campaign plan aims at the funnel built in weeks 7 and 8.\n\nMeta's account setup is the hardest setup in the programme, so the guide arrives a week early. Not everyone will spend money, and that is fine: the ad spy and the creatives are useful on their own, and the test campaign can run on a very small daily amount.",
+     "text": "The Media Buyer runs a Meta ad spy that studies what your competitors are running, an ad creative designer who makes creatives from your best content and the brand kit, and a Meta ads analyst who reports every week. The campaign plan aims at the funnel built in weeks 8 and 9.\n\nMeta's account setup is the hardest setup in the programme, so the guide arrives a week early. Not everyone will spend money, and that is fine: the ad spy and the creatives are useful on their own, and the test campaign can run on a very small daily amount.",
      "team": {
       "dept": "Paid Advertising",
       "head": "Media Buyer",
@@ -492,7 +492,7 @@
     13
    ],
    "problem": "Invoices, receipts and chasing payment eat hours, and I never see the numbers until it is too late.",
-   "installed": "An AI accounting agent: invoices and receipts collected into a sheet every week, overdue invoices chased; one more item from the week 5 automate-first list automated with the same pattern.",
+   "installed": "An AI accounting agent: invoices and receipts collected into a sheet every week, overdue invoices chased; one more item from the week 6 automate-first list automated with the same pattern.",
    "changes": "The books stop being a weekend job, and the money numbers feed the dashboard.",
    "calls": [
     {
@@ -500,8 +500,8 @@
      "type": "lesson",
      "who": "Sara Davison + Tyler Fisk",
      "title": "Bookkeeping Off Your Desk",
-     "brief": "Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 5 automate-first list.",
-     "text": "Every business has bills and receipts, even before it has sales, so this automation is the one everyone understands. The Chief Operating Officer runs a bookkeeper and an accounts receivable agent, both on a schedule, and an automation engineer. The bookkeeper reads the inbox and the drive for invoices and receipts, extracts the client, the date and the amount, and fills a sheet; accounts receivable drafts the chase for anything overdue.\n\nThe automation engineer then applies the same pattern to one more item from the week 5 list. Finance drew little interest in the quiz, so the lesson is about time back, and the money data it creates feeds the dashboard in week 16. Excel or Google Sheets on your own computer is the default.",
+     "brief": "Your AI accounting agent. Every week it collects invoices and receipts from your inbox and drive into a sheet and chases overdue invoices, and you send the accountant an export. Then the same pattern applied to one more task from your week 6 automate-first list.",
+     "text": "Every business has bills and receipts, even before it has sales, so this automation is the one everyone understands. The Chief Operating Officer runs a bookkeeper and an accounts receivable agent, both on a schedule, and an automation engineer. The bookkeeper reads the inbox and the drive for invoices and receipts, extracts the client, the date and the amount, and fills a sheet; accounts receivable drafts the chase for anything overdue.\n\nThe automation engineer then applies the same pattern to one more item from the week 6 list. Finance drew little interest in the quiz, so the lesson is about time back, and the money data it creates feeds the dashboard in week 16. Excel or Google Sheets on your own computer is the default.",
      "team": {
       "dept": "Finance",
       "head": "Chief Operating Officer",
@@ -580,7 +580,7 @@
     {
      "week": 15,
      "type": "lesson",
-     "who": "Vishen",
+     "who": "Noelle Russell",
      "title": "Close More, Chase Less",
      "brief": "Deals are lost after the first conversation. Call prep before, a call review after, a proposal written from the brain, and follow-ups that go out until there is an answer.",
      "text": "The Head of Sales runs a sales call coach, a proposal writer and a follow-up manager on a schedule. Before a call, the coach prepares from the pipeline and the brain; after it, the coach reviews the transcript for what worked and what was missed. The proposal writer drafts from the offer book and the call; the follow-up manager drafts every follow-up until there is a yes or a no.\n\nSelf-serve products have no calls, so those founders apply the same workflow to partners, wholesale or larger customers.",
@@ -663,7 +663,7 @@
     {
      "week": 17,
      "type": "lesson",
-     "who": "Noelle Russell",
+     "who": "Vykintas",
      "title": "Owners, Then the Week You Only Decide",
      "brief": "The promise is a business running beyond you, so this week tests it. Every department gets an owner page: what runs, when, who checks it, what to do when it breaks. Then five working days in which the founder only decides, reading the Monday briefing and the owner pages, and doing none of the work.",
      "text": "Each department built since week 1 gets an owner page: what runs and when, who owns it, a person or an AI team with a human checkpoint, what good looks like, and what to do when it breaks. Founders with a team hand pages to people; solo founders own them and let the AI teams do the work.\n\nThen the test: the five working days from this lesson to graduation, in which the founder only decides. The Monday briefing and the owner pages are the job; the work is not. It is worded carefully. The systems and their owners do the work and the founder reviews and decides; nobody is promised a business with no human in it.",
@@ -706,20 +706,26 @@
    {
     "name": "Vishen Lakhiani",
     "status": "Confirmed",
-    "where": "Opens week 1; lessons in weeks 2, 6, 7, 9, 15 and 16; co-hosts graduation",
-    "why": "Strategy and vision, the decisions a founder makes: what to sell, how the brand looks, which funnel, how to be found, how to close, how to steer. His AI Mastery ratings average 8.59 (287), best on live builds at 9.28 to 9.49, lowest on content creation at 7.87, so he stays off the step-by-step. None of his lessons falls on a Tuesday when he also teaches Expert & Authority; week 1 is twenty minutes."
+    "where": "Opens week 1; lessons in weeks 2, 7, 8 and 16; the fast action bonus call; co-hosts graduation",
+    "why": "Strategy and vision, the decisions a founder makes: what to sell, how the brand looks, which funnel, how to steer. His AI Mastery ratings average 8.59 (287), best on live builds at 9.28 to 9.49, lowest on content creation at 7.87, so he stays off the step-by-step. None of his lessons falls on a Tuesday when he also teaches Expert & Authority; week 1 is twenty minutes."
    },
    {
     "name": "Vykintas Glodenis",
     "status": "Confirmed",
-    "where": "Every lab, both Get AI-Ready drop-ins; lessons in weeks 1, 3, 4, 8, 10 and 11; co-hosts graduation",
+    "where": "Every lab and both pre-recorded Get AI-Ready sessions; lessons in weeks 1, 5, 6, 9, 11 and 17; co-hosts the fast action bonus call and graduation",
     "why": "Leads the curriculum and takes the builds the rest depends on: the website, the brain, the funnel wiring and the content systems. 472 AI Mastery ratings averaging 9.37, the highest volume of any teacher; his best sessions are integration and system builds."
    },
    {
     "name": "Noelle Russell",
     "status": "Proposed",
-    "where": "Weeks 5 and 17",
-    "why": "Her two best-rated topics: the first AI team member (9.25) in the week AI first reads private email, and founder to AI-leveraged operator (9.97, the highest-rated lesson in the Entrepreneurship Mastery base) for the owner pages and the week the founder only decides."
+    "where": "Weeks 3 and 15",
+    "why": "Copy that converts in week 3 and closing in week 15: a second voice in the first month, and the follow-up that turns leads into signed clients."
+   },
+   {
+    "name": "Ajit Nawalkha",
+    "status": "Proposed",
+    "where": "Weeks 4 and 10",
+    "why": "Getting found by ChatGPT and Google in week 4, so results build for four months before graduation, and a month of content from one idea in week 10. A fourth teacher in the first four weeks."
    },
    {
     "name": "Marisha Lakhiani",
@@ -743,12 +749,12 @@
   "alternates": [
    {
     "name": "Oren John",
-    "for": "Week 6",
+    "for": "Week 7",
     "why": "Brand strategist and creative director; the brand half of marketing if Ruben's distribution angle is judged too LinkedIn-specific."
    },
    {
     "name": "Maria Wendt",
-    "for": "Week 8",
+    "for": "Week 9",
     "why": "In the 26 Sep allocation; low-ticket nurture at volume with real numbers. Alternate for the follow-up and nurture half of sales."
    },
    {
@@ -766,47 +772,47 @@
   "not_placed": [
    {
     "name": "Nate Herk",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "why": "Candidate on 5 October; not in teacher allocation D.",
     "status": "In consideration"
    },
    {
     "name": "Sabrina Ramonov",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October. Outreach done",
+    "why": "Candidate on 5 October; not in teacher allocation D. Outreach done",
     "status": "Outreach done"
    },
    {
     "name": "Ruben Hassid",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "why": "Candidate on 5 October; not in teacher allocation D.",
     "status": "In consideration"
    },
    {
     "name": "Liam Ottley",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October. Outreach done",
+    "why": "Candidate on 5 October; not in teacher allocation D. Outreach done",
     "status": "Outreach done"
    },
    {
     "name": "Nick Saraev",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "why": "Candidate on 5 October; not in teacher allocation D.",
     "status": "In consideration"
    },
    {
     "name": "Callan Faulkner",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October. Outreach done",
+    "why": "Candidate on 5 October; not in teacher allocation D. Outreach done",
     "status": "Outreach done"
    },
    {
     "name": "Alex Dogliotti",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "why": "Candidate on 5 October; not in teacher allocation D.",
     "status": "In consideration"
    },
    {
     "name": "Shawn Kanungo",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October. Can't make the summit",
+    "why": "Candidate on 5 October; not in teacher allocation D. Can't make the summit",
     "status": "Can't make the summit"
    },
    {
     "name": "Matt Gray",
-    "why": "Candidate on 5 October; not in the teacher map of 21 October.",
+    "why": "Candidate on 5 October; not in teacher allocation D.",
     "status": "In consideration"
    },
    {
@@ -823,7 +829,7 @@
     "why": "Not Approved; not recommended on a past working experience."
    },
    {
-    "name": "John Lee, Ajit Nawalkha, Iman Oubou, Elena Verna",
+    "name": "John Lee, Iman Oubou, Elena Verna",
     "why": "Not Approved for the summit and no pillar where they are the most authentic teacher."
    },
    {
@@ -859,8 +865,8 @@
   }
  ],
  "onboarding": {
-  "title": "Week 0: Get AI-Ready, optional and under two hours",
-  "text": "An optional pre-recorded sequence, updated as the tools change, so no lesson stops for basics. Claude Code set up on a folder, the weekly pack installed for the first time, talking instead of typing, the basics of how AI works, and the hosting template live so publishing is one sentence from week 1. Also the 30-minute hours log: how many hours a week the business needs you now, the number graduation is measured against. The Head of Performance team arrives here and adds tracking to everything built afterwards. Two live drop-in calls: on 5 November for setup questions, and on 12 November a go-live clinic for hosting. Anyone who skips it all goes live in the week 1 lab."
+  "title": "Week 0: Get AI-Ready, pre-recorded and under two hours",
+  "text": "Two pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second, ready from 12 November: the go-live walkthrough for hosting, for late buyers and anyone stuck. Before both, on Wednesday 4 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
  },
  "lab_format": {
   "title": "Every week runs the same way",
@@ -894,20 +900,14 @@
    ""
   ]
  ],
- "changelog_title": "What changed on 14 October",
+ "changelog_title": "What changed on 29 October",
  "changelog": [
-  "The spine is now Vykintas's post-call draft: seventeen lessons and a graduation, one department of the business per lesson, each with an AI team (a head and three members) that keeps producing what the lesson put live (team call and Vykintas's draft, 14 Oct).",
-  "Seventeen lessons plus a graduation, eighteen calls in total, as agreed in the call. The run ends with graduation on Tuesday 30 March 2027 (Gareth, 14 Oct).",
-  "Inbox triage comes straight after the company brain, in week 5: the brain gives AI the context to prioritise and draft replies. It is still the first system that runs on a schedule, and still before the Christmas break, because operations is the first thing founders asked for; its lab carries the longest privacy segment (Vykintas, 14 Oct, after Jaideep's deck).",
-  "Hosting setup moves into onboarding with a go-live clinic on 12 November, so week 1 homework is not where beginners drop. Anyone who skips onboarding goes live in the week 1 lab (Jaideep's deck).",
-  "Week 0 adds a 30-minute hours log; graduation counts the hours again. That is the one measure of the business running beyond the founder (Jaideep's deck).",
-  "The ending is new: week 16 the dashboard and Monday briefing, week 17 owner pages and five working days in which the founder only decides, then graduation and Demo Day (Jaideep's deck).",
-  "Paid and organic are both taught: Meta ads stays in the core as week 12, with the ad spy, creatives and a weekly report (Marisha, in the call; Gareth, 14 Oct).",
-  "Software building becomes an elective; it overlaps AI Mastery's building track (Jaideep's deck).",
-  "Brand voice comes before the funnel: the voice file is written in week 3, the brand kit in week 6, the funnel in weeks 7 and 8 (Jaideep, in the call).",
-  "A privacy segment in every lab replaces any standalone governance lesson (agreed in the call).",
-  "Client delivery and team-building modules are out; the call rejected client delivery for lacking a tangible output. The programme is about a company, not a personal brand: no face needed (agreed in the call).",
-  "The company brain moves to week 4: late enough that three weeks of folders make the need obvious, early enough that every later lesson builds on it (Vykintas, 14 Oct, who asked for lesson 3 to 5).",
-  "Vishen opens week 1 and closes at graduation; the separate Monday opening is folded into week 1. All other teachers are mapped once the curriculum is settled, five or six at most (agreed in the call; Jaideep's deck)."
+  "Teacher allocation D, agreed with Vykintas on 29 October and entered in the AIF Airtable base: four teachers in the first four weeks (Vishen, Vykintas, Noelle Russell, Ajit Nawalkha), so the room meets the faculty early. The 2025 AI Mastery cohort met seven teachers in its first eight lessons and kept 62% of its live audience by lesson 8; the 2026 cohort met four and kept 52%.",
+  "Getting recommended by ChatGPT and Google moves from week 9 to week 4, into the storefront module, taught by Ajit. Search results take months, so starting in week 4 gives four months of them by graduation. Its questions now come from the offer book and customer research, because the brain and inbox are not built yet.",
+  "The company brain moves to week 5 and the sorted inbox to week 6, the first week back after the holiday break. Brand and funnel run weeks 7 to 9; content weeks 10 and 11; Meta ads week 12. Finance, sales and the cockpit keep their weeks.",
+  "Noelle Russell teaches copy in week 3 and closing in week 15. Ajit teaches content in week 10. Vykintas teaches the inbox in week 6 and the owner pages in week 17. Vishen opens week 1 and teaches weeks 2, 7, 8 and 16. Marisha (12), Sara and Tyler (13) and Joe Stolte (14) are unchanged.",
+  "A fast action bonus call for early buyers on Wednesday 4 November, 7am Pacific (3pm London): What to Automate First, Built With Vishen, live with Vishen and Vykintas, the bridge from the summit to kickoff. The recording follows in BlinkLearn.",
+  "Both Get AI-Ready sessions are pre-recorded rather than live drop-ins: setup, first skills and the hours log from 5 November; the go-live walkthrough from 12 November.",
+  "Customer-facing descriptions for every session are in Airtable, written to the mastery-lesson-descriptions house style; the internal briefs stay here."
  ]
 }
