@@ -866,7 +866,7 @@
  ],
  "onboarding": {
   "title": "Week 0: Get AI-Ready, pre-recorded and under two hours",
-  "text": "Two pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first, ready from 5 November: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second, ready from 12 November: the go-live walkthrough for hosting, for late buyers and anyone stuck. Before both, on Wednesday 4 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
+  "text": "Two pre-recorded sessions with Vykintas, updated as the tools change, so no lesson stops for basics. The first: Claude Code set up on a folder, the first AI skills installed, talking instead of typing, the basics of how AI works, hosting ready so publishing is one sentence, and the 30-minute hours log, the number graduation is measured against. The second: the go-live walkthrough for hosting, for late buyers and anyone stuck. On Thursday 5 November at 7am Pacific (3pm London), the fast action bonus call for early buyers: What to Automate First, Built With Vishen, live with Vishen and Vykintas. Anyone who still cannot publish goes live in the week 1 lab."
  },
  "lab_format": {
   "title": "Every week runs the same way",
@@ -907,8 +907,9 @@
   "The company brain moves to week 5 and the sorted inbox to week 6, the first week back after the holiday break. Brand and funnel run weeks 7 to 9; content weeks 10 and 11; Meta ads week 12. Finance, sales and the cockpit keep their weeks.",
   "Noelle Russell teaches findability in week 4 and closing in week 15. Ajit teaches both content lessons, weeks 10 and 11. Vykintas teaches copy in week 3, the inbox in week 6 and the owner pages in week 17. Vishen opens week 1 and teaches weeks 2, 7, 8 and 16. Marisha (12), Sara and Tyler (13) and Joe Stolte (14) are unchanged.",
   "After team feedback (Marta, Marijana) and agreed with Vykintas: copy (week 3) moves from Noelle to Vykintas, since nothing in her record points to conversion copywriting; the inbox (week 6) stays with Vykintas, because it runs on the brain he teaches and stays in Claude Code; Noelle takes findability (week 4) and keeps closing (week 15); Ajit takes both content lessons (weeks 10 and 11), his proven topic. Same number of lessons for everyone. Open: Vishen may take copy in week 3; it would put him in two programmes that morning (Expert & Authority at 9am Pacific), so Vykintas holds it until he answers.",
-  "A fast action bonus call for early buyers on Wednesday 4 November, 7am Pacific (3pm London): What to Automate First, Built With Vishen, live with Vishen and Vykintas, the bridge from the summit to kickoff. The recording follows in BlinkLearn.",
-  "Both Get AI-Ready sessions are pre-recorded rather than live drop-ins: setup, first skills and the hours log from 5 November; the go-live walkthrough from 12 November.",
-  "Customer-facing descriptions for every session are in Airtable, written to the mastery-lesson-descriptions house style; the internal briefs stay here."
+  "A fast action bonus call for early buyers on Thursday 5 November, 7am Pacific (3pm London): What to Automate First, Built With Vishen, live with Vishen and Vykintas, the bridge from the summit to kickoff. The recording follows in BlinkLearn.",
+  "Both Get AI-Ready sessions are pre-recorded rather than live drop-ins: setup, first skills and the hours log, then the go-live walkthrough, to watch any time before week 1.",
+  "Customer-facing descriptions for every session are in Airtable, written to the mastery-lesson-descriptions house style; the internal briefs stay here.",
+  "Jaideep regrouped the Airtable base on 30 October into six modules and five months: Foundations, Marketing, Company Brain, Finance, Sales, Operations. The fast action bonus call moved to Thursday 5 November; the Get AI-Ready sessions have no date, as they are pre-recorded."
  ]
 }
